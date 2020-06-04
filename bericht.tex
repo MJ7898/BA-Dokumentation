@@ -1,9 +1,7 @@
-%&bericht
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Descr:       Vorlage für Berichte der DHBW-Karlsruhe
 %% Author:      Prof. Dr. Jürgen Vollmer, juergen.vollmer@dhbw-karlsruhe.de
-%% $Id: bericht.tex,v 1.25 2020/03/13 15:07:45 vollmer Exp $
+%% $Id: bericht.tex,v 1.24 2018/10/23 09:10:06 vollmer Exp $
 %%  -*- coding: utf-8 -*-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -28,49 +26,43 @@
 
 \usepackage{bericht}
 
-%% ACHTUNG, wenn man eine eigene Formatdatei (bericht.fmt) benutzt, werden Änderungen an bericht.sty
-%% erst wirksam, wenn die Format-Datei neu erzeugt wurde!!!
-%% Genauer alle Änderungen, die textuell vor der nächsten Zeile ".... endofdump...." stehen
-%% werden erst wirksam, wenn die Formatdatei neu erzeugt wurde
-\csname endofdump\endcsname
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Angaben zur Arbeit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\Autor}{Max Mustermann}
-\newcommand{\MatrikelNummer}{4711}
-\newcommand{\Kursbezeichnung}{tinf17b3}
+\newcommand{\Autor}{Mikka Jenne und Simon Leitl}
+\newcommand{\MatrikelNummer}{2062885, 7068806}
+\newcommand{\Kursbezeichnung}{tinf17b4}
 
-\newcommand{\FirmenName}{Firmenname}
-\newcommand{\FirmenStadt}{Stadt}
-\newcommand{\FirmenLogoDeckblatt}{\fbox{\includegraphics[width=3cm]{lion}}}
+\newcommand{\FirmenName}{cjt Systemsoftware AG}
+\newcommand{\FirmenStadt}{Karlsruhe}
+%\newcommand{\FirmenLogoDeckblatt}{\fbox{\includegraphics[width=3cm]{lion}}}
 
 % Falls es kein Firmenlogo gibt:
-%  \newcommand{\FirmenLogoDeckblatt}{}
+\newcommand{\FirmenLogoDeckblatt}{}
 
-\newcommand{\BetreuerFirma}{Titel Vorname Nachname}
-\newcommand{\BetreuerDHBW}{Titel Vorname Nachname}
+%\newcommand{\BetreuerFirma}{Titel Vorname Nachname}
+\newcommand{\BetreuerDHBW}{Prof. Dr. Kai Becher}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Wird auf dem Deckblatt und in der Erklärung benutzt:
-\newcommand{\Was}{Projekt-/Studien-/Bachleorarbeit}
+%\newcommand{\Was}{Projekt-/Studien-/Bachleorarbeit}
 %\newcommand{\Was}{Projektrarbeit}
-%\newcommand{\Was}{Studienarbeit}
+\newcommand{\Was}{Studienarbeit}
 %\newcommand{\Was}{Bachleorarbeit}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\Titel}{\LaTeX-Vorlage für diverse Ausarbeitungen\\--\\oder so ähnlich}
-\newcommand{\AbgabeDatum}{1. April 2090}
+\newcommand{\Titel}{Entwicklung einer Software zur Schaltplanerstellung in der Elektrotechnik}
+\newcommand{\AbgabeDatum}{01. Juni 2020}
 
 \newcommand{\Dauer}{12 Wochen}
 
 % \newcommand{\Abschluss}{Bachelor of Engineering}
 \newcommand{\Abschluss}{Bachelor of Science}
 
-\newcommand{\Studiengang}{Informatik / Informationstechnik}
+\newcommand{\Studiengang}{Informatik}
 % \newcommand{\Studiengang}{Informatik / Angewandte Informatik}
 
 \hypersetup{%%
@@ -82,12 +74,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Wenn \includeonly{..} benutzt wird, werden nur diese Kaptitel ausgegeben.
-\includeonly{
-  abk
- ,kapitel1
- ,kapitel2
- ,changelog
-}
+%\includeonly{
+ % abk
+ %,kapitel1
+ %,kapitel2
+ %,kapitel3
+ %,systementwurf
+ %,changelog
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -97,7 +91,7 @@
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{titlepage}
 \begin{center}
@@ -121,11 +115,11 @@ Matrikelnummer	                 & \MatrikelNummer		\\
 Kurs			         & \Kursbezeichnung		\\
 Ausbildungsfirma	         & \FirmenName			\\
 			         & \FirmenStadt			\\
-Betreuer der Ausbildungsfirma	 & \BetreuerFirma		\\
+%Betreuer der Ausbildungsfirma	 & \BetreuerFirma		\\
 Gutachter der Studienakademie	 & \BetreuerDHBW		\\
 \end{tabular}
 \end{titlepage}
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{erklaerung.tex}
@@ -133,31 +127,34 @@ Gutachter der Studienakademie	 & \BetreuerDHBW		\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{abstract}
-Dieses \LaTeX-Dokument kann als Vorlage für einen Praxis- oder Projektbericht, eine Studien- oder
-Bachelorarbeit dienen.
-
-Zusammengestellt von Prof.\,Dr.\,Jürgen Vollmer \email{juergen.vollmer@dhbw-karlsruhe.de}\\
-\url{https://www.karlsruhe.dhbw.de}. Die jeweils aktuellste Version dieses \LaTeX-Paketes ist immer
-auf der \emph{FAQ-Seite} des Studiengangs Informatik zu finden:
-\url{https://www.karlsruhe.dhbw.de/inf/studienverlauf-organisatorisches.html} $\to$ \emph{Formulare und Vorlagen}.
-
-\centering Stand \verb+$Date: 2020/03/13 15:07:45 $+
+  Computer sind heutzutage allgegenwärtig.
+  \\Kaum ein Unternehmen arbeitet ohne computergesteuerte Unterstützung, 
+  sei es das Schreiben einer Rechnung in einem mittelständischen Unternehmen, das Verwalten von einzelnen Arbeitsprozessen oder 
+  die Unterstützung bei einzelnen Arbeitsschritten. Speziell im Elektrotechnischen Bereich gibt es heute noch Prozesse die hinsichtlich
+  der physischen und digitalen Welt stark voneinander getrennt sind, z.B. das Zeichnen von Schaltplänen und die
+  digitale Erfassung von Messwerten, die über Programme verwaltet werden können.
+  \\Das Ziel dieser Arbeit ist es, die physische Welt durch die Möglichkeit der digitalen Zeichnung von Gebäudeschaltplänen
+  zu erweitern. Für den Gebrauch designed, wird auf eine Verbesserung sowie auf die Transparenz von solchen Schaltplänen gezielt,
+  um so weitere essentielle Informationen zu Gebäuden zu erhalten. Da die händische Zeichnung meist aufwändig, kostenintensiv ist und keiner Norm entspricht,
+  soll durch die Digitalisierung dieses Prozesses Abhilfe geschaffen werden. Durch Nutzung neuester Technologien im Bereich Desktopanwendungen
+  und des Einsatzes einer einheitlichen Zeichenstruktur sollte diese Applikation für den Otto Normalverbraucher leicht nutzbar sein.  
 \end{abstract}
 
 \newpage
 \tableofcontents           % Inhaltsverzeichnis hier ausgeben
 \listoffigures             % Liste der Abbildungen
-\listoftables              % Liste der Tabellen
+%\listoftables              % Liste der Tabellen
 \lstlistoflistings         % Liste der Listings
-\listofequations           % Liste der Formeln
-
+%\listofequations           % Liste der Formeln
 % Jetzt kommt der "eigentliche" Text
 \include{abk}              % Abkürzungsverzeichnis
 \include{1Einleitung/kapitel1}
 \include{2Grundlagen/kapitel2}
-\include{3Konzeption/kapitel3}
-\include{4Umsetzung/kapitel4}
-\include{5ErgebnisAusblick/kapitel5} 
+\include{3Technologien/kapitel3}
+\include{4Systementwurf/systementwurf}
+\input{5Implementierungen/implementierung}
+\input{6Fazit/fazit}
+
 
 % Ab hier beginnt der Anhang
 \appendix
@@ -185,13 +182,12 @@ auf der \emph{FAQ-Seite} des Studiengangs Informatik zu finden:
 \def\refname{Literaturverzeichnis}
 \printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-% \include{changelog}
 
 \newpage
 \addcontentsline{toc}{chapter}{Liste der ToDo's}
-% \listoftodos[Liste der ToDo's]
+%\listoftodos[Liste der ToDo's]
 
 
 \end{document}

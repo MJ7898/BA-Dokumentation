@@ -1,13 +1,12 @@
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # %% Descr:       Vorlage fuer Berichte der DHBW-Karlsruhe, Makefile
 # %% Author:      Prof. Dr. Juergen Vollmer, vollmer@dhbw-karlsruhe.de
-# %% $Id: Makefile,v 1.22 2020/03/13 15:10:57 vollmer Exp $
+# %% $Id: Makefile,v 1.19 2017/10/06 14:08:58 vollmer Exp $
 # %% -*- coding: utf-8 -*-
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 # Dateiname der Haupt-Datei
-BASE      = bericht
-FMT       = $(BASE).fmt
+BASE  = bericht
 
 LATEX     = pdflatex -file-line-error
 BIBTEX    = bibtex
@@ -46,12 +45,6 @@ index:
 bib:
 	$(BIBTEX) $(BASE)
 
-# fmt: --> https://tex.stackexchange.com/questions/79493/ultrafast-pdflatex-with-precompiling
-#      --> https://ctan.org/pkg/mylatexformat
-fmt: $(FMT)
-%.fmt:%.tex $(BASE).sty $(BASE).tex
-	- pdflatex -ini -jobname=$*  "&pdflatex" mylatexformat.ltx $*.tex
-
 # Nur Fehlermeldungen ausgeben
 check: $(BASE).pdf
 	@echo; echo "*******************************"; echo; echo;
@@ -73,7 +66,7 @@ clean:
 
 # Wirklich alles loeschen
 realclean: clean
-	rm -f $(BASE).pdf $(BASE).fmt
+	rm -f $(BASE).pdf
 
 # Erstelle tar-Archiv des ganzen Verzeichnisses
 tar: $(BASE).pdf
@@ -81,6 +74,6 @@ tar: $(BASE).pdf
 	D=`pwd`; D=`basename $$D`;		\
 	cd ..; 					\
 	tar --exclude "*.tar.gz" --exclude RCS  \
-	    --exclude Pakete --exclude "*.fmt"  \
+	    --exclude Pakete 			\
 	    --dereference			\
 	    -czvf $$D/latex-vorlage-`date "+%Y-%m-%d"`.tar.gz $$D

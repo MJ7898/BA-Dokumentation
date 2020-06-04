@@ -16,5 +16,252 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{wpfmicrosoftcollection.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Collection},
+         familyi={C\bibinitperiod},
+         given={Microsoft},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+  \field{howpublished}{\url{https://docs.microsoft.com/de-de/dotnet/api/system.collections?view=netcore-3.1
+  }}
+    \field{title}{Website Microsoft Nampespace Collection}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{degruyter.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={Degruyter},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://www.degruyter.com/downloadpdf/books/9783110443882/9783110443882-005/9783110443882-005.pdf[3]}}
+    \field{title}{Website Degruyter}
+    \field{month}{03}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wpfmicrosoftdrawing.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DM}{%
+         family={Drawing},
+         familyi={D\bibinitperiod},
+         given={Microsoft},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DM1}
+    \strng{fullhash}{DM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://docs.microsoft.com/de-de/dotnet/api/system.drawing?view=netcore-3.1
+  }}
+    \field{title}{Website Microsoft Nampespace Drawing}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{mvvm.2010s}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=e}{%
+         family={entwickler},
+         familyi={e\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{e1}
+    \strng{fullhash}{e1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://entwickler.de/online/tipps-und-tricks-zum-mvvm-pattern-153374.html}}
+    \field{title}{Website entwickler.de}
+    \field{month}{09}
+    \field{year}{2010}
+  \endentry
+
+  \entry{gruenderszene.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Gruenderszene},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+  \field{howpublished}{\url{https://www.gruenderszene.de/lexikon/begriffe/user-experience?interstitial
+  }}
+    \field{title}{Website Gruenderszene}
+    \field{month}{03}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wpfmicrosoft.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://docs.microsoft.com/de-de/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs
+  }}
+    \field{title}{Website Microsoft Docs}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{mvvmLight.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MVVMLight},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{howpublished}{\url{http://mvvmlight.net}}
+    \field{title}{Website des MVVM Light Frameworks}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{foliensatz.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Müller},
+         familyi={M\bibinitperiod},
+         given={Maurice},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://drive.google.com/drive/folders/1a0zCxcIvym1Z7twfZTUCSwgaN49Plho2
+  }}
+    \field{title}{Foliensatz Advanced Software Engineering Usability und UX}
+    \field{month}{03}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wpf.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+  \field{howpublished}{\url{https://de.wikipedia.org/wiki/Windows_Presentation_Foundation
+  }}
+    \field{title}{Website Gruenderszene}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wpfmicrosoftwindow.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WM}{%
+         family={Window},
+         familyi={W\bibinitperiod},
+         given={Microsoft},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WM1}
+    \strng{fullhash}{WM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+  \field{howpublished}{\url{https://docs.microsoft.com/de-de/dotnet/api/system.windows?view=netcore-3.1
+  }}
+    \field{title}{Website Microsoft Nampespace Window}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wpftutorial.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WT}{%
+         family={WPF-Tutorial},
+         familyi={W\bibinithyphendelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WT1}
+    \strng{fullhash}{WT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+  \field{howpublished}{\url{https://www.wpf-tutorial.com/de/1/uber-wpf/was-ist-wpf/
+  }}
+    \field{title}{Website WPF-Tutorial}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+\enddatalist
 \endinput

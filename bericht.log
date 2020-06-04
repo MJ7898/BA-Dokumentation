@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 JUN 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 JUN 2020 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -29,23 +29,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks15
 ) (/Users/mj/BA-Dokumentation/bericht.sty
 Package: bericht 2017/10/06 v1.2
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2019/05/04 3.31 The Babel package
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthography)
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2019/05/04 3.31 Babel common definitions
-\babel@savecnt=\count89
-\U@D=\dimen103
- (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count90
-)
-Package babel Info: Making " an active character on input line 121.
-))) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
@@ -62,9 +46,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen104
+\col@sep=\dimen103
 \ar@mcellbox=\box27
-\extrarowheight=\dimen105
+\extrarowheight=\dimen104
 \NC@list=\toks16
 \extratabsurround=\skip43
 \backup@length=\skip44
@@ -73,7 +57,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \everycr=\toks17
 \minrowclearance=\skip45
 )
-\rownum=\count91
+\rownum=\count89
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -89,17 +73,17 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count92
+\etb@tempcnta=\count90
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
 )
-\csq@reset=\count93
-\csq@gtype=\count94
-\csq@glevel=\count95
-\csq@qlevel=\count96
-\csq@maxlvl=\count97
-\csq@tshold=\count98
+\csq@reset=\count91
+\csq@gtype=\count92
+\csq@glevel=\count93
+\csq@qlevel=\count94
+\csq@maxlvl=\count95
+\csq@tshold=\count96
 \csq@ltx@everypar=\toks19
  (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
@@ -108,12 +92,23 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthography)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
+\babel@savecnt=\count97
+\U@D=\dimen105
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count98
 )
-Package csquotes Info: Option 'babel' depreciated.
-(csquotes)             Using 'autostyle'.
-Package csquotes Info: Enabling multilingual quotes.
-Package csquotes Info: Redefining alias 'german' -> 'german/guillemets'.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+Package babel Info: Making " an active character on input line 121.
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
@@ -792,7 +787,7 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-Package biblatex Info: Redefining '\citeurl' on input line 126.
+Package biblatex Info: Redefining '\citeurl' on input line 122.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count329
 \lst@gtempboxa=\box44
@@ -837,19 +832,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@eq=\toks44
 \c@eq=\count340
 )
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 80.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 80.
-
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
 File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
@@ -866,30 +855,43 @@ Package biblatex Warning: Attempt to redefine deprecated '\mkbibnamelast'.
 (biblatex)                Please use '\mkbibnamefamily' instead.
 (biblatex)                Using '\mkbibnamefamily'.
 
-(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux)
-No file 1Einleitung/kapitel1.aux.
-No file 2Grundlagen/kapitel2.aux.
-No file 3Konzeption/kapitel3.aux.
-No file 4Umsetzung/kapitel4.aux.
-No file 5ErgebnisAusblick/kapitel5.aux.
+(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.aux)
+
+LaTeX Warning: Label `ProjektName' multiply defined.
+
+
+LaTeX Warning: Label `usercontrolsnippet' multiply defined.
+
+
+LaTeX Warning: Label `startmenuview' multiply defined.
+
+
+LaTeX Warning: Label `KomponentenModel' multiply defined.
+
+
+LaTeX Warning: Label `komponentenToolsView' multiply defined.
+
+
+LaTeX Warning: Label `usercontrolsnippet' multiply defined.
+
 )
 \openout1 = `bericht.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 92.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -923,7 +925,7 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ))
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 92.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -931,10 +933,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count347
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
-LaTeX Info: Redefining \microtypecontext on input line 98.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \microtypecontext on input line 92.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -948,7 +950,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) ABD: EveryShipout initializing macros
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 98.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 92.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -961,70 +963,559 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bericht.bbl' found.
 (/Users/mj/BA-Dokumentation/bericht.bbl)
-Package biblatex Info: Reference section=0 on input line 98.
-Package biblatex Info: Reference segment=0 on input line 98.
+Package biblatex Info: Reference section=0 on input line 92.
+Package biblatex Info: Reference segment=0 on input line 92.
 \c@lstlisting=\count348
-<lion.png, id=31, 198.7425pt x 165.61874pt>
-File: lion.png Graphic file (type png)
-<use lion.png>
-Package pdftex.def Info: lion.png  used on input line 105.
-(pdftex.def)             Requested size: 85.35826pt x 71.13379pt.
-<dhbw-logo.png, id=32, 130.086pt x 62.8749pt>
+<dhbw-logo.png, id=31, 130.086pt x 62.8749pt>
 File: dhbw-logo.png Graphic file (type png)
 <use dhbw-logo.png>
-Package pdftex.def Info: dhbw-logo.png  used on input line 105.
+Package pdftex.def Info: dhbw-logo.png  used on input line 99.
 (pdftex.def)             Requested size: 113.81102pt x 55.01154pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 106.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 106.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 106.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 106.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 106.
+(Font)              <10.95> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 106.
+(Font)              <8> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 106.
-LaTeX Font Info:    Try loading font information for U+msa on input line 106.
+(Font)              <6> on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 106.
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 118.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 118.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 118.
- [1
+) [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/mj/BA-Dokumentation/lion.png (PNG copy)> </Users/mj/BA-Dokumentation/dhbw-logo.png>] (/Users/mj/BA-Dokumentation/erklaerung.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/mj/BA-Dokumentation/dhbw-logo.png>] (/Users/mj/BA-Dokumentation/erklaerung.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \begin{abstract}
-                       [1]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 140.
+l.129 \begin{abstract}
+                       [1]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 \end{abstract}
+                     [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 ...C {\"a}che (Mikka Jenne)}{42}{section.5.3}
+                                                  % [1
+
+])
+\tf@toc=\write6
+\openout6 = `bericht.toc'.
+
+ [2] (/Users/mj/BA-Dokumentation/bericht.lof)
+\tf@lof=\write7
+\openout7 = `bericht.lof'.
+
+ [3
+
+] (/Users/mj/BA-Dokumentation/bericht.lol)
+\tf@lol=\write8
+\openout8 = `bericht.lol'.
+
+ [4
+
+]
+\openout2 = `abk.aux'.
+
+ (/Users/mj/BA-Dokumentation/abk.tex) [5
+
+
+]
+\openout2 = `1Einleitung/kapitel1.aux'.
+
+ (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
+Kapitel 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--35
+
+ []
+
+[6
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 44.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 44.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--68
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 70--88
+\T1/lmr/m/n/10.95 (+20) Ka-pi-tels.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--88
+
+ []
+
+) [8]
+\openout2 = `2Grundlagen/kapitel2.aux'.
+
+ (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
+Kapitel 2.
+) [9
+
+
+
+]
+\openout2 = `3Technologien/kapitel3.aux'.
+
+ (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.tex
+Kapitel 3.
+Package acronym Info: Label `acro:WPF' newly defined as it shall be overridden
+although it is yet undefined on input line 19.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package acronym Info: Label `acro:XAML' newly defined as it shall be overridden
+although it is yet undefined on input line 42.
+[10
+
+
+
+] (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 59.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 59.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [11] [12]
+<3Technologien/Bilder/mvvmpattern.jpg, id=332, 100.375pt x 153.57375pt>
+File: 3Technologien/Bilder/mvvmpattern.jpg Graphic file (type jpg)
+<use 3Technologien/Bilder/mvvmpattern.jpg>
+Package pdftex.def Info: 3Technologien/Bilder/mvvmpattern.jpg  used on input line 190.
+(pdftex.def)             Requested size: 100.37474pt x 153.57336pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--204
+
+ []
+
+[13] (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 207--215
+
+ []
+
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.224 
+       </Users/mj/BA-Dokumentation/3Technologien/Bilder/mvvmpattern.jpg>]) [15]
+\openout2 = `4Systementwurf/systementwurf.aux'.
+
+ (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.tex
+Kapitel 4.
+<4Systementwurf/Bilder/softwarearchitektur.jpg, id=363, 399.4925pt x 350.30875pt>
+File: 4Systementwurf/Bilder/softwarearchitektur.jpg Graphic file (type jpg)
+<use 4Systementwurf/Bilder/softwarearchitektur.jpg>
+Package pdftex.def Info: 4Systementwurf/Bilder/softwarearchitektur.jpg  used on input line 39.
+(pdftex.def)             Requested size: 399.49152pt x 350.30789pt.
+[16
+
+
+
+]
+<4Systementwurf/Bilder/klassendiagramStartmenu.png, id=370, 418.56375pt x 447.92343pt>
+File: 4Systementwurf/Bilder/klassendiagramStartmenu.png Graphic file (type png)
+<use 4Systementwurf/Bilder/klassendiagramStartmenu.png>
+Package pdftex.def Info: 4Systementwurf/Bilder/klassendiagramStartmenu.png  used on input line 52.
+(pdftex.def)             Requested size: 418.56271pt x 447.92233pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.65     \item  \textit
+                       {MainViewModel} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/softwarearchitektur.jpg>]
+
+LaTeX Warning: Reference `chap:UseCase-Startmenu' on page 18 undefined on input line 78.
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.80 \subsection
+                {Editor} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/klassendiagramStartmenu.png>] [19]
+Package acronym Info: Label `acro:UX' newly defined as it shall be overridden
+although it is yet undefined on input line 112.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
+\T1/lmr/m/n/10.95 (+20) gen.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--121
+
+ []
+
+<4Systementwurf/Bilder/StartMenuViewMockUp.png, id=393, 482.80376pt x 307.1475pt>
+File: 4Systementwurf/Bilder/StartMenuViewMockUp.png Graphic file (type png)
+<use 4Systementwurf/Bilder/StartMenuViewMockUp.png>
+Package pdftex.def Info: 4Systementwurf/Bilder/StartMenuViewMockUp.png  used on input line 197.
+(pdftex.def)             Requested size: 426.80614pt x 284.54753pt.
+<4Systementwurf/Bilder/EditorViewMockUp.png, id=394, 659.96562pt x 417.05812pt>
+File: 4Systementwurf/Bilder/EditorViewMockUp.png Graphic file (type png)
+<use 4Systementwurf/Bilder/EditorViewMockUp.png>
+Package pdftex.def Info: 4Systementwurf/Bilder/EditorViewMockUp.png  used on input line 228.
+(pdftex.def)             Requested size: 426.80746pt x 269.71635pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--248
+
+ []
+
+[20] [21pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.248 \section
+              {Softwarekonzept (Simon Leitl)} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/StartMenuViewMockUp.png>]
+<4Systementwurf/Bilder/EditorView.jpg, id=409, 511.9125pt x 349.305pt>
+File: 4Systementwurf/Bilder/EditorView.jpg Graphic file (type jpg)
+<use 4Systementwurf/Bilder/EditorView.jpg>
+Package pdftex.def Info: 4Systementwurf/Bilder/EditorView.jpg  used on input line 253.
+(pdftex.def)             Requested size: 511.91125pt x 349.30414pt.
+
+Overfull \hbox (58.94336pt too wide) in paragraph at lines 253--254
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--259
+\T1/lmr/m/n/10.95 (+20) er-l‰u-tert. 
+ []
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.259 \subsection
+                 {Zeichenfl√§che} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/EditorViewMockUp.png>] [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.263 \subsection
+                 {LeitungenTools} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/EditorView.jpg>]) [24] (/Users/mj/BA-Dokumentation/5Implementierungen/implementierung.tex
+Kapitel 5.
+<5Implementierungen/Bilder/StartMenuView.png, id=426, 510.90875pt x 294.60063pt>
+File: 5Implementierungen/Bilder/StartMenuView.png Graphic file (type png)
+<use 5Implementierungen/Bilder/StartMenuView.png>
+Package pdftex.def Info: 5Implementierungen/Bilder/StartMenuView.png  used on input line 35.
+(pdftex.def)             Requested size: 426.7905pt x 246.09628pt.
+<5Implementierungen/Bilder/ProjektNameEingabeView.png, id=427, 511.41063pt x 294.60063pt>
+File: 5Implementierungen/Bilder/ProjektNameEingabeView.png Graphic file (type png)
+<use 5Implementierungen/Bilder/ProjektNameEingabeView.png>
+Package pdftex.def Info: 5Implementierungen/Bilder/ProjektNameEingabeView.png  used on input line 50.
+(pdftex.def)             Requested size: 426.78835pt x 245.85353pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--64
+
+ []
+
+[25
+
+
+] [26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 caption={Projektname-View XAML-Code}]
+                                           </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/StartMenuView.png>] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 caption={Projektname-View XAML-Code}]
+                                           </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/ProjektNameEingabeView.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--123
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 126--134
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 168--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--199
+\T1/lmr/m/n/10.95 (+20) zeich-nis soll mit dem Na-men \T1/lmr/m/it/10.95 (+20) Sa-vings \T1/lmr/m/n/10.95 (+20) er-stellt wer-den.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--244
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 253--263
+
+ []
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 266.
+[31]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 287.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 287.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 287.
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--299
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 328--336
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 348.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 348.
+
+LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 348.
+
+<5Implementierungen/Bilder/EditorView.JPG, id=555, 712.6625pt x 478.28688pt>
+File: 5Implementierungen/Bilder/EditorView.JPG Graphic file (type jpg)
+<use 5Implementierungen/Bilder/EditorView.JPG>
+Package pdftex.def Info: 5Implementierungen/Bilder/EditorView.JPG  used on input line 369.
+(pdftex.def)             Requested size: 423.9579pt x 284.52948pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--388
+
+ []
+
+[33] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.388 ...on={UserControl-Referenz Code-Auschnitt}]
+                                                   </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/EditorView.JPG>] [35]
+<5Implementierungen/Bilder/ClassDiagram1.jpg, id=611, 564.1075pt x 259.97125pt>
+File: 5Implementierungen/Bilder/ClassDiagram1.jpg Graphic file (type jpg)
+<use 5Implementierungen/Bilder/ClassDiagram1.jpg>
+Package pdftex.def Info: 5Implementierungen/Bilder/ClassDiagram1.jpg  used on input line 434.
+(pdftex.def)             Requested size: 501.88193pt x 193.72443pt.
+
+Overfull \hbox (48.91403pt too wide) in paragraph at lines 434--435
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--448
+\T1/lmr/m/n/10.95 (+20) l‰u-tert. 
+ []
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.448     caption={KomponentenModel}]
+                                      </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/ClassDiagram1.jpg>] [37]
+Overfull \hbox (3.03674pt too wide) in paragraph at lines 489--491
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 553--563
+\T1/lmr/m/n/10.95 (+20) ab-ru-fen.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--563
+
+ []
+
+[39]
+Overfull \hbox (3.03674pt too wide) in paragraph at lines 568--569
+[][][][][][][][][][][][][][][] 
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 629--634
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 636--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--684
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 690--699
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--738
+
+ []
+
+[43]) (/Users/mj/BA-Dokumentation/6Fazit/fazit.tex [44]
+Kapitel 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
+
+ []
+
+) [45
+
+] (/Users/mj/BA-Dokumentation/bericht.ind) [46]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 183.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1032,82 +1523,41 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.145 \end{abstract}
-                     [1] (/Users/mj/BA-Dokumentation/bericht.toc)
-\tf@toc=\write6
-\openout6 = `bericht.toc'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.149 \listoffigures
-                                 % Liste der Abbildungen [1
-
-] (/Users/mj/BA-Dokumentation/bericht.lof)
-\tf@lof=\write7
-\openout7 = `bericht.lof'.
-
- [2
-
-] (/Users/mj/BA-Dokumentation/bericht.lot)
-\tf@lot=\write8
-\openout8 = `bericht.lot'.
-
- [3
-
-] (/Users/mj/BA-Dokumentation/bericht.lol)
-\tf@lol=\write9
-\openout9 = `bericht.lol'.
-
- [4
-
-] (/Users/mj/BA-Dokumentation/bericht.for)
-\tf@for=\write10
-\openout10 = `bericht.for'.
-
- [5
+ [47
 
 ]
-\openout2 = `abk.aux'.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+ (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 193.
 
- (/Users/mj/BA-Dokumentation/abk.tex) [6
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-] (/Users/mj/BA-Dokumentation/bericht.ind)
+LaTeX Warning: There were undefined references.
 
-LaTeX Warning: Empty bibliography on input line 186.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
-(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux)
-No file 1Einleitung/kapitel1.aux.
-No file 2Grundlagen/kapitel2.aux.
-No file 3Konzeption/kapitel3.aux.
-No file 4Umsetzung/kapitel4.aux.
-No file 5ErgebnisAusblick/kapitel5.aux.
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 197.
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'bericht.run.xml'.
 \openout1 = `bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29044 strings out of 492616
- 534851 string characters out of 6129481
- 1022835 words of memory out of 5000000
- 32344 multiletter control sequences out of 15000+600000
- 67803 words of font info for 74 fonts, out of 8000000 for 9000
+ 30852 strings out of 492616
+ 563377 string characters out of 6129481
+ 1065407 words of memory out of 5000000
+ 33484 multiletter control sequences out of 15000+600000
+ 98158 words of font info for 156 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (9 pages, 304671 bytes).
+ 69i,7n,83p,1179b,3346s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (50 pages, 839044 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 16023 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1117 PDF objects out of 1200 (max. 8388607)
+ 1007 compressed objects within 11 object streams
+ 461 named destinations out of 1000 (max. 500000)
+ 31228 words of extra memory for PDF output out of 35830 (max. 10000000)
 
