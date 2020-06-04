@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 JUN 2020 16:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 JUN 2020 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,26 +855,7 @@ Package biblatex Warning: Attempt to redefine deprecated '\mkbibnamelast'.
 (biblatex)                Please use '\mkbibnamefamily' instead.
 (biblatex)                Using '\mkbibnamefamily'.
 
-(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.aux)
-
-LaTeX Warning: Label `ProjektName' multiply defined.
-
-
-LaTeX Warning: Label `usercontrolsnippet' multiply defined.
-
-
-LaTeX Warning: Label `startmenuview' multiply defined.
-
-
-LaTeX Warning: Label `KomponentenModel' multiply defined.
-
-
-LaTeX Warning: Label `komponentenToolsView' multiply defined.
-
-
-LaTeX Warning: Label `usercontrolsnippet' multiply defined.
-
-)
+(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
 \openout1 = `bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -1017,32 +998,32 @@ l.129 \begin{abstract}
 <to be read again> 
                    \relax 
 l.141 \end{abstract}
-                     [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.70 ...C {\"a}che (Mikka Jenne)}{42}{section.5.3}
-                                                  % [1
-
-])
+                     [1] (/Users/mj/BA-Dokumentation/bericht.toc)
 \tf@toc=\write6
 \openout6 = `bericht.toc'.
 
- [2] (/Users/mj/BA-Dokumentation/bericht.lof)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \listoffigures
+                                 % Liste der Abbildungen [1
+
+] (/Users/mj/BA-Dokumentation/bericht.lof)
 \tf@lof=\write7
 \openout7 = `bericht.lof'.
 
- [3
+ [2
 
 ] (/Users/mj/BA-Dokumentation/bericht.lol)
 \tf@lol=\write8
 \openout8 = `bericht.lol'.
 
- [4
+ [3
 
 ]
 \openout2 = `abk.aux'.
 
- (/Users/mj/BA-Dokumentation/abk.tex) [5
+ (/Users/mj/BA-Dokumentation/abk.tex) [4
 
 
 ]
@@ -1050,514 +1031,80 @@ l.70 ...C {\"a}che (Mikka Jenne)}{42}{section.5.3}
 
  (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 Kapitel 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--35
-
- []
-
-[6
+[5
 
 
 
-]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 44.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 44.
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--68
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 70--88
-\T1/lmr/m/n/10.95 (+20) Ka-pi-tels.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--88
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--88
-
- []
-
-) [8]
+]) [6]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
+) [7
+
+
+
+]
+\openout2 = `3Konzeption/kapitel3.aux'.
+
+ (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
+Kapitel 3.
+) [8
+
+
+
+]
+\openout2 = `4Umsetzung/kapitel4.aux'.
+
+ (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
+Kapitel 4.
 ) [9
 
 
 
 ]
-\openout2 = `3Technologien/kapitel3.aux'.
+\openout2 = `5Fazit/fazit.aux'.
 
- (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.tex
-Kapitel 3.
-Package acronym Info: Label `acro:WPF' newly defined as it shall be overridden
-although it is yet undefined on input line 19.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package acronym Info: Label `acro:XAML' newly defined as it shall be overridden
-although it is yet undefined on input line 42.
+ (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
+Kapitel 5.
 [10
 
 
 
-] (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 59.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 59.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [11] [12]
-<3Technologien/Bilder/mvvmpattern.jpg, id=332, 100.375pt x 153.57375pt>
-File: 3Technologien/Bilder/mvvmpattern.jpg Graphic file (type jpg)
-<use 3Technologien/Bilder/mvvmpattern.jpg>
-Package pdftex.def Info: 3Technologien/Bilder/mvvmpattern.jpg  used on input line 190.
-(pdftex.def)             Requested size: 100.37474pt x 153.57336pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--204
-
- []
-
-[13] (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-)
-Underfull \hbox (badness 10000) in paragraph at lines 207--215
-
- []
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.224 
-       </Users/mj/BA-Dokumentation/3Technologien/Bilder/mvvmpattern.jpg>]) [15]
-\openout2 = `4Systementwurf/systementwurf.aux'.
-
- (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.tex
-Kapitel 4.
-<4Systementwurf/Bilder/softwarearchitektur.jpg, id=363, 399.4925pt x 350.30875pt>
-File: 4Systementwurf/Bilder/softwarearchitektur.jpg Graphic file (type jpg)
-<use 4Systementwurf/Bilder/softwarearchitektur.jpg>
-Package pdftex.def Info: 4Systementwurf/Bilder/softwarearchitektur.jpg  used on input line 39.
-(pdftex.def)             Requested size: 399.49152pt x 350.30789pt.
-[16
-
-
-
 ]
-<4Systementwurf/Bilder/klassendiagramStartmenu.png, id=370, 418.56375pt x 447.92343pt>
-File: 4Systementwurf/Bilder/klassendiagramStartmenu.png Graphic file (type png)
-<use 4Systementwurf/Bilder/klassendiagramStartmenu.png>
-Package pdftex.def Info: 4Systementwurf/Bilder/klassendiagramStartmenu.png  used on input line 52.
-(pdftex.def)             Requested size: 418.56271pt x 447.92233pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.65     \item  \textit
-                       {MainViewModel} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/softwarearchitektur.jpg>]
-
-LaTeX Warning: Reference `chap:UseCase-Startmenu' on page 18 undefined on input line 78.
-
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.80 \subsection
-                {Editor} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/klassendiagramStartmenu.png>] [19]
-Package acronym Info: Label `acro:UX' newly defined as it shall be overridden
-although it is yet undefined on input line 112.
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--121
-\T1/lmr/m/n/10.95 (+20) gen.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--121
-
- []
-
-<4Systementwurf/Bilder/StartMenuViewMockUp.png, id=393, 482.80376pt x 307.1475pt>
-File: 4Systementwurf/Bilder/StartMenuViewMockUp.png Graphic file (type png)
-<use 4Systementwurf/Bilder/StartMenuViewMockUp.png>
-Package pdftex.def Info: 4Systementwurf/Bilder/StartMenuViewMockUp.png  used on input line 197.
-(pdftex.def)             Requested size: 426.80614pt x 284.54753pt.
-<4Systementwurf/Bilder/EditorViewMockUp.png, id=394, 659.96562pt x 417.05812pt>
-File: 4Systementwurf/Bilder/EditorViewMockUp.png Graphic file (type png)
-<use 4Systementwurf/Bilder/EditorViewMockUp.png>
-Package pdftex.def Info: 4Systementwurf/Bilder/EditorViewMockUp.png  used on input line 228.
-(pdftex.def)             Requested size: 426.80746pt x 269.71635pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--248
-
- []
-
-[20] [21pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.248 \section
-              {Softwarekonzept (Simon Leitl)} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/StartMenuViewMockUp.png>]
-<4Systementwurf/Bilder/EditorView.jpg, id=409, 511.9125pt x 349.305pt>
-File: 4Systementwurf/Bilder/EditorView.jpg Graphic file (type jpg)
-<use 4Systementwurf/Bilder/EditorView.jpg>
-Package pdftex.def Info: 4Systementwurf/Bilder/EditorView.jpg  used on input line 253.
-(pdftex.def)             Requested size: 511.91125pt x 349.30414pt.
-
-Overfull \hbox (58.94336pt too wide) in paragraph at lines 253--254
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--259
-\T1/lmr/m/n/10.95 (+20) er-l‰u-tert. 
- []
-
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.259 \subsection
-                 {Zeichenfl√§che} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/EditorViewMockUp.png>] [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.263 \subsection
-                 {LeitungenTools} </Users/mj/BA-Dokumentation/4Systementwurf/Bilder/EditorView.jpg>]) [24] (/Users/mj/BA-Dokumentation/5Implementierungen/implementierung.tex
-Kapitel 5.
-<5Implementierungen/Bilder/StartMenuView.png, id=426, 510.90875pt x 294.60063pt>
-File: 5Implementierungen/Bilder/StartMenuView.png Graphic file (type png)
-<use 5Implementierungen/Bilder/StartMenuView.png>
-Package pdftex.def Info: 5Implementierungen/Bilder/StartMenuView.png  used on input line 35.
-(pdftex.def)             Requested size: 426.7905pt x 246.09628pt.
-<5Implementierungen/Bilder/ProjektNameEingabeView.png, id=427, 511.41063pt x 294.60063pt>
-File: 5Implementierungen/Bilder/ProjektNameEingabeView.png Graphic file (type png)
-<use 5Implementierungen/Bilder/ProjektNameEingabeView.png>
-Package pdftex.def Info: 5Implementierungen/Bilder/ProjektNameEingabeView.png  used on input line 50.
-(pdftex.def)             Requested size: 426.78835pt x 245.85353pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--64
-
- []
-
-[25
-
-
-] [26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.64 caption={Projektname-View XAML-Code}]
-                                           </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/StartMenuView.png>] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.64 caption={Projektname-View XAML-Code}]
-                                           </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/ProjektNameEingabeView.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--123
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 126--134
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 168--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--199
-\T1/lmr/m/n/10.95 (+20) zeich-nis soll mit dem Na-men \T1/lmr/m/it/10.95 (+20) Sa-vings \T1/lmr/m/n/10.95 (+20) er-stellt wer-den.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--244
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 253--263
-
- []
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 266.
-[31]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 287.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 287.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 287.
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--299
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 328--336
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 348.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 348.
-
-LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 348.
-
-<5Implementierungen/Bilder/EditorView.JPG, id=555, 712.6625pt x 478.28688pt>
-File: 5Implementierungen/Bilder/EditorView.JPG Graphic file (type jpg)
-<use 5Implementierungen/Bilder/EditorView.JPG>
-Package pdftex.def Info: 5Implementierungen/Bilder/EditorView.JPG  used on input line 369.
-(pdftex.def)             Requested size: 423.9579pt x 284.52948pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--388
-
- []
-
-[33] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.388 ...on={UserControl-Referenz Code-Auschnitt}]
-                                                   </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/EditorView.JPG>] [35]
-<5Implementierungen/Bilder/ClassDiagram1.jpg, id=611, 564.1075pt x 259.97125pt>
-File: 5Implementierungen/Bilder/ClassDiagram1.jpg Graphic file (type jpg)
-<use 5Implementierungen/Bilder/ClassDiagram1.jpg>
-Package pdftex.def Info: 5Implementierungen/Bilder/ClassDiagram1.jpg  used on input line 434.
-(pdftex.def)             Requested size: 501.88193pt x 193.72443pt.
-
-Overfull \hbox (48.91403pt too wide) in paragraph at lines 434--435
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--448
-\T1/lmr/m/n/10.95 (+20) l‰u-tert. 
- []
-
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.448     caption={KomponentenModel}]
-                                      </Users/mj/BA-Dokumentation/5Implementierungen/Bilder/ClassDiagram1.jpg>] [37]
-Overfull \hbox (3.03674pt too wide) in paragraph at lines 489--491
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 553--563
-\T1/lmr/m/n/10.95 (+20) ab-ru-fen.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 553--563
-
- []
-
-[39]
-Overfull \hbox (3.03674pt too wide) in paragraph at lines 568--569
-[][][][][][][][][][][][][][][] 
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 629--634
-
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 636--651
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 673--684
-
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 690--699
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--738
-
- []
-
-[43]) (/Users/mj/BA-Dokumentation/6Fazit/fazit.tex [44]
 Kapitel 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
-
- []
-
-) [45
-
-] (/Users/mj/BA-Dokumentation/bericht.ind) [46]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 183.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [47
+[11
 
 ]
+Kapitel 7.
+) [12
+
+] (/Users/mj/BA-Dokumentation/bericht.ind)
+
+LaTeX Warning: Empty bibliography on input line 183.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
- (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Technologien/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Systementwurf/systementwurf.aux))
+(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 193.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package logreq Info: Writing requests to 'bericht.run.xml'.
 \openout1 = `bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30852 strings out of 492616
- 563377 string characters out of 6129481
- 1065407 words of memory out of 5000000
- 33484 multiletter control sequences out of 15000+600000
- 98158 words of font info for 156 fonts, out of 8000000 for 9000
+ 29015 strings out of 492616
+ 534986 string characters out of 6129481
+ 1022703 words of memory out of 5000000
+ 32279 multiletter control sequences out of 15000+600000
+ 54121 words of font info for 59 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,7n,83p,1179b,3346s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (50 pages, 839044 bytes).
+ 69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb>
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (15 pages, 237025 bytes).
 PDF statistics:
- 1117 PDF objects out of 1200 (max. 8388607)
- 1007 compressed objects within 11 object streams
- 461 named destinations out of 1000 (max. 500000)
- 31228 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 156 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 14050 words of extra memory for PDF output out of 14400 (max. 10000000)
 
