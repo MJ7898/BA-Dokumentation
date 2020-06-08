@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 JUN 2020 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  8 JUN 2020 11:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1031,16 +1031,16 @@ l.145 \listoffigures
 
  (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 Kapitel 1.
-[5
+) [5
 
 
 
-]) [6]
+]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
-) [7
+) [6
 
 
 
@@ -1049,7 +1049,7 @@ Kapitel 2.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-) [8
+) [7
 
 
 
@@ -1058,7 +1058,7 @@ Kapitel 3.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
-) [9
+) [8
 
 
 
@@ -1067,17 +1067,17 @@ Kapitel 4.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
-[10
+[9
 
 
 
 ]
 Kapitel 6.
-[11
+[10
 
 ]
 Kapitel 7.
-) [12
+) [11
 
 ] (/Users/mj/BA-Dokumentation/bericht.ind)
 
@@ -1093,18 +1093,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29015 strings out of 492616
- 534986 string characters out of 6129481
- 1022703 words of memory out of 5000000
- 32279 multiletter control sequences out of 15000+600000
- 54121 words of font info for 59 fonts, out of 8000000 for 9000
+ 29043 strings out of 492616
+ 535204 string characters out of 6129481
+ 1026703 words of memory out of 5000000
+ 32294 multiletter control sequences out of 15000+600000
+ 50860 words of font info for 56 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (15 pages, 237025 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (14 pages, 217488 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 14050 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 12154 words of extra memory for PDF output out of 14400 (max. 10000000)
 

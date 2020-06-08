@@ -388,7 +388,6 @@ INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
@@ -425,4 +424,3 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb
