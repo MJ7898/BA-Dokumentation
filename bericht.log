@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  15 JUN 2020 09:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  15 JUN 2020 09:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -995,7 +995,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/mj/BA-Dokumentation/cjtFirmenLogo.png> </Users/mj/BA-Dokumentation/dhbw-logo.png>] (/Users/mj/BA-Dokumentation/erklaerung.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/mj/BA-Dokumentation/cjtFirmenLogo.png> </Users/mj/BA-Dokumentation/dhbw-logo.png>] (/Users/mj/BA-Dokumentation/erklaerung.tex
+Underfull \hbox (badness 1067) in paragraph at lines 21--30
+\T1/lmr/m/n/10.95 (+20) Ich ver-si-che-re hier-mit, dass ich mei-ne Ba-che-lorr-ar-beit-mit dem The-ma: ^^R  Kon-zep-ti-
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 21--30
+\T1/lmr/m/n/10.95 (+20) on und Um-set-zung ei-nes Aug-men-ted Rea-li-ty ba-sier-ten As-sis-tenz-sys-tems zur Un-
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 21--30
+\T1/lmr/m/n/10.95 (+20) an-ge-ge-be-nen Quel-len und Hilfs-mit-tel be-nutzt ha-be. Ich ver-si-che-re zu-dem, dass
+ []
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.130 \begin{abstract}
@@ -1098,15 +1113,15 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29063 strings out of 492616
- 535500 string characters out of 6129481
+ 29061 strings out of 492616
+ 535468 string characters out of 6129481
  1027814 words of memory out of 5000000
- 32307 multiletter control sequences out of 15000+600000
- 54038 words of font info for 58 fonts, out of 8000000 for 9000
+ 32303 multiletter control sequences out of 15000+600000
+ 54121 words of font info for 59 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (15 pages, 248109 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (15 pages, 248391 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  272 compressed objects within 3 object streams
