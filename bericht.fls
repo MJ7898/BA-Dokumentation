@@ -325,6 +325,9 @@ OUTPUT /Users/mj/BA-Dokumentation/bericht-blx.bib
 INPUT /Users/mj/BA-Dokumentation/bericht.bbl
 INPUT /Users/mj/BA-Dokumentation/bericht.bbl
 INPUT /Users/mj/BA-Dokumentation/bericht.bbl
+INPUT /Users/mj/BA-Dokumentation/cjtFirmenLogo.png
+INPUT /Users/mj/BA-Dokumentation/cjtFirmenLogo.png
+INPUT /Users/mj/BA-Dokumentation/cjtFirmenLogo.png
 INPUT /Users/mj/BA-Dokumentation/dhbw-logo.png
 INPUT /Users/mj/BA-Dokumentation/dhbw-logo.png
 INPUT /Users/mj/BA-Dokumentation/dhbw-logo.png
@@ -374,6 +377,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /Users/mj/BA-Dokumentation/bericht.toc
 INPUT /Users/mj/BA-Dokumentation/bericht.toc
 OUTPUT /Users/mj/BA-Dokumentation/bericht.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
 OUTPUT /Users/mj/BA-Dokumentation/bericht.lof
@@ -424,3 +428,4 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb
