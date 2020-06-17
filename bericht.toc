@@ -21,11 +21,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}SLAM - Simultanious Localization And Mapping}{7}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Bildverarbeitung}{7}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.2.1}Localization}{7}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Faltungsmatrix}{7}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Mapping}{7}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Hough-Transformation}{7}{subsection.2.3.2}% 
+\contentsline {section}{\numberline {2.3}Sceneform SDK}{7}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}OpenGL}{7}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
@@ -35,21 +35,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Softwarearchitektur}{7}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Design Pattern}{7}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.1}MVVM}{7}{subsection.2.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Technologien / Konzeption}{8}{chapter.3}% 
+\contentsline {subsection}{\numberline {2.5.2}Android Architecture Components}{7}{subsection.2.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Modulare Software Architektur}{7}{section.2.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Datenmodellierung}{7}{section.2.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Konzeption}{8}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Arbeitsumgebung}{8}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Objekterkennung}{8}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Konzeption der Software Architektur}{8}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Architekturkonzept}{8}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Auswahl der Technologien}{8}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Softwarekonzept}{8}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Google ARCore}{8}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.5}Auswahl der Technologien}{8}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}SQLite}{8}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.5.1}Google ARCore}{8}{subsection.3.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}SQLite}{8}{subsection.3.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Android Jetpack}{8}{subsection.3.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Datenmodell}{8}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Umsetzung}{9}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
@@ -59,8 +71,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Allgemeine Entwicklung}{9}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Ergebnis}{10}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Fazit}{10}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{11}{chapter.6}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{12}{chapter.7}% 
+\contentsline {chapter}{\numberline {6}Ausblick}{11}{chapter.6}% 
