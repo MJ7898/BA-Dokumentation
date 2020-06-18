@@ -27,6 +27,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Sceneform SDK}{7}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Physically Based Renderer PBR}{7}{subsection.2.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Filament}{7}{subsection.2.3.2}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}OpenGL}{7}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Projektionen}{7}{subsection.2.4.1}% 
@@ -45,31 +49,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Konzeption}{8}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arbeitsumgebung}{8}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{8}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Objekterkennung}{8}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{8}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Architekturkonzept}{8}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{8}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Softwarekonzept}{8}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Architekturkonzept}{8}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Auswahl der Technologien}{8}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{8}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Google ARCore}{8}{subsection.3.5.1}% 
+\contentsline {section}{\numberline {3.6}Auswahl der Technologien}{8}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}SQLite}{8}{subsection.3.5.2}% 
+\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{8}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Android Jetpack}{8}{subsection.3.5.3}% 
+\contentsline {subsection}{\numberline {3.6.2}SQLite}{8}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Datenmodell}{8}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.3}Android Jetpack}{8}{subsection.3.6.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Datenmodell}{8}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Umsetzung}{9}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Umgebungserkennung}{9}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Allgemeine Entwicklung}{9}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{9}{subsection.4.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{9}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{9}{section.4.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Allgemeine Entwicklung}{9}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Fazit}{10}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
