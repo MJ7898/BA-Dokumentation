@@ -293,6 +293,8 @@ INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux
 INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux
@@ -381,6 +383,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
 OUTPUT /Users/mj/BA-Dokumentation/bericht.lof
+INPUT /Users/mj/BA-Dokumentation/bericht.lot
+INPUT /Users/mj/BA-Dokumentation/bericht.lot
+OUTPUT /Users/mj/BA-Dokumentation/bericht.lot
 INPUT /Users/mj/BA-Dokumentation/bericht.lol
 INPUT /Users/mj/BA-Dokumentation/bericht.lol
 OUTPUT /Users/mj/BA-Dokumentation/bericht.lol
@@ -395,12 +400,18 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
+OUTPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
 OUTPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 OUTPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
+INPUT /Users/mj/BA-Dokumentation/bericht.tdo
+INPUT /Users/mj/BA-Dokumentation/bericht.tdo
+OUTPUT /Users/mj/BA-Dokumentation/bericht.tdo
 OUTPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.aux
 INPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 INPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.tex
@@ -413,6 +424,8 @@ INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux
 INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
+INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux
 INPUT /Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux

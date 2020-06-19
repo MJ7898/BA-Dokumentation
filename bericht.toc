@@ -1,84 +1,90 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Einleitung}{6}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Einleitung}{7}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Motivation}{6}{section.1.1}% 
+\contentsline {section}{\numberline {1.1}Motivation}{7}{section.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}cjt Systemsoftware AG}{6}{section.1.2}% 
+\contentsline {section}{\numberline {1.2}cjt Systemsoftware AG}{7}{section.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Aufgabenstellung}{6}{section.1.3}% 
+\contentsline {section}{\numberline {1.3}Aufgabenstellung}{7}{section.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{6}{section.1.4}% 
+\contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{7}{section.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Grundlagen}{7}{chapter.2}% 
+\contentsline {section}{\numberline {1.5}Stand der Technik}{7}{section.1.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Augmented Reality}{7}{section.2.1}% 
+\contentsline {chapter}{\numberline {2}Grundlagen}{8}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Virtual Reality, Augmented Reality und Mixed Reality}{7}{subsection.2.1.1}% 
+\contentsline {section}{\numberline {2.1}Augmented Reality}{8}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Varianten der Augmented Reality}{7}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.1}Virtual Reality, Augmented Reality und Mixed Reality}{8}{subsection.2.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}SLAM - Simultanious Localization And Mapping}{7}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.1.2}Varianten der Augmented Reality}{8}{subsection.2.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Localization}{7}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.1.3}Augmented Reality in der Industrie}{8}{subsection.2.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Mapping}{7}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.2}SLAM - Simultanious Localization And Mapping}{8}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Sceneform SDK}{7}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.2.1}Localization}{8}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Physically Based Renderer PBR}{7}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Mapping}{8}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Filament}{7}{subsection.2.3.2}% 
+\contentsline {section}{\numberline {2.3}Technologien}{8}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}OpenGL}{7}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.3.1}Google ARCore}{8}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Projektionen}{7}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Android Jetpack}{8}{subsection.2.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Shader}{7}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Sceneform SDK}{8}{subsection.2.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Softwarearchitektur}{7}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.3.4}SQLite}{8}{subsection.2.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}MVVM}{7}{subsection.2.5.1}% 
+\contentsline {section}{\numberline {2.4}OpenGL}{9}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Android Architecture Components}{7}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.4.1}Projektionen}{9}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Modulare Software Architektur}{7}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.4.2}Shader}{9}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Datenmodellierung}{7}{section.2.7}% 
+\contentsline {section}{\numberline {2.5}Softwarearchitektur}{9}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzeption}{8}{chapter.3}% 
+\contentsline {subsection}{\numberline {2.5.1}MVVM}{9}{subsection.2.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{8}{section.3.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Android Architecture Components}{9}{subsection.2.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{8}{section.3.2}% 
+\contentsline {section}{\numberline {2.6}Modulare Software Architektur}{9}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{8}{section.3.3}% 
+\contentsline {section}{\numberline {2.7}Datenmodellierung}{9}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Architekturkonzept}{8}{section.3.4}% 
+\contentsline {chapter}{\numberline {3}Konzeption}{10}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Softwarekonzept}{8}{section.3.5}% 
+\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{10}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl der Technologien}{8}{section.3.6}% 
+\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{10}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{8}{subsection.3.6.1}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{10}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}SQLite}{8}{subsection.3.6.2}% 
+\contentsline {section}{\numberline {3.4}Architekturkonzept}{10}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.3}Android Jetpack}{8}{subsection.3.6.3}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{10}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Datenmodell}{8}{section.3.7}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{10}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{9}{chapter.4}% 
+\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{10}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Allgemeine Entwicklung}{9}{section.4.1}% 
+\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{10}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{9}{subsection.4.1.1}% 
+\contentsline {section}{\numberline {3.7}Datenmodell}{10}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{9}{subsection.4.1.2}% 
+\contentsline {chapter}{\numberline {4}Umsetzung}{11}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{9}{section.4.2}% 
+\contentsline {section}{\numberline {4.1}Allgemeine Entwicklung}{11}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Fazit}{10}{chapter.5}% 
+\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{11}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Ausblick}{11}{chapter.6}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{11}{subsection.4.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{11}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit}{13}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Ausblick}{14}{chapter.6}% 
