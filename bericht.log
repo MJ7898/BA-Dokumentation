@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  23 JUN 2020 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  23 JUN 2020 17:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1061,12 +1061,17 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--26
+Underfull \hbox (badness 10000) in paragraph at lines 13--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--44
+Underfull \hbox (badness 10000) in paragraph at lines 13--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--50
 
  []
 
@@ -1157,7 +1162,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (19 pages, 298577 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (19 pages, 298920 bytes).
 PDF statistics:
  415 PDF objects out of 1000 (max. 8388607)
  362 compressed objects within 4 object streams
