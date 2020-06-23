@@ -16,5 +16,27 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{dante.2010a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={Dante},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{howpublished}{\url{http://www.dante.de}}
+    \field{title}{Webseite der \emph{Deutschsprachige Anwendervereinigung TeX
+  e.V.}}
+    \field{month}{01}
+    \field{year}{2010}
+  \endentry
+\enddatalist
 \endinput
