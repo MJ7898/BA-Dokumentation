@@ -51,16 +51,36 @@
     \strng{namehash}{EL1}
     \strng{fullhash}{EL1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
     \field{labelyear}{2020}
     \field{labeldatesource}{year}
     \field{sortinit}{E}
     \field{sortinithash}{E}
-  \field{howpublished}{\url{https://www.businessinsider.de/international/apple-q1-earnings-call-tim-cook-augmented-reality-ar-2020-1/?r=US&IR=T},}
-    \field{title}{Tim Cook keeps talking about why this one technology will
-  ‚pervade‘ our lives in the future}
+  \field{howpublished}{\url{https://www.businessinsider.de/international/apple-q1-earnings-call-tim-cook-augmented-reality-ar-2020-1/?r=US&IR=T}}
+    \field{month}{01}
     \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{industrie40.2019f}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KM}{%
+         family={Krauß},
+         familyi={K\bibinitperiod},
+         given={Melanie},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KM1}
+    \strng{fullhash}{KM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+  \field{howpublished}{\url{https://www.maschinenmarkt.vogel.de/europa-baut-fuehrung-bei-industrie-40-weiter-aus-a-801681/}}
+    \field{title}{Europa baut Führung bei Industrie 4.0 weiter aus}
+    \field{month}{02}
+    \field{year}{2019}
   \endentry
 
   \entry{timcook2016.2016o}{misc}{}
@@ -80,11 +100,61 @@
     \field{labeldatesource}{year}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-  \field{howpublished}{\url{https://www.businessinsider.com/apple-ceo-tim-cook-explains-augmented-reality-2016-10?r=DE&IR=T},}
+  \field{howpublished}{\url{https://www.businessinsider.com/apple-ceo-tim-cook-explains-augmented-reality-2016-10?r=DE&IR=T}}
     \field{title}{Apple CEO Tim Cook thinks augmented reality will be as
   important as 'eating three meals a day'}
+    \field{month}{10}
     \field{year}{2016}
-    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{studieptc.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={Mundt},
+         familyi={M\bibinitperiod},
+         given={Elisa},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{https://www.industry-of-things.de/vr-und-ar-werden-realitaet-a-898199/}
+    \field{title}{Marktstudie zu Augmented und Virtual Reality - Einblicke in
+  die Marktreife immersiver Technologien}
+    \field{month}{01}
+    \field{year}{2020}
+  \endentry
+
+  \entry{industrie40ar.2019n}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=uSHCB}{%
+         prefix={und},
+         prefixi={u\bibinitperiod},
+         family={Sebastian\bibnamedelima Human},
+         familyi={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={Christopher\bibnamedelima Bouveret},
+         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SHCBu1}
+    \strng{fullhash}{SHCBu1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://www.industry-of-things.de/augmented-reality-in-der-industrie-herausforderungen-potenziale-chancen-a-882695/}}
+    \field{title}{Augmented Reality in der Industrie: Herausforderungen,
+  Potenziale, Chancen}
+    \field{month}{11}
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

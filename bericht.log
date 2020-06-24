@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUN 2020 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUN 2020 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -943,18 +943,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bericht.bbl' found.
-(/Users/mj/BA-Dokumentation/bericht.bbl
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'timcook.2020j':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'timcook2016.2016o':
-(biblatex)                - Invalid format of field 'month'.
-
-)
+(/Users/mj/BA-Dokumentation/bericht.bbl)
 Package biblatex Info: Reference section=0 on input line 92.
 Package biblatex Info: Reference segment=0 on input line 92.
 \c@lstlisting=\count348
@@ -1060,7 +1049,11 @@ l.74 ...ne {3.6.2}ARToolKit}{12}{subsection.3.6.2}
 ]
 \openout2 = `abk.aux'.
 
- (/Users/mj/BA-Dokumentation/abk.tex) [6
+ (/Users/mj/BA-Dokumentation/abk.tex
+Package acronym Info: Acronym IoT used in text but not spelled out in full in text on input line 17.
+Package acronym Info: Acronym KIT used in text but not spelled out in full in text on input line 18.
+Package acronym Info: Acronym Fraunhofer IOSB used in text but not spelled out in full in text on input line 19.
+) [6
 
 
 ]
@@ -1093,16 +1086,31 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--60
+Underfull \hbox (badness 10000) in paragraph at lines 49--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--75
+Underfull \hbox (badness 10000) in paragraph at lines 49--81
 
  []
 
-) [8] [9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--81
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
+
+ []
+
+) [9]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
@@ -1177,18 +1185,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29439 strings out of 492616
- 542395 string characters out of 6129481
+ 29498 strings out of 492616
+ 543388 string characters out of 6129481
  1028814 words of memory out of 5000000
- 32588 multiletter control sequences out of 15000+600000
- 63696 words of font info for 85 fonts, out of 8000000 for 9000
+ 32613 multiletter control sequences out of 15000+600000
+ 65118 words of font info for 99 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (20 pages, 312275 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (20 pages, 322770 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 78 named destinations out of 1000 (max. 500000)
  18927 words of extra memory for PDF output out of 20736 (max. 10000000)
 

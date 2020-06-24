@@ -25,47 +25,50 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bericht-blx.bib
 Database file #2: bericht.bib
+Warning--I'm ignoring studieptc.2020j's extra "howpublished" field
+--line 98 of file bericht.bib
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 4 entries,
+You've used 7 entries,
             6304 wiz_defined-function locations,
-            1208 strings with 9531 characters,
-and the built_in function-call counts, 11828 in all, are:
-= -- 573
-> -- 310
-< -- 82
-+ -- 201
-- -- 99
-* -- 770
-:= -- 1159
+            1220 strings with 10472 characters,
+and the built_in function-call counts, 25463 in all, are:
+= -- 1400
+> -- 595
+< -- 175
++ -- 426
+- -- 183
+* -- 1781
+:= -- 2407
 add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 30
-chr.to.int$ -- 42
-cite$ -- 6
-duplicate$ -- 1275
-empty$ -- 1221
-format.name$ -- 140
-if$ -- 2535
+call.type$ -- 7
+change.case$ -- 59
+chr.to.int$ -- 70
+cite$ -- 12
+duplicate$ -- 2685
+empty$ -- 2637
+format.name$ -- 282
+if$ -- 5412
 int.to.chr$ -- 0
-int.to.str$ -- 6
+int.to.str$ -- 12
 missing$ -- 0
-newline$ -- 87
-num.names$ -- 123
-pop$ -- 1037
+newline$ -- 156
+num.names$ -- 246
+pop$ -- 2041
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 71
 quote$ -- 0
-skip$ -- 504
+skip$ -- 956
 stack$ -- 0
-substring$ -- 714
-swap$ -- 391
-text.length$ -- 93
-text.prefix$ -- 3
+substring$ -- 2149
+swap$ -- 793
+text.length$ -- 178
+text.prefix$ -- 6
 top$ -- 1
-type$ -- 124
+type$ -- 226
 warning$ -- 0
-while$ -- 177
+while$ -- 346
 width$ -- 0
-write$ -- 84
+write$ -- 150
+(There was 1 warning)
