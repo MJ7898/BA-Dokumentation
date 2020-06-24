@@ -38,5 +38,53 @@
     \field{month}{10}
     \field{year}{2019}
   \endentry
+
+  \entry{timcook.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=EL}{%
+         family={Eadicicco},
+         familyi={E\bibinitperiod},
+         given={Lisa},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EL1}
+    \strng{fullhash}{EL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://www.businessinsider.de/international/apple-q1-earnings-call-tim-cook-augmented-reality-ar-2020-1/?r=US&IR=T},}
+    \field{title}{Tim Cook keeps talking about why this one technology will
+  ‚pervade‘ our lives in the future}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{timcook2016.2016o}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LK}{%
+         family={Leswing},
+         familyi={L\bibinitperiod},
+         given={Kif},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LK1}
+    \strng{fullhash}{LK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+  \field{howpublished}{\url{https://www.businessinsider.com/apple-ceo-tim-cook-explains-augmented-reality-2016-10?r=DE&IR=T},}
+    \field{title}{Apple CEO Tim Cook thinks augmented reality will be as
+  important as 'eating three meals a day'}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
 \enddatalist
 \endinput
