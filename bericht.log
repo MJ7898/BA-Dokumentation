@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  26 JUN 2020 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  26 JUN 2020 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,7 +1021,7 @@ l.142 \end{abstract}
                      [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 ...ine {3.5}Softwarekonzept}{14}{section.3.5}
+l.74 ...ine {3.5}Softwarekonzept}{15}{section.3.5}
                                                   % [1
 
 ])
@@ -1050,6 +1050,7 @@ l.74 ...ine {3.5}Softwarekonzept}{14}{section.3.5}
 \openout2 = `abk.aux'.
 
  (/Users/mj/BA-Dokumentation/abk.tex
+Package acronym Info: Acronym AR used in text but not spelled out in full in text on input line 16.
 Package acronym Info: Acronym Fraunhofer IOSB used in text but not spelled out in full in text on input line 17.
 ) [6
 
@@ -1146,19 +1147,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--148
 
  []
 
-[10]) [11]
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 152--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--185
+
+ []
+
+[11]) [12]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
-) [12
+) [13
 
 
 
 ]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
- (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [13
+ (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [14
 
 
 ]
@@ -1166,7 +1182,7 @@ Kapitel 2.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-) [14
+) [15
 
 
 
@@ -1175,7 +1191,7 @@ Kapitel 3.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
-[15
+[16
 
 
 
@@ -1183,20 +1199,20 @@ Kapitel 4.
 \tf@tdo=\write10
 \openout10 = `bericht.tdo'.
 
-) [16
+) [17
 
 ]
 \openout2 = `5Fazit/fazit.aux'.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
-[17
+[18
 
 
 
 ]
 Kapitel 6.
-) [18
+) [19
 
 ] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 185.
@@ -1207,7 +1223,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19
+ [20
 
 
 ]
@@ -1221,18 +1237,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29546 strings out of 492616
- 544062 string characters out of 6129481
+ 29553 strings out of 492616
+ 544122 string characters out of 6129481
  1029814 words of memory out of 5000000
- 32652 multiletter control sequences out of 15000+600000
- 65100 words of font info for 99 fonts, out of 8000000 for 9000
+ 32653 multiletter control sequences out of 15000+600000
+ 65266 words of font info for 101 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (22 pages, 329437 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (23 pages, 333154 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
  18951 words of extra memory for PDF output out of 20736 (max. 10000000)
 
