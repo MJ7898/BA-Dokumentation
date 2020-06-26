@@ -6,6 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Einleitung}
+\label{chap:Einleitung}
 In diesem Teil der Arbeit wird auf die Motivation des Themas eingegangen. Darüber hinaus wird sowohl die Aufgabenstellung als auch der 
 Aufbau der Arbeit genauesten dargelegt. Eine nähere Betrachtung des Standes der Technik untermauert die Beweggründe der Ausarbeitung 
 dieser Arbeit. 
@@ -68,7 +69,7 @@ weiter in den Vordergrund rückt und viele Unternehmen sich damit auseinanderset
 \\ 
 \linebreak
 Durch den Trend zur Vollautomatisierung von Produktions- und Industrieprozessen werden Unmengen an Daten erzeugt. Durch das ebenso 
-aktuelle Thema der Industrie 4.0 und dem damit in Verbindung gebrachte \acs{IoT} werden weitere Daten erzeugt und über eine Cloud zu 
+aktuelle Thema der Industrie 4.0 und dem damit in Verbindung gebrachte \ac{IoT} werden weitere Daten erzeugt und über eine Cloud zu 
 Verfügung gestellt. Entstehende Daten sind z.B. Maschinendaten aus Maschinen-Protokollen, Prozessinformationen, Produktionsdaten oder 
 Informationen der Endverbraucher. \cite{industrie40.2019f} Augmented Reality ermöglicht es einen Großteil sinnvoll zu nutzen, sei es 
 die Ablösung von Papierprozessen oder die einfache Einbindung von digitalen Lösungen in die bestehenden IT-Infrastrukturen. \cite{industrie40ar.2019n} 
@@ -90,7 +91,7 @@ Mit ihrem Sitz in Karlsruhe ist sie in einer der größten Technologiestädten D
 Durch das stetige Wachstum der cjt Systemsoftware AG vergrößert sich auch deren
 Portfolio kontinuierlich. Dabei setzt das Consulting-Unternehmen hauptsächlich auf maßgeschneiderte
 Software- und Netzwerklösungen. Großkunden wie Siemens AG, Lufthansa Cargo,
-\acs{KIT} und Fraunhofer \acs{Fraunhofer IOSB} zeugen von der hohen Qualität der geleisteten Arbeit. 
+\ac{KIT} und Fraunhofer \acs{Fraunhofer IOSB} zeugen von der hohen Qualität der geleisteten Arbeit. 
 Dabei agiert das Unternehmen nicht nur in Deutschland sondern auch international, darunter in Ländern wie China und den USA.
 \\ 
 \linebreak
@@ -123,9 +124,27 @@ ersetzt, hinzu oder entfernt werden. Darüber hinaus begünstigt eine modulare K
 in großen Softwareprojekten.
 \\
 \linebreak
-Die Hauptaufgabe ist das eigentliche Realisieren der Augmented Reality Funktion, der Kern der Anwendung.
+Die Hauptaufgabe ist die Realisierung der Augmented Reality Funktion, der Kern der Anwendung. Dabei wird die Applikation in zwei 
+Phasen unterteilt, welche es gilt separat zu planen und implementieren.
 \\ 
-Dabei wird die Applikation in zwei Phasen unterteilt.
+\linebreak
+Die erste Phase, genannt Scan-Phase, beschäftigt sich mit dem scannen der Umgebung, bzw. des Raumes. Die Aufgabe dabei besteht darin, 
+mittels dem \ac{SLAM} - Verfahren eine Karte der Umgebung zu erstellen und die räumliche Lage innerhalb dieser Karte zu schätzen, um 
+auf Basis dieser erstellten Karte virtuell Objekte auf der Karte platzieren zu können. Mit den gewonnen Informationen der räumlichen 
+Darstellung durch das \acs{SLAM} - Verfahren kann der Nutzer virtuelle Objekte im virtuellen Raum an Ort und Stelle platzieren, als 
+Referenz zu dem existierenden Objekt in der Realität, welches erkannt wurde. Bei der Erstellung eines Objekts soll der Nutzer die 
+Möglichkeit haben Informationen über das Objekt in das System einzupflegen, um diese immer abrufen zu können. 
+\\ 
+\linebreak
+In der zweiten Phase, genannt Visualisierungs-Phase, sollte der Nutzer die Möglichkeit haben sich im Raum frei bewegen zu können. 
+Mit der Lokalisierung des Nutzer-Geräts und den bekannten Informationen der in Phase eins gesetzten Objekte, sollte dem Nutzer 
+die virtuellen Objekte in seiner unmittelbaren Umgebung angezeigt werden. Mit dem Wissen, dass sich im Blickfeld der AR-Applikation 
+ein Objekt befindet, können für dieses in der Datenbank weitere Informationen abgefragt und dem Nutzer zur Verfügung gestellt werden.
+\\ 
+\linebreak
+Ein weiterer wichtiger Punkt dieser Arbeit wird die Modellierung eines geeigneten, grundlegenden und prototypischen Datenmodells sein. 
+Dieses Datenmodell gibt vor welche Informationen in Phase eins, beim Erstellen eines Objekts, von der Eingabe des Nutzers 
+erfasst werden sollten. 
 
 
 \section{Aufbau der Arbeit}
