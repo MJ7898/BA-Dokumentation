@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  26 JUN 2020 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  28 JUN 2020 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,7 +1021,7 @@ l.142 \end{abstract}
                      [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 ...ine {3.5}Softwarekonzept}{15}{section.3.5}
+l.74 ...ine {3.5}Softwarekonzept}{16}{section.3.5}
                                                   % [1
 
 ])
@@ -1064,12 +1064,12 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--37
+Underfull \hbox (badness 10000) in paragraph at lines 15--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--57
 
  []
 
@@ -1078,103 +1078,103 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--37
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 58.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 58.
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 72.
+although it is yet undefined on input line 91.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--82
+Underfull \hbox (badness 10000) in paragraph at lines 69--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--82
+Underfull \hbox (badness 10000) in paragraph at lines 69--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--101
 
  []
 
 [8]
 Package acronym Info: Label `acro:KIT' newly defined as it shall be overridden
-although it is yet undefined on input line 94.
+although it is yet undefined on input line 113.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--101
+Underfull \hbox (badness 10000) in paragraph at lines 104--120
 
  []
 
-[9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--120
+
+ []
+
+[9] [10]
 Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
-although it is yet undefined on input line 132.
+although it is yet undefined on input line 151.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--148
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 152--185
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--185
+Underfull \hbox (badness 10000) in paragraph at lines 123--167
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 171--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--185
+Underfull \hbox (badness 10000) in paragraph at lines 171--204
 
  []
 
-[11]) [12]
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--204
+
+ []
+
+[12]) [13]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
-) [13
+) [14
 
 
 
 ]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
- (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [14
+ (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [15
 
 
 ]
@@ -1182,7 +1182,7 @@ Kapitel 2.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-) [15
+) [16
 
 
 
@@ -1191,7 +1191,7 @@ Kapitel 3.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
-[16
+[17
 
 
 
@@ -1199,20 +1199,20 @@ Kapitel 4.
 \tf@tdo=\write10
 \openout10 = `bericht.tdo'.
 
-) [17
+) [18
 
 ]
 \openout2 = `5Fazit/fazit.aux'.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
-[18
+[19
 
 
 
 ]
 Kapitel 6.
-) [19
+) [20
 
 ] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 185.
@@ -1223,7 +1223,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [20
+ [21
 
 
 ]
@@ -1237,18 +1237,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29553 strings out of 492616
- 544122 string characters out of 6129481
- 1029814 words of memory out of 5000000
- 32653 multiletter control sequences out of 15000+600000
- 65266 words of font info for 101 fonts, out of 8000000 for 9000
+ 29577 strings out of 492616
+ 544555 string characters out of 6129481
+ 1031814 words of memory out of 5000000
+ 32663 multiletter control sequences out of 15000+600000
+ 65580 words of font info for 104 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (23 pages, 333154 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (24 pages, 338245 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 89 named destinations out of 1000 (max. 500000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 97 named destinations out of 1000 (max. 500000)
  18951 words of extra memory for PDF output out of 20736 (max. 10000000)
 

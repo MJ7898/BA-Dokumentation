@@ -17,6 +17,30 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{studiob12.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BS}{%
+         family={B12},
+         familyi={B\bibinitperiod},
+         given={Studio},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BS1}
+    \strng{fullhash}{BS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+  \field{howpublished}{\url{https://studio-b12.de/content/projects/vrar/virtual-reality/pdf/2-Nur_ein_Hype_oder_echter_Mehrwehrt.pdf
+  }}
+    \field{title}{VR und AR- Nur ein Hype oder echter Mehrwert?}
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
+
   \entry{hypecycle.2019o}{misc}{}
     \name{author}{1}{}{%
       {{hash=B}{%
@@ -129,6 +153,29 @@
   die Marktreife immersiver Technologien}
     \field{month}{01}
     \field{year}{2020}
+  \endentry
+
+  \entry{gartnerhc.2016s}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=PA}{%
+         family={Pinker},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA1}
+    \strng{fullhash}{PA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+  \field{howpublished}{\url{https://medialist.info/2016/09/16/innovationen-im-wandel-der-zeit-der-gartner-hype_cycle/}}
+    \field{title}{Kurve der Innovationen- der Gartner Hype Cycle erklärt}
+    \field{month}{09}
+    \field{year}{2016}
   \endentry
 
   \entry{industrie40ar.2019n}{misc}{}
