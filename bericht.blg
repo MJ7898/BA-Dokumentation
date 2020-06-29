@@ -30,45 +30,45 @@ Warning--I'm ignoring studieptc.2020j's extra "howpublished" field
 Biblatex version: 3.11
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 9 entries,
+You've used 10 entries,
             6304 wiz_defined-function locations,
-            1228 strings with 10834 characters,
-and the built_in function-call counts, 32881 in all, are:
-= -- 1774
-> -- 773
-< -- 233
-+ -- 552
-- -- 235
-* -- 2299
-:= -- 3033
+            1233 strings with 10930 characters,
+and the built_in function-call counts, 38648 in all, are:
+= -- 2194
+> -- 900
+< -- 299
++ -- 654
+- -- 261
+* -- 2647
+:= -- 3472
 add.period$ -- 0
-call.type$ -- 9
-change.case$ -- 79
-chr.to.int$ -- 82
-cite$ -- 16
-duplicate$ -- 3579
-empty$ -- 3417
-format.name$ -- 376
-if$ -- 6980
+call.type$ -- 10
+change.case$ -- 127
+chr.to.int$ -- 88
+cite$ -- 18
+duplicate$ -- 4144
+empty$ -- 3969
+format.name$ -- 424
+if$ -- 8272
 int.to.chr$ -- 0
-int.to.str$ -- 16
+int.to.str$ -- 19
 missing$ -- 0
-newline$ -- 202
-num.names$ -- 328
-pop$ -- 2705
+newline$ -- 227
+num.names$ -- 409
+pop$ -- 3037
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 145
 quote$ -- 0
-skip$ -- 1252
+skip$ -- 1513
 stack$ -- 0
-substring$ -- 2611
-swap$ -- 1061
-text.length$ -- 232
-text.prefix$ -- 8
+substring$ -- 3277
+swap$ -- 1232
+text.length$ -- 259
+text.prefix$ -- 9
 top$ -- 1
-type$ -- 294
+type$ -- 328
 warning$ -- 0
-while$ -- 444
+while$ -- 494
 width$ -- 0
-write$ -- 194
+write$ -- 218
 (There was 1 warning)

@@ -17,6 +17,31 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{azuma.1997a}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ART}{%
+         family={Azuma},
+         familyi={A\bibinitperiod},
+         given={Ronald\bibnamedelima T.},
+         giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \strng{namehash}{ART1}
+    \strng{fullhash}{ART1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1997}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{A Survey of Augmented Reality}
+    \field{month}{08}
+    \field{year}{1997}
+  \endentry
+
   \entry{studiob12.2020j}{misc}{}
     \name{author}{1}{}{%
       {{hash=BS}{%
