@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  29 JUN 2020 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  30 JUN 2020 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1021,7 +1021,7 @@ l.142 \end{abstract}
                      [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 ...ine {3.5}Softwarekonzept}{17}{section.3.5}
+l.74 ...ine {3.5}Softwarekonzept}{19}{section.3.5}
                                                   % [1
 
 ])
@@ -1167,14 +1167,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--205
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
-) [14
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--50
+
+ []
+
+[14
 
 
 
-] [15]
+]
+Package acronym Info: Label `acro:HMD' newly defined as it shall be overridden
+although it is yet undefined on input line 61.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--100
+
+ []
+
+[15]) [16] [17]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
- (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [16
+ (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex) [18
 
 
 ]
@@ -1182,7 +1200,7 @@ Kapitel 2.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-) [17
+) [19
 
 
 
@@ -1191,7 +1209,7 @@ Kapitel 3.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
-) [18
+) [20
 
 
 
@@ -1200,13 +1218,13 @@ Kapitel 4.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
-[19
+[21
 
 
 
 ]
 Kapitel 6.
-) [20
+) [22
 
 ] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 185.
@@ -1217,10 +1235,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21
+ [23
 
 
-]
+] [24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
@@ -1231,18 +1249,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29576 strings out of 492616
- 544605 string characters out of 6129481
+ 29658 strings out of 492616
+ 546095 string characters out of 6129481
  1031814 words of memory out of 5000000
- 32669 multiletter control sequences out of 15000+600000
- 65414 words of font info for 102 fonts, out of 8000000 for 9000
+ 32709 multiletter control sequences out of 15000+600000
+ 66836 words of font info for 116 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,7n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (24 pages, 340584 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (27 pages, 353449 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 485 compressed objects within 5 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 535 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
  18951 words of extra memory for PDF output out of 20736 (max. 10000000)
 

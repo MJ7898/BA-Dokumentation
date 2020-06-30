@@ -9,22 +9,94 @@
 \label{chap:Grundlagen}
 In diesem Kapitel werden die für diese Bachelorarbeit notwendigen Grundlagen geschaffen, um ein fundiertes Wissen und Verständnis 
 über verwendete Technologien zu schaffen. Auf alle diese Informationen und Voraussetzungen wird im Folgenden eingegangen, um nachfolgende 
-Konzeption und Umsetzung zu verstehen.
+Konzeption und Umsetzung besser zu verstehen.
 
 \section{Augmented Reality}
 \label{chap:Augmented Reality}
 Eine der wichtigsten Grundlagen dieser Arbeit ist das Verständnis des Begriffs der Augmented Reality.
 \\ 
-\acl{AR}, deutsch erweiterte Realität, ist eine durch den Computer gestützte Erweiterung der Realität, bzw. des menschlichen 
-Wahrnehmungsvermögens. Die Definition, welche sich in der Wissenschaft weitestgehend durchgesetzt und etabliert hat ist die Definition nach 
-Azuma aus dem Jahre 1997.
+\acl{AR}, deutsch erweiterte Realität, ist eine durch den Computer gestützte Erweiterung der Realität, bzw. der menschlichen 
+Wahrnehmung. Es ermöglicht dem Nutzer die reale Welt mit Überlagerung oder Zusammensetzung virtueller Objekte und visueller Informationen
+zu sehen. Mittels einer Art Overlay werden diese Objekte und Informationen über die reale Welt gelegt und dem Nutzer zur Verfügung gestellt. 
+Allgemein soll damit dem Nutzer ein weit gefächerter Überblick verschafft werden und Hilfestellung leisten, aber den Nutzer in keinerlei 
+Interaktion mit der Umgebung einschränken. Die Definition, welche sich in der Wissenschaft weitestgehend durchgesetzt und etabliert hat ist 
+die Definition nach Azuma aus dem Jahre 1997.
 \begin{quote}
     „Augmented Reality (AR) is a variation of Virtual Environments (VE), or Virtual Reality as it is more commonly called. VE 
     technologies completely immerse a user inside a synthetic environment. While immersed, the user cannot see the real world around him. 
-    In contrast, AR allows the user to see the real world, with virtual objects superimposed upon or composited with the real world. Therefore, 
-    AR supplements reality, rather than completely replacing it.“ \cite{azuma.1997a}
+    In contrast, AR allows the user to see the real world, with virtual objects superimposed upon or composited with the real world. 
+    Therefore, AR supplements reality, rather than completely replacing it.“ \cite{azuma.1997a}
 \end{quote}
-
+Ein Augmented Reality System verfügt nach \cite{azuma.1997a} über folgende drei charakteristische Merkmale: 
+\begin{enumerate}
+    \item Es kombiniert Realität und Virtualität.
+    \item Es ist interaktiv in Echtzeit.
+    \item Die virtuellen Inhalte sind im 3D registriert.
+\end{enumerate}
+Das erste genannte Merkmal kombiniert die reale Welt mit dem oben genannten Overlay, der Überlagerung der Realität um künstliche virtuelle 
+Objekte und visuelle Informationen. Dies bedeutet, der Nutzer nimmt die reale Umgebung gleichzeitig mit den darin liegenden virtuellen 
+Objekten als ein Ganzes wahr. Daraus resultiert die Interaktion von virtuellen Objekten und Informationen mit der realen Welt in Echtzeit, 
+damit sie als Teil der Realität registriert werden können. Das dritte Merkmal umfasst die Darstellung von Objekten als scheinbar reales 
+Objekt. Mit dem letzt genannten Merkmal wird das Ziel verfolgt die projizierten, bzw. nicht realen Teile täuschend echt in die Umgebung zu 
+integrieren.
+\\ 
+\linebreak  
+%Darüber hinaus sind die virtuellen Inhalte in 3D (d. h. geometrisch) registriert. Dies bedeutet nichts anderes, als dass in einer 
+%AR-Umgebung ein virtuelles Objekt scheinbar einen festen Platz in Realität hat und diesen, sofern es nicht durch eine Benutzerinteraktion 
+%verändert wird oder sich z. B. in Form einer Animation selbst verändert, auch beibehält. Mit anderen Worten: Es verhält sich aus Nutzersicht 
+%genauso, wie ein reales Objekt, was sich an diesem Ort befinden würde
+Eine etwas allgemein formuliertere Definition ist die nach \cite{springer.2019s}, welche die drei charakteristischen Merkmale besonders 
+aufgreift:
+\begin{quote}
+    „Augmentierte Realität (AR) ist eine (unmittelbare und interaktive) um virtuelle Inhalte (für beliebige Sinne) angereicherte Wahrnehmung der 
+    realen Umgebung in Echtzeit, welche sich in ihrer Ausprägung und Anmutung soweit wie möglich an der Realität orientiert, sodass im 
+    Extremfall (so dies gewünscht ist) eine Unterscheidung zwischen realen und virtuellen (Sinnes-) Eindrücken nicht mehr möglich ist.„ \cite{springer.2019s}
+\end{quote}
+Diese Definition nimmt sich als Grundlage die oben aufgeführte Definition nach \cite{azuma.1997a}.
+\\ 
+\linebreak
+Der Author L. Frank Baum \cite{frankbaum.1856m} verkündete die ersten Ideen und Gedanken einer Augmented Reality Anwendung in 
+\textit{„The Master Key“} \cite{masterkey.1996f}. Eine erste tatsächliche Realisierung eines Augmented Reality Systems erfolgte erst über 
+60 Jahr später. Ivan Edward Sutherland \cite{sutherlandbio.1938m} stellte sein Projekt 1968 an der University of Utah vor. Dabei handelte es 
+sich um ein sogenanntes \textit{\ac{HMD}}. Ziel dieser Entwicklung war weniger das Erweitern der Realität, sondern dreidimensionale 
+Illusionen zu erzeugen die reale Objekte mit einer einfachen Grafik in Echtzeit überlagert. %\cite{display.1965f}
+Trotz dessen gilt er als erste Person mit der Vision, einen Nutzer in realer Umgebung mit virtuellen Objekten interagieren zu lassen.
+\\ 
+Anfang der 90er Jahre prägten zwei Forscher, Thomas P. Caudell und David W. Mizell, den Begriff der Augmented Reality durch ein Pilotprojekt
+bei Boeing. Das Projekt diente dazu Informationen in das Gesichtsfeld über eine Brille einzusetzen, um Arbeitern das Verlegen von Kabeln im und um das 
+Flugzeug zu erleichtern. Nach dieser bahnbrechenden Erfindung begann eine stetige Weiterentwicklung der Technologie. Im Jahre 1999 wurde 
+von Hirokazu Kato und Mark Billinghurst \textit{ARToolKit}, ein Computer-Vision-basiertes Tracking für AR, veröffentlicht und „löste eine 
+große Welle an Forschungsarbeiten auf der ganzen Welt aus.“ \cite{springer.2019s} 
+\begin{quote}
+    We describe an augmented reality conferencing system which uses the overlay of virtual images on the real world. Remote collaborators 
+    are represented on Virtual Monitors which can be freely positioned about a user in space. Users can collaboratively view and interact 
+    with virtual objects using a shared virtual whiteboard. This is possible through precise virtual image registration using fast and 
+    accurate computer vision techniques and HMD calibration. We propose a method for tracking fiducial markers and a calibration method 
+    for optical see-through HMD based on the marker tracking. \cite{artoolkitsheet.1999o}
+\end{quote}
+Dieser Ausschnitt war der grundlegende Baustein des Durchbruchs dieser Technologie und den vorangestellten Forschungen und eine fundierte 
+Grundlage für alle Forschungen und Entwicklungen die darauf folgten. 
+\\ 
+Heutzutage dreht sich die Entwicklung um mobile AR, welche durch die anfängliche Revolution von \textit{ARToolkit} und die darauf entstehenden 
+Entwicklungen und Produktionen von großen Firmen, wie z.B. Google, Microsoft, Apple und Facebook entstand. Die zuletzt große Bewegung in dem 
+Bereich der AR waren die Vorstellungen großer Software-Plattformen für mobile AR-Applikationen. Durch \textit{Apple's ARKit} und \textit{Google's ARCore} 
+kamen zwei moderne und innovative Frameworks auf den Markt, welche die Entwicklung von Augmented Reality-Applikationen stark beeinflusst.
+Die Frameworks wurden bei den ersten Produktionen für Entertainment-Anwendungen genutzt, um z.B. mobile Spiele zur Unterhaltung oder 
+Funktionen bei Sport-Fernsehübertragungen zur Anzeige der Entfernung des Freistoßes zu realisieren.
+\\ 
+\linebreak
+Diese Arbeit jedoch widmet sich ausschließlich dem industriellen Aspekt und stellt andere Bereiche in den Hintergrund. Die in Kapitel 
+\ref{chap:Motivation} aufgeführte Markstudie bestätigt das enorme Potential hinter Augmented Reality und deren Einsetzbarkeit in der Industrie.
+Hauptsächlich in der Produktion, der Wartung oder der Reparatur von Maschinen kann Augmentierte Realität eingesetzt werden und zeigt einen 
+positiv erzeugten Mehrwert. Dabei können bei Maschinen das Anzeigen von protokollierten Fehlern oder eine visuelle Hilfestellung bei Defekts, sowohl bei der 
+Reparatur, als auch bei der Ersetzung einzelner Komponenten eine deutliche Reduzierung des zeitlichen Aufwands oder eine effektivere Arbeitsweise 
+vorweisen. 
+\\
+\textit{Harvard Business Review} legte einen Vergleich offen, indem ein Techniker ein Steuergerät einer Windkraftanlage mithilfe 
+eines AR-Headsets verkabelt und in Betrieb nimmt. Alle benötigten Informationen wurden Schritt für Schritt über das Headset zur Verfügung 
+gestellt. Dadurch gab es keinen Mehraufwand, z.B. das Nachschlagen in einer Dokumentation. Danach führte der Techniker den gleichen Prozess 
+ohne die Hilfe der AR-Anwendung durch, lediglich mit Verwendung des vorliegenden Handbuchs, welches physisch beiseite lag.
+Dieser Test bestätigte eine Leistungsverbesserung des Arbeiters beim ersten Gebrauch um \textit{34\%}.\cite{harvardbr.2017m}
 
 
 \subsection{Virtual Reality, Augmented Reality und Mixed Reality}
