@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  6 JUL 2020 15:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  6 JUL 2020 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1084,80 +1084,80 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 59.
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 92.
+although it is yet undefined on input line 94.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--102
+Underfull \hbox (badness 10000) in paragraph at lines 70--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--102
+Underfull \hbox (badness 10000) in paragraph at lines 70--107
 
  []
 
-[8]
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--107
+
+ []
+
+[8] [9]
 Package acronym Info: Label `acro:KIT' newly defined as it shall be overridden
-although it is yet undefined on input line 114.
+although it is yet undefined on input line 118.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--121
+Underfull \hbox (badness 10000) in paragraph at lines 109--125
 
  []
 
-[9] [10]
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--125
+
+ []
+
+[10]
 Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
-although it is yet undefined on input line 152.
+although it is yet undefined on input line 156.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--168
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--172
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 172--205
+Underfull \hbox (badness 10000) in paragraph at lines 176--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--205
+Underfull \hbox (badness 10000) in paragraph at lines 176--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--205
+Underfull \hbox (badness 10000) in paragraph at lines 176--209
 
  []
 
@@ -1223,7 +1223,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--195
 
  []
 
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=362, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=364, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
 Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 221.
@@ -1302,18 +1302,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29751 strings out of 492616
- 547564 string characters out of 6129481
- 1031814 words of memory out of 5000000
+ 29747 strings out of 492616
+ 547512 string characters out of 6129481
+ 1032814 words of memory out of 5000000
  32757 multiletter control sequences out of 15000+600000
- 67713 words of font info for 124 fonts, out of 8000000 for 9000
+ 67453 words of font info for 122 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,10n,83p,1179b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (31 pages, 514826 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (31 pages, 515253 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
+ 698 PDF objects out of 1000 (max. 8388607)
+ 628 compressed objects within 7 object streams
  137 named destinations out of 1000 (max. 500000)
  18972 words of extra memory for PDF output out of 20736 (max. 10000000)
 
