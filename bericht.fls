@@ -404,6 +404,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 OUTPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
 INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
 INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex

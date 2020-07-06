@@ -181,6 +181,30 @@
     \field{year}{2019}
   \endentry
 
+  \entry{sinnesforschung.2017m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BF}{%
+         family={Brehm},
+         familyi={B\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BF1}
+    \strng{fullhash}{BF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+  \field{howpublished}{\url{https://www.mice-club.com/magazin/artikel/vr-angriff-auf-alle-sinne}}
+    \field{title}{VR-Angriff auf alle Sinne - Wie schmeckt die virtuelle
+  Realität?}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
   \entry{springer.2019s}{book}{}
     \name{author}{1}{}{%
       {{hash=DR}{%
@@ -226,6 +250,30 @@
   \field{howpublished}{\url{https://www.businessinsider.de/international/apple-q1-earnings-call-tim-cook-augmented-reality-ar-2020-1/?r=US&IR=T}}
     \field{month}{01}
     \field{year}{2020}
+  \endentry
+
+  \entry{pokemongo.2016a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=FP}{%
+         family={Fischbach},
+         familyi={F\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FP1}
+    \strng{fullhash}{FP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+  \field{howpublished}{\url{https://conrenfonds.com/2016/08/24/first-mover-pokemon-go-praesentiet-der-welt-augmented-reality-die-abloesung-des-smartphones-oder-nur-spielzeug}}
+    \field{title}{First Mover: Pokémon Go präsentiert der Welt “Augmented
+  Reality”}
+    \field{month}{08}
+    \field{year}{2016}
   \endentry
 
   \entry{frankbaum.1856m}{misc}{}
@@ -354,6 +402,29 @@
     \field{year}{2020}
   \endentry
 
+  \entry{vr.2018n}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Mühlroth},
+         familyi={M\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://www.techbook.de/entertainment/virtual-reality/unterschied-vr-ar-mr}}
+    \field{title}{Was ist der Unterschied zwischen VR, AR und MR?}
+    \field{month}{11}
+    \field{year}{2018}
+  \endentry
+
   \entry{gartnerhc.2016s}{misc}{}
     \name{author}{1}{}{%
       {{hash=PA}{%
@@ -375,6 +446,30 @@
     \field{title}{Kurve der Innovationen- der Gartner Hype Cycle erklärt}
     \field{month}{09}
     \field{year}{2016}
+  \endentry
+
+  \entry{mr.2018o}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SR}{%
+         family={Schanze},
+         familyi={S\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SR1}
+    \strng{fullhash}{SR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://www.giga.de/artikel/was-ist-mixed-reality-unterschied-zu-virtual-augmented-reality-erklaert}}
+    \field{title}{Was ist Mixed Reality? – Unterschied zu Virtual und
+  Augmented Reality erklärt}
+    \field{month}{10}
+    \field{year}{2018}
   \endentry
 
   \entry{sutherlandbio.1938m}{misc}{}
