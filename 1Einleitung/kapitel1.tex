@@ -97,14 +97,14 @@ Infrastruktur, die es ermöglicht physische und virtuelle Gegenstände miteinand
 %Verfügung gestellt. 
 \\ 
 Entstehende Daten sind z.B. Maschinendaten aus Maschinen-Protokollen, Prozessinformationen, Produktionsdaten oder 
-Informationen der Endverbraucher. \cite{industrie40.2019f} Augmented Reality ermöglicht es, einen Großteil der Daten sinnvoll, d.h. Auskünfte 
-über Maschinen dem Nutzer intuitiv darzustellen oder relevante Daten hervorzuheben, zu nutzen, sei es 
-die Ablösung von Papierprozessen oder die einfache Einbindung von digitalen Lösungen in die bestehenden IT-Infrastrukturen. \cite{industrie40ar.2019n} 
-Dabei sind Rückschlüsse auf die allgemeine Arbeitsoptimierung zu ziehen. Notwendige Informationen können ohne 
-großen Aufwand, schnell und zentral an einem Ort durch \acs{AR} zur Verfügung gestellt und eingeblendet werden. Damit können 
-Wartungen schneller durchgeführt, Defekte besser behoben, Leerläufe oder Fehler am Endprodukt vermieden werden. Mit solch einer Hilfe 
+Informationen der Endverbraucher. \cite{industrie40.2019f} Augmented Reality ermöglicht es, einen Großteil der Daten sinnvoll zu nutzen, d.h. 
+dem Nutzer Auskünfte über Maschinen besonders hervorzuheben. Darüber hinaus können unter anderem durch \acs{AR} veraltete Papierprozesse 
+abgelöst oder digitale Lösungen in bestehende IT-Infrastrukturen eingebunden werden. \cite{industrie40ar.2019n} 
+Dabei sind Rückschlüsse auf die allgemeine Arbeitsoptimierung zu ziehen. Notwendige Informationen sind ohne 
+großen Aufwand, schnell und zentral an einem Ort durch \acs{AR} zur Verfügung gestellt und abrufbar. Damit können 
+Wartungen schneller durchgeführt, Defekte besser behoben, Leerläufe oder Fehler am Endprodukt vermieden werden. Mit solch einer Unterstützung 
 kann z.B. auch die Orientierung in riesigen Produktionshallen aufrecht erhalten werden, um einen besseren Überblick über alle Maschinen 
-zu erhalten. Auch können Prozesse effizienter gestaltet werden. Ein Mechaniker kann alle notwendigen Informationen, die er benötigt, der 
+zu erhalten. Auch wird die Effizienz von Prozessen erhöht. Ein Mechaniker kann alle notwendigen Informationen, die er benötigt, der 
 \acl{AR} Applikation entnehmen, um z.B. eine Wartung einer Anlage schneller durchzuführen oder über Vorfälle an der Maschinerie in Echtzeit 
 informiert zu sein. 
 \pagebreak
@@ -129,32 +129,35 @@ Anwendung für das Assistenzsystem bietet und in Zukunft auch der Firma zur Nutz
 
 \section{Aufgabenstellung}
 \label{chap:Aufgabenstellung}          %konzeptioniert
-Im Rahmen dieser Arbeit soll ein System konzipiert, entwickelt und umgesetzt werden, welches basierend auf \acl{AR} ein 
+Im Rahmen dieser Ausarbeitung soll ein System konzipiert, entwickelt und umgesetzt werden, welches basierend auf \acl{AR} ein 
 Informations- und Unterstützungssystem im industriellen Bereich grundlegend realisiert.
 \\
-Die entstehende prototypische Applikation soll es ermöglichen einen Überblick über eine Produktions- oder Industriehalle zu 
+Die entstehende prototypische Applikation soll es ermöglichen, einen Überblick über eine Produktions- oder Industriehalle zu 
 verschaffen, indem die Umgebung und alle in der Halle stehenden Maschinen über die Kamera eines Smart-Devices erkannt und als 
 Overlay über das Live-Bild gelegt und angezeigt werden. Die erkannten Objekte können vom Nutzer eingetragen werden, um die Position des 
-Gegenstands festhalten zu können. Nach dem setzen des Objektes kann der Nutzer die benötigten Informationen eintragen, um so 
-grundlegende Informationen über diesen Gegenstand griffbereit zu haben. Mit dieser Arbeit soll der Grundbaustein für ein 
-Unterstützungssystem gelegt werden, das beliebig erweitert werden kann, um ein nützliches \textit{Gadget} mit vielen \textit{Features} 
+Gegenstandes festhalten zu können. Nach dem Setzen des Objektes kann der Nutzer die benötigten Informationen eintragen, um so 
+grundlegende Informationen über diesen Gegenstand griffbereit zu haben. Damit soll der Grundbaustein für ein 
+Unterstützungssystem gelegt werden, das beliebig erweiterbar ist, um ein nützliches \textit{Gadget} mit vielen \textit{Features} 
 in der Industrie zur Verfügung zu stellen.
 \\ 
 \linebreak
-Grundlegend ist die Arbeit in drei Aufgabenbereiche unterteilt.
+Grundlegend ist das Projekt in drei Aufgabenbereiche unterteilt:
+\begin{itemize}
+    \item Planung der Architektur
+    \item Implementierung der Grundfunktionen der Applikation
+    \item Grundlage der Objektinformation als Datenmodell 
+\end{itemize}
+Um eine Applikation übersichtlich zu gestalten und für die Zukunft Erweiterungen 
+möglichst einfach integrieren zu können, ist es zu Anfang die Aufgabe, eine solide und übersichtliche Grundstruktur, bzw. Software-
+Architektur zu erstellen. Dadurch werden Funktionen und Klassen einer klaren Struktur zugeordnet und dadurch eine einheitliche Linie vorgeben. 
 \\
-\linebreak
-Um eine Applikation übersichtlich zu gestalten und für die Zukunft nicht zu vermeidende Optimierungen, Änderungen oder Erweiterungen 
-möglichst einfach integrieren zu können, ist es zu Anfang die Aufgabe eine solide und übersichtliche Grundstruktur, bzw. Software-
-Architektur zu erstellen. Dadurch werden Funktionen und Klassen einer klaren Struktur zugeordnet, um eine einheitliche Linie vorzugeben. 
-\\
-Ein weiterer Aspekt der bei der Erstellung der Architektur berücksichtigt werden soll, ist der Ansatz der modularen 
+Ein weiterer Aspekt, der bei der Erstellung der Architektur berücksichtigt werden soll, ist der Ansatz der modularen 
 Softwarearchitektur. Damit können einzelne Funktionen unabhängig voneinander getestet und Abhängigkeiten oder Frameworks leichter 
 ersetzt, hinzugefügt oder entfernt werden. Darüber hinaus begünstigt eine modulare Konzeption bessere Kontrollierbarkeit und Übersichtlichkeit 
 in großen Softwareprojekten.
 \\
 \linebreak
-Die Hauptaufgabe ist die Realisierung der \acl{AR}-Funktion, der Kern der Anwendung. Dabei wird die Applikation in zwei 
+Die Hauptaufgabe ist die Realisierung der \acl{AR}-Funktion, sozusagen der Kern der Anwendung. Dabei wird die Applikation in zwei 
 Phasen unterteilt, welche es gilt separat zu planen und implementieren.
 \\ 
 \linebreak
@@ -163,19 +166,18 @@ mittels dem \ac{SLAM} - Verfahren eine Karte der Umgebung zu erstellen und die r
 auf Basis dieser erstellten Karte virtuell Objekte auf der Karte platzieren zu können. Mit den gewonnen Informationen der räumlichen 
 Darstellung durch das \acs{SLAM} - Verfahren kann der Nutzer virtuelle Objekte im virtuellen Raum an Ort und Stelle platzieren, als 
 Referenz zu dem existierenden Objekt in der Realität, welches erkannt wurde. Bei der Erstellung eines Objekts soll der Nutzer die 
-Möglichkeit haben Informationen über das Objekt in das System einzupflegen, um diese immer abrufen zu können. 
+Möglichkeit haben, Informationen über das Objekt in das System einzupflegen, damit er diese immer abrufen kann. 
 \\ 
 \linebreak
-In der zweiten Phase, genannt Visualisierungs-Phase, sollte der Nutzer die Möglichkeit haben sich im Raum frei bewegen zu können. 
-Mit der Lokalisierung des Nutzer-Geräts und den bekannten Informationen der in Phase eins gesetzten Objekte, sollte dem Nutzer 
+In der zweiten Phase, genannt Visualisierungs-Phase, sollte der Nutzer die Möglichkeit haben, sich im Raum frei bewegen zu können. 
+Mit der Lokalisierung des Nutzer-Geräts und den bekannten Informationen der in Phase eins gesetzten Objekte, sollten dem Nutzer 
 die virtuellen Objekte in seiner unmittelbaren Umgebung angezeigt werden. Mit dem Wissen, dass sich im Blickfeld der \acs{AR}-Applikation 
 ein Objekt befindet, können für dieses in der Datenbank weitere Informationen abgefragt und dem Nutzer zur Verfügung gestellt werden.
 \\ 
 \linebreak
-Ein weiterer wichtiger Punkt dieser Arbeit wird die Modellierung eines geeigneten, grundlegenden und prototypischen Datenmodells sein. 
-Dieses Datenmodell gibt vor welche Informationen in Phase eins, beim Erstellen eines Objekts, von der Eingabe des Nutzers 
-erfasst werden sollten, um die wichtigsten Daten griffbereit zu haben. 
-
+Ein weiterer wichtiger Punkt dieses Konzeptes wird die Modellierung eines geeigneten, grundlegenden und prototypischen Datenmodells sein. 
+Dieses Datenmodell gibt vor, welche Informationen in Phase eins beim Erstellen eines Objektes vom Nutzer eingegeben und damit erfasst 
+werden sollten, um die wichtigsten Daten zur Verfügung zu haben. 
 
 \section{Aufbau der Arbeit}
 \label{chap:Aufbau der Arbeit}
