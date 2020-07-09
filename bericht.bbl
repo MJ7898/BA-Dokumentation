@@ -275,6 +275,29 @@
     \field{year}{2020}
   \endentry
 
+  \entry{projecttango.2016j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=EM}{%
+         family={Elgan},
+         familyi={E\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EM1}
+    \strng{fullhash}{EM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://www.computerworld.com/article/3018733/how-googles-project-tango-will-change-your-life.html}}
+    \field{title}{How Google's Project Tango will change your life}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{pokemongo.2016a}{misc}{}
     \name{author}{1}{}{%
       {{hash=FP}{%
@@ -297,6 +320,37 @@
   Reality”}
     \field{month}{08}
     \field{year}{2016}
+  \endentry
+
+  \entry{slamdefi.2016a}{book}{}
+    \name{author}{2}{}{%
+      {{hash=FW}{%
+         family={Freeden},
+         familyi={F\bibinitperiod},
+         given={Willi},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rummel},
+         familyi={R\bibinitperiod},
+         given={Reiner},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Spektrum, Berlin, Heidelberg}%
+    }
+    \strng{namehash}{FWRR1}
+    \strng{fullhash}{FWRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Handbuch der Geodäsie}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{frankbaum.1856m}{misc}{}
@@ -375,6 +429,31 @@
     \field{title}{Europa baut Führung bei Industrie 4.0 weiter aus}
     \field{month}{02}
     \field{year}{2019}
+  \endentry
+
+  \entry{arcorefundamentals.2018m}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LM}{%
+         family={Lanham},
+         familyi={L\bibinitperiod},
+         given={Micheal},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing Ltd.}%
+    }
+    \strng{namehash}{LM1}
+    \strng{fullhash}{LM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Learn ARCore - Fundamentals of Google ARCore}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{timcook2016.2016o}{misc}{}
@@ -493,6 +572,29 @@
   Augmented Reality erklärt}
     \field{month}{10}
     \field{year}{2018}
+  \endentry
+
+  \entry{einsatzgebietear.2017a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SD}{%
+         family={Schart},
+         familyi={S\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD1}
+    \strng{fullhash}{SD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://www.vdi-wissensforum.de/news/augmented-reality-fuer-die-digitale-zukunft-der-industrie/}}
+    \field{title}{Augmented Reality für die digitale Zukunft der Industrie}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{sutherlandbio.1938m}{misc}{}

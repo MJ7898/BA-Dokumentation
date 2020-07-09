@@ -224,8 +224,16 @@ gestalten, wie der folgenden Abbildung \ref{pic:snapchatAR} zu entnehmen ist.
     \label{pic:snapchatAR}
 \end{figure}
 \subsection*{Smart-Brillen AR}
-
-
+% ... TO BE DONE !! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%
+%
+%
+%
+%
+%
+%
+% MUSS NOCH GESCHRIEBEN WERDEN !!!!! <---------------------------------> !!!!!!!!!!!!!!!!
 \subsection{Positionsbestimmung}
 Um ein digitales Objekt als Overlay dem Kamera-Live-Bild hinzuzufügen, werden genauestens definierte Positionen benötigt. Diese Positionen 
 können durch unterschiedliche Ansätze ermittelt werden. Je nach Anwendungsfall, z.B. als Navigation, Routenplaner oder Google Maps 
@@ -254,7 +262,7 @@ Durch ein Kamerabild wird nach einem vordefinierten Marker, bzw. nach einer fest
 wird die Markierung durch Bildverarbeitungsalgorithmen und bestimmter Filterung eindeutig identifiziert. Mit den gewonnen Informationen und 
 der Übereinstimmung des angegebenen Codes wird die Position, sowie die Orientierung des Markers berechnet. Mit den Angaben der Lage und 
 Orientierung wird auf der Markierung das anzuzeigende digitale Objekt generiert und als Overlay über dem Kamerabild angezeigt. Die Markierung 
-dient sozusagen als Grunlage um den digitalen Gegenstand überhaupt anzeigen zu können.
+dient sozusagen als Grundlage um den digitalen Gegenstand überhaupt anzeigen zu können.
 \\ 
 Da der Marker immer im Blickfeld der Kamera sein muss, um das virtuelle Objekt anzuzeigen, bringt diese Art der Positionsbestimmung eine 
 enorme Einschränkung mit sich, die in diesem Bezug unumgänglich ist. 
@@ -264,15 +272,61 @@ Ein weiterer Ansatz der Positionsbestimmung ist als Überbegriff das Gegenstück
 sogenannte Marker-unabhängige Positionsbestimmung, welche ebenso verschiedene Ausführungen vorweist. 
 \subsubsection*{\acs{GPS}-basierte Positionsbestimmung}
 Die Methode des \acs{GPS}-basierten Positionsbestimmungsverfahren verwendet hauptsächlich die Koordinaten der realen Welt. In Zusammenarbeit 
-mit zusätzlichen im Anwendungsgerät verbauten internen Sensoren, bspw. Positions-, Geschwindigkeits- und Beschleunigungssensoren und dem 
+mit zusätzlichen im Anwendungsgerät verbauten internen Sensoren, bspw. Positions-, Geschwindigkeits- und Beschleunigungssensoren und Teile des 
 \ac{INS}, z.B. dem Gyroskop, kann diese Art der Positionsbestimmung optimal Anwendung finden. Allerdings werden dabei deutlich mehr Komponenten
-benötigt und ist deutlich komplexer umzusetzen, als ein einfachen markerbasiertes System.
-\subsubsection*{SLAM-basierte Positionsbestimmung} 
+benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. 
+\\ 
+Bei einem Anwendungsfall von \acs{GPS}-basierter Positionsbestimmung geht es meist um Routenplaner, Navigation oder Szenarien die sich 
+auf offenen Flächen abspielen, da im Gegensatz zu Marker-basierten Anwendungen das Größenverhältnis deutlich geräumiger ist. Der Benutzer ist 
+nicht auf einen bestimmten Bezirk beschränkt und ist nicht auf die millimetergenauer Darstellung angewiesen.
+\\ 
+\linebreak
+Eine Alternative zu \acs{GPS} ist die Anwendung des \acs{SLAM}-Verfahrens. Dabei wird eine virtuelle Karte, bzw. ein geometrischen Modell der 
+Umgebung erstellt. Wichtige Grundlagen zum Erzeugen eines solchen Modells sind eigenständig gefundene Landmarken die gleichzeitig 
+lokalisiert werden. Darauf folgt ein Vergleich der Pose, der Position des Geräts und der geschätzten Karteninformationen aus dem Scan der 
+Umgebung. 
+Damit sind im erweiterten Sinne Marker geschaffen, die Anhaltspunkte für \acl{AR}-Interaktionen schaffen.
+\\ 
+In Kapitel \ref{chap:SLAM} wird die Thematik des \acs{SLAM}-Verfahrens genauestens erläutert. 
 
 \subsection{Augmented Reality in der Industrie}
+Das weit gefächerte Portfolio der \acl{AR} umfasst viele Anwendungsbereiche und Fachgebiete. Selbst dem übergeordneten Bereich der Industrie 
+gibt es viele verschiedene Einsatzgebiete. Aus den vielen Möglichkeiten der Anwendung haben sich über die Jahre der Entwicklung der Technologie 
+einige Gebiete in der Industrie herauskristallisiert, die besonders hohen Nutzen stiften. \cite{einsatzgebietear.2017a} In den Bereichen 
+Instandhaltung und Wartung, Betrieb und Training ist \acl{AR} auf bestem Wege fester Bestandteil des Alltags zu werden. Bei dieser Betrachtung 
+ist es sinnvoll sich auf die damit einhergehenden Lösungen zu fokussieren, die Reduktion der Kosten und dem Zeitaufwand, sowie die Verbesserung 
+der Sicherheit. \cite{studieptc.2020j} 
+\\ 
+\linebreak
+Bei einer Wartung oder Reparatur einer Maschine sind notwendige Informationen direkt greifbar und werden Schritt für Schritt angezeigt, sodass 
+in bestimmten Situationen selbst ein Leihe die Anweisungen befolgen könnte. So werden zusätzliche Recherchearbeiten oder Unklarheiten über 
+Vorgänge aus dem Weg geräumt. Ein Mitarbeiter kann so mit einem Tablet oder einer Smart-Glas Anweisungen visuell auf die realen Maschinen 
+projizieren und Arbeitsschritte im Sichtfeld anzeigen lassen. Ebenso geht dieser Vorgang auch bei der Produktion von Bauteilen o.ä., indem 
+eine \acs{AR}-Anwendung Anweisungen und Prozessschritte, z.B. auf das Werkstück oder Produkt, projiziert.
+\\ 
+Die Inbetriebnahme oder Bedienung einer komplexen Anlage oder Maschine ist nach herkömmlichen Standard enorm zeitintensiv und dadurch können
+zusätzlich viele Fragen aufkommen, die meist den Prozess noch länger gestalten als vorgesehen. \acs{AR}-Anwendungen können 
+Bedienungsanleitung oder -hilfen digitalisiert, indem Informationen, Inhalte oder Bedienelemente durch \acl{AR} auf der Anlage platziert werden. 
+\\ 
+In Fortbildungen, Schulungen oder Einarbeitungen in neue Geräte kann \acs{AR} durchaus von großem Vorteil sein. Mit wenig Aufwand, einem 
+effektiveren Training können Schulungen interaktiver und vor allem sicherer abgehalten werden. Durch die Visualisierung der Trainings- und 
+Schulungsinhalten verbessert sich der Lernprozess und damit wird auch die Nutzung der Maschinen verständlicher. \cite{einsatzgebietear.2017a}
 
 \section{SLAM - Simultanious Localization And Mapping}
 \label{chap:SLAM}
+\begin{quote}
+    Das Simultaneous Localization and Mapping oder kurz SLAM Problem behandelt das gleichzeitige Schätzen der Position und Ausrichtung einer 
+    mobilen Plattform im Raum anhand der sich an Bord befindlichen Sensoren sowie den Aufbau eines Modells der Umgebung. Dieses Problem ist 
+    von großer praktischer Relevanz und ist Kernbestandteil der meisten mobilen Sensor- systeme. \cite{slamdefi.2016a}
+\end{quote}
+Als Simultaneous Localization and Mapping bezeichnet man die Aufgabe, die Trajektorie samt Orientierungsinformation einer sich 
+bewegenden Plattform, z.B. ein Smartphone, Tablet oder jegliche Art von Roboter, aus Beobachtungen zu schätzen und gleichzeitig 
+aus den gewonnenen Informationen eine Karte der Umgebung zu erstellen.
+Diese Aufgabe ist für den weiteren Prozess von hoher Bedeutung. Zum einen sollen die generierten Karten sehr präzise sein, um einen hohen 
+Wert für den Benutzer oder für spezielle Anwendungen, die auf der Karte aufbauen, darzustellen. Zum anderen benötigen autonome Roboter, 
+beispielsweise Saug- oder Mähroboter, ein solch erzeugtes geometrisches Modell der Umgebung, um zielgerichtet selbstständig navigieren zu 
+können. \cite{slamdefi.2016a} 
+
 \subsection{Localization}
 \subsection{Mapping}
 
@@ -283,7 +337,39 @@ benötigt und ist deutlich komplexer umzusetzen, als ein einfachen markerbasiert
 
 \section{Technologien}
 \label{chap:Technologien}
+Dieses Abschnitt befasst sich mit den wichtigsten Programmier-Technologien, die in diesem Projekt eingesetzt werden. Ein kurzer Überblick 
+über die Historie der Technologien, worum es dabei geht und welche Aufgaben sie umfassen. 
+\\ 
+Der Augenmerk liegt auf dem Framework \textit{Google ARCore}, da dieses Hauptbestandteil des Projekts ist. 
 \subsection{Google ARCore}
+ARCore ist die von Google veröffentlichte Plattform zum Erstellen von \acl{AR} Erlebnissen, primär entwickelt für Android Phones. 
+Das \ac{SDK} ist in den Programmiersprachen Java und Kotlin geschrieben. Mit bestimmten \acs{API}s ermöglicht \textit{ARCore} die Erfassung 
+der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen und mit Informationen zu interagieren. Mitten des Jahres 2017 
+wurde die \textit{Google ARCore API} zum ersten Mal den Entwicklern und der \acs{AR}-Community präsentiert. Im ersten Quartal 2018 wurde 
+diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. 
+\\ 
+\linebreak 
+\textit{Project Tango} war ebenso eine Google-Plattform, mit dem Smartphones und Tablets ein \textit{„Raumgefühl“} erhalten. \cite{projecttango.2016j} 
+Die Plattform kombinierte die Eingabe verschiedener Sensoren, z.B. radarähnliche Infrarotstrahler, einer Infrarotkamera und hochpräzisen 
+Beschleunigungsmessern, Barometern und Gyroskopen, um schnell nutzbare Informationen der Umgebung zu generieren. Mit der Überarbeitung des 
+Konzepts wurde das neue unabhängige Projekt \textit{ARCore} geschaffen und somit die Anzahl der Hardwarekomponenten reduziert, bspw. wird 
+keine spezielle Infrarotkamera mehr benötigt. Die ARCore \acs{API} verwendet bei Anwendungen ausschließlich das Kamerabild des Smartphones und 
+dessen Sensoren. 
+\\ 
+\linebreak 
+Zum Integrieren von virtuellen Objekten in die reale Welt verwendet ARCore drei Schlüsselfunktionen unter Benutzung von Java und OpenGL, Unity 
+und Unreal:
+\begin{itemize}
+    \item Motion tracking, dt. Bewegungsverfolgung, ermöglicht das Verstehen und Verfolgen der Postion des Geräts relativ zur Realität.
+    \item Environmental understanding, dt. Verständnis der Umgebung, erkennt die Position und Größe aller Arten von Oberflächen: horizontale, 
+    vertikale und abgewinkelte Oberflächen, wie Wände, Böden, Tische oder Stühle.
+    \item Light estimation, dt. Lichtschätzung, schätzt die durch das Smartphone gegebenen Lichtverhältnisse der Umgebung. \cite{arcorefundamentals.2018m}
+\end{itemize} 
+Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \acl{SLAM} (\acs{SLAM}) \ref{chap:SLAM}, um so zu verstehen wo 
+sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
+Kamerabild, sogenannte Merkmalspunkte (feature points).
+
+
 \subsection{Android Jetpack}
 \subsection{Sceneform SDK}
 \subsection{SQLite}
