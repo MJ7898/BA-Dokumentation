@@ -46,6 +46,29 @@
     \field{year}{2017}
   \endentry
 
+  \entry{arcoreofficial.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AG}{%
+         family={ARCore},
+         familyi={A\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG1}
+    \strng{fullhash}{AG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+  \field{howpublished}{\url{https://developers.google.com/ar/discover/concepts}}
+    \field{title}{Fundamental Concept}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{azuma.1997a}{book}{}
     \name{author}{1}{}{%
       {{hash=ART}{%
@@ -226,6 +249,53 @@
   Realität?}
     \field{month}{03}
     \field{year}{2017}
+  \endentry
+
+  \entry{imubild.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BPDIJ}{%
+         family={Böttcher},
+         familyi={B\bibinitperiod},
+         given={Prof. Dr.-Ing\bibnamedelima Jörg},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim
+  I\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BPDIJ1}
+    \strng{fullhash}{BPDIJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+  \field{howpublished}{\url{https://messtechnik-und-sensorik.org/8-sensoren-fuer-drehzahl-geschwindigkeit-beschleunigung-und-position-im-raum/}}
+    \field{title}{Inertiale Messeinheit (IMU)}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{koordinatennorm.1973m}{book}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DIN-461},
+         familyi={D\bibinithyphendelim \bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ISO - Internationale Organisation für Normen}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Graphische Darstellung in Koordinatensystemen}
+    \field{year}{1973}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{springer.2019s}{book}{}

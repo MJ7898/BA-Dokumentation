@@ -364,10 +364,41 @@ und Unreal:
     \item Environmental understanding, dt. Verständnis der Umgebung, erkennt die Position und Größe aller Arten von Oberflächen: horizontale, 
     vertikale und abgewinkelte Oberflächen, wie Wände, Böden, Tische oder Stühle.
     \item Light estimation, dt. Lichtschätzung, schätzt die durch das Smartphone gegebenen Lichtverhältnisse der Umgebung. \cite{arcorefundamentals.2018m}
-\end{itemize} 
+\end{itemize}
+\subsubsection*{Motion tracking}
 Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \acl{SLAM} (\acs{SLAM}) \ref{chap:SLAM}, um so zu verstehen wo 
 sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
-Kamerabild, sogenannte Merkmalspunkte (feature points).
+Kamerabild, sogenannte Merkmalspunkte (feature points). Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
+der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
+Ausrichtung der Kamera relativ zur Realität abgeschätzt. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
+    \caption{Skizze zur Bewegungsverfolgung des Smartphones \cite{arcoreofficial.2020j}}
+    \label{pic:motiontracking}
+\end{figure}
+\\ 
+Die \acl{IMU} in Smart-Devices besitzt drei Beschleunigungssensoren, z.B. piezoelektrische Beschleunigungssensoren oder \ac{MEMS}, für die 
+drei Raumachsen:
+\\ 
+\begin{itemize}
+    \item Die Abszissenachse (X-Achse), die horizontale (waagerechte) Koordinatenachse,
+    \item Die Ordinatenachse (Y-Achse), die darauf vertikale (senkrechte) Koordinatenachse und
+    \item Die Applikatenachse (Z-Achse), die auf beiden anderen Achsen senkrechte Achse \cite{koordinatennorm.1973m}
+\end{itemize}
+Ebenso besitzt die \acs{IMU} Drehratensensoren, z.B. ein Gyroskop zur Messung der Rotationsgeschwindigkeit, welche die Drehraten um 
+diese Raumachsen messen. Durch die kontinuierliche Auslesung der Sensordaten, wird die Position des Geräts berechnet und in Form von 
+drei Koordinaten ausgegeben. Ausgehend von dem Referenzkoordinatensystem wird die Position neu bestimmt. Die Abbildung \ref{pic:Positionsberechnung} 
+veranschaulicht solch ein Beispiel.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/imu-Bsp.png}
+    \caption{Grundprinzip einer IMU \cite{imubild.2020j}}
+    \label{pic:Positionsberechnung}
+\end{figure}
+\subsubsection*{Environmental understanding}
+\subsubsection*{Light estimation}
+
 
 
 \subsection{Android Jetpack}

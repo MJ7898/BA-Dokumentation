@@ -383,6 +383,7 @@ OUTPUT /Users/mj/BA-Dokumentation/bericht.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmro10.tfm
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
 INPUT /Users/mj/BA-Dokumentation/bericht.lof
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 OUTPUT /Users/mj/BA-Dokumentation/bericht.lof
 INPUT /Users/mj/BA-Dokumentation/bericht.lot
 INPUT /Users/mj/BA-Dokumentation/bericht.lot
@@ -398,7 +399,6 @@ INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 INPUT /Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmr.fd
 OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux
@@ -410,6 +410,12 @@ INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png
 OUTPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux
 INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
 INPUT /Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
