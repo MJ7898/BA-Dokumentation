@@ -329,7 +329,13 @@ können. \cite{slamdefi.2016a}
 
 \subsection{Localization}
 \subsection{Mapping}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -----------> tbd... !! <-----------------
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Quaternionen}
 \label{chap:Quaternionen}
 \subsection{Transformation}
@@ -368,12 +374,12 @@ und Unreal:
 \subsubsection*{Motion tracking}
 Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \acl{SLAM} (\acs{SLAM}) \ref{chap:SLAM}, um so zu verstehen wo 
 sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
-Kamerabild, sogenannte Merkmalspunkte (feature points). Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
+Kamerabild, sogenannte Merkmalspunkte \textit{„feature points“}. Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
 der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
 Ausrichtung der Kamera relativ zur Realität abgeschätzt. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
+    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
     \caption{Skizze zur Bewegungsverfolgung des Smartphones \cite{arcoreofficial.2020j}}
     \label{pic:motiontracking}
 \end{figure}
@@ -397,10 +403,51 @@ veranschaulicht solch ein Beispiel.
     \label{pic:Positionsberechnung}
 \end{figure}
 \subsubsection*{Environmental understanding}
+Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
+Flächen beim scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
+naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
+Platzieren von virtuelle Objekte auf den erfassten Flächen möglich.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
+    \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
+    \label{pic:environmentalunderst}
+\end{figure}
+
 \subsubsection*{Light estimation}
-
-
+Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
+\acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
+der Umgebung anzupassen. Diese Funktion verstärkt die Anpassung des virtuellen Objektes an die Realität und lässt dieses noch glaubwürdiger 
+erscheinen.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/lightEstim.png}
+    \caption{Skizze zu den Lichtverhältnissen des Smartphones \cite{arcoreofficial.2020j}}
+    \label{pic:lightestim}
+\end{figure}
 
 \subsection{Android Jetpack}
+Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
+Boilerplate\footnote{Sind Codeabschnitte, die an mehreren Stellen mit wenigen oder gar keinen Änderungen aufgeführt sein müssen. \cite{boilerplate.2019m}}-Code 
+zu reduzieren und Code zu schreiben. Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
+Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick gewährleistet, um Best Practices und empfohlene 
+Architekturen zu berücksichtigen.
+\\ 
+Die Bibliothekensammlung ist die Grundlage für die verwendete Architektur, Android Architecture Components in Abschnitt \ref{chap:AAC}.
+\\ 
+\linebreak
+Die Abbildung \ref{pic:androidjetpackcomp} verschafft einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/androidjetpackcomps.png}
+    \caption{Komponenten von Android Jetpack \cite{androidjpdescr.2018m}}
+    \label{pic:androidjetpackcomp}
+\end{figure}
+Eine nähere Erläuterung aller Bibliotheken findet im Rahmen dieser Ausarbeitung nicht statt, wobei die zur Verwendung geplanten 
+„Architecture Components“ beschrieben werden. LiveData, Room und ViewModel sind Bestandteil der Android Architecture Components Konstellation 
+und bilden die Basis für eine Art der \textit{MVVM-Architektur}.
+
 \subsection{Sceneform SDK}
+
+
 \subsection{SQLite}
