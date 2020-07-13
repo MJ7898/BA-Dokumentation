@@ -433,6 +433,13 @@ zu reduzieren und Code zu schreiben. Die durch Android Jetpack zur Verfügung ge
 Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick gewährleistet, um Best Practices und empfohlene 
 Architekturen zu berücksichtigen.
 \\ 
+Außerdem wurde Android Jetpack für moderne Design-Praktiken entwickelt, darunter fällt \textit{„seperation of concerns“} 
+\footnote{(SoC), Entwurfsprinzip, um verschiedene Verantwortlichkeiten auf verschieden Abschnitte zu trennen. \cite{soc.2019a}}, \textit{testability}, 
+\textit{loose coupling}, \textit{Observer Pattern} \footnote{Beobachter-Muster, Verhaltensmuster der GoF-Muster}, 
+\textit{Inversion of Control} 
+\footnote{(IoC), Umsetzugsparadigma, das ein spezifisches Objekt über ein mehrfach verwendetes Objekt aufruft. \cite{ioc.2020}} und 
+\textit{productivity features}, z.B. Plugin-Integrationen. Dies sind Techniken, um eine robuste und qualitativ hochwertige App zu erstellen.
+\\ 
 Die Bibliothekensammlung ist die Grundlage für die verwendete Architektur, Android Architecture Components in Abschnitt \ref{chap:AAC}.
 \\ 
 \linebreak
@@ -444,10 +451,19 @@ Die Abbildung \ref{pic:androidjetpackcomp} verschafft einen Überblick über die
     \label{pic:androidjetpackcomp}
 \end{figure}
 Eine nähere Erläuterung aller Bibliotheken findet im Rahmen dieser Ausarbeitung nicht statt, wobei die zur Verwendung geplanten 
-„Architecture Components“ beschrieben werden. LiveData, Room und ViewModel sind Bestandteil der Android Architecture Components Konstellation 
-und bilden die Basis für eine Art der \textit{MVVM-Architektur}.
+„Architecture Components“ beschrieben werden. 
+\\ 
+\linebreak
+LiveData, Room und ViewModel sind Bestandteil der \textit{Android Architecture Components}-Konstellation 
+und bilden die Basis für die Architektur, welche an das \textit{MVVM-Pattern} angelehnt ist.
+
+\subsection*{LiveData}
+\subsection*{Room}
+\subsection*{ViewModel}
 
 \subsection{Sceneform SDK}
+Das Sceneform \acs{SDK} ist ein \textit{open source} Projekt der Google LLC., welches für das Rendern von 3D-Szenen und -Animationen entwickelt 
+wurde. Diese gerenderten 3D-Objekte können Bestandteile einer Google ARCore Anwendungen sein.  
 
 
 \subsection{SQLite}

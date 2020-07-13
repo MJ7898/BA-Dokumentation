@@ -621,6 +621,51 @@
     \field{year}{2018}
   \endentry
 
+  \entry{soc.2019a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=NN}{%
+         family={Natesan},
+         familyi={N\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NN1}
+    \strng{fullhash}{NN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\url{https://www.castsoftware.com/blog/how-to-implement-design-pattern-separation-of-concerns}}
+    \field{title}{How to implement Design Pattern – Separation of concerns}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ioc.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=NA}{%
+         family={Niemann},
+         familyi={N\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NA1}
+    \strng{fullhash}{NA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+  \field{howpublished}{\url{https://www.itwissen.info/IoC-inversion-of-control-Umkehrung-des-Kontrollflusses.html}}
+    \field{title}{IoC (inversion of control)}
+    \field{year}{2020}
+  \endentry
+
   \entry{gartnerhc.2016s}{misc}{}
     \name{author}{1}{}{%
       {{hash=PA}{%
