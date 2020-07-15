@@ -275,6 +275,28 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{viewmodeldiagr.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CG}{%
+         family={Codelabs},
+         familyi={C\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CG1}
+    \strng{fullhash}{CG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+  \field{howpublished}{\url{https://codelabs.developers.google.com/codelabs/android-room-with-a-view/}}
+    \field{title}{Android Room with a View - Java}
+    \field{year}{2020}
+  \endentry
+
   \entry{boilerplate.2019m}{misc}{}
     \name{author}{1}{}{%
       {{hash=DM}{%
@@ -297,6 +319,74 @@
   code?}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{livedata.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DG}{%
+         family={Developers},
+         familyi={D\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DG1}
+    \strng{fullhash}{DG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://developer.android.com/topic/libraries/architecture/livedata}}
+    \field{title}{LiveData Overview}
+    \field{year}{2020}
+  \endentry
+
+  \entry{room.2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DG}{%
+         family={Developers},
+         familyi={D\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DG1}
+    \strng{fullhash}{DG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://developer.android.com/topic/libraries/architecture/room}}
+    \field{title}{Room Persistence Library}
+    \field{year}{2017}
+  \endentry
+
+  \entry{roomdiagr.2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DG}{%
+         family={Developers},
+         familyi={D\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DG1}
+    \strng{fullhash}{DG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://developer.android.com/training/data-storage/room}}
+    \field{title}{Save data in a local database using Room}
+    \field{year}{2017}
   \endentry
 
   \entry{koordinatennorm.1973m}{book}{}
