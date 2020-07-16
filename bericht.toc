@@ -2,6 +2,7 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{7}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
@@ -41,7 +42,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Technologien}{22}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{23}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{22}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}Android Jetpack}{25}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
@@ -57,52 +58,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Softwarearchitektur}{30}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Modulare Software Architektur}{30}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.1}Modulare Software Architektur}{31}{subsection.2.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}MVVM}{30}{subsection.2.6.2}% 
+\contentsline {subsection}{\numberline {2.6.2}MVVM}{31}{subsection.2.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Android Architecture Components}{30}{subsection.2.6.3}% 
+\contentsline {subsection}{\numberline {2.6.3}Android Architecture Components}{31}{subsection.2.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Datenmodellierung}{30}{section.2.7}% 
+\contentsline {section}{\numberline {2.7}Datenmodellierung}{31}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzeption}{31}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Konzeption}{32}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{31}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{32}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{31}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{32}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{31}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{32}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Architekturkonzept}{31}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Architekturkonzept}{32}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Softwarekonzept}{31}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{32}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{31}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{32}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{31}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{32}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{31}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{32}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Datenmodell}{31}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}Datenmodell}{32}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{32}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung}{33}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung}{32}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Implementierung}{33}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{32}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{33}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{32}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{33}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{32}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{33}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{33}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Evaluation}{34}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{34}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Fazit}{35}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{35}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Ausblick}{36}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{36}{chapter.7}% 
+\contentsline {chapter}{Anhang}{37}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{36}{chapter.7}% 
+\contentsline {chapter}{Index}{37}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{36}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{37}{chapter.7}% 

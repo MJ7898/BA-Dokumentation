@@ -2,6 +2,7 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
 \babel@toc {english}{}
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -24,6 +25,8 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Room Architektur Diagramm \cite {roomdiagr.2017}}}{27}{figure.2.8}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.9}{\ignorespaces ViewModel Struktur Diagramm \cite {viewmodeldiagr.2020}}}{28}{figure.2.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces MVC Architektur Diagramm \cite {mvcbild.2020}}}{31}{figure.2.10}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

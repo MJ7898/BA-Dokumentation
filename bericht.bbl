@@ -560,6 +560,102 @@
     \field{year}{1856}
   \endentry
 
+  \entry{architektursw.2006f}{book}{}
+    \name{author}{1}{}{%
+      {{hash=HW}{%
+         family={Hasselbring},
+         familyi={H\bibinitperiod},
+         given={Wilhelm},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag 2006}%
+    }
+    \strng{namehash}{HW1}
+    \strng{fullhash}{HW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Software-Architektur}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{sqlite.2018j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HDR}{%
+         family={Hipp},
+         familyi={H\bibinitperiod},
+         given={D.\bibnamedelima Richard},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HDR1}
+    \strng{fullhash}{HDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{howpublished}{\url{https://www.sqlite.org/about.html}}
+    \field{title}{About SQLite}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{swarchitekturieee.2005}{book}{}
+    \name{author}{5}{}{%
+      {{hash=JM}{%
+         family={Jeckle},
+         familyi={J\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rupp},
+         familyi={R\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hahn},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zengler},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=QS}{%
+         family={Queins},
+         familyi={Q\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Hanser Fachbuchverlag}%
+    }
+    \strng{namehash}{JM+1}
+    \strng{fullhash}{JMRCHJZBQS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{UML 2 glasklar}
+    \field{year}{2005}
+  \endentry
+
   \entry{artoolkitsheet.1999o}{book}{}
     \name{author}{2}{}{%
       {{hash=KH}{%
@@ -662,6 +758,17 @@
   important as 'eating three meals a day'}
     \field{month}{10}
     \field{year}{2016}
+  \endentry
+
+  \entry{mvcbild.2020}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://bmu-verlag.de/model-view-controller-mvc-softwareentwicklungsmuster/}}
+    \field{title}{ModelView Controller}
+    \field{year}{2020}
   \endentry
 
   \entry{studieptc.2020j}{misc}{}
