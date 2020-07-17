@@ -50,21 +50,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.4}SQLite}{29}{subsection.2.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}OpenGL}{30}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Softwarearchitektur}{30}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Projektionen}{30}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.1}Modulare Software Architektur}{31}{subsection.2.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Shader}{30}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.5.2}MVVM}{31}{subsection.2.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Softwarearchitektur}{30}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.5.3}Android Architecture Components}{31}{subsection.2.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Modulare Software Architektur}{31}{subsection.2.6.1}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}MVVM}{31}{subsection.2.6.2}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.3}Android Architecture Components}{31}{subsection.2.6.3}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Datenmodellierung}{31}{section.2.7}% 
+\contentsline {section}{\numberline {2.6}Datenmodellierung}{31}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Konzeption}{32}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
