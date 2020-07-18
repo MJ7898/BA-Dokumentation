@@ -955,6 +955,27 @@
     \field{year}{2016}
   \endentry
 
+  \entry{androidmvvm.2019a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={Ricardo},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+  \field{howpublished}{\url{https://blog.cosee.biz/2019/04/18/warum-android-mvvm-eine-gute-sache-ist}}
+    \field{title}{Warum Android MVVM eine gute Sache ist}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{mr.2018o}{misc}{}
     \name{author}{1}{}{%
       {{hash=SR}{%
