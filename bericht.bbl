@@ -459,6 +459,28 @@
     \field{year}{2020}
   \endentry
 
+  \entry{mvvmAufbau.2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=EN}{%
+         family={Eder},
+         familyi={E\bibinitperiod},
+         given={Norbert},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EN1}
+    \strng{fullhash}{EN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://www.norberteder.com/model-view-viewmodel-die-serie/}}
+    \field{title}{MVVM – Model-View-ViewModel: Die Serie}
+    \field{year}{2016}
+  \endentry
+
   \entry{projecttango.2016j}{misc}{}
     \name{author}{1}{}{%
       {{hash=EM}{%
@@ -605,6 +627,41 @@
     \field{howpublished}{\url{https://www.sqlite.org/about.html}}
     \field{title}{About SQLite}
     \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{mvvmDiagramm.2015n}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=JL}{%
+         family={Jaeckle},
+         familyi={J\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Goll},
+         familyi={G\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dausmann},
+         familyi={D\bibinitperiod},
+         given={Manfred},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JLGJDM1}
+    \strng{fullhash}{JLGJDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url{https://www.it-designers-gruppe.de/fileadmin/Inhalte/Studentenportal/Das_Architekturmuster_MVVM__Text___1_.pdf}}
+    \field{title}{Das Architekturmuster Model-View-ViewModel}
+    \field{year}{2015}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -795,6 +852,18 @@
     \field{year}{2020}
   \endentry
 
+  \entry{mvvmentwickler.2010s}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://entwickler.de/online/tipps-und-tricks-zum-mvvm-pattern-153374.html}}
+    \field{title}{MVVM-Pattern}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{vr.2018n}{misc}{}
     \name{author}{1}{}{%
       {{hash=MA}{%
@@ -930,6 +999,29 @@
   \field{howpublished}{\url{https://www.vdi-wissensforum.de/news/augmented-reality-fuer-die-digitale-zukunft-der-industrie/}}
     \field{title}{Augmented Reality für die digitale Zukunft der Industrie}
     \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{modularesoftware.2018s}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SE}{%
+         family={Schreyer},
+         familyi={S\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SE1}
+    \strng{fullhash}{SE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+  \field{howpublished}{\url{https://de.wikipedia.org/wiki/Modulare_Programmierung}}
+    \field{title}{Modulare Programmierung}
+    \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
