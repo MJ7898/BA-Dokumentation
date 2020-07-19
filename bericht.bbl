@@ -46,6 +46,18 @@
     \field{year}{2017}
   \endentry
 
+  \entry{aac.2020j}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{\url{https://developer.android.com/jetpack/guide}}
+    \field{title}{Architecture Components}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{arcoreofficial.2020j}{misc}{}
     \name{author}{1}{}{%
       {{hash=AG}{%

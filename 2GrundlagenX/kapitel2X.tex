@@ -44,6 +44,7 @@ Struktur repräsentiert wird.
     \caption{MVC Architektur Diagramm \cite{mvcbild.2020}}
     \label{pic:mvcdiagram}
 \end{figure} 
+\\
 Im Falle dieser Abbildung wurde das Strukturmuster \ac{MVC} ausgewählt, welches die zu sehenden Komponenten in drei in sich 
 geschlossene und unabhängige Fragmente unterteilt die miteinander interagieren. 
 \\ 
@@ -109,6 +110,7 @@ Die Ebenen, die das MVVM-Pattern enthält, werden in Abbildung (\ref{pic:mvvmdia
     \caption{MVVM Architektur Diagramm \cite{mvvmDiagramm.2015n}}
     \label{pic:mvvmdiagram}
 \end{figure} 
+\\
 Die View-Ebene stellt die Informationen der Benutzeroberfläche dar, fängt die Benutzereingaben ab 
 und gibt diese über Datenbindungen dann an das darunterliegende ViewModel weiter. Die View-Klasse enthält lediglich die Komponenten die 
 die Oberfläche optisch aus machen und die dazugehörigen Datenbindungsschnittstellen, um die Informationen übergeben zu können.
@@ -147,8 +149,80 @@ entwickelt.
 \subsection{Android Architecture Components}
 \label{chap:AAC}
 Die Android Architecture Components bestehen aus einer Sammlung von Tools und Bibliotheken, engl. Libraries, die entwickelt wurden, um die 
-Konstruktion von testbaren und stabilen Android-Apps zu vereinfachen. 
-
+Konstruktion von testbaren und stabilen Android-Apps zu vereinfachen. Mit der Einführung von Android Jetpack (\ref{sec:androidjetpack}) wurden 
+viele Komponenten, z.B. Bibliotheken und Frameworks, für die Entwicklung von Apps vereint. In den vielen Bibliotheken, die von Android Jetpack 
+zur Verfügung gestellt werden, befinden sich auch die sogenannten \textit{Architecture components}. Diese \textit{Components} unterstützen und 
+fördern die Umsetzung der \textit{MVVM} Pattern basierten Architektur (\ref{chap:MVVM}). Die zuvor genannten Bibliotheken ViewModel, LiveData und Room 
+sind maßgeblich für die Gestaltung des angestrebten Musters Model-View-ViewModel. 
+\\ 
+Google selbst empfiehlt im Rahmen der veröffentlichten \textit{„Guide to app architecture“} Dokumentation die Verwendung der \textit{Architecture components}, um 
+eine stabile und performante Applikation zu designen, da diese auf bewährten Prinzipien, unter anderem das \textit{seperation of concers} Prinzip, basieren.
+\\ 
+\linebreak
+Folgender Abschnitt befasst sich im einzelnen mit den Komponenten, die für die \textit{Android architecture} essentiell sind:
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2GrundlagenX/Bilder/activityComp.png}
+    \caption{Android Grundkomponente \cite{aac.2020j}}
+    \label{pic:activity}
+\end{figure}
+\\
+Grundsätzlich sind Activities und Fragments nicht Teil der eigentlichen \textit{„Architecture Components“}, sondern sind lediglich Grundkomponenten 
+der Android App Entwicklung die die Benutzeroberfläche und die dazu korrespondierenden Layout-Dateien verwaltet. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2GrundlagenX/Bilder/viewModelComp.png}
+    \caption{ViewModel Komponente \cite{aac.2020j}}
+    \label{pic:vmComp}
+\end{figure} 
+\\ 
+Das ViewModel (siehe Abschnitt \ref{sec:ViewModel}) verwaltet die relevanten Daten der UI. Diese Komponente hat einen unabhängigen Lebenszyklus 
+dem Activity-Objekt gegenüber. Somit sind Daten bei unvorhergesehenen Unterbrechungen oder Fehlern der UI nicht betroffen und können bei 
+erneutem Aufbau der Oberfläche ohne Probleme nachgeladen werden. Die im ViewModel enthaltenen LiveData Objekte (\ref{sec:LiveData}) sind 
+beobachtbare Daten-Container die eine Activity ohne expliziten Aufruf über Datenänderungen informiert. Durch diese Methode wird der 
+Lebenszyklus der aktiven Komponente respektiert und berücksichtigt. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2GrundlagenX/Bilder/repoComp.png}
+    \caption{Repository Komponente \cite{aac.2020j}}
+    \label{pic:repoComp}
+\end{figure} 
+\\ 
+Mit dem Repository wird ein „best practice“ Fall umgesetzt, der eigentlich kein Bestandteil der Android Jetpack Library ist. Diese Komponente 
+ist dafür zuständig das ViewModel von der eigentlichen Datenquelle zu trennen, um Informationen aus verschiedenen Quellen beziehen und 
+synchronisieren zu können. Das Repository dient als Schnittstelle zu mehreren Datenbeziehungspunkten und verwaltet ein Verzeichnis zur 
+Speicherung und Beschreibung von Objekten und Informationen. Zudem kapselt das Repositorium die Logik für das Persistieren und Erzeugen von 
+Entitäten und Aggregaten von der Ansicht. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2GrundlagenX/Bilder/roomComp.png}
+    \caption{Model / Room Komponente \cite{aac.2020j}}
+    \label{pic:roomComp}
+\end{figure} 
+\\ 
+Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
+die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. \textit{\@Entity, \@Dao}, gearbeitet wird. Der 
+Abbildung \ref{pic:roomComp} ist demnach zu entnehmen, dass die Bibliothek Room einen Großteil der Funktionen eines Models abdeckt und so 
+die Model-Komponente repräsentiert. Anschließend auf das Datenbank layer ist die eigentliche Persistenzschicht, die SQLite Datenbank.
+\\ 
+\linebreak 
+In einem fortlaufenden Architektur-Diagramm sind die Komponenten wie folgt angeordnet, um die Abhängigkeiten zwischen den einzelnen Teilen 
+zu verdeutlichen. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2GrundlagenX/Bilder/aac.png}
+    \caption{Android Architecture Components Diagram\cite{aac.2020j}}
+    \label{pic:aacDia}
+\end{figure} 
+\\ 
+In dem Diagramm \ref{pic:aacDia} wird deutlich, welches Modul welche Abhängigkeiten besitz, bzw. zu welchen oder von welchen Modulen 
+Informationen bezogen werden können. Einzelne Komponenten können ihren Vor- oder Nachgänger niemals umgehen und sind so einer festen 
+Hierarchie eingeordnet. Die Abbildung zeigt auch eine beispielhafte Ausführung mehrerer Datenbezugsquellen.
+\\ 
+Bei genauer Betrachtung des Diagramms sind alle Komponenten wiederzufinden, die ebenso in dem MVVM-Muster gegeben 
+sind und das Muster prägen. Durch die vielen Komponenten und Schnittstellen ist modularität gegeben und trägt dazu bei, dass weiter Module 
+angehängt oder ausgetauscht werden können. 
 
 \section{Datenmodellierung}
 \label{chap:Datenmodellierung}
+tbd... 

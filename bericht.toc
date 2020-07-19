@@ -58,46 +58,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.3}Android Architecture Components}{33}{subsection.2.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Datenmodellierung}{33}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}Datenmodellierung}{35}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzeption}{34}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Konzeption}{37}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{34}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{37}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{34}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{37}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{34}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{37}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Architekturkonzept}{34}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Architekturkonzept}{37}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Softwarekonzept}{34}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{37}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{34}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{37}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{34}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{37}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{34}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{37}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Datenmodell}{34}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}Datenmodell}{37}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{35}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung}{38}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung}{35}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Implementierung}{38}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{35}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{38}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{35}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{38}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{35}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{38}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{36}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Evaluation}{39}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{37}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Fazit}{40}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{38}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Ausblick}{41}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{39}{chapter.7}% 
+\contentsline {chapter}{Anhang}{42}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{39}{chapter.7}% 
+\contentsline {chapter}{Index}{42}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{39}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{42}{chapter.7}% 
