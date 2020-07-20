@@ -225,4 +225,35 @@ angehängt oder ausgetauscht werden können.
 
 \section{Datenmodellierung}
 \label{chap:Datenmodellierung}
-tbd... 
+Datenmodellierung ist ein Verfahren zur formalen Abbildung von Objekten deren Attribute und Beziehungen in einem definierten Kontext. Die 
+Modellierung ist zielführend, um einen Überblick der Datensicht des Systems oder der Applikation zu erhalten. Hauptaufgabe ist die eindeutige 
+Definition von Objekten und deren Spezifikationen und Ausprägungen. Ebenso hilft die Datenmodellierung bei der visuellen Darstellung von 
+Informationen und bei der Einhaltung von Voraussetzungen und Richtlinien.
+\\ 
+Die aus der Modellierung entstehenden Datenmodelle stellen die Objekte und Beziehungen untereinander dar und repräsentieren die zu 
+persistierende Struktur der Objekte. Datenmodelle sind ein wichtiger Bestandteil einer Software und haben meist eine längere Lebensdauer als 
+die Software an sich, da Änderungen an den Modellen meist viele Risiken mit sich bringen, überwiegend Datenverlust.
+\\ 
+\linebreak
+Durch die Übersichtlichkeit der Datenmodelle können Standardwerte, Semantik, Sicherheit und die Datenqualität gleichzeitig sichergestellt 
+werden. Die Konsistenz von Namenskonventionen wird durch die Überschaubarkeit auch einfacher überprüfbar. 
+\\ 
+\linebreak
+In der Softwareentwicklung wird die Datenmodellierung als wesentliche Teilaufgabe gesehen, um ein System aufzubauen. Innerhalb des 
+Datendesigns gibt es drei bedeutsame Varianten die aufeinander aufbauen:
+\begin{itemize}
+    \item Konzeptionelles Datenbankschema: Betrachtung eines für die Applikation wichtigen Szenarios der realen Welt unter Berücksichtigung 
+    aller relevanten Objekte, Eigenschaften und Beziehungen zwischen ihnen. Diese Informationen werden aus dem Kontext heraus analysiert 
+    und grafisch als auch textuell dargestellt. Die Darstellung basiert auf einem \ac{ERM}, das die Objekt (Entities) mit ihren jeweiligen 
+    Eigenschaften (Attributes) und die Beziehungen (Relationships) darstellt. Das sogenannte Semantische Datenmodell.
+    \item Logisches Datenbankschema: Hierbei wird das konzeptionelle Datenbankschema um datentechnische Angaben, z.B. Feldtypen /-formate 
+    und Identifikationseigenschaften (Primary Keys), erweitert. Das logische Datenbankschemata unterliegt den Regeln der von dem \ac{DBMS}
+    gegebenen Struktur, z.B. dem relationalen Datenmodell, das alle Daten und Objekte in Tabellen ablegt. Auch Relationales oder 
+    objektorientiertes Datenmodell genannt.
+    \item Physisches Datenbankschema: Dabei werden die Datensätze auf den physischen Komponenten organisiert und verwaltet. Eine Festlegung 
+    der Zugriffsoperationen finden in dieser Phase statt. Zugriffsoperationen sind Einfügen, Löschen, Aktualisieren und Suchen von Objekten 
+    und Informationen. Zudem wird hierbei versucht die Performance und effiziente Bearbeitung von Datenbankzugriffen durch Modellierung hochzuhalten.
+\end{itemize}  
+Die drei oben aufgeführten Phasen sind Bestandteile der Methodik des Datenbankdesigns, der sogenannten \textit{„top down-Methodik“}. 
+Wobei die erste Phase die allgemeine Anforderungsanalyse, die in obiger Auflistung nicht aufgeführt ist, beinhaltet. Bei dieser Phase finden 
+grundlegende Anforderungsprozesse statt, zum einen die Informationsstrukturanforderungen und zum anderen die Datenverarbeitungsanforderungen. 
