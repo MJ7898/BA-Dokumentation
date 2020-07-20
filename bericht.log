@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  20 JUL 2020 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  20 JUL 2020 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,6 +1058,11 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'datenmodellierung.2019d':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'einsatzgebietear.2017a':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1813,7 +1818,12 @@ Overfull \hbox (19.14507pt too wide) in paragraph at lines 194--194
 [][]\T1/lmr/m/sc/10.95 (-20) Elgan\T1/lmr/m/n/10.95 (-20) , Mi-ke [2016]. \T1/lmr/m/it/10.95 (-20) How Goo-gle's Pro-ject Tan-go will change your li-fe\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / www . computerworld .
  []
 
-[45] [46]
+[45]
+Overfull \hbox (16.44861pt too wide) in paragraph at lines 194--194
+[][]\T1/lmr/m/sc/10.95 (-20) Roeing\T1/lmr/m/n/10.95 (-20) , Frank [2019]. \T1/lmr/m/it/10.95 (-20) Da-ten-mo-del-lie-rung\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / de . wikipedia . org / wiki / Datenmodellierung$[]
+ []
+
+[46]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
@@ -1824,18 +1834,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30425 strings out of 492616
- 561225 string characters out of 6129481
+ 30431 strings out of 492616
+ 561424 string characters out of 6129481
  1055154 words of memory out of 5000000
- 33242 multiletter control sequences out of 15000+600000
+ 33247 multiletter control sequences out of 15000+600000
  90388 words of font info for 164 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,10n,83p,1179b,3454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (50 pages, 5337149 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (50 pages, 5338189 bytes).
 PDF statistics:
- 1168 PDF objects out of 1200 (max. 8388607)
- 1035 compressed objects within 11 object streams
- 231 named destinations out of 1000 (max. 500000)
+ 1179 PDF objects out of 1200 (max. 8388607)
+ 1046 compressed objects within 11 object streams
+ 232 named destinations out of 1000 (max. 500000)
  26723 words of extra memory for PDF output out of 29859 (max. 10000000)
 
