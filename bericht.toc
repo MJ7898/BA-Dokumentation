@@ -74,30 +74,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{39}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{39}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.1}Google ARCore}{40}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{39}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.2}ARToolKit}{40}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Datenmodell}{39}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}Datenmodell}{40}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{40}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung}{41}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung}{40}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Implementierung}{41}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Umgebungserkennung / Scan - Lernphase}{40}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Scan-Phase}{41}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{40}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{41}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf - Test-Szenario}{40}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Testdurchlauf / Test-Szenario}{41}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{41}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Evaluation}{42}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{42}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Fazit}{43}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{43}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Ausblick}{44}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{44}{chapter.7}% 
+\contentsline {chapter}{Anhang}{45}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{44}{chapter.7}% 
+\contentsline {chapter}{Index}{45}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{44}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{45}{chapter.7}% 
