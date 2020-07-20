@@ -280,6 +280,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -410,6 +414,16 @@ INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
@@ -426,7 +440,6 @@ INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm

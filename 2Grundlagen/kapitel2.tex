@@ -180,6 +180,7 @@ Diese Art der erweiterten Realität basiert auf den gegebenen Grundlagen der \ac
 hinzugefügt, indem sie an bestimmte Stellen projiziert werden. \acl{MR} baut darauf auf und verankert die digitalen Objekte mit dem realen
 dreidimensionalen Raum, sodass eine Realitätsnahe Interaktion stattfinden kann. Virtuelle und echte Welt verschmelzen dadurch endgültig zu 
 einer einzigen Welt. 
+
 \subsubsection*{Mixed Reality bezüglich der virtuellen Welt}
 Hinsichtlich der \acs{VR} gibt es zu Anfang keine grundlegenden Änderungen gegenüber der \acs{MR}. Hierbei kann der Nutzer durch 
 \acs{MR} ebenso die Außenwelt ausblenden und sich lediglich auf die virtuelle Wahrnehmung fixieren. Erst in der Benutzung werden die Unterschiede 
@@ -192,7 +193,6 @@ Bei \acs{MR} wird jeder Schritt und jede Bewegung in die computergenerierte Welt
 Ein großer Investor dieser Technologie ist Microsoft mit \ac{WMR}, wobei bereits schon Erfolge erzielt werden konnten. Eine Standhafte Plattform 
 die nur darauf wartet ausgebaut und intensiver genutzt zu werden. Für die Plattform vorgesehene Brillen gibt es schon viele Produzenten, wie z.B. 
 die \textit{HMD Odyssey} von Samsung oder der \textit{Explorer} von Lenovo.
-
 
 \subsection{Varianten der Augmented Reality}
 \label{subchap:Varianten der AR}
@@ -224,17 +224,46 @@ gestalten, wie der folgenden Abbildung \ref{pic:snapchatAR} zu entnehmen ist.
     \label{pic:snapchatAR}
 \end{figure}
 \subsection*{Smart-Brillen AR}
-% ... TO BE DONE !! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%
-%
-%
-%
-%
-%
-%
-% MUSS NOCH GESCHRIEBEN WERDEN !!!!! <---------------------------------> !!!!!!!!!!!!!!!!
+Unter Smart- oder Datenbrillen und Smart Glasses wird ein Konstrukt verstanden, das eine Brille mit einem tragbaren Minicomputer verwirklicht. 
+Dabei werden Informationen über kleinste Monitore oder Prismen ausgegeben und dem Nutzer zusätzlich in das Sichtfeld projiziert. Im Gegensatz
+zur mobilen \acs{AR} hat der Nutzer kein Gerät in der Hand und ist somit in seiner Bewegung weniger eingeschränkt und flexibler. 
+\\ 
+\linebreak
+Die Technologie der Smart-Brillen ist ein ähnliches Konzept zu der \acs{VR}-Brille, allerdings befindet sich die Smart-Brille für den 
+öffentlichen Gebrauch noch in der Entwicklungsphase, da nur bedingte Funktionen möglich sind und die Kosten für den Normalverbraucher nur 
+bedingt tragbar erscheinen. Mit der überarbeiteten Version der \textit{HoloLens 2} von Microsoft ist eine deutlich komfortablere 
+Möglichkeiten des alltäglichen Gebrauchs geboten, da diese im Vergleich zum Vorgängermodell deutlich komfortabler, leichter und 
+handlicher ist. Das Design der Datenbrille ist von einer normalen Brille noch weit entfernt, ermöglicht mittlerweile aber das 
+uneingeschränkte Sehen und Wahrnehmen der Umgebung. Die Bedienung des Geräts basiert auf schon vorhandenen Möglichkeiten die bereits in anderen 
+Geräten Anwendung finden. Darunter gibt es am Gerät angebrachte Touchsensoren, Handbewegungen und -gesten und Eye-Tracking. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/smartglassAW.png}
+    \caption{Test der HoloLens 2}
+    \label{pic:testholo}
+\end{figure}
+\\ 
+\linebreak 
+Speziell im industriellen Bezug bieten die neuentwickelten Brillen ein komfortables und akzeptables Gewicht, sodass diese ohne große 
+Probleme dauerhaft tragbar sind und den Mitarbeiter bei seiner Arbeit nicht übermäßig einschränken.
+\\ 
+\linebreak
+Die Programmierung solcher \acs{AR}-Brillen laufen häufig über eigene \acs{SDK}s und plattformunabhängige Laufzeit- und 
+Entwicklungsumgebungen, z.B. Unity oder Unreal Engine. Diese gelten als führende Produkte im Bereich der 3D-Echtzeitdarstellung.
+Ein marktführendes Produkt ist unter anderem die Microsoft HoloLens 2, die der folgenden Abbildung zu entnehmen ist. 
+\begin{figure}[hbt!]
+    \centering
+    \subfigure[Google Glass 2]{\includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/googleglass.png}}
+    \subfigure[HoloLens 2]{\includegraphics[width=7.5cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/hololensside.png}}
+    \caption{Datenbrillen (\acs{HMD})}
+    \label{pic:datenbrillen}
+\end{figure}
+\\ 
+\linebreak
+Eine schwer zu umgehende Herausforderung der \acl{AR} ist die Bestimmung der Position in der Daten und Objekte projiziert werden. Auf die 
+Ansätze, diese Herausforderung zu bewältigen, wird in folgendem Abschnitt \ref{sec:posi} eingegangen.
 \subsection{Positionsbestimmung}
+\label{sec:posi}
 Um ein digitales Objekt als Overlay dem Kamera-Live-Bild hinzuzufügen, werden genauestens definierte Positionen benötigt. Diese Positionen 
 können durch unterschiedliche Ansätze ermittelt werden. Je nach Anwendungsfall, z.B. als Navigation, Routenplaner oder Google Maps 
 \textit{„Live View“} \cite{googleliveview.2019a}, reicht eine etwas ungenauere Positionsbestimmung per \acs{GPS}, da in Relation zur 
