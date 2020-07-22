@@ -42,13 +42,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Rotation}{24}{subsection.2.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Technologien}{24}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Technologien}{25}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{24}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{25}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Android Jetpack}{27}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}Android Jetpack}{28}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Sceneform SDK}{30}{subsection.2.4.3}% 
+\contentsline {subsection}{\numberline {2.4.3}Sceneform SDK}{31}{subsection.2.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.4}SQLite}{31}{subsection.2.4.4}% 
 \defcounter {refsection}{0}\relax 
