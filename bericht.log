@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  22 JUL 2020 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  22 JUL 2020 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1460,43 +1460,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--343
 
 [22]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 351.
+(Font)              <9> on input line 346.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 351.
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--364
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 365--377
+(Font)              <5> on input line 346.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 363--375
 
  []
 
 Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
-although it is yet undefined on input line 421.
+although it is yet undefined on input line 419.
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--437
+Underfull \hbox (badness 10000) in paragraph at lines 418--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--437
+Underfull \hbox (badness 10000) in paragraph at lines 418--435
 
  []
 
 [24]
 Package acronym Info: Label `acro:IMU' newly defined as it shall be overridden
-although it is yet undefined on input line 447.
+although it is yet undefined on input line 445.
 <2Grundlagen/Bilder/motionTracking.png, id=564, 851.18pt x 358.84062pt>
 File: 2Grundlagen/Bilder/motionTracking.png Graphic file (type png)
 <use 2Grundlagen/Bilder/motionTracking.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/motionTracking.png  used on input line 451.
+Package pdftex.def Info: 2Grundlagen/Bilder/motionTracking.png  used on input line 449.
 (pdftex.def)             Requested size: 337.45276pt x 142.2634pt.
 Package acronym Info: Label `acro:MEMS' newly defined as it shall be overridden
-although it is yet undefined on input line 456.
+although it is yet undefined on input line 454.
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--459
+Underfull \hbox (badness 10000) in paragraph at lines 442--457
 
  []
 
@@ -1504,28 +1499,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 444--459
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.459 \begin{itemize}
+l.457 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png>]
 <2Grundlagen/Bilder/imu-Bsp.png, id=579, 711.15688pt x 534.49687pt>
 File: 2Grundlagen/Bilder/imu-Bsp.png Graphic file (type png)
 <use 2Grundlagen/Bilder/imu-Bsp.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 470.
+Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 468.
 (pdftex.def)             Requested size: 284.53366pt x 213.85205pt.
 <2Grundlagen/Bilder/environmentalUnderst.png, id=581, 846.16125pt x 352.81813pt>
 File: 2Grundlagen/Bilder/environmentalUnderst.png Graphic file (type png)
 <use 2Grundlagen/Bilder/environmentalUnderst.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/environmentalUnderst.png  used on input line 481.
+Package pdftex.def Info: 2Grundlagen/Bilder/environmentalUnderst.png  used on input line 479.
 (pdftex.def)             Requested size: 341.1828pt x 142.26068pt.
 <2Grundlagen/Bilder/lightEstim.png, id=584, 849.1725pt x 357.335pt>
 File: 2Grundlagen/Bilder/lightEstim.png Graphic file (type png)
 <use 2Grundlagen/Bilder/lightEstim.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/lightEstim.png  used on input line 493.
+Package pdftex.def Info: 2Grundlagen/Bilder/lightEstim.png  used on input line 491.
 (pdftex.def)             Requested size: 338.06923pt x 142.2608pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.497 
+l.495 
        </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png>]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
@@ -1533,15 +1528,15 @@ Package microtype Info: Character `029' is missing
 <2Grundlagen/Bilder/androidjetpackcomps.png, id=602, 589.70313pt x 297.11pt>
 File: 2Grundlagen/Bilder/androidjetpackcomps.png Graphic file (type png)
 <use 2Grundlagen/Bilder/androidjetpackcomps.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/androidjetpackcomps.png  used on input line 519.
+Package pdftex.def Info: 2Grundlagen/Bilder/androidjetpackcomps.png  used on input line 517.
 (pdftex.def)             Requested size: 426.79945pt x 215.03427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--530
+Underfull \hbox (badness 10000) in paragraph at lines 498--528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--530
+Underfull \hbox (badness 10000) in paragraph at lines 498--528
 
  []
 
@@ -1549,14 +1544,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--530
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.530 
+l.528 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.530 
+l.528 
        </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/environmentalUnderst.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 533--542
+Underfull \hbox (badness 10000) in paragraph at lines 531--540
 
  []
 
@@ -1564,31 +1559,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--542
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.542 \subsection
+l.540 \subsection
                  *{Room} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 544--551
+Underfull \hbox (badness 10000) in paragraph at lines 542--549
 
  []
 
 <2Grundlagen/Bilder/roomArchitecture.png, id=631, 595.22375pt x 539.51563pt>
 File: 2Grundlagen/Bilder/roomArchitecture.png Graphic file (type png)
 <use 2Grundlagen/Bilder/roomArchitecture.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 559.
+Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 557.
 (pdftex.def)             Requested size: 235.43323pt x 213.39857pt.
 Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
-although it is yet undefined on input line 577.
+although it is yet undefined on input line 575.
 <2Grundlagen/Bilder/viewModelDiagram.png, id=638, 482.30188pt x 302.12875pt>
 File: 2Grundlagen/Bilder/viewModelDiagram.png Graphic file (type png)
 <use 2Grundlagen/Bilder/viewModelDiagram.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 584.
+Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 582.
 (pdftex.def)             Requested size: 340.65578pt x 213.39726pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--588
+Underfull \hbox (badness 10000) in paragraph at lines 568--586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--588
+Underfull \hbox (badness 10000) in paragraph at lines 568--586
 
  []
 
@@ -1596,14 +1591,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 570--588
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.588 
+l.586 
        </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/roomArchitecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 590--609
+Underfull \hbox (badness 10000) in paragraph at lines 588--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--609
+Underfull \hbox (badness 10000) in paragraph at lines 588--607
 
  []
 
@@ -1611,7 +1606,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 590--609
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.609 \subsection
+l.607 \subsection
                  {SQLite} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/viewModelDiagram.png>]) [31]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
@@ -1853,7 +1848,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,10n,83p,1179b,3454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (52 pages, 5344176 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (52 pages, 5344177 bytes).
 PDF statistics:
  1206 PDF objects out of 1440 (max. 8388607)
  1071 compressed objects within 11 object streams
