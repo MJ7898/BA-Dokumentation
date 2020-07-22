@@ -348,13 +348,52 @@ Schulungsinhalten verbessert sich der Lernprozess und damit wird auch die Nutzun
     mobilen Plattform im Raum anhand der sich an Bord befindlichen Sensoren sowie den Aufbau eines Modells der Umgebung. Dieses Problem ist 
     von großer praktischer Relevanz und ist Kernbestandteil der meisten mobilen Sensor- systeme. \cite{slamdefi.2016a}
 \end{quote}
-Als Simultaneous Localization and Mapping bezeichnet man die Aufgabe, die Trajektorie samt Orientierungsinformation einer sich 
-bewegenden Plattform, z.B. ein Smartphone, Tablet oder jegliche Art von Roboter, aus Beobachtungen zu schätzen und gleichzeitig 
-aus den gewonnenen Informationen eine Karte der Umgebung zu erstellen.
+Als Simultaneous Localization and Mapping auch \acs{SLAM}-Problem gennant, bezeichnet man die Aufgabe, die Trajektorie \footnote{Lösungskurve oder Bewegungspfad eines Objekts} 
+samt Orientierungsinformation einer sich bewegenden Plattform, z.B. ein Smartphone, Tablet oder jegliche Art von Roboter, aus 
+Beobachtungen zu schätzen und gleichzeitig aus den gewonnenen Informationen eine Karte der Umgebung zu erstellen.
 Diese Aufgabe ist für den weiteren Prozess von hoher Bedeutung. Zum einen sollen die generierten Karten sehr präzise sein, um einen hohen 
-Wert für den Benutzer oder für spezielle Anwendungen, die auf der Karte aufbauen, darzustellen. Zum anderen benötigen autonome Roboter, 
+Wert für den Nutzer oder für spezielle Anwendungen, die auf der Karte aufbauen, darzustellen. Zum anderen benötigen autonome Roboter, 
 beispielsweise Saug- oder Mähroboter, ein solch erzeugtes geometrisches Modell der Umgebung, um zielgerichtet selbstständig navigieren zu 
 können. \cite{slamdefi.2016a} 
+\\ 
+\linebreak
+1986 wurden auf der \textit{IEEE Robotics and Automation Conference} erste mathematische Definitionen vorgenommen, die mittels statischer 
+Theorien ermittelt und mit ersten Studien belegt wurden. Einige Jahre später,im Jahr 1995, wurde das \acs{SLAM} Problem erstmals auf dem 
+internationalen Symposium für Robotikforschung (\textit{ISRR'95}) vorgestellt. Die Forschungen hielten an, bis auf der \textit{ISRR'99} 
+die erste \acs{SLAM} Sitzung stattfand. 
+\subsection{Definition des Problems}
+Angenommen ein Roboter startet in einer Position auch Pose gennant und Konfiguration \textit{p0} und bewegt sich durch eine ihm 
+unbekannte Umgebung. Die Einstellung beinhaltet Position und Ausrichtung des Roboters. Je nach Bewegung in Raum oder Ebene ist die Pose 
+meist als 3- oder 6-dimensionaler Vektor abgebildet. Die Bewegung des Roboters wird durch bekannte Kontrollkommandos \textit{u} angewiesen, 
+allerdings mit einer gewissen Unsicherheit versehen. Dabei wird zwischen den Zeitpunkten \textit{t - 1} und \textit{t} die Bewegung des 
+Roboters mit \textit{ut} beschrieben und somit auch die unterschiedlichen Posen \textit{pt-1} nach \textit{pt}. Die Umgebung wird parallel 
+dazu über diverse Sensoren, z.B. interne Sensoren, bspw. Gechwindigkeits- oder Positionssensoren, und externer Senoren, unter anderem 
+Abstands- oder taktile Sensoren. Neben der Protokollierung der Position, bei der es zu Störungen oder Berechnungsfehler kommen kann, gibt 
+es Beobachtungen durch Sensoren die verrauscht \textit{zt} sind.
+\\ 
+\linebreak
+Mit diesen vorhandenen Werten ist die Zielsetzung die Schätzung der Trajektorie ... des Roboters von Beginn der Fortbewegung bis zum 
+Zeitpunkt \textit{T}.
+
+% Wir können das SLAM Problem wie folgt definieren: Eine mobile Sensorplattform startet in der Konfiguration   𝑝0  und bewegt sich durch 
+%eine unbekannte Umgebung. Die Konfiguration beinhaltet dabei die Position sowie die Ausrichtung der Plattform und wird oft als Pose 
+%bezeichnet. Die Pose ist meist ein 3- oder 6-dimensionaler Vektor, je nach dem, ob die Bewegung in der Ebene oder im Raum stattfindet. 
+%Die einzelnen Bewegungen der Plattform werden durch bekannte Kontrollkommandos   𝑢  angewiesen, allerdings sind sämtliche Aktionen mit 
+%Unsicherheit behaftet. Dabei beschreibt   𝑢𝑡  die Bewegung der Plattform zwischen den Zeitpunkten t − 1 und t und somit die Bewegung von  
+%𝑝𝑡−1  nach   𝑝𝑡 . Gleichzeitig wird die Umgebung durch einen Sensor wahrgenommen. Wie die Bewegungen ist auch jede einzelne Beobachtung   
+%𝑧𝑡  verrauscht.
+
+%Das Ziel ist nun die Schätzung der Trajektorie   𝑝0:𝑇=[𝑝0,𝑝1,…,𝑝𝑇]𝖳  der Plattform vom Beginn der Bewegung bis zum Zeitpunkt T. 
+%Zusätzlich wird eine Karte   𝑚  der Umgebung geschätzt, deren Repräsentation allerdings flexibel sein kann. Eine solche Karte kann 
+%beispielsweise aus einzelnen Punkten bestehen, sie kann aber auch ein Oberflächenmodell, eine 2D-Rasterkarte oder 3D-Voxelkarte sein. 
+%Zur Schätzung von   𝑝0:𝑇  und   𝑚  wird die Wahrscheinlichkeitsverteilung   𝑝(𝑝0:𝑇,𝑚∣𝑧1:𝑇,𝑢1:𝑇)  berechnet, d. h. es geht um die Bestimmung 
+%aller Posen sowie der Karte der Umgebung basierend auf der Sequenz von Sensormessungen   𝑧1:𝑇  und Kontrollkommandos   𝑢1:𝑇 .
+
+%Neben der Berechnung von   𝑝(𝑝0:𝑇,𝑚∣𝑧1:𝑇,𝑢1:𝑇) , welches häufig als Offline-SLAM bezeichnet wird, ist man in der Praxis häufig an der 
+%Schätzung der aktuellen Pose x t sowie der Karte interessiert, d. h.,   𝑝(𝑝𝑡,𝑚∣𝑧1:𝑡,𝑢1:𝑡) . Diese Variante wird oft als Online-SLAM 
+%bezeichnet und ist von zentraler Bedeutung, wenn beispielsweise ein mobiler Roboter Entscheidungen basierend auf dem aktuellen 
+%Umgebungsmodell bzw. der aktuellen Positionsschätzung treffen soll. Dies ist entscheidend für die autonome Navigation oder Exploration.
+
 
 \subsection{Localization}
 \subsection{Mapping}

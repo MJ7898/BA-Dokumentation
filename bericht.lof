@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Grundprinzip einer IMU \cite {imubild.2020j}}}{26}{figure.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Skizze zum Umgebungsverst\IeC {\"a}ndnis des Smartphones \cite {arcoreofficial.2020j}}}{26}{figure.2.7}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Skizze zum Umgebungsverst\IeC {\"a}ndnis des Smartphones \cite {arcoreofficial.2020j}}}{27}{figure.2.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Skizze zu den Lichtverh\IeC {\"a}ltnissen des Smartphones \cite {arcoreofficial.2020j}}}{27}{figure.2.8}% 
 \defcounter {refsection}{0}\relax 
@@ -34,21 +34,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces ViewModel Struktur Diagramm \cite {viewmodeldiagr.2020}}}{30}{figure.2.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces MVC Architektur Diagramm \cite {mvcbild.2020}}}{32}{figure.2.12}% 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces MVC Architektur Diagramm \cite {mvcbild.2020}}}{33}{figure.2.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces MVVM Architektur Diagramm \cite {mvvmDiagramm.2015n}}}{33}{figure.2.13}% 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces MVVM Architektur Diagramm \cite {mvvmDiagramm.2015n}}}{34}{figure.2.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces MVVM Informationsfluss \cite {androidmvvm.2019a}}}{34}{figure.2.14}% 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces MVVM Informationsfluss \cite {androidmvvm.2019a}}}{35}{figure.2.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Android Grundkomponente \cite {aac.2020j}}}{35}{figure.2.15}% 
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Android Grundkomponente \cite {aac.2020j}}}{36}{figure.2.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.16}{\ignorespaces ViewModel Komponente \cite {aac.2020j}}}{35}{figure.2.16}% 
+\contentsline {figure}{\numberline {2.16}{\ignorespaces ViewModel Komponente \cite {aac.2020j}}}{36}{figure.2.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Repository Komponente \cite {aac.2020j}}}{35}{figure.2.17}% 
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Repository Komponente \cite {aac.2020j}}}{36}{figure.2.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Model / Room Komponente \cite {aac.2020j}}}{36}{figure.2.18}% 
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Model / Room Komponente \cite {aac.2020j}}}{37}{figure.2.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Android Architecture Components Diagram\cite {aac.2020j}}}{37}{figure.2.19}% 
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Android Architecture Components Diagram\cite {aac.2020j}}}{38}{figure.2.19}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
