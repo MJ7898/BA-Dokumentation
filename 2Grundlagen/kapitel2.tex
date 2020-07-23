@@ -349,7 +349,7 @@ Beobachtungen zu schätzen und gleichzeitig aus den gewonnenen Informationen ein
 Diese Aufgabe ist für den weiteren Prozess von hoher Bedeutung. Zum einen sollen die generierten Karten sehr präzise sein, um einen hohen 
 Wert für den Nutzer oder für spezielle Anwendungen, die auf der Karte aufbauen, darzustellen. Zum anderen benötigen autonome Roboter, 
 beispielsweise Saug- oder Mähroboter, ein solch erzeugtes geometrisches Modell der Umgebung, um zielgerichtet selbstständig navigieren zu 
-können. \cite{slamdefi.2016a} 
+können. %\cite{slamdefi.2016a} 
 \begin{quote}
     Das Simultaneous Localization and Mapping oder kurz SLAM Problem behandelt das gleichzeitige Schätzen der Position und Ausrichtung einer 
     mobilen Plattform im Raum anhand der sich an Bord befindlichen Sensoren sowie den Aufbau eines Modells der Umgebung. Dieses Problem ist 
@@ -361,33 +361,66 @@ internationalen Symposium für Robotikforschung (\textit{ISRR'95}) vorgestellt. 
 die erste \acs{SLAM} Sitzung stattfand. 
 \subsection{Definition des Problems}
 Angenommen ein Roboter startet in einer Position auch Pose gennant und Konfiguration \textit{p0} und bewegt sich durch eine ihm 
-unbekannte Umgebung. Die Einstellung beinhaltet Position und Ausrichtung des Roboters. Je nach Bewegung in Raum oder Ebene ist die Pose 
-meist als 3- oder 6-dimensionaler Vektor abgebildet. Die Bewegung des Roboters wird durch bekannte Kontrollkommandos \textit{u} angewiesen, 
-allerdings mit einer gewissen Unsicherheit versehen. Dabei wird zwischen den Zeitpunkten \textit{t - 1} und \textit{t} die Bewegung des 
-Roboters mit \textit{ut} beschrieben und somit auch die unterschiedlichen Posen \textit{pt - 1} nach \textit{pt}. Die Umgebung wird parallel 
-dazu über diverse Sensoren, z.B. interne Sensoren, bspw. Gechwindigkeits- oder Positionssensoren, und externer Senoren, unter anderem 
-Abstands- oder taktile Sensoren. Neben der Protokollierung der Position, bei der es zu Störungen oder Berechnungsfehler kommen kann, gibt 
-es Beobachtungen durch Sensoren die verrauscht \textit{zt} sind.
+unbekannte Umgebung, wobei diese nicht vorhandenen Kenntnise das Hauptproblem darstellen. Die Einstellung beinhaltet Position und Ausrichtung 
+des Roboters. Je nach Bewegung in Raum oder Ebene ist die Pose meist als 3- oder 6-dimensionaler Vektor abgebildet. Die Bewegung des 
+Roboters wird durch bekannte Kontrollkommandos \textit{u} angewiesen, allerdings mit einer gewissen Unsicherheit versehen. Dabei wird 
+zwischen den Zeitpunkten \textit{t-1} und \textit{t} die Bewegung des Roboters mit \textit{ut} beschrieben und somit auch die 
+unterschiedlichen Posen \textit{pt-1} nach \textit{pt}. Die Umgebung wird parallel dazu über diverse Sensoren, z.B. interne Sensoren, bspw. 
+Gechwindigkeits- oder Positionssensoren, und externer Senoren, unter anderem Abstands- oder taktile Sensoren. Neben der Protokollierung der 
+Position, bei der es zu Störungen oder Berechnungsfehler kommen kann, gibt es Beobachtungen durch Sensoren die verrauscht \textit{zt} sind.
 \\ 
 \linebreak
 Mit diesen vorhandenen Werten ist das Ziel die Schätzung der Trajektorie \textit{p0:T=[p0,p1,...,pT]T} des Roboters von Beginn der 
 Fortbewegung bis zum Zeitpunkt \textit{T}. Gleichzeitig zur Berechnung der Trajektorie wird eine Karte \textit{m} des Umfelds geschätzt, 
-deren Darstellung den Anforderungen entsprechend angepasst werden kann. 
-
-%Das Ziel ist nun die Schätzung der Trajektorie   𝑝0:𝑇=[𝑝0,𝑝1,…,𝑝𝑇]𝖳  der Plattform vom Beginn der Bewegung bis zum Zeitpunkt T. 
-%Zusätzlich wird eine Karte   𝑚  der Umgebung geschätzt, deren Repräsentation allerdings flexibel sein kann. Eine solche Karte kann 
-%beispielsweise aus einzelnen Punkten bestehen, sie kann aber auch ein Oberflächenmodell, eine 2D-Rasterkarte oder 3D-Voxelkarte sein. 
-%Zur Schätzung von   𝑝0:𝑇  und   𝑚  wird die Wahrscheinlichkeitsverteilung   𝑝(𝑝0:𝑇,𝑚∣𝑧1:𝑇,𝑢1:𝑇)  berechnet, d. h. es geht um die Bestimmung 
-%aller Posen sowie der Karte der Umgebung basierend auf der Sequenz von Sensormessungen   𝑧1:𝑇  und Kontrollkommandos   𝑢1:𝑇 .
-
-%Neben der Berechnung von   𝑝(𝑝0:𝑇,𝑚∣𝑧1:𝑇,𝑢1:𝑇) , welches häufig als Offline-SLAM bezeichnet wird, ist man in der Praxis häufig an der 
-%Schätzung der aktuellen Pose x t sowie der Karte interessiert, d. h.,   𝑝(𝑝𝑡,𝑚∣𝑧1:𝑡,𝑢1:𝑡) . Diese Variante wird oft als Online-SLAM 
-%bezeichnet und ist von zentraler Bedeutung, wenn beispielsweise ein mobiler Roboter Entscheidungen basierend auf dem aktuellen 
-%Umgebungsmodell bzw. der aktuellen Positionsschätzung treffen soll. Dies ist entscheidend für die autonome Navigation oder Exploration.
-
+deren Darstellung den Anforderungen entsprechend angepasst werden kann. Mit den Anforderungen sind verschiedene Repräsentationen der Karten 
+gemeint, darunter beispielsweise eine Veranschaulichung von Punktansammlungen an Gegenständen, gerenderte Oberflächenmodelle oder 
+2D-Rasterkarten und verstärkt visualisierte 3D-Voxelkarten.\footnote{(Zusammensetzung aus dem englischen volume \textit{vox} und elements 
+\textit{el}), bez. einen Gitterpunkt in einem dreidimensionalen Gitter.} Basierend auf den Sensormessintervallen \textit{z1:T} und den dabei
+stattfindenden Kontrollkommandos \textit{u1:T} wird die Karte des Umfeldes und alle Positionen bestimmt. Die Wahrscheinlichkeitsverteilung 
+\textit{p(p0:T,m|z1:T,u1:T)} wird durch die geschätzten Werte \textit{p0:T} und \textit{m} berechnet. 
+\\ 
+\linebreak
+Die Berechnung der Wahrscheinlichkeitsverteilung ist auch unter dem Namen \textit{Offline-\acs{SLAM}} bekannt. In der Praxis ist allerdings 
+die Schätzung der Position \textit{xt} und der Karte der Umgebung durch \textit{p(pt,m|z1:t,u1:t)} interessanter, da Roboter Entscheidungen 
+basierend auf aktuellen Informationen, z.B. der Posenschätzung und dem Umgebungsmodell, treffen sollen. Die Variante der Echtzeitschätzung 
+ist auch als \textit{Online-SLAM} bekannt. \cite{slamdefi.2016a}
 
 \subsection{Localization}
+Damit das Endgerät, Smartphone oder der Roboter seine Position in Erfahrung bringen und schätzen kann, werden Informationen und Möglichkeiten 
+benötigt die Bewegung in irgendeiner Form zu messen. Da das Nutzergerät eine eigene virtuelle Karte, unabhängig von der \acs{GPS}-basierten 
+Position, generiert, ist das \textit{Tracking} über die Weltkoordinaten nicht Bestandteil des eigentlichen Verfahrens. Für die Erfassung der 
+internen Systemzustände gibt es sogenannte interne Sensoren die in dem Roboter zur Verfügung stehen. Bestandteile dieser internen 
+Sensorik sind unter anderem Positions-, Geschwindigkeits-, Beschleunigungssensoren und das \acl{INS}. Für die Positions- und 
+Geschwindigkeitserkennung gibt es z.B. einen optischen Codierer, welcher durch Lichtimpulse die Geschwindigkeit als auch die zurückgelegte 
+Strecke schätzen kann. Das \acs{INS} besteht aus Lagesensoren und einem Kreiselkompass (Gyroskop), diese sind essentiell für die Bestimmung 
+der Orientierung und Neigung des Geräts. Ausgehend von der Erdkugel beziehen sich diese Sensoren auf das gegebene inertiale Koordinatensystem.
 \subsection{Mapping}
+Um neben der Berechnung der Position durch die interne Sensorik die Umgebung registrieren und schätzen zu können, gibt es externe Sensoren 
+die sich mit der Erfassung der Umwelt beschäftigen. Auch hier gibt es viele Arten von Sensoren mit denen es ermöglicht wird die Umgebung 
+wahrzunehmen, darunter Taktile Sensoren, Näherungs-, Abstands-, Positionssensoren und Visuelle Sensoren. Hinsichtlich Abstandssensoren die 
+Mesungen zwischen Gegenstand und Sensor durchführen, gibt es allgemein erhebliche Vorteile gegenüber den Näherungssensoren. Vorteile sind 
+beispielsweise eine größere Reichweite und Blickfeld als Näherungssensoren, die Ermittlung der genauen Entfernung zu Gegenständen und sie 
+sind besser zur Erfassung geometrischer Umweltinformationen geeignet. Für die Messung des Abstandes eignet sich die \ac{TOF}-Kamera, die 
+mit dem Laufzeitverfahren Distanzen messen und berechnen kann. 
+\\ 
+Das Laufzeitverfahren funktioniert wie folgt:
+\begin{align*}
+    \textit{d} = \frac{1}{2}\textit{ct}
+\end{align*}
+Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus der Signalgeschwindigkeit \textit{c} und der messbaren Laufzeit 
+\textit{t}. Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=12cm,keepaspectratio]{2Grundlagen/Bilder/tof_kamera.png}
+    \caption{Time-of-Flight Kamera und deren Repräsentation \cite{robotik.2020m}}
+    \label{pic:tofCam}
+\end{figure}
+\\ 
+Auf der linken Seite ist eine PMD-Kamera zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera.
+\subsection{Zentrale Modelle zur Lösung des SLAM Problems}
+
+\section{Quaternionen}
+\label{chap:Quaternionen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -----------> tbd... !! <-----------------
 
@@ -395,8 +428,7 @@ deren Darstellung den Anforderungen entsprechend angepasst werden kann.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Quaternionen}
-\label{chap:Quaternionen}
+
 \subsection{Transformation}
 \subsection{Rotation}
 

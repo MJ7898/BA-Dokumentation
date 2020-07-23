@@ -1116,6 +1116,29 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{robotik.2020m}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SPDM}{%
+         family={Strand},
+         familyi={S\bibinitperiod},
+         given={Prof. Dr.\bibnamedelima Marcus},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPDM1}
+    \strng{fullhash}{SPDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Einführung in die Robotik - Vorlesung 3 externe Sensoren}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{sutherlandbio.1938m}{misc}{}
     \name{author}{1}{}{%
       {{hash=s}{%
