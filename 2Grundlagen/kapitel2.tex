@@ -411,13 +411,17 @@ Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus d
 \textit{t}. Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=12cm,keepaspectratio]{2Grundlagen/Bilder/tof_kamera.png}
+    \includegraphics[width=13cm,height=13cm,keepaspectratio]{2Grundlagen/Bilder/tof_kamera.png}
     \caption{Time-of-Flight Kamera und deren Repräsentation \cite{robotik.2020m}}
     \label{pic:tofCam}
 \end{figure}
 \\ 
 Auf der linken Seite ist eine PMD-Kamera zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera.
-\subsection{Zentrale Modelle zur Lösung des SLAM Problems}
+\subsection{Verfahren zur Lösung des SLAM Problems}
+Das Lösen des \acs{SLAM}-Problems wird in der Praxis mit den angestellten Verfahren, die sich bei der Anwendung duchsetzten, durchgeführt. In 
+folgenden Abschnitten werden zwei dieser Verfahren erläutert, sodass ein Grundverständnis vorhanden ist. Zuerst wird auf das Graph-basierte 
+\acs{SLAM}, dem Lösen des Problems unter Anwendung der kleinsten-Quadrate Methode, eingegangen, darauffolgend die Lösung durch einen rekursiven 
+Ansatz, dem erweiterten Kalman Filter (\acs{EKF}).
 
 \section{Quaternionen}
 \label{chap:Quaternionen}

@@ -36,7 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.3}Mapping}{25}{subsection.2.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Zentrale Modelle zur L\IeC {\"o}sung des SLAM Problems}{26}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.4}Verfahren zur L\IeC {\"o}sung des SLAM Problems}{26}{subsection.2.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Quaternionen}{26}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
