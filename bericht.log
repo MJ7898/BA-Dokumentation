@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUL 2020 10:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUL 2020 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1227,7 +1227,7 @@ l.149 \end{abstract}
                      [1] (/Users/mj/BA-Dokumentation/bericht.tocpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 ...ine {3.5}Softwarekonzept}{44}{section.3.5}
+l.77 ...uswahl des AR Frameworks}{44}{section.3.6}
                                                   % [1
 
 ])
@@ -1433,7 +1433,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--196
 
  []
 
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=485, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=483, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
 Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 222.
@@ -1449,17 +1449,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--226
  []
 
 [18]
-<2Grundlagen/Bilder/smartglassAW.png, id=496, 607.77063pt x 612.78937pt>
+<2Grundlagen/Bilder/smartglassAW.png, id=494, 607.77063pt x 612.78937pt>
 File: 2Grundlagen/Bilder/smartglassAW.png Graphic file (type png)
 <use 2Grundlagen/Bilder/smartglassAW.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/smartglassAW.png  used on input line 241.
 (pdftex.def)             Requested size: 211.64714pt x 213.39484pt.
-<2Grundlagen/Bilder/googleglass.png, id=500, 635.37375pt x 315.67938pt>
+<2Grundlagen/Bilder/googleglass.png, id=498, 635.37375pt x 315.67938pt>
 File: 2Grundlagen/Bilder/googleglass.png Graphic file (type png)
 <use 2Grundlagen/Bilder/googleglass.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/googleglass.png  used on input line 256.
 (pdftex.def)             Requested size: 213.39687pt x 106.02419pt.
-<2Grundlagen/Bilder/hololensside.png, id=501, 780.9175pt x 486.31688pt>
+<2Grundlagen/Bilder/hololensside.png, id=499, 780.9175pt x 486.31688pt>
 File: 2Grundlagen/Bilder/hololensside.png Graphic file (type png)
 <use 2Grundlagen/Bilder/hololensside.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/hololensside.png  used on input line 257.
@@ -1495,7 +1495,7 @@ l.265 \subsection
                                                   \fi \fi 
 l.274 \subsubsection
                     *{Marker-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png>]
-<2Grundlagen/Bilder/bildmarkerAR.png, id=520, 297.11pt x 296.10625pt>
+<2Grundlagen/Bilder/bildmarkerAR.png, id=518, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 281.
@@ -1556,12 +1556,12 @@ Package microtype Info: Character `029' is missing
 Package acronym Info: Label `acro:TOF' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
  [25]
-<2Grundlagen/Bilder/tof_kamera.png, id=592, 624.3325pt x 284.56313pt>
+<2Grundlagen/Bilder/tof_kamera.png, id=590, 624.3325pt x 284.56313pt>
 File: 2Grundlagen/Bilder/tof_kamera.png Graphic file (type png)
 <use 2Grundlagen/Bilder/tof_kamera.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 83.
 (pdftex.def)             Requested size: 369.89629pt x 168.5942pt.
-<2Grundlagen/Bilder/graph_SLAM.png, id=598, 603.25375pt x 429.605pt>
+<2Grundlagen/Bilder/graph_SLAM.png, id=596, 603.25375pt x 429.605pt>
 File: 2Grundlagen/Bilder/graph_SLAM.png Graphic file (type png)
 <use 2Grundlagen/Bilder/graph_SLAM.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/graph_SLAM.png  used on input line 101.
@@ -1578,7 +1578,12 @@ l.117
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.128 
-       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png>]) [28]
+       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--138
+
+ []
+
+) [28]
 \openout2 = `2Grundlagen/kapitel2Aa.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.tex
@@ -1955,18 +1960,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31121 strings out of 492616
- 570357 string characters out of 6129481
- 1065360 words of memory out of 5000000
- 33856 multiletter control sequences out of 15000+600000
+ 31119 strings out of 492616
+ 570335 string characters out of 6129481
+ 1066360 words of memory out of 5000000
+ 33855 multiletter control sequences out of 15000+600000
  104153 words of font info for 175 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,11n,83p,1179b,3446s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (57 pages, 5964014 bytes).
+ 69i,13n,83p,1179b,3446s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (57 pages, 5968787 bytes).
 PDF statistics:
- 1301 PDF objects out of 1440 (max. 8388607)
+ 1302 PDF objects out of 1440 (max. 8388607)
  1154 compressed objects within 12 object streams
- 262 named destinations out of 1000 (max. 500000)
- 29821 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 261 named destinations out of 1000 (max. 500000)
+ 29813 words of extra memory for PDF output out of 29859 (max. 10000000)
 
