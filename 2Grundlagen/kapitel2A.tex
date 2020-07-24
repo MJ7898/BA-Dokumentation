@@ -1,203 +1,141 @@
-\section{Technologien}
-\label{chap:Technologien}
-Dieser Abschnitt befasst sich mit den wichtigsten Programmier-Technologien, die in diesem Projekt eingesetzt werden. 
-%Ein kurzer Überblick 
-%über die Historie der Technologien, worum es dabei geht und welche Aufgaben sie umfassen. 
-\\ 
-Der Augenmerk liegt auf dem Framework \textit{Google ARCore}, da dieses Hauptbestandteil des Projekts ist. 
-\subsection{Google ARCore}
-ARCore ist die von Google veröffentlichte Plattform zum Erstellen von \acl{AR} Erlebnissen, primär entwickelt für Android Phones. 
-Das \ac{SDK} ist in den Programmiersprachen Java und Kotlin geschrieben. Mit bestimmten \acs{API}s ermöglicht \textit{ARCore} die Erfassung 
-der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen und mit Informationen zu interagieren. Mitten des Jahres 2017 
-wurde die \textit{Google ARCore API} zum ersten Mal den Entwicklern und der \acs{AR}-Community präsentiert. Im ersten Quartal 2018 wurde 
-diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. 
-\\ 
-\linebreak 
-\textit{Project Tango} war ebenso eine Google-Plattform, mit dem Smartphones und Tablets ein \textit{„Raumgefühl“} erhalten. \cite{projecttango.2016j} 
-Die Plattform kombinierte die Eingabe verschiedener Sensoren, z.B. radarähnliche Infrarotstrahler, einer Infrarotkamera und hochpräzisen 
-Beschleunigungsmessern, Barometern und Gyroskopen, um schnell nutzbare Informationen der Umgebung zu generieren. Mit der Überarbeitung des 
-Konzepts wurde das neue unabhängige Projekt \textit{ARCore} geschaffen und somit die Anzahl der Hardwarekomponenten reduziert, bspw. wird 
-keine spezielle Infrarotkamera mehr benötigt. Die ARCore \acs{API} verwendet bei Anwendungen ausschließlich das Kamerabild des Smartphones und 
-dessen Sensoren. 
-\\ 
-\linebreak 
-Zum Integrieren von virtuellen Objekten in die reale Welt verwendet ARCore drei Schlüsselfunktionen unter Benutzung von Java und OpenGL, Unity 
-und Unreal:
-\begin{itemize}
-    \item Motion tracking, dt. Bewegungsverfolgung, ermöglicht das Verstehen und Verfolgen der Postion des Geräts relativ zur Realität.
-    \item Environmental understanding, dt. Verständnis der Umgebung, erkennt die Position und Größe aller Arten von Oberflächen: horizontale, 
-    vertikale und abgewinkelte Oberflächen, wie Wände, Böden, Tische oder Stühle.
-    \item Light estimation, dt. Lichtschätzung, schätzt die durch das Smartphone gegebenen Lichtverhältnisse der Umgebung. \cite{arcorefundamentals.2018m}
-\end{itemize}
-\subsubsection*{Motion tracking}
-Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \acl{SLAM} (\acs{SLAM}) \ref{chap:SLAM}, um so zu verstehen wo 
-sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
-Kamerabild, sogenannte Merkmalspunkte \textit{„feature points“}. Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
-der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
-Ausrichtung der Kamera relativ zur Realität abgeschätzt. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
-    \caption{Skizze zur Bewegungsverfolgung des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:motiontracking}
-\end{figure}
-\\ 
-Die \acl{IMU} in Smart-Devices besitzt drei Beschleunigungssensoren, z.B. piezoelektrische Beschleunigungssensoren oder \ac{MEMS}, für die 
-drei Raumachsen:
-\\ 
-\begin{itemize}
-    \item Die Abszissenachse (X-Achse), die horizontale (waagerechte) Koordinatenachse,
-    \item Die Ordinatenachse (Y-Achse), die darauf vertikale (senkrechte) Koordinatenachse und
-    \item Die Applikatenachse (Z-Achse), die auf beiden anderen Achsen senkrechte Achse \cite{koordinatennorm.1973m}
-\end{itemize}
-Ebenso besitzt die \acs{IMU} Drehratensensoren, z.B. ein Gyroskop zur Messung der Rotationsgeschwindigkeit, welche die Drehraten um 
-diese Raumachsen messen. Durch die kontinuierliche Auslesung der Sensordaten, wird die Position des Geräts berechnet und in Form von 
-drei Koordinaten ausgegeben. Ausgehend von dem Referenzkoordinatensystem wird die Position neu bestimmt. Die Abbildung \ref{pic:Positionsberechnung} 
-veranschaulicht solch ein Beispiel.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/imu-Bsp.png}
-    \caption{Grundprinzip einer IMU \cite{imubild.2020j}}
-    \label{pic:Positionsberechnung}
-\end{figure}
-\subsubsection*{Environmental understanding}
-Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
-Flächen beim scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
-naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
-Platzieren von virtuelle Objekte auf den erfassten Flächen möglich.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
-    \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:environmentalunderst}
-\end{figure}
-
-\subsubsection*{Light estimation}
-Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
-\acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
-der Umgebung anzupassen. Diese Funktion verstärkt die Anpassung des virtuellen Objektes an die Realität und lässt dieses noch glaubwürdiger 
-erscheinen.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/lightEstim.png}
-    \caption{Skizze zu den Lichtverhältnissen des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:lightestim}
-\end{figure}
-
-\subsection{Android Jetpack}
-\label{sec:androidjetpack}
-Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
-Boilerplate\footnote{Sind Codeabschnitte, die an mehreren Stellen mit wenigen oder gar keinen Änderungen aufgeführt sein müssen. \cite{boilerplate.2019m}}-Code 
-zu reduzieren und Code zu schreiben. Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
-Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick gewährleistet, um Best Practices und empfohlene 
-Architekturen zu berücksichtigen.
-\\ 
-Außerdem wurde Android Jetpack für moderne Design-Praktiken entwickelt, darunter fällt \textit{„seperation of concerns“} 
-\footnote{(SoC), Entwurfsprinzip, um verschiedene Verantwortlichkeiten auf verschieden Abschnitte zu trennen. \cite{soc.2019a}}, \textit{testability}, 
-\textit{loose coupling}, \textit{Observer Pattern} \footnote{Beobachter-Muster, Verhaltensmuster der GoF-Muster}, 
-\textit{Inversion of Control} 
-\footnote{(IoC), Umsetzugsparadigma, das ein spezifisches Objekt über ein mehrfach verwendetes Objekt aufruft. \cite{ioc.2020}} und 
-\textit{productivity features}, z.B. Plugin-Integrationen. Dies sind Techniken, um eine robuste und qualitativ hochwertige App zu erstellen.
-\\ 
-Die Bibliothekensammlung ist die Grundlage für die verwendete Architektur, Android Architecture Components in Abschnitt \ref{chap:AAC}.
+\section{SLAM - Simultanious Localization And Mapping}
+\label{chap:SLAM}
+Als Simultaneous Localization and Mapping auch \acs{SLAM}-Problem gennant, bezeichnet man die Aufgabe, die Trajektorie\footnote{Lösungskurve oder Bewegungspfad eines Objekts} 
+samt Orientierungsinformation einer sich bewegenden Plattform, z.B. ein Smartphone, Tablet oder jegliche Art von Roboter, aus 
+Beobachtungen zu schätzen und gleichzeitig aus den gewonnenen Informationen eine Karte der Umgebung zu erstellen.
+Diese Aufgabe ist für den weiteren Prozess von hoher Bedeutung. Zum einen sollen die generierten Karten sehr präzise sein, um einen hohen 
+Wert für den Nutzer oder für spezielle Anwendungen, die auf der Karte aufbauen, darzustellen. Zum anderen benötigen autonome Roboter, 
+beispielsweise Saug- oder Mähroboter, ein solch erzeugtes geometrisches Modell der Umgebung, um zielgerichtet selbstständig navigieren zu 
+können. %\cite{slamdefi.2016a} 
+\begin{quote}
+    Das Simultaneous Localization and Mapping oder kurz SLAM Problem behandelt das gleichzeitige Schätzen der Position und Ausrichtung einer 
+    mobilen Plattform im Raum anhand der sich an Bord befindlichen Sensoren sowie den Aufbau eines Modells der Umgebung. Dieses Problem ist 
+    von großer praktischer Relevanz und ist Kernbestandteil der meisten mobilen Sensor- systeme. \cite{slamdefi.2016a}
+\end{quote}
+1986 wurden auf der \textit{IEEE Robotics and Automation Conference} erste mathematische Definitionen vorgenommen, die mittels statischer 
+Theorien ermittelt und mit ersten Studien belegt wurden. Einige Jahre später,im Jahr 1995, wurde das \acs{SLAM} Problem erstmals auf dem 
+internationalen Symposium für Robotikforschung (\textit{ISRR'95}) vorgestellt. Die Forschungen hielten an, bis auf der (\textit{ISRR'99}) 
+die erste \acs{SLAM} Sitzung stattfand. 
+\subsection{Definition des Problems}
+Angenommen ein Roboter startet in einer Position auch Pose gennant und Konfiguration \textit{p0} und bewegt sich durch eine ihm 
+unbekannte Umgebung, wobei diese nicht vorhandenen Kenntnise das Hauptproblem darstellen. Die Einstellung beinhaltet Position und Ausrichtung 
+des Roboters. Je nach Bewegung in Raum oder Ebene ist die Pose meist als 3- oder 6-dimensionaler Vektor abgebildet. Die Bewegung des 
+Roboters wird durch bekannte Kontrollkommandos \textit{u} angewiesen, allerdings mit einer gewissen Unsicherheit versehen. Dabei wird 
+zwischen den Zeitpunkten \textit{t-1} und \textit{t} die Bewegung des Roboters mit \textit{ut} beschrieben und somit auch die 
+unterschiedlichen Posen \textit{pt-1} nach \textit{pt}. Die Umgebung wird parallel dazu über diverse Sensoren, z.B. interne Sensoren, bspw. 
+Gechwindigkeits- oder Positionssensoren, und externer Senoren, unter anderem Abstands- oder taktile Sensoren. Neben der Protokollierung der 
+Position, bei der es zu Störungen oder Berechnungsfehler kommen kann, gibt es Beobachtungen durch Sensoren die verrauscht \textit{zt} sind.
 \\ 
 \linebreak
-Die Abbildung \ref{pic:androidjetpackcomp} verschafft einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
+Mit diesen vorhandenen Werten ist das Ziel die Schätzung der Trajektorie \textit{p0:T=[p0,p1,...,pT]T} des Roboters von Beginn der 
+Fortbewegung bis zum Zeitpunkt \textit{T}. Gleichzeitig zur Berechnung der Trajektorie wird eine Karte \textit{m} des Umfelds geschätzt, 
+deren Darstellung den Anforderungen entsprechend angepasst werden kann. Mit den Anforderungen sind verschiedene Repräsentationen der Karten 
+gemeint, darunter beispielsweise eine Veranschaulichung von Punktansammlungen an Gegenständen, gerenderte Oberflächenmodelle oder 
+2D-Rasterkarten und verstärkt visualisierte 3D-Voxelkarten\footnote{(Zusammensetzung aus dem englischen volume \textit{vox} und elements 
+\textit{el}), bez. einen Gitterpunkt in einem dreidimensionalen Gitter.}. Basierend auf den Sensormessintervallen \textit{z1:T} und den dabei
+stattfindenden Kontrollkommandos \textit{u1:T} wird die Karte des Umfeldes und alle Positionen bestimmt. Die Wahrscheinlichkeitsverteilung 
+\textit{p(p0:T,m|z1:T,u1:T)} wird durch die geschätzten Werte \textit{p0:T} und \textit{m} berechnet. 
+\\ 
+\linebreak
+Die Berechnung der Wahrscheinlichkeitsverteilung ist auch unter dem Namen \textit{Offline-\acs{SLAM}} bekannt. In der Praxis ist allerdings 
+die Schätzung der Position \textit{xt} und der Karte der Umgebung durch \textit{p(pt,m|z1:t,u1:t)} interessanter, da Roboter Entscheidungen 
+basierend auf aktuellen Informationen, z.B. der Posenschätzung und dem Umgebungsmodell, treffen sollen. Die Variante der Echtzeitschätzung 
+ist auch als \textit{Online-SLAM} bekannt. \cite{slamdefi.2016a}
+
+\subsection{Localization}
+Damit das Endgerät, Smartphone oder der Roboter seine Position in Erfahrung bringen und schätzen kann, werden Informationen und Möglichkeiten 
+benötigt die Bewegung in irgendeiner Form zu messen. Da das Nutzergerät eine eigene virtuelle Karte, unabhängig von der \acs{GPS}-basierten 
+Position, generiert, ist das \textit{Tracking} über die Weltkoordinaten nicht Bestandteil des eigentlichen Verfahrens. Für die Erfassung der 
+internen Systemzustände gibt es sogenannte interne Sensoren die in dem Roboter zur Verfügung stehen. Bestandteile dieser internen 
+Sensorik sind unter anderem Positions-, Geschwindigkeits-, Beschleunigungssensoren und das \acl{INS}. Für die Positions- und 
+Geschwindigkeitserkennung gibt es z.B. einen optischen Codierer, welcher durch Lichtimpulse die Geschwindigkeit als auch die zurückgelegte 
+Strecke schätzen kann. Das \acs{INS} besteht aus Lagesensoren und einem Kreiselkompass (Gyroskop), diese sind essentiell für die Bestimmung 
+der Orientierung und Neigung des Geräts. Ausgehend von der Erdkugel beziehen sich diese Sensoren auf das gegebene inertiale Koordinatensystem.
+Mittels \textit{Odometrie} können die von den Sensoren bereitgestellten Informationen über Position und Orientierung berechnet werden. Radgetriebene 
+Systeme führen die Berechnung durch, da diese basierend auf dem Durchmesser des Rades berechnet wird. In Kombination mit \textit{Koppelnavigation}\footnote{Engl. dead reckoning, ist die laufende Positionsbestimmung eines bewegten Objekts infolge der Bewegungsrichtung und Geschwindigkeit \cite{koppelnavigation.2019j}}
+gilt dieses Verfahren für Roboter, bzw. Fahrzeuge auf Land, als Grundlage der Navigation. Durch die theoretische Berechnung werden 
+Fehlerbetrachtungen, z.B. Verschleiß, Schlupf oder Unrundheit von Rädern, vernachlässigt und ist somit nicht als alleiniges Verfahren einzusetzen. 
+\begin{align*}
+    \Delta U = \frac{\pi D}{\textit{n}C}N
+\end{align*}
+Mit \textit{D} als Raddurchmesser, \textit{n} als Getriebeübersetzung. \textit{C} als Enkoderauflösung und \textit{N} als Anzahl der 
+Enkoderimpulse wird die Positions- und Orientierung berechnet. 
+\\ 
+Smartphones berechnen die Fortbewegung über gegebene Sensoren, darunter Beschleunigungs-und Neigungssensoren und Gyroskop. Dieses Zusammenspiel an 
+Sensoren ermöglicht die Wahrnehmung der Positionsveränderung und kann somit diese bestimmen.
+\subsection{Mapping}
+Um neben der Berechnung der Position durch die interne Sensorik die Umgebung registrieren und schätzen zu können, gibt es externe Sensoren 
+die sich mit der Erfassung der Umwelt beschäftigen. Auch hier gibt es viele Arten von Sensoren mit denen es ermöglicht wird die Umgebung 
+wahrzunehmen, darunter Taktile Sensoren, Näherungs-, Abstands-, Positionssensoren und Visuelle Sensoren. Hinsichtlich Abstandssensoren die 
+Messungen zwischen Gegenstand und Sensor durchführen, gibt es allgemein erhebliche Vorteile gegenüber den Näherungssensoren. Vorteile sind 
+beispielsweise eine größere Reichweite und Blickfeld als Näherungssensoren, die Ermittlung der genauen Entfernung zu Gegenständen und sie 
+sind besser zur Erfassung geometrischer Umweltinformationen geeignet. Für die Messung des Abstandes eignet sich die \ac{TOF}-Kamera, die 
+mit dem Laufzeitverfahren Distanzen messen und berechnen kann. 
+\\ 
+Das Laufzeitverfahren funktioniert wie folgt:
+\begin{align*}
+    \textit{d} = \frac{1}{2}\textit{ct}
+\end{align*}
+Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus der Signalgeschwindigkeit \textit{c} und der messbaren Laufzeit 
+\textit{t}. Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/androidjetpackcomps.png}
-    \caption{Komponenten von Android Jetpack \cite{androidjpdescr.2018m}}
-    \label{pic:androidjetpackcomp}
+    \includegraphics[width=13cm,height=13cm,keepaspectratio]{2Grundlagen/Bilder/tof_kamera.png}
+    \caption{Time-of-Flight Kamera und deren Repräsentation \cite{robotik.2020m}}
+    \label{pic:tofCam}
 \end{figure}
+\\ 
+Auf der linken Seite ist eine PMD-Kamera zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera.
+
+\subsection{Verfahren zur Lösung des SLAM Problems}
+Das Lösen des \acs{SLAM}-Problems wird in der Praxis mit den angestellten Verfahren, die sich bei der Anwendung duchsetzten, durchgeführt. In 
+folgenden Abschnitten werden zwei dieser Verfahren erläutert, sodass ein Grundverständnis vorhanden ist. Zuerst wird auf das Graph-basierte 
+\acs{SLAM}-Verfahren eingegangen und darauffolgend die Lösung des Problems mit einem rekursiven Ansatz, dem erweiterten Kalman Filter (\acs{EKF}).
+\subsection*{Graph-basiertes SLAM Verfahren}
+Grundlegend wird bei dem Algorithmus des Graph-basierten Verfahrens, während der Bewegungsaufzeichnung des Roboters, ein Graph modelliert, 
+dessen Positionen an verschiedenen Zeitpunkten durch Knoten dargestellt werden. Alle aufeinander korrespondierenden Positionen, bzw. 
+Knoten im Graphen werden über eine Kante verknüpft. Gebunden an die Bewegung des Roboters werden die Kanten modelliert. Der folgende Graph 
+(\ref{pic:GraphSLAM}) veranschaulicht ein solches Modell.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/graph_SLAM.png}
+    \caption{Graphische Darstellung des SLAM-Verfahrens \cite{graphSLAM.2010}}
+    \label{pic:GraphSLAM}
+\end{figure}
+\\ 
+Der Abbildung ist zu entnehmen, dass der Graph auch Kanten darstellt die nicht den folgernden Koten ansprechen, sondern eine 
+Position ansprechen die in ihrer Beobachtung auf korrespondierende Knoten zurückgeht. Durch wiederholte Scans können genauere Merkmale und 
+Bedingungen festgelegt werden, um die daraus resultierenden Positionen besser differenzieren zu können. Bei Verwendung von Kameras können 
+genauer identifizierten Merkmale die geschätzten relativen Orientierungen sein, die durch eine zusätzliche Funktion berechnet werden 
+können. Bei der Nutzung eines Lasersensors wird meist der \ac{ICP} Algorithmus angewendet, um die Veränderungen zwischen den Aufnahmepositionen 
+wahrzunehmen. \acs{ICP} ist ein iteratives Verfahren, das die korrespondierenden Punkte schätzt und solange transformiert bis diese unter 
+einem gewissen Schwellwert liegen. Korrespondierende Punkte sind die, die den kleinsten Abstand zueinander haben (Closest Point). \cite{robotik2.2020m}
+\\ 
+Der inkrementelle Ansatz des Graph-basierten \acs{SLAM}-Verfahrens ist ursprünglich ein \textit{offline-Verfahren}, welches über die Jahre 
+schrittweise zu einem \textit{online-Verfahren} führte. Durch diese ständige Beobachtung und Neuberechnung der aktuellen Position zu jedem 
+Zeitpunkt wurde die Bedeutung der inkrementellen Verfahren gesteigert. %Dieser Ansatz ist besonders für monokulare Kameras ratsam und sinnvoll.
+
+\subsection*{Rekursives Schätzproblem}
+Der erweiterte Kalman-Filter (\acs{EKF}) ist eine wahrscheinlichkeitsbasierte rekursive Schätzung der Position des Objekts und der Position der 
+Landmarken unter Nutzung linearer Bewegungsmuster basierend auf dem Bayes-Filter. Der Bayes-Filter-Algorithmus ist das generelle Verfahren der 
+rekursiven Zustandsschätzung und wird über den Satz von Bayes hergeleitet. 
 \\
-Eine nähere Erläuterung aller Bibliotheken findet im Rahmen dieser Ausarbeitung nicht statt, wobei die zur Verwendung geplanten 
-„Architecture Components“ beschrieben werden. 
-\\ 
-\linebreak
-LiveData, Room und ViewModel sind Bestandteil der \textit{Android Architecture Components}-Konstellation 
-und bilden die Basis für die Architektur, welche an das \textit{MVVM-Pattern} angelehnt ist.
+Unter der Voraussetzung einer Normalverteilung und eines linearen Bewegungsmodells, worauf der Kalman-Filter setzt, kann diese durch das 
+\acs{SLAM} Problem nicht erfüllt werden. An dieser Stelle wird der erweiterte Kalman-Filter eingesetzt, da dieser nicht-lineare 
+Bewegungsmodelle, bzw. Funktionen mittels Taylorreihe approximiert. Somit kann eine Messung in etwas vorhergesagt werden. Diese Schätzung 
+dient dann als Grundlage zur eigentlichen Messung. Nach der Berechnung wird der Zustand aktualisiert und ausgegeben. Mit diesem Ergebnis 
+werden die darauffolgenden Punkte rekursiv berechnet, bis die Scan-Phase zu Ende ist.
 
-\subsection*{LiveData}
-\label{sec:LiveData}
-\textit{LiveData} gehört zu den \textit{Observer-Pattern} und ist eine Datenhalterklasse die eine Beobachtungsfunktion, bzw. -charakter besitzt. Der 
-Unterschied zu einem regulären Observable ist, dass die LiveData-Komponente lebenszyklusunabhängig ist. Dies bedeutet, der Lebenszyklus anderer 
-Komponenten z.B. \textit{Activities, Fragments oder Services}, wird berücksichtigt. Mit dieser Kenntnis wird sichergestellt, dass LiveData 
-nur App-Komponenten beobachtet, welche sich in einem aktiven Lebenszyklus befinden.
-\\ 
-\linebreak
-Vorteile die die \textit{LiveData}-Komponente mit sich bringt sind unter anderem die Sicherstellung der Übereinstimmung der Benutzeroberfläche und 
-deren Datenstatus, vorbeugend gegenüber Speicherverlust, immer auf dem aktuellsten Stand der gespeicherten Informationen und der Wegfall 
-der manuellen Lebenszykluskoordination. \cite{livedata.2020}
-\subsection*{Room}
-\label{sec:Room}
-\textit{Room} ist eine Persistenzbibliothek und bietet ein Abstraktionsschicht über der eigentlichen \textit{\acs{SQL}ite}-Datenbank, um einen 
-robusten Datenbankzugriff zu managen und das volle Potential von \acs{SQL}ite gleichzeitig zu nutzen. \cite{room.2017}
-\\ 
-\linebreak
-Die robuste \acs{SQL}-Objektzuordnungsbibliothek \textit{Room} kann einen Cache mit den Daten der Applikation auf einem Gerät erstellen. Dieser 
-Cache dient als Wahrheitsquelle der Applikation und ermöglicht den Benutzern eine konsistente Kopie der Informationen der App anzuzeigen 
-und immer zugänglich zu machen. \textit{Room} kann in drei Kategorien, bzw. in drei Hauptkomponenten unterteilt werden:
-\begin{itemize}
-    \item Room database: Dient als Zugriffspunkt für die zugrundeliegende SQLite-Datenbank
-    \item DAO (Data Access Object): Beinhaltet Methoden um Datenbankzugriffe zu gewährleisten.
-    \item Entity: Repräsentiert ein Objekttabelle der Datenbank.
-\end{itemize}
-Das Diagramm \ref{pic:roomarchitecturediagramm} veranschaulicht die Interaktion, bzw. Funktionsweisen der Hauptkomponenten.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/roomArchitecture.png}
-    \caption{Room Architektur Diagramm \cite{roomdiagr.2017}}
-    \label{pic:roomarchitecturediagramm}
-\end{figure} 
-\\ 
-Allgemein ermöglicht \textit{Room} einen vereinfachten Zugriff auf die Datenbank, hat einen hohen Grad an \textit{„testability“}, zur 
-Kompilierungszeit wird eine \acs{SQL}-Abfrageüberprüfung durchgeführt und interagiert einwandfrei mit anderen Android Architecture 
-Components, z.B. LiveData und ViewModel.
+\section{Quaternionen}
+\label{chap:Quaternionen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -----------> tbd... !! <-----------------
 
-\subsection*{ViewModel}
-\label{sec:ViewModel}
-Grundsätzlich dient das \textit{ViewModel} als lebenszyklusbewusste Speicherung und Verwaltung von Benutzeroberflächenbezogenen Daten. 
-Durch die \textit{ViewModel}-Klasse können Informationen Konfigurationsänderungen, z.B. Bildschirmdrehungen, die als Änderung zählen, 
-überstehen. Eine Konfiguration kann sog. Activities verwerfen und neu laden, so können nicht persistierte Daten verloren gehen. 
-\\ 
-\linebreak
-Ein \textit{ViewModel} fungiert ebenso als Kommunikationsschnittstelle zwischen den darüber- und darunterliegenden Komponenten der 
-Architektur (siehe Abschnitt \ref{chap:AAC}). Des Weiteren kann die \textit{ViewModel}-Komponente Informationen zwischen Benutzeroberflächen 
-und verschiedenen Fragmenten, engl. \textit{„fragments“} \footnote{Teil einer \ac{UI} in einer Android Activity}, teilen.
-\\ 
-\linebreak
-Die Abbildung \ref{pic:viewModeldiagramm} zeigt eine sich ändernde Activity, die zu Beginn und nach Neuerstellung oder Aktualisierung Zugriff 
-auf die unveränderten Daten hat. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/viewModelDiagram.png}
-    \caption{ViewModel Struktur Diagramm \cite{viewmodeldiagr.2020}}
-    \label{pic:viewModeldiagramm}
-\end{figure} 
 
-\subsection{Sceneform SDK}
-Das Sceneform \acs{SDK} ist ein Open-Source Projekt der Google LLC., welches für das Rendern von 3D-Szenen und -Animationen zuständig ist. 
-Basierend auf der physikalischen Echtzeit-Rendering-Engine, \textit{physically based renderer} für Android, iOS, macOS, Linux und Windows 
-von Google Filament, wurde Sceneform entwickelt. 
-\\ 
-\linebreak
-Bei dem Ansatz des physikalisch basierten Renderns in der Computergrafik wird versucht, alle Modalitäten der realen Welt genauer zu modellieren. 
-Mit dieser Methode werden virtuelle 3D-Objekte in der \acl{AR} noch realer dargestellt, um einen Echtheitseffekt zu erzielen und simulieren. 
-Ein Beispiel ist das simulieren des Lichtflusses, um einen Schatten des Objekts zu erzeugen, damit die Wirksamkeit immer mehr der Realität 
-entspricht.
-\\ 
-\linebreak
-Dreidimensionale Modelle werden als \textit{.obj}-Dateien in das Projekt importiert. Diese Dateien beinhalten aufgelistete Punkte, Vektoren 
-und Linien, welche das Modell repräsentieren. Das \textit{Sceneform \acs{SDK}} verwendet die \textit{.obj}-Datei und konvertiert, bzw. 
-rendert diese in eine, \textit{Sceneform binary assets, .sfb}-Datei, um daraus das dreidimensionale Objekt zu generieren, welches anschließend 
-in \acs{AR}-Anwendungen basierend auf Google ARCore verwendet werden kann. Für die finale Renderung und Anzeige ist die 
-\textit{ModelRenderable}-Klasse des \acs{SDK}s zuständig. 
-%\\ 
-%\linebreak
-%Ein weiterer wichtiger Aspekt diese Projekts ist der Einsatz einer Datenbank, um generierte Daten speichern zu können.
-\subsection{SQLite}
-\acs{SQL}ite ist eine Open-Source In-Process-Bibliothek, die ein in sich geschlossenes, serverloses, transaktionsfreies \acs{SQL}-Datenbankmodul 
-ohne Konfiguration implementiert. \acs{SQL}ite ist eine eingebettete \acs{SQL}-Datenbank-Engine die im Gegensatz zu anderen \acs{SQL}-Datenbanken über 
-keinen separaten Serverprozess verfügt, d.h. Transaktionen, Lese- und Schreibzugriffe werden direkt auf eine normale Festplattendatei getätigt. \cite{sqlite.2018j}
-\\
-Darüber hinaus ist \acs{SQL}ite Plattformübergreifend und kann beliebig Datenbank- und Objekttabellen, Indizes und Ansichten erstellen und verwalten. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Transformation}
+\subsection{Rotation}
+

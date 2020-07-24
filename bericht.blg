@@ -6,6 +6,7 @@ A level-1 auxiliary file: abk.aux
 A level-1 auxiliary file: 1Einleitung/kapitel1.aux
 A level-1 auxiliary file: 2Grundlagen/kapitel2.aux
 A level-1 auxiliary file: 2Grundlagen/kapitel2A.aux
+A level-1 auxiliary file: 2Grundlagen/kapitel2Aa.aux
 A level-1 auxiliary file: 2GrundlagenX/kapitel2X.aux
 A level-1 auxiliary file: 3Konzeption/kapitel3.aux
 A level-1 auxiliary file: 4Umsetzung/kapitel4.aux
@@ -34,7 +35,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 51 entries,
             6304 wiz_defined-function locations,
-            1408 strings with 16879 characters,
+            1409 strings with 16905 characters,
 and the built_in function-call counts, 214032 in all, are:
 = -- 12496
 > -- 4601
