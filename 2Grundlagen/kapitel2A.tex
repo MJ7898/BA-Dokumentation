@@ -148,30 +148,21 @@ Mit der sogenannten \textit{Brougham Bridge}-Formel ist es möglich Vektoren zu 
     \textit{ij} = \textit{-ji} = \textit{k} 
     \\
     \textit{jk} = \textit{-kj} = \textit{i} 
-    \\
+    \\ 
     \textit{i$^2$} = \textit{j$^2$} = \textit{j}
 \end{align*}
-
-
-%Als Entdecker der Quaternionen gilt jedoch ein anderer –  –, einer der faszinierendsten Wissenschaftler des 
-%19. Jahrhunderts. Be- reits in den frühen dreißiger Jahren beschäftigte er sich mit algebraischen Fra- gestellungen. So konnte Hamilton 
-%1833 zeigen, dass die komplexen Zahlen eine Algebra bilden, falls die Einheiten 1 und i mit 12 = 1 und i2 = −1 benutzt wer- den. Alle 
-%Elemente seiner Algebra haben dann die Form x + iy, wobei x, y reelle Zahlen sind.
-
-
-%Auffassung hyperkomplexer Zahlen, abstammend von komplexen zahlen 
-%Aufteilung in reelle und imaginäre Teile
-
-%Formel schreiben 
-
-%Brougham Bridge erläutern
 \subsection{Rotation}
 %\subsection{Transformation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% -----------> tbd... !! <-----------------
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Quaternionen zählen als eine gute Möglichkeit Drehungen, bzw. Rotationen darzustellen, unter anderem wegen der reduzierten Anzahl an 
+benötigten Parametern im Vergleich zur Berechnung von Rotationsmatrizen und deren Translation und bieten eine deutlich kompaktere 
+Darstellung der Rechenwege. Somit können Rotationen intuitiver dargestellt werden, d.h. es sind direkte Angaben von Drehwinkel und 
+-achse möglich. Die kompaktere Darstellung beinhaltet lediglich vier Werte im Vergleich zu den neun Werten der Berechnung der Rotationsmatrix
+und die Rotation kann um eine bestimmte Achse berechnet werden. Zudem ist eine sehr hohe numerische Stabilität gewährleistet. 
+\\ 
+Der Drehwinkel wird wie folgt berechnet:
+\begin{align*}
+    %\textit{a} = $\cos z$ \to \textit{z} = \frac{t}{2} \to t = $\theta$  %\textit{z} = \textit{\frac{$\theta$}{2}} 
+    %\\
+    \textit{$\theta$} = \textit{2} * \textit{$\arccos a$}
+\end{align*}
+Der Realteil \textit{a} des Quaternions wird mittels Arkuskosinus berechnet, so erhält man die Drehung des Objekts.
