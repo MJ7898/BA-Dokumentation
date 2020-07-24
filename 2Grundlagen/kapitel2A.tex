@@ -165,4 +165,10 @@ Der Drehwinkel wird wie folgt berechnet:
     %\\
     \textit{$\theta$} = \textit{2} * \textit{$\arccos a$}
 \end{align*}
-Der Realteil \textit{a} des Quaternions wird mittels Arkuskosinus berechnet, so erhält man die Drehung des Objekts.
+Der Realteil \textit{a} des Quaternions wird mittels Arkuskosinus berechnet, so erhält man die Drehung des Objekts. Die Drehachse lässt sich 
+bestimmen, indem alle Werte des Imaginärteils (\textit{b,c,d})$^T$ mit \textit{u} addiert werden. Die Variable \textit{u} setzt sich wie 
+folgt zusammen: 
+\begin{align*}
+    \textit{u} = \textit{$\sin w$}, \to \textit{w} = \frac{t}{2}, \to \textit{t = $\theta$}
+\end{align*}
+Mit diesen zwei Berechnungen werden Drehwinkel und Drehachse bestimmt und können für weitere Berechnungen verwendet werden.
