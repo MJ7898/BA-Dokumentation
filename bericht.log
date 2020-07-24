@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUL 2020 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 JUL 2020 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1387,121 +1387,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--50
 
 ]
 Package acronym Info: Label `acro:HMD' newly defined as it shall be overridden
-although it is yet undefined on input line 61.
+although it is yet undefined on input line 62.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--70
+Underfull \hbox (badness 10000) in paragraph at lines 56--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--102
+Underfull \hbox (badness 10000) in paragraph at lines 78--103
 
  []
 
 [15]
-Overfull \hbox (2.76698pt too wide) in paragraph at lines 125--140
+Overfull \hbox (2.76698pt too wide) in paragraph at lines 126--141
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--154
+Underfull \hbox (badness 10000) in paragraph at lines 115--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--154
+Underfull \hbox (badness 10000) in paragraph at lines 115--155
 
  []
 
 [16]
 Package acronym Info: Label `acro:AR' newly defined as it shall be overridden
-although it is yet undefined on input line 166.
+although it is yet undefined on input line 167.
 Package acronym Info: Label `acro:VR' newly defined as it shall be overridden
-although it is yet undefined on input line 166.
+although it is yet undefined on input line 167.
  [17pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.174 
+l.175 
       ]
 Package acronym Info: Label `acro:MR' newly defined as it shall be overridden
-although it is yet undefined on input line 176.
+although it is yet undefined on input line 177.
 Package acronym Info: Label `acro:WMR' newly defined as it shall be overridden
-although it is yet undefined on input line 193.
+although it is yet undefined on input line 194.
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--196
-
- []
-
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=483, 873.2625pt x 1358.07375pt>
-File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
-<use 2Grundlagen/Bilder/snapchatAR.jpeg>
-Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 222.
-(pdftex.def)             Requested size: 137.20644pt x 213.37968pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--226
+Underfull \hbox (badness 10000) in paragraph at lines 186--197
 
  []
 
 [18]
-<2Grundlagen/Bilder/smartglassAW.png, id=494, 607.77063pt x 612.78937pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=490, 873.2625pt x 1358.07375pt>
+File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
+<use 2Grundlagen/Bilder/snapchatAR.jpeg>
+Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 223.
+(pdftex.def)             Requested size: 137.20644pt x 213.37968pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--227
+
+ []
+
+<2Grundlagen/Bilder/smartglassAW.png, id=493, 607.77063pt x 612.78937pt>
 File: 2Grundlagen/Bilder/smartglassAW.png Graphic file (type png)
 <use 2Grundlagen/Bilder/smartglassAW.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/smartglassAW.png  used on input line 241.
+Package pdftex.def Info: 2Grundlagen/Bilder/smartglassAW.png  used on input line 242.
 (pdftex.def)             Requested size: 211.64714pt x 213.39484pt.
-<2Grundlagen/Bilder/googleglass.png, id=498, 635.37375pt x 315.67938pt>
+<2Grundlagen/Bilder/googleglass.png, id=497, 635.37375pt x 315.67938pt>
 File: 2Grundlagen/Bilder/googleglass.png Graphic file (type png)
 <use 2Grundlagen/Bilder/googleglass.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/googleglass.png  used on input line 256.
+Package pdftex.def Info: 2Grundlagen/Bilder/googleglass.png  used on input line 257.
 (pdftex.def)             Requested size: 213.39687pt x 106.02419pt.
-<2Grundlagen/Bilder/hololensside.png, id=499, 780.9175pt x 486.31688pt>
+<2Grundlagen/Bilder/hololensside.png, id=498, 780.9175pt x 486.31688pt>
 File: 2Grundlagen/Bilder/hololensside.png Graphic file (type png)
 <use 2Grundlagen/Bilder/hololensside.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/hololensside.png  used on input line 257.
+Package pdftex.def Info: 2Grundlagen/Bilder/hololensside.png  used on input line 258.
 (pdftex.def)             Requested size: 213.38861pt x 132.8879pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--265
+Underfull \hbox (badness 10000) in paragraph at lines 228--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--265
+Underfull \hbox (badness 10000) in paragraph at lines 228--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--265
+Underfull \hbox (badness 10000) in paragraph at lines 228--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--265
+Underfull \hbox (badness 10000) in paragraph at lines 228--266
 
  []
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+[19] [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.265 \subsection
-                 {Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg>] [20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+l.266 \subsection
+                 {Positionsbestimmung}pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.274 \subsubsection
-                    *{Marker-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png>]
-<2Grundlagen/Bilder/bildmarkerAR.png, id=518, 297.11pt x 296.10625pt>
+l.266 \subsection
+                 {Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png>]
+<2Grundlagen/Bilder/bildmarkerAR.png, id=517, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 281.
+Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 282.
 (pdftex.def)             Requested size: 142.27116pt x 141.79051pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--302
+Underfull \hbox (badness 10000) in paragraph at lines 276--303
 
  []
 
@@ -1509,26 +1509,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--302
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.302 \subsubsection
-                    *{\acs{GPS}-basierte Positionsbestimmung}pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+l.303 \subsubsection
+                    *{\acs{GPS}-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png>]
+Package acronym Info: Label `acro:INS' newly defined as it shall be overridden
+although it is yet undefined on input line 306.
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--321
+
+ []
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.302 \subsubsection
-                    *{\acs{GPS}-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png>]
-Package acronym Info: Label `acro:INS' newly defined as it shall be overridden
-although it is yet undefined on input line 305.
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--320
+l.321 
+       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 323--160
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 322--160
-
- []
-
-[22] [23]
+[23]
 \openout2 = `2Grundlagen/kapitel2A.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
@@ -1556,12 +1556,12 @@ Package microtype Info: Character `029' is missing
 Package acronym Info: Label `acro:TOF' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
  [25]
-<2Grundlagen/Bilder/tof_kamera.png, id=590, 624.3325pt x 284.56313pt>
+<2Grundlagen/Bilder/tof_kamera.png, id=589, 624.3325pt x 284.56313pt>
 File: 2Grundlagen/Bilder/tof_kamera.png Graphic file (type png)
 <use 2Grundlagen/Bilder/tof_kamera.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 83.
 (pdftex.def)             Requested size: 369.89629pt x 168.5942pt.
-<2Grundlagen/Bilder/graph_SLAM.png, id=596, 603.25375pt x 429.605pt>
+<2Grundlagen/Bilder/graph_SLAM.png, id=595, 603.25375pt x 429.605pt>
 File: 2Grundlagen/Bilder/graph_SLAM.png Graphic file (type png)
 <use 2Grundlagen/Bilder/graph_SLAM.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/graph_SLAM.png  used on input line 101.
@@ -1601,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--26
 
 Package acronym Info: Label `acro:IMU' newly defined as it shall be overridden
 although it is yet undefined on input line 36.
-<2Grundlagen/Bilder/motionTracking.png, id=633, 851.18pt x 358.84062pt>
+<2Grundlagen/Bilder/motionTracking.png, id=632, 851.18pt x 358.84062pt>
 File: 2Grundlagen/Bilder/motionTracking.png Graphic file (type png)
 <use 2Grundlagen/Bilder/motionTracking.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/motionTracking.png  used on input line 40.
@@ -1617,22 +1617,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--48
 
 
 ]
-<2Grundlagen/Bilder/imu-Bsp.png, id=646, 711.15688pt x 534.49687pt>
+<2Grundlagen/Bilder/imu-Bsp.png, id=645, 711.15688pt x 534.49687pt>
 File: 2Grundlagen/Bilder/imu-Bsp.png Graphic file (type png)
 <use 2Grundlagen/Bilder/imu-Bsp.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 59.
 (pdftex.def)             Requested size: 284.53366pt x 213.85205pt.
-<2Grundlagen/Bilder/environmentalUnderst.png, id=648, 846.16125pt x 352.81813pt>
+<2Grundlagen/Bilder/environmentalUnderst.png, id=647, 846.16125pt x 352.81813pt>
 File: 2Grundlagen/Bilder/environmentalUnderst.png Graphic file (type png)
 <use 2Grundlagen/Bilder/environmentalUnderst.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/environmentalUnderst.png  used on input line 70.
 (pdftex.def)             Requested size: 341.1828pt x 142.26068pt.
-<2Grundlagen/Bilder/lightEstim.png, id=651, 849.1725pt x 357.335pt>
+<2Grundlagen/Bilder/lightEstim.png, id=650, 849.1725pt x 357.335pt>
 File: 2Grundlagen/Bilder/lightEstim.png Graphic file (type png)
 <use 2Grundlagen/Bilder/lightEstim.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/lightEstim.png  used on input line 82.
 (pdftex.def)             Requested size: 338.06923pt x 142.2608pt.
-<2Grundlagen/Bilder/androidjetpackcomps.png, id=662, 589.70313pt x 297.11pt>
+<2Grundlagen/Bilder/androidjetpackcomps.png, id=661, 589.70313pt x 297.11pt>
 File: 2Grundlagen/Bilder/androidjetpackcomps.png Graphic file (type png)
 <use 2Grundlagen/Bilder/androidjetpackcomps.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/androidjetpackcomps.png  used on input line 106.
@@ -1686,14 +1686,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
 
-<2Grundlagen/Bilder/roomArchitecture.png, id=698, 595.22375pt x 539.51563pt>
+<2Grundlagen/Bilder/roomArchitecture.png, id=696, 595.22375pt x 539.51563pt>
 File: 2Grundlagen/Bilder/roomArchitecture.png Graphic file (type png)
 <use 2Grundlagen/Bilder/roomArchitecture.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 146.
 (pdftex.def)             Requested size: 235.43323pt x 213.39857pt.
 Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
 although it is yet undefined on input line 164.
-<2Grundlagen/Bilder/viewModelDiagram.png, id=705, 482.30188pt x 302.12875pt>
+<2Grundlagen/Bilder/viewModelDiagram.png, id=703, 482.30188pt x 302.12875pt>
 File: 2Grundlagen/Bilder/viewModelDiagram.png Graphic file (type png)
 <use 2Grundlagen/Bilder/viewModelDiagram.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 171.
@@ -1736,7 +1736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-<2GrundlagenX/Bilder/MVCArchitecture.png, id=745, 630.355pt x 355.3275pt>
+<2GrundlagenX/Bilder/MVCArchitecture.png, id=744, 630.355pt x 355.3275pt>
 File: 2GrundlagenX/Bilder/MVCArchitecture.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/MVCArchitecture.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/MVCArchitecture.png  used on input line 43.
@@ -1762,7 +1762,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--63
 
 
 ]
-<2GrundlagenX/Bilder/mvvmDiagramm.png, id=764, 460.21938pt x 320.19624pt>
+<2GrundlagenX/Bilder/mvvmDiagramm.png, id=763, 460.21938pt x 320.19624pt>
 File: 2GrundlagenX/Bilder/mvvmDiagramm.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/mvvmDiagramm.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 109.
@@ -1798,7 +1798,7 @@ l.129 \begin{itemize}
                                                   \fi \fi 
 l.129 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
-<2GrundlagenX/Bilder/infoflussMVVM.png, id=781, 647.41875pt x 126.97438pt>
+<2GrundlagenX/Bilder/infoflussMVVM.png, id=780, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 141.
@@ -1813,27 +1813,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--149
 
  []
 
-<2GrundlagenX/Bilder/activityComp.png, id=786, 201.25188pt x 78.79437pt>
+<2GrundlagenX/Bilder/activityComp.png, id=785, 201.25188pt x 78.79437pt>
 File: 2GrundlagenX/Bilder/activityComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/activityComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 165.
 (pdftex.def)             Requested size: 142.26337pt x 55.69911pt.
-<2GrundlagenX/Bilder/viewModelComp.png, id=789, 288.57813pt x 90.3375pt>
+<2GrundlagenX/Bilder/viewModelComp.png, id=788, 288.57813pt x 90.3375pt>
 File: 2GrundlagenX/Bilder/viewModelComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/viewModelComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 174.
 (pdftex.def)             Requested size: 142.26756pt x 44.53592pt.
-<2GrundlagenX/Bilder/repoComp.png, id=794, 231.86626pt x 60.225pt>
+<2GrundlagenX/Bilder/repoComp.png, id=793, 231.86626pt x 60.225pt>
 File: 2GrundlagenX/Bilder/repoComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/repoComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 186.
 (pdftex.def)             Requested size: 142.26608pt x 36.95221pt.
-<2GrundlagenX/Bilder/roomComp.png, id=797, 239.39438pt x 214.30063pt>
+<2GrundlagenX/Bilder/roomComp.png, id=796, 239.39438pt x 214.30063pt>
 File: 2GrundlagenX/Bilder/roomComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/roomComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 198.
 (pdftex.def)             Requested size: 142.26425pt x 127.35185pt.
-<2GrundlagenX/Bilder/aac.png, id=802, 660.96938pt x 588.69937pt>
+<2GrundlagenX/Bilder/aac.png, id=801, 660.96938pt x 588.69937pt>
 File: 2GrundlagenX/Bilder/aac.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/aac.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 213.
@@ -1960,18 +1960,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31119 strings out of 492616
- 570335 string characters out of 6129481
- 1066360 words of memory out of 5000000
- 33855 multiletter control sequences out of 15000+600000
- 104153 words of font info for 175 fonts, out of 8000000 for 9000
+ 31116 strings out of 492616
+ 570299 string characters out of 6129481
+ 1065360 words of memory out of 5000000
+ 33854 multiletter control sequences out of 15000+600000
+ 104052 words of font info for 174 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (57 pages, 5971237 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (57 pages, 5971202 bytes).
 PDF statistics:
- 1302 PDF objects out of 1440 (max. 8388607)
- 1154 compressed objects within 12 object streams
+ 1300 PDF objects out of 1440 (max. 8388607)
+ 1152 compressed objects within 12 object streams
  261 named destinations out of 1000 (max. 500000)
  29813 words of extra memory for PDF output out of 29859 (max. 10000000)
 
