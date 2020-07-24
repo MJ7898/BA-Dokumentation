@@ -452,11 +452,15 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri9.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png
+INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png
 OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
@@ -472,7 +476,6 @@ INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/environmentalUnderst.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png
@@ -543,11 +546,13 @@ INPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.aux
 INPUT /Users/mj/BA-Dokumentation/bericht.run.xml
 OUTPUT /Users/mj/BA-Dokumentation/bericht.run.xml
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb
