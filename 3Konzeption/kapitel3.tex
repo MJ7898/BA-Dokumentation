@@ -52,11 +52,25 @@ Nach ausführlicher Recherche wurden letzten Endes drei Frameworks in die näher
 \textit{ARToolkit} und \textit{Google ARCore}. Beweggründe zu dieser Entscheidung war die überwiegende 
 Übereinstimmung zu zuvor aufgestellten Kriterien und Anforderungen. Alle Technologien konnten eine aktive und große Community, sowie eine 
 aktive Entwicklung, bzw. Weiterentwicklung vorweisen. Zusätzlich bieten alle Frameworks viele Möglichkeiten zur Integration weiterer 
-Technologien, um nach Belieben immer mehr Funktionen in das zu entwickelnde System zu übernehmen. Die Performance der Technologien konnte 
+Technologien, um nach Belieben immer mehr Funktionen in das zu entwickelnde System übernehmen zu können. Die Performance der Technologien konnte 
 in allen Aspekten überzeugen und ist unter einfachen Bedingungen mehr als ausreichend. Ein Kritikpunkt gegen die Verwendung von vuforia war 
-die fehlende Verfügbarkeit des Quellcodes, da dieser unter kostenpflichtiger Lizenz steht und nicht als Open Source-Projekt gilt. 
-\subsection{Google ARCore}
+die fehlende Verfügbarkeit des Quellcodes, da dieser unter kostenpflichtiger Lizenz steht und nicht als Open Source-Projekt gilt. Dadurch 
+entfiel die Entscheidung für vuforia.
 \subsection{ARToolKit}
+ARToolKit ist ein \acs{SDK} zur plattformunabhängigen Entwicklung von \acl{AR} Anwendungen. Der Quellcode dieses Frameworks ist seit 2001 
+frei verfügbar und ist vielseitig einsetzbar. Das Verfahren zur Positionsbestimmung durch Marker läuft schnell und robust. Marker wie in 
+Abbildung \ref{pic:markerARpos} werden schnell und ohne Probleme erkannt. Jedoch gibt es diesbezüglich Einschränkungen die beachtet werden 
+müssen, um eine zuverlässige und stabile Markererkennung zu gewährleisten, darunter Verdeckung des Markers, zu große Distanz von Kamera 
+zu Marker, Blickwinkel auf den Marker und die Lichtverhältnisse des Umfelds. 
+\\ 
+Ein gravierender Nachteil des Frameworks für dieses Projekt ist die fehlende Unterstützung der Möglichkeit die 
+Umgebung, bzw. das Umfeld zu erkennen und realisieren. So ist das Tracking nur über Marker, bzw. erweiterte 
+markerbasierte Tracking-Methoden möglich. 
+\\ 
+Nach dieser Erkenntnis wurde auch dieses Framework als eher untauglich für die Verwendung in dem Projekt eingestuft. Möglicherweise 
+gibt es einen Weg einen \acs{SLAM}-Algorithmus in Kombination mit ARToolKit zu verwenden, allerdings nicht ohne erweiterten Aufwand. 
+Somit wurde dieser Weg eingestellt. 
+\subsection{Google ARCore}
 
 \section{Datenmodell}
 \label{chap:Datenmodell}
