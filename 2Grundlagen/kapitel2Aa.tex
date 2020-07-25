@@ -44,7 +44,6 @@ Ausrichtung der Kamera in Relation zur Realität abgeschätzt.
 \\ 
 Die \acl{IMU} in Smart-Devices besitzt drei Beschleunigungssensoren, z.B. piezoelektrische Beschleunigungssensoren oder \ac{MEMS}, für die 
 drei Raumachsen:
-\\ 
 \begin{itemize}
     \item Die Abszissenachse (X-Achse), die horizontale (waagerechte) Koordinatenachse,
     \item Die Ordinatenachse (Y-Achse), die darauf vertikale (senkrechte) Koordinatenachse und
@@ -60,6 +59,7 @@ veranschaulicht solch ein Beispiel.
     \caption{Grundprinzip einer IMU \cite{imubild.2020j}}
     \label{pic:Positionsberechnung}
 \end{figure}
+\pagebreak
 \subsubsection*{Environmental understanding}
 Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
 Flächen beim scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
@@ -71,7 +71,7 @@ Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
     \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
     \label{pic:environmentalunderst}
 \end{figure}
-
+\pagebreak
 \subsubsection*{Light estimation}
 Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
 \acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
