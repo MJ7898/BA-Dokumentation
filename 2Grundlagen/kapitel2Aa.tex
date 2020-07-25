@@ -8,7 +8,7 @@ Der Augenmerk liegt auf dem Framework \textit{Google ARCore}, da dieses Hauptbes
 \subsection{Google ARCore}
 ARCore ist die von Google veröffentlichte Plattform zum Erstellen von \acl{AR} Erlebnissen, primär entwickelt für Android Phones. 
 Das \ac{SDK} ist in den Programmiersprachen Java und Kotlin geschrieben. Mit bestimmten \acs{API}s ermöglicht \textit{ARCore} die Erfassung 
-der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen und mit Informationen zu interagieren. Mitten des Jahres 2017 
+der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen. Mitte des Jahres 2017 
 wurde die \textit{Google ARCore API} zum ersten Mal den Entwicklern und der \acs{AR}-Community präsentiert. Im ersten Quartal 2018 wurde 
 diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. 
 \\ 
@@ -24,7 +24,7 @@ dessen Sensoren.
 Zum Integrieren von virtuellen Objekten in die reale Welt verwendet ARCore drei Schlüsselfunktionen unter Benutzung von Java und OpenGL, Unity 
 und Unreal:
 \begin{itemize}
-    \item Motion tracking, dt. Bewegungsverfolgung, ermöglicht das Verstehen und Verfolgen der Postion des Geräts relativ zur Realität.
+    \item Motion tracking, dt. Bewegungsverfolgung, ermöglicht das Verstehen und Verfolgen der Position des Geräts relativ zur Realität.
     \item Environmental understanding, dt. Verständnis der Umgebung, erkennt die Position und Größe aller Arten von Oberflächen: horizontale, 
     vertikale und abgewinkelte Oberflächen, wie Wände, Böden, Tische oder Stühle.
     \item Light estimation, dt. Lichtschätzung, schätzt die durch das Smartphone gegebenen Lichtverhältnisse der Umgebung. \cite{arcorefundamentals.2018m}
@@ -34,7 +34,7 @@ Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \ac
 sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
 Kamerabild, sogenannte Merkmalspunkte \textit{„feature points“}. Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
 der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
-Ausrichtung der Kamera relativ zur Realität abgeschätzt. 
+Ausrichtung der Kamera in Relation zur Realität abgeschätzt. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
@@ -64,7 +64,7 @@ veranschaulicht solch ein Beispiel.
 Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
 Flächen beim scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
 naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
-Platzieren von virtuelle Objekte auf den erfassten Flächen möglich.
+Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
@@ -88,8 +88,8 @@ erscheinen.
 \label{sec:androidjetpack}
 Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
 Boilerplate\footnote{Sind Codeabschnitte, die an mehreren Stellen mit wenigen oder gar keinen Änderungen aufgeführt sein müssen. \cite{boilerplate.2019m}}-Code 
-zu reduzieren und Code zu schreiben. Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
-Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick gewährleistet, um Best Practices und empfohlene 
+zu reduzieren und Quell-/ Source-Code zu schreiben. Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
+Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick verschafft, um Best Practices und empfohlene 
 Architekturen zu berücksichtigen.
 \\ 
 Außerdem wurde Android Jetpack für moderne Design-Praktiken entwickelt, darunter fällt \textit{„seperation of concerns“}\footnote{(SoC), Entwurfsprinzip, um verschiedene Verantwortlichkeiten auf 
@@ -100,7 +100,7 @@ verschieden Abschnitte zu trennen. \cite{soc.2019a}}, \textit{testability}, \tex
 Die Bibliothekensammlung ist die Grundlage für die verwendete Architektur, Android Architecture Components in Abschnitt \ref{chap:AAC}.
 \\ 
 \linebreak
-Die Abbildung \ref{pic:androidjetpackcomp} verschafft einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
+Die Abbildung \ref{pic:androidjetpackcomp} zeigt einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=15cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/androidjetpackcomps.png}
@@ -118,7 +118,7 @@ und bilden die Basis für die Architektur, welche an das \textit{MVVM-Pattern} a
 \subsection*{LiveData}
 \label{sec:LiveData}
 \textit{LiveData} gehört zu den \textit{Observer-Pattern} und ist eine Datenhalterklasse die eine Beobachtungsfunktion, bzw. -charakter besitzt. Der 
-Unterschied zu einem regulären Observable ist, dass die LiveData-Komponente lebenszyklusunabhängig ist. Dies bedeutet, der Lebenszyklus anderer 
+Unterschied zu einem regulären Observable ist, die lebenszyklus-unabhängige LiveData-Komponente. Dies bedeutet, der Lebenszyklus anderer 
 Komponenten z.B. \textit{Activities, Fragments oder Services}, wird berücksichtigt. Mit dieser Kenntnis wird sichergestellt, dass LiveData 
 nur App-Komponenten beobachtet, welche sich in einem aktiven Lebenszyklus befinden.
 \\ 
@@ -154,7 +154,7 @@ Components, z.B. LiveData und ViewModel.
 
 \subsection*{ViewModel}
 \label{sec:ViewModel}
-Grundsätzlich dient das \textit{ViewModel} als lebenszyklusbewusste Speicherung und Verwaltung von Benutzeroberflächenbezogenen Daten. 
+Grundsätzlich dient das \textit{ViewModel} als lebenszyklusbewusste Speicherung und Verwaltung von benutzeroberflächenbezogenen Daten. 
 Durch die \textit{ViewModel}-Klasse können Informationen Konfigurationsänderungen, z.B. Bildschirmdrehungen, die als Änderung zählen, 
 überstehen. Eine Konfiguration kann sog. Activities verwerfen und neu laden, so können nicht persistierte Daten verloren gehen. 
 \\ 
@@ -180,16 +180,16 @@ von Google Filament, wurde Sceneform entwickelt.
 \\ 
 \linebreak
 Bei dem Ansatz des physikalisch basierten Renderns in der Computergrafik wird versucht, alle Modalitäten der realen Welt genauer zu modellieren. 
-Mit dieser Methode werden virtuelle 3D-Objekte in der \acl{AR} noch realer dargestellt, um einen Echtheitseffekt zu erzielen und simulieren. 
-Ein Beispiel ist das simulieren des Lichtflusses, um einen Schatten des Objekts zu erzeugen, damit die Wirksamkeit immer mehr der Realität 
+Mit dieser Methode werden virtuelle 3D-Objekte in der \acl{AR} noch realer dargestellt, um einen Echtheitseffekt zu erzielen und zu simulieren. 
+Ein Beispiel ist das Simulieren des Lichtflusses, um einen Schatten des Objekts zu erzeugen, wodurch die Wirksamkeit immer mehr der Realität 
 entspricht.
 \\ 
 \linebreak
-Dreidimensionale Modelle werden als \textit{.obj}-Dateien in das Projekt importiert. Diese Dateien beinhalten aufgelistete Punkte, Vektoren 
+Dreidimensionale Modelle werden als \textit{(.obj)}-Dateien in das Projekt importiert. Diese Dateien beinhalten aufgelistete Punkte, Vektoren 
 und Linien, welche das Modell repräsentieren. Das \textit{Sceneform \acs{SDK}} verwendet die \textit{.obj}-Datei und konvertiert, bzw. 
-rendert diese in eine, \textit{Sceneform binary assets, .sfb}-Datei, um daraus das dreidimensionale Objekt zu generieren, welches anschließend 
-in \acs{AR}-Anwendungen basierend auf Google ARCore verwendet werden kann. Für die finale Renderung und Anzeige ist die 
-\textit{ModelRenderable}-Klasse des \acs{SDK}s zuständig. 
+rendert diese in eine, \textit{Sceneform binary assets (.sfb)}-Datei. Diese generierte Datei ermöglicht das Generieren eines dreidimensionalen 
+Objekts, welches anschließend in \acs{AR}-Anwendungen basierend auf Google ARCore verwendet werden kann. 
+Für die finale Renderung und Anzeige ist die \textit{ModelRenderable}-Klasse des \acs{SDK}s zuständig. 
 %\\ 
 %\linebreak
 %Ein weiterer wichtiger Aspekt diese Projekts ist der Einsatz einer Datenbank, um generierte Daten speichern zu können.
@@ -198,4 +198,4 @@ in \acs{AR}-Anwendungen basierend auf Google ARCore verwendet werden kann. Für 
 ohne Konfiguration implementiert. \acs{SQL}ite ist eine eingebettete \acs{SQL}-Datenbank-Engine die im Gegensatz zu anderen \acs{SQL}-Datenbanken über 
 keinen separaten Serverprozess verfügt, d.h. Transaktionen, Lese- und Schreibzugriffe werden direkt auf eine normale Festplattendatei getätigt. \cite{sqlite.2018j}
 \\
-Darüber hinaus ist \acs{SQL}ite Plattformübergreifend und kann beliebig Datenbank- und Objekttabellen, Indizes und Ansichten erstellen und verwalten. 
+Darüber hinaus ist \acs{SQL}ite plattformübergreifend und kann beliebig Datenbank- und Objekttabellen, Indizes und Ansichten erstellen und verwalten. 
