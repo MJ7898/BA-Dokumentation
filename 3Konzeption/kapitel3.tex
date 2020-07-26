@@ -28,6 +28,10 @@ Softwarekonzept (\ref{chap:Architekturkonzept}) eingegangen. Des Weiteren werden
 
 \section{Architekturkonzept}
 \label{chap:Architekturkonzept}
+Um das \acl{AR} basierte Assistenzsystem grundlegend zu definieren, ist es von Vorteil ein geeignetes Konzept sowie einen ersten Entwurf zu 
+erstellen. Dieser sollte als Fundament für eine Applikation mit stetig steigender Anzahl an Funktionen dienen. Anfänglich soll der Prototyp 
+dafür sorgen, einen Überblick über beispielsweise Maschinen in Produktionshallen zu verschaffen. Dies bedeutet, dass Informationen zu bestimmten 
+Objekten schnell zur Verfügung stehen und eventuell defekte Maschinen zügig aufzufinden sind.  
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
@@ -77,6 +81,17 @@ Nach dieser Erkenntnis wurde auch dieses Framework als eher untauglich für die 
 gibt es einen Weg einen \acs{SLAM}-Algorithmus in Kombination mit ARToolKit zu verwenden, allerdings nicht ohne erweiterten Aufwand. 
 Somit wurde dieser Weg eingestellt. 
 \subsection{Google ARCore}
+Google ARCore (siehe Abschnitt \ref{sec:arcore}) konnte bei der Analyse von sich überzeugen. Lediglich die Beschränkung der
+Betriebssysteme auf \textit{Android} und \textit{iOS} war ein Nachteil, allerdings nicht von hoher Bedeutung. Der entscheidende Vorteil bei 
+ARCore ist der unterstützende Algorithmus zur Umgebungserkennung. Des Weiteren ist Google ARCore ein Open-Source Projekt und befindet sich 
+in kontinuierlicher Weiterentwicklung. Neben der stetigen Entwicklung hat sich eine große und aktive Community gebildet, die bei auftauchenden 
+Problemen zur Stelle ist. Ein weiterer Vorteil sind die verschiedensten Möglichkeiten der Interaktion mit \acs{AR}-Objekten. Es gibt die 
+klassische Markererkennung, die nicht nur mit Markern (siehe Abbildung \ref{pic:markerARpos}) sonder auch mit Bildern funktioniert, dem sogenannten
+\textit{AugmentedImage}. Die Erkennung von Gesichtern, \textit{AugmentedFace} und die Erkennung von realen Punkten, Oberflächen und Gegenständen.
+\\
+\linebreak
+Durch diese ganzen positiven Aspekte ist die Wahl des Frameworks auf das von Google entwickelte ARCore gefallen und wurde wegen den überzeugenden 
+Grundlagen als Framework für dieses Projekt eingesetzt.
 
 \section{Datenmodell}
 \label{chap:Datenmodell}
