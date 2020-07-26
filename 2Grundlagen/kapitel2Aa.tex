@@ -55,7 +55,7 @@ drei Koordinaten ausgegeben. Ausgehend von dem Referenzkoordinatensystem wird di
 veranschaulicht solch ein Beispiel.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/imu-Bsp.png}
+    \includegraphics[width=9cm,height=9cm,keepaspectratio]{2Grundlagen/Bilder/imu-Bsp.png}
     \caption{Grundprinzip einer IMU \cite{imubild.2020j}}
     \label{pic:Positionsberechnung}
 \end{figure}
@@ -71,7 +71,6 @@ Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
     \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
     \label{pic:environmentalunderst}
 \end{figure}
-\pagebreak
 \subsubsection*{Light estimation}
 Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
 \acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
@@ -83,7 +82,6 @@ erscheinen.
     \caption{Skizze zu den Lichtverhältnissen des Smartphones \cite{arcoreofficial.2020j}}
     \label{pic:lightestim}
 \end{figure}
-
 \subsection{Android Jetpack}
 \label{sec:androidjetpack}
 Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
@@ -143,11 +141,11 @@ und immer zugänglich zu machen. \textit{Room} kann in drei Kategorien, bzw. in 
 Das Diagramm \ref{pic:roomarchitecturediagramm} veranschaulicht die Interaktion, bzw. Funktionsweisen der Hauptkomponenten.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/roomArchitecture.png}
+    \includegraphics[width=7.5cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/roomArchitecture.png}
     \caption{Room Architektur Diagramm \cite{roomdiagr.2017}}
     \label{pic:roomarchitecturediagramm}
 \end{figure} 
-\\ 
+\pagebreak
 Allgemein ermöglicht \textit{Room} einen vereinfachten Zugriff auf die Datenbank, hat einen hohen Grad an \textit{„testability“}, zur 
 Kompilierungszeit wird eine \acs{SQL}-Abfrageüberprüfung durchgeführt und interagiert einwandfrei mit anderen Android Architecture 
 Components, z.B. LiveData und ViewModel.
@@ -168,11 +166,11 @@ Die Abbildung \ref{pic:viewModeldiagramm} zeigt eine sich ändernde Activity, di
 auf die unveränderten Daten hat. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/viewModelDiagram.png}
+    \includegraphics[width=7.5cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/viewModelDiagram.png}
     \caption{ViewModel Struktur Diagramm \cite{viewmodeldiagr.2020}}
     \label{pic:viewModeldiagramm}
 \end{figure} 
-
+\pagebreak
 \subsection{Sceneform SDK}
 Das Sceneform \acs{SDK} ist ein Open-Source Projekt der Google LLC., welches für das Rendern von 3D-Szenen und -Animationen zuständig ist. 
 Basierend auf der physikalischen Echtzeit-Rendering-Engine, \textit{physically based renderer} für Android, iOS, macOS, Linux und Windows 

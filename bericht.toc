@@ -50,31 +50,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}Sceneform SDK}{35}{subsection.2.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.4}SQLite}{36}{subsection.2.4.4}% 
+\contentsline {subsection}{\numberline {2.4.4}SQLite}{35}{subsection.2.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Softwarearchitektur}{37}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Softwarearchitektur}{36}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Modulare Software Architektur}{38}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.1}Modulare Software Architektur}{37}{subsection.2.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}MVVM}{39}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.5.2}MVVM}{38}{subsection.2.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Android Architecture Components}{40}{subsection.2.5.3}% 
+\contentsline {subsection}{\numberline {2.5.3}Android Architecture Components}{39}{subsection.2.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Datenmodellierung}{43}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}Datenmodellierung}{42}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Konzeption}{45}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Konzeption}{44}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{45}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Arbeitsumgebung / Umfeld}{44}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{45}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Objekterkennung / Scan-Phase}{44}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{45}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{44}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Architekturkonzept}{45}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Architekturkonzept}{44}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Softwarekonzept}{45}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{44}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{45}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{44}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6.1}ARToolKit}{46}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 

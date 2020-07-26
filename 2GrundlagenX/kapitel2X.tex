@@ -143,7 +143,6 @@ Die nachfolgende Abbildung (\ref{pic:infoflussmvvm}) veranschaulicht den Informa
     \label{pic:infoflussmvvm}
 \end{figure} 
 \\ 
-\linebreak
 Basierend auf der Grundlage des Model-View-ViewModel-Patterns wurde die für das Projekt anvisierte Architektur, Android Architecture Components (\ref{chap:AAC}), 
 entwickelt.  
 \subsection{Android Architecture Components}
@@ -200,7 +199,8 @@ Entitäten und Aggregaten von der Ansicht.
     \label{pic:roomComp}
 \end{figure} 
 \\ 
-Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
+\linebreak
+Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{Layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
 die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. \textit{\@Entity, \@Dao}, gearbeitet wird. Der 
 Abbildung \ref{pic:roomComp} ist demnach zu entnehmen, dass die Bibliothek Room einen Großteil der Funktionen eines Models abdeckt und so 
 die Model-Komponente repräsentiert. Anschließend auf das Datenbank layer ist die eigentliche Persistenzschicht, die SQLite Datenbank.
