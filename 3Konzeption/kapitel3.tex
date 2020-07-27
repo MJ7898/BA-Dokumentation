@@ -29,9 +29,35 @@ Softwarekonzept (\ref{chap:Architekturkonzept}) eingegangen. Des Weiteren werden
 \section{Architekturkonzept}
 \label{chap:Architekturkonzept}
 Um das \acl{AR} basierte Assistenzsystem grundlegend zu definieren, ist es von Vorteil ein geeignetes Konzept sowie einen ersten Entwurf zu 
-erstellen. Dieser sollte als Fundament für eine Applikation mit stetig steigender Anzahl an Funktionen dienen. Anfänglich soll der Prototyp 
-dafür sorgen, einen Überblick über beispielsweise Maschinen in Produktionshallen zu verschaffen. Dies bedeutet, dass Informationen zu bestimmten 
-Objekten schnell zur Verfügung stehen und eventuell defekte Maschinen zügig aufzufinden sind.  
+erstellen. Dieser sollte als Fundament für eine Applikation mit stetig steigender Anzahl an Funktionen dienen und für künftige Weiterentwicklungen 
+verwendet werden. Anfänglich soll der Prototyp dafür sorgen, einen Überblick über beispielsweise Maschinen in Produktionshallen zu 
+verschaffen. Dies bedeutet, dass Informationen zu bestimmten Objekten schnell zur Verfügung stehen und eventuell defekte Maschinen zügig 
+aufzufinden sind. Grundsätzlich muss die Anwendung in der Lage sein, auf Benutzerbedienungen zu reagieren, die Umgebung zu scannen, 3D-Objekte 
+an der vom Nutzer vorgesehenen Stelle platzieren, Informationen zu den jeweiligen Objekten hinzufügen und ändern zu können. Wird die 
+Applikation gestartet, die Umgebung gescannt und Objekte auf die vom Nutzer vorgesehenen Positionen platziert, sollen die erstellten Objekte 
+gespeichert und bei erneutem Start der Anwendung aufgerufen und platziert werden. Neben der \acl{AR} Funktion soll die %alle vorhandenen Objekte
+entstehende Software für eine fortlaufende Entwicklung geeignet sein. Für diese Eigenschaft ist ein modularer Architekturansatz vorgesehen, 
+um das schnelle und einfache Wechseln von Komponenten und Bestandteilen zu ermöglichen. Darunter beispielsweise Änderungen an der 
+Benutzeroberfläche oder Verwendung einer anderen Datenbank, bzw. hinzukommende Funktionen, die unabhängig von bestehenden Klassen 
+hinzugefügt werden können. Durch das \acs{MVVM}-Pattern, welches durch die \textit{Android Architecture Components} gefördert wird, ist 
+das Testen von \textit{\acs{UI}}- und \textit{BackEnd}-Elemente unabhängig voneinander begünstigt. 
+\\ 
+\linebreak
+Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und sorgen im Allgemeinen 
+dafür, die Software im gesamten überschaubar und beherrschbar zu gestalten. Dabei werden viele Prinzipien beachtet und auch gewährleistet. 
+Durch gezielte Abstraktion von Informationen wird die Komplexität einer Anwendung steuerbar. Mit der großen Anzahl an verschiedenen 
+Segmenten, die der Abbildung \ref{pic:architectur} zu entnehmen sind, wird die Trennung der Zuständigkeit (engl. \textit{seperation of concerns}) 
+deutlich. Dabei hat jede einzelne Komponente eine Zuständigkeit, bzw. Aufgabe die sie zu bewerkstelligen hat. Sei es die \textit{View} 
+mit der der Nutzer interagiert, dem \textit{ViewModel} als Kommunikationsschnittstelle, dem %und Zwischenspeicherung von Daten
+\textit{Repository} als Verzeichnis zur Speicherung und Beschreibung von Objekten oder als Schnittstelle zu mehreren Datenbeziehungspunkten 
+oder das \textit{Model}, das die Zugriffe auf die Datenbank kapselt und die Struktur der Objekte vorgibt. %, bzw. der zu speichernden Daten
+Ein weiterer Aspekt ist das daraus resultierende und idealerweise in sich geschlossene System, das durch lose Kopplung und hohe Kohäsion in 
+eine Menge an Komponenten zerlegt ist. Die dadurch gewonnene Modularität. 
+\\ 
+\linebreak
+Die Software wurde zunächst, den Phasen entsprechend (siehe Abschnitt \ref{chap:Scan-Phase} \& \ref{chap:Visualisierungs-Phase}), in zwei 
+große Rubriken, Scan- und Visualisierungs-Phase, unterteilt. In der Abbildung \ref{pic:architectur} ist die konzeptionelle Architektur 
+des Unterstützungssystems dargestellt. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
