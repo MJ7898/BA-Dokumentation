@@ -56,17 +56,27 @@ eine Menge an Komponenten zerlegt ist. Die dadurch gewonnene Modularität.
 \\ 
 \linebreak
 Die Software wurde zunächst, den Phasen entsprechend (siehe Abschnitt \ref{chap:Scan-Phase} \& \ref{chap:Visualisierungs-Phase}), in zwei 
-große Rubriken, Scan- und Visualisierungs-Phase, unterteilt. In der Abbildung \ref{pic:architectur} ist die konzeptionelle Architektur 
-des Unterstützungssystems dargestellt. 
+große Rubriken, Scan- und Visualisierungs-Phase, unterteilt. Diese Phasen finden sich in der Abbildung \ref{pic:architectur} der 
+konzeptionellen Architektur des Unterstützungssystems wieder. 
+\\ 
+\textit{Views}, bzw. \textit{Activities} werden mithilfe der von Android zur Verfügung gestellten \textit{AppCompat-Library} erstellt. Die 
+von Android Jetpack vorhandene Bibliothek ViewModel, dient als Kommunikationsschnittstelle zwischen der \acs{UI} und dem Repository. Über 
+die ebenso von Android Jetpack publizierte LiveData-Bibliothek, gilt als Observer zur \acs{UI} und benachrichtigt diese bei Änderungen. Mit 
+der Repository-Komponente zwischen ViewModel und Datenbank, bzw. Model wird eine reine und neu generierte \acs{API}-Schnittstelle erstellt, 
+welche der Benutzeroberfläche Aufrufe für Datenbankzugriffe zur Verfügung stellt. Die Room-Bibliothek stellt ein Zugriffs-Layer da, welches 
+die Datenbankzugriffe kapselt und steht gleichzeitig als Model bereit. Dort werden Entities, in der für die Datenbank vorgesehene 
+Struktur, festgelegt. Data Objects regeln die Datenbank-Zugriffe über definierte SQL-Queries, die vorab, den Funktionen entsprechend, 
+modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Objekte zu speichern wird eine SQLite-Datenbank verwendet.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
     \caption{Konzeptionelle Software-Architektur}
     \label{pic:architectur}
-\end{figure} 
-
+\end{figure}
+\\ 
 \section{Softwarekonzept}
 \label{chap:Softwarekonzept}
+
 
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}

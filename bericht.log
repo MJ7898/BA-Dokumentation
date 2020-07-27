@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  27 JUL 2020 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  27 JUL 2020 18:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1897,18 +1897,23 @@ although it is yet undefined on input line 251.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-<3Konzeption/Bilder/architektur_konzept.png, id=859, 470.50781pt x 416.30531pt>
+<3Konzeption/Bilder/architektur_konzept.png, id=863, 470.50781pt x 416.30531pt>
 File: 3Konzeption/Bilder/architektur_konzept.png Graphic file (type png)
 <use 3Konzeption/Bilder/architektur_konzept.png>
-Package pdftex.def Info: 3Konzeption/Bilder/architektur_konzept.png  used on input line 63.
+Package pdftex.def Info: 3Konzeption/Bilder/architektur_konzept.png  used on input line 72.
 (pdftex.def)             Requested size: 369.8879pt x 327.27681pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--67
+Underfull \hbox (badness 10000) in paragraph at lines 31--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--67
+Underfull \hbox (badness 10000) in paragraph at lines 31--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--77
 
  []
 
@@ -1920,9 +1925,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--67
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.109 \subsection
-                 {Google ARCore} </Users/mj/BA-Dokumentation/3Konzeption/Bilder/architektur_konzept.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 110--121
+l.105 \subsection
+                 {ARToolKit} </Users/mj/BA-Dokumentation/3Konzeption/Bilder/architektur_konzept.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 120--131
 
  []
 
@@ -1993,10 +1998,10 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (59 pages, 6023600 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (59 pages, 6024764 bytes).
 PDF statistics:
- 1335 PDF objects out of 1440 (max. 8388607)
- 1183 compressed objects within 12 object streams
+ 1339 PDF objects out of 1440 (max. 8388607)
+ 1187 compressed objects within 12 object streams
  266 named destinations out of 1000 (max. 500000)
  29818 words of extra memory for PDF output out of 29859 (max. 10000000)
 

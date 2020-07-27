@@ -76,7 +76,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{45}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}ARToolKit}{46}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.1}ARToolKit}{47}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6.2}Google ARCore}{47}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
