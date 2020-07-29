@@ -118,18 +118,33 @@ Die zuvor erläuterte Visualisierungs-Phase wird in diesem Abschnitt seitens der
 dargelegt.
 \\ 
 Ähnlich zur Scan-Phase gibt es bei dieser Funktion ein \acs{AR}-Fragment, welches das Kamerabild wiedergibt. Dieses Fragment soll sich 
-über den gesamten Bildschirm erstrecken und sei zusätzlich mit weiteren zwei Buttons zu versehen. Diese werden in weiterem Verlauf 
+über den gesamten Bildschirm erstrecken und sei zusätzlich mit zwei weiteren Buttons zu versehen. Diese werden in weiterem Verlauf 
 präzisiert. Das Ziel dieser Kernfunktion ist die Darstellung aller vorhandenen, in der Datenbank gespeicherten, Gegenstände. Hierbei werden 
 lediglich die Erzeugnisse, die in der Scan-Phase erstellt wurden, abgerufen und als neue Objekte gerendert. Dafür wird die Position in der 
-SQLite Datenbank abgefragt und als Basis für das neue Objekt gesendet. So können die vorhandenen Marker visuell dargestellt werden. Die 
-Funktion an sich sieht keine Änderungen der bestehenden Objekte vor, dafür muss der Nutzer erneut in die Scan-Phase wechseln.   
+SQLite Datenbank abgefragt und als Basis für das neue Objekt geladen. So können die vorhandenen Marker visuell dargestellt werden. Die 
+Funktion an sich sieht keine Änderungen der bestehenden Objekte vor, dafür muss der Nutzer erneut in die Scan-Phase wechseln.
+\\ 
+Bevor der Benutzer von dem Startmenü zur Visualisierungs-Phase übergehen kann, soll ein Hinweis erscheinen, welcher sicherstellen soll das 
+die Scan-Phase schon bereits mindestens einmal durchgeführt wurde. Damit wird sichergestellt, dass bereits Objekte existieren und angezeigt 
+werden können. Denn ohne vorherigen Scan ist die Kernfunktion der Visualisierungs-Phase sinnlos.
+\\
+Neben dem \acs{AR}-Fragment gibt es zwei Button, den einen zum navigieren auf die Scan-Methode, um bei Bedarf weitere Objekte 
+hinzuzufügen und den zweiten zum Starten, bzw. erneuten Laden der Funktion. Damit wird die Abfrage der Daten, die in der Datenbank 
+enthalten sind, gestartet und der Prozess des Objekterstellens, bzw. - renderns begonnen. Dadurch erscheinen alle bereits gespeicherten 
+Objekte auf der Karte. Auf die Funktionen, Methoden und deren Umsetzung wird in Kapitel (\ref{chap:Umsetzung}) genauestens eingegangen.
+\\ 
+\linebreak
+Dem Diagramm ist der zum jetzigen Zeitpunkt geplante Ablauf und Funktionsweisen des Unterstützungssystems zu entnehmen, dabei ist grob 
+veranschaulicht, welche Möglichkeiten sich dem Nutzer bieten, um einen Überblick zu verschaffen anhand welcher Informationen die 
+Applikation entwickelt wird. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
     \caption{Anwendungsfall-Diagramm}
     \label{pic:anwendungsfall}
 \end{figure}
-\pagebreak
+Nachdem auch das Softwarekonzept weitestgehend erarbeitet wurde, ging es um die Entscheidung, welches \acl{AR}-Framework für dieses Projekt 
+ausgewählt wird. Nun wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}
 Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedlich unterschiedliche Präferenzen und 
