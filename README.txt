@@ -1,1 +1,2 @@
-﻿Studienarbeit von Mikka Jenne & Simon Leitl
+#Bachelor-Thesis 
+##from Mikka Jenne
