@@ -17,10 +17,12 @@ Softwarekonzept (\ref{chap:Architekturkonzept}) eingegangen. Des Weiteren werden
 (\ref{chap:Auswahl des AR Frameworks}) aufgezeigt und abschließend wird noch das konzipierte und prototypische Datenmodell 
 (\ref{chap:Datenmodell}) dargelegt.
 
-\section{Arbeitsumgebung / Umfeld}
+\section{Anwendungsumfeld}
 \label{chap:Arbeitsumgebung}
+Bei der Konzeption wird darauf Rücksicht genommen, die Anwendung möglichst so zu planen, dass der Einsatzort nicht maßgeblich ist. 
 
-\section{Objekterkennung / Scan-Phase}
+\section{Scan-Phase}
+%Objekterkennung /
 \label{chap:Scan-Phase}
 
 \section{Visualisierungs-Phase}
@@ -78,8 +80,48 @@ modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Obje
 \label{chap:Softwarekonzept}
 Nachdem die Architektur konzipiert und ein grobes Bild des entstehenden Systems geschaffen wurde, konnte die Konzeption des 
 Softwaresystems beginnen. Hierbei werden die Kernfunktionen, sowie die Anforderungen und Ziele veranschaulicht.
-
-
+\\ 
+\linebreak 
+Beim Starten der Applikation öffnet sich das Startmenü der Anwendung. Hier sind auf einen Blick zentral alle Funktionen, die das System 
+unterstützt, übersichtlich geboten. Dort wird die Möglichkeit offeriert, die Scan-Phase (\ref{chap:Scan-Phase}) zu starten oder fortzuführen 
+oder die Visualisierungs-Phase (\ref{chap:Visualisierungs-Phase}) nach erfolgtem Scannen zu starten. Dabei wird auch das Ziel verfolgt, den 
+Nutzer nicht mit Informationen zu erschlagen, bzw. den Nutzer nicht unnötig zu verwirren und ohne große Probleme zu der eigentlichen Tätigkeit 
+zu führen. Auch dient das Startmenü lediglich zur Navigation und leitet den Benutzer auf die von ihm gewählte Tätigkeit weiter.  
+\subsection*{Scan-Phase}
+Die oben genauesten beschriebene Scan-Phase (\ref{chap:Scan-Phase}) wird nochmals aufgegriffen. Mithilfe dessen wird die Konzeption dieser 
+Kernfunktion auf Basis des Layouts und der darin geplanten Komponenten dargelegt.
+\\ 
+Grundsätzlich soll die Scan-Funktion eine Oberfläche enthalten, die die Wiedergabe des Kamerabildes gewährleistet. Dies soll mit einem 
+speziellen \textit{ARCore-Fragment} umgesetzt werden, welches die Benutzeroberfläche überlagert und einen Großteil des Bildschirms einnimmt. 
+Die Oberfläche soll zu folgenden Interaktionen zwischen Nutzer und Applikation, bzw. den darin enthaltenen dreidimensionalen Objekten 
+dienen. Die vorgesehenen Interaktionen belaufen sich auf das Scannen der Umgebung durch die vom Smartphone gegebene Kamera, das Setzen von 
+virtuellen Objekten auf die vom Nutzer vorgesehene Position und das hinzufügen von Informationen zu den jeweiligen Objekten. Unterhalb des 
+\acs{AR}-Fragments soll eine \textit{Gallery} angezeigt werden, welche eine Auswahl der zu setzenden \acs{AR}-Objekte bietet und mit einem 
+\textit{Button} pro Objekt versehen ist. So kann beim Klick auf ein Objekt-Button das dementsprechende \textit{3D asset} gerendert und auf 
+dem \acs{AR}-Fragment angezeigt werden. Die Gallery kann im laufe der Entwicklung des Systems zu jeder Zeit um weitere \textit{3D assets} 
+expandieren. Während des Renderings eines Objekts wird der Nutzer auf die Seite der Dateneingabe weitergeleitet, um speziell zu dem 
+erzeugten Objekt Informationen eingeben zu können. Diese Informationen werden bei erneutem Wechsel zur 
+Hauptseite samt der Daten der Position des Objekts in die SQLite Datenbank gespeichert, um den Voraussetzungen des Datenmodells 
+(siehe Abschnitt \ref{chap:Datenmodell}) zu entsprechen.
+\\
+Ziel dieser Funktion ist, dem Nutzer eine simple Möglichkeit zu bieten das Umfeld zu scannen und Objekte an den vom Nutzer vorgesehenen 
+Positionen zu platzieren. Dabei gilt es, die Anwendung so einfach wie möglich zu halten und das System auf die Kernaufgabe zu fokussieren.
+\\ 
+Abbildung (\ref{pic:anwendungsfall}) verdeutlich den konzipierten Inhalt der Scan-Phasen-Kernfunktion in einem Anwendungsfall-Diagramm, 
+sodass oben aufgeführte Beschreibung zur optischen Darstellung mit den dahinterliegenden Klassen die Vorstellung und das Konzept präzisiert.
+\\ 
+\linebreak
+Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
+Anforderungen und Zielsetzungen.
+\subsection*{Visualisierungs-Phase}
+Jodeln, des isses.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
+    \caption{Anwendungsfall-Diagramm}
+    \label{pic:anwendungsfall}
+\end{figure}
+\pagebreak
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}
 Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedlich unterschiedliche Präferenzen und 
@@ -97,7 +139,7 @@ Aufgrund der großen Anzahl an \acs{AR}-Frameworks war es nicht möglich alle in
 lediglich die engere Auswahl der Tools wird aufgegriffen. 
 \\ 
 Nach ausführlicher Recherche wurden letzten Endes drei Frameworks in die nähere Auswahl aufgenommen, darunter \textit{vuforia}, 
-\textit{ARToolkit} und \textit{Google ARCore}. Beweggründe zu dieser Entscheidung war die überwiegende 
+\textit{ARToolKit} und \textit{Google ARCore}. Beweggründe zu dieser Entscheidung war die überwiegende 
 Übereinstimmung zu zuvor aufgestellten Kriterien und Anforderungen. Alle Technologien konnten eine aktive und große Community, sowie eine 
 aktive Entwicklung, bzw. Weiterentwicklung vorweisen. Zusätzlich bieten alle Frameworks viele Möglichkeiten zur Integration weiterer 
 Technologien, um nach Belieben immer mehr Funktionen in das zu entwickelnde System übernehmen zu können. Die Performance der Technologien konnte 
