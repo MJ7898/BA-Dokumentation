@@ -114,7 +114,16 @@ sodass oben aufgeführte Beschreibung zur optischen Darstellung mit den dahinter
 Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
 Anforderungen und Zielsetzungen.
 \subsection*{Visualisierungs-Phase}
-Jodeln, des isses.
+Die zuvor erläuterte Visualisierungs-Phase wird in diesem Abschnitt seitens der Softwarekonzeption auf die Ziele, Anforderungen und Funktionen 
+dargelegt.
+\\ 
+Ähnlich zur Scan-Phase gibt es bei dieser Funktion ein \acs{AR}-Fragment, welches das Kamerabild wiedergibt. Dieses Fragment soll sich 
+über den gesamten Bildschirm erstrecken und sei zusätzlich mit weiteren zwei Buttons zu versehen. Diese werden in weiterem Verlauf 
+präzisiert. Das Ziel dieser Kernfunktion ist die Darstellung aller vorhandenen, in der Datenbank gespeicherten, Gegenstände. Hierbei werden 
+lediglich die Erzeugnisse, die in der Scan-Phase erstellt wurden, abgerufen und als neue Objekte gerendert. Dafür wird die Position in der 
+SQLite Datenbank abgefragt und als Basis für das neue Objekt gesendet. So können die vorhandenen Marker visuell dargestellt werden. Die 
+Funktion an sich sieht keine Änderungen der bestehenden Objekte vor, dafür muss der Nutzer erneut in die Scan-Phase wechseln.   
+\textit{3D asset} 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
