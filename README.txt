@@ -1,1 +1,0 @@
-﻿Studienarbeit von Mikka Jenne & Simon Leitl
