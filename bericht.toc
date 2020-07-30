@@ -86,20 +86,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Implementierung}{51}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Scan-Phase}{51}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Scan-Phase}{52}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{51}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{52}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf / Test-Szenario}{51}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Testdurchlauf / Test-Szenario}{52}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{52}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Evaluation}{53}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{53}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Fazit}{54}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{54}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Ausblick}{55}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{55}{chapter.7}% 
+\contentsline {chapter}{Anhang}{56}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{55}{chapter.7}% 
+\contentsline {chapter}{Index}{56}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{55}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{56}{chapter.7}% 
