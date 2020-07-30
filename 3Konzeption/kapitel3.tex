@@ -33,14 +33,45 @@ eingesetzt werden.
 \section{Scan-Phase}
 %Objekterkennung /
 \label{chap:Scan-Phase}
-Die Definition der Aufgabe der Scan-Phase ist entscheidend für die Konzeption und Umsetzung der Architektur- und Softwarekonzeption. 
+Die Definition, der Aufgabe, der Scan-Phase ist entscheidend für die Konzeption und Umsetzung der Architektur- und Softwarekonzeption. 
 Anhand der dabei entstehenden Anforderungen und Zielsetzungen kann die Konzeption ausgelegt und erarbeitet werden. Dieser Abschnitt widmet 
 sich der expliziten theoretischen Erläuterung dieser Phase und somit auch einer der beiden Kernfunktionen dieses Softwaresystems.
 \\ 
 \linebreak
-
+Der Nutzer hält ein Smartphone oder Tablet in der Hand und steht am Eingang der Räumlichkeit. An diesem Punkt wird der Scan-Vorgang gestartet. 
+Mittels Smartphone-Kamera hat der Nutzer die Möglichkeit die Umgebung zu scannen. Dabei wird am Anfang der Startpunkt als Nullpunkt, bzw. 
+als Urpsrungskoordinaten des erstellten Koordinatensystems des Raums, festgelegt. Der Nutzer kann sich frei in dem Raum bewegen und ist 
+durch das Smartphone nur mit den Händen etwas eingeschränkt. Während der Aufnahme wird anhand der im Smartphone integrierten Kamera und 
+Sensoren, unter Verwendung der Sensordaten, ein Modell erstellt, welches die Umgebung virtuell repräsentiert. Dabei wird das Modell auf 
+einem dreidimensionalen Koordinatensystem widergespiegelt, um Position, Blickrichtung und Höhe des zu erstellenden Objekts festzuhalten. 
+So kommt das \acl{SLAM} Verfahren (siehe Abschnitt \ref{chap:SLAM}) zum Einsatz, welches das Smartphone genauestens räumlich lokalisiert und 
+gleichzeitig mapped. Dies bedeutet, dass anhand der generierten Sensordaten eine Analyse der Informationen stattfindet und daraus eine 
+virtuelle Karte des Raums erstellt wird. Dadurch kann das Gerät die Realität wiedergeben. Anhand der selbst erzeugten Informationen, die durch
+Gegenstände, Wände und dem Boden grundlegend gegeben sind, resultieren die Anhaltspunkte der virtuellen Umgebung. 
+\\ 
+Dem Nutzer soll die Möglichkeit geboten sein, Objekte an denen vom Anwender vorgesehenen Positionen platzieren zu können. Die Objekte werden 
+dann, anhand der durch das \acs{SLAM}-Verfahren zugrundeliegenden Informationen, an der virtuellen Position erstellt und positioniert. Somit 
+stehen Daten über die Position des Objekts zur Verfügung, welche anschließend in der Datenbank persistiert werden. Währenddessen das Objekt 
+erstellt wird, kann der Anwender zusätzliche Informationen zu dem Objekt, welches ebenso in der Realität vorhanden ist, einpflegen. Die 
+einzutragenden Informationen belaufen sich zu Anfang der prototypischen Konzeption auf den Namen des Geräts, die Position sowie die 
+Blickrichtung als auch den aktuellen Zustandsstatus des realen Objekts. Eine eindeutige Identifikationsnummer wird zudem automatisch generiert, 
+um eine einheitliche Richtlinie vorzugeben, damit der Nutzer diese Entscheidung nicht treffen muss, bzw. soll. Die genauere Konzeption 
+dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegriffen. 
+\\ 
+Ziel bei der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
+realitätsnahe Darbietung des Umfeldes. In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
+Einfachheit der Objekterstellung, die simpel und überschaubar zu erstellende Benutzeroberfläche, die offensichtliche Objektdarstellung 
+in kurzer Zeit und einen nicht all zu hohen Zeitaufwand.
+\\ 
+\linebreak
+Nachdem die Scan-Phase, eine der beiden Kernfunktionen, konzeptionell präzisiert wurde, kommt nun die Erläuterung der zweiten Kernfunktion, 
+die Visualisierungs-Phase. 
 \section{Visualisierungs-Phase}
 \label{chap:Visualisierungs-Phase}
+Dieser Abschnitt definiert die Aufgabe der Visualisierungs-Phase. Dabei werden auch hier Anforderungen und Zielsetzungen dieser Funktion 
+theoretisch ausgeführt, um die anfänglichen Ideen, womit die allgemeine Konzeption der Software erarbeitet wird, aufzuzeigen. Dafür ist 
+vorauszusetzen, dass die Scan-Phase alle erforderlichen Daten und Informationen liefert. 
+
 
 \section{Architekturkonzept}
 \label{chap:Architekturkonzept}
@@ -128,8 +159,8 @@ sodass oben aufgeführte Beschreibung zur optischen Darstellung mit den dahinter
 Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
 Anforderungen und Zielsetzungen.
 \subsection*{Visualisierungs-Phase}
-Die zuvor erläuterte Visualisierungs-Phase wird in diesem Abschnitt seitens der Softwarekonzeption auf die Ziele, Anforderungen und Funktionen 
-dargelegt.
+Die zuvor erläuterte Visualisierungs-Phase wird in diesem Abschnitt seitens der Softwarekonzeption auf die Ziele, Anforderungen und 
+Funktionen dargelegt.
 \\ 
 Ähnlich zur Scan-Phase gibt es bei dieser Funktion ein \acs{AR}-Fragment, welches das Kamerabild wiedergibt. Dieses Fragment soll sich 
 über den gesamten Bildschirm erstrecken und sei zusätzlich mit zwei weiteren Buttons zu versehen. Diese werden in weiterem Verlauf 
