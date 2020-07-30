@@ -294,6 +294,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/blindtext/blindtext.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -532,6 +534,12 @@ INPUT /Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg
 INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg
+INPUT /Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg
 OUTPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.aux
 INPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 INPUT /Users/mj/BA-Dokumentation/5Fazit/fazit.tex
