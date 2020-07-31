@@ -32,21 +32,21 @@ eingesetzt werden.
 
 \section{Scan-Phase}
 %Objekterkennung /
-\label{chap:Scan-Phase}
-Die Definition, der Aufgabe, der Scan-Phase ist entscheidend für die Konzeption und Umsetzung der Architektur- und Softwarekonzeption. 
+\label{chap:Scan-Phase} %der Aufgabe
+Die Definition der Scan-Phase ist entscheidend für die Konzeption und Umsetzung der Architektur- und Softwarekonzeption. 
 Anhand der dabei entstehenden Anforderungen und Zielsetzungen kann die Konzeption ausgelegt und erarbeitet werden. Dieser Abschnitt widmet 
 sich der expliziten theoretischen Erläuterung dieser Phase und somit auch einer der beiden Kernfunktionen dieses Softwaresystems.
 \\ 
 \linebreak
 Der Nutzer hält ein Smartphone oder Tablet in der Hand und steht am Eingang der Räumlichkeit. An diesem Punkt wird der Scan-Vorgang gestartet. 
-Mittels Smartphone-Kamera hat der Nutzer die Möglichkeit die Umgebung zu scannen. Dabei wird am Anfang der Startpunkt als Nullpunkt, bzw. 
-als Urpsrungskoordinaten des erstellten Koordinatensystems des Raums, festgelegt. Der Nutzer kann sich frei in dem Raum bewegen und ist 
-durch das Smartphone nur mit den Händen etwas eingeschränkt. Während der Aufnahme wird anhand der im Smartphone integrierten Kamera und 
-Sensoren, unter Verwendung der Sensordaten, ein Modell erstellt, welches die Umgebung virtuell repräsentiert. Dabei wird das Modell auf 
-einem dreidimensionalen Koordinatensystem widergespiegelt, um Position, Blickrichtung und Höhe des zu erstellenden Objekts festzuhalten. 
-So kommt das \acl{SLAM} Verfahren (siehe Abschnitt \ref{chap:SLAM}) zum Einsatz, welches das Smartphone genauestens räumlich lokalisiert und 
+Mittels Smartphone-Kamera hat der Nutzer die Möglichkeit, das Umfeld zu scannen. Dabei wird am Anfang der Startpunkt als Nullpunkt, bzw. 
+als Urpsrungskoordinaten des erstellten Koordinatensystems der Umgebung, festgelegt. Der Nutzer kann sich frei im Raum bewegen und ist lediglich 
+durch das Halten des Smartphones eingeschränkt. Während der Aufnahme wird anhand der im Smartphone integrierten Kamera und 
+Sensoren unter Verwendung der Sensordaten ein Modell erstellt, welches die Umgebung virtuell repräsentiert. Dabei wird das Modell auf 
+einem dreidimensionalen Koordinatensystem widergespiegelt, um Position, Blickrichtung und Höhe des zu erstellenden Objektes festzuhalten. 
+So kommt das \acl{SLAM} Verfahren (siehe Abschnitt \ref{chap:SLAM}) zum Einsatz, das das Smartphone genauestens räumlich lokalisiert und 
 gleichzeitig mapped. Dies bedeutet, dass anhand der generierten Sensordaten eine Analyse der Informationen stattfindet und daraus eine 
-virtuelle Karte des Raums erstellt wird. Dadurch kann das Gerät die Realität wiedergeben. Anhand der selbst erzeugten Informationen, die durch
+virtuelle Karte des Raums erstellt wird. Dadurch kann das Gerät die Realität wiedergeben. Anhand der Informationen, die durch
 Gegenstände, Wände und dem Boden grundlegend gegeben sind, resultieren die Anhaltspunkte der virtuellen Umgebung. 
 \\ 
 Dem Nutzer soll die Möglichkeit geboten sein, Objekte an denen vom Anwender vorgesehenen Positionen platzieren zu können. Die Objekte werden 
@@ -71,6 +71,18 @@ die Visualisierungs-Phase.
 Dieser Abschnitt definiert die Aufgabe der Visualisierungs-Phase. Dabei werden auch hier Anforderungen und Zielsetzungen dieser Funktion 
 theoretisch ausgeführt, um die anfänglichen Ideen, womit die allgemeine Konzeption der Software erarbeitet wird, aufzuzeigen. Dafür ist 
 vorauszusetzen, dass die Scan-Phase alle erforderlichen Daten und Informationen liefert. 
+\\ 
+\linebreak
+Diese Funktion ist hauptsächlich zur reinen Darstellung, der vorab in der Scan-Phase erstellten Objekte, gedacht. Mit diesem Teil des Systems 
+kann der Nutzer sich frei im Raum bewegen und bekommt die Objekte in seinem Umfeld auf dem Bildschirm des Smartphones angezeigt. 
+Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch anklicken des Objekts genauere Informationen über dieses einzusehen. 
+\\ 
+Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Zustandsstatus in den Raum 
+projiziert, sodass Auffälligkeiten schnell zu sehen sind. Dies bedeutet, bei normalem, aktivem Status ist die Farbe der Projektion grün, 
+bei fehlerhaftem, passivem Status rot. Dadurch wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. Mithilfe dieser 
+Funktion wird schnell ein Überblick über die Situation und Lage der Objekte verschafft. Der Anwender kann unverzüglich eingreifen und 
+dementsprechend handeln, falls es zu ungewolltem Verhalten kommt. Wird ein Objekt durch die Kamera fokussiert, kann der Anwender das Objekt 
+anklicken, um weitere Informationen über dieses zu erhalten. 
 
 
 \section{Architekturkonzept}
@@ -120,7 +132,6 @@ modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Obje
     \caption{Konzeptionelle Software-Architektur}
     \label{pic:architectur}
 \end{figure}
-\pagebreak
 \section{Softwarekonzept}
 \label{chap:Softwarekonzept}
 Nachdem die Architektur konzipiert und ein grobes Bild des entstehenden Systems geschaffen wurde, konnte die Konzeption des 
@@ -243,3 +254,12 @@ Grundlagen als Framework für dieses Projekt eingesetzt.
 
 \section{Datenmodell}
 \label{chap:Datenmodell}
+Eine gute Basisstruktur der Datenspeicherung ist in heutigem Datenverkehr ein wichtiger Bestandteil und genießt hohe Priorität. Deshalb ist 
+es wichtig schon von Anfang an eine klare Richtlinie und Struktur zu haben, um bei nachträglichen Ergänzungen oder Änderungen so wenig 
+Zeitaufwand wie möglich investieren zu müssen. Parallel zur Konzeption der Softwarearchitektur wurden Attribute zusammengetragen, die 
+eine Basis der Informationen über verschiedenste Objekte aufgreifen soll. Mit den Objekten sind Gegenstände adressiert, die auch als 
+virtuelle \acs{AR}-Objekte repräsentiert werden. Zu den Kernfunktionen, Scan- und Visualisierungs-Phase (\ref{chap:Scan-Phase} \& 
+\ref{chap:Visualisierungs-Phase}), des Systems wurde entschieden, dass nur notwenige Daten, sogenannte Stammdaten, erhoben werden. Darunter 
+der Name des Objekts, eine eindeutige ID, welche automatisch erzeugt wird, Größe, Alter, bzw. Baujahr und virtuelle Position 
+des \acs{AR}-Objekts. Die virtuelle Position ist durch die Scan-Phase gegeben und wird benötigt, um die Gegenstände in der 
+Visualisierungs-Phase an der richtigen Stelle erneut einblenden zu können. 
