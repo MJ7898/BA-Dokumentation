@@ -26,9 +26,10 @@ Möglichkeit des Umgebungsscans ist die Applikation anfangs nicht an festgelegte
 Umgebungsscan flexibel durchgeführt werden kann, da keine Anforderungen an die Umgebung gestellt sind. Die darauf aufbauende 
 Visualisierungs-Phase ist demnach abhängig von dem Ort, indem der Scan durchgeführt wurde und kann nicht anderweitig, in anderen Hallen, 
 eingesetzt werden. 
-%\\ 
-%\linebreak
-%Jedoch tendiert die Entwicklung der Anwendung speziell für die der Firma schon bereits vorhandenen Auftraggeber, unterdessen die Siemens AG. 
+\\ 
+\linebreak
+Ein mögliches Anwendungsumfeld dieser Applikation wären die Räumlichkeiten der nahe bei cjt Systemsoftware AG angesiedelten Siemens AG. Neben 
+der Vielzahl an gemeinsamen Projekten, wäre dies eine weitere Kooperation mit der Siemens AG und würde eine unterstützende Maßnahme einleiten. 
 
 \section{Scan-Phase}
 %Objekterkennung /
@@ -77,12 +78,17 @@ Diese Funktion ist hauptsächlich zur reinen Darstellung, der vorab in der Scan-
 kann der Nutzer sich frei im Raum bewegen und bekommt die Objekte in seinem Umfeld auf dem Bildschirm des Smartphones angezeigt. 
 Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch anklicken des Objekts genauere Informationen über dieses einzusehen. 
 \\ 
+\linebreak 
 Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Zustandsstatus in den Raum 
 projiziert, sodass Auffälligkeiten schnell zu sehen sind. Dies bedeutet, bei normalem, aktivem Status ist die Farbe der Projektion grün, 
 bei fehlerhaftem, passivem Status rot. Dadurch wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. Mithilfe dieser 
 Funktion wird schnell ein Überblick über die Situation und Lage der Objekte verschafft. Der Anwender kann unverzüglich eingreifen und 
 dementsprechend handeln, falls es zu ungewolltem Verhalten kommt. Wird ein Objekt durch die Kamera fokussiert, kann der Anwender das Objekt 
 anklicken, um weitere Informationen über dieses zu erhalten. 
+\\ 
+Die Visualisierungs-Phase sieht es allerdings nicht vor währenddessen die Applikation läuft neue Objekte hinzuzufügen, dafür müsste der Anwender wiederum zur 
+Funktion der Scan-Phase wechseln. Eine Änderung an den Objekten selbst kann nur bedingt vorgenommen werden, dies bedeutet lediglich 
+Informationsänderungen die das Objekt selbst betreffen.  
 
 
 \section{Architekturkonzept}
@@ -277,6 +283,6 @@ Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erst
     \label{pic:erm}
 \end{figure}
 Nach Beendigung des Datenkonzepts waren alle notwendigen Konzeptionen abgeschlossen. Diese wurden in Summe zusammengetragen und im Gesamten nochmals 
-betrachtet und auf Verbesserungen oder neu gewonnene Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
+betrachtet und anhand neu gewonnene Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
 waren, konnten diese zusammen analysiert und überdacht werden. Nachdem diese Phase endgültig abgeschlossen war, konnte die Umsetzung des Konzepts und die 
 Entwicklung des Systems starten. 
