@@ -254,18 +254,29 @@ Grundlagen als Framework für dieses Projekt eingesetzt.
 
 \section{Datenmodell}
 \label{chap:Datenmodell}
-Eine gute Basisstruktur der Datenspeicherung ist in heutigem Datenverkehr ein wichtiger Bestandteil und genießt hohe Priorität. Deshalb ist 
-es wichtig schon von Anfang an eine klare Richtlinie und Struktur zu haben, um bei nachträglichen Ergänzungen oder Änderungen so wenig 
-Zeitaufwand wie möglich investieren zu müssen. Parallel zur Konzeption der Softwarearchitektur wurden Attribute zusammengetragen, die 
-eine Basis der Informationen über verschiedenste Objekte aufgreifen soll. Mit den Objekten sind Gegenstände adressiert, die auch als 
+Eine gute Basisstruktur der Datenspeicherung ist bei heutigem Datenverkehr ein wichtiger Bestandteil und genießt hohe Priorität. Deshalb ist 
+es wichtig schon von Anfang an eine klare Richtlinie und Struktur zu erstellen, um bei nachträglichen Ergänzungen oder Änderungen zusätzlich so wenig 
+Zeit wie möglich investieren zu müssen. Parallel zur Konzeption der Softwarearchitektur wurden Attribute zusammengetragen, die 
+eine Basis der Informationen über verschiedenste Objekte aufgreifen soll. Mit den Objekten sind Gegenstände der realen Welt adressiert, die auch als 
 virtuelle \acs{AR}-Objekte repräsentiert werden. Zu den Kernfunktionen, Scan- und Visualisierungs-Phase (\ref{chap:Scan-Phase} \& 
-\ref{chap:Visualisierungs-Phase}), des Systems wurde entschieden, dass nur notwenige Daten, sogenannte Stammdaten, erhoben werden. Darunter 
-der Name des Objekts, eine eindeutige ID, welche automatisch erzeugt wird, Größe, Alter, bzw. Baujahr und virtuelle Position 
+\ref{chap:Visualisierungs-Phase}) des Systems wurde entschieden, dass nur notwenige Daten, sogenannte Stammdaten, erhoben werden. Darunter 
+der Name des Objekts, eine eindeutige ID, welche automatisch erzeugt wird, Größe, Alter, bzw. Baujahr des Gegenstands und virtuelle Position 
 des \acs{AR}-Objekts. Die virtuelle Position ist durch die Scan-Phase gegeben und wird benötigt, um die Gegenstände in der 
 Visualisierungs-Phase an der richtigen Stelle erneut einblenden zu können. 
+\\ 
+\linebreak 
+Durch ein \acl{ERM} (\acs{ERM}), wurden die benötigten Daten zusammengetragen, aufgeführt und zu einem Modell konzipiert, um den Strukturen und 
+Vorgaben der Datenmodellierung zu entsprechen und eine gute Basisstruktur zu erschaffen. Mit dieser Grundlage kann in Zukunft weiter gearbeitet werden. 
+Das Modell wurde mit der zuvor angesprochenen dritten Normalform umgesetzt, da diese die perfekte Balance in dem Datenmodell herstellt, um auftretende 
+Probleme möglichst einfach zu lösen und diese nahe der Realität in das relationale Datenbankmodell einzupflegen. Dadurch kann eine Erweiterung des 
+Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erstellte ER-Modell auf und veranschaulicht die Modellierung. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/ERM_BA.png}
     \caption{Entity Relationship Datenmodell}
     \label{pic:erm}
 \end{figure}
+Nach Beendigung des Datenkonzepts waren alle notwendigen Konzeptionen abgeschlossen. Diese wurden in Summe zusammengetragen und im Gesamten nochmals 
+betrachtet und auf Verbesserungen oder neu gewonnene Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
+waren, konnten diese zusammen analysiert und überdacht werden. Nachdem diese Phase endgültig abgeschlossen war, konnte die Umsetzung des Konzepts und die 
+Entwicklung des Systems starten. 
