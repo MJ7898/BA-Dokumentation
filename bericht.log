@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  3 AUG 2020 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  3 AUG 2020 14:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/mj/BA-Dokumentation/bericht
+**/Users/mj/BA-Dokumentation/bericht.tex
 (/Users/mj/BA-Dokumentation/bericht.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/report.cls
@@ -56,7 +56,7 @@ Package babel Warning: Last declared language option is `ngerman',
 (babel)                and a package option. Use `main=ngerman' as
 (babel)                option. Reported on input line 529.
 
-) (./bericht.sty
+) (/Users/mj/BA-Dokumentation/bericht.sty
 Package: bericht 2017/10/06 v1.2
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
@@ -574,7 +574,8 @@ File: tikzlibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
 File: pgflibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
 )))
 \c@@todonotes@numberoftodonotes=\count140
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write4
@@ -965,7 +966,7 @@ Package biblatex Warning: Attempt to redefine deprecated '\mkbibnamelast'.
 (biblatex)                Please use '\mkbibnamefamily' instead.
 (biblatex)                Using '\mkbibnamefamily'.
 
-(./bericht.aux (./abk.aux) (./1Einleitung/kapitel1.aux) (./2Grundlagen/kapitel2.aux) (./2Grundlagen/kapitel2A.aux) (./2Grundlagen/kapitel2Aa.aux) (./2GrundlagenX/kapitel2X.aux) (./3Konzeption/kapitel3.aux) (./4Umsetzung/kapitel4.aux) (./5Fazit/fazit.aux))
+(/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
 \openout1 = `bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -1053,7 +1054,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'bericht.bbl' found.
-(./bericht.bbl
+(/Users/mj/BA-Dokumentation/bericht.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'aac.2020j':
@@ -1226,7 +1227,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cjtFirmenLogo.png> <./dhbw-logo.png>] (./erklaerung.tex
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/mj/BA-Dokumentation/cjtFirmenLogo.png> </Users/mj/BA-Dokumentation/dhbw-logo.png>] (/Users/mj/BA-Dokumentation/erklaerung.tex
 Underfull \hbox (badness 1540) in paragraph at lines 21--31
 \T1/lmr/m/n/10.95 (+20) Ich ver-sichere hi-er-mit, dass ich meine Bach-e-lo-rar-beit-mit dem Thema: \T1/lmr/m/it/10.95 (+20) ^^P  Konzep-
  []
@@ -1253,13 +1254,13 @@ l.145 \end{abstract}
 <to be read again> 
                    \relax 
 l.150 \end{abstract}
-                     [1] (./bericht.toc [1
+                     [1] (/Users/mj/BA-Dokumentation/bericht.toc [1
 
 ])
 \tf@toc=\write6
 \openout6 = `bericht.toc'.
 
- [2] (./bericht.lof
+ [2] (/Users/mj/BA-Dokumentation/bericht.lof
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1269,13 +1270,13 @@ Package microtype Info: Character `029' is missing
 
  [3
 
-] (./bericht.lot)
+] (/Users/mj/BA-Dokumentation/bericht.lot)
 \tf@lot=\write8
 \openout8 = `bericht.lot'.
 
  [4
 
-] (./bericht.lol)
+] (/Users/mj/BA-Dokumentation/bericht.lol)
 \tf@lol=\write9
 \openout9 = `bericht.lol'.
 
@@ -1284,7 +1285,7 @@ Package microtype Info: Character `029' is missing
 ]
 \openout2 = `abk.aux'.
 
- (./abk.tex
+ (/Users/mj/BA-Dokumentation/abk.tex
 Package acronym Info: Acronym API used in text but not spelled out in full in text on input line 16.
 Package acronym Info: Acronym EKF used in text but not spelled out in full in text on input line 20.
 Package acronym Info: Acronym Fraunhofer IOSB used in text but not spelled out in full in text on input line 22.
@@ -1297,7 +1298,7 @@ Package acronym Info: Acronym SQL used in text but not spelled out in full in te
 ]
 \openout2 = `1Einleitung/kapitel1.aux'.
 
- (./1Einleitung/kapitel1.tex
+ (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.tex
 Kapitel 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--26
@@ -1404,7 +1405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--221
 [6]) [7]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
- (./2Grundlagen/kapitel2.tex
+ (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 Kapitel 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--50
@@ -1483,7 +1484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--242
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.242 \subsection
-                 *{Smart-Brillen AR} <./2Grundlagen/Bilder/snapchatAR.jpeg>]
+                 *{Smart-Brillen AR} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg>]
 <2Grundlagen/Bilder/smartglassAW.png, id=525, 607.77063pt x 612.78937pt>
 File: 2Grundlagen/Bilder/smartglassAW.png Graphic file (type png)
 <use 2Grundlagen/Bilder/smartglassAW.png>
@@ -1524,7 +1525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--281
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.281 \subsection
-                 {Positionsbestimmung} <./2Grundlagen/Bilder/smartglassAW.png>]
+                 {Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png>]
 <2Grundlagen/Bilder/bildmarkerAR.png, id=543, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
@@ -1540,7 +1541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--318
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.318 \subsubsection
-                    *{\acs{GPS}-basierte Positionsbestimmung} <./2Grundlagen/Bilder/googleglass.png> <./2Grundlagen/Bilder/hololensside.png>]
+                    *{\acs{GPS}-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png>]
 Package acronym Info: Label `acro:INS' newly defined as it shall be overridden
 although it is yet undefined on input line 321.
 
@@ -1558,10 +1559,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--167
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.167 \include{2Grundlagen/kapitel2}
-                                     <./2Grundlagen/Bilder/bildmarkerAR.png>] [17]
+                                     </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png>] [17]
 \openout2 = `2Grundlagen/kapitel2A.aux'.
 
- (./2Grundlagen/kapitel2A.tex
+ (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1603,12 +1604,12 @@ although it is yet undefined on input line 110.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.117 
-       <./2Grundlagen/Bilder/tof_kamera.png>] [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
+       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png>] [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.128 
-       <./2Grundlagen/Bilder/graph_SLAM.png>]
+       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/graph_SLAM.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
@@ -1616,7 +1617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--138
 ) [22]
 \openout2 = `2Grundlagen/kapitel2Aa.aux'.
 
- (./2Grundlagen/kapitel2Aa.tex
+ (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.tex
 Package acronym Info: Label `acro:SDK' newly defined as it shall be overridden
 although it is yet undefined on input line 11.
 
@@ -1657,7 +1658,7 @@ l.64 \subsubsection
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.64 \subsubsection
-                   *{Environmental understanding} <./2Grundlagen/Bilder/motionTracking.png> <./2Grundlagen/Bilder/imu-Bsp.png>]
+                   *{Environmental understanding} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png>]
 <2Grundlagen/Bilder/environmentalUnderst.png, id=680, 846.16125pt x 352.81813pt>
 File: 2Grundlagen/Bilder/environmentalUnderst.png Graphic file (type png)
 <use 2Grundlagen/Bilder/environmentalUnderst.png>
@@ -1693,7 +1694,7 @@ l.116
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.116 
-       <./2Grundlagen/Bilder/environmentalUnderst.png> <./2Grundlagen/Bilder/lightEstim.png>]
+       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/environmentalUnderst.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 119--128
 
  []
@@ -1703,7 +1704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--128
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.128 \subsection
-                 *{Room} <./2Grundlagen/Bilder/androidjetpackcomps.png>]
+                 *{Room} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 130--137
 
  []
@@ -1736,7 +1737,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--175
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.175 \subsection
-                 {Sceneform SDK} <./2Grundlagen/Bilder/roomArchitecture.png>]
+                 {Sceneform SDK} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/roomArchitecture.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 176--195
 
  []
@@ -1751,10 +1752,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--195
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.169 \include{2Grundlagen/kapitel2Aa}
-                                       <./2Grundlagen/Bilder/viewModelDiagram.png>]
+                                       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/viewModelDiagram.png>]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
- (./2GrundlagenX/kapitel2X.tex
+ (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
@@ -1815,12 +1816,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--129
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.129 \begin{itemize}
-                      <./2GrundlagenX/Bilder/MVCArchitecture.png>] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
+                      </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/MVCArchitecture.png>] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.129 \begin{itemize}
-                      <./2GrundlagenX/Bilder/mvvmDiagramm.png>]
+                      </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
 <2GrundlagenX/Bilder/infoflussMVVM.png, id=806, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
@@ -1876,7 +1877,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--225
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.225 
-       <./2GrundlagenX/Bilder/infoflussMVVM.png>] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17}) has been already used, duplicate ignored
+       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/infoflussMVVM.png>] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1891,7 +1892,7 @@ l.225
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.225 
-       <./2GrundlagenX/Bilder/activityComp.png> <./2GrundlagenX/Bilder/viewModelComp.png> <./2GrundlagenX/Bilder/repoComp.png>] [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.20}) has been already used, duplicate ignored
+       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/activityComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/viewModelComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/repoComp.png>] [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1901,7 +1902,7 @@ l.225
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.225 
-       <./2GrundlagenX/Bilder/roomComp.png> <./2GrundlagenX/Bilder/aac.png>]
+       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/roomComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/aac.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 228--245
 
  []
@@ -1924,7 +1925,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--267
 ) [37]
 \openout2 = `3Konzeption/kapitel3.aux'.
 
- (./3Konzeption/kapitel3.tex
+ (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--34
@@ -1986,7 +1987,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--179
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.179 \subsection
-                 *{Visualisierungs-Phase} <./3Konzeption/Bilder/architektur_konzept.png>]
+                 *{Visualisierungs-Phase} </Users/mj/BA-Dokumentation/3Konzeption/Bilder/architektur_konzept.png>]
 <3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=921, 424.58624pt x 340.27126pt>
 File: 3Konzeption/Bilder/Anwendungsfalldiagramm.png Graphic file (type png)
 <use 3Konzeption/Bilder/Anwendungsfalldiagramm.png>
@@ -2002,7 +2003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--212
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.219 \begin{enumerate}
-                        <./3Konzeption/Bilder/Anwendungsfalldiagramm.png (PNG copy)>]
+                        </Users/mj/BA-Dokumentation/3Konzeption/Bilder/Anwendungsfalldiagramm.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 252--263
 
  []
@@ -2011,9 +2012,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--263
 <3Konzeption/Bilder/ERM_BA.png, id=956, 661.47125pt x 447.6725pt>
 File: 3Konzeption/Bilder/ERM_BA.png Graphic file (type png)
 <use 3Konzeption/Bilder/ERM_BA.png>
-Package pdftex.def Info: 3Konzeption/Bilder/ERM_BA.png  used on input line 284.
+Package pdftex.def Info: 3Konzeption/Bilder/ERM_BA.png  used on input line 286.
 (pdftex.def)             Requested size: 369.87634pt x 250.32602pt.
 )
+Underfull \hbox (badness 10000) in paragraph at lines 266--171
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 266--171
 
  []
@@ -2023,10 +2029,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--171
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.171 \include{3Konzeption/kapitel3}
-                                     <./3Konzeption/Bilder/ERM_BA.png (PNG copy)>]
+                                     </Users/mj/BA-Dokumentation/3Konzeption/Bilder/ERM_BA.png (PNG copy)>]
 \openout2 = `4Umsetzung/kapitel4.aux'.
 
- (./4Umsetzung/kapitel4.tex
+ (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
 <4Umsetzung/Bilder/camera_permission.jpg, id=967, 1084.05pt x 2131.965pt>
 File: 4Umsetzung/Bilder/camera_permission.jpg Graphic file (type jpg)
@@ -2052,7 +2058,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) h
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.42 \end{figure}
-                  <./4Umsetzung/Bilder/camera_permission.jpg>]
+                  </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg>]
 <4Umsetzung/Bilder/scan-phase.jpg, id=975, 1084.05pt x 2267.47125pt>
 File: 4Umsetzung/Bilder/scan-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan-phase.jpg>
@@ -2078,7 +2084,7 @@ l.64 \end{figure}
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.64 \end{figure}
-                  <./4Umsetzung/Bilder/startmenu.jpg> <./4Umsetzung/Bilder/image_tracking.jpg>]) [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+                  </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/image_tracking.jpg>]) [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2088,15 +2094,15 @@ l.172 \include{4Umsetzung/kapitel4}
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.172 \include{4Umsetzung/kapitel4}
-                                    <./4Umsetzung/Bilder/scan-phase.jpg> <./4Umsetzung/Bilder/cjt_logo_tracking.png>] [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/cjt_logo_tracking.png>] [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.172 \include{4Umsetzung/kapitel4}
-                                    <./4Umsetzung/Bilder/visual-phase.jpg>]
+                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]
 \openout2 = `5Fazit/fazit.aux'.
 
- (./5Fazit/fazit.tex
+ (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
 [52
 
@@ -2110,7 +2116,7 @@ Kapitel 6.
 Kapitel 7.
 ) [54
 
-] (./bericht.ind)
+] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 201.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2135,7 +2141,7 @@ Overfull \hbox (16.44861pt too wide) in paragraph at lines 204--204
 [57] [58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
- (./bericht.aux (./abk.aux) (./1Einleitung/kapitel1.aux) (./2Grundlagen/kapitel2.aux) (./2Grundlagen/kapitel2A.aux) (./2Grundlagen/kapitel2Aa.aux) (./2GrundlagenX/kapitel2X.aux) (./3Konzeption/kapitel3.aux) (./4Umsetzung/kapitel4.aux) (./5Fazit/fazit.aux))
+ (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 211.
 Package logreq Info: Writing requests to 'bericht.run.xml'.
@@ -2143,15 +2149,15 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31380 strings out of 492616
- 573233 string characters out of 6129481
+ 31386 strings out of 492616
+ 575440 string characters out of 6129481
  1077879 words of memory out of 5000000
  34068 multiletter control sequences out of 15000+600000
  104514 words of font info for 178 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,13n,83p,1175b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on bericht.pdf (68 pages, 9427275 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (68 pages, 9427363 bytes).
 PDF statistics:
  1447 PDF objects out of 1728 (max. 8388607)
  1276 compressed objects within 13 object streams
