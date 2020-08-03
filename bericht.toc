@@ -66,40 +66,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Anwendungsumfeld}{38}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Scan-Phase}{38}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Scan-Phase}{39}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{39}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{40}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Architekturkonzept}{40}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Softwarekonzept}{41}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Softwarekonzept}{42}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{43}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{44}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}ARToolKit}{44}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.1}ARToolKit}{45}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6.2}Google ARCore}{45}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Datenmodell}{45}{section.3.7}% 
+\contentsline {section}{\numberline {3.7}Datenmodell}{46}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Umsetzung}{47}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung}{48}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Implementierung}{47}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Implementierung}{48}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Scan-Phase}{48}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Scan-Phase}{49}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{48}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.2}Visualisierungs-Phase}{49}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Testdurchlauf / Test-Szenario}{48}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Testdurchlauf / Test-Szenario}{49}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{50}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Evaluation}{51}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Fazit}{51}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Fazit}{52}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Ausblick}{52}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Ausblick}{53}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Anhang}{53}{chapter.7}% 
+\contentsline {chapter}{Anhang}{54}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Index}{53}{chapter.7}% 
+\contentsline {chapter}{Index}{54}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literaturverzeichnis}{53}{chapter.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{54}{chapter.7}% 

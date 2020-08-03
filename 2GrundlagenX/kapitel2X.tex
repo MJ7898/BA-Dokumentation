@@ -122,8 +122,8 @@ Die ViewModel, bereits in Kapitel (\ref{sec:ViewModel}) beschrieben, ist dafür 
 und der Repräsentation zu transferieren. Es stellt das Model für die View dar und gibt das eigentliche Model nach außen.
 \\ 
 \linebreak 
-Die unterste Ebene, das Model, bzw. die Datenhaltung, stellt die Abbildung der Daten dar und giltet nicht  als reine Abbildung der Datenquelle. 
-Diese Daten werden für die visuelle Anwendung auf der View-Ebene benötigt und durch die ViewModel-Ebene bereitgestellt. Darüberhinaus können die 
+Die unterste Ebene, das Model, bzw. die Datenhaltung, stellt die Abbildung der Daten dar und gilt nicht als reine Abbildung der Datenquelle. 
+Diese Daten werden für die visuelle Anwendung auf der View-Ebene benötigt und durch die ViewModel-Ebene bereitgestellt. Darüber hinaus können die 
 Daten von dem Nutzer über die View manipuliert und an das Model zurückgegeben werden. Durch diese Möglichkeiten ist vorausgesetzte, dass das Model 
 folgende Funktionalitäten bereitstellen sollte \cite{mvvmAufbau.2016}:
 \begin{itemize}
@@ -158,7 +158,7 @@ Google selbst empfiehlt im Rahmen der veröffentlichten \textit{„Guide to app 
 eine stabile und performante Applikation zu designen, da diese auf bewährten Prinzipien, unter anderem das \textit{seperation of concers} Prinzip, basieren.
 \\ 
 \linebreak
-Folgender Abschnitt befasst sich im einzelnen mit den Komponenten, die für die \textit{Android architecture} essentiell sind:
+Folgender Abschnitt befasst sich im Einzelnen mit den Komponenten, die für die \textit{Android architecture} essentiell sind:
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{2GrundlagenX/Bilder/activityComp.png}
@@ -220,7 +220,7 @@ Informationen bezogen werden können. Einzelne Komponenten können ihren Vor- od
 Hierarchie eingeordnet. Die Abbildung zeigt auch eine beispielhafte Ausführung mehrerer Datenbezugsquellen.
 \\ 
 Bei genauer Betrachtung des Diagramms sind alle Komponenten wiederzufinden, die ebenso in dem MVVM-Muster gegeben 
-sind und das Muster prägen. Durch die vielen Komponenten und Schnittstellen ist modularität gegeben und trägt dazu bei, dass weiter Module 
+sind und das Muster prägen. Durch die vielen Komponenten und Schnittstellen ist Modularität gegeben und trägt dazu bei, dass weiter Module 
 angehängt oder ausgetauscht werden können. 
 
 \section{Datenmodellierung}
@@ -245,7 +245,7 @@ Datendesigns gibt es drei bedeutsame Varianten die aufeinander aufbauen:
 \begin{itemize}
     \item Konzeptionelles Datenbankschema: Betrachtung eines für die Applikation wichtigen Szenarios der realen Welt unter Berücksichtigung 
     aller relevanten Objekte, Eigenschaften und Beziehungen zwischen ihnen. Diese Informationen werden aus dem Kontext heraus analysiert 
-    und grafisch als auch textuell dargestellt. Die Darstellung basiert auf einem \ac{ERM}, das die Objekt (Entities) mit ihren jeweiligen 
+    und grafisch als auch textuell dargestellt. Die Darstellung basiert auf einem \ac{ERM}, dass die Objekte (Entities) mit ihren jeweiligen 
     Eigenschaften (Attributes) und die Beziehungen (Relationships) darstellt. Das sogenannte Semantische Datenmodell.
     \item Logisches Datenbankschema: Hierbei wird das konzeptionelle Datenbankschema um datentechnische Angaben, z.B. Feldtypen /-formate 
     und Identifikationseigenschaften (Primary Keys), erweitert. Das logische Datenbankschemata unterliegt den Regeln der von dem \ac{DBMS}

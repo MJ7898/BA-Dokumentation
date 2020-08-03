@@ -30,7 +30,7 @@ eingesetzt werden.
 \linebreak
 Ein mögliches Anwendungsumfeld dieser Applikation wären die Räumlichkeiten der nahe bei cjt Systemsoftware AG angesiedelten Siemens AG. Neben 
 der Vielzahl an gemeinsamen Projekten, wäre dies eine weitere Kooperation mit der Siemens AG und würde eine unterstützende Maßnahme einleiten. 
-
+\pagebreak
 \section{Scan-Phase}
 %Objekterkennung /
 \label{chap:Scan-Phase} %der Aufgabe
@@ -41,7 +41,7 @@ sich der expliziten theoretischen Erläuterung dieser Phase und somit auch einer
 \linebreak
 Der Nutzer hält ein Smartphone oder Tablet in der Hand und steht am Eingang der Räumlichkeit. An diesem Punkt wird der Scan-Vorgang gestartet. 
 Mittels Smartphone-Kamera hat der Nutzer die Möglichkeit, das Umfeld zu scannen. Dabei wird am Anfang der Startpunkt als Nullpunkt, bzw. 
-als Urpsrungskoordinaten des erstellten Koordinatensystems der Umgebung, festgelegt. Der Nutzer kann sich frei im Raum bewegen und ist lediglich 
+als Ursprungskoordinaten des erstellten Koordinatensystems der Umgebung, festgelegt. Der Nutzer kann sich frei im Raum bewegen und ist lediglich 
 durch das Halten des Smartphones eingeschränkt. Während der Aufnahme wird anhand der im Smartphone integrierten Kamera und 
 Sensoren unter Verwendung der Sensordaten ein Modell erstellt, welches die Umgebung virtuell repräsentiert. Dabei wird das Modell auf 
 einem dreidimensionalen Koordinatensystem widergespiegelt, um Position, Blickrichtung und Höhe des zu erstellenden Objektes festzuhalten. 
@@ -62,11 +62,12 @@ dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegri
 Ziel bei der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
 realitätsnahe Darbietung des Umfeldes. In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
 Einfachheit der Objekterstellung, die simpel und überschaubar zu erstellende Benutzeroberfläche, die offensichtliche Objektdarstellung 
-in kurzer Zeit und einen nicht all zu hohen Zeitaufwand.
+in kurzer Zeit und einen nicht allzu hohen Zeitaufwand.
 \\ 
 \linebreak
 Nachdem die Scan-Phase, eine der beiden Kernfunktionen, konzeptionell präzisiert wurde, kommt nun die Erläuterung der zweiten Kernfunktion, 
 die Visualisierungs-Phase. 
+
 \section{Visualisierungs-Phase}
 \label{chap:Visualisierungs-Phase}
 Dieser Abschnitt definiert die Aufgabe der Visualisierungs-Phase. Dabei werden auch hier Anforderungen und Zielsetzungen dieser Funktion 
@@ -76,7 +77,7 @@ vorauszusetzen, dass die Scan-Phase alle erforderlichen Daten und Informationen 
 \linebreak
 Diese Funktion ist hauptsächlich zur reinen Darstellung, der vorab in der Scan-Phase erstellten Objekte, gedacht. Mit diesem Teil des Systems 
 kann der Nutzer sich frei im Raum bewegen und bekommt die Objekte in seinem Umfeld auf dem Bildschirm des Smartphones angezeigt. 
-Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch anklicken des Objekts genauere Informationen über dieses einzusehen. 
+Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch Anklicken des Objekts genauere Informationen über dieses einzusehen. 
 \\ 
 \linebreak 
 Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Zustandsstatus in den Raum 
@@ -89,7 +90,6 @@ anklicken, um weitere Informationen über dieses zu erhalten.
 Die Visualisierungs-Phase sieht es allerdings nicht vor währenddessen die Applikation läuft neue Objekte hinzuzufügen, dafür müsste der Anwender wiederum zur 
 Funktion der Scan-Phase wechseln. Eine Änderung an den Objekten selbst kann nur bedingt vorgenommen werden, dies bedeutet lediglich 
 Informationsänderungen die das Objekt selbst betreffen.  
-
 
 \section{Architekturkonzept}
 \label{chap:Architekturkonzept}
@@ -105,7 +105,7 @@ entstehende Software für eine fortlaufende Entwicklung geeignet sein. Für dies
 um das schnelle und einfache Wechseln von Komponenten und Bestandteilen zu ermöglichen. Darunter beispielsweise Änderungen an der 
 Benutzeroberfläche oder Verwendung einer anderen Datenbank, bzw. hinzukommende Funktionen, die unabhängig von bestehenden Klassen 
 hinzugefügt werden können. Durch das \acs{MVVM}-Pattern, welches durch die \textit{Android Architecture Components} gefördert wird, ist 
-das Testen von \textit{\acs{UI}}- und \textit{BackEnd}-Elemente unabhängig voneinander begünstigt. 
+das Testen von \textit{\acs{UI}}- und \textit{BackEnd}-Elementen unabhängig voneinander begünstigt. 
 \\ 
 \linebreak
 Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und sorgen im Allgemeinen 
@@ -138,6 +138,7 @@ modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Obje
     \caption{Konzeptionelle Software-Architektur}
     \label{pic:architectur}
 \end{figure}
+\pagebreak
 \section{Softwarekonzept}
 \label{chap:Softwarekonzept}
 Nachdem die Architektur konzipiert und ein grobes Bild des entstehenden Systems geschaffen wurde, konnte die Konzeption des 
@@ -190,7 +191,7 @@ Bevor der Benutzer von dem Startmenü zur Visualisierungs-Phase übergehen kann,
 die Scan-Phase schon bereits mindestens einmal durchgeführt wurde. Damit wird sichergestellt, dass bereits Objekte existieren und angezeigt 
 werden können. Denn ohne vorherigen Scan ist die Kernfunktion der Visualisierungs-Phase sinnlos.
 \\
-Neben dem \acs{AR}-Fragment gibt es zwei Button, den einen zum navigieren auf die Scan-Methode, um bei Bedarf weitere Objekte 
+Neben dem \acs{AR}-Fragment gibt es zwei Button, den einen zum Navigieren auf die Scan-Methode, um bei Bedarf weitere Objekte 
 hinzuzufügen und den zweiten zum Starten, bzw. erneuten Laden der Funktion. Damit wird die Abfrage der Daten, die in der Datenbank 
 enthalten sind, gestartet und der Prozess des Objekterstellens, bzw. - renderns begonnen. Dadurch erscheinen alle bereits gespeicherten 
 Objekte auf der Karte. Auf die Funktionen, Methoden und deren Umsetzung wird in Kapitel (\ref{chap:Umsetzung}) genauestens eingegangen.
@@ -205,14 +206,16 @@ Applikation entwickelt wird.
     \caption{Anwendungsfall-Diagramm}
     \label{pic:anwendungsfall}
 \end{figure}
+\\ 
 Nachdem auch das Softwarekonzept weitestgehend erarbeitet wurde, ging es um die Entscheidung, welches \acl{AR}-Framework für dieses Projekt 
 ausgewählt wird. Nun wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}
-Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedlich unterschiedliche Präferenzen und 
-Einsatzmöglichkeiten haben. Somit sind, auf den Bereich bezogen, Vor- und Nachteile im Vergleich von mehrere Frameworks nicht ausgeschlossen. 
+Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedliche Präferenzen und 
+Einsatzmöglichkeiten haben. Somit sind, auf den Bereich bezogen, Vor- und Nachteile im Vergleich von mehreren Frameworks nicht ausgeschlossen. 
 Einige Alternativen wurden getestet und auf deren Brauchbarkeit evaluiert und analysiert. Dazu wurden Kriterien ausgearbeitet, die die 
 Auswahl an Frameworks einschränken und nach Möglichkeit das passendste ergeben sollte: 
+\pagebreak
 \begin{enumerate}
     \item Eine performante Darstellung von Objekten.
     \item Möglichkeiten zur Positionsbestimmung.
@@ -220,7 +223,7 @@ Auswahl an Frameworks einschränken und nach Möglichkeit das passendste ergeben
     \item Möglichkeit zur Integration weiterer Technologien.
     \item Open Source-Projekt, um Flexibilität und weitestgehende Unabhängigkeit zu gewährleisten.
 \end{enumerate}
-Aufgrund der großen Anzahl an \acs{AR}-Frameworks war es nicht möglich alle in betracht gezogenen Frameworks detailliert aufzuführen, 
+Aufgrund der großen Anzahl an \acs{AR}-Frameworks war es nicht möglich alle in Betracht gezogenen Frameworks detailliert aufzuführen, 
 lediglich die engere Auswahl der Tools wird aufgegriffen. 
 \\ 
 Nach ausführlicher Recherche wurden letzten Endes drei Frameworks in die nähere Auswahl aufgenommen, darunter \textit{vuforia}, 
@@ -251,7 +254,7 @@ Betriebssysteme auf \textit{Android} und \textit{iOS} war ein Nachteil, allerdin
 ARCore ist der unterstützende Algorithmus zur Umgebungserkennung. Des Weiteren ist Google ARCore ein Open-Source Projekt und befindet sich 
 in kontinuierlicher Weiterentwicklung. Neben der stetigen Entwicklung hat sich eine große und aktive Community gebildet, die bei auftauchenden 
 Problemen zur Stelle ist. Ein weiterer Vorteil sind die verschiedensten Möglichkeiten der Interaktion mit \acs{AR}-Objekten. Es gibt die 
-klassische Markererkennung, die nicht nur mit Markern (siehe Abbildung \ref{pic:markerARpos}) sonder auch mit Bildern funktioniert, dem sogenannten
+klassische Markererkennung, die nicht nur mit Markern (siehe Abbildung \ref{pic:markerARpos}) sondern auch mit Bildern funktioniert, dem sogenannten
 \textit{AugmentedImage}. Die Erkennung von Gesichtern, \textit{AugmentedFace} und die Erkennung von realen Punkten, Oberflächen und Gegenständen.
 \\
 \linebreak
@@ -272,7 +275,7 @@ Visualisierungs-Phase an der richtigen Stelle erneut einblenden zu können.
 \\ 
 \linebreak 
 Durch ein \acl{ERM} (\acs{ERM}), wurden die benötigten Daten zusammengetragen, aufgeführt und zu einem Modell konzipiert, um den Strukturen und 
-Vorgaben der Datenmodellierung zu entsprechen und eine gute Basisstruktur zu erschaffen. Mit dieser Grundlage kann in Zukunft weiter gearbeitet werden. 
+Vorgaben der Datenmodellierung zu entsprechen und eine gute Basisstruktur zu erschaffen. Mit dieser Grundlage kann in Zukunft weitergearbeitet werden. 
 Das Modell wurde mit der zuvor angesprochenen dritten Normalform umgesetzt, da diese die perfekte Balance in dem Datenmodell herstellt, um auftretende 
 Probleme möglichst einfach zu lösen und diese nahe der Realität in das relationale Datenbankmodell einzupflegen. Dadurch kann eine Erweiterung des 
 Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erstellte ER-Modell auf und veranschaulicht die Modellierung. 
@@ -282,7 +285,8 @@ Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erst
     \caption{Entity Relationship Datenmodell}
     \label{pic:erm}
 \end{figure}
+\pagebreak
 Nach Beendigung des Datenkonzepts waren alle notwendigen Konzeptionen abgeschlossen. Diese wurden in Summe zusammengetragen und im Gesamten nochmals 
-betrachtet und anhand neu gewonnene Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
+betrachtet und anhand neu gewonnener Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
 waren, konnten diese zusammen analysiert und überdacht werden. Nachdem diese Phase endgültig abgeschlossen war, konnte die Umsetzung des Konzepts und die 
 Entwicklung des Systems starten. 
