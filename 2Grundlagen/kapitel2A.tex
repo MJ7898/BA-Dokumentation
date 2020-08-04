@@ -124,7 +124,8 @@ Zeitpunkt wurde die Bedeutung der inkrementellen Verfahren gesteigert. %Dieser A
 \subsection*{Rekursives Schätzproblem}
 Der erweiterte Kalman-Filter (\acs{EKF}) ist eine wahrscheinlichkeitsbasierte rekursive Schätzung der Position des Objekts und der Position der 
 Landmarken unter Nutzung linearer Bewegungsmuster basierend auf dem Bayes-Filter. Der Bayes-Filter-Algorithmus ist das generelle Verfahren der 
-rekursiven Zustandsschätzung und wird über den Satz von Bayes hergeleitet. 
+rekursiven Zustandsschätzung und wird über den Satz von Bayes\footnote{Mathematischer Satz der Wahrscheinlichkeitstheorie. Daruch wird die Berechnung einer bedingten Wahrscheinlichkeit beschrieben} 
+hergeleitet. 
 \\
 Unter der Voraussetzung einer Normalverteilung und eines linearen Bewegungsmodells, worauf der Kalman-Filter setzt, kann diese durch das 
 \acs{SLAM} Problem nicht erfüllt werden. An dieser Stelle wird der erweiterte Kalman-Filter eingesetzt, da dieser nicht-lineare 
@@ -134,8 +135,8 @@ werden die darauffolgenden Punkte rekursiv berechnet, bis die Scan-Phase zu Ende
 
 \section{Quaternionen}
 \label{chap:Quaternionen} %\cite{quaternionHamilton.2006} 
-Quaternionen, lat. \textit{„Menge der Vier“} wurden erstmals 1843 von Sir William Rowan Hamilton beschrieben. Sie beschreiben einen 
-Zahlenbereich der die reellen Zahlen erweitert. Die mathematische Formel wird häufig zur Darstellung einer Drehung im dreidimensionalen Raum 
+Quaternionen, lat. \textit{„Menge der Vier“}, wurden erstmals 1843 von Sir William Rowan Hamilton beschrieben. Sie bezeichnen einen 
+Zahlenbereich, der die reellen Zahlen erweitert. Die mathematische Formel wird häufig zur Darstellung einer Drehung im dreidimensionalen Raum 
 verwendet. Die Theorie der Quaternionen basiert auf der mathematischen Grundlage der komplexen Zahlen, die 1833 von Hamilton als Bildung 
 einer Algebra galten und werden daher als hyperkomplexe Zahlen aufgefasst.
 \\ 
@@ -162,11 +163,11 @@ Mit der sogenannten \textit{Brougham Bridge}-Formel ist es möglich Vektoren zu 
 \end{subequations}
 \subsection{Rotation}
 %\subsection{Transformation}
-Quaternionen zählen als eine gute Möglichkeit Drehungen, bzw. Rotationen darzustellen, unter anderem wegen der reduzierten Anzahl an 
-benötigten Parametern im Vergleich zur Berechnung von Rotationsmatrizen und deren Translation und bieten eine deutlich kompaktere 
-Darstellung der Rechenwege. Somit können Rotationen intuitiver dargestellt werden, d.h. es sind direkte Angaben von Drehwinkel und 
--achse möglich. Die kompaktere Darstellung beinhaltet lediglich vier Werte im Vergleich zu den neun Werten der Berechnung der Rotationsmatrix
-und die Rotation kann um eine bestimmte Achse berechnet werden. Zudem ist eine sehr hohe numerische Stabilität gewährleistet. 
+Quaternionen dienen als Möglichkeit, Drehungen, bzw. Rotationen darzustellen, unter anderem wegen der reduzierten Anzahl an 
+benötigten Parametern im Vergleich zur Berechnung von Rotationsmatrizen und deren Translation. Die Quaternionen bieten eine deutlich kompaktere 
+Darstellung der Rechenwege. Somit können Rotationen intuitiver veranschaulicht werden, d.h. es sind direkte Angaben von Drehwinkel und 
+-achse möglich. Die kompaktere Darbietung beinhaltet lediglich vier Werte im Vergleich zu den neun Werten der Berechnung der Rotationsmatrix
+und die Rotation kann um eine bestimmte Achse ermittelt werden. Zudem ist eine sehr hohe numerische Stabilität gewährleistet. 
 \\ 
 Der Drehwinkel wird wie folgt berechnet:
 \begin{align}
