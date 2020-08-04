@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 AUG 2020 22:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 AUG 2020 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1816,25 +1816,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--63
 <2GrundlagenX/Bilder/mvvmDiagramm.png, id=826, 460.21938pt x 320.19624pt>
 File: 2GrundlagenX/Bilder/mvvmDiagramm.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/mvvmDiagramm.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 109.
+Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 111.
 (pdftex.def)             Requested size: 306.71619pt x 213.39685pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--129
+Underfull \hbox (badness 10000) in paragraph at lines 90--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--129
+Underfull \hbox (badness 10000) in paragraph at lines 90--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--129
+Underfull \hbox (badness 10000) in paragraph at lines 90--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--129
+Underfull \hbox (badness 10000) in paragraph at lines 90--131
 
  []
 
@@ -1842,60 +1842,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--129
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.129 \begin{itemize}
+l.131 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/MVCArchitecture.png>] [33pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.129 \begin{itemize}
+l.131 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
 <2GrundlagenX/Bilder/infoflussMVVM.png, id=844, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 141.
+Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 143.
 (pdftex.def)             Requested size: 426.79387pt x 83.70453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--148
+Underfull \hbox (badness 10000) in paragraph at lines 136--150
 
  []
 
 <2GrundlagenX/Bilder/activityComp.png, id=849, 201.25188pt x 78.79437pt>
 File: 2GrundlagenX/Bilder/activityComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/activityComp.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 164.
+Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 167.
 (pdftex.def)             Requested size: 142.26337pt x 55.69911pt.
 <2GrundlagenX/Bilder/viewModelComp.png, id=852, 288.57813pt x 90.3375pt>
 File: 2GrundlagenX/Bilder/viewModelComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/viewModelComp.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 173.
+Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 176.
 (pdftex.def)             Requested size: 142.26756pt x 44.53592pt.
 <2GrundlagenX/Bilder/repoComp.png, id=857, 231.86626pt x 60.225pt>
 File: 2GrundlagenX/Bilder/repoComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/repoComp.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 185.
+Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 188.
 (pdftex.def)             Requested size: 142.26608pt x 36.95221pt.
 <2GrundlagenX/Bilder/roomComp.png, id=860, 239.39438pt x 214.30063pt>
 File: 2GrundlagenX/Bilder/roomComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/roomComp.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 197.
+Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 200.
 (pdftex.def)             Requested size: 142.26425pt x 127.35185pt.
 <2GrundlagenX/Bilder/aac.png, id=865, 660.96938pt x 588.69937pt>
 File: 2GrundlagenX/Bilder/aac.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/aac.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 213.
+Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 217.
 (pdftex.def)             Requested size: 319.46034pt x 284.53073pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--225
+Underfull \hbox (badness 10000) in paragraph at lines 153--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--225
+Underfull \hbox (badness 10000) in paragraph at lines 153--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--225
+Underfull \hbox (badness 10000) in paragraph at lines 153--229
 
  []
 
@@ -1903,49 +1903,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--225
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
        </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/infoflussMVVM.png>] [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.2.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.2.19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
        </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/activityComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/viewModelComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/repoComp.png>] [36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.2.21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.225 
+l.229 
        </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/roomComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/aac.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 228--245
+Underfull \hbox (badness 10000) in paragraph at lines 232--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--245
+Underfull \hbox (badness 10000) in paragraph at lines 232--249
 
  []
 
 [37]
 Package acronym Info: Label `acro:ERM' newly defined as it shall be overridden
-although it is yet undefined on input line 248.
+although it is yet undefined on input line 252.
 Package acronym Info: Label `acro:DBMS' newly defined as it shall be overridden
-although it is yet undefined on input line 251.
+although it is yet undefined on input line 255.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--267
+Underfull \hbox (badness 10000) in paragraph at lines 262--271
 
  []
 
@@ -2202,15 +2202,15 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31426 strings out of 492616
- 576023 string characters out of 6129481
+ 31428 strings out of 492616
+ 576047 string characters out of 6129481
  1077879 words of memory out of 5000000
  34090 multiletter control sequences out of 15000+600000
- 104514 words of font info for 178 fonts, out of 8000000 for 9000
+ 104644 words of font info for 179 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (71 pages, 9445837 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (71 pages, 9446004 bytes).
 PDF statistics:
  1502 PDF objects out of 1728 (max. 8388607)
  1327 compressed objects within 14 object streams

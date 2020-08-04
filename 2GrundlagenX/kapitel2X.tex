@@ -60,6 +60,7 @@ entstehenden Bewertungen können folgende Schritte besser geplant und umgesetzt 
 \linebreak
 Eine weitere Variante, bzw. Ausprägung der Software-Architektur ist die Modulare Software Architektur (siehe Abschnitt \ref{chap:Modulare Software Architektur}).
 Viele Softwarearchitekturen lehnen sich an das Prinzip der Modularen Architektur an und nehmen diese als Grundlage.
+
 \subsection{Modulare Software Architektur}
 \label{chap:Modulare Software Architektur}
 Der Begriff der Modularität beschreibt den Hauptteil der Architektur. Modularität bezeichnet die Aufteilung eines großen Ganzen in 
@@ -67,15 +68,15 @@ mehrere kleinere Teile, die als Module, Komponenten oder Bausteine beschrieben w
 und Kompatibilität zusammengeführt werden oder über entsprechend definierte Schnittstellen interagieren. 
 \\ 
 Unter der allgemeinen modularen Software-Architektur, bzw. Programmierung, versteht man ein Programmierparadigma. Dabei sollte die Software aus 
-systematisch und logisch aufgeteilten Teilblöcke bestehen, diese werden Module oder Bausteine genannt. Der Aufbau der modularen Software kann 
+systematisch und logisch aufgeteilten Teilblöcken bestehen, diese werden Module oder Bausteine genannt. Der Aufbau der modularen Software kann 
 praktisch in allen imperativen Programmiersprachen\footnote{Programmierparadigma, das aus einer Folge von Anweisungen besteht.} 
 Anwendung finden. Durch Modularität soll die Software bessere Kontrollierbarkeit, Übersichtlichkeit und Testbarkeit innerhalb großer 
-Softwareprojekte gewährleisten. So sind die einzelnen Bausteine an sich unabhängig und für sich selbst zuständig, trotz dessen können 
+Softwareprojekte gewährleisten. So sind die einzelnen Bausteine an sich unabhängig und für sich selbst zuständig, trotzdem können 
 diese mit weiteren Bausteinen kombiniert und verschachtelt werden. 
 \\ 
 In der Entwicklung sind die einzelnen Module eigenständig und separat zu planen, programmieren und testen. Dadurch ist der Rahmen des 
-einzelnen überschaubar und leicht zu praktizieren. Nach erfolgreicher Testung der Module können die Einzelteile als eine Anwendung 
-zusammengeführt werden, indem die einzelnen Module logisch über Schnittstellen verknüpft werden. Erst nach diesem Schritt ist die 
+einzelnen Moduls überschaubar. Nach erfolgreicher Testung der Module können die Einzelteile als eine Anwendung 
+zusammengeführt werden, indem sie logisch über Schnittstellen verknüpft werden. Erst nach diesem Schritt ist die 
 entstehende Applikation vollständig einsatzbereit.
 \\ 
 Die modulare Programmierung gilt als Erweiterung des prozeduralen Ansatzes, dabei sind die Module in kleineren Ansätzen auf die Klassen 
@@ -90,17 +91,18 @@ Das Model-View-ViewModel-Pattern ist, wie bereits erwähnt, ein Architekturmuste
 standardisierte und strukturierte grafische Oberflächen und das dahinterstehende logische System zu entwickeln. Es wird besonders für 
 interaktive Systeme eingesetzt. Das MVVM-Muster wird allgemein als Weiterentwicklung des bekannten MVC-Patterns (der Abbildung \ref{pic:mvcdiagram} zu entnehmen) angesehen. 
 \\
-Grundlegend ist das Model-View-Controller-Muster, MVC, für die klare Abgrenzung zwischen Daten, deren Darstellung und Präsentation und den 
-Nutzerinteraktionen für die graphischen Benutzeroberflächen gedacht. 
+Grundlegend ist das Model-View-Controller-Muster, MVC, für die klare Abgrenzung zwischen dem Datenmodell, der Darstellung der Daten und der Steuerung von 
+Nutzerinteraktionen. Der Controller koordiniert die Aktionen der View und dem Model. Dieser fungiert als Verbindungsstück zwischen den Bestandteilen und informiert 
+die View im Bedarfsfall bei Änderungen am Model. 
 \\ 
 \linebreak
 Demnach ist auch das Model-View-ViewModel-Muster daran angelehnt, die Benutzeroberfläche von deren Logik zu trennen. Durch diese Trennung 
-ist eine erhöhte Wartbarkeit und Testbarkeit gewährleistet. Die ermöglichte parallele Arbeitsweise von UI-Designern und Entwicklern 
+ist eine erhöhte Wart- und Testbarkeit gewährleistet. Die ermöglichte parallele Arbeitsweise von UI-Designern und Entwicklern 
 unterstützt deren Arbeitsfluss und beschleunigt den Entwicklungsprozess. \cite{mvvmentwickler.2010s} 
 \\ 
 \linebreak
 Die Logik der Anwendung wird in den ViewModel-Klassen (\ref{sec:ViewModel}) dargestellt und dienen als Kommunikationsschnittstelle zwischen 
-dem Model, dem Datenhalter, und der View, der Datenrepräsentation. Durch die Unabhängigkeit der einzelnen Module kann ein Unit Test vereinfacht 
+dem Model, dem Datenhalter und der View, der Datenrepräsentation. Durch die Unabhängigkeit der einzelnen Module kann ein Unit Test vereinfacht 
 durchgeführt werden, mitunter ein großer Vorteil des Patterns. 
 \\ 
 Die Ebenen, die das MVVM-Pattern enthält, werden in Abbildung (\ref{pic:mvvmdiagram}) grafisch aufgeführt.
@@ -112,13 +114,13 @@ Die Ebenen, die das MVVM-Pattern enthält, werden in Abbildung (\ref{pic:mvvmdia
 \end{figure} 
 \\
 Die View-Ebene stellt die Informationen der Benutzeroberfläche dar, fängt die Benutzereingaben ab 
-und gibt diese über Datenbindungen dann an das darunterliegende ViewModel weiter. Die View-Klasse enthält lediglich die Komponenten die 
-die Oberfläche optisch aus machen und die dazugehörigen Datenbindungsschnittstellen, um die Informationen übergeben zu können.
-Ebenso werden über diese Schnittstelle Informationen geladen, um diese auf der Oberfläche repräsentieren zu können. 
-Diese Vorgehensweise erleichtert das Austauschen der View ohne den Code generell zu ändern. 
+und gibt diese über Datenbindungen dann an das darunterliegende ViewModel weiter. Die View-Klasse enthält lediglich die Komponenten, die 
+die Oberfläche optisch ausmachen und die dazugehörigen Datenbindungsschnittstellen bereitstellt, um die Informationen übergeben zu können.
+Ebenso werden über diese Schnittstellen Informationen geladen, um diese auf der Oberfläche repräsentieren zu können. 
+Diese Vorgehensweise erleichtert das Austauschen der View, ohne den Code generell zu ändern. 
 \\ 
 \linebreak 
-Die ViewModel, bereits in Kapitel (\ref{sec:ViewModel}) beschrieben, ist dafür zuständig die Daten zwischen der persistierten Speicherung 
+Die ViewModel, bereits in Kapitel (\ref{sec:ViewModel}) beschrieben, ist dafür zuständig, die Daten zwischen der persistierten Speicherung 
 und der Repräsentation zu transferieren. Es stellt das Model für die View dar und gibt das eigentliche Model nach außen.
 \\ 
 \linebreak 
@@ -132,7 +134,7 @@ folgende Funktionalitäten bereitstellen sollte \cite{mvvmAufbau.2016}:
     \item Verarbeitung von Business-Rules
 \end{itemize} 
 Sozusagen dient das Model als Schnittstelle zwischen der anhängenden Datenbank und dem ViewModel, welches die Daten hält. 
-Dazu kommt, dass das Model festlegt wie die Objekte aufgebaut sind, d.h. dort wird festgelegt welchen Informationen das Objekt beinhaltet. 
+Dazu kommt, dass das Model festlegt, wie die Objekte aufgebaut sind, d.h. dort wird festgelegt, welche Informationen das Objekt beinhaltet. 
 \\ 
 \linebreak
 Die nachfolgende Abbildung (\ref{pic:infoflussmvvm}) veranschaulicht den Informationsfluss des MVVM-Patterns in einzelnen Schritten.
@@ -145,6 +147,7 @@ Die nachfolgende Abbildung (\ref{pic:infoflussmvvm}) veranschaulicht den Informa
 \\ 
 Basierend auf der Grundlage des Model-View-ViewModel-Patterns wurde die für das Projekt anvisierte Architektur, Android Architecture Components (\ref{chap:AAC}), 
 entwickelt.  
+
 \subsection{Android Architecture Components}
 \label{chap:AAC}
 Die Android Architecture Components bestehen aus einer Sammlung von Tools und Bibliotheken, engl. Libraries, die entwickelt wurden, um die 
@@ -152,10 +155,10 @@ Konstruktion von testbaren und stabilen Android-Apps zu vereinfachen. Mit der Ei
 viele Komponenten, z.B. Bibliotheken und Frameworks, für die Entwicklung von Apps vereint. In den vielen Bibliotheken, die von Android Jetpack 
 zur Verfügung gestellt werden, befinden sich auch die sogenannten \textit{Architecture components}. Diese \textit{Components} unterstützen und 
 fördern die Umsetzung der \textit{MVVM} Pattern basierten Architektur (\ref{chap:MVVM}). Die zuvor genannten Bibliotheken ViewModel, LiveData und Room 
-sind maßgeblich für die Gestaltung des angestrebten Musters Model-View-ViewModel. 
+sind maßgebliche Bestandteile für die Gestaltung des angestrebten Musters Model-View-ViewModel. 
 \\ 
-Google selbst empfiehlt im Rahmen der veröffentlichten \textit{„Guide to app architecture“} Dokumentation die Verwendung der \textit{Architecture components}, um 
-eine stabile und performante Applikation zu designen, da diese auf bewährten Prinzipien, unter anderem das \textit{seperation of concers} Prinzip, basieren.
+Google selbst empfiehlt im Rahmen der veröffentlichten Dokumentation \textit{„Guide to app architecture“} die Verwendung der \textit{Architecture components}, um 
+eine stabile und leistungsfähige Applikation zu designen. Diese basiert auf bewährten Prinzipien, unter anderem dem \textit{seperation of concerns} Prinzip.
 \\ 
 \linebreak
 Folgender Abschnitt befasst sich im Einzelnen mit den Komponenten, die für die \textit{Android architecture} essentiell sind:
@@ -175,10 +178,10 @@ der Android App Entwicklung die die Benutzeroberfläche und die dazu korrespondi
     \label{pic:vmComp}
 \end{figure} 
 \\ 
-Das ViewModel (siehe Abschnitt \ref{sec:ViewModel}) verwaltet die relevanten Daten der UI. Diese Komponente hat einen unabhängigen Lebenszyklus 
-dem Activity-Objekt gegenüber. Somit sind Daten bei unvorhergesehenen Unterbrechungen oder Fehlern der UI nicht betroffen und können bei 
+Das ViewModel (siehe Abschnitt \ref{sec:ViewModel}) verwaltet die relevanten Daten der UI. Diese Komponente hat dem Activity-Objekt gegenüber 
+einen unabhängigen Lebenszyklus. Somit sind Daten bei unvorhergesehenen Unterbrechungen oder Fehlern der UI nicht betroffen und können bei 
 erneutem Aufbau der Oberfläche ohne Probleme nachgeladen werden. Die im ViewModel enthaltenen LiveData Objekte (\ref{sec:LiveData}) sind 
-beobachtbare Daten-Container die eine Activity ohne expliziten Aufruf über Datenänderungen informiert. Durch diese Methode wird der 
+beobachtbare Daten-Container, die eine Activity ohne expliziten Aufruf über Datenänderungen informieren. Durch diese Methode wird der 
 Lebenszyklus der aktiven Komponente respektiert und berücksichtigt. 
 \begin{figure}[hbt!]
     \centering
@@ -201,9 +204,10 @@ Entitäten und Aggregaten von der Ansicht.
 \\ 
 \linebreak
 Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{Layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
-die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. \textit{\@Entity, \@Dao}, gearbeitet wird. Der 
-Abbildung \ref{pic:roomComp} ist demnach zu entnehmen, dass die Bibliothek Room einen Großteil der Funktionen eines Models abdeckt und so 
-die Model-Komponente repräsentiert. Anschließend auf das Datenbank layer ist die eigentliche Persistenzschicht, die SQLite Datenbank.
+die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. Entities \textit{(\@Entity)} und Data Objects 
+\textit{(\@Dao)}, gearbeitet wird. Der Abbildung \ref{pic:roomComp} ist demnach zu entnehmen, dass die Bibliothek \textit{„Room“} einen Großteil der 
+Funktionen eines Models abdeckt und so die Model-Komponente repräsentiert. Unter diesem Datenbank Layer befindet sich die eigentliche 
+Persistenzschicht, die SQLite Datenbank.  
 \\ 
 \linebreak 
 In einem fortlaufenden Architektur-Diagramm sind die Komponenten wie folgt angeordnet, um die Abhängigkeiten zwischen den einzelnen Teilen 
@@ -215,13 +219,13 @@ zu verdeutlichen.
     \label{pic:aacDia}
 \end{figure} 
 \\ 
-In der Abbildung \ref{pic:aacDia} wird deutlich, welches Modul welche Abhängigkeiten besitz, bzw. zu welchen oder von welchen Modulen 
+In der Abbildung \ref{pic:aacDia} wird deutlich, welches Modul welche Abhängigkeiten besitzt, bzw. von welchen Modulen 
 Informationen bezogen werden können. Einzelne Komponenten können ihren Vor- oder Nachgänger niemals umgehen und sind so einer festen 
 Hierarchie eingeordnet. Die Abbildung zeigt auch eine beispielhafte Ausführung mehrerer Datenbezugsquellen.
 \\ 
 Bei genauer Betrachtung des Diagramms sind alle Komponenten wiederzufinden, die ebenso in dem MVVM-Muster gegeben 
-sind und das Muster prägen. Durch die vielen Komponenten und Schnittstellen ist Modularität gegeben und trägt dazu bei, dass weiter Module 
-angehängt oder ausgetauscht werden können. 
+sind und das Muster prägen. Durch die vielen Komponenten und Schnittstellen, die dazu beitragen, dass weitere Module angehängt oder 
+ausgetauscht werden können, ist Modularität gewährleistet. 
 
 \section{Datenmodellierung}
 \label{chap:Datenmodellierung}
