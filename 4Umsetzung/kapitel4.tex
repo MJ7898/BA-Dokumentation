@@ -54,14 +54,16 @@ Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungss
 Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
 
 \subsubsection{FrontEnd}
-Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation erscheint 
-auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
+Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation 
+erscheint auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
 \\ 
 Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
 \\ 
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
-die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer Abfolge genutzt werden muss, um die Umgebung scannen zu können. Diese Abfrage erfolgt 
-über ein kleines PopUp-Fenster, welches von Android gegeben ist. Dieses Fenster ist der folgenden Abbildung zu entnehmen.    
+die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer Abfolge genutzt werden muss, um die Umgebung in der Hauptfunktion scannen zu können. 
+Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. Dieses Fenster ist der folgenden Abbildung zu entnehmen. Mit dem Zulassen 
+des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren, wird allerdings der Zugriff abgelehnt kann die Applikation nicht starten, bzw. 
+verweigert den Zugriff auf die Kamera, worauf die Applikation nicht einwandfrei benutzt werden kann.     
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/camera_permission.jpg}
@@ -70,15 +72,32 @@ die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer
 \end{figure}
 \pagebreak
 \\ 
-Da die Anwendung allgemein auf die der Hardware gegebenen Komponenten, beispielsweise auf die Kamera, die Bilder-Mediathek oder auf Datei-Strukturen, zugreift, zählt 
-diese zu den nativen Applikationen. Darunter sind Anwendungen adressiert, die speziell für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel die oben 
-aufgeführten Komponenten nutzen.  
+Da speziell die Anwendung allgemein auf die der Hardware gegebenen Komponente, der integrierten Kamera, zugreift, zählt diese zu den nativen Applikationen. 
+Darunter sind Anwendungen adressiert, die speziell für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel auf die vom Endgerät vorhandenen Komponenten, 
+beispielsweise auf die Bild-Mediathek, Datei-Strukturen oder die oben bereits erwähnte Kamera Komponenten, zugreifen.
+\\ 
+\linebreak
+Angenommen der Nutzer lässt die Frage, die Kamera für das Unterstützungssystem freizugeben, zu, dann startet die Applikation wie erwünscht. Darauf folgend ist letztendlich 
+das eigentliche Startmenü zu sehen. Dieses ebenso der nachfolgenden Abbildung zu entnehmen ist. Ein sehr einfach und schlicht gehaltenes Design. Darauf ist zentriert 
+das Firmen-Logo der cjt Systemsoftware AG zu sehen und lediglich zwei farblich voneinander getrennten Button zur Navigation der jeweils nachfolgenden Funktionen. Zum einen 
+zur Scan-Phase bei betätigen des lilafarbenen Buttons und zum anderen zur Visualisierungs-Phase bei betätigen des gelbfarbenen Buttons. Das Layout ist an den Farben des 
+Firmen-Logos angelehnt und bildet einen ruhigen und harmonischen Einstieg in das Programm. 
+\\ 
+Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter die folgenden Punkte: 
+\begin{itemize}
+    \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
+    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen.
+    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen und Offenlegung der Aktionen. 
+    \item Begeisterung (Delight): Komplexe Sachverhalte einfach zu lösen. 
+\end{itemize} 
+Hallo Test Test Test
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
     \caption{Startmenü der Applikation}
     \label{pic:startmenu}
 \end{figure}
+
 \subsubsection{BackEnd}
 
 \subsection{Scan-Phase} %Umgebungserkennung /
