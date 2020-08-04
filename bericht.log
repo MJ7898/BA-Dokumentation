@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 AUG 2020 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  4 AUG 2020 13:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2081,65 +2081,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--50
 <4Umsetzung/Bilder/camera_permission.jpg, id=1002, 1084.05pt x 2131.965pt>
 File: 4Umsetzung/Bilder/camera_permission.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/camera_permission.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 61.
+Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 67.
 (pdftex.def)             Requested size: 108.49405pt x 213.37164pt.
 <4Umsetzung/Bilder/startmenu.jpg, id=1003, 1083.04625pt x 1840.8775pt>
 File: 4Umsetzung/Bilder/startmenu.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/startmenu.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 67.
+Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 78.
 (pdftex.def)             Requested size: 125.54752pt x 213.39587pt.
-<4Umsetzung/Bilder/image_tracking.jpg, id=1004, 1084.05pt x 2264.46pt>
+ [49]
+<4Umsetzung/Bilder/image_tracking.jpg, id=1009, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/image_tracking.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/image_tracking.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 77.
+Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 88.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
- [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.80 \end{figure}
-                  </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg>]
-<4Umsetzung/Bilder/scan-phase.jpg, id=1010, 1084.05pt x 2267.47125pt>
+l.91 \end{figure}
+                 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.91 \end{figure}
+                  </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg>]
+<4Umsetzung/Bilder/scan-phase.jpg, id=1014, 1084.05pt x 2267.47125pt>
 File: 4Umsetzung/Bilder/scan-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan-phase.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 83.
+Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 94.
 (pdftex.def)             Requested size: 102.00989pt x 213.37068pt.
-<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1011, 370.38374pt x 261.97874pt>
+<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1015, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 90.
+Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 101.
 (pdftex.def)             Requested size: 142.2619pt x 100.62427pt.
-<4Umsetzung/Bilder/visual-phase.jpg, id=1012, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/visual-phase.jpg, id=1016, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/visual-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/visual-phase.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 99.
+Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 110.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
- [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+ [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+l.113 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 \end{figure}
-                   </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/image_tracking.jpg>]) [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.172 \include{4Umsetzung/kapitel4}
-                                   pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+l.113 \end{figure}
+                   </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/image_tracking.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg>]) [52pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.172 \include{4Umsetzung/kapitel4}
-                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/cjt_logo_tracking.png>] [52pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+                                   pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.172 \include{4Umsetzung/kapitel4}
-                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]
+                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/cjt_logo_tracking.png> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]
 \openout2 = `5Fazit/fazit.aux'.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
@@ -2202,7 +2203,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (69 pages, 9440750 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (69 pages, 9441557 bytes).
 PDF statistics:
  1487 PDF objects out of 1728 (max. 8388607)
  1314 compressed objects within 14 object streams

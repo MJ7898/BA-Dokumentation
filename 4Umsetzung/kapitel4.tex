@@ -54,14 +54,25 @@ Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungss
 Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
 
 \subsubsection{FrontEnd}
-Wird das Unterstützungssystem heruntergeladen oder auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation erscheint 
+Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation erscheint 
 auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
+\\ 
+Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
+\\ 
+Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
+die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer Abfolge genutzt werden muss, um die Umgebung scannen zu können. Diese Abfrage erfolgt 
+über ein kleines PopUp-Fenster, welches von Android gegeben ist. Dieses Fenster ist der folgenden Abbildung zu entnehmen.    
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/camera_permission.jpg}
     \caption{Start der Applikation}
     \label{pic:camera_perm}
 \end{figure}
+\pagebreak
+\\ 
+Da die Anwendung allgemein auf die der Hardware gegebenen Komponenten, beispielsweise auf die Kamera, die Bilder-Mediathek oder auf Datei-Strukturen, zugreift, zählt 
+diese zu den nativen Applikationen. Darunter sind Anwendungen adressiert, die speziell für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel die oben 
+aufgeführten Komponenten nutzen.  
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
