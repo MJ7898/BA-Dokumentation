@@ -55,9 +55,9 @@ Mittels \textit{Odometrie} können die von den Sensoren bereitgestellten Informa
 Systeme führen die Berechnung durch, da diese basierend auf dem Durchmesser des Rades berechnet wird. In Kombination mit \textit{Koppelnavigation}\footnote{Engl. dead reckoning, ist die laufende Positionsbestimmung eines bewegten Objekts infolge der Bewegungsrichtung und Geschwindigkeit \cite{koppelnavigation.2019j}}
 gilt dieses Verfahren für Roboter, bzw. Fahrzeuge auf Land, als Grundlage der Navigation. Durch die theoretische Berechnung werden 
 Fehlerbetrachtungen, z.B. Verschleiß, Schlupf oder Unrundheit von Rädern, vernachlässigt und ist somit nicht als alleiniges Verfahren einzusetzen. 
-\begin{align*}
+\begin{align}
     \Delta U = \frac{\pi D}{\textit{n}C}N
-\end{align*}
+\end{align}
 Mit \textit{D} als Raddurchmesser, \textit{n} als Getriebeübersetzung. \textit{C} als Enkoderauflösung und \textit{N} als Anzahl der 
 Enkoderimpulse wird die Positions- und Orientierung berechnet. 
 \\ 
@@ -73,9 +73,9 @@ sind besser zur Erfassung geometrischer Umweltinformationen geeignet. Für die M
 mit dem Laufzeitverfahren Distanzen messen und berechnen kann. 
 \\ 
 Das Laufzeitverfahren funktioniert wie folgt:
-\begin{align*}
+\begin{align}
     \textit{d} = \frac{1}{2}\textit{ct}
-\end{align*}
+\end{align}
 Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus der Signalgeschwindigkeit \textit{c} und der messbaren Laufzeit 
 \textit{t}. Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
 \begin{figure}[hbt!]
@@ -135,22 +135,25 @@ einer Algebra galten und werden daher als hyperkomplexe Zahlen aufgefasst.
 \\ 
 \linebreak
 Mit \textit{a,b,c,d $\in q$} werden Quaternionen wie folgt beschrieben:
-\begin{align*}
-    \textit{q} = \textit{a} + \textit{b} * \textit{i} + \textit{c} * \textit{j} + \textit{d} * \textit{k}
-\end{align*}
+\begin{align}
+    \textit{q} = \textit{a} + \textit{b} \cdot \textit{i} + \textit{c} \cdot \textit{j} + \textit{d} \cdot \textit{k}
+\end{align}
 In oben genannter Formel ist die Variable \textit{a} der Realteil und (\textit{b,c,d})$^T$ der Imaginärteil \textit{u} der Gleichung. 
 Auch geschrieben als \textit{q = (a, u)$^T$}, um die Teile differenzieren zu können. 
 \\ 
 Mit der sogenannten \textit{Brougham Bridge}-Formel ist es möglich Vektoren zu dividieren. 
-\begin{align*}
-    \textit{i$^2$} = \textit{j$^2$} = \textit{k$^2$} = \textit{ijk} = \textit{-1} 
-    \\
-    \textit{ij} = \textit{-ji} = \textit{k} 
-    \\
-    \textit{jk} = \textit{-kj} = \textit{i} 
-    \\ 
-    \textit{i$^2$} = \textit{j$^2$} = \textit{j}
-\end{align*}
+\begin{subequations}
+    \label{Quaternionen-Gleichung}
+    \begin{align}
+        \textit{i$^2$} = \textit{j$^2$} = \textit{k$^2$} = \textit{ijk} = \textit{-1} 
+        \label{erstes Gleichungsgesetz} \\
+        \textit{ij} = \textit{-ji} = \textit{k} 
+        \label{zweites Gleichungsgesetz} \\
+        \textit{jk} = \textit{-kj} = \textit{i} 
+        \label{drittes Gleichungsgesetz} \\ 
+        \textit{i$^2$} = \textit{j$^2$} = \textit{j}
+    \end{align}
+\end{subequations}
 \subsection{Rotation}
 %\subsection{Transformation}
 Quaternionen zählen als eine gute Möglichkeit Drehungen, bzw. Rotationen darzustellen, unter anderem wegen der reduzierten Anzahl an 
@@ -160,15 +163,15 @@ Darstellung der Rechenwege. Somit können Rotationen intuitiver dargestellt werd
 und die Rotation kann um eine bestimmte Achse berechnet werden. Zudem ist eine sehr hohe numerische Stabilität gewährleistet. 
 \\ 
 Der Drehwinkel wird wie folgt berechnet:
-\begin{align*}
+\begin{align}
     %\textit{a} = $\cos z$ \to \textit{z} = \frac{t}{2} \to t = $\theta$  %\textit{z} = \textit{\frac{$\theta$}{2}} 
     %\\
-    \textit{$\theta$} = \textit{2} * \textit{$\arccos a$}
-\end{align*}
+    \textit{$\theta$} = \textit{2} \cdot \textit{$\arccos a$}
+\end{align}
 Der Realteil \textit{a} des Quaternions wird mittels Arkuskosinus berechnet, so erhält man die Drehung des Objekts. Die Drehachse lässt sich 
 bestimmen, indem alle Werte des Imaginärteils (\textit{b,c,d})$^T$ mit \textit{u} addiert werden. Die Variable \textit{u} setzt sich wie 
 folgt zusammen: 
-\begin{align*}
+\begin{align}
     \textit{u} = \textit{$\sin w$}, \to \textit{w} = \frac{t}{2}, \to \textit{t = $\theta$}
-\end{align*}
+\end{align}
 Mit diesen zwei Berechnungen werden Drehwinkel und Drehachse bestimmt und können für weitere Berechnungen verwendet werden.

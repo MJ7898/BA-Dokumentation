@@ -1071,6 +1071,28 @@
     \field{year}{2016}
   \endentry
 
+  \entry{standDerAR.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=QC}{%
+         family={Quervel},
+         familyi={Q\bibinitperiod},
+         given={Céline},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{QC1}
+    \strng{fullhash}{QC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{howpublished}{\url={https://worldofvr.net/augmented-reality/}}
+    \field{title}{Augmented Reality (AR): Definition, Technik \& Potenzial}
+    \field{year}{2020}
+  \endentry
+
   \entry{androidmvvm.2019a}{misc}{}
     \name{author}{1}{}{%
       {{hash=R}{%

@@ -18,33 +18,39 @@ aufgezeigt. Abschließend zu dem Kapitel wird ein Szenario dargestellt, indem di
 Nachdem die Konzeption endgültig abgeschlossen war, ging es an die Umsetzung des Konzepts und an die Implementierung der Funktionen, die das System 
 ausmachen. 
 \\ 
-Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt und dokumentiert. Diese feststehende Reihenfolge 
+Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt und dokumentiert. Diese festgelegte Reihenfolge 
 ist auch der Abbildung (\ref{pic:anwendungsfall}) zu entnehmen. Angefangen mit dem Startmenü, das dem Nutzer die Möglichkeit offenbart zwischen den Funktion 
 zu wählen, folgt die Implementierung der Scan-Phase, in der die realen Objekte virtualisiert und platziert werden. Zu guter Letzt die Visualisierungs-Phase, 
-welche aufbauend auf die Scan-Phase funktioniert. Bei erstem Gebrauch der Anwendung ist eine vorzeitige Nutzung der Visualisierungs-Phase ohne weiteres 
-nicht möglich, da zuvor ein Scan durchgeführt werden muss, der Daten generiert und diese zur Verfügung stellt.
+welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekte erneut virtuell platziert. 
+\\ 
+Bei erstem Gebrauch der Anwendung ist eine vorzeitige Nutzung der Visualisierungs-Phase ohne weiteres nicht möglich, da zuvor ein Scan durchgeführt 
+werden muss, der Daten generiert, Informationen liefert und diese zur Verfügung stellt. Sodass die zweite Kernfunktion operieren kann.
 \\ 
 \linebreak 
-Aufgeteilt wurden die Use Cases jeweils immer nach Frontend und Backend, demnach wird auch die Dokumentation in diesem Stil geschildert. 
+Aufgeteilt wurden die Use Cases der Anwendung jeweils immer nach Frontend und Backend, demnach wird auch die Dokumentation in diesem Stil geschildert. 
 \\ 
 \linebreak
+Bevor die Umsetzung durchgeführt werden konnte, wurden vorab noch die letzten Vorbereitungen durchgeführt.
 Zum Start der eigentlichen Implementierung war es die Aufgabe, die Entwicklungsumgebung zu wählen und einzurichten, um bestmöglich arbeiten zu können. Als 
 \ac{IDE} wurde die speziell für Android-Applikationen entwickelte Software \textit{Android Studio} gewählt. Diese ist besonders für die Entwicklung von 
-Android-Applikation geeignet, ausschließlich für Hardware die das Android Betriebssystem nutzt. 
+Android-Applikation geeignet, ausschließlich für Hardware dessen Software das Android Betriebssystem nutzt. 
 \\
 Android Studio ist von Google LLC. und JetBrains entwickelt und basiert auf der IntelliJ IDEA Community Edition \acs{IDE}. Als 
-Build-Management-Automatisierungs-Tool stellt Android Studio das Tool Gradle zur Verfügung, welches die zu bauenden Projekte beschreibt. Hier werden unter 
+Build-Management-Automatisierungs-Tool stellt Android Studio das Tool Gradle zur Verfügung, welches die zu bauenden Projekte durch die verwendeten 
+Dependencies, Frameworks und Tools beschreibt. Hier werden unter 
 anderem die Bibliotheken und deren verwendete Version eingetragen, um die notwendigen Libraries in der Applikation verwenden zu können. Im Fall des zu 
 entwickelnden Unterstützungssystems wurden dort die Bibliotheken zur Nutzung der Android Architecture Components eingetragen, darunter Room und LiveData. 
-Darüber hinaus wird dort auch die Version des ARCore Frameworks und des Sceneform \acs{SDK}s verwaltet, welches ebenso Bestandteile der Applikation sind.
+Darüber hinaus wird dort auch die Version des ARCore Frameworks und des Sceneform \acs{SDK}s verwaltet, welches ebenso essentielle Bestandteile der 
+Applikation sind.
 \\ 
 Nachdem alle Abhängigkeiten erfolgreich eingebunden waren, wurden zur übersichtlichen Gestaltung der Klassen, Objekte, ViewModel, Repositories und Activities 
 eine Ordnerstruktur angelegt, die alle Klassen des gleichen Typs im Laufe der Entwicklung beinhalten sollen. Dadurch kann besser und übersichtlicher durch 
-das Projekt navigiert werden und alle Klassen ähnlicher Eigenschaft befinden sich im selben Zielordner. Nachdem nun alle Vorbereitungen abgeschlossen 
+das Projekt navigiert werden und alle Klassen ähnlicher Eigenschaften befinden sich im selben Zielordner. Nachdem nun alle Vorbereitungen abgeschlossen 
 waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
 
 \subsection{Startmenü}
 Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen mit der Applikation. 
+
 \subsubsection{FrontEnd}
 \begin{figure}[hbt!]
     \centering
