@@ -35,7 +35,7 @@ Im Rahmen dieser Ausarbeitung findet keine Aufzählung und Beschreibung verschie
 für das Projekt verwendeten Muster werden in folgenden Kapiteln aufgegriffen. 
 \\ 
 \linebreak
-Die Abbildung \ref{pic:mvcdiagram} veranschaulicht eine vereinfachte Struktur eines Architekturmusters und deren Komponenten und Zusammenhänge 
+Die Abbildung (\ref{pic:mvcdiagram}) veranschaulicht eine vereinfachte Struktur eines Architekturmusters und deren Komponenten und Zusammenhänge 
 zueinander. Die Zeichnung dient zur Veranschaulichung, um darzulegen, wie ein Architekturdiagramm aussehen kann, bzw. wie die allgemeine 
 Struktur repräsentiert wird.
 \begin{figure}[hbt!]
@@ -58,10 +58,10 @@ Durch die Modellierung der Architektur kann frühzeitig eine sinnvolle Evaluieru
 entstehenden Bewertungen können folgende Schritte besser geplant und umgesetzt werden. 
 \\ 
 \linebreak
-Eine weitere Variante, bzw. Ausprägung der Software-Architektur ist die Modulare Software Architektur (siehe Abschnitt \ref{chap:Modulare Software Architektur}).
+Eine weitere Variante, bzw. Ausprägung der Software-Architektur ist die Modulare Software-Architektur (siehe Abschnitt \ref{chap:Modulare Software Architektur}).
 Viele Softwarearchitekturen lehnen sich an das Prinzip der Modularen Architektur an und nehmen diese als Grundlage.
 
-\subsection{Modulare Software Architektur}
+\subsection{Modulare Software-Architektur}
 \label{chap:Modulare Software Architektur}
 Der Begriff der Modularität beschreibt den Hauptteil der Architektur. Modularität bezeichnet die Aufteilung eines großen Ganzen in 
 mehrere kleinere Teile, die als Module, Komponenten oder Bausteine beschrieben werden. Verschiedene Teile können bei geeigneter Funktion 
@@ -205,7 +205,7 @@ Entitäten und Aggregaten von der Ansicht.
 \linebreak
 Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{Layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
 die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. Entities \textit{(\@Entity)} und Data Objects 
-\textit{(\@Dao)}, gearbeitet wird. Der Abbildung \ref{pic:roomComp} ist demnach zu entnehmen, dass die Bibliothek \textit{„Room“} einen Großteil der 
+\textit{(\@Dao)}, gearbeitet wird. Der Abbildung (\ref{pic:roomComp}) ist demnach zu entnehmen, dass die Bibliothek \textit{„Room“} einen Großteil der 
 Funktionen eines Models abdeckt und so die Model-Komponente repräsentiert. Unter diesem Datenbank Layer befindet sich die eigentliche 
 Persistenzschicht, die SQLite Datenbank.  
 \\ 
@@ -219,7 +219,7 @@ zu verdeutlichen.
     \label{pic:aacDia}
 \end{figure} 
 \\ 
-In der Abbildung \ref{pic:aacDia} wird deutlich, welches Modul welche Abhängigkeiten besitzt, bzw. von welchen Modulen 
+In der Abbildung (\ref{pic:aacDia}) wird deutlich, welches Modul welche Abhängigkeiten besitzt, bzw. von welchen Modulen 
 Informationen bezogen werden können. Einzelne Komponenten können ihren Vor- oder Nachgänger niemals umgehen und sind so einer festen 
 Hierarchie eingeordnet. Die Abbildung zeigt auch eine beispielhafte Ausführung mehrerer Datenbezugsquellen.
 \\ 
@@ -229,45 +229,45 @@ ausgetauscht werden können, ist Modularität gewährleistet.
 
 \section{Datenmodellierung}
 \label{chap:Datenmodellierung}
-Datenmodellierung ist ein Verfahren zur formalen Abbildung von Objekten deren Attribute und Beziehungen in einem definierten Kontext. Die 
-Modellierung ist zielführend, um einen Überblick der Datensicht des Systems oder der Applikation zu erhalten. Hauptaufgabe ist die eindeutige 
+Datenmodellierung ist ein Verfahren zur formalen Abbildung von Objekten, deren Attribute und Beziehungen in einem definierten Kontext stehen. 
+Die Modellierung verfolgt dasZiel, den Überblick über die Daten oder die Applikation zu erhalten. Hauptaufgabe ist die eindeutige 
 Definition von Objekten und deren Spezifikationen und Ausprägungen. Ebenso hilft die Datenmodellierung bei der visuellen Darstellung von 
 Informationen und bei der Einhaltung von Voraussetzungen und Richtlinien.
 \\ 
 Die aus der Modellierung entstehenden Datenmodelle stellen die Objekte und Beziehungen untereinander dar und repräsentieren die zu 
 persistierende Struktur der Objekte. Datenmodelle sind ein wichtiger Bestandteil einer Software und haben meist eine längere Lebensdauer als 
-die Software an sich, da Änderungen an den Modellen meist viele Risiken mit sich bringen, überwiegend Datenverlust.
+die Software an sich, da Änderungen an den Modellen meist viele Risiken, dazu zählt überwiegend der Datenverlust, mit sich bringen.
 \\ 
 \linebreak
 Durch die Übersichtlichkeit der Datenmodelle können Standardwerte, Semantik, Sicherheit und die Datenqualität gleichzeitig sichergestellt 
-werden. Die Konsistenz von Namenskonventionen wird durch die Überschaubarkeit auch einfacher überprüfbar. 
+werden. Die Konsistenz von Namenskonventionen wird durch die Überschaubarkeit auch leichter überprüfbar. 
 \\ 
 \linebreak
 In der Softwareentwicklung wird die Datenmodellierung als wesentliche Teilaufgabe gesehen, um ein System aufzubauen. Innerhalb des 
-Datendesigns gibt es drei bedeutsame Varianten die aufeinander aufbauen:
+Datendesigns gibt es drei wichtige Varianten, die aufeinander aufbauen:
 \pagebreak
 \begin{itemize}
     \item Konzeptionelles Datenbankschema: Betrachtung eines für die Applikation wichtigen Szenarios der realen Welt unter Berücksichtigung 
     aller relevanten Objekte, Eigenschaften und Beziehungen zwischen ihnen. Diese Informationen werden aus dem Kontext heraus analysiert 
-    und grafisch als auch textuell dargestellt. Die Darstellung basiert auf einem \ac{ERM}, dass die Objekte (Entities) mit ihren jeweiligen 
-    Eigenschaften (Attributes) und die Beziehungen (Relationships) darstellt. Das sogenannte Semantische Datenmodell.
+    und grafisch als auch textuell dargestellt. Die Darstellung basiert auf einem \ac{ERM}, das die Objekte (Entities) mit ihren jeweiligen 
+    Eigenschaften (Attributes) und die Beziehungen (Relationships) darstellt. Das ist das sogenannte Semantische Datenmodell.
     \item Logisches Datenbankschema: Hierbei wird das konzeptionelle Datenbankschema um datentechnische Angaben, z.B. Feldtypen /-formate 
     und Identifikationseigenschaften (Primary Keys), erweitert. Das logische Datenbankschemata unterliegt den Regeln der von dem \ac{DBMS}
-    gegebenen Struktur, z.B. dem relationalen Datenmodell, das alle Daten und Objekte in Tabellen ablegt. Auch Relationales oder 
+    gegebenen Struktur, z.B. dem relationalen Datenmodell, das alle Daten und Objekte in Tabellen ablegt. Dies wird auch relationales oder 
     objektorientiertes Datenmodell genannt. \cite{datenmodellierung.2019d}
     \item Physisches Datenbankschema: Dabei werden die Datensätze auf den physischen Komponenten organisiert und verwaltet. Eine Festlegung 
     der Zugriffsoperationen finden in dieser Phase statt. Zugriffsoperationen sind Einfügen, Löschen, Aktualisieren und Suchen von Objekten 
-    und Informationen. Zudem wird hierbei versucht die Performance und effiziente Bearbeitung von Datenbankzugriffen durch Modellierung hochzuhalten.
+    und Informationen. Zudem wird hierbei versucht, die Performance und effiziente Bearbeitung von Datenbankzugriffen durch Modellierung hochzuhalten.
 \end{itemize}  
 Die drei oben aufgeführten Phasen sind Bestandteile der Methodik des Datenbankdesigns, der sogenannten \textit{„top down-Methodik“}. 
 Wobei die erste Phase die allgemeine Anforderungsanalyse, die in obiger Auflistung nicht aufgeführt ist, beinhaltet. Bei dieser Phase finden 
 grundlegende Anforderungsprozesse statt, zum einen die Informationsstrukturanforderungen und zum anderen die Datenverarbeitungsanforderungen. 
 \\ 
 \linebreak
-Ein Schema nachdem relationale Datenbanken aufgeteilt werden, ist die sogenannte Normalisierung von Datenbanken. Darunter versteht man die 
+Ein Schema, nachdem relationale Datenbanken aufgeteilt werden, ist die sogenannte Normalisierung von Datenbanken. Darunter versteht man die 
 Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe von Normalisierungsregeln und Normalformen. \cite{normalisierung.2020j} 
 Ziel dieser Zerlegung ist die Erstellung einer redundanzfreien Speicherung der Daten, um Daten löschen zu können, ohne einen 
-Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unterteil:
+Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unterteilt:
 \begin{itemize}
     \item Nullte Normalform (0NF)
     \item Erste Normalform (1NF)
@@ -277,4 +277,6 @@ Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unter
     \item Vierte \& Fünfte Normalform (4NF \& 5NF)
 \end{itemize} 
 Die meist verwendete Normalform ist die dritte Normalform, da diese für die Balance zwischen Redundanz, Performance und Flexibilität 
-herrscht und oft ausreicht. Im Folgenden wird nicht weiter auf die Normalformen eingegangen, sie dienen lediglich der vollständigen Nennung. 
+entscheidend ist und oft ausreicht. 
+\\ 
+Im Folgenden wird nicht weiter auf die Normalformen eingegangen, sie dienen lediglich der vollständigen Nennung. 

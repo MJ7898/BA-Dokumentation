@@ -20,17 +20,19 @@ ausmachen.
 \\ 
 Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt und dokumentiert. Diese festgelegte Reihenfolge 
 ist auch der Abbildung (\ref{pic:anwendungsfall}) zu entnehmen. Angefangen mit dem Startmenü, das dem Nutzer die Möglichkeit offenbart zwischen den Funktion 
-zu wählen, folgt die Implementierung der Scan-Phase, in der die realen Objekte virtualisiert und platziert werden. Zu guter Letzt die Visualisierungs-Phase, 
-welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekte erneut virtuell platziert. 
+zu wählen, folgte die Implementierung der Scan-Phase, in der die realen Objekte virtualisiert und im Raum platziert werden. Zu guter Letzt die Visualisierungs-Phase, 
+welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekte erneut virtuell im Raum platziert. 
 \\ 
-Bei erstem Gebrauch der Anwendung ist eine vorzeitige Nutzung der Visualisierungs-Phase ohne weiteres nicht möglich, da zuvor ein Scan durchgeführt 
-werden muss, der Daten generiert, Informationen liefert und diese zur Verfügung stellt. Sodass die zweite Kernfunktion operieren kann.
+Bei erstem Gebrauch der Anwendung ist eine vorzeitige Nutzung der Visualisierungs-Phase ohne weiteres nicht möglich. Zuvor muss der Nutzer einen Scan durchführen, sodass 
+das System Daten generiert, Informationen liefert und diese zur Verfügung stellt. Dies hat zur Folge, dass die zweite Kernfunktion operieren und ausgeführt werden kann. 
+Mit den zuvor erzeugten Informationen durch die Scan-Phase.
 \\ 
 \linebreak 
 Aufgeteilt wurden die Use Cases der Anwendung jeweils immer nach Frontend und Backend, demnach wird auch die Dokumentation in diesem Stil geschildert. 
 \\ 
 \linebreak
 Bevor die Umsetzung durchgeführt werden konnte, wurden vorab noch die letzten Vorbereitungen durchgeführt.
+\\ 
 Zum Start der eigentlichen Implementierung war es die Aufgabe, die Entwicklungsumgebung zu wählen und einzurichten, um bestmöglich arbeiten zu können. Als 
 \ac{IDE} wurde die speziell für Android-Applikationen entwickelte Software \textit{Android Studio} gewählt. Diese ist besonders für die Entwicklung von 
 Android-Applikation geeignet, ausschließlich für Hardware dessen Software das Android Betriebssystem nutzt. 
@@ -45,11 +47,13 @@ Applikation sind.
 \\ 
 Nachdem alle Abhängigkeiten erfolgreich eingebunden waren, wurden zur übersichtlichen Gestaltung der Klassen, Objekte, ViewModel, Repositories und Activities 
 eine Ordnerstruktur angelegt, die alle Klassen des gleichen Typs im Laufe der Entwicklung beinhalten sollen. Dadurch kann besser und übersichtlicher durch 
-das Projekt navigiert werden und alle Klassen ähnlicher Eigenschaften befinden sich im selben Zielordner. Nachdem nun alle Vorbereitungen abgeschlossen 
-waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
+das Projekt navigiert werden und alle Klassen ähnlicher Eigenschaften befinden sich im selben Zielordner. 
+\\ 
+Nachdem nun alle Vorbereitungen abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
 
 \subsection{Startmenü}
-Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen mit der Applikation.
+Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen zwischen Anwedner 
+und der Applikation, dem Assistenzsystem.
 \\ 
 Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
 
@@ -60,10 +64,10 @@ erscheint auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nut
 Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
 \\ 
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
-die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer Abfolge genutzt werden muss, um die Umgebung in der Hauptfunktion scannen zu können. 
-Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. Dieses Fenster ist der folgenden Abbildung zu entnehmen. Mit dem Zulassen 
-des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren, wird allerdings der Zugriff abgelehnt kann die Applikation nicht starten, bzw. 
-verweigert den Zugriff auf die Kamera, worauf die Applikation nicht einwandfrei benutzt werden kann.     
+die Erlaubnis erteilen auf die Kamera zugreifen zu dürfen, da diese in weiterer Abfolge des Assistenzsystems genutzt werden muss, um die Umgebung in der Hauptfunktion 
+scannen zu können. Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. Dieses Fenster ist der Abbildung (\ref{pic:camera_perm}) 
+zu entnehmen. Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren, wird allerdings der Zugriff abgelehnt kann 
+die Applikation nicht starten, bzw. verweigert den Zugriff auf die Kamera, worauf die Applikation nicht einwandfrei benutzt werden kann.     
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/camera_permission.jpg}
@@ -72,33 +76,50 @@ verweigert den Zugriff auf die Kamera, worauf die Applikation nicht einwandfrei 
 \end{figure}
 \pagebreak
 \\ 
-Da speziell die Anwendung allgemein auf die der Hardware gegebenen Komponente, der integrierten Kamera, zugreift, zählt diese zu den nativen Applikationen. 
-Darunter sind Anwendungen adressiert, die speziell für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel auf die vom Endgerät vorhandenen Komponenten, 
-beispielsweise auf die Bild-Mediathek, Datei-Strukturen oder die oben bereits erwähnte Kamera Komponenten, zugreifen.
+Da speziell das Assistenzsystem auf die Hardware gegebene Komponente, die im Smart-Device integrierte Kamera, zugreift, zählt diese zu den nativen Applikationen. 
+Darunter sind Anwendungen adressiert, die ausdrücklich für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel auf die vom Endgerät vorhandenen Komponenten, 
+zum Beispiel auf die Bild-Mediathek, Datei-Strukturen oder die oben bereits erwähnte Kamera Komponente, zugreifen.
 \\ 
 \linebreak
-Angenommen der Nutzer lässt die Frage, die Kamera für das Unterstützungssystem freizugeben, zu, dann startet die Applikation wie erwünscht. Darauf folgend ist letztendlich 
-das eigentliche Startmenü zu sehen. Dieses ebenso der nachfolgenden Abbildung zu entnehmen ist. Ein sehr einfach und schlicht gehaltenes Design. Darauf ist zentriert 
-das Firmen-Logo der cjt Systemsoftware AG zu sehen und lediglich zwei farblich voneinander getrennten Button zur Navigation der jeweils nachfolgenden Funktionen. Zum einen 
-zur Scan-Phase bei betätigen des lilafarbenen Buttons und zum anderen zur Visualisierungs-Phase bei betätigen des gelbfarbenen Buttons. Das Layout ist an den Farben des 
-Firmen-Logos angelehnt und bildet einen ruhigen und harmonischen Einstieg in das Programm. 
+Angenommen der Nutzer lässt die Frage, die Kamera für das Assistenzsystem freizugeben, zu, dann startet die Applikation wie erwünscht. Darauf folgend ist letztendlich 
+das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Ein sehr einfach und schlicht gehaltenes Design. 
+Darauf ist zentriert das Firmen-Logo der cjt Systemsoftware AG zu sehen und lediglich zwei farblich voneinander getrennten Button zur Navigation innerhalb der Applikation. 
+Die Button adressieren jeweils die nachfolgende, zugehörige Funktion. Zum einen 
+zur Scan-Phase bei Betätigung des lilafarbenen Buttons und zum anderen zur Visualisierungs-Phase bei Bedienung des gelbfarbenen Buttons. In der Gesamtheit is das Layout 
+ist an den Farben des Firmen-Logos angelehnt und bildet einen ruhigen und harmonischen Einstieg in das Programm. 
 \\ 
-Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter die folgenden Punkte: 
+Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter folgende Punkte: 
 \begin{itemize}
     \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
-    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen.
-    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen und Offenlegung der Aktionen. 
+    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen der Funktion, bzw. Anwendung.
+    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen. Offenlegung der Aktionen und Hintergründe. 
     \item Begeisterung (Delight): Komplexe Sachverhalte einfach zu lösen. 
 \end{itemize} 
-Hallo Test Test Test
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
     \caption{Startmenü der Applikation}
     \label{pic:startmenu}
 \end{figure}
-
+Nachdem das Design des Startmenüs und dem PopUp-Fenster abgeschlossen war, ging es darum, die Funktionalität der UI-Komponenten zu implementieren. 
 \subsubsection{BackEnd}
+Durch die schlicht und einfach gehaltene Modellierung des Startmenüs, zählt dieses als Ansicht zum Einstieg in die Nutzung des Assistenzsystems, zur Abfrage der 
+\textit{„Camera-Permission“} und zur weiteren Navigation innerhalb der Anwendung.
+\\ 
+Mit der \textit{„Permission-Request“} wird abgefragt, ob die Genehmigung zur Nutzung der Kamera in der \textit{„AndroidManifest.xml“} erteilt wurde, bzw. wird dadurch 
+das PopUp-Fenster zur Nachfrage der Genehmigung geöffnet und die daraus resultierende Antwort in die Manifest-Datei eingetragen. 
+\\ 
+\linebreak
+Die Manifest-Datei beinhaltet alle optionalen Metadaten, im Bezug zum Assistenzsystem die für das Projekt benötigten Google ARCore-Metadaten, sowie grundlegende 
+Informationen über das Projekt. Darunter welche Genehmigungen zur Ausführung der Applikation benötigt werden, welche Activities die Anwendung enthält und 
+Stammdaten, z.B. Titel, -bild und App-Icon, die das Projekt eindeutig definieren.
+\\ 
+\linebreak
+Demnach beinhaltet diese Funktion wenig Logik, bis auf die Abfrage der \textit{„Camera-Permission“} und die Button-Klick-Funktion, die den Nutzer jeweils auf die 
+von ihm gewählte Funktion weiterleitet. Sozusagen eine simple Navigation.
+\\ 
+\linebreak
+Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase, der ersten Kernfunktion des Assistenzsystems.  
 
 \subsection{Scan-Phase} %Umgebungserkennung /
 \subsubsection{FrontEnd}
