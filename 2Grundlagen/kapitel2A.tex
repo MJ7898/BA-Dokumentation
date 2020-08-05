@@ -90,10 +90,10 @@ Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus d
 \\ 
 Auf der linken Seite ist eine PMD-Kamera zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera.
 
-\subsection{Verfahren zur Lösung des SLAM-Problems}
-Das Lösen des \acs{SLAM}-Problems wird in der Praxis mit den folgenden Verfahren, die sich bei der Anwendung bewährt haben, durchgeführt. In den 
+\subsection{Verfahren zur Lösung des SLAM Problems}
+Das Lösen des \acs{SLAM} Problems wird in der Praxis mit den folgenden Verfahren, die sich bei der Anwendung bewährt haben, durchgeführt. In den 
 folgenden Abschnitten werden zwei dieser Verfahren erläutert, sodass ein Grundverständnis der Funktionsweisen der Verfahren entsteht. 
-Als Erstes erfolgt eine nähere Erläuterung des graph-basierten \acs{SLAM}-Verfahren, gefolgt von der Lösung des Problems mit einem rekursiven 
+Als Erstes erfolgt eine nähere Erläuterung des graph-basierten \acs{SLAM} Verfahren, gefolgt von der Lösung des Problems mit einem rekursiven 
 Ansatz, dem erweiterten Kalman Filter (\acs{EKF}).
 
 \subsection*{Graph-basiertes SLAM Verfahren}
@@ -105,7 +105,7 @@ Knoten im Graphen werden über eine Kante verknüpft. Gebunden an die Bewegung d
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/graph_SLAM.png}
-    \caption{Graphische Darstellung des SLAM-Verfahrens \cite{graphSLAM.2010}}
+    \caption{Graphische Darstellung des SLAM Verfahrens \cite{graphSLAM.2010}}
     \label{pic:GraphSLAM}
 \end{figure}
 \\ 
@@ -117,7 +117,7 @@ können. Bei der Nutzung eines Lasersensors wird meist der \ac{ICP} Algorithmus 
 wahrzunehmen. \acs{ICP} ist ein iteratives, ständig wiederholendes Verfahren, das die korrespondierenden Punkte schätzt und solange transformiert, bis diese unter 
 einem gewissen Schwellwert liegen. Korrespondierende Punkte sind die, die den kleinsten Abstand zueinander haben (Closest Point). \cite{robotik2.2020m}
 \\ 
-Der inkrementelle Ansatz des graph-basierten \acs{SLAM}-Verfahrens ist ursprünglich ein \textit{offline-Verfahren}, welches über die Jahre 
+Der inkrementelle Ansatz des graph-basierten \acs{SLAM} Verfahrens ist ursprünglich ein \textit{offline-Verfahren}, welches über die Jahre 
 schrittweise zu einem \textit{online-Verfahren} führte. Durch diese ständige Beobachtung und Neuberechnung der aktuellen Position zu jedem 
 Zeitpunkt wurde die Bedeutung der inkrementellen Verfahren gesteigert. %Dieser Ansatz ist besonders für monokulare Kameras ratsam und sinnvoll.
 
