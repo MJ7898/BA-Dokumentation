@@ -134,13 +134,49 @@ Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase,
 Bei der Implementierung der Scan-Phase kam es zu den ersten praktischen Berührpunkten mit der Google ARCore \acs{API}. Diese wurde zu Beginn studiert, 
 um einen Überblick, wie die Struktur dieser Schnittstelle aufgebaut ist, zu erlangen. Dadurch konnten Methoden und Funktionen analysiert werden, um im 
 weiteren Verlauf der Entwicklung damit arbeiten zu können.
+\\ 
+Die Idee hinter der Scan-Phase ist die Implementierung einer Methode, die es ermöglicht das Umfeld über die Kamera wahrzunehmen und mit den gewonnenen 
+Erkenntnisse über den Raum weiterarbeiten zu können. Die nachstehende Funktion, virtuelle Objekte auf Basis der vom Scan erfahrenen Kenntnissen in 
+der Räumlichkeit zu platzieren, arbeitet mit diesen in Erfahrung gebrachten Kenntnisse. 
+\\ 
+Zur Schaffung einer Grundlage, um die wichtigsten Funktionen zu implementieren, wurden zuallererst die Benutzeroberflächen erstellt. Diese dienen 
+unter anderem dazu den Fokus für die Funktionsweise der eigentlichen Methode nicht zu verlieren. Demnach werden die entwickelten \acs{GUI}s nun aufgeführt 
+und näher beschrieben, um Methoden des Backends im Anschluss besser nachvollziehen zu können.
 \subsubsection{FrontEnd}
+Das Assistenzsystem verfügt über eine Vollbildkamera-Ansicht, die mit einem weißen Rahmen überlagert ist. Damit können über die Kamera Bilder zentriert 
+eingefangen werden. Somit weiß der Nutzer, wie er das Smart-Device in Position bringen muss, damit er das zu scannende Bild über die Kamera 
+bestmöglich erfassen kann. 
+\\ 
+\linebreak
+Ursprünglich war die Applikation nicht mit diesem Layout (\ref{pic:image_tracking}) konzipiert, da während der Implementierung der Scan-Phase eine 
+schwerwiegende Änderung vorgenommen werden musste. Diese wird in dem Abschnitt der Scan-Phasen Backend-Entwicklung zu gegebenem Zeitpunkt 
+aufgegriffen und genauestens dargelegt. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/image_tracking.jpg}
     \caption{Markererkennung der Applikation zum Start der Scan-Phase}
     \label{pic:image_tracking}
 \end{figure}
+\pagebreak 
+\\
+\linebreak 
+Des Weiteren beinhaltet das Assistenzsystem die eigentliche Scan-Phasen \acs{UI}, mit der die Umgebung aufgenommen wird und anhand dieser Daten 
+der Nutzer die Objekte an von ihm definierte Stellen platzieren kann. Die Benutzeroberfläche hat ebenso ein schlichtest und überschaubares Layout, 
+welches dem Anwender zugutekommt. 
+\\ 
+Hauptsächlich beinhaltet die \acs{GUI} ein Fragment, welches das Kamerabild in Echtzeit wiedergibt. Am oberen Ende des Bildschirms, bzw. der Abbildung 
+(\ref{pic:scan}) befindet sich eine lilafarbene Fläche, die zur Anzeige von Informationen vorhanden ist und gleichzeitig als erweiterte Abgrenzung 
+zur Topdown-Leiste dient. Am unteren Ende des Bildes befindet sich eine \textit{„Android-Gallery“}, die alle zu platzierenden Objekte beinhaltet. In 
+der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. Prinzipiell ist diese Gallery um 
+beliebig viele Objekte erweiterbar. Diese Erweiterung erfolgt allerdings nicht dynamisch, sondern muss über manuelles Einfügen im Code stattfinden. 
+\\
+Wird während der laufenden Anwendung ein Objekt über dessen Button erstellt, wird der Nutzer unverzüglich auf eine weitere Seite geleitet, um 
+parallel zur Renderung des Objekts Informationen darüber der Datenbank hinzufügen zu können. Auf dieses Layout wird in weiterem Verlauf der 
+Ausarbeitung noch eingegangen. Vorwegzunehmen ist, dass die Informationen mit den Daten der virtuellen Position in der Datenbank persistiert werden.
+\\ 
+\linebreak 
+Um weiterhin auf der Seite navigieren zu können, gibt es im rechten unteren Eck einen weiteren Button, welcher ebenso der Abbildung (\ref{pic:scan}) 
+zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zurück, zum Startmenü und beendet die Scan-Phase. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}

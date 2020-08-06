@@ -105,7 +105,7 @@ entstehende Software für eine fortlaufende Entwicklung geeignet sein. Für dies
 um das schnelle und einfache Wechseln von Komponenten und Bestandteilen zu ermöglichen. Darunter sind beispielsweise Änderungen an der 
 Benutzeroberfläche oder die Verwendung einer anderen Datenbank, bzw. hinzukommende Funktionen, die unabhängig von bestehenden Klassen 
 hinzugefügt werden können. Durch das \acs{MVVM}-Pattern, welches durch die \textit{Android Architecture Components} gefördert wird, ist 
-das Testen von \textit{\acs{UI}}- und \textit{BackEnd}-Elementen unabhängig voneinander begünstigt. 
+das Testen von \textit{\acs{GUI}}- und \textit{BackEnd}-Elementen unabhängig voneinander begünstigt. 
 \\ 
 \linebreak
 Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und sorgen im Allgemeinen 
@@ -125,8 +125,8 @@ große Rubriken, den sogenannten Scan- und Visualisierungs-Phasen, unterteilt. D
 konzeptionellen Architektur des Unterstützungssystems wieder. 
 \\ 
 \textit{Views}, bzw. \textit{Activities} werden mithilfe der von Android zur Verfügung gestellten \textit{AppCompat-Library} erstellt. Die 
-von Android Jetpack vorhandene Bibliothek ViewModel dient als Kommunikationsschnittstelle zwischen der \acs{UI} und dem Repository. 
-Die ebenso von Android Jetpack publizierte LiveData-Bibliothek gilt als Observer zur \acs{UI} und benachrichtigt diese bei Änderungen. Mit 
+von Android Jetpack vorhandene Bibliothek ViewModel dient als Kommunikationsschnittstelle zwischen der \acs{GUI} und dem Repository. 
+Die ebenso von Android Jetpack publizierte LiveData-Bibliothek gilt als Observer zur \acs{GUI} und benachrichtigt diese bei Änderungen. Mit 
 der Repository-Komponente zwischen ViewModel und Datenbank, bzw. Model wird eine reine und neu generierte \acs{API}-Schnittstelle erstellt, 
 welche der Benutzeroberfläche Aufrufe für Datenbankzugriffe zur Verfügung stellt. Die Room-Bibliothek stellt ein Zugriffs-Layer da, welches 
 die Datenbankzugriffe kapselt und steht gleichzeitig als Model bereit. Dort werden Entities, in der für die Datenbank vorgesehene 
