@@ -55,7 +55,8 @@ Emulator\footnote{Ein System, das ein anderes in speziellen Teilbereichen nachbi
 durchgeführt werden, deshalb wurde zum Testen der Anwendung ein Smartphone benutzt. Dieses musste zu Anfang unter den vorbereitenden Maßnahmen des 
 Projekts organisiert werden.
 \\ 
-Nachdem nun alle Vorbereitungen abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
+\linebreak
+Nachdem alle Vorbereitungen abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
 
 \subsection{Startmenü}
 Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen zwischen Anwedner 
@@ -80,8 +81,8 @@ die Applikation nicht starten, bzw. verweigert den Zugriff auf die Kamera, worau
     \caption{Start der Applikation}
     \label{pic:camera_perm}
 \end{figure}
-\pagebreak
 \\ 
+\linebreak
 Da speziell das Assistenzsystem auf die Hardware gegebene Komponente, die im Smart-Device integrierte Kamera, zugreift, zählt diese zu den nativen Applikationen. 
 Darunter sind Anwendungen adressiert, die ausdrücklich für das Betriebssystem des Endgeräts konzipiert sind oder zum Beispiel auf die vom Endgerät vorhandenen Komponenten, 
 zum Beispiel auf die Bild-Mediathek, Datei-Strukturen oder die oben bereits erwähnte Kamera Komponente, zugreifen.
@@ -94,7 +95,9 @@ Die Button adressieren jeweils die nachfolgende, zugehörige Funktion. Zum einen
 zur Scan-Phase bei Betätigung des lilafarbenen Buttons und zum anderen zur Visualisierungs-Phase bei Bedienung des gelbfarbenen Buttons. In der Gesamtheit is das Layout 
 ist an den Farben des Firmen-Logos angelehnt und bildet einen ruhigen und harmonischen Einstieg in das Programm. 
 \\ 
+\linebreak
 Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter folgende Punkte: 
+\pagebreak
 \begin{itemize}
     \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
     \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen der Funktion, bzw. Anwendung.
@@ -129,7 +132,7 @@ Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase,
 
 \subsection{Scan-Phase} %Umgebungserkennung /
 Bei der Implementierung der Scan-Phase kam es zu den ersten praktischen Berührpunkten mit der Google ARCore \acs{API}. Diese wurde zu Beginn studiert, 
-um einen Überblick zu erlangen, wie die Struktur dieser Schnittstelle aufgebaut ist. Dadurch konnten Methoden und Funktionen analysiert werden, um im 
+um einen Überblick, wie die Struktur dieser Schnittstelle aufgebaut ist, zu erlangen. Dadurch konnten Methoden und Funktionen analysiert werden, um im 
 weiteren Verlauf der Entwicklung damit arbeiten zu können.
 \subsubsection{FrontEnd}
 \begin{figure}[hbt!]
@@ -143,6 +146,12 @@ weiteren Verlauf der Entwicklung damit arbeiten zu können.
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}
     \caption{Scan-Phase der Applikation}
     \label{pic:scan}
+\end{figure}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/objekt_info.jpg}
+    \caption{Erstellen eines neuen Objekts}
+    \label{pic:createObject}
 \end{figure}
 \subsubsection{BackEnd}
 \begin{figure}[hbt!]
