@@ -170,25 +170,55 @@ zur Topdown-Leiste dient. Am unteren Ende des Bildes befindet sich eine \textit{
 der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. Prinzipiell ist diese Gallery um 
 beliebig viele Objekte erweiterbar. Diese Erweiterung erfolgt allerdings nicht dynamisch, sondern muss über manuelles Einfügen im Code stattfinden. 
 \\
-Wird während der laufenden Anwendung ein Objekt über dessen Button erstellt, wird der Nutzer unverzüglich auf eine weitere Seite geleitet, um 
-parallel zur Renderung des Objekts Informationen darüber der Datenbank hinzufügen zu können. Auf dieses Layout wird in weiterem Verlauf der 
+Wird während der laufenden Anwendung ein Objekt über dessen Button erstellt, wird der Nutzer unverzüglich auf eine weitere Seite (\ref{pic:createObject}) 
+geleitet, um parallel zur Renderung des Objekts Informationen darüber der Datenbank hinzufügen zu können. Auf dieses Layout wird in weiterem Verlauf der 
 Ausarbeitung noch eingegangen. Vorwegzunehmen ist, dass die Informationen mit den Daten der virtuellen Position in der Datenbank persistiert werden.
 \\ 
 \linebreak 
+%Damit der Scan-Vorgang gestartet wird
+Bevor der Scan-Vorgang startet, wird inmitten des Fragments ein Overlay angezeigt, welches eine Geste, bzw. Bewegung vorgibt. Imitiert der Nutzer 
+diese Bewegung wird der Scan-Prozess anlaufen.
+\\ 
+\linebreak
 Um weiterhin auf der Seite navigieren zu können, gibt es im rechten unteren Eck einen weiteren Button, welcher ebenso der Abbildung (\ref{pic:scan}) 
 zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zurück, zum Startmenü und beendet die Scan-Phase. 
+\\ 
+\linebreak
+Damit der Nutzer über die in der Datenbank gespeicherten Informationen mehr Möglichkeiten besitzt, gibt es im linken oberen Eck der \acs{UI} eine zusätzliche 
+Schaltfläche mit einem roten Kreuz versehen. Dadurch hat der Nutzer die Möglichkeit alle vorhandenen, in der Datenbank persistierten Informationen zu 
+löschen und den Scan-Vorgang erneut von ursprünglicher Ausgangssituation zu beginnen.  
+\\ 
+Mit dieser Funktion verfügt der Nutzer über mehr Entscheidungsmöglichkeiten, bevor die Applikation komplett gelöscht und neu aufgespielt werden muss.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}
     \caption{Scan-Phase der Applikation}
     \label{pic:scan}
 \end{figure}
+\\ 
+\linebreak
+Zu dem Zeitpunkt, wenn der Anwender ein Objekt erstellen und zusätzliche Informationen hinzufügen möchte, wird darauffolgend eine weitere \acs{UI} 
+angezeigt. Bei dieser Ansicht ist vorgesehen, dass der Nutzer die zu dem erstellen Objekt dazugehörigen Informationen einträgt, sodass diese anschließend 
+in die Datenbank eingetragen werden können. Die Benutzeroberfläche verfügt über mehrere Text-Eingabefelder, die ein Großteil der Daten des Datenmodells 
+abdecken. In Abbildung (\ref{pic:createObject}) sind diese Felder zusehen, dabei werden Informationen über den Objektnamen, -bauhjahr, -größe, sowie 
+-status von der Person die das Assistenzsystem nutzt gefordert. 
+\\ 
+Im Hintergrund, dazu im Backend mehr, werden ebenso die Daten der Position und Drehung des 
+Objekts bereitgestellt. Über die Betätigung des \textit{„save“}-Buttons werden die Informationen lokal gespeichert und für die Eintragung in die Datenbank 
+vorgemerkt. Nachdem der Button betätigt wurde, wird der Anwender auf die Oberfläche der Scan-Phase weitergeleitet, um bei Bedarf weitere Objekte zu 
+erstellen.  
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/objekt_info.jpg}
     \caption{Erstellen eines neuen Objekts}
     \label{pic:createObject}
 \end{figure}
+\pagebreak
+\\ 
+%\linebreak
+Nachdem der Abschnitt der Frontend-Entwicklung vollends dargelegt wurde, geht es mit den Funktionen im Backend weiter. Darüber hinaus werden in diesem Abschnitt 
+auch die Lösungsansätze, sowie aufgetretene Probleme und deren Behebung genauestens aufgeführt und geschildert. Damit der Nutzer mit der aufgetretenen 
+Problematik vertraut wird und die Entscheidungen und Lösungsfindungen nachvollziehen kann. 
 \subsubsection{BackEnd}
 \begin{figure}[hbt!]
     \centering
@@ -198,6 +228,8 @@ zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zur�
 \end{figure}
 
 \subsection{Visualisierungs-Phase} 
+Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
+deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden.   
 \subsubsection{FrontEnd}
 \begin{figure}[hbt!]
     \centering
