@@ -1,0 +1,50 @@
+\subsubsection{BackEnd}
+Mit Beginn der Backend-Entwicklung wurden in erster Linie die Grundstrukturen implementiert, um der \textit{MVVM}-Architektur gerecht zu werden. Dabei lag 
+der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
+erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeiner Aufbau, 
+dieser bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
+erstellt, welches die Zugriffe der Datenbankobjekte managed. Abschließend im Bereich der Datenbank ein Room-Layer, um die eigentliche Datenbank zu 
+instanziieren. 
+\\ 
+Zur Modularisierung und zur Generierung einer Schnittstelle für den Bezug zu mehreren Datenbeziehungspunkten wurde ein Repository erstellt, das eine saubere 
+\acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zur Persistierung der Daten mit der 
+eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
+\\ 
+\linebreak 
+Nach Aufzählung der einzelnen Bestandteile wird auf diese nun genauer eingegangen. 
+\\ 
+\linebreak
+In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objket erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
+deren beinhalteten Variablen deklariert. So wird, dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) zu entnehmen, eine Klasse in eine Entity und somit in eine 
+Datenbank-Tabelle konvertiert. In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die mit Annotationen versehen sind. Damit werden diese 
+gemäß der Anforderungen des Konzepts definiert. Diese Variablen repräsentieren die Attribute des Datenbankschematas und stellen die einzelnen Informations- , bzw. 
+-Datenbankspalten dar. Zur Veranschaulichung, die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte und ebenso als 
+Primärschlüssel\footnote{Einmaliger und eindeutiger Wert einer Tabelle, bzw. eines Attributs, um dieses eindeutig zu kennzeichnen.}-Variable deklariert.
+\begin{lstlisting}[language=C,
+    frame=single,           % Ein Rahmen um den Code
+    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    style=algoBericht,
+    label={code:entity},
+    captionpos=b,           % Caption unter den Code setzen
+caption={Entity Code zur Initialisierung der Objekte}]
+@Entity(tableName = "object_table")
+public class Object {
+
+    @ColumnInfo(name = "id")
+    @NonNull
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    public int getId() { return this.id; }
+    public void setId(int id) { this.id = id; }
+
+    ... 
+}
+\end{lstlisting}
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
+    \caption{Marker zur Erkennung der Ausgangsposition}
+    \label{pic:initialMarker}
+\end{figure}

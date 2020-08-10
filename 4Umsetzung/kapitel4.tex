@@ -128,7 +128,7 @@ Demnach beinhaltet diese Funktion wenig Logik, bis auf die Abfrage der \textit{�
 jeweils auf die von ihm gewählte Funktion weiterleitet. Sozusagen eine simple Navigation.
 \\ 
 \linebreak
-Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase, der ersten Kernfunktion des Assistenzsystems.  
+Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase, der ersten Kernfunktion des Assistenzsystems.
 
 \subsection{Scan-Phase} %Umgebungserkennung /
 Bei der Implementierung der Scan-Phase kam es zu den ersten praktischen Berührpunkten mit der Google ARCore \acs{API}. Diese wurde zu Beginn studiert, 
@@ -220,55 +220,3 @@ erstellen.
 Nachdem der Abschnitt der Frontend-Entwicklung vollends dargelegt wurde, geht es mit den Funktionen im Backend weiter. Darüber hinaus werden in diesem 
 Abschnitt auch die Lösungsansätze, sowie aufgetretene Probleme und deren Behebung genauestens aufgeführt und geschildert. Damit der Nutzer mit der 
 aufgetretenen Problematik vertraut wird und die Entscheidungen und Lösungsfindungen nachvollziehen kann. 
-\subsubsection{BackEnd}
-Mit Beginn der Backend-Entwicklung wurden in erster Linie die Grundstrukturen implementiert, um der \textit{MVVM}-Architektur gerecht zu werden. Dabei lag 
-der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
-erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeiner Aufbau, 
-dieser bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
-erstellt, welches die Zugriffe der Datenbankobjekte managed. Abschließend im Bereich der Datenbank ein Room-Layer, um die eigentliche Datenbank zu 
-instanziieren. 
-\\ 
-Zur Modularisierung und zur Generierung einer Schnittstelle für den Bezug zu mehreren Datenbeziehungspunkten wurde ein Repository erstellt, das eine saubere 
-\acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zur Persistierung der Daten mit der 
-eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
-\\ 
-\linebreak 
-Nach Aufführung der Teile wird auf diese nun genauer eingegangen. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
-    \caption{Marker zur Erkennung der Ausgangsposition}
-    \label{pic:initialMarker}
-\end{figure}
-
-\subsection{Visualisierungs-Phase} 
-Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
-deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
-Frontend-Entwicklung der Visualisierungs-Phase gibt einen Einblick auf die Oberfläche dieser Phase und wie diese aufgebaut ist. Dadurch sind die 
-zugrundeliegenden Informationen veranschaulicht, welche für die nachstehende Backend-Implementierung von Relevanz ist.   
-\subsubsection{FrontEnd}
-Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
-deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
-die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
-\\ 
-Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment, welches das Livebild der Kamera repräsentiert, das 
-sich über den ganzen Bildschirm erstreckt. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Des Weiteren befinden 
-sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen und zum anderen, um die Objekte von der Datenbank 
-abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschrims, wie 
-der Abbildung \ref{pic:visual} zu entnehmen ist. 
-\\ 
-Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer nur eingeschränkt Interaktionen mit der Oberfläche zur 
-Verfügung. Diese belaufen sich lediglich auf die zuvor genannten Buttons und die dynamisch erzeugten Schaltflächen der Objekte, um zu den einzelnen 
-Darbietungen der Objekte mehrere Informationen zu erlangen. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
-    \caption{Visualisierungs-Phase der Applikation}
-    \label{pic:visual}
-\end{figure}
-\\ 
-Nun erfolgt die Beschreibung der Backend-Implementierung und darüber hinaus werden Einblicke in die Programmierung der Visualisierungs-Phase gewährleistet. 
-\subsubsection{BackEnd}
-
-\section{Testdurchlauf / Test-Szenario}
-\label{chap:testdurchlauf}
