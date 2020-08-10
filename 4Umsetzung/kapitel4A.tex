@@ -41,7 +41,40 @@ public class Object {
     ... 
 }
 \end{lstlisting}
+\pagebreak
+Das mit der Entity-klasse kommunizierende Modul ist das \textit{„Data Object“}, welches als Interface angelegt wurde. Das „Object Dao“ verwendet ebenso die Bibliothek 
+„Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um, dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage. 
+\begin{lstlisting}[language=C,
+    frame=single,           % Ein Rahmen um den Code
+    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    style=algoBericht,
+    label={code:query},
+    captionpos=b,           % Caption unter den Code setzen
+caption={SQL-Query zur Abfrage der Objekt-Namen}]
+@Query("SELECT * FROM object_table ORDER BY name")
+LiveData<List<Object>> getObjectName();
+\end{lstlisting}
+Anschließend nachdem die beiden Klassen erstellt waren, wurde der Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
+Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Fall des Assistenzsystems als \textit{„object\_database“} deklariert. 
+\begin{lstlisting}[language=C,
+    frame=single,           % Ein Rahmen um den Code
+    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    style=algoBericht,
+    label={code:dblayer},
+    captionpos=b,           % Caption unter den Code setzen
+caption={Erzeugung des Datenbank-Layers „Room“}]
+@Database(entities = {Object.class}, version = 1, exportSchema = false)
+public abstract class ObjectRoomDatabase extends RoomDatabase {
+    ...
 
+    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+    ObjectRoomDatabase.class, "object_database")
+    .addCallback(sRoomDatabaseCallback)
+    .build();
+
+    ...
+}
+\end{lstlisting}
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
