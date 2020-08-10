@@ -2,7 +2,7 @@
 Mit Beginn der Backend-Entwicklung wurden in erster Linie die Grundstrukturen implementiert, um der \textit{MVVM}-Architektur gerecht zu werden. Dabei lag 
 der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
 erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeiner Aufbau, 
-dieser bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
+diese bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
 erstellt, welches die Zugriffe der Datenbankobjekte managed. Abschließend im Bereich der Datenbank ein Room-Layer, um die eigentliche Datenbank zu 
 instanziieren. 
 \\ 
@@ -14,22 +14,23 @@ eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert
 Nach Aufzählung der einzelnen Bestandteile wird auf diese nun genauer eingegangen. 
 \\ 
 \linebreak
-In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objket erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
+In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objekt erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
 deren beinhalteten Variablen deklariert. So wird, dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) zu entnehmen, eine Klasse in eine Entity und somit in eine 
 Datenbank-Tabelle konvertiert. In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die mit Annotationen versehen sind. Damit werden diese 
 gemäß der Anforderungen des Konzepts definiert. Diese Variablen repräsentieren die Attribute des Datenbankschematas und stellen die einzelnen Informations- , bzw. 
--Datenbankspalten dar. Zur Veranschaulichung, die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte und ebenso als 
+-Datenbankspalten dar. Zur Veranschaulichung die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte und ebenso als 
 Primärschlüssel\footnote{Einmaliger und eindeutiger Wert einer Tabelle, bzw. eines Attributs, um dieses eindeutig zu kennzeichnen.}-Variable deklariert.
+\\ 
+\linebreak
 \begin{lstlisting}[language=C,
-    frame=single,           % Ein Rahmen um den Code
-    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
+    xleftmargin=\parindent,  % Rahmen link von den Zahlen
     style=algoBericht,
     label={code:entity},
     captionpos=b,           % Caption unter den Code setzen
 caption={Entity Code zur Initialisierung der Objekte}]
 @Entity(tableName = "object_table")
 public class Object {
-
     @ColumnInfo(name = "id")
     @NonNull
     @PrimaryKey(autoGenerate = true)
@@ -37,16 +38,17 @@ public class Object {
 
     public int getId() { return this.id; }
     public void setId(int id) { this.id = id; }
-
     ... 
 }
 \end{lstlisting}
 \pagebreak
 Das mit der Entity-klasse kommunizierende Modul ist das \textit{„Data Object“}, welches als Interface angelegt wurde. Das „Object Dao“ verwendet ebenso die Bibliothek 
-„Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um, dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage. 
+„Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um, dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage der vorhandenen Informationen. 
+\\
+\linebreak
 \begin{lstlisting}[language=C,
-    frame=single,           % Ein Rahmen um den Code
-    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
+    xleftmargin=\parindent,  % Rahmen link von den Zahlen
     style=algoBericht,
     label={code:query},
     captionpos=b,           % Caption unter den Code setzen
@@ -54,11 +56,13 @@ caption={SQL-Query zur Abfrage der Objekt-Namen}]
 @Query("SELECT * FROM object_table ORDER BY name")
 LiveData<List<Object>> getObjectName();
 \end{lstlisting}
-Anschließend nachdem die beiden Klassen erstellt waren, wurde der Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
+Anschließend nachdem die beiden Klassen erstellt waren, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
 Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Fall des Assistenzsystems als \textit{„object\_database“} deklariert. 
+\\ 
+\linebreak
 \begin{lstlisting}[language=C,
-    frame=single,           % Ein Rahmen um den Code
-    framexleftmargin=-1pt,  % Rahmen link von den Zahlen
+    frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
+    xleftmargin=\parindent,  % Rahmen link von den Zahlen
     style=algoBericht,
     label={code:dblayer},
     captionpos=b,           % Caption unter den Code setzen
@@ -66,12 +70,10 @@ caption={Erzeugung des Datenbank-Layers „Room“}]
 @Database(entities = {Object.class}, version = 1, exportSchema = false)
 public abstract class ObjectRoomDatabase extends RoomDatabase {
     ...
-
     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
     ObjectRoomDatabase.class, "object_database")
     .addCallback(sRoomDatabaseCallback)
     .build();
-
     ...
 }
 \end{lstlisting}
@@ -79,6 +81,14 @@ Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwisc
 In dieser Klasse wird eine Liste erstellt, welche den Wert des zu speichernden Objekts besitzt. Diese werden über eine „get“-Funktion aus dem zuvor 
 instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für die Präsentation der Informationen auf der 
 Nutzeroberfläche verwendet. 
+\\ 
+\linebreak
+Ursprünglich war die Implementierung der eigentlichen Scan-Phase unter Beachtung der ARCore-\acs{API} einfach angedacht, die sich im Laufe der Entwicklung 
+allerdings als nicht so praktikabel herauskristallisierte. Diese aufgetretene Problemstellung wird in weiterem Verlauf präzisiert, nachdem der eigentliche 
+Verlauf geschildert wurde. 
+\\ 
+\linebreak
+Test 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
