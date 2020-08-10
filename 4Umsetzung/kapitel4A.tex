@@ -75,6 +75,10 @@ public abstract class ObjectRoomDatabase extends RoomDatabase {
     ...
 }
 \end{lstlisting}
+Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transfers und der Benutzeroberfläche, das ViewModel. 
+In dieser Klasse wird eine Liste erstellt, welche den Wert des zu speichernden Objekts besitzt. Diese werden über eine „get“-Funktion aus dem zuvor 
+instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für die Präsentation der Informationen auf der 
+Nutzeroberfläche verwendet. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
