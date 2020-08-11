@@ -4,7 +4,7 @@ der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android
 erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeiner Aufbau, 
 dieser bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
 erstellt, welches die Zugriffe der Datenbankobjekte managed. Abschließend im Bereich der Datenbank ein Room-Layer, um die eigentliche Datenbank zu 
-instanziieren und eine Zugriffsschicht auf die diese zu implementieren. 
+instanziieren und eine Zugriffsschicht auf diese zu implementieren. 
 \\ 
 Zur Modularisierung und zur Generierung einer Schnittstelle für den Bezug zu mehreren Datenbeziehungspunkten wurde ein Repository erstellt, das eine saubere 
 \acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zur Persistierung der Daten mit der 
@@ -134,7 +134,7 @@ Beim setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms 
 diese Position berechnet, ist durch Hilfe des \acs{SLAM} Verfahrens die genaue virtuelle Position zu ermitteln und anhand dieser ist das Objekt 
 zu platzieren. 
 \\ 
-Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ ein Objekt angeklickt.
+Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ ein Objekt anklickt.
 Über die der Sceneform-\acs{API} zur Verfügung gestellte Methode („ModelRenderable“) wird das Objekt erstellt und als „Anchor“ auf die berechnete Position 
 gesetzt. Ein Anchor ist die fixe Position des Objekts, an dem dies platziert wird und so lange dort vorhanden bleibt, bis die Applikation beendet wird. Die Datei 
 die als dreidimensionales asset genereirt werden soll, wird über die „uri“-Variable übergeben. 
@@ -163,7 +163,7 @@ Kamerahaltung berechnet wird.
 \\ 
 \linebreak
 Ursprünglich war geplant, die generierte Session sowie die darin erstellten Objekte in der Datenbank abzuspeichern, um diese bei erneutem Aufruf der 
-Scan-Phase, bzw. bei Anwendung der Visualisierungs-Phase zu laden und innerhalb der Session wieder anzeigen zu lassen. Da die Datenbank nur gewisse Datentypen 
+Scan-Phase, bzw. bei Anwendung der Visualisierungs-Phase zu laden und innerhalb dieser Session wieder anzeigen zu lassen. Da die Datenbank nur gewisse Datentypen 
 zulässt, war das erste auftretende Problem die Speicherung der Session als Objekt, welches zunächst in eine „BLOB“-Datei konvertiert wurde, um diese speichern 
 zu können. Eine „BLOB“-Datei ist ein Binary Large Object, welches anhand der Binärcodierung abgespeichert wird. Dabei kann es sich unter anderm um große 
 Bild- oder Audio-Dateien handeln, auch können so anderweitig große Dateien gespeichert werden. Mit dieser Umsetzung tat sich auch schon das nächste Problem auf, 
@@ -176,15 +176,15 @@ würde sich die ursprüngliche Ausgangsposition der Applikation verschieben und 
 Ergebnis nicht exakt und könnte keine Anwendung finden, da die Applikation Informationen anzeigen würde, die der Realität nicht entsprechen. 
 \\ 
 Basierend auf dieser Erkenntnis musste umdisponiert und ein neuer Lösungsansatz konzipiert werden. Mit dem Wissen über den aktuellen Stand der ARCore \acs{API} 
-war es die neue Aufgabe eine Lösung zu entwickeln, welche exakt und zuverlässig arbeitet, um keine falschen Informationen wiederzugeben. 
+war es die neue Aufgabe eine Lösung zu entwickeln, welche exakt und zuverlässig arbeitet, um Informationen nicht inkorrekt zu interpretieren. 
 \\ 
 Dieser Ansatz wird nun erläutert.
 \\ 
 \linebreak
-Die Idee war es, einen Fixpunkt zu erstellen, welcher dazu diente einen immer gleichbleibenden Startpunkt zu setzen. Dadurch gäbe es keine Unterschiede des 
-Ausgangspunktes mehr und der Nutzer könnte trotz seiner aktuellen Position starten. Dazu müsste er beim Start der Applikation an den Ursprungspunkt kehren, 
-um daraufhin die Funktion starten zu können. Für diesen Ansatz wurde ein Marker gewählt (siehe Abbildung \ref{pic:initialMarker}) der vor dem ersten Gebrauch 
-der Software an einer Position angebracht wird und an dieser bleibt. 
+Die Idee war es, einen Fixpunkt zu erstellen, welcher dazu diente einen immer gleichbleibenden Startpunkt vorzugeben. Dadurch gäbe es keine Unterschiede des 
+Ausgangspunktes mehr und der Nutzer könnte trotz seiner aktuellen Position starten. Dazu muss er beim Start der Applikation an den Ursprungspunkt kehren, 
+um daraufhin die Funktion zu starten. Für diesen Ansatz wurde ein Marker gewählt (siehe Abbildung \ref{pic:initialMarker}), der vor dem ersten Gebrauch 
+der Software an einer Position angebracht wird und an dieser dauerhaft bestehen bleibt. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
@@ -192,17 +192,57 @@ der Software an einer Position angebracht wird und an dieser bleibt.
     \label{pic:initialMarker}
 \end{figure}
 \\
-Um diesen Ansatz umsetzen zu können, musste eine weitere Funktion zur Applikation hinzugefügt werden (siehe Abbildung \ref{pic:image_tracking} 
-in Scan-Phase \ref{chap:scan_implementation} Frontend), damit ein Marker verfolgt werden kann. Wird dieser Marker erkennt folgt die eigentliche Scan-Phase 
-die daraufhin bei der Objektplatzierung und Datenspeicherung ebenso umgewandelt wurde. 
-%--> Ablauf nach Markererkennung inkl. Berechnung und speicherung der Positionsdaten.
+Um diesen Ansatz umsetzen zu können, war es notwendig eine weitere Funktion zur Applikation hinzuzufügen (siehe Abbildung \ref{pic:image_tracking} 
+in Scan-Phase \ref{chap:scan_implementation} Frontend), damit ein Marker verfolgt werden kann. Wird dieser Marker erkannt, folgt die eigentliche Scan-Phase, 
+die nach der Umkonzeptionierung sowohl bei der Objektplatzierung als auch bei der Datenspeicherung ebenso überarbeitet wurde. 
+\\ 
+\linebreak
+Angenommen der Nutzer starten die Applikation an einer beliebigen Position im Raum und platziert Objekte an von ihm vorgesehenen Stellen, dann wurden die 
+Objekte erstellt, aber keinerlei Anhaltspunkte geschaffen, um bei nachzutragenden Objekten die gleichen Voraussetzungen zu erfüllen. Daher wird bei der Scan-Phase 
+die Methode zur Markererkennung eingebaut, um einen initialen Fixpunkt zu erstellen. Dadurch ist es gewährleistet, ausgehend von diesem Punkt erneut Objekte zu 
+platzieren, egal wo im Raum die Applikation gestartet wurde. Da die Objekte immer zu so erstellt werden, dass sie abhängig zur Position des Fixpunktes gespeichert 
+und angezeigt werden. Dies bedeutet, die Objekte sind immer eine Referenz zu dem initialen Marker. Auch wenn ein Objekt nachträglich hinzugefügt werden soll, ist 
+es lediglich vom Nutzer erforderlich den Marker einzuscannen und danach an die gewünschte Position, an der das Objekt platziert werden soll, zu laufen und das 
+Objekt erstellen. Demnach wird auch beim Schreibbefehl, in die Datenbank, lediglich die Differenz, bzw. der Abstand zu dem initialen Marker gespeichert, um immerzu 
+diese Position als Ursprungspunkt zu nehmen. Die Berechnung der Distanz zwischen Objekt und Ursprungsmarker erfolgt durch eine präzise Subtraktion, bei der 
+lediglich die Ursprungskoordinaten von den aktuellen Positionskoordinaten subtrahiert werden. Dieser Vorgang ist dem folgenden Code-Beispiel (\ref{chap:AAC}) zu 
+entnehmen. Dabei wird das aktuelle Objekt „object“ und das initiale Objekt „initialObject“ als Parameter übergeben, die sogenannte „call by Reference“, um die 
+Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen zwischengespeichert und zum Schluss in eine neue Position „Pose“ mit Position und 
+Rotation, von der Berechnung durch Quaternionen, ermittelt. Der Rückgabewerte diese Funktion ist demnach eine „Pose“, die nach Aufruf der Methode übergeben 
+und so in der Datenbank hinterlegt wird. Mit dem Resultat ist demnach die Position und Rotation des einzelnen Objekts gegeben und kann in der Visualisierungs-Phase 
+verwendet werden.
+\begin{lstlisting}[language=C,
+    frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
+    xleftmargin=\parindent,  % Rahmen link von den Zahlen
+    style=algoBericht,
+    label={code:differencetoinitial},
+    captionpos=b,           % Caption unter den Code setzen
+caption={Berechnung der Distanz zwischen Marker und Ursprungspunkt}]
+public Pose returnValueFromPosition(Object object, Object initialObject){
+    float tX = object.getTx() - initialObject.getTx();
+    float tY = object.getTy() - initialObject.getTy();
+    float tZ = object.getTz() - initialObject.getTz();
 
-Ausgehend von dem Marker wird dann die Funktion zur Verfolgung des Markers gestartet
+    float qX = object.getQx() - initialObject.getQx();
+    float qY = object.getQy() - initialObject.getQy();
+    float qZ = object.getQz() - initialObject.getQz();
+    float qW = object.getQw() - initialObject.getQw();
 
+    float[] rotation = {qX,qY,qZ,qW};
+    float[] translation = {tX,tY,tZ};
+
+    return new Pose(translation, rotation);
+}
+\end{lstlisting}
+Zur Veranschaulichung der zuvor beschriebenen Methodik dient die Abbildung (\ref{pic:differenztoinitial}). Durch diese Skizze wird nochmals verdeutlicht, dass 
+sich alles in einem erstellten Koordinatensystem abspielt und lediglich die Distanz der einzelnen Objekte zum Marker berechnet und in der Datenbank persistiert 
+werden.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=15cm,keepaspectratio]{4Umsetzung/Bilder/difcalc.jpeg}
+    \includegraphics[width=14cm,height=14cm,keepaspectratio]{4Umsetzung/Bilder/difcalc.jpeg}
     \caption{Positionsberechnung zum Ursprungsmarker}
     \label{pic:differenztoinitial}
 \end{figure}
-
+\\ 
+Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
+die Frontend als auch die Backend Aspekte aufgezeigt. 
