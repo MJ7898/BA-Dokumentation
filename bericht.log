@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  10 AUG 2020 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  11 AUG 2020 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1483,7 +1483,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--209
  []
 
 [12]
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=550, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=556, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
 Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 236.
@@ -1499,17 +1499,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--241
                                                   \fi \fi 
 l.241 \subsection
                  *{Smart-Brillen AR} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg>]
-<2Grundlagen/Bilder/smartglassAW.png, id=558, 607.77063pt x 612.78937pt>
+<2Grundlagen/Bilder/smartglassAW.png, id=564, 607.77063pt x 612.78937pt>
 File: 2Grundlagen/Bilder/smartglassAW.png Graphic file (type png)
 <use 2Grundlagen/Bilder/smartglassAW.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/smartglassAW.png  used on input line 257.
 (pdftex.def)             Requested size: 211.64714pt x 213.39484pt.
-<2Grundlagen/Bilder/googleglass.png, id=562, 635.37375pt x 315.67938pt>
+<2Grundlagen/Bilder/googleglass.png, id=568, 635.37375pt x 315.67938pt>
 File: 2Grundlagen/Bilder/googleglass.png Graphic file (type png)
 <use 2Grundlagen/Bilder/googleglass.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/googleglass.png  used on input line 272.
 (pdftex.def)             Requested size: 213.39687pt x 106.02419pt.
-<2Grundlagen/Bilder/hololensside.png, id=563, 780.9175pt x 486.31688pt>
+<2Grundlagen/Bilder/hololensside.png, id=569, 780.9175pt x 486.31688pt>
 File: 2Grundlagen/Bilder/hololensside.png Graphic file (type png)
 <use 2Grundlagen/Bilder/hololensside.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/hololensside.png  used on input line 273.
@@ -1540,7 +1540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--281
                                                   \fi \fi 
 l.281 \subsection
                  {Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png>]
-<2Grundlagen/Bilder/bildmarkerAR.png, id=575, 297.11pt x 296.10625pt>
+<2Grundlagen/Bilder/bildmarkerAR.png, id=581, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 297.
@@ -1601,12 +1601,12 @@ Package microtype Info: Character `029' is missing
 Package acronym Info: Label `acro:TOF' newly defined as it shall be overridden
 although it is yet undefined on input line 75.
  [19]
-<2Grundlagen/Bilder/tof_kamera.png, id=648, 624.3325pt x 284.56313pt>
+<2Grundlagen/Bilder/tof_kamera.png, id=654, 624.3325pt x 284.56313pt>
 File: 2Grundlagen/Bilder/tof_kamera.png Graphic file (type png)
 <use 2Grundlagen/Bilder/tof_kamera.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 86.
 (pdftex.def)             Requested size: 369.89629pt x 168.5942pt.
-<2Grundlagen/Bilder/graph_SLAM.png, id=654, 603.25375pt x 429.605pt>
+<2Grundlagen/Bilder/graph_SLAM.png, id=660, 603.25375pt x 429.605pt>
 File: 2Grundlagen/Bilder/graph_SLAM.png Graphic file (type png)
 <use 2Grundlagen/Bilder/graph_SLAM.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/graph_SLAM.png  used on input line 107.
@@ -1657,14 +1657,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--212
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.tex
 Package acronym Info: Label `acro:IMU' newly defined as it shall be overridden
 although it is yet undefined on input line 5.
-<2Grundlagen/Bilder/motionTracking.png, id=707, 851.18pt x 358.84062pt>
+<2Grundlagen/Bilder/motionTracking.png, id=713, 851.18pt x 358.84062pt>
 File: 2Grundlagen/Bilder/motionTracking.png Graphic file (type png)
 <use 2Grundlagen/Bilder/motionTracking.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/motionTracking.png  used on input line 9.
 (pdftex.def)             Requested size: 337.45276pt x 142.2634pt.
 Package acronym Info: Label `acro:MEMS' newly defined as it shall be overridden
 although it is yet undefined on input line 14.
-<2Grundlagen/Bilder/imu-Bsp.png, id=713, 711.15688pt x 534.49687pt>
+<2Grundlagen/Bilder/imu-Bsp.png, id=719, 711.15688pt x 534.49687pt>
 File: 2Grundlagen/Bilder/imu-Bsp.png Graphic file (type png)
 <use 2Grundlagen/Bilder/imu-Bsp.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 27.
@@ -1678,17 +1678,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) h
                                                   \fi \fi 
 l.32 \subsubsection
                    *{Environmental understanding} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png>]
-<2Grundlagen/Bilder/environmentalUnderst.png, id=722, 846.16125pt x 352.81813pt>
+<2Grundlagen/Bilder/environmentalUnderst.png, id=728, 846.16125pt x 352.81813pt>
 File: 2Grundlagen/Bilder/environmentalUnderst.png Graphic file (type png)
 <use 2Grundlagen/Bilder/environmentalUnderst.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/environmentalUnderst.png  used on input line 39.
 (pdftex.def)             Requested size: 341.1828pt x 142.26068pt.
-<2Grundlagen/Bilder/lightEstim.png, id=725, 849.1725pt x 357.335pt>
+<2Grundlagen/Bilder/lightEstim.png, id=731, 849.1725pt x 357.335pt>
 File: 2Grundlagen/Bilder/lightEstim.png Graphic file (type png)
 <use 2Grundlagen/Bilder/lightEstim.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/lightEstim.png  used on input line 50.
 (pdftex.def)             Requested size: 338.06923pt x 142.2608pt.
-<2Grundlagen/Bilder/androidjetpackcomps.png, id=736, 589.70313pt x 297.11pt>
+<2Grundlagen/Bilder/androidjetpackcomps.png, id=742, 589.70313pt x 297.11pt>
 File: 2Grundlagen/Bilder/androidjetpackcomps.png Graphic file (type png)
 <use 2Grundlagen/Bilder/androidjetpackcomps.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/androidjetpackcomps.png  used on input line 73.
@@ -1728,7 +1728,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--105
 
  []
 
-<2Grundlagen/Bilder/roomArchitecture.png, id=765, 595.22375pt x 539.51563pt>
+<2Grundlagen/Bilder/roomArchitecture.png, id=771, 595.22375pt x 539.51563pt>
 File: 2Grundlagen/Bilder/roomArchitecture.png Graphic file (type png)
 <use 2Grundlagen/Bilder/roomArchitecture.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 113.
@@ -1746,7 +1746,7 @@ l.123
        </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png>]
 Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
 although it is yet undefined on input line 133.
-<2Grundlagen/Bilder/viewModelDiagram.png, id=781, 482.30188pt x 302.12875pt>
+<2Grundlagen/Bilder/viewModelDiagram.png, id=787, 482.30188pt x 302.12875pt>
 File: 2Grundlagen/Bilder/viewModelDiagram.png Graphic file (type png)
 <use 2Grundlagen/Bilder/viewModelDiagram.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 140.
@@ -1789,7 +1789,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-<2GrundlagenX/Bilder/MVCArchitecture.png, id=812, 630.355pt x 355.3275pt>
+<2GrundlagenX/Bilder/MVCArchitecture.png, id=818, 630.355pt x 355.3275pt>
 File: 2GrundlagenX/Bilder/MVCArchitecture.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/MVCArchitecture.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/MVCArchitecture.png  used on input line 43.
@@ -1815,7 +1815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--63
 
 
 ]
-<2GrundlagenX/Bilder/mvvmDiagramm.png, id=832, 460.21938pt x 320.19624pt>
+<2GrundlagenX/Bilder/mvvmDiagramm.png, id=838, 460.21938pt x 320.19624pt>
 File: 2GrundlagenX/Bilder/mvvmDiagramm.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/mvvmDiagramm.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 111.
@@ -1851,7 +1851,7 @@ l.131 \begin{itemize}
                                                   \fi \fi 
 l.131 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
-<2GrundlagenX/Bilder/infoflussMVVM.png, id=849, 647.41875pt x 126.97438pt>
+<2GrundlagenX/Bilder/infoflussMVVM.png, id=855, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 143.
@@ -1861,27 +1861,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--150
 
  []
 
-<2GrundlagenX/Bilder/activityComp.png, id=854, 201.25188pt x 78.79437pt>
+<2GrundlagenX/Bilder/activityComp.png, id=860, 201.25188pt x 78.79437pt>
 File: 2GrundlagenX/Bilder/activityComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/activityComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 167.
 (pdftex.def)             Requested size: 142.26337pt x 55.69911pt.
-<2GrundlagenX/Bilder/viewModelComp.png, id=857, 288.57813pt x 90.3375pt>
+<2GrundlagenX/Bilder/viewModelComp.png, id=863, 288.57813pt x 90.3375pt>
 File: 2GrundlagenX/Bilder/viewModelComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/viewModelComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 176.
 (pdftex.def)             Requested size: 142.26756pt x 44.53592pt.
-<2GrundlagenX/Bilder/repoComp.png, id=862, 231.86626pt x 60.225pt>
+<2GrundlagenX/Bilder/repoComp.png, id=868, 231.86626pt x 60.225pt>
 File: 2GrundlagenX/Bilder/repoComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/repoComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 188.
 (pdftex.def)             Requested size: 142.26608pt x 36.95221pt.
-<2GrundlagenX/Bilder/roomComp.png, id=865, 239.39438pt x 214.30063pt>
+<2GrundlagenX/Bilder/roomComp.png, id=871, 239.39438pt x 214.30063pt>
 File: 2GrundlagenX/Bilder/roomComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/roomComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 200.
 (pdftex.def)             Requested size: 142.26425pt x 127.35185pt.
-<2GrundlagenX/Bilder/aac.png, id=870, 660.96938pt x 588.69937pt>
+<2GrundlagenX/Bilder/aac.png, id=876, 660.96938pt x 588.69937pt>
 File: 2GrundlagenX/Bilder/aac.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/aac.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 217.
@@ -1986,7 +1986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--93
  []
 
 [39]
-<3Konzeption/Bilder/architektur_konzept.png, id=937, 471.26062pt x 417.05812pt>
+<3Konzeption/Bilder/architektur_konzept.png, id=943, 471.26062pt x 417.05812pt>
 File: 3Konzeption/Bilder/architektur_konzept.png Graphic file (type png)
 <use 3Konzeption/Bilder/architektur_konzept.png>
 Package pdftex.def Info: 3Konzeption/Bilder/architektur_konzept.png  used on input line 137.
@@ -2017,7 +2017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--180
                                                   \fi \fi 
 l.180 
        </Users/mj/BA-Dokumentation/3Konzeption/Bilder/architektur_konzept.png>]
-<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=964, 554.07pt x 340.27126pt>
+<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=970, 554.07pt x 340.27126pt>
 File: 3Konzeption/Bilder/Anwendungsfalldiagramm.png Graphic file (type png)
 <use 3Konzeption/Bilder/Anwendungsfalldiagramm.png>
 Package pdftex.def Info: 3Konzeption/Bilder/Anwendungsfalldiagramm.png  used on input line 207.
@@ -2038,7 +2038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--267
  []
 
 [45]
-<3Konzeption/Bilder/ERM_BA.png, id=997, 661.47125pt x 447.6725pt>
+<3Konzeption/Bilder/ERM_BA.png, id=1003, 661.47125pt x 447.6725pt>
 File: 3Konzeption/Bilder/ERM_BA.png Graphic file (type png)
 <use 3Konzeption/Bilder/ERM_BA.png>
 Package pdftex.def Info: 3Konzeption/Bilder/ERM_BA.png  used on input line 292.
@@ -2090,7 +2090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--60
 
 
 ]
-<4Umsetzung/Bilder/camera_permission.jpg, id=1018, 1084.05pt x 2131.965pt>
+<4Umsetzung/Bilder/camera_permission.jpg, id=1024, 1084.05pt x 2131.965pt>
 File: 4Umsetzung/Bilder/camera_permission.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/camera_permission.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 80.
@@ -2118,7 +2118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--101
                                                   \fi \fi 
 l.101 \begin{itemize}
                       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg>]
-<4Umsetzung/Bilder/startmenu.jpg, id=1031, 1083.04625pt x 1840.8775pt>
+<4Umsetzung/Bilder/startmenu.jpg, id=1038, 1083.04625pt x 1840.8775pt>
 File: 4Umsetzung/Bilder/startmenu.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/startmenu.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 109.
@@ -2144,17 +2144,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--132
                                                   \fi \fi 
 l.132 
        </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg>]
-<4Umsetzung/Bilder/image_tracking.jpg, id=1042, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/image_tracking.jpg, id=1048, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/image_tracking.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/image_tracking.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 156.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/scan-phase.jpg, id=1049, 1084.05pt x 2267.47125pt>
+<4Umsetzung/Bilder/scan-phase.jpg, id=1055, 1084.05pt x 2267.47125pt>
 File: 4Umsetzung/Bilder/scan-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 195.
 (pdftex.def)             Requested size: 102.00989pt x 213.37068pt.
-<4Umsetzung/Bilder/objekt_info.jpg, id=1052, 1084.05pt x 2135.98pt>
+<4Umsetzung/Bilder/objekt_info.jpg, id=1058, 1084.05pt x 2135.98pt>
 File: 4Umsetzung/Bilder/objekt_info.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/objekt_info.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/objekt_info.jpg  used on input line 213.
@@ -2212,27 +2212,27 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2--31
+Underfull \hbox (badness 10000) in paragraph at lines 2--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--31
+Underfull \hbox (badness 10000) in paragraph at lines 2--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--31
+Underfull \hbox (badness 10000) in paragraph at lines 2--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--31
+Underfull \hbox (badness 10000) in paragraph at lines 2--32
 
  []
 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 31.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 31.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 32.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 32.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2244,48 +2244,80 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 45--55
+Underfull \hbox (badness 10000) in paragraph at lines 46--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--55
+Underfull \hbox (badness 10000) in paragraph at lines 46--56
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 56.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 57.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 57.
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 56.
+(Font)              for symbol `textasteriskcentered' on input line 57.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--69
+Underfull \hbox (badness 10000) in paragraph at lines 60--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--69
+Underfull \hbox (badness 10000) in paragraph at lines 90--111
 
  []
 
-<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1096, 370.38374pt x 261.97874pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--111
+
+ []
+
+[57]
+<4Umsetzung/Bilder/koordin.jpeg, id=1128, 766.865pt x 576.1525pt>
+File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
+<use 4Umsetzung/Bilder/koordin.jpeg>
+Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 128.
+(pdftex.def)             Requested size: 284.53131pt x 213.77089pt.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.147 caption={ModelRenderable Builder}]
+                                         </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 151.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 151.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--184
+
+ []
+
+[59]
+<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1157, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 94.
+Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 189.
 (pdftex.def)             Requested size: 142.2619pt x 100.62427pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 80--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--173
-
- []
-
-[57] [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+) [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2294,35 +2326,35 @@ l.173 \include{4Umsetzung/kapitel4A}
 \openout2 = `4Umsetzung/kapitel4X.aux'.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4X.tex
-<4Umsetzung/Bilder/visual-phase.jpg, id=1125, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/visual-phase.jpg, id=1169, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/visual-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/visual-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 23.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
- [59
+ [61
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.29 \subsubsection
-                   {BackEnd} </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]) [60]
+                   {BackEnd} </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]) [62]
 \openout2 = `5Fazit/fazit.aux'.
 
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
-[61
+[63
 
 
 
 ]
 Kapitel 6.
-[62
+[64
 
 ]
 Kapitel 7.
-) [63
+) [65
 
 ] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 203.
@@ -2333,7 +2365,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [64
+ [66
 
 
 ]
@@ -2341,7 +2373,7 @@ Overfull \hbox (19.14507pt too wide) in paragraph at lines 206--206
 [][]\T1/lmr/m/sc/10.95 (-20) Elgan\T1/lmr/m/n/10.95 (-20) , Mi-ke [2016]. \T1/lmr/m/it/10.95 (-20) How Goo-gle's Pro-ject Tan-go will change your li-fe\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / www . computerworld .
  []
 
-[65]
+[67]
 Overfull \hbox (96.92467pt too wide) in paragraph at lines 206--206
 [][]\T1/lmr/m/sc/10.95 (-20) Quervel\T1/lmr/m/n/10.95 (-20) , Cé-li-ne [2020]. \T1/lmr/m/it/10.95 (-20) Aug-men-ted Rea-li-ty (AR): De-fi-ni-ti-on, Tech-nik & Po-ten-zi-al\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 =$[]\T1/lmr/m/n/10.95 (-20) https://worldofvr.net/augmented-
  []
@@ -2351,7 +2383,7 @@ Overfull \hbox (16.44861pt too wide) in paragraph at lines 206--206
 [][]\T1/lmr/m/sc/10.95 (-20) Roeing\T1/lmr/m/n/10.95 (-20) , Frank [2019]. \T1/lmr/m/it/10.95 (-20) Da-ten-mo-del-lie-rung\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / de . wikipedia . org / wiki / Datenmodellierung$[]
  []
 
-[66] [67]
+[68] [69]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4A.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4X.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
@@ -2366,18 +2398,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31990 strings out of 492616
- 582884 string characters out of 6129481
- 1144550 words of memory out of 5000000
- 34573 multiletter control sequences out of 15000+600000
- 116642 words of font info for 190 fonts, out of 8000000 for 9000
+ 32075 strings out of 492616
+ 584232 string characters out of 6129481
+ 1144782 words of memory out of 5000000
+ 34634 multiletter control sequences out of 15000+600000
+ 124840 words of font info for 202 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (77 pages, 9644101 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (79 pages, 9721721 bytes).
 PDF statistics:
- 1609 PDF objects out of 1728 (max. 8388607)
- 1423 compressed objects within 15 object streams
- 347 named destinations out of 1000 (max. 500000)
- 36527 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1657 PDF objects out of 1728 (max. 8388607)
+ 1468 compressed objects within 15 object streams
+ 363 named destinations out of 1000 (max. 500000)
+ 39092 words of extra memory for PDF output out of 42996 (max. 10000000)
 
