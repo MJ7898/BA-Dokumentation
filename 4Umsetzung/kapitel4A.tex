@@ -173,21 +173,31 @@ Da eine erzeugte Session nur eine gewissen Zeit verwendet wird, ist diese für d
 des Assistenzsystems alle zuvor erzeugten Objekte zwar auf die dazugehörige Session bestimmt sind, allerdings auf der zugewiesenen Position 
 nicht mehr erreichbar wären. Durch die Unterschiedlichen Startpunkte, die bei wiederholtem Starten der Anwendung erzeugt worden würden, 
 würde sich die ursprüngliche Ausgangsposition der Applikation verschieben und so auch die Objekte an eine fälschliche Position projizieren. Somit wäre das 
-Ergebnis nicht exakt und könnte keine Anwendung finden, da die Anwendung Informationen anzeigen würde, die der Realität nicht entsprechen. 
+Ergebnis nicht exakt und könnte keine Anwendung finden, da die Applikation Informationen anzeigen würde, die der Realität nicht entsprechen. 
 \\ 
 Basierend auf dieser Erkenntnis musste umdisponiert und ein neuer Lösungsansatz konzipiert werden. Mit dem Wissen über den aktuellen Stand der ARCore \acs{API} 
-war es die neue Aufgabe eine Lösung zu entwickeln, welche exakt und zuverlässig arbeitet, um keine falschen Informationen wieder zu geben. 
+war es die neue Aufgabe eine Lösung zu entwickeln, welche exakt und zuverlässig arbeitet, um keine falschen Informationen wiederzugeben. 
 \\ 
 Dieser Ansatz wird nun erläutert.
 \\ 
 \linebreak
-
+Die Idee war es, einen Fixpunkt zu erstellen, welcher dazu diente einen immer gleichbleibenden Startpunkt zu setzen. Dadurch gäbe es keine Unterschiede des 
+Ausgangspunktes mehr und der Nutzer könnte trotz seiner aktuellen Position starten. Dazu müsste er beim Start der Applikation an den Ursprungspunkt kehren, 
+um daraufhin die Funktion starten zu können. Für diesen Ansatz wurde ein Marker gewählt (siehe Abbildung \ref{pic:initialMarker}) der vor dem ersten Gebrauch 
+der Software an einer Position angebracht wird und an dieser bleibt. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
     \caption{Marker zur Erkennung der Ausgangsposition}
     \label{pic:initialMarker}
 \end{figure}
+\\
+Um diesen Ansatz umsetzen zu können, musste eine weitere Funktion zur Applikation hinzugefügt werden (siehe Abbildung \ref{pic:image_tracking} 
+in Scan-Phase \ref{chap:scan_implementation} Frontend), damit ein Marker verfolgt werden kann. Wird dieser Marker erkennt folgt die eigentliche Scan-Phase 
+die daraufhin bei der Objektplatzierung und Datenspeicherung ebenso umgewandelt wurde. 
+%--> Ablauf nach Markererkennung inkl. Berechnung und speicherung der Positionsdaten.
+
+Ausgehend von dem Marker wird dann die Funktion zur Verfolgung des Markers gestartet
 
 \begin{figure}[hbt!]
     \centering
