@@ -32,8 +32,8 @@ Nachdem das Problem der variablen Startposition in der Implementierung der Scan-
 Wählt der Anwender auf der Startmenü-\acs{UI} (\ref{pic:startmenu}) den Button „Virtual-Phase“, wird eine Anmerkung getätigt, indem der Nutzer darüber in 
 Kenntnis gesetzt wird, dass er zu Beginn die Scan-Phase durchgeführt haben muss, bevor die Visualisierungs-Phase gestartet werden kann. Diesen Vermerk kann der 
 Benutzer ignorieren, da dieser weiß, dass ein Scan durchgeführt wurde, oder er akzeptiert den Hinweis und wird auf die dementsprechende Funktion weitergeleitet. 
-Dies hat zur Folge, dass der Nutzer davor bewahrt wird eine Funktion starten zu wollen, die nicht funktioniert. Damit werden folgende Verwunderung dem Anwender 
-gegenüber erspart.
+Dies hat zur Folge, dass der Nutzer davor bewahrt wird eine Funktion starten zu wollen, die ohne Inhalt keine Änderungen aufzeigt. Damit werden folgende 
+Verwunderung und Verwirrungen dem Anwender gegenüber erspart.
 \\ 
 Nachdem wird der Nutzer aufgefordert den initialen Marker (\ref{pic:initialMarker}) einzuscannen, um die ursprüngliche Position, bzw. die Markierung, in Erwägung 
 zu bringen. Damit kann der weitere Programmablauf folgen, indem die \acs{GUI} der Visualisierungs-Phase (\ref{pic:visual}) angezeigt und eine neue Session zur 
@@ -44,10 +44,10 @@ Objekte verwenden zu können.
 \\ 
 Ist der Marker erkannt worden, wird mithilfe des Buttons, der sich im rechten unteren Eck der Benutzeroberfläche (\ref{pic:visual}) befindet, die Methode zur 
 Datenabfrage, Erzeugung und Platzierung der Objekte gestartet. Dabei wird über den Button-Klick eine Funktion aufgerufen, die die Liste der Objekte anspricht und 
-die jeweils darin enthaltenen Objekte nacheinander erstellt. Nach betätigen des Buttons verschwindet dieser, um einer weiteren Platzierung der Objekte 
-vorzubeugen. Die von dem ViewModel gegeben Liste wird, abhängig von der Länge der Liste iterativ abgearbeitet und die Objekte nacheinander erstellt. Dies erfolgt 
-über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des aktuellen Objekts „obj“, an der Stelle „i“ 
-in der Liste, neu errechnet und darstellt.
+die jeweils darin enthaltenen Objekte nacheinander erstellt. Nach betätigen des Buttons ist dieser auf der \acs{UI} nicht mehr aufzufinden, um einer weiteren 
+Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegeben Liste wird, abhängig von der Länge der Liste iterativ abgearbeitet und die Objekte 
+nacheinander erstellt. Dies erfolgt über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des 
+aktuellen Objekts „obj“, an der Stelle „i“ in der Liste, neu errechnet und darstellt.
 \\ 
 \linebreak
 \begin{lstlisting}[language=C,
@@ -68,10 +68,10 @@ for (int i = 1; i < listOfObj.size(); i++){
 Mit der gegebenen „calculateObjectPosition“ wird dann die Distanz vom Ursprungsmarker zu dem Objekt addiert, um 
 die Positionen und Distanzen der einzelnen Objekte der Scan-Phase exakt wiederzugeben. Ist die Addition zu einem Objekt durchgeführt, repräsentiert diese 
 Berechnung die neue Position, an der das Objekt platziert werden muss, unabhängig von der Startposition des Anwenders. Somit ist der Nutzer bei Verwendung der 
-Applikation in der Lage aus einem vorab unbestimmten Punkt zu starten und alle Objekte exakt auf die referenzierte, ursprüngliche Position zu setzen. Nachdem 
-die Position des aktuellen Objekts berechnet wurde, wird diese als neue „Pose“ initialisiert und übergeben, um das zu erstellende Objekt zu rendern und auf der 
-Oberfläche anzuzeigen. Dabei findet eine Abfrage statt, um welchen Status es sich handelt, um daraufhin entscheiden zu können in welcher Farbe das Objekt zu 
-Präsentieren ist.  
+Applikation in der Lage aus einem vorab unbestimmten Punkt zu starten und alle Objekte exakt auf die referenzierte, ursprüngliche Position zu setzen, die 
+in der Scan-Phase festgelegt wurde. Nachdem die Position des aktuellen Objekts berechnet wurde, wird diese als neue „Pose“ initialisiert und übergeben, um 
+das zu erstellende Objekt zu rendern und auf der Oberfläche anzuzeigen. Dabei findet eine Abfrage statt, um welchen Status es sich handelt, um daraufhin 
+entscheiden zu können in welcher Farbe das Objekt zu Präsentieren ist.  
 \\ 
 \linebreak
 \begin{lstlisting}[language=C,
@@ -108,14 +108,14 @@ public void calculateObjectPosition(Object object, int i, Object objOrigin){
 \end{lstlisting}
 Sind alle Listenelemente abgearbeitet, ist die Erstellung und Renderung der Objekte fertig. Danach werden dem Nutzer alle vorhandenen Objekte angezeigt und 
 visualisiert. Mit diesen Erkenntnissen kann der Nutzer durch den Raum laufen und alle Objekte überwachen. Wird ein Objekt anvisiert, kann über eine Berührung 
-des Objekts alle vorhandenen Informationen eingesehen werden. Somit können die Informationen zum einzelnen Objekt eingesehen werden. 
-\\ 
+des Objekts alle vorhandenen Informationen eingesehen werden. Somit sind über kurzen Zeitraum die Informationen des einzelnen Objekts sichtbar.  
 Die Applikation kann beliebig oft geschlossen und neu gestartet werden. Der Nutzer kann sich zu jeder Zeit die Objekte visualisieren lassen, vorausgesetzt, der 
-Ursprungsmarker wird zu Anfang eingescannt. Daraufhin können alle Objekte zu jeder Zeit visualisiert und die dazugehörigen Informationen angezeigt werden.
+Ursprungsmarker wird zu Anfang eingescannt. Daraufhin können alle Objekte zu jeder Zeit präsentiert und die dazugehörigen Informationen angezeigt werden.
 \\ 
 \linebreak
 Nachdem die einzelnen Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und so erfolgreich Einblicke in die Entwicklung, in 
-aufgetretenen Hindernissen und Problemstellungen gewährleistet wurden, werden die implementierten Funktionen anhand eines Testdurchlaufs nochmal dargelegt.
+aufgetretenen Hindernissen und Problemstellungen gewährleistet wurden, werden die implementierten Funktionen anhand eines Testdurchlaufs nochmals genauer 
+dargelegt.
 \section{Testdurchlauf} %/ Test-Szenario
 \label{chap:testdurchlauf}
 Ergänzend zur Implementierung wird in diesem Abschnitt das Resultat und die Anwendung der Applikation anhand eines unabhängigen Tests praktiziert, um die 
