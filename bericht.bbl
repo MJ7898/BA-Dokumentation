@@ -1310,5 +1310,25 @@
     \field{month}{05}
     \field{year}{1938}
   \endentry
+
+  \entry{tepcon.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={tepcon},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{howpublished}{\url={https://www.tepcon.de/}}
+    \field{title}{augmented presenter and augmented instructor}
+    \field{year}{2020}
+  \endentry
 \enddatalist
 \endinput
