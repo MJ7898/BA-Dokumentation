@@ -11,6 +11,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {lstlisting}{\numberline {4.6}Berechnung der Distanz zwischen Marker und Ursprungspunkt}{61}{lstlisting.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.7}Abfolge der Objekte in der Liste}{64}{lstlisting.4.7}% 
+\contentsline {lstlisting}{\numberline {4.7}Abfolge der Objekte in der Liste}{66}{lstlisting.4.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {4.8}Berechnung der Markerplatzierung}{65}{lstlisting.4.8}% 
+\contentsline {lstlisting}{\numberline {4.8}Berechnung der Markerplatzierung}{67}{lstlisting.4.8}% 

@@ -250,8 +250,49 @@ werden.
 \pagebreak
 \\ 
 \linebreak
-Zur Demonstration der Backend-Implementierung wird nun anhand erstellter Screenshots während der Laufzeit eine Beschreibung des Ablaufs der Applikation stattfinden.
+Um die Backend-Implementierung zu demonstrieren, wird nun anhand erstellter Screenshots während der Laufzeit eine Beschreibung des Ablaufs der Applikation stattfinden.
 \\ 
-\linebreak  
+In Abbildung (\ref{pic:markerTracking} (a)) ist zu sehen, dass der vorgegebene Marker verflogt werden muss, um die Applikation starten zu können. Dabei begrenzt 
+die hervorgehobene Umrandung die Fläche, in der der Marker im Bildschirm platziert werden muss, um das Bild registrieren zu können. Nach der Erkennung des Bildes, 
+leitet die Benutzeroberfläche automatische auf die eigentliche Ansicht der Scan-Phase um. Ist der Scan aktiviert, folgt die Wahrnehmung der Umgebung durch das 
+\acs{SLAM} Verfahren und die Berechnung der vorliegenden Oberflächen. Damit die zu setzenden Objekte exakt auf der Oberfläche des Gegenstandes, der Wand oder dem 
+Boden platziert werden können. Dazu wird die berechnete Fläche mit einem Feld voller Punkte auf dem Bildschirm überlagert, um dem Nutzer ersichtlich zu machen, 
+dass an dieser Position die Schätzung der Oberfläche durchgeführt wurde und die Anwendung darauf ein Objekt platzieren kann. Um dies zu verdeutlichen wird inmitten 
+des Bildschirmes (siehe Abbildung \ref{pic:markerTracking} (b)) ein Punkt angezeigt, der die Platzierung des Objektes vorgibt und dem Nutzer verständlich macht, 
+dass ein Objekt erzeugt und an dieser Stelle angesiedelt werden kann. Ist eine Oberfläche der Umgebung noch nicht vollständig berechnet, bzw. erkannt, fehlen 
+die Punkte auf dem Bildschirm. Ebenso die zentrierte Markierung, die ein Kreuz vorzeigt, um den Nutzer davor zu hindern ein Objekt an einer nicht bekannten und 
+nicht berechnetet Oberfläche zu platzieren.
+\begin{figure}[hbt!]
+    \centering
+    \subfigure[Marker-Scan]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung//Bilder/scan_image.jpg}}
+    \subfigure[Umgebungsberechnung]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan_environment.jpg}}
+    \caption{Funktion der Scan-Phase Teil 1}
+    \label{pic:markerTracking}
+\end{figure}
+\pagebreak 
+\\ 
+\linebreak
+Wird nun ein Objekt vom Benutzer erstellt und an eine von ihm gewählte Position platziert, trägt er die dazugehörigen Informationen in der \acs{UI} 
+ein und bestätigt diese nach bestem Gewissen. Danach wird die ursprüngliche \acs{UI} der Scan-Phase geöffnet und das zuvor erstellte Objekt an der vorgesehenen 
+Stelle platziert. Demnach können weitere Objekte erzeugt werden. Die folgende Abbildung demonstriert die Darstellung solcher Objekte, dabei wurden willkürlich 
+„Assets" gewählt, die bei tatsächlicher Anwendung in realem Szenario angepasst werden können. Die aktuell verwendeten Objekte fungieren lediglich als 
+Veranschaulichung der Aktionen und der Repräsentation des Status eines Objekts. Demzufolge ist der Abbildung (\ref{pic:place_objects}) die Erstellung und 
+Darstellung solcher Objekte zu entnehmen. 
+\\ 
+\linebreak
+Hat der Nutzer alle gewünschten Objekte platziert, kann dieser über den Button, rechts unten, die Funktion der Scan-Phase verlassen und die 
+Visualisierungs-Phase starten oder die Anwendung schließen. Da alle eingegebenen Informationen persistiert sind, gehen diese nicht verloren und können jederzeit 
+über die Visualisierungs-Phase aufgerufen werden. Ist dem Nutzer allerdings ein Fehler bei der Erstellung der Objekte unterlaufen, hat er nach aktuellem Stand 
+die Möglichkeit alle vorhandenen Objekte und Daten zu löschen und die Scan-Phase erneut, von Anfang an, zu starten.  
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/place_objects_view.jpg}
+    \caption{Funktion der Scan-Phase Teil 2}
+    \label{pic:place_objects}
+\end{figure}
+\pagebreak
+\\ 
+\linebreak
 Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
-die Frontend als auch die Backend Aspekte aufgezeigt. 
+die Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, wie bereits 
+die Scan-Phase erläutert wurde, dargelegt.
