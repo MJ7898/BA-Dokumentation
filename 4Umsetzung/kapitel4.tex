@@ -10,8 +10,8 @@
 \label{chap:Umsetzung}
 Dieses Kapitel greift die in der Konzeption (\ref{chap:Konzeption}) aufgeführten Planungen und Ideen auf und legt die Implementierung, bzw. 
 Umsetzung detaillierte dar. Darunter sind Lösungsansätze aufgezeigt und aufgetretene Probleme und deren Behebung dokumentiert. Allgemein zählt 
-dazu die Umsetzung des Startmenüs und der beiden Kernfunktionen, sowohl die Frontend- als auch die Backend-Aspekte werden in der Implementierung 
-(\ref{chap:implementierung}) aufgezeigt. Abschließend zu dem Kapitel wird ein Szenario dargestellt, indem die Anwendung beschrieben wird.
+dazu die Umsetzung des Startmenüs und der beiden Kernfunktionen. Sowohl die Frontend- als auch die Backend-Aspekte werden in der Implementierung 
+(\ref{chap:implementierung}) aufgezeigt. 
 
 \section{Implementierung}
 \label{chap:implementierung}
@@ -19,7 +19,7 @@ Nachdem die Konzeption endgültig abgeschlossen war, ging es an die Umsetzung de
 ausmachen. 
 \\ 
 Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt und dokumentiert. Diese festgelegte Reihenfolge 
-ist auch der Abbildung (\ref{pic:anwendungsfall}) zu entnehmen. Angefangen mit dem Startmenü, das dem Nutzer die Möglichkeit offenbart zwischen den Funktion 
+ist auch der Abbildung (\ref{pic:anwendungsfall}) zu entnehmen. Angefangen mit dem Startmenü, das dem Nutzer die Möglichkeit offenbart zwischen den Funktionen 
 zu wählen, folgte die Implementierung der Scan-Phase, in der die realen Objekte virtualisiert und im Raum platziert werden. Zu guter Letzt die Visualisierungs-Phase, 
 welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekte erneut virtuell im Raum platziert. 
 \\ 
@@ -88,10 +88,10 @@ Darunter sind Anwendungen adressiert, die ausdrücklich für das Betriebssystem 
 zum Beispiel auf die Bild-Mediathek, Datei-Strukturen oder die oben bereits erwähnte Kamera Komponente, zugreifen.
 \\ 
 \linebreak
-Angenommen der Nutzer lässt die Frage, die Kamera für das Assistenzsystem freizugeben, zu, dann startet die Applikation wie erwünscht. Darauf folgend ist letztendlich 
-das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Ein sehr einfach und schlicht gehaltenes Design. 
+Angenommen der Nutzer lässt die Frage, die Kamera für das Assistenzsystem freizugeben, zu, dann startet die Applikation wie erwünscht. Darauffolgend ist letztendlich 
+das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Ein sehr einfaches und schlicht gehaltenes Design. 
 Darauf ist zentriert das Firmen-Logo der cjt Systemsoftware AG zu sehen und lediglich zwei farblich voneinander getrennten Button zur Navigation innerhalb der Applikation. 
-Die Button adressieren jeweils die nachfolgende, zugehörige Funktion. Zum einen 
+Die Buttons adressieren jeweils die nachfolgende, zugehörige Funktion. Zum einen 
 zur Scan-Phase bei Betätigung des lilafarbenen Buttons und zum anderen zur Visualisierungs-Phase bei Bedienung des gelbfarbenen Buttons. In der Gesamtheit is das Layout 
 ist an den Farben des Firmen-Logos angelehnt und bildet einen ruhigen und harmonischen Einstieg in das Programm. 
 \\ 
@@ -112,7 +112,7 @@ Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{
 \end{figure}
 Nachdem das Design des Startmenüs und dem PopUp-Fenster abgeschlossen war, ging es darum, die Funktionalität der UI-Komponenten zu implementieren. 
 \subsubsection{BackEnd}
-Durch die schlicht und einfach gehaltene Modellierung des Startmenüs, zählt dieses als Ansicht zum Einstieg in die Nutzung des Assistenzsystems, zur Abfrage der 
+Durch die schlichte und einfach gehaltene Modellierung des Startmenüs, zählt dieses als Ansicht zum Einstieg in die Nutzung des Assistenzsystems, zur Abfrage der 
 \textit{„Camera-Permission“} und zur weiteren Navigation innerhalb der Anwendung.
 \\ 
 Mit der \textit{„Permission-Request“} wird abgefragt, ob die Genehmigung zur Nutzung der Kamera in der \textit{„AndroidManifest.xml“} erteilt wurde, bzw. wird dadurch 
@@ -137,7 +137,7 @@ um einen Überblick, wie die Struktur dieser Schnittstelle aufgebaut ist, zu erl
 weiteren Verlauf der Entwicklung damit arbeiten zu können.
 \\ 
 Die Idee hinter der Scan-Phase ist die Implementierung einer Methode, die es ermöglicht das Umfeld über die Kamera wahrzunehmen und mit den gewonnenen 
-Erkenntnisse über den Raum weiterarbeiten zu können. Die nachstehende Funktion, virtuelle Objekte auf Basis der vom Scan erfahrenen Kenntnissen in 
+Erkenntnissen über den Raum weiterarbeiten zu können. Die nachstehende Funktion, virtuelle Objekte auf Basis der vom Scan erfahrenen Kenntnissen in 
 der Räumlichkeit zu platzieren, arbeitet mit diesen in Erfahrung gebrachten Kenntnisse. 
 \\ 
 Zur Schaffung einer Grundlage, um die wichtigsten Funktionen zu implementieren, wurden zuallererst die Benutzeroberflächen erstellt. Diese dienen 

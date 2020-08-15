@@ -7,7 +7,7 @@ erstellt, welches die Zugriffe der Datenbankobjekte verwaltet. Abschließend im 
 instanziieren und eine Zugriffsschicht auf diese zu implementieren. 
 \\ 
 Zur Modularisierung und zur Generierung einer Schnittstelle für den Bezug zu mehreren Datenbeziehungspunkten wurde ein Repository erstellt, das eine saubere 
-\acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zur Persistierung der Daten mit der 
+\acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit der 
 eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
 \\ 
 \linebreak 
@@ -18,7 +18,7 @@ In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entit
 deren beinhalteten Variablen deklariert. So wird, dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) zu entnehmen, eine Klasse in eine Entity und somit 
 in eine Datenbank-Tabelle konvertiert. In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die mit Annotationen versehen sind. 
 Damit werden diese gemäß der Anforderungen des Konzepts definiert. Diese Variablen repräsentieren die Attribute des Datenbankschematas und stellen die einzelnen 
-Informations- , bzw. -Datenbankspalten dar. Zur Veranschaulichung, die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
+Informations-, bzw. -Datenbankspalten dar. Zur Veranschaulichung, die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
 und ebenso als Primärschlüssel\footnote{Einmaliger und eindeutiger Wert einer Tabelle, bzw. eines Attributs, um dieses eindeutig zu kennzeichnen.}-Variable 
 deklariert.
 \\ 
@@ -60,12 +60,12 @@ LiveData<List<Object>> getObjectName();
 Anschließend nachdem die beiden Klassen erstellt waren, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
 Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Falle des Assistenzsystems als \textit{„object\_database“} deklariert. 
 \\ 
-In zukünftiger Entwicklungen, 
+In zukünftigen Entwicklungen, 
 falls notwendig, gäbe es die Möglichkeit in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
 Möglichkeit gegeben weitere Datenbank-Tabellen zu erstellen, um weitere Objekte und Informationen speichern zu können. Ebenso ist durch ein Repository die Option 
 geboten, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten weitläufiger zur Verfügung zu haben. 
 Eine Datenbeziehung von generierten Daten der Maschinen und Geräte selbst wäre unter anderem auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
-und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da diese nicht teil dieser Arbeit ist. 
+und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da diese nicht Teil dieser Arbeit ist. 
 \\ 
 Im Ausblick (\ref{chap:Ausblick}) wird darauf nochmals eingegangen.
 \\ 
@@ -120,7 +120,7 @@ Konfigurationen der Kamera zuständig ist. Dadurch wird bei Start der Scan-Phase
 Anwendung darstellt. Mit Verwendung der internen Sensoren des Smartphones werden darauffolgende Bewegungen registriert und mittels \acs{SLAM} Verfahren berechnet. 
 So ist die Kalkulation der Lokalisierung möglich und anhand der Kamera kann auf Basis des \acs{SLAM} Verfahrens die Umgebung abgebildet werden. Durch diese 
 Gegebenheiten wird die virtuelle Karte des Umfelds erzeugt und dient so zur Veranschaulichung der zu platzierenden Objekte. In der Abbildung (\ref{pic:koordin}) 
-ist ein Beispiel zu sehen, indem ein Objekte erstellt wird, welches die Koordinaten von dem Ursprungspunkt berechnet. So wird deutlich, wie die Position eines 
+ist ein Beispiel zu sehen, indem ein Objekt erstellt wird, welches die Koordinaten von dem Ursprungspunkt berechnet. So wird deutlich, wie die Position eines 
 Objekts errechnet wird, unter der Verwendung des von ARCore gegebenen \acs{SLAM} Verfahrens. Vorausgesetzt der Anwender startet an der Position (x,y,z = 0), 
 bewegt sich frei im Raum und setzt an Postion (x = 5, y = 1, z = 3.5) ein Objekte.
 \begin{figure}[hbt!]
@@ -130,8 +130,8 @@ bewegt sich frei im Raum und setzt an Postion (x = 5, y = 1, z = 3.5) ein Objekt
     \label{pic:koordin}
 \end{figure}
 \\ 
-Beim setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms berechnet, um das Objekt auf dem Bidlschrim zentriert platzieren zu können. Ist 
-diese Position berechnet, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue Ermittlung der virtuelle Position. Anhand der Information dieser Position 
+Beim Setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms berechnet, um das Objekt auf dem Bildschirm zentriert platzieren zu können. Ist 
+diese Position berechnet, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue Ermittlung der virtuellen Position. Anhand der Information dieser Position 
 ist das Objekt zu platzieren. 
 \\ 
 Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ ein Objekt anklickt.
@@ -159,7 +159,7 @@ werden dann zusammen mit der virtuellen Position des Objekts abgegriffen und in 
 Zu der Position des Objekts wird dessen Rotation durch die einfache Berechnung durch Quaternionen ebenso in die Datenbank gespeichert, um anhand der Berechnung 
 die Darstellung so real wie möglich wiederzugeben. Damit erfolgt die Feststellung, dass das Objekt immer in Blickrichtung der Kamera positioniert ist, da die 
 Rotation ausgehen von der Kamerahaltung berechnet wird. 
-%--> Problemschilderung der Speicherung der Session
+%--> Problemschilderung der Speicherung der Session 
 \\ 
 \linebreak
 Ursprünglich war geplant, die generierte Session sowie die darin erstellten Objekte in der Datenbank abzuspeichern, um diese bei erneutem Aufruf der 
@@ -169,7 +169,7 @@ zu können. Eine „BLOB“-Datei ist ein Binary Large Object, welches anhand de
 Bild- oder Audio-Dateien handeln, auch können so anderweitig große Dateien gespeichert werden. Mit dieser Umsetzung tat sich auch schon das nächste Problem auf, 
 welches deutlich schwerwiegender war und auch in diesem Sinne die Visualisierungs-Phase betraf. 
 \\ 
-Da eine erzeugte Session nur eine gewissen Zeit verwendet wird, ist diese für den weitern Gebrauch nicht vorgesehen, dies bedeutet, dass nach erneutem Starten 
+Da eine erzeugte Session nur eine gewissen Zeit verwendet wird, ist diese für den weiteren Gebrauch nicht vorgesehen, dies bedeutet, dass nach erneutem Starten 
 des Assistenzsystems alle zuvor erzeugten Objekte zwar auf die dazugehörige Session bestimmt sind, allerdings auf der zugewiesenen Position 
 nicht mehr erreichbar wären. Durch die Unterschiedlichen Startpunkte, die bei wiederholtem Starten der Anwendung erzeugt worden würden, 
 würde sich die ursprüngliche Ausgangsposition der Applikation verschieben und so auch die Objekte an eine fälschliche Position projizieren. Um genau zu sein, 
@@ -252,7 +252,7 @@ werden.
 \linebreak
 Um die Backend-Implementierung zu demonstrieren, wird nun anhand erstellter Screenshots während der Laufzeit eine Beschreibung des Ablaufs der Applikation stattfinden.
 \\ 
-In Abbildung (\ref{pic:markerTracking} (a)) ist zu sehen, dass der vorgegebene Marker verflogt werden muss, um die Applikation starten zu können. Dabei begrenzt 
+In Abbildung (\ref{pic:markerTracking} (a)) ist zu sehen, dass der vorgegebene Marker verfolgt werden muss, um die Applikation starten zu können. Dabei begrenzt 
 die hervorgehobene Umrandung die Fläche, in der der Marker im Bildschirm platziert werden muss, um das Bild registrieren zu können. Nach der Erkennung des Bildes, 
 leitet die Benutzeroberfläche automatische auf die eigentliche Ansicht der Scan-Phase um. Ist der Scan aktiviert, folgt die Wahrnehmung der Umgebung durch das 
 \acs{SLAM} Verfahren und die Berechnung der vorliegenden Oberflächen. Damit die zu setzenden Objekte exakt auf der Oberfläche des Gegenstandes, der Wand oder dem 
