@@ -1,13 +1,14 @@
-\subsubsection{BackEnd}
+\subsubsection{Backend}
 Mit Beginn der Backend-Entwicklung wurden in erster Linie die Grundstrukturen implementiert, um der \textit{MVVM}-Architektur gerecht zu werden. Dabei lag 
 der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
-erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeiner Aufbau, 
-dieser bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
-erstellt, welches die Zugriffe der Datenbankobjekte verwaltet. Abschließend im Bereich der Datenbank ein Room-Layer, um die eigentliche Datenbank zu 
+erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeinem Aufbau, 
+der bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
+erstellt, welches die Zugriffe der Datenbankobjekte verwaltet. Abschließend wird im Bereich der Datenbank ein Room-Layer eingebaut, um die eigentliche Datenbank zu 
 instanziieren und eine Zugriffsschicht auf diese zu implementieren. 
 \\ 
-Zur Modularisierung und zur Generierung einer Schnittstelle für den Bezug zu mehreren Datenbeziehungspunkten wurde ein Repository erstellt, das eine saubere 
-\acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit der 
+Zur Modularisierung und Generierung einer Schnittstelle zur Kommunikation zwischen einzelnen Datenbeziehungspunkten und der Datenbank wurde ein Repository erstellt, 
+das aus verschiedenen Quellen Daten zusammenbringen kann und eine saubere \acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. 
+Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit der 
 eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
 \\ 
 \linebreak 
@@ -15,10 +16,11 @@ Nach Aufzählung der einzelnen Bestandteile wird auf diese nun genauer eingegang
 \\ 
 \linebreak
 In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objekt erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
-deren beinhalteten Variablen deklariert. So wird, dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) zu entnehmen, eine Klasse in eine Entity und somit 
-in eine Datenbank-Tabelle konvertiert. In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die mit Annotationen versehen sind. 
-Damit werden diese gemäß der Anforderungen des Konzepts definiert. Diese Variablen repräsentieren die Attribute des Datenbankschematas und stellen die einzelnen 
-Informations-, bzw. -Datenbankspalten dar. Zur Veranschaulichung, die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
+deren beinhalteten Variablen deklariert. In dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) ist diese Annotation zu entnehmen, in dem eine Klasse als 
+Entity deklariert und somit in eine Datenbank-Tabelle konvertiert wird. 
+In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die zuerst mit Annotationen versehen und dann gemäß der Anforderungen des 
+Konzepts sind. Diese Variablen repräsentieren die Attribute des Datenbankschemas und stellen die einzelnen 
+Informations-, bzw. Datenbankspalten dar. Zur Veranschaulichung dient die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
 und ebenso als Primärschlüssel\footnote{Einmaliger und eindeutiger Wert einer Tabelle, bzw. eines Attributs, um dieses eindeutig zu kennzeichnen.}-Variable 
 deklariert.
 \\ 
@@ -43,8 +45,8 @@ public class Object {
 }
 \end{lstlisting}
 \pagebreak
-Das mit der Entity-klasse kommunizierende Modul ist das \textit{„Data Object“}, welches als Interface angelegt wurde. Das „Object Dao“ verwendet ebenso die Bibliothek 
-„Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um, dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage der vorhandenen Informationen. 
+Das mit der Entity-Klasse kommunizierende Modul ist das \textit{„Data Object“}, welches als Interface angelegt wurde. Das „Object Dao“ verwendet ebenso die Bibliothek 
+„Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um. Dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage der vorhandenen Informationen. 
 \\
 \linebreak
 \begin{lstlisting}[language=C,
@@ -57,15 +59,15 @@ caption={SQL-Query zur Abfrage der Objekt-Namen}]
 @Query("SELECT * FROM object_table ORDER BY name")
 LiveData<List<Object>> getObjectName();
 \end{lstlisting}
-Anschließend nachdem die beiden Klassen erstellt waren, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
+Nachdem die beiden Klassen erstellt worden sind, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
 Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Falle des Assistenzsystems als \textit{„object\_database“} deklariert. 
 \\ 
 In zukünftigen Entwicklungen, 
-falls notwendig, gäbe es die Möglichkeit in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
-Möglichkeit gegeben weitere Datenbank-Tabellen zu erstellen, um weitere Objekte und Informationen speichern zu können. Ebenso ist durch ein Repository die Option 
-geboten, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten weitläufiger zur Verfügung zu haben. 
-Eine Datenbeziehung von generierten Daten der Maschinen und Geräte selbst wäre unter anderem auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
-und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da diese nicht Teil dieser Arbeit ist. 
+falls notwendig, gäbe es die Möglichkeit, in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
+Möglichkeit gegeben, weitere Datenbank-Tabellen zur Speicherung von Objekten und deren Informationen zu erstellen. Ebenso ist durch ein Repository die Option 
+geboten, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten weitläufiger zur Verfügung zu stellen. 
+Eine Datenbeziehung von generierten Daten der Maschinen und Geräten selbst wäre auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
+und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da sie nicht Teil dieser Arbeit ist. 
 \\ 
 Im Ausblick (\ref{chap:Ausblick}) wird darauf nochmals eingegangen.
 \\ 
@@ -87,15 +89,14 @@ public abstract class ObjectRoomDatabase extends RoomDatabase {
     ...
 }
 \end{lstlisting}
-Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transfers und der Benutzeroberfläche, das ViewModel. 
+Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transferen und der Benutzeroberfläche, das ViewModel. 
 In dieser Klasse wird eine Liste erstellt, welche den Wert des zu speichernden Objekts besitzt. Diese werden über eine „get“-Funktion aus dem zuvor 
 instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für die Präsentation der Informationen auf der 
-Nutzeroberfläche verwendet. 
+Nutzeroberfläche verwendet. %%%%%%%---------->> Genauer ausführen, wie das funktioniert!!!!!!!
 \\ 
 \linebreak
-Ursprünglich war die Implementierung der eigentlichen Scan-Phase unter Beachtung der ARCore-\acs{API} einfach angedacht, die sich im Laufe der Entwicklung 
-allerdings als nicht so praktikabel herauskristallisierte. Diese aufgetretene Problemstellung wird in weiterem Verlauf präzisiert, nachdem der eigentliche 
-Verlauf geschildert wurde. 
+Die ursprünglich anders angedachte Implementierung der eigentlichen Scan-Phase unter Beachtung der ARCore-\acs{API} stellte sich im Laufe der Entwicklung 
+als nicht praktikabel heraus. Auf die darauffolgende Änderungen und die aufgetretene Problemstellung wird weiter unten näher eingegangen. 
 \\ 
 Das Fragment auf dem \acl{UI} der Scan-Phase (\ref{pic:scan}) wird als \acs{AR}-Fragment, unter der Benutzung des Sceneform \acs{SDK}s, deklariert. Basierend auf 
 dieser Initialisierung können die Interaktionen mit den ARCore-, bzw. Sceneform- Elementen gewährleistet werden. Dadurch ist ebenso die Nutzung der Kamera 
@@ -115,14 +116,14 @@ fragment = (ArFragment)
 getSupportFragmentManager().findFragmentById(R.id.sceneform_fragment);
 ...
 \end{lstlisting}
-Um anschließend Objekte auf diesem Fragment einblenden zu können, ist es vorab notwendig eine \textit{„Session“} zu generieren, die unter anderem für die 
+Um anschließend Objekte auf diesem Fragment einblenden zu können, ist es vorab notwendig, eine \textit{„Session“} zu generieren, die unter anderem für die 
 Konfigurationen der Kamera zuständig ist. Dadurch wird bei Start der Scan-Phase ein dreidimensionales Koordinatensystem erstellt, welches den Ursprungspunkt der 
 Anwendung darstellt. Mit Verwendung der internen Sensoren des Smartphones werden darauffolgende Bewegungen registriert und mittels \acs{SLAM} Verfahren berechnet. 
-So ist die Kalkulation der Lokalisierung möglich und anhand der Kamera kann auf Basis des \acs{SLAM} Verfahrens die Umgebung abgebildet werden. Durch diese 
+So ist die Kalkulation der Lokalisierung möglich und kann anhand der Kamera die Umgebung mit Hilfe des \acs{SLAM} Verfahrens abgebildet werden. Durch diese 
 Gegebenheiten wird die virtuelle Karte des Umfelds erzeugt und dient so zur Veranschaulichung der zu platzierenden Objekte. In der Abbildung (\ref{pic:koordin}) 
 ist ein Beispiel zu sehen, indem ein Objekt erstellt wird, welches die Koordinaten von dem Ursprungspunkt berechnet. So wird deutlich, wie die Position eines 
-Objekts errechnet wird, unter der Verwendung des von ARCore gegebenen \acs{SLAM} Verfahrens. Vorausgesetzt der Anwender startet an der Position (x,y,z = 0), 
-bewegt sich frei im Raum und setzt an Postion (x = 5, y = 1, z = 3.5) ein Objekte.
+Objekts unter der Verwendung des von ARCore gegebenen \acs{SLAM} Verfahrens errechnet wird. Voraussetzung dafür ist, dass der Anwender an der Position (x,y,z = 0) startet, 
+sich frei im Raum bewegt und ein Objekt an Postion (x = 5, y = 1, z = 3.5) setzt.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{4Umsetzung/Bilder/koordin.jpeg}
@@ -135,9 +136,9 @@ diese Position berechnet, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue
 ist das Objekt zu platzieren. 
 \\ 
 Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ ein Objekt anklickt.
-Über die der Sceneform-\acs{API} zur Verfügung gestellte Methode („ModelRenderable“) wird das Objekt erstellt und als „Anchor“ auf die berechnete Position 
-gesetzt. Ein Anchor ist die fixe Position des Objekts, an dem dies platziert wird und so lange dort vorhanden bleibt, bis die Applikation beendet wird. Die Datei 
-die als dreidimensionales asset generiert werden soll, wird über die „uri“-Variable lokalisiert und als Parameter übergeben. 
+Über die der Sceneform-\acs{API} zur Verfügung gestellten Methode („ModelRenderable“) wird das Objekt erschaffen und als „Anchor“ auf die berechnete Position 
+gesetzt. Ein Anchor ist die fixe Position des Objekts, an dem dies platziert wird und so lange dort vorhanden bleibt, bis die Applikation beendet wird. Die Datei, 
+die als dreidimensionales „asset“ generiert werden soll, wird über die „uri“-Variable lokalisiert und als Parameter übergeben. 
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -154,11 +155,11 @@ ModelRenderable.builder()
 \end{lstlisting}
 Während der Objekt-Renderung öffnet sich die \acs{GUI} (\ref{pic:createObject}) zur Eingabe der Informationen, die sich auf das Objekt beziehen. Diese 
 werden dann zusammen mit der virtuellen Position des Objekts abgegriffen und in die Datenbank geschrieben. Drückt der Anwender den „save“-Button der Oberfläche 
-(\ref{pic:createObject}) beendet er diesen Vorgang und kehrt auf die \acs{UI} der Scan-Phase zurück, um weiter Objekte platzieren zu können. 
+(\ref{pic:createObject}), beendet er diesen Vorgang und kehrt auf die \acs{UI} der Scan-Phase zurück, um weitere Objekte platzieren zu können. 
 \\ 
-Zu der Position des Objekts wird dessen Rotation durch die einfache Berechnung durch Quaternionen ebenso in die Datenbank gespeichert, um anhand der Berechnung 
-die Darstellung so real wie möglich wiederzugeben. Damit erfolgt die Feststellung, dass das Objekt immer in Blickrichtung der Kamera positioniert ist, da die 
-Rotation ausgehen von der Kamerahaltung berechnet wird. 
+Zusätzlich zu der Position des Objekts wird dessen Rotation durch Quaternionen berechnet und in der Datenbank gespeichert, um anhand der Berechnung 
+die Darstellung so real wie möglich wiederzugeben. Da die Rotation ausgehend von der Kamerahaltung berechnet wird, wird das Objekt bei der Ankerung immer in 
+Blickrichtung der Kamera positioniert.
 %--> Problemschilderung der Speicherung der Session 
 \\ 
 \linebreak

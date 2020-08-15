@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  15 AUG 2020 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  15 AUG 2020 22:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2208,27 +2208,27 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2--32
+Underfull \hbox (badness 10000) in paragraph at lines 2--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--32
+Underfull \hbox (badness 10000) in paragraph at lines 2--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--32
+Underfull \hbox (badness 10000) in paragraph at lines 2--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--32
+Underfull \hbox (badness 10000) in paragraph at lines 2--34
 
  []
 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 32.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 32.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 34.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 34.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2240,39 +2240,39 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 46--56
+Underfull \hbox (badness 10000) in paragraph at lines 48--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--56
+Underfull \hbox (badness 10000) in paragraph at lines 48--58
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 57.
-LaTeX Font Info:    No file OMSlmss.fd. on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 59.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 59.
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 57.
+(Font)              for symbol `textasteriskcentered' on input line 59.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--79
+Underfull \hbox (badness 10000) in paragraph at lines 62--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--111
+Underfull \hbox (badness 10000) in paragraph at lines 62--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--111
+Underfull \hbox (badness 10000) in paragraph at lines 92--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--112
 
  []
 
@@ -2280,45 +2280,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--111
 <4Umsetzung/Bilder/koordin.jpeg, id=1146, 766.865pt x 576.1525pt>
 File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/koordin.jpeg>
-Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 128.
+Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 129.
 (pdftex.def)             Requested size: 284.53131pt x 213.77089pt.
  [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.147 caption={ModelRenderable Builder}]
+l.148 caption={ModelRenderable Builder}]
                                          </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 151.
+(Font)              <10> on input line 152.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 151.
+(Font)              <7> on input line 152.
 <4Umsetzung/Bilder/cjt_logo_tracking.png, id=1167, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
 Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 192.
 (pdftex.def)             Requested size: 142.2619pt x 100.62427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--224
+Underfull \hbox (badness 10000) in paragraph at lines 156--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--224
+Underfull \hbox (badness 10000) in paragraph at lines 156--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--224
+Underfull \hbox (badness 10000) in paragraph at lines 156--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--224
+Underfull \hbox (badness 10000) in paragraph at lines 156--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--224
+Underfull \hbox (badness 10000) in paragraph at lines 156--224
 
  []
 
@@ -2575,13 +2575,13 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32298 strings out of 492616
  588201 string characters out of 6129481
- 1153670 words of memory out of 5000000
+ 1153771 words of memory out of 5000000
  34772 multiletter control sequences out of 15000+600000
  125208 words of font info for 206 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (88 pages, 16885376 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (88 pages, 16885387 bytes).
 PDF statistics:
  1810 PDF objects out of 2073 (max. 8388607)
  1602 compressed objects within 17 object streams
