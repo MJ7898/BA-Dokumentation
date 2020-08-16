@@ -1,22 +1,23 @@
 \subsection{Visualisierungs-Phase} 
 Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
 deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
-Frontend-Entwicklung der Visualisierungs-Phase gibt einen Einblick auf die Benutzeroberfläche dieser Phase und wie diese aufgebaut ist. Dadurch sind die 
-zugrundeliegenden Informationen veranschaulicht, welche für die nachstehende Backend-Implementierung von Relevanz sind.   
+Frontend-Entwicklung der Visualisierungs-Phase gibt Aufschluss über die Benutzeroberfläche dieser Phase und deren Aufbau. Die Ausführung des Frontends und deren bildliche 
+Darstellung dient dazu, das anschließende Backend nachvollziehen zu können. Abschließend werden die Aspekte des Frontends aufgegriffen und anhand der Backend-Implementierung 
+mit deren Funktionen verknüpft. 
 \subsubsection{FrontEnd}
 Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
 deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
 die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
 \\ 
-Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment, welches das Livebild der Kamera repräsentiert, das 
-sich über den ganzen Bildschirm erstreckt. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Des Weiteren befinden 
-sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen und zum anderen, um die Objekte von der Datenbank 
+Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment das sich über den ganzen Bildschirm erstreckt, repräsentiert das 
+Livebild der Kamera. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Des Weiteren befinden 
+sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen, und zum anderen, um die Objekte von der Datenbank 
 abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschirms, wie 
 der Abbildung \ref{pic:visual} zu entnehmen ist. 
 \\ 
-Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer nur eingeschränkt Interaktionen mit der Oberfläche zur 
-Verfügung. Diese belaufen sich lediglich auf die zuvor genannten Buttons und die dynamisch erzeugten Schaltflächen der Objekte, um zu den einzelnen 
-Darbietungen der Objekte mehrere Informationen zu erlangen. 
+Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer für die Interaktionen nur die Objekte, die als Overlay 
+über das Kamerabild gelegt werden, zur Verfügung. Die Nutzeraktionen beschränken sich lediglich auf den Gebrauch der zuvor genannten Buttons und die dynamisch erzeugten 
+Schaltflächen der Objekte, um über diese zusätzliche Informationen zu erhalten. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
@@ -24,30 +25,29 @@ Darbietungen der Objekte mehrere Informationen zu erlangen.
     \label{pic:visual}
 \end{figure} 
 \\
-Nun erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase werden gewährleistet. 
+Nun erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase.  
 \subsubsection{BackEnd}
-Nachdem das Problem der variablen Startposition in der Implementierung der Scan-Phase umgangen war, konnte die Visualisierungs-Phase entwickelt werden. 
+Nachdem das Problem der variablen Startposition in der Implementierung der Scan-Phase umgangen wurde, konnte die Visualisierungs-Phase entwickelt werden. 
 \\ 
 \linebreak
 Wählt der Anwender auf der Startmenü-\acs{UI} (\ref{pic:startmenu}) den Button „Virtual-Phase“, wird eine Anmerkung getätigt, indem der Nutzer darüber in 
 Kenntnis gesetzt wird, dass er zu Beginn die Scan-Phase durchgeführt haben muss, bevor die Visualisierungs-Phase gestartet werden kann. Diesen Vermerk kann der 
-Benutzer ignorieren, da dieser weiß, dass ein Scan durchgeführt wurde, oder er akzeptiert den Hinweis und wird auf die dementsprechende Funktion weitergeleitet. 
-Dies hat zur Folge, dass der Nutzer davor bewahrt wird eine Funktion starten zu wollen, die ohne Inhalt keine Änderungen aufzeigt. Damit werden folgende 
-Verwunderung und Verwirrungen dem Anwender gegenüber erspart.
+Benutzer ignorieren, wenn dieser weiß, dass ein Scan durchgeführt wurde, oder er akzeptiert den Hinweis und wird auf die dementsprechende Funktion weitergeleitet. 
+Der Nutzer wird dadurch davor bewahrt, eine Funktion starten zu wollen, die ohne Inhalt keine Änderungen aufzeigt.
 \\ 
-Nachdem wird der Nutzer aufgefordert den initialen Marker (\ref{pic:initialMarker}) einzuscannen, um die ursprüngliche Position, bzw. die Markierung, in Erwägung 
-zu bringen. Damit kann der weitere Programmablauf folgen, indem die \acs{GUI} der Visualisierungs-Phase (\ref{pic:visual}) angezeigt und eine neue Session zur 
+Danach wird der Nutzer aufgefordert, den initialen Marker (\ref{pic:initialMarker}) einzuscannen, um die ursprüngliche Position, bzw. die Markierung festzuhalten. 
+Damit kann der weitere Programmablauf folgen, indem die \acs{GUI} der Visualisierungs-Phase (\ref{pic:visual}) angezeigt und eine neue Session zur 
 Objektplatzierung gestartet wird. 
 \\
-Über eine ViewModel-Komponente werden die Objekte aus der Datenbank abgefragt und in einer Liste gespeichert, um diese zu späterem Zeitpunkt zur Platzierung der 
+Über eine ViewModel-Komponente werden die Objekte aus der Datenbank abgefragt und in einer Liste gespeichert, um diese zu einem späteren Zeitpunkt zur Platzierung der 
 Objekte verwenden zu können. 
 \\ 
 Ist der Marker erkannt worden, wird mithilfe des Buttons, der sich im rechten unteren Eck der Benutzeroberfläche (\ref{pic:visual}) befindet, die Methode zur 
 Datenabfrage, Erzeugung und Platzierung der Objekte gestartet. Dabei wird über den Button-Klick eine Funktion aufgerufen, die die Liste der Objekte anspricht und 
-die jeweils darin enthaltenen Objekte nacheinander erstellt. Nach betätigen des Buttons ist dieser auf der \acs{UI} nicht mehr aufzufinden, um einer weiteren 
-Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegeben Liste wird, abhängig von der Länge der Liste iterativ abgearbeitet und die Objekte 
+die jeweils darin enthaltenen Objekte nacheinander generiert. Nach Betätigen des Buttons ist dieser auf der \acs{UI} nicht mehr aufzufinden, um einer weiteren 
+Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegebe Liste wird, abhängig von deren Länge, iterativ abgearbeitet und die Objekte 
 nacheinander erstellt. Dies erfolgt über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des 
-aktuellen Objekts „obj“, an der Stelle „i“ in der Liste, neu errechnet und darstellt.
+aktuellen Objekts „obj“ an der Stelle „i“ in der Liste neu errechnet und darstellt.
 \\ 
 \linebreak
 \begin{lstlisting}[language=C,
