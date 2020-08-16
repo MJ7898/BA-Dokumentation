@@ -90,9 +90,11 @@ public abstract class ObjectRoomDatabase extends RoomDatabase {
 }
 \end{lstlisting}
 Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transferen und der Benutzeroberfläche, das ViewModel. 
-In dieser Klasse wird eine Liste erstellt, welche den Wert des zu speichernden Objekts besitzt. Diese werden über eine „get“-Funktion aus dem zuvor 
-instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für die Präsentation der Informationen auf der 
-Nutzeroberfläche verwendet. %%%%%%%---------->> Genauer ausführen, wie das funktioniert!!!!!!!
+In dieser Klasse wird beim Start der Anwendung eine Liste anhand der Objekte in der Datenbank erstellt, welche die Informationen des einzelnen Objekts besitzt. 
+Diese werden über eine „get“-Funktion aus dem zuvor instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für 
+die Präsentation der Informationen auf der Nutzeroberfläche verwendet. Bei Änderungen der Informationen wird über die \acs{UI} der „Oberserver“ benachrichtigt. 
+Dieser registriert die Änderungen und überträgt sie nach vollständigem Abschluss der Transaktion in die Datenbank. Der Transfer erfolgt wiederum über das 
+Repository, da dort die Datenbankzugriffe verwaltet und aufgerufen werden. %%%%%%%---------->> Genauer ausführen, wie das funktioniert!!!!!!!
 \\ 
 \linebreak
 Die ursprünglich anders angedachte Implementierung der eigentlichen Scan-Phase unter Beachtung der ARCore-\acs{API} stellte sich im Laufe der Entwicklung 

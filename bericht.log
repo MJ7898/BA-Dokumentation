@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  16 AUG 2020 10:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  16 AUG 2020 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2267,113 +2267,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--81
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--112
+Underfull \hbox (badness 10000) in paragraph at lines 92--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--112
+Underfull \hbox (badness 10000) in paragraph at lines 92--114
 
  []
 
 [57]
-<4Umsetzung/Bilder/koordin.jpeg, id=1146, 766.865pt x 576.1525pt>
+<4Umsetzung/Bilder/koordin.jpeg, id=1147, 766.865pt x 576.1525pt>
 File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/koordin.jpeg>
-Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 129.
+Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 131.
 (pdftex.def)             Requested size: 284.53131pt x 213.77089pt.
- [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.148 caption={ModelRenderable Builder}]
-                                         </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 152.
+(Font)              <10> on input line 154.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 152.
-<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1167, 370.38374pt x 261.97874pt>
+(Font)              <7> on input line 154.
+ [58]
+<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1174, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 191.
+Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 193.
 (pdftex.def)             Requested size: 142.2619pt x 100.62427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--224
+Underfull \hbox (badness 10000) in paragraph at lines 158--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--224
+Underfull \hbox (badness 10000) in paragraph at lines 158--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--224
+Underfull \hbox (badness 10000) in paragraph at lines 158--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--224
+Underfull \hbox (badness 10000) in paragraph at lines 158--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--224
+Underfull \hbox (badness 10000) in paragraph at lines 158--226
 
  []
 
-[59] [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.224 ...tanz zwischen Marker und Ursprungspunkt}]
+l.226 ...tanz zwischen Marker und Ursprungspunkt}]
+                                                   </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>] [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.226 ...tanz zwischen Marker und Ursprungspunkt}]
                                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/cjt_logo_tracking.png>]
-Overfull \hbox (2.03656pt too wide) in paragraph at lines 225--226
+Overfull \hbox (2.03656pt too wide) in paragraph at lines 227--228
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/difcalc.jpeg, id=1187, 967.615pt x 568.1225pt>
+<4Umsetzung/Bilder/difcalc.jpeg, id=1188, 967.615pt x 568.1225pt>
 File: 4Umsetzung/Bilder/difcalc.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/difcalc.jpeg>
-Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 246.
+Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 248.
 (pdftex.def)             Requested size: 426.78545pt x 250.58148pt.
-<4Umsetzung//Bilder/scan_image.jpg, id=1191, 1084.05pt x 2185.16376pt>
+<4Umsetzung//Bilder/scan_image.jpg, id=1192, 1084.05pt x 2185.16376pt>
 File: 4Umsetzung//Bilder/scan_image.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/scan_image.jpg>
-Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 267.
+Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 269.
 (pdftex.def)             Requested size: 105.864pt x 213.39438pt.
-<4Umsetzung/Bilder/scan_environment.jpg, id=1192, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/scan_environment.jpg, id=1193, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/scan_environment.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan_environment.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 268.
+Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 270.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 []\T1/lmr/m/n/9 (+20) (b) Um-ge-bungs-be-rech-
  []
 
-<4Umsetzung/Bilder/place_objects_view.jpg, id=1196, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/place_objects_view.jpg, id=1197, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/place_objects_view.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/place_objects_view.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 289.
+Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 291.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 241--173
+Underfull \hbox (badness 10000) in paragraph at lines 243--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--173
+Underfull \hbox (badness 10000) in paragraph at lines 243--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--173
+Underfull \hbox (badness 10000) in paragraph at lines 243--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--173
+Underfull \hbox (badness 10000) in paragraph at lines 243--173
 
  []
 
@@ -2396,7 +2396,7 @@ l.173 \include{4Umsetzung/kapitel4A}
 \openout2 = `4Umsetzung/kapitel4X.aux'.
 
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4X.tex
-<4Umsetzung/Bilder/visual-phase.jpg, id=1237, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/visual-phase.jpg, id=1238, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/visual-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/visual-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 22.
@@ -2449,22 +2449,22 @@ Overfull \hbox (38.03693pt too wide) in paragraph at lines 104--105
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1265, 1084.05pt x 2265.46375pt>
+<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1266, 1084.05pt x 2265.46375pt>
 File: 4Umsetzung/Bilder/show_objects_after_loading.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_objects_after_loading.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_objects_after_loading.jpg  used on input line 125.
 (pdftex.def)             Requested size: 102.10913pt x 213.38918pt.
-<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1266, 1084.05pt x 2266.4675pt>
+<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1267, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung//Bilder/show_data_to_obj_1.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/show_data_to_obj_1.jpg>
 Package pdftex.def Info: 4Umsetzung//Bilder/show_data_to_obj_1.jpg  used on input line 135.
 (pdftex.def)             Requested size: 102.05951pt x 213.37997pt.
-<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1267, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1268, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_2.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_2.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_2.jpg  used on input line 136.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1268, 1084.05pt x 2266.4675pt>
+<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1269, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_3.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_3.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_3.jpg  used on input line 137.
@@ -2575,16 +2575,16 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32298 strings out of 492616
  588201 string characters out of 6129481
- 1154771 words of memory out of 5000000
+ 1153771 words of memory out of 5000000
  34772 multiletter control sequences out of 15000+600000
  125208 words of font info for 206 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (88 pages, 16885524 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (88 pages, 16885683 bytes).
 PDF statistics:
- 1810 PDF objects out of 2073 (max. 8388607)
- 1602 compressed objects within 17 object streams
+ 1811 PDF objects out of 2073 (max. 8388607)
+ 1603 compressed objects within 17 object streams
  431 named destinations out of 1000 (max. 500000)
  39124 words of extra memory for PDF output out of 42996 (max. 10000000)
 
