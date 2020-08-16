@@ -212,11 +212,11 @@ realen Raum, an dem das Objekt in der Anwendung platziert werden soll. Jetzt mus
 Erstellen des Objekts drückt, dieses virtuell erschaffen. Bei der Erzeugung wird die Position ermittelt und anhand dieser die Differenz, bzw. der 
 Abstand zu dem initialen Marker in der Datenbank über einen Schreibbefehl gespeichert. Die Berechnung der Distanz zwischen Objekt und 
 Ursprungsmarker erfolgt durch eine präzise Subtraktion, bei der lediglich die Ursprungskoordinaten von den aktuellen Positionskoordinaten subtrahiert werden. 
-Dieser Vorgang ist dem folgenden Code-Beispiel (\ref{chap:AAC}) zu entnehmen. Dabei wird das aktuelle Objekt „object“ und das initiale Objekt „initialObject“ 
-als Parameter übergeben, die sogenannte „call by Reference“, um die Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen 
+Dieser Vorgang ist dem folgenden Code-Beispiel (\ref{code:differencetoinitial}) zu entnehmen. Dabei wird das aktuelle Objekt „object“ und das initiale Objekt 
+„initialObject“ als Parameter übergeben, die sogenannte „call by Reference“, um die Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen 
 zwischengespeichert und zum Schluss in eine neue Position „Pose“ mit Translation und Rotation, von der Berechnung durch Quaternionen, ermittelt. Der Rückgabewerte 
-dieser Funktion ist demnach eine „Pose“, die nach Aufruf der Methode übergeben und so in der Datenbank, mittels „insert“-Befehl, hinterlegt wird. Mit dem 
-Resultat ist die Position und Rotation des einzelnen Objekts gegeben und kann in der Visualisierungs-Phase verwendet werden.
+dieser Funktion ist demnach eine „Pose“, die nach Aufruf der Methode übergeben und so in der Datenbank mittels „insert“-Befehl hinterlegt wird. 
+Die Position und Rotation des einzelnen Objekts ist mit dem Resultat gegeben und kann in der Visualisierungs-Phase verwendet werden.
 \\
 \linebreak
 \begin{lstlisting}[language=C,
@@ -253,18 +253,20 @@ werden.
 \end{figure}
 \\ 
 \linebreak
-Um die Backend-Implementierung zu demonstrieren, wird nun anhand erstellter Screenshots während der Laufzeit eine Beschreibung des Ablaufs der Applikation stattfinden.
+Um die Backend-Implementierung zu demonstrieren, wird nun während der Laufzeit anhand erstellter Screenshots eine Beschreibung des Ablaufs der Applikation stattfinden.
 \\ 
 In Abbildung (\ref{pic:markerTracking} (a)) ist zu sehen, dass der vorgegebene Marker verfolgt werden muss, um die Applikation starten zu können. Dabei begrenzt 
-die hervorgehobene Umrandung die Fläche, in der der Marker im Bildschirm platziert werden muss, um das Bild registrieren zu können. Nach der Erkennung des Bildes, 
+die hervorgehobene Umrandung die Fläche, in der der Marker im Bildschirm zur Bildregistrierung platziert werden muss. Nach der Erkennung des Bildes, 
 leitet die Benutzeroberfläche automatische auf die eigentliche Ansicht der Scan-Phase um. Ist der Scan aktiviert, folgt die Wahrnehmung der Umgebung durch das 
 \acs{SLAM} Verfahren und die Berechnung der vorliegenden Oberflächen. Damit die zu setzenden Objekte exakt auf der Oberfläche des Gegenstandes, der Wand oder dem 
-Boden platziert werden können. Dazu wird die berechnete Fläche mit einem Feld voller Punkte auf dem Bildschirm überlagert, um dem Nutzer ersichtlich zu machen, 
-dass an dieser Position die Schätzung der Oberfläche durchgeführt wurde und die Anwendung darauf ein Objekt platzieren kann. Um dies zu verdeutlichen wird inmitten 
-des Bildschirmes (siehe Abbildung \ref{pic:markerTracking} (b)) ein Punkt angezeigt, der die Platzierung des Objektes vorgibt und dem Nutzer verständlich macht, 
+Boden platziert werden können, wird anhand der Sensoren im Smart-Device und dessen Kamera dieser dort berechnet. Dazu wird die berechnete Fläche mit einem Feld voller 
+Punkte auf dem Bildschirm überlagert, um dem Nutzer ersichtlich zu machen, 
+dass an dieser Position die Schätzung der Oberfläche durchgeführt wurde und die Anwendung darauf ein Objekt platzieren kann. Um dies zu verdeutlichen, wird inmitten 
+des Bildschirmes (siehe Abbildung \ref{pic:markerTracking} (b)) ein grüner Punkt angezeigt, der die Platzierung des Objektes vorgibt und dem Nutzer verständlich macht, 
 dass ein Objekt erzeugt und an dieser Stelle angesiedelt werden kann. Ist eine Oberfläche der Umgebung noch nicht vollständig berechnet, bzw. erkannt, fehlen 
-die Punkte auf dem Bildschirm. Ebenso die zentrierte Markierung, die ein Kreuz vorzeigt, um den Nutzer davor zu hindern ein Objekt an einer nicht bekannten und 
-nicht berechnetet Oberfläche zu platzieren.
+die Punkte auf dem Bildschirm und es ist lediglich ein grau hinterlegtes Kreuz zu erkennen. Der Nutzer wird dadurch daran gehindert, ein Objekt an einer nicht bekannten 
+und nicht berechnet Stelle zu platzieren. 
+%Ebenso die zentrierte Markierung, die ein Kreuz vorzeigt, um den Nutzer davor zu hindern ein Objekt an einer nicht bekannten und nicht berechnetet Oberfläche zu platzieren.
 \begin{figure}[hbt!]
     \centering
     \subfigure[Marker-Scan]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung//Bilder/scan_image.jpg}}
@@ -276,8 +278,9 @@ nicht berechnetet Oberfläche zu platzieren.
 \\ 
 \linebreak
 Wird nun ein Objekt vom Benutzer erstellt und an eine von ihm gewählte Position platziert, trägt er die dazugehörigen Informationen in der \acs{UI} 
-ein und bestätigt diese nach bestem Gewissen. Danach wird die ursprüngliche \acs{UI} der Scan-Phase geöffnet und das zuvor erstellte Objekt an der vorgesehenen 
-Stelle platziert. Demnach können weitere Objekte erzeugt werden. Die folgende Abbildung demonstriert die Darstellung solcher Objekte, dabei wurden willkürlich 
+ein, bestätigt diese und übernimmt die Garantie dafür, das Objekt richtig positioniert und betitelt zu haben. Danach wird die ursprüngliche \acs{UI} der Scan-Phase 
+geöffnet und das zuvor erstellte Objekt an der vorgesehenen 
+Stelle platziert. Demnach können weitere Objekte erzeugt werden. Die folgende Abbildung demonstriert die Darstellung solcher Objekte. Dabei wurden willkürlich 
 „Assets" gewählt, die bei tatsächlicher Anwendung in realem Szenario angepasst werden können. Die aktuell verwendeten Objekte fungieren lediglich als 
 Veranschaulichung der Aktionen und der Repräsentation des Status eines Objekts. Demzufolge ist der Abbildung (\ref{pic:place_objects}) die Erstellung und 
 Darstellung solcher Objekte zu entnehmen. 
@@ -286,7 +289,7 @@ Darstellung solcher Objekte zu entnehmen.
 Hat der Nutzer alle gewünschten Objekte platziert, kann dieser über den Button, rechts unten, die Funktion der Scan-Phase verlassen und die 
 Visualisierungs-Phase starten oder die Anwendung schließen. Da alle eingegebenen Informationen persistiert sind, gehen diese nicht verloren und können jederzeit 
 über die Visualisierungs-Phase aufgerufen werden. Ist dem Nutzer allerdings ein Fehler bei der Erstellung der Objekte unterlaufen, hat er nach aktuellem Stand 
-die Möglichkeit alle vorhandenen Objekte und Daten zu löschen und die Scan-Phase erneut, von Anfang an, zu starten.  
+die Möglichkeit, alle vorhandenen Objekte und Daten zu löschen und die Scan-Phase von Anfang an erneut zu starten.  
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/place_objects_view.jpg}
@@ -297,5 +300,5 @@ die Möglichkeit alle vorhandenen Objekte und Daten zu löschen und die Scan-Pha
 \\ 
 \linebreak
 Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
-die Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, wie bereits 
-die Scan-Phase erläutert wurde, dargelegt.
+die Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, ähnlich wie bereits in 
+der Scan-Phase erläutert, veranschaulicht.
