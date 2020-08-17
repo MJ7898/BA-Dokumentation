@@ -44,41 +44,39 @@ Nun folgt abschließend, um die Dokumentation abzurunden, das allgemeine Fazit d
 Ziel dieser Arbeit war die Konzeption und prototypische Umsetzung eines Assistenzsystems zur Unterstützung industrieller Prozesse. Dabei wurde der Fokus auf die 
 übersichtliche und virtuelle Darstellung von Maschinen und Geräten gelegt. Zu der Übersicht kam auch dazu, dass zu einzelnen Objekten schnell Informationen eingesehen 
 werden können, um diese bei Bedarf zur Hand zu haben. Dafür wurden in den ersten Schritten Anforderungen zur Umsetzung des Systems festgelegt. Unter Berücksichtigung der 
-zu gewährleistenden Modularisierung, damit künftige Weiterentwicklungen an dem Projekt möglich sind und keine großen Herausforderungen darstellen, musste ein geeignetes 
-Entwurfsmuster gefunden werden, auf dem die Architektur aufbaut. Durch die Android Architecture Components wurde sich an dem MVVM-Muster angelehnt, welches unter anderem 
+zu gewährleistenden Modularisierung musste ein geeignetes Entwurfsmuster gefunden werden, auf dem die Architektur aufbaut, um künftige Weiterentwicklungen an dem Projekt 
+zu ermöglichen und diese keine großen Herausforderungen darstellen. Durch die Android Architecture Components wurde sich an dem MVVM-Muster angelehnt, welches unter anderem 
 die Anforderungen der Modularisierung erfüllt. Bevor die konkrete Umsetzung stattfinden konnte, wurden anhand der Anforderungen und geplanten Funktionen Use Cases für die 
 Implementierung definiert. Nachdem diese modelliert waren, konnte das eigentliche System aufgestellt und entwickelt werden.
 \\ 
 \linebreak
 Die Positionsberechnung des Smart-Devices basiert auf Kalkulationen der hardwareinternen Sensoren und unterliegt somit einer sehr sensiblen Basis. Je nach Ausrichtung und 
-Lage des Geräts kann sich sowohl dessen Orientierung als auch dessen Blickrichtung unterscheiden und so das eigentliche Ergebnis, obwohl sich das Gerät an der physikalisch 
-identischen Position befindet, verfälschen. Dadurch ist die Benutzung der Applikation stark von den Aktionen und der garantierten Handhabung des Nutzers abhängig. 
+Lage des Geräts kann sich sowohl dessen Orientierung, als auch dessen Blickrichtung unterscheiden und so das eigentliche Ergebnis verfälschen, obwohl sich das Gerät an der physikalisch 
+identischen Position befindet. Dadurch ist die Benutzung der Applikation stark von den Aktionen und der garantierten Handhabung des Nutzers abhängig. 
 \\ 
 \linebreak
 Das verwendete Framework Google ARCore erweist einen effektiven Nutzen und ist eine gute Grundlage für die Implementierung einer \acl{AR} Applikation. Das 
 Framework stellt eine fundamentierte \acs{API} zur Verfügung, die eine gute Basis für die darauf aufbauenden Entwicklungen schafft. Bei der praktischen 
-Anwendung des Frameworks gibt es jedoch vereinzelt Probleme mit der Anzeige der virtuellen Objekte, da aus den Positionsberechnungen Phasenweise Übereinstimmungen mit diesen 
-nicht erkannt werden und dadurch die Objekte nicht angezeigt werden. Daher ist es in diesem Fall notwendig an den Ausgangspunkt zurückzukehren, damit die 
+Anwendung des Frameworks gibt es jedoch vereinzelt Probleme mit der Anzeige der virtuellen Objekte, da aus den Positionsberechnungen phasenweise Übereinstimmungen mit diesen 
+nicht erkannt und dadurch die Objekte nicht angezeigt werden. Daher ist es in diesem Fall notwendig, an den Ausgangspunkt zurückzukehren, damit die 
 Anzeige der Objekte aktualisiert werden kann und so die nicht angezeigten Visualisierungen wieder auftauchen.
 \\ 
 \linebreak
 Werden Objekte über die Scan-Phase an eine bestimmte Position gesetzt, wird die daraus resultierende Differenz zum Ursprungsmarker gespeichert. Bei der 
-Ausführung der Visualisierungs-Phase werden die gespeicherten Objekte und deren Positionsdifferenz abhängig von der Ursprungsmarkierung wieder virtuell im Raum platziert, 
-dabei ist die Ausgangssituation der Markierungsverfolgung entscheidend. Dies bedeutet, dass das Smart-Device vom Nutzer richtig angewendet werden muss und es beispielsweise 
-nicht über Kopf gehalten werden darf, dadurch würde die Berechnung und Darstellung der Objekte nicht exakt mit der vorgesehenen Position übereinstimmen. Dies hat eine 
+Ausführung der Visualisierungs-Phase werden die gespeicherten Objekte und deren Positionsdifferenz abhängig von der Ursprungsmarkierung wieder virtuell im Raum platziert. 
+Dabei ist die Ausgangssituation der Markierungsverfolgung entscheidend. Dies bedeutet, dass das Smart-Device vom Nutzer richtig angewendet werden muss und es beispielsweise 
+nicht über Kopf gehalten werden darf. Dadurch würde die Berechnung und Darstellung der Objekte nicht exakt mit der vorgesehenen Position übereinstimmen. Dies hat eine 
 ungenauer Repräsentation der Objekte im Raum zufolge. 
 \\ 
-Durch diese Sensibilität der Anwendung ist vorauszusetzen, dass der Nutzer das System verantwortungsvoll und garantiert verwendet, da dies von dem Assistenzsystem nicht überprüft 
-und auch nicht korrigiert werden kann. 
+Es ist durch diese Sensibilität der Anwendung vorauszusetzen, dass der Nutzer das System verantwortungsvoll und gewissenhaft verwendet. Da dies von dem Assistenzsystem nicht überprüft 
+und auch nicht korrigiert werden kann, muss die fachgerechte Handhabung vorausgesetzt werden. 
 \\ 
 \linebreak
 Im Großen und Ganzen sind die Benutzeroberflächen überschaubar und bieten eine gute Grundlage für die Anwendung der \acl{AR} Applikation. 
 \\ 
 \linebreak
 In der Gesamtheit bietet das Ergebnis dieser Arbeit einen klaren und leicht verständlichen Aufbau des Systems, sowie eine Grundlage für Weiterentwicklungen. 
-Das Konzept wurde eigenständig erarbeitet und wie gewünscht umgesetzt. Somit ist der Grundbaustein gelegt und darauf aufbauend können weiter Funktionen eingebaut werden. 
-
-
+Das Konzept wurde eigenständig erarbeitet und wie geplant umgesetzt. Somit ist der Grundbaustein für weitere, darauf aufbauende Funktionen gelegt.
 
 \chapter{Ausblick}
 \label{chap:Ausblick}
