@@ -45,8 +45,8 @@ Objekte verwenden zu können.
 Ist der Marker erkannt worden, wird mithilfe des Buttons, der sich im rechten unteren Eck der Benutzeroberfläche (\ref{pic:visual}) befindet, die Methode zur 
 Datenabfrage, Erzeugung und Platzierung der Objekte gestartet. Dabei wird über den Button-Klick eine Funktion aufgerufen, die die Liste der Objekte anspricht und 
 die jeweils darin enthaltenen Objekte nacheinander generiert. Nach Betätigen des Buttons ist dieser auf der \acs{UI} nicht mehr aufzufinden, um einer weiteren 
-Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegebe Liste wird, abhängig von deren Länge, iterativ abgearbeitet und die Objekte 
-nacheinander erstellt. Dies erfolgt über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des 
+Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegebene Liste wird, abhängig von deren Länge, iterativ abgearbeitet und die Objekte 
+nacheinander angelegt. Dies erfolgt über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des 
 aktuellen Objekts „obj“ an der Stelle „i“ in der Liste neu errechnet und darstellt.
 \\ 
 \linebreak
@@ -67,11 +67,11 @@ for (int i = 1; i < listOfObj.size(); i++){
 \end{lstlisting}
 Mit der gegebenen „calculateObjectPosition“ wird dann die Distanz vom Ursprungsmarker zu dem Objekt addiert, um 
 die Positionen und Distanzen der einzelnen Objekte der Scan-Phase exakt wiederzugeben. Ist die Addition zu einem Objekt durchgeführt, repräsentiert diese 
-Berechnung die neue Position, an der das Objekt platziert werden muss, unabhängig von der Startposition des Anwenders. Somit ist der Nutzer bei Verwendung der 
-Applikation in der Lage aus einem vorab unbestimmten Punkt zu starten und alle Objekte exakt auf die referenzierte, ursprüngliche Position zu setzen, die 
+Berechnung unabhängig von der Startposition des Anwenders die neue Position, an der das Objekt platziert werden muss. Somit ist der Nutzer bei Verwendung der 
+Applikation in der Lage, aus einem vorab beliebigen Punkt zu starten und alle Objekte exakt auf die referenzierte, ursprüngliche Position zu setzen, die 
 in der Scan-Phase festgelegt wurde. Nachdem die Position des aktuellen Objekts berechnet wurde, wird diese als neue „Pose“ initialisiert und übergeben, um 
-das zu erstellende Objekt zu rendern und auf der Oberfläche anzuzeigen. Dabei findet eine Abfrage statt, um welchen Status es sich handelt, um daraufhin 
-entscheiden zu können in welcher Farbe das Objekt zu Präsentieren ist.  
+das zu erstellende Objekt zu rendern und auf der Oberfläche anzuzeigen. Dabei findet eine Abfrage des Status statt, um daraufhin 
+entscheiden zu können, in welcher Farbe das Objekt zu Präsentieren ist.  
 \\ 
 \linebreak
 \begin{lstlisting}[language=C,
@@ -108,7 +108,7 @@ public void calculateObjectPosition(Object object, int i, Object objOrigin){
 \end{lstlisting}
 Sind alle Listenelemente abgearbeitet, ist die Erstellung und Renderung der Objekte fertig. Danach werden dem Nutzer alle vorhandenen Objekte angezeigt und 
 visualisiert. Mit diesen Erkenntnissen kann der Nutzer durch den Raum laufen und alle Objekte überwachen. Wird ein Objekt anvisiert, kann über eine Berührung 
-des Objekts alle vorhandenen Informationen eingesehen werden. Somit sind über kurzen Zeitraum die Informationen des einzelnen Objekts sichtbar.  
+des Objekts auf dem Display alle vorhandenen Informationen eingesehen werden. Somit sind die Informationen des einzelnen Objekts schnell sichtbar.  
 Die Applikation kann beliebig oft geschlossen und neu gestartet werden. Der Nutzer kann sich zu jeder Zeit die Objekte visualisieren lassen, vorausgesetzt, der 
 Ursprungsmarker wird zu Anfang eingescannt. Daraufhin können alle Objekte präsentiert und die dazugehörigen Informationen angezeigt werden. %  zu jeder Zeit
 \\ 
@@ -116,9 +116,9 @@ Ursprungsmarker wird zu Anfang eingescannt. Daraufhin können alle Objekte präs
 Um die soeben beschriebene Backend-Implementierung der Visualisierungs-Phase zu demonstrieren, wird diese anhand eines kleinen Szenarios veranschaulicht. 
 \\ 
 Startet der Nutzer die Visualisierungs-Phase, muss er den initialen Marker scannen, um fortfahren zu können. Darauffolgend öffnet sich die \acs{GUI} dieser 
-Phase und mit einem Klick auf den Button rechts unten auf der Oberfläche, synchronisiert er die Funktion und alle Objekte, die in der Scan-Phase gesetzt wurden, 
-werden erneut generiert. Daraufhin kann der Nutzer die Objekte einsehen, an den Stellen an denen sich die Objekte ursprünglich befinden. So werden diese samt Status 
-angezeigt und der Nutzer hat vollen Überblick auf alle Objekte und kann diese beobachten. Dieser Schritt ist der Abbildung (\ref{pic:visual_objects}) 
+Phase und mit einem Klick auf den Button rechts unten auf der Oberfläche synchronisiert er die Funktion und alle Objekte, die in der Scan-Phase gesetzt wurden, 
+werden erneut generiert. Daraufhin kann der Nutzer die Objekte an den Stellen einsehen, an denen sie sich ursprünglich befanden. So werden diese samt Status 
+angezeigt und der Nutzer hat den gesamten Überblick über alle Objekte und kann diese beobachten. Der Schritt ist der Abbildung (\ref{pic:visual_objects}) 
 zu entnehmen. 
 \begin{figure}[hbt!]
     \centering
@@ -127,9 +127,9 @@ zu entnehmen.
     \label{pic:visual_objects}
 \end{figure}
 \\ 
-Eine weiter Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, kann über einen Klick auf das Objekt 
-deren Informationen über ein PopUp angezeigt werden. Dieses beinhaltet den Namen des Objekts, den Status und die ID, die zu Anfang automatisch generiert 
-und vergeben wurde. So kann zu jedem einzelnen Objekt, ohne großen Aufwand, dessen Informationen zur Verfügung gestellt werden. 
+Eine weiter Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, werden mit einem Klick auf das Objekt 
+die Informationen über ein PopUp angezeigt. Darunter ist der Namen des Objekts, der Status und die ID, die zu Anfang automatisch generiert 
+und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur Verfügung gestellt werden. 
 \begin{figure}[hbt!]
     \centering
     \subfigure[Anzeige der Objektinformationen 1]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung//Bilder/show_data_to_obj_1.jpg}}
@@ -141,8 +141,8 @@ und vergeben wurde. So kann zu jedem einzelnen Objekt, ohne großen Aufwand, des
 \pagebreak 
 \\ 
 \linebreak
-Nachdem die einzelnen Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und so erfolgreich Einblicke in die Entwicklung, in 
-aufgetretenen Hindernissen und Problemstellungen gewährleistet wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
+Nachdem die Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und Einblicke in die Entwicklung und die damit verbundenen Fragestellungen 
+und Schwierigkeiten gewährt wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
 
 %werden die implementierten Funktionen anhand eines Testdurchlaufs nochmals genauer 
 %dargelegt.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  17 AUG 2020 08:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  17 AUG 2020 09:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2520,17 +2520,17 @@ l.194 \include{4Umsetzung/kapitel4X}
  (/Users/mj/BA-Dokumentation/5Fazit/fazit.tex
 Kapitel 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--43
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--43
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--43
+Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
@@ -2541,27 +2541,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--43
 ] [71]
 Kapitel 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--82
+Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--82
+Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--82
+Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--82
+Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--82
+Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
@@ -2570,22 +2570,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--82
 ] [73]
 Kapitel 7.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 87--195
+Underfull \hbox (badness 10000) in paragraph at lines 85--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--195
+Underfull \hbox (badness 10000) in paragraph at lines 85--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--195
+Underfull \hbox (badness 10000) in paragraph at lines 85--195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--195
+Underfull \hbox (badness 10000) in paragraph at lines 85--195
 
  []
 
@@ -2641,10 +2641,10 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (90 pages, 16895596 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (90 pages, 16895385 bytes).
 PDF statistics:
- 1825 PDF objects out of 2073 (max. 8388607)
- 1615 compressed objects within 17 object streams
+ 1826 PDF objects out of 2073 (max. 8388607)
+ 1616 compressed objects within 17 object streams
  433 named destinations out of 1000 (max. 500000)
  39124 words of extra memory for PDF output out of 42996 (max. 10000000)
 
