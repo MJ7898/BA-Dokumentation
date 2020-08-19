@@ -73,7 +73,7 @@ wahrzunehmen. Darunter sind taktile Sensoren, Näherungs-, Abstands-, Positionss
 Messungen zwischen Gegenstand und Sensor durchführen, gibt es im Allgemeinen erhebliche Vorteile gegenüber den Näherungssensoren. Unter Anderem 
 besitzen sie zum Beispiel eine größere Reichweite und ein größeres Blickfeld als Näherungssensoren. Somit können sie die Entfernung zu Gegenstände 
 genauer ermitteln und geometrische Umweltinformationen besser erfassen. Für die Messung des Abstandes eignet sich die \ac{TOF}-Kamera, die 
-mit dem Laufzeitverfahren Distanzen messen und berechnen kann. 
+mit dem Laufzeitverfahren Distanzen messen und berechnen kann. \cite{robotik2.2020m}
 \\ 
 Das Laufzeitverfahren funktioniert wie folgt:
 \begin{align}
@@ -88,7 +88,8 @@ Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus d
     \label{pic:tofCam}
 \end{figure}
 \\ 
-Auf der linken Seite ist eine PMD-Kamera zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera.
+Auf der linken Seite ist eine PMD-Kamera\footnote{Photonic Mixing Device, optischer Sensor der auf dem Lichtlaufzeitverfahren beruht. Basiert auf dem TOF-Kameraprinzip} 
+zu sehen, gefolgt von einer SwissRanger-Kamera und auf der rechten Seite eine IFM-Kamera\footnote{Eine erweiterte Art der 3D-Kamera}.
 
 \subsection{Verfahren zur Lösung des SLAM Problems}
 Das Lösen des \acs{SLAM} Problems wird in der Praxis mit den folgenden Verfahren, die sich bei der Anwendung bewährt haben, durchgeführt. In den 
@@ -184,8 +185,8 @@ folgt zusammen:
 Mit diesen zwei Berechnungen werden Drehwinkel und Drehachse bestimmt und können für weitere Berechnungen verwendet werden.
 
 \section{Technologien}
-\label{chap:Technologien}
-Dieser Abschnitt befasst sich mit den wichtigsten Programmier-Technologien, die in diesem Projekt eingesetzt werden. 
+\label{chap:Technologien}                       %Programmier-Technologien
+Dieser Abschnitt befasst sich mit den wichtigsten Technologien, die in diesem Projekt eingesetzt werden. 
 %Ein kurzer Überblick 
 %über die Historie der Technologien, worum es dabei geht und welche Aufgaben sie umfassen. 
 \\ 

@@ -31,7 +31,7 @@ veranschaulicht solch ein Beispiel.
 \pagebreak
 \subsubsection*{Environmental understanding}
 Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
-Flächen beim scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
+Flächen beim Scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
 naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
 Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
 \begin{figure}[hbt!]
@@ -55,7 +55,9 @@ erscheinen.
 \label{sec:androidjetpack}
 Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
 Boilerplate\footnote{Sind Codeabschnitte, die an mehreren Stellen mit wenigen oder gar keinen Änderungen aufgeführt sein müssen. \cite{boilerplate.2019m}}-Code 
-zu reduzieren und Quell-/ Source-Code zu schreiben. Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
+zu reduzieren.
+%und Quell-/ Source-Code zu schreiben.
+Die durch Android Jetpack zur Verfügung gestellten Bibliotheken fördern die konsistente Funktionsweise der 
 Android-Versionen und -Geräten. Darüber hinaus wird mit Android Jetpack ein Überblick verschafft, um Best Practices und empfohlene 
 Architekturen zu berücksichtigen.
 \\ 
@@ -117,8 +119,8 @@ Das Diagramm \ref{pic:roomarchitecturediagramm} veranschaulicht die Interaktion,
 \\ 
 %\pagebreak
 \linebreak
-Allgemein ermöglicht \textit{Room} einen vereinfachten Zugriff auf die Datenbank, hat einen hohen Grad an \textit{„testability“}, zur 
-Kompilierungszeit wird eine \acs{SQL}-Abfrageüberprüfung durchgeführt und interagiert einwandfrei mit anderen Android Architecture 
+Allgemein ermöglicht \textit{Room} einen vereinfachten Zugriff auf die Datenbank. Die Bibliothek hat einen hohen Grad an Möglichkeiten der \textit{„testability“}. 
+Zur Kompilierungszeit wird eine \acs{SQL}-Abfrageüberprüfung durchgeführt und interagiert einwandfrei mit anderen Android Architecture 
 Components, z.B. LiveData und ViewModel.
 
 \subsection*{ViewModel}
