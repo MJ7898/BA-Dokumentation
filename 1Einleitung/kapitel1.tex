@@ -35,9 +35,9 @@ in fünf Entwicklungsphasen untergliedert:
     Geschäftsprozesse werden entwickelt. \cite{gartnerhc.2016s}
 \end{enumerate} 
 %Bsp. welche Erwartungen und welche darauffolgenden Enttäuschungen \listoftodos{bsps. für Erwartungen}
-Nachdem eine Innovation den Gipfel der überzogenen Erwartungen, z.B. die vollständige Revolutionierung der Industrie oder Szenarien, wie z.B. 
-Hologramme, die man nur aus Science-Fiction Filmen kennt, passiert hat, 
-folgt das Tal der Enttäuschung, wobei festgestellt wird, dass die Erwartungen nicht übertragbar sind, bzw. nur zum Teil in die Realität 
+Nachdem eine Innovation den Gipfel der überzogenen Erwartungen passiert hat, z.B. die vollständige Revolutionierung der Industrie oder Szenarien, wie z.B. 
+Hologramme, die man nur aus Science-Fiction Filmen kennt, 
+folgt das Tal der Enttäuschung. Dabei wird festgestellt, dass die Erwartungen nicht übertragbar sind, bzw. nur zum Teil in die Realität 
 umgesetzt werden können und die Technologie an Interesse verliert. Nach der erneuten Sammlung, der \textit{"Kurs-Korrektur"} 
 \cite{hypecycle.2019o}, wird die präsente Innovation realistischer beurteilt. 
 Durch die objektive und realitätsnähere Betrachtungsweise entsteht ein neues und realistisches Bild der Möglichkeiten, als auch 
@@ -48,7 +48,7 @@ und die ursprünglich kleine Nutzergruppe kann zu einer großen Community wachse
 Technologie dann an der Stelle des Plateaus der Produktivität und bestätigt die Marktreife. Ab diesem Zeitpunkt handelt es sich nicht mehr 
 um eine Zukunftsvision, Hype oder Highlight, sondern um eine am Markt etablierte Technologie.
 \\ 
-\linebreak
+\linebreak                                      % Name der Phase, nicht religiös zu verstehen!!!!!! 
 Momentan befindet sich Augmented Reality auf dem Pfad der Erleuchtung und ist auf sehr gutem Wege zu einer ausgereiften Technologie, 
 da das Wachstum der Verwendung von Augmented Reality stetig steigt und mittlerweile ein weites Portfolio an möglichen Einsatzgebieten 
 vorweist. Die jetzige Erfahrung und der technologische Fortschritt bringt Augmented Reality den ursprünglich angedachten Visionen und Ideen 
@@ -78,7 +78,7 @@ Schon im Jahr 2016 sprach Apple CEO Tim Cook die Innovation \textit{Augmented Re
 an und war zu diesem Zeitpunkt schon enorm begeistert davon. Er beteuerte: \textit{„...using the tech would become as normal as eating three 
 meals a day.“} \cite{timcook2016.2016o} Bei jeder sich ihm bietenden Möglichkeit ging der Apple CEO auf seine Überzeugung gegenüber \acl{AR} ein. 
 Erst vor Kurzem bestätigte er, dass \acs{AR} zahlreiche und innovative Einsatzgebiete erlangen und immer mehr an Wichtigkeit zunehmen 
-würde, als er sagte: \textit{„pervade your life, it will play a big role..."} \cite{timcook.2020j} 
+würde, als er sagte: \textit{„...pervade your life, it will play a big role..."} \cite{timcook.2020j} 
 \\ 
 \linebreak
 Ein sehr großer Anwendungsbereich mit viel Potential, das bei weitem noch nicht ausgeschöpft sei, ist der Industriezweig. Die 
@@ -136,8 +136,8 @@ verschaffen, indem die Umgebung und alle in der Halle stehenden Maschinen über 
 Overlay über das Live-Bild gelegt und angezeigt werden. Die erkannten Objekte können vom Nutzer eingetragen werden, um die Position des 
 Gegenstandes festhalten zu können. Nach dem Positionieren des Objektes kann der Nutzer die benötigten Informationen eintragen, um so %Setzen
 grundlegende Informationen über diesen Gegenstand griffbereit zu haben. Damit soll der Grundbaustein für ein 
-Unterstützungssystem gelegt werden, das beliebig erweiterbar ist, um ein nützliches \textit{Gadget} mit vielen \textit{Features} 
-in der Industrie zur Verfügung zu stellen.
+Unterstützungssystem gelegt werden, das beliebig erweiterbar ist. % um ein nützliches \textit{Gadget} mit vielen \textit{Features} 
+%in der Industrie zur Verfügung zu stellen.
 \\ 
 \linebreak
 Grundlegend ist das Projekt in drei Aufgabenbereiche unterteilt:
@@ -160,11 +160,12 @@ Die Hauptaufgabe ist die Realisierung der \acl{AR}-Funktion, sozusagen der Kern 
 Phasen unterteilt, welche es separat zu planen und implementieren gilt.
 \\ 
 \linebreak
-Die erste Phase, genannt Scan-Phase, beschäftigt sich mit dem scannen der Umgebung, bzw. des Raumes. Die Aufgabe dabei besteht darin, 
+Die erste Phase, genannt Scan-Phase, beschäftigt sich mit dem Scannen der Umgebung, bzw. des Raumes. Die Aufgabe dabei besteht darin, 
 mittels dem \ac{SLAM} - Verfahren eine Karte der Umgebung zu erstellen und die räumliche Lage innerhalb dieser Karte zu schätzen, um 
 auf Basis dieser erstellten Karte virtuell Objekte auf der Karte platzieren zu können. Mit den gewonnen Informationen der räumlichen 
 Darstellung durch das \acs{SLAM} - Verfahren kann der Nutzer virtuelle Objekte im virtuellen Raum an Ort und Stelle platzieren, als 
-Referenz zu dem existierenden Objekt in der Realität, welches erkannt wurde. Bei der Erstellung eines Objekts soll der Nutzer die 
+Referenz zu dem existierenden Objekt in der Realität. %, welches erkannt wurde. 
+Bei der Erstellung eines Objekts soll der Nutzer die 
 Möglichkeit haben, Informationen über das Objekt in das System einzupflegen, damit er diese immer abrufen kann. 
 \\ 
 \linebreak
@@ -174,7 +175,8 @@ die virtuellen Objekte in seiner unmittelbaren Umgebung angezeigt werden. Mit de
 ein Objekt befindet, können für dieses in der Datenbank weitere Informationen abgefragt und dem Nutzer zur Verfügung gestellt werden.
 \\ 
 \linebreak
-Ein weiterer wichtiger Punkt dieses Konzeptes wird die Modellierung eines geeigneten, grundlegenden und prototypischen Datenmodells sein. 
+Ein weiterer wichtiger Punkt dieses Konzeptes wird die Modellierung eines geeigneten, %grundlegenden und
+prototypischen Datenmodells sein. 
 Dieses Datenmodell gibt vor, welche Informationen in Phase eins beim Erstellen eines Objektes vom Nutzer eingegeben und damit erfasst 
 werden sollten, um die wichtigsten Daten zur Verfügung zu haben. 
 
@@ -186,7 +188,7 @@ Kontexte im Bezug zu dieser Arbeit zu begreifen, gefolgt von einer Einführung i
 (\ref{chap:SLAM}) der überbegrifflichen Materie der Robotik. Eine weitere notwendige Grundlage ist das Verständnis von Quaternionen 
 (\ref{chap:Quaternionen}) und die damit zusammenhängende Rotation und Translation von Objekten in einem dreidimensionalen Raum. Nach 
 den erworbenen Grundkenntnissen der Basis-Thematiken, wird das Wissen über die Voraussetzungen und verwendeten Technologien 
-(\ref{chap:Technologien}) geschaffen. Darauf folgend wird im Allgemeinen auf Softwarearchitektur %und OpenGL (\ref{chap:OpenGL})
+(\ref{chap:Technologien}) geschaffen. Darauffolgend wird im Allgemeinen auf Softwarearchitektur %und OpenGL (\ref{chap:OpenGL})
 (\ref{chap:Softwarearchitektur}) und Modulare Software Architektur (\ref{chap:Modulare Software Architektur}) eingegangen. Abschließend zu 
 Kapitel (\ref{chap:Grundlagen}) wird zu guter Letzt der Bereich der Datenmodellierung (\ref{chap:Datenmodellierung}) thematisiert.
 \\ 
@@ -211,11 +213,11 @@ Nach der Umsetzung (\ref{chap:Umsetzung}) gibt es eine Evaluierung (\ref{chap:Ev
 und einen eigenes Fazit zu ziehen.
 \\ 
 \linebreak 
-Die letzten zwei Kapitel, Fazit (\ref{chap:Fazit}) und Ausblick (\ref{chap:Ausblick}), runden die Dokumentation ab und schließen die 
-Arbeit. Die vorzuweisenden Ergebnisse werden analysiert und Verbesserungsvorschläge angemerkt.
+Die letzten zwei Kapitel, Fazit (\ref{chap:Fazit}) und Ausblick (\ref{chap:Ausblick}), %runden die Dokumentation ab und
+schließen die Arbeit. Die vorzuweisenden Ergebnisse werden analysiert und Verbesserungsvorschläge angemerkt.
 \\ 
 Der Ausblick gibt Aufschluss darüber, welche Erweiterungsmöglichkeiten es für diese Arbeit gibt und wie innovativ sich dieser 
-Grundbaustein in Zukunft erweist. 
+Grundbaustein in Zukunft erweisen könnte. 
 \pagebreak
 
 \section{Stand der Technik}
@@ -226,7 +228,7 @@ um Interaktionen mit virtuellen Objekten zu fördern. Vor allem im Bereich der m
 gibt es nützliche Apps, die sich am Markt etabliert haben. Die nach aktuellem Stand am meisten aufsehenerregendsten Marktsektoren sind unter anderem 
 Gaming, beispielsweise Pokémon Go, E-Commerce, unter anderem IKEA Place und die DHL Packset App, Bildung und Wissen, wie etwa GeoGebra 3D 
 Grafikrechner und SketchAR und der Sektor Reisen, als weiteres Beispiel der \acs{AR} gestützte Google Übersetzer. Auch die Umsetzung von \acl{AR} 
-Navigation ist in kleineren Ausführungen durch beispielgebend Google entwickelte Anwendungen vertreten. 
+Navigation ist in kleineren Ausführungen durch beispielgebend Google entwickelte Anwendungen vertreten. %Satz der Marktsektoren ggf. umschreiben
 \\ 
 Im Bereich der Industrie gibt es hinsichtlich mobiler \acs{AR} 
 reichlich wenige Anwendungen die allseits bekannt sind, bzw. ein hohes Aufsehen erregt haben. Im Einsatz befinden sich hier verstärkt Smart-Glasses (siehe Abschnitt 
@@ -237,7 +239,8 @@ reichlich wenige Anwendungen die allseits bekannt sind, bzw. ein hohes Aufsehen 
 Eine Anwendung die eine Räumlichkeit scannt, ausgewählte Objekte virtuell reproduziert und diese entstehenden Informationen dauerhaft zur 
 Verfügung stellt, gibt es derzeit keine vergleichbaren. Die meisten Anwendungen, am Beispiel der IKEA Place Anwendung, beschränken sich 
 auf bestimmte Positionen, bzw. darzustellende Objekte an den vorgesehenen Positionen und einer kurzen Gültigkeit und Lebensdauer. 
-Damit ist die Langlebigkeit der Informationen adressiert. Die Objekte werden bei erneutem Aufruf neu generiert und platziert. Dies bedeutet, 
+%Damit ist die Langlebigkeit der Informationen adressiert.
+Die Objekte werden bei erneutem Aufruf neu generiert und platziert. Dies bedeutet, 
 dass es keinerlei Anhaltspunkte für schon bereits verwendete Objekte gibt. Sie dienen damit lediglich der Ansicht, um die 
 Vorstellungskraft des Menschen zu unterstützen. 
 \\ 
@@ -252,4 +255,4 @@ Im Fokus der \acl{AR} gibt es mittlerweile unzählige SDKs und Frameworks, die a
 auch Frameworks der großen Firmen, die vielen ein Begriff sind, hierunter Google ARCore, ARKit von Apple, vuforia, Wikitude und ARToolKit. 
 Diese sind ebenso die meist benutzten Frameworks zur Umsetzung von \acs{AR}-Anwendungen. Google ARCore bietet eine tiefgreifende und ausführliche 
 \ac{API}, welche in Kombination mit vielen weiteren SDKs verwendet werden kann, um eine beeindruckende User- als auch \acs{AR}-Experience zu verschaffen. 
-Demnach hat ARCore, neben Apple ARKit, zur Entwicklung einer Anwendung eine führende Position inne. 
+Demnach befindet sich ARCore, neben Apple ARKit, zur Entwicklung einer Anwendung in einer führenden Position. 
