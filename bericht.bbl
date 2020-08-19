@@ -281,30 +281,6 @@
     \field{year}{2019}
   \endentry
 
-  \entry{sinnesforschung.2017m}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=BF}{%
-         family={Brehm},
-         familyi={B\bibinitperiod},
-         given={Frank},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BF1}
-    \strng{fullhash}{BF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2017}
-    \field{labeldatesource}{year}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-  \field{howpublished}{\url{https://www.mice-club.com/magazin/artikel/vr-angriff-auf-alle-sinne}}
-    \field{title}{VR-Angriff auf alle Sinne - Wie schmeckt die virtuelle
-  Realität?}
-    \field{month}{03}
-    \field{year}{2017}
-  \endentry
-
   \entry{imubild.2020j}{misc}{}
     \name{author}{1}{}{%
       {{hash=BPDIJ}{%
@@ -778,6 +754,29 @@
   \field{howpublished}{\url{https://www.it-designers-gruppe.de/fileadmin/Inhalte/Studentenportal/Das_Architekturmuster_MVVM__Text___1_.pdf}}
     \field{title}{Das Architekturmuster Model-View-ViewModel}
     \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{heise.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JJK}{%
+         family={Janssen},
+         familyi={J\bibinitperiod},
+         given={Jan-Keno},
+         giveni={J\bibinithyphendelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJK1}
+    \strng{fullhash}{JJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+  \field{howpublished}{\url={https://www.heise.de/select/ct/2020/8/2006909510104361082}}
+    \field{title}{Schwebecomputer}
+    \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
