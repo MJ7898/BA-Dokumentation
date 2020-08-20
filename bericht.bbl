@@ -327,6 +327,42 @@
     \field{year}{2020}
   \endentry
 
+  \entry{markerlesstracking.2003m}{book}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Comport},
+         familyi={C\bibinitperiod},
+         given={A.I},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Marchand},
+         familyi={M\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Chaumette},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CAMECF1}
+    \strng{fullhash}{CAMECF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{year}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{A real-time tracker for markerless augmented reality}
+    \field{year}{2003}
+  \endentry
+
   \entry{boilerplate.2019m}{misc}{}
     \name{author}{1}{}{%
       {{hash=DM}{%
@@ -883,6 +919,31 @@
     \field{year}{2019}
   \endentry
 
+  \entry{euler.2000}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KPDID}{%
+         family={Krömker},
+         familyi={K\bibinitperiod},
+         given={Prof. Dr.-Ing.\bibnamedelima Detlef},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim
+  I\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Goethe-Universität, Frankfurt}%
+    }
+    \strng{namehash}{KPDID1}
+    \strng{fullhash}{KPDID1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{year}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Eulerwinkel und Quaternionen}
+    \field{year}{2000}
+  \endentry
+
   \entry{arcorefundamentals.2018m}{book}{}
     \name{author}{1}{}{%
       {{hash=LM}{%
@@ -1110,6 +1171,29 @@
   \field{howpublished}{\url{https://blog.cosee.biz/2019/04/18/warum-android-mvvm-eine-gute-sache-ist}}
     \field{title}{Warum Android MVVM eine gute Sache ist}
     \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{quaternionRichter.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={Richter},
+         familyi={R\bibinitperiod},
+         given={Martina},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Einführung in die Robotik - Vorlesung 7 Mathematische
+  Grundlagen 2}
+    \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
   \endentry
 

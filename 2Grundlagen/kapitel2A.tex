@@ -57,7 +57,7 @@ der Orientierung und Neigung des Geräts. Ausgehend von der Erdkugel beziehen si
 Mittels \textit{Odometrie} können die von den Sensoren bereitgestellten Informationen über Position und Orientierung berechnet werden. Radgetriebene 
 Systeme führen die Berechnung durch, da diese basierend auf dem Durchmesser des Rades ermittelt wird. In Kombination mit \textit{Koppelnavigation}\footnote{Engl. dead reckoning, ist die laufende Positionsbestimmung eines bewegten Objekts infolge der Bewegungsrichtung und Geschwindigkeit \cite{koppelnavigation.2019j}}
 gilt dieses Verfahren für Roboter, bzw. Fahrzeuge auf Land, als Grundlage der Navigation. Durch die theoretische Berechnung werden 
-Fehlerbetrachtungen, z.B. Verschleiß, Schlupf oder Unrundheit von Rädern, vernachlässigt und ist somit nicht als alleiniges Verfahren einzusetzen. 
+Fehlerbetrachtungen, z.B. Verschleiß, Schlupf oder Unrundheit von Rädern, vernachlässigt und ist somit nicht als alleiniges Verfahren einzusetzen. \cite{robotik2.2020m}
 \begin{align}
     \Delta U = \frac{\pi D}{\textit{n}C}N
 \end{align}
@@ -80,7 +80,7 @@ Das Laufzeitverfahren funktioniert wie folgt:
     \textit{d} = \frac{1}{2}\textit{ct}
 \end{align}
 Abstand zwischen der Zielfläche und dem Sensor \textit{d} ist das Produkt aus der Signalgeschwindigkeit \textit{c} und der messbaren Laufzeit 
-\textit{t}. Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
+\textit{t}. \cite{robotik2.2020m} Beispiele für solche \acs{TOF}-Kameras und deren Repräsentation sind folgender Abbildung (\ref{pic:tofCam}) zu entnehmen.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{2Grundlagen/Bilder/tof_kamera.png}
@@ -122,18 +122,17 @@ Der inkrementelle Ansatz des graph-basierten \acs{SLAM} Verfahrens ist ursprüng
 schrittweise zu einem \textit{online-Verfahren} führte. Durch diese ständige Beobachtung und Neuberechnung der aktuellen Position zu jedem 
 Zeitpunkt wurde die Bedeutung der inkrementellen Verfahren gesteigert. %Dieser Ansatz ist besonders für monokulare Kameras ratsam und sinnvoll.
 
-\subsection*{Rekursives Schätzproblem}
-Der erweiterte Kalman-Filter (\acs{EKF}) ist eine wahrscheinlichkeitsbasierte rekursive Schätzung der Position des Objekts und der Position der 
-Landmarken unter Nutzung linearer Bewegungsmuster basierend auf dem Bayes-Filter. Der Bayes-Filter-Algorithmus ist das generelle Verfahren der 
-rekursiven Zustandsschätzung und wird über den Satz von Bayes\footnote{Mathematischer Satz der Wahrscheinlichkeitstheorie. Daruch wird die Berechnung einer bedingten Wahrscheinlichkeit beschrieben} 
-hergeleitet. 
-\\
-Unter der Voraussetzung einer Normalverteilung und eines linearen Bewegungsmodells, worauf der Kalman-Filter setzt, kann diese durch das 
-\acs{SLAM} Problem nicht erfüllt werden. An dieser Stelle wird der erweiterte Kalman-Filter eingesetzt, da dieser nicht-lineare 
-Bewegungsmodelle, bzw. Funktionen mittels Taylorreihe approximiert. Somit kann eine Messung in etwas vorhergesagt werden. Diese Schätzung 
-dient somit als Grundlage zur eigentlichen Messung. Nach der Berechnung wird der Zustand aktualisiert und ausgegeben. Mit diesem Ergebnis 
-werden die darauffolgenden Punkte rekursiv berechnet, bis die Scan-Phase zu Ende ist.
-
+%\subsection*{Rekursives Schätzproblem}
+%Der erweiterte Kalman-Filter (\acs{EKF}) ist eine wahrscheinlichkeitsbasierte rekursive Schätzung der Position des Objekts und der Position der 
+%Landmarken unter Nutzung linearer Bewegungsmuster basierend auf dem Bayes-Filter. Der Bayes-Filter-Algorithmus ist das generelle Verfahren der 
+%rekursiven Zustandsschätzung und wird über den Satz von Bayes\footnote{Mathematischer Satz der Wahrscheinlichkeitstheorie. Daruch wird die Berechnung einer bedingten Wahrscheinlichkeit beschrieben} 
+%hergeleitet. 
+%\\
+%Unter der Voraussetzung einer Normalverteilung und eines linearen Bewegungsmodells, worauf der Kalman-Filter setzt, kann diese durch das 
+%\acs{SLAM} Problem nicht erfüllt werden. An dieser Stelle wird der erweiterte Kalman-Filter eingesetzt, da dieser nicht-lineare 
+%Bewegungsmodelle, bzw. Funktionen mittels Taylorreihe approximiert. Somit kann eine Messung in etwas vorhergesagt werden. Diese Schätzung 
+%dient somit als Grundlage zur eigentlichen Messung. Nach der Berechnung wird der Zustand aktualisiert und ausgegeben. Mit diesem Ergebnis 
+%werden die darauffolgenden Punkte rekursiv berechnet, bis die Scan-Phase zu Ende ist.
 \section{Quaternionen}
 \label{chap:Quaternionen} %\cite{quaternionHamilton.2006} 
 Quaternionen, lat. \textit{„Menge der Vier“}, wurden erstmals 1843 von Sir William Rowan Hamilton beschrieben. Sie bezeichnen einen 
@@ -142,7 +141,7 @@ verwendet. Die Theorie der Quaternionen basiert auf der mathematischen Grundlage
 einer Algebra galten und werden daher als hyperkomplexe Zahlen aufgefasst.
 \\ 
 \linebreak
-Mit \textit{a,b,c,d $\in q$} werden Quaternionen wie folgt beschrieben:
+Mit \textit{a,b,c,d $\in q$} werden Quaternionen wie folgt beschrieben: \cite{quaternionRichter.2020m}
 \begin{align}
     \textit{q} = \textit{a} + \textit{b} \cdot \textit{i} + \textit{c} \cdot \textit{j} + \textit{d} \cdot \textit{k}
 \end{align}
@@ -170,7 +169,7 @@ Darstellung der Rechenwege. Somit können Rotationen intuitiver veranschaulicht 
 -achse möglich. Die kompaktere Darbietung beinhaltet lediglich vier Werte im Vergleich zu den neun Werten der Berechnung der Rotationsmatrix
 und die Rotation kann um eine bestimmte Achse ermittelt werden. Zudem ist eine sehr hohe numerische Stabilität gewährleistet. 
 \\ 
-Der Drehwinkel wird wie folgt berechnet:
+Der Drehwinkel wird wie folgt berechnet: \cite{quaternionRichter.2020m}
 \begin{align}
     %\textit{a} = $\cos z$ \to \textit{z} = \frac{t}{2} \to t = $\theta$  %\textit{z} = \textit{\frac{$\theta$}{2}} 
     %\\
@@ -178,11 +177,27 @@ Der Drehwinkel wird wie folgt berechnet:
 \end{align}
 Der Realteil \textit{a} des Quaternions wird mittels Arkuskosinus berechnet, so erhält man die Drehung des Objekts. Die Drehachse lässt sich 
 bestimmen, indem alle Werte des Imaginärteils (\textit{b,c,d})$^T$ mit \textit{u} addiert werden. Die Variable \textit{u} setzt sich wie 
-folgt zusammen: 
+folgt zusammen:  \cite{quaternionRichter.2020m}
 \begin{align}
     \textit{u} = \textit{$\sin w$}, \to \textit{w} = \frac{t}{2}, \to \textit{t = $\theta$}
 \end{align}
 Mit diesen zwei Berechnungen werden Drehwinkel und Drehachse bestimmt und können für weitere Berechnungen verwendet werden.
+\\ 
+\linebreak 
+Die Orientierung eines feststehenden Körpers im dreidimensionalen euklidischen Raum kann auch mithilfe des Eulerschen Winkels beschrieben werden. Bei dieser 
+Berechnung werden die Rotationsachsen und deren Reihenfolge festgelegt. Dabei wird der Abfolge entsprechend die Drehung um jeweils die veränderte Achse durchgeführt. 
+Die Orientierungsbeschreibung wird mit 3x3-Matrix- oder homogenen 4x4 Matrix-Multiplikationen durchgeführt. Dabei ist das jeweilige Matrixprodukt die 
+Grundlage für die weiteren Berechnungen der entstehenden Orientierung. \cite{quaternionRichter.2020m}
+\begin{align}
+    \textit{Rs} = \textit{Rz($\alpha$)} \cdot \textit{Ry'($\beta$)} \cdot \textit{Rz''($\gamma$)}
+\end{align}
+Die Formel beinhaltet die Matrix \textit{R} in jeweils gewandelter Form durch das linksstehende Matrixprodukt mit der Drehung durch den Winkel \textit{$\alpha$, $\beta$, $\gamma$}.
+\\ 
+\linebreak
+Quaternionen sind im Vergleich zum Eulerschen Winkel übersichtlicher und kompakter in der Darstellung und Berechnung der Rotationen. \cite{quaternionRichter.2020m} 
+Der Eulersche Winkel weist eine Unstetigkeit auf und ist für die allgemeine Rotationsbestimmung nicht eindeutig. \cite{euler.2000} Weiterer Nachteile des 
+Eulerschen Winkels sind zum einen die getrennte Durchführung der Vektor- und Matrizenoperationen und zum Anderen die vielen Parameter, die zur Berechnung notwendig sind. 
+Zudem kommt eine hohe Redundanz und die Interpolation ist durch die Winkelberechnung schwierig. \cite{quaternionRichter.2020m} 
 
 \section{Technologien}
 \label{chap:Technologien}                       %Programmier-Technologien

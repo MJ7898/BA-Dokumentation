@@ -113,7 +113,7 @@ bei einer Vielzahl von Tests und Analysen eine Leistungsverbesserung von 30 \% e
 % https://www.arsoft-company.com/en/dar-project/
 
 \subsection{Virtual Reality, Augmented Reality und Mixed Reality}
-Während immer mehr Leute mit dem Begriff Virtual Reality etwas anfangen können, gibt es doch noch viele Unsicherheiten bei den dazukommenden 
+Während immer mehr Leute mit dem Begriff Virtual Reality etwas anfangen können, gibt es doch noch viele Unklarheiten bei den dazukommenden 
 Begriffen der Augmented und der Mixed Reality. Diese drei Begriffe lassen sich meist nicht immer voneinander unterscheiden, da es viele 
 Überschneidungen aber auch gravierende Unterschiede gibt. 
 \\ 
@@ -145,7 +145,7 @@ Außenwelt abzuschirmen und diese durch eine computergenerierte und detaillierte
 %     \hline
 %     Nicht-immersive Präsentation & Immersive Präsentation \\ 
 %   \end{tabular}
-%   \caption{Merkmale der Computergraphik gegenüber der VR \cite{springer.2019s}}
+%   \caption{Merkmale der Computergrafik gegenüber der VR \cite{springer.2019s}}
 %   \label{tbl:vrtabelle}
     % Verweis im Text mittels \ref{tbl:vrtabelle}
 %\end{table}
@@ -279,9 +279,10 @@ Ansätze, diese Herausforderung zu bewältigen, wird in folgendem Abschnitt \ref
 \label{sec:posi}
 Um ein digitales Objekt als Overlay dem Kamera-Live-Bild hinzuzufügen, werden genauestens definierte Positionen benötigt. Diese Positionen 
 können durch unterschiedliche Ansätze ermittelt werden. Je nach Anwendungsfall, z.B. als Navigation, Routenplaner oder Google Maps 
-\textit{„Live View“} \cite{googleliveview.2019a}, reicht eine etwas ungenauere Positionsbestimmung per \acs{GPS}, da in Relation zur 
-realen Welt eine Abweichung um Zentimeter oder wenige Meter nicht von Belang ist. Bei Positionsbestimmungen auf kleinstem Raum ist eine 
-genaue Lokalisierung wichtig und basiert auf einem deutlich präziseren Ansatz. 
+\textit{„Live View“} \cite{googleliveview.2019a}, reicht oftmals die Positionsbestimmung per \acs{GPS}, während bei anderen Anwendungen eine 
+nahezu exakte Information über Lage und Position nötig ist. %da in Relation zur realen Welt eine Abweichung um Zentimeter oder wenige Meter nicht von Belang ist.
+%Bei Positionsbestimmungen auf kleinstem Raum ist eine 
+%genaue Lokalisierung wichtig und basiert auf einem deutlich präziseren Ansatz. 
 \\ 
 Welche oben genannten Ansätze es gibt und welche Unterschiede zu beachten sind, wird in Folgendem näher erläutert. 
 \subsubsection*{Marker-basierte Positionsbestimmung}
@@ -318,8 +319,8 @@ sogenannte Marker-unabhängige Positionsbestimmung, welche ebenso verschiedene A
 \subsubsection*{\acs{GPS}-basierte Positionsbestimmung}
 Die Methode des \acs{GPS}-basierten Positionsbestimmungsverfahren verwendet hauptsächlich die Koordinaten der realen Welt. In Zusammenarbeit 
 mit zusätzlichen im Anwendungsgerät verbauten internen Sensoren, bspw. Positions-, Geschwindigkeits- und Beschleunigungssensoren und Teile des 
-\ac{INS}, z.B. dem Gyroskop, kann diese Art der Positionsbestimmung optimal Anwendung finden. Allerdings werden dabei deutlich mehr Komponenten
-benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. 
+\ac{INS}, z.B. dem Gyroskop \cite{markerlesstracking.2003m}, kann diese Art der Positionsbestimmung optimal Anwendung finden. Allerdings werden dabei 
+deutlich mehr Komponenten benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. 
 \\ 
 Bei einem Anwendungsfall von \acs{GPS}-basierter Positionsbestimmung geht es meist um Routenplaner, Navigation oder Szenarien die sich 
 auf offenen Flächen abspielen, da im Gegensatz zu Marker-basierten Anwendungen das Größenverhältnis deutliche Unterschiede vorweist. 
