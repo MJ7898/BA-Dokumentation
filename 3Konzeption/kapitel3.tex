@@ -52,12 +52,14 @@ Gegenstände, Wände und dem Boden grundlegend gegeben sind, resultieren die Anh
 \\ 
 Dem Nutzer soll die Möglichkeit geboten sein, Objekte an denen vom Anwender vorgesehenen Positionen platzieren zu können. Die Objekte werden 
 dann, anhand der durch das \acs{SLAM} Verfahren zugrundeliegenden Informationen, an der virtuellen Position erstellt und positioniert. Somit 
-stehen Daten über die Position des Objekts zur Verfügung, welche anschließend in der Datenbank persistiert werden. Währenddessen das Objekt 
+stehen Daten über die Position des Objekts zur Verfügung, welche anschließend automatisch in der Datenbank persistiert werden. Währenddessen das Objekt 
 erstellt wird, kann der Anwender zusätzliche Informationen zu dem Objekt, welches ebenso in der Realität vorhanden ist, einpflegen. Die 
-einzutragenden Informationen belaufen sich zu Anfang der prototypischen Konzeption auf den Namen des Geräts, die Position sowie die 
-Blickrichtung als auch den aktuellen Zustandsstatus des realen Objekts. Eine eindeutige Identifikationsnummer wird zudem automatisch generiert, 
-um eine einheitliche Richtlinie vorzugeben. Damit muss, bzw. soll der Nutzer die Entscheidung nicht selbst treffen. Die genauere Konzeption 
-dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegriffen. 
+einzutragenden Informationen belaufen sich zu Anfang der %prototypischen
+Konzeption auf den Namen des Objekts %, die Position sowie die Blickrichtung als auch
+und den aktuellen Status des realen Objekts. Eine eindeutige Identifikationsnummer wird zudem automatisch generiert, 
+um die jeweiligen Objekte zuordnen zu können. 
+%eine einheitliche Richtlinie vorzugeben. Damit muss, bzw. soll der Nutzer die Entscheidung nicht selbst treffen. 
+Die genauere Konzeption dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegriffen. 
 \\ 
 Ziel bei der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
 realitätsnahe Inszenierung des Umfeldes. In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
@@ -70,9 +72,9 @@ die sogenannte Visualisierungs-Phase.
 
 \section{Visualisierungs-Phase}
 \label{chap:Visualisierungs-Phase}
-Dieser Abschnitt definiert die Aufgabe der Visualisierungs-Phase. Dabei werden auch hier Anforderungen und Zielsetzungen dieser Funktion 
-theoretisch ausgeführt, um die anfänglichen Ideen, womit die allgemeine Konzeption der Software erarbeitet wurde, aufzuzeigen. Dafür ist 
-vorauszusetzen, dass die Scan-Phase alle erforderlichen Daten und Informationen liefert. 
+Dieser Abschnitt definiert die Aufgabe der Visualisierungs-Phase. 
+%Dabei werden auch hier Anforderungen und Zielsetzungen dieser Funktion theoretisch ausgeführt, um die anfänglichen Ideen, womit die allgemeine Konzeption der Software erarbeitet wurde, aufzuzeigen.
+Dafür ist vorauszusetzen, dass die Scan-Phase alle erforderlichen Daten und Informationen liefert. 
 \\ 
 \linebreak
 Diese Funktion ist hauptsächlich zur reinen Darstellung der vorab in der Scan-Phase erstellten Objekte gedacht. Mit diesem Teil des Systems 
@@ -80,7 +82,7 @@ kann der Nutzer sich frei im Raum bewegen und bekommt die Objekte in seinem Umfe
 Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch Anklicken des Objekts genauere Informationen über dieses zu erhalten. 
 \\ 
 \linebreak 
-Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Zustandsstatus in den Raum 
+Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Status in den Raum 
 projiziert, sodass Auffälligkeiten sofort zu sehen sind. Dies bedeutet, bei normalem, aktivem Status ist die Farbe der Projektion grün, 
 bei fehlerhaftem, passivem Status rot. Dadurch wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. Mithilfe dieser 
 Funktion wird im Handumdrehen ein Überblick über die Situation und Lage der Objekte verschafft. Falls es zu einem ungewollten Verhalten kommt, 
