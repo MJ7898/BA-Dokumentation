@@ -198,36 +198,3 @@ Quaternionen sind im Vergleich zum Eulerschen Winkel übersichtlicher und kompak
 Der Eulersche Winkel weist eine Unstetigkeit auf und ist für die allgemeine Rotationsbestimmung nicht eindeutig. \cite{euler.2000} Weiterer Nachteile des 
 Eulerschen Winkels sind zum einen die getrennte Durchführung der Vektor- und Matrizenoperationen und zum Anderen die vielen Parameter, die zur Berechnung notwendig sind. 
 Zudem kommt eine hohe Redundanz und die Interpolation ist durch die Winkelberechnung schwierig. \cite{quaternionRichter.2020m} 
-
-\section{Technologien}
-\label{chap:Technologien}                       %Programmier-Technologien
-Dieser Abschnitt befasst sich mit den wichtigsten Technologien, die in diesem Projekt eingesetzt werden. 
-%Ein kurzer Überblick 
-%über die Historie der Technologien, worum es dabei geht und welche Aufgaben sie umfassen. 
-\\ 
-Der Augenmerk liegt auf dem Framework \textit{Google ARCore}, da dieses Hauptbestandteil des Projekts ist. 
-\subsection{Google ARCore}
-\label{sec:arcore}
-ARCore ist die von Google veröffentlichte Plattform zum Erstellen von \acl{AR} Erlebnissen, primär entwickelt für Android Phones. 
-Das \ac{SDK} ist in den Programmiersprachen Java und Kotlin geschrieben. Mit bestimmten \acs{API}s ermöglicht \textit{ARCore} die Erfassung 
-der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen. Mitte des Jahres 2017 
-wurde die \textit{Google ARCore API} zum ersten Mal den Entwicklern und der \acs{AR}-Community präsentiert. Im ersten Quartal 2018 wurde 
-diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. 
-\\ 
-\linebreak 
-\textit{Project Tango} war ebenso eine Google-Plattform, mit dem Smartphones und Tablets ein \textit{„Raumgefühl“} erhalten. \cite{projecttango.2016j} 
-Die Plattform kombinierte die Eingabe verschiedener Sensoren, z.B. radarähnliche Infrarotstrahler, einer Infrarotkamera und hochpräzisen 
-Beschleunigungsmessern, Barometern und Gyroskopen, um schnell nutzbare Informationen der Umgebung zu generieren. Mit der Überarbeitung des 
-Konzepts wurde das neue unabhängige Projekt \textit{ARCore} geschaffen und somit die Anzahl der Hardwarekomponenten reduziert, bspw. wird 
-keine spezielle Infrarotkamera mehr benötigt. Die ARCore \acs{API} verwendet bei Anwendungen ausschließlich das Kamerabild des Smartphones und 
-dessen Sensoren. 
-\\ 
-\linebreak 
-Zum Integrieren von virtuellen Objekten in die reale Welt verwendet ARCore drei Schlüsselfunktionen unter Benutzung von Java und OpenGL, Unity 
-und Unreal:
-\begin{itemize}
-    \item Motion tracking, dt. Bewegungsverfolgung, ermöglicht das Verstehen und Verfolgen der Position des Geräts relativ zur Realität.
-    \item Environmental understanding, dt. Verständnis der Umgebung, erkennt die Position und Größe aller Arten von Oberflächen: horizontale, 
-    vertikale und abgewinkelte Oberflächen, wie Wände, Böden, Tische oder Stühle.
-    \item Light estimation, dt. Lichtschätzung, schätzt die durch das Smartphone gegebenen Lichtverhältnisse der Umgebung. \cite{arcorefundamentals.2018m}
-\end{itemize}

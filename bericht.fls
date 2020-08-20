@@ -434,16 +434,6 @@ INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/smartglassAW.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/googleglass.png
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
-INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/hololensside.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png
@@ -451,6 +441,7 @@ OUTPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
 INPUT /Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr9.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmi9.tfm
