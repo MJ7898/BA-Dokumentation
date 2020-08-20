@@ -58,29 +58,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{arcoreofficial.2020j}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=AG}{%
-         family={ARCore},
-         familyi={A\bibinitperiod},
-         given={Google},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AG1}
-    \strng{fullhash}{AG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2020}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-  \field{howpublished}{\url{https://developers.google.com/ar/discover/concepts}}
-    \field{title}{Fundamental Concept}
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{boeingStudy.2015a}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -1240,41 +1217,6 @@
     \field{sortinithash}{S}
   \field{howpublished}{\url{https://de.wikipedia.org/wiki/Modulare_Programmierung}}
     \field{title}{Modulare Programmierung}
-    \field{year}{2018}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{androidjpdescr.2018m}{misc}{}
-    \name{author}{3}{}{%
-      {{hash=SC}{%
-         family={Sells},
-         familyi={S\bibinitperiod},
-         given={Chris},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=PB}{%
-         family={Poiesz},
-         familyi={P\bibinitperiod},
-         given={Benjamin},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=NK}{%
-         family={Ng},
-         familyi={N\bibinitperiod},
-         given={Karen},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SCPBNK1}
-    \strng{fullhash}{SCPBNK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2018}
-    \field{labeldatesource}{year}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-  \field{howpublished}{\url{https://android-developers.googleblog.com/2018/05/use-android-jetpack-to-accelerate-your.html}}
-    \field{title}{Use Android Jetpack to Accelerate Your App Development}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry

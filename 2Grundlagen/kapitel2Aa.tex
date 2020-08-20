@@ -36,13 +36,14 @@ sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt AR
 Kamerabild, sogenannte Merkmalspunkte \textit{„feature points“}. Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
 der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
 Ausrichtung der Kamera in Relation zur Realität abgeschätzt. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
-    \caption{Skizze zur Bewegungsverfolgung des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:motiontracking}
-\end{figure}
-\\ 
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
+%    \caption{Skizze zur Bewegungsverfolgung des Smartphones \cite{arcoreofficial.2020j}}
+%    \label{pic:motiontracking}
+%\end{figure}
+\\
+\linebreak 
 Die \acl{IMU} in Smart-Devices besitzt drei Beschleunigungssensoren, z.B. piezoelektrische Beschleunigungssensoren oder \ac{MEMS}, für die 
 drei Raumachsen:
 \begin{itemize}
@@ -60,29 +61,29 @@ veranschaulicht solch ein Beispiel.
     \caption{Grundprinzip einer IMU \cite{imubild.2020j}}
     \label{pic:Positionsberechnung}
 \end{figure}
-\pagebreak
+%\pagebreak
 \subsubsection*{Environmental understanding}
 Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
 Flächen beim Scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
 naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
 Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
-    \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:environmentalunderst}
-\end{figure}
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
+%    \caption{Skizze zum Umgebungsverständnis des Smartphones \cite{arcoreofficial.2020j}}
+%    \label{pic:environmentalunderst}
+%end{figure}
 \subsubsection*{Light estimation}
 Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
 \acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
 der Umgebung anzupassen. Diese Funktion verstärkt die Anpassung des virtuellen Objektes an die Realität und lässt dieses noch glaubwürdiger 
 erscheinen.
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/lightEstim.png}
-    \caption{Skizze zu den Lichtverhältnissen des Smartphones \cite{arcoreofficial.2020j}}
-    \label{pic:lightestim}
-\end{figure}
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/lightEstim.png}
+%    \caption{Skizze zu den Lichtverhältnissen des Smartphones \cite{arcoreofficial.2020j}}
+%    \label{pic:lightestim}
+%end{figure}
 \subsection{Android Jetpack}
 \label{sec:androidjetpack}
 Android Jetpack ist eine Ansammlung an Bibliotheken, die es Entwicklern ermöglicht \textit{Best Practices} zu befolgen, 
@@ -99,18 +100,18 @@ verschieden Abschnitte zu trennen. \cite{soc.2019a}}, \textit{testability}, \tex
 \textit{productivity features}, z.B. Plugin-Integrationen. Dies sind Techniken, um eine robuste und qualitativ hochwertige App zu erstellen.
 \\ 
 Die Bibliothekensammlung ist die Grundlage für die verwendete Architektur, Android Architecture Components in Abschnitt \ref{chap:AAC}.
-\\ 
-\linebreak
-Die Abbildung \ref{pic:androidjetpackcomp} zeigt einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/androidjetpackcomps.png}
-    \caption{Komponenten von Android Jetpack \cite{androidjpdescr.2018m}}
-    \label{pic:androidjetpackcomp}
-\end{figure}
-\\
-Eine nähere Erläuterung aller Bibliotheken findet im Rahmen dieser Ausarbeitung nicht statt, wobei die zur Verwendung geplanten 
-„Architecture Components“ beschrieben werden. 
+%\\ 
+%\linebreak
+%Die Abbildung \ref{pic:androidjetpackcomp} zeigt einen Überblick über die in Jetpack enthaltenen Bibliotheken. % in Abschnitt \ref{chap:AAC}
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2Grundlagen/Bilder/androidjetpackcomps.png}
+%    \caption{Komponenten von Android Jetpack \cite{androidjpdescr.2018m}}
+%    \label{pic:androidjetpackcomp}
+%\end{figure}
+%\\
+%Eine nähere Erläuterung aller Bibliotheken findet im Rahmen dieser Ausarbeitung nicht statt, wobei die zur Verwendung geplanten 
+%„Architecture Components“ beschrieben werden. 
 \\ 
 \linebreak
 LiveData, Room und ViewModel sind Bestandteil der \textit{Android Architecture Components}-Konstellation 
@@ -131,8 +132,8 @@ der manuellen Lebenszykluskoordination. \cite{livedata.2020}
 \label{sec:Room}
 \textit{Room} ist eine Persistenzbibliothek und bietet ein Abstraktionsschicht über der eigentlichen \textit{\acs{SQL}ite}-Datenbank, um einen 
 robusten Datenbankzugriff zu managen und das volle Potential von \acs{SQL}ite gleichzeitig zu nutzen. \cite{room.2017}
-\\ 
-\linebreak
+%\\ 
+%\linebreak
 Die robuste \acs{SQL}-Objektzuordnungsbibliothek \textit{Room} kann einen Cache mit den Daten der Applikation auf einem Gerät erstellen. Dieser 
 Cache dient als Wahrheitsquelle der Applikation und ermöglicht den Benutzern eine konsistente Kopie der Informationen der App anzuzeigen 
 und immer zugänglich zu machen. \textit{Room} kann in drei Kategorien, bzw. in drei Hauptkomponenten unterteilt werden:
@@ -144,13 +145,13 @@ und immer zugänglich zu machen. \textit{Room} kann in drei Kategorien, bzw. in 
 Das Diagramm \ref{pic:roomarchitecturediagramm} veranschaulicht die Interaktion, bzw. Funktionsweisen der Hauptkomponenten.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=7.5cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/roomArchitecture.png}
+    \includegraphics[width=6.5cm,height=7.5cm,keepaspectratio]{2Grundlagen/Bilder/roomArchitecture.png}
     \caption{Room Architektur Diagramm \cite{roomdiagr.2017}}
     \label{pic:roomarchitecturediagramm}
 \end{figure}
 \\ 
 %\pagebreak
-\linebreak
+%\linebreak
 Allgemein ermöglicht \textit{Room} einen vereinfachten Zugriff auf die Datenbank. Die Bibliothek hat einen hohen Grad an Möglichkeiten der \textit{„testability“}. 
 Zur Kompilierungszeit wird eine \acs{SQL}-Abfrageüberprüfung durchgeführt und interagiert einwandfrei mit anderen Android Architecture 
 Components, z.B. LiveData und ViewModel.
@@ -166,7 +167,7 @@ Ein \textit{ViewModel} fungiert ebenso als Kommunikationsschnittstelle zwischen 
 Architektur (siehe Abschnitt \ref{chap:AAC}). Des Weiteren kann die \textit{ViewModel}-Komponente Informationen zwischen Benutzeroberflächen 
 und verschiedenen Fragmenten, engl. \textit{„fragments“}\footnote{Teil einer \ac{UI} in einer Android Activity}, teilen.
 \\ 
-\linebreak
+%\linebreak
 Die Abbildung \ref{pic:viewModeldiagramm} zeigt eine sich ändernde Activity, die zu Beginn und nach Neuerstellung oder Aktualisierung Zugriff 
 auf die unveränderten Daten hat. 
 \begin{figure}[hbt!]
@@ -175,7 +176,7 @@ auf die unveränderten Daten hat.
     \caption{ViewModel Struktur Diagramm \cite{viewmodeldiagr.2020}}
     \label{pic:viewModeldiagramm}
 \end{figure} 
-\pagebreak
+%\pagebreak
 \subsection{Sceneform SDK}
 Das Sceneform \acs{SDK} ist ein Open-Source Projekt der Google LLC., welches für das Rendern von 3D-Szenen und -Animationen zuständig ist. 
 Basierend auf der physikalischen Echtzeit-Rendering-Engine, \textit{physically based renderer} für Android, iOS, macOS, Linux und Windows 

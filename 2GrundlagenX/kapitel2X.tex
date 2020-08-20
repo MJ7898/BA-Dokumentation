@@ -201,8 +201,9 @@ Entitäten und Aggregaten von der Ansicht.
     \caption{Model / Room Komponente \cite{aac.2020j}}
     \label{pic:roomComp}
 \end{figure} 
+\pagebreak
 \\ 
-\linebreak
+%\linebreak
 Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{Layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
 die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. Entities \textit{(\@Entity)} und Data Objects 
 \textit{(\@Dao)}, gearbeitet wird. Der Abbildung (\ref{pic:roomComp}) ist demnach zu entnehmen, dass die Bibliothek \textit{„Room“} einen Großteil der 
@@ -214,7 +215,7 @@ In einem fortlaufenden Architektur-Diagramm sind die Komponenten wie folgt angeo
 zu verdeutlichen. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=10cm,keepaspectratio]{2GrundlagenX/Bilder/aac.png}
+    \includegraphics[width=12cm,height=10cm,keepaspectratio]{2GrundlagenX/Bilder/aac.png}
     \caption{Android Architecture Components Diagram\cite{aac.2020j}}
     \label{pic:aacDia}
 \end{figure} 
@@ -242,7 +243,7 @@ die Software an sich, da Änderungen an den Modellen meist viele Risiken, dazu z
 Durch die Übersichtlichkeit der Datenmodelle können Standardwerte, Semantik, Sicherheit und die Datenqualität gleichzeitig sichergestellt 
 werden. Die Konsistenz von Namenskonventionen wird durch die Überschaubarkeit auch leichter überprüfbar. 
 \\ 
-\linebreak
+%\linebreak
 In der Softwareentwicklung wird die Datenmodellierung als wesentliche Teilaufgabe gesehen, um ein System aufzubauen. %Innerhalb des 
 %Datendesigns gibt es drei wichtige Varianten, die aufeinander aufbauen:
 %\pagebreak
@@ -263,14 +264,14 @@ In der Softwareentwicklung wird die Datenmodellierung als wesentliche Teilaufgab
 %Wobei die erste Phase die allgemeine Anforderungsanalyse, die in obiger Auflistung nicht aufgeführt ist, beinhaltet. Bei dieser Phase finden 
 %grundlegende Anforderungsprozesse statt, zum einen die Informationsstrukturanforderungen und zum anderen die Datenverarbeitungsanforderungen. 
 \\ 
-\linebreak
+%\linebreak
 Ein Schema, nachdem relationale Datenbanken aufgeteilt werden, ist die sogenannte Normalisierung von Datenbanken. Darunter versteht man die 
 Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe von Normalisierungsregeln und Normalformen. \cite{normalisierung.2020j} 
 Ziel dieser Zerlegung ist die Erstellung einer redundanzfreien Speicherung der Daten, um Daten löschen zu können, ohne einen 
 Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unterteilt:
 \begin{itemize}
-    \item Nullte Normalform (0NF)
-    \item Erste Normalform (1NF)
+    \item Nullte Normalform (0NF) \& Erste Normalform (1NF)
+    %\item Erste Normalform (1NF)
     \item Zweite Normalform (2NF)
     \item Dritte Normalform (3NF)
     \item Boyce Codd Normalform (BCNF)

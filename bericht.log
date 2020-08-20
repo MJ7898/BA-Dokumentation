@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  20 AUG 2020 15:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  20 AUG 2020 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1062,11 +1062,6 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'arcoreofficial.2020j':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'boeingStudy.2015a':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1158,11 +1153,6 @@ Package biblatex Warning: BibTeX reported the following issues
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'modularesoftware.2018s':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'androidjpdescr.2018m':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1290,17 +1280,17 @@ Package microtype Info: Character `029' is missing
 
  [3
 
-] [4] (/Users/mj/BA-Dokumentation/bericht.lot)
+] (/Users/mj/BA-Dokumentation/bericht.lot)
 \tf@lot=\write8
 \openout8 = `bericht.lot'.
 
- [5
+ [4
 
 ] (/Users/mj/BA-Dokumentation/bericht.lol)
 \tf@lol=\write9
 \openout9 = `bericht.lol'.
 
- [6
+ [5
 
 ]
 \openout2 = `abk.aux'.
@@ -1314,7 +1304,7 @@ Package acronym Info: Acronym GUI used in text but not spelled out in full in te
 Package acronym Info: Acronym ID used in text but not spelled out in full in text on input line 28.
 Package acronym Info: Acronym MVVM used in text but not spelled out in full in text on input line 36.
 Package acronym Info: Acronym SQL used in text but not spelled out in full in text on input line 39.
-) [7
+) [6
 
 
 ]
@@ -1465,7 +1455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--206
 
  []
 
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=534, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=516, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
 Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 233.
@@ -1476,7 +1466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--278
  []
 
 [10]
-<2Grundlagen/Bilder/bildmarkerAR.png, id=549, 297.11pt x 296.10625pt>
+<2Grundlagen/Bilder/bildmarkerAR.png, id=531, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 295.
@@ -1537,7 +1527,7 @@ Package microtype Info: Character `029' is missing
 Package acronym Info: Label `acro:TOF' newly defined as it shall be overridden
 although it is yet undefined on input line 75.
  [15]
-<2Grundlagen/Bilder/tof_kamera.png, id=626, 624.3325pt x 284.56313pt>
+<2Grundlagen/Bilder/tof_kamera.png, id=608, 624.3325pt x 284.56313pt>
 File: 2Grundlagen/Bilder/tof_kamera.png Graphic file (type png)
 <use 2Grundlagen/Bilder/tof_kamera.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 86.
@@ -1548,7 +1538,7 @@ Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 8
                                                   \fi \fi 
 l.100 \subsection
                  *{Graph-basiertes SLAM Verfahren} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png>]
-<2Grundlagen/Bilder/graph_SLAM.png, id=642, 603.25375pt x 429.605pt>
+<2Grundlagen/Bilder/graph_SLAM.png, id=624, 603.25375pt x 429.605pt>
 File: 2Grundlagen/Bilder/graph_SLAM.png Graphic file (type png)
 <use 2Grundlagen/Bilder/graph_SLAM.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/graph_SLAM.png  used on input line 108.
@@ -1603,131 +1593,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--27
 
 Package acronym Info: Label `acro:IMU' newly defined as it shall be overridden
 although it is yet undefined on input line 37.
-<2Grundlagen/Bilder/motionTracking.png, id=689, 851.18pt x 358.84062pt>
-File: 2Grundlagen/Bilder/motionTracking.png Graphic file (type png)
-<use 2Grundlagen/Bilder/motionTracking.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/motionTracking.png  used on input line 41.
-(pdftex.def)             Requested size: 337.45276pt x 142.2634pt.
 Package acronym Info: Label `acro:MEMS' newly defined as it shall be overridden
-although it is yet undefined on input line 46.
+although it is yet undefined on input line 47.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--49
+
+ []
+
 [20
 
 
 ]
-<2Grundlagen/Bilder/imu-Bsp.png, id=703, 711.15688pt x 534.49687pt>
+<2Grundlagen/Bilder/imu-Bsp.png, id=682, 711.15688pt x 534.49687pt>
 File: 2Grundlagen/Bilder/imu-Bsp.png Graphic file (type png)
 <use 2Grundlagen/Bilder/imu-Bsp.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 59.
+Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 60.
 (pdftex.def)             Requested size: 256.08139pt x 192.46765pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.64 \subsubsection
-                   *{Environmental understanding}pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.64 \subsubsection
-                   *{Environmental understanding} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/motionTracking.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png>]
-<2Grundlagen/Bilder/environmentalUnderst.png, id=713, 846.16125pt x 352.81813pt>
-File: 2Grundlagen/Bilder/environmentalUnderst.png Graphic file (type png)
-<use 2Grundlagen/Bilder/environmentalUnderst.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/environmentalUnderst.png  used on input line 71.
-(pdftex.def)             Requested size: 341.1828pt x 142.26068pt.
-<2Grundlagen/Bilder/lightEstim.png, id=716, 849.1725pt x 357.335pt>
-File: 2Grundlagen/Bilder/lightEstim.png Graphic file (type png)
-<use 2Grundlagen/Bilder/lightEstim.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/lightEstim.png  used on input line 82.
-(pdftex.def)             Requested size: 338.06923pt x 142.2608pt.
-<2Grundlagen/Bilder/androidjetpackcomps.png, id=727, 589.70313pt x 297.11pt>
-File: 2Grundlagen/Bilder/androidjetpackcomps.png Graphic file (type png)
-<use 2Grundlagen/Bilder/androidjetpackcomps.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/androidjetpackcomps.png  used on input line 107.
-(pdftex.def)             Requested size: 426.79945pt x 215.03427pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--118
+l.87 \subsection
+                {Android Jetpack} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/imu-Bsp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--118
+Underfull \hbox (badness 10000) in paragraph at lines 122--131
 
  []
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.118 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.118 
-       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/environmentalUnderst.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/lightEstim.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 121--130
-
+Overfull \hbox (0.44308pt too wide) in paragraph at lines 133--140
+[][]\T1/lmr/m/n/10.95 (-20) ite gleich-zei-tig zu nut-zen. [[][]\T1/lmr/m/sc/10.95 (-20) De-vel-opers []\T1/lmr/m/n/10.95 (-20) 2017a[]] Die ro-bus-te [][]-Objektzuordnungsbibliothek
  []
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.130 \subsection
-                 *{Room} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/androidjetpackcomps.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--139
-
- []
-
-<2Grundlagen/Bilder/roomArchitecture.png, id=755, 595.22375pt x 539.51563pt>
+[22]
+<2Grundlagen/Bilder/roomArchitecture.png, id=724, 595.22375pt x 539.51563pt>
 File: 2Grundlagen/Bilder/roomArchitecture.png Graphic file (type png)
 <use 2Grundlagen/Bilder/roomArchitecture.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 147.
-(pdftex.def)             Requested size: 213.39032pt x 193.4187pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--157
-
- []
-
+Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 148.
+(pdftex.def)             Requested size: 184.93524pt x 167.6268pt.
 Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
-although it is yet undefined on input line 167.
-<2Grundlagen/Bilder/viewModelDiagram.png, id=762, 482.30188pt x 302.12875pt>
+although it is yet undefined on input line 168.
+<2Grundlagen/Bilder/viewModelDiagram.png, id=731, 482.30188pt x 302.12875pt>
 File: 2Grundlagen/Bilder/viewModelDiagram.png Graphic file (type png)
 <use 2Grundlagen/Bilder/viewModelDiagram.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 174.
+Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 175.
 (pdftex.def)             Requested size: 213.39098pt x 133.67467pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--179
+Underfull \hbox (badness 10000) in paragraph at lines 161--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--179
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
 
  []
 
-[24] [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--200
+
+ []
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.179 \subsection
-                 {Sceneform SDK}pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11}) has been already used, duplicate ignored
+l.200 \subsection
+                 {SQLite} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/roomArchitecture.png>]) [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.179 \subsection
-                 {Sceneform SDK} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/roomArchitecture.png> </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/viewModelDiagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--199
-
- []
-
-) [26]
+l.188 \include{2Grundlagen/kapitel2Aa}
+                                       </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/viewModelDiagram.png>]
 \openout2 = `2GrundlagenX/kapitel2X.aux'.
 
  (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.tex
@@ -1735,7 +1675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-<2GrundlagenX/Bilder/MVCArchitecture.png, id=802, 630.355pt x 355.3275pt>
+<2GrundlagenX/Bilder/MVCArchitecture.png, id=762, 630.355pt x 355.3275pt>
 File: 2GrundlagenX/Bilder/MVCArchitecture.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/MVCArchitecture.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/MVCArchitecture.png  used on input line 43.
@@ -1757,16 +1697,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--63
 
  []
 
-[27
+[25
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.63 
       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/MVCArchitecture.png>]
-<2GrundlagenX/Bilder/mvvmDiagramm.png, id=821, 460.21938pt x 320.19624pt>
+<2GrundlagenX/Bilder/mvvmDiagramm.png, id=781, 460.21938pt x 320.19624pt>
 File: 2GrundlagenX/Bilder/mvvmDiagramm.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/mvvmDiagramm.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 111.
@@ -1791,13 +1731,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--131
 
  []
 
-[28] [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2.13}) has been already used, duplicate ignored
+[26] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.131 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
-<2GrundlagenX/Bilder/infoflussMVVM.png, id=839, 647.41875pt x 126.97438pt>
+<2GrundlagenX/Bilder/infoflussMVVM.png, id=799, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 143.
@@ -1807,97 +1747,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--150
 
  []
 
-<2GrundlagenX/Bilder/activityComp.png, id=844, 201.25188pt x 78.79437pt>
+<2GrundlagenX/Bilder/activityComp.png, id=804, 201.25188pt x 78.79437pt>
 File: 2GrundlagenX/Bilder/activityComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/activityComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 167.
 (pdftex.def)             Requested size: 142.26337pt x 55.69911pt.
-<2GrundlagenX/Bilder/viewModelComp.png, id=847, 288.57813pt x 90.3375pt>
+<2GrundlagenX/Bilder/viewModelComp.png, id=807, 288.57813pt x 90.3375pt>
 File: 2GrundlagenX/Bilder/viewModelComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/viewModelComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 176.
 (pdftex.def)             Requested size: 142.26756pt x 44.53592pt.
-<2GrundlagenX/Bilder/repoComp.png, id=852, 231.86626pt x 60.225pt>
+<2GrundlagenX/Bilder/repoComp.png, id=812, 231.86626pt x 60.225pt>
 File: 2GrundlagenX/Bilder/repoComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/repoComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 188.
 (pdftex.def)             Requested size: 142.26608pt x 36.95221pt.
-<2GrundlagenX/Bilder/roomComp.png, id=855, 239.39438pt x 214.30063pt>
+<2GrundlagenX/Bilder/roomComp.png, id=815, 239.39438pt x 214.30063pt>
 File: 2GrundlagenX/Bilder/roomComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/roomComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 200.
 (pdftex.def)             Requested size: 142.26425pt x 127.35185pt.
-<2GrundlagenX/Bilder/aac.png, id=860, 660.96938pt x 588.69937pt>
+<2GrundlagenX/Bilder/aac.png, id=820, 660.96938pt x 588.69937pt>
 File: 2GrundlagenX/Bilder/aac.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/aac.png>
-Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 217.
+Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 218.
 (pdftex.def)             Requested size: 319.46034pt x 284.53073pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--229
+Underfull \hbox (badness 10000) in paragraph at lines 153--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--229
+Underfull \hbox (badness 10000) in paragraph at lines 153--230
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--229
-
- []
-
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14}) has been already used, duplicate ignored
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
-       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/infoflussMVVM.png>] [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
+l.230 
+       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/infoflussMVVM.png>] [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.16}) has been already used, duplicate ignored
+l.230 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17}) has been already used, duplicate ignored
+l.230 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
-       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/activityComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/viewModelComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/repoComp.png>] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.18}) has been already used, duplicate ignored
+l.230 
+       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/activityComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/viewModelComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/repoComp.png>] [30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.19}) has been already used, duplicate ignored
+l.230 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.2.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 
+l.230 
        </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/roomComp.png> </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/aac.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--271
+Underfull \hbox (badness 10000) in paragraph at lines 233--272
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--271
-
- []
-
-) [33]
+) [31]
 \openout2 = `3Konzeption/kapitel3.aux'.
 
  (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.tex
 Kapitel 3.
-[34
+[32
 
 
 
@@ -1921,8 +1846,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--93
 
  []
 
-[35]
-<3Konzeption/Bilder/architektur_konzept.png, id=918, 471.26062pt x 417.05812pt>
+[33]
+<3Konzeption/Bilder/architektur_konzept.png, id=879, 471.26062pt x 417.05812pt>
 File: 3Konzeption/Bilder/architektur_konzept.png Graphic file (type png)
 <use 3Konzeption/Bilder/architektur_konzept.png>
 Package pdftex.def Info: 3Konzeption/Bilder/architektur_konzept.png  used on input line 137.
@@ -1937,7 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--142
 
  []
 
-[36] [37]
+[34] [35]
 Underfull \hbox (badness 10000) in paragraph at lines 144--153
 
  []
@@ -1947,13 +1872,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--180
 
  []
 
-[38pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.180 
        </Users/mj/BA-Dokumentation/3Konzeption/Bilder/architektur_konzept.png>]
-<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=946, 554.07pt x 340.27126pt>
+<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=905, 554.07pt x 340.27126pt>
 File: 3Konzeption/Bilder/Anwendungsfalldiagramm.png Graphic file (type png)
 <use 3Konzeption/Bilder/Anwendungsfalldiagramm.png>
 Package pdftex.def Info: 3Konzeption/Bilder/Anwendungsfalldiagramm.png  used on input line 207.
@@ -1963,7 +1888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--214
 
  []
 
-[39] [40pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+[37] [38pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1973,8 +1898,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--267
 
  []
 
-[41]
-<3Konzeption/Bilder/ERM_BA.png, id=978, 661.47125pt x 447.6725pt>
+[39]
+<3Konzeption/Bilder/ERM_BA.png, id=939, 661.47125pt x 447.6725pt>
 File: 3Konzeption/Bilder/ERM_BA.png Graphic file (type png)
 <use 3Konzeption/Bilder/ERM_BA.png>
 Package pdftex.def Info: 3Konzeption/Bilder/ERM_BA.png  used on input line 292.
@@ -1989,7 +1914,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--190
 
  []
 
-[42] [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+[40] [41pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2021,12 +1946,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--60
 
  []
 
-[44
+[42
 
 
 
 ]
-<4Umsetzung/Bilder/camera_permission.jpg, id=1000, 1084.05pt x 2131.965pt>
+<4Umsetzung/Bilder/camera_permission.jpg, id=960, 1084.05pt x 2131.965pt>
 File: 4Umsetzung/Bilder/camera_permission.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/camera_permission.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 80.
@@ -2048,13 +1973,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--102
 
  []
 
-[45] [46pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+[43] [44pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.102 \begin{itemize}
                       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg>]
-<4Umsetzung/Bilder/startmenu.jpg, id=1013, 1083.04625pt x 1840.8775pt>
+<4Umsetzung/Bilder/startmenu.jpg, id=973, 1083.04625pt x 1840.8775pt>
 File: 4Umsetzung/Bilder/startmenu.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/startmenu.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 110.
@@ -2074,23 +1999,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--134
 
  []
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.134 
        </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg>]
-<4Umsetzung/Bilder/image_tracking.jpg, id=1022, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/image_tracking.jpg, id=983, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/image_tracking.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/image_tracking.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 159.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/scan-phase.jpg, id=1029, 1084.05pt x 2267.47125pt>
+<4Umsetzung/Bilder/scan-phase.jpg, id=990, 1084.05pt x 2267.47125pt>
 File: 4Umsetzung/Bilder/scan-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 198.
 (pdftex.def)             Requested size: 102.00989pt x 213.37068pt.
-<4Umsetzung/Bilder/objekt_info.jpg, id=1032, 1084.05pt x 2135.98pt>
+<4Umsetzung/Bilder/objekt_info.jpg, id=993, 1084.05pt x 2135.98pt>
 File: 4Umsetzung/Bilder/objekt_info.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/objekt_info.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/objekt_info.jpg  used on input line 216.
@@ -2125,17 +2050,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--191
 
  []
 
-[48] [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+[46] [47pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.191 \include{4Umsetzung/kapitel4}
-                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/image_tracking.jpg>] [50pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/image_tracking.jpg>] [48pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.191 \include{4Umsetzung/kapitel4}
-                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg>] [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan-phase.jpg>] [49pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2176,7 +2101,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [52
+ [50
 
 
 ]
@@ -2216,8 +2141,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--114
 
  []
 
-[53]
-<4Umsetzung/Bilder/koordin.jpeg, id=1104, 766.865pt x 576.1525pt>
+[51]
+<4Umsetzung/Bilder/koordin.jpeg, id=1065, 766.865pt x 576.1525pt>
 File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/koordin.jpeg>
 Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 131.
@@ -2227,12 +2152,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--152
 
  []
 
-[54]
+[52]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 156.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 156.
-<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1124, 370.38374pt x 261.97874pt>
+<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1085, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
 Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 195.
@@ -2262,12 +2187,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--228
 
  []
 
-[55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.228 ...tanz zwischen Marker und Ursprungspunkt}]
-                                                   </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>] [56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+                                                   </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>] [54pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2277,17 +2202,17 @@ Overfull \hbox (2.03656pt too wide) in paragraph at lines 229--230
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/difcalc.jpeg, id=1145, 967.615pt x 568.1225pt>
+<4Umsetzung/Bilder/difcalc.jpeg, id=1105, 967.615pt x 568.1225pt>
 File: 4Umsetzung/Bilder/difcalc.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/difcalc.jpeg>
 Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 250.
 (pdftex.def)             Requested size: 426.78545pt x 250.58148pt.
-<4Umsetzung//Bilder/scan_image.jpg, id=1149, 1084.05pt x 2185.16376pt>
+<4Umsetzung//Bilder/scan_image.jpg, id=1109, 1084.05pt x 2185.16376pt>
 File: 4Umsetzung//Bilder/scan_image.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/scan_image.jpg>
 Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 272.
 (pdftex.def)             Requested size: 105.864pt x 213.39438pt.
-<4Umsetzung/Bilder/scan_environment.jpg, id=1150, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/scan_environment.jpg, id=1110, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/scan_environment.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan_environment.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 273.
@@ -2297,7 +2222,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\T1/lmr/m/n/9 (+20) (b) Um-ge-bungs-be-rech-
  []
 
-<4Umsetzung/Bilder/place_objects_view.jpg, id=1154, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/place_objects_view.jpg, id=1114, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/place_objects_view.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/place_objects_view.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 295.
@@ -2322,28 +2247,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--305
 
  []
 
-[57] [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
+[55] [56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.305 
-       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/difcalc.jpeg>] [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
+       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/difcalc.jpeg>] [57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.305 
        </Users/mj/BA-Dokumentation/4Umsetzung//Bilder/scan_image.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan_environment.jpg>]
-<4Umsetzung/Bilder/visual-phase.jpg, id=1191, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/visual-phase.jpg, id=1152, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/visual-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/visual-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 328.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-) [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
+) [58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.192 \include{4Umsetzung/kapitel4A}
-                                     </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/place_objects_view.jpg>] [61pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
+                                     </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/place_objects_view.jpg>] [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2371,7 +2296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--54
 
  []
 
-[62
+[60
 
 
 ]
@@ -2389,22 +2314,22 @@ Overfull \hbox (38.03693pt too wide) in paragraph at lines 75--76
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1223, 1084.05pt x 2265.46375pt>
+<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1183, 1084.05pt x 2265.46375pt>
 File: 4Umsetzung/Bilder/show_objects_after_loading.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_objects_after_loading.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_objects_after_loading.jpg  used on input line 96.
 (pdftex.def)             Requested size: 102.10913pt x 213.38918pt.
-<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1224, 1084.05pt x 2266.4675pt>
+<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1184, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung//Bilder/show_data_to_obj_1.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/show_data_to_obj_1.jpg>
 Package pdftex.def Info: 4Umsetzung//Bilder/show_data_to_obj_1.jpg  used on input line 108.
 (pdftex.def)             Requested size: 102.05951pt x 213.37997pt.
-<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1225, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1185, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_2.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_2.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_2.jpg  used on input line 109.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1226, 1084.05pt x 2266.4675pt>
+<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1186, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_3.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_3.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_3.jpg  used on input line 110.
@@ -2424,12 +2349,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--118
 
  []
 
-[63] [64pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
+[61] [62pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.118 
-       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/show_objects_after_loading.jpg>]) [65pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
+       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/show_objects_after_loading.jpg>]) [63pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -2454,11 +2379,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--42
 
  []
 
-[66
+[64
 
 
 
-] [67]
+] [65]
 Kapitel 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--80
@@ -2485,9 +2410,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--80
 
  []
 
-[68
+[66
 
-] [69]
+] [67]
 Kapitel 7.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 83--194
@@ -2509,9 +2434,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--194
 
  []
 
-[70
+[68
 
-] [71] (/Users/mj/BA-Dokumentation/bericht.ind)
+] [69] (/Users/mj/BA-Dokumentation/bericht.ind)
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 222.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2520,7 +2445,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [72
+ [70
 
 
 ]
@@ -2528,12 +2453,12 @@ Overfull \hbox (19.14507pt too wide) in paragraph at lines 225--225
 [][]\T1/lmr/m/sc/10.95 (-20) Elgan\T1/lmr/m/n/10.95 (-20) , Mi-ke [2016]. \T1/lmr/m/it/10.95 (-20) How Goo-gle's Pro-ject Tan-go will change your li-fe\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / www . computerworld .
  []
 
-[73]
+[71]
 Overfull \hbox (96.92467pt too wide) in paragraph at lines 225--225
 [][]\T1/lmr/m/sc/10.95 (-20) Quervel\T1/lmr/m/n/10.95 (-20) , Cé-li-ne [2020]. \T1/lmr/m/it/10.95 (-20) Aug-men-ted Rea-li-ty (AR): De-fi-ni-ti-on, Tech-nik & Po-ten-zi-al\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 =$[]\T1/lmr/m/n/10.95 (-20) https://worldofvr.net/augmented-
  []
 
-[74] [75]
+[72] [73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (/Users/mj/BA-Dokumentation/bericht.aux (/Users/mj/BA-Dokumentation/abk.aux) (/Users/mj/BA-Dokumentation/1Einleitung/kapitel1.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2A.aux) (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2Aa.aux) (/Users/mj/BA-Dokumentation/2GrundlagenX/kapitel2X.aux) (/Users/mj/BA-Dokumentation/3Konzeption/kapitel3.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4A.aux) (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4X.aux) (/Users/mj/BA-Dokumentation/5Fazit/fazit.aux))
@@ -2551,18 +2476,18 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32282 strings out of 492616
- 587778 string characters out of 6129481
- 1154920 words of memory out of 5000000
- 34763 multiletter control sequences out of 15000+600000
+ 32241 strings out of 492616
+ 586493 string characters out of 6129481
+ 1154110 words of memory out of 5000000
+ 34735 multiletter control sequences out of 15000+600000
  125470 words of font info for 209 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (86 pages, 14366898 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (83 pages, 12827979 bytes).
 PDF statistics:
- 1778 PDF objects out of 2073 (max. 8388607)
- 1579 compressed objects within 16 object streams
- 421 named destinations out of 1000 (max. 500000)
- 39109 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1729 PDF objects out of 2073 (max. 8388607)
+ 1541 compressed objects within 16 object streams
+ 412 named destinations out of 1000 (max. 500000)
+ 39089 words of extra memory for PDF output out of 42996 (max. 10000000)
 
