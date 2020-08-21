@@ -62,9 +62,14 @@ um die jeweiligen Objekte zuordnen zu können.
 Die genauere Konzeption dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegriffen. 
 \\ 
 Ziel bei der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
-realitätsnahe Inszenierung des Umfeldes. In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
-Einfachheit der Objekterstellung, die simpel und überschaubar zu erstellende Benutzeroberfläche, die offensichtliche Objektdarstellung 
-in kurzer Zeit und einen nicht allzu hohen Zeitaufwand.
+realitätsnahe Inszenierung des Umfeldes. Im Rahmen dieser Arbeit wurden durch das Konzept Anforderungen für die Scan-Phase erarbeitet. 
+Darunter die \acs{SLAM} gestützte Wahrnehmung der Umgebung und die darauf beruhende Objektdarstellung, sowie die Registrierung der Informationen, die in 
+einer SQLite Datenbank persistiert werden, als auch das Erstellen der Benutzeroberflächen zur guten Repräsentation der Inhalte. Mit der Objektdarstellung 
+ist das Erzeugen des zu visualisierenden Objekts und die Performance der Darstellung aller gemeint. Diese sollte mit einem geringen Zeitaufwand für den 
+Benutzer verbunden sein.
+%In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
+%Einfachheit der Objekterstellung, die simpel und überschaubar zu erstellende Benutzeroberfläche, die offensichtliche Objektdarstellung 
+%in kurzer Zeit und einen nicht allzu hohen Zeitaufwand.
 \\ 
 \linebreak
 Nachdem die Scan-Phase, eine der beiden Kernfunktionen, konzeptionell präzisiert wurde, kommt nun die Erläuterung der zweiten Kernfunktion, 
@@ -86,12 +91,14 @@ Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefrag
 projiziert, sodass Auffälligkeiten sofort zu sehen sind. Dies bedeutet, bei normalem, aktivem Status ist die Farbe der Projektion grün, 
 bei fehlerhaftem, passivem Status rot. Dadurch wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. Mithilfe dieser 
 Funktion wird im Handumdrehen ein Überblick über die Situation und Lage der Objekte verschafft. Falls es zu einem ungewollten Verhalten kommt, 
-kann der Anwender unverzüglich eingreifen und dementsprechend handeln. Wird ein Objekt durch die Kamera 
-fokussiert, kann der Anwender das Objekt anklicken, um weitere Informationen über dieses zu erhalten. 
+kann der Anwender unverzüglich eingreifen und dementsprechend handeln. %Wird ein Objekt durch die Kamera 
+%fokussiert, kann der Anwender das Objekt anklicken, um weitere Informationen über dieses zu erhalten.
 \\ 
 Die Visualisierungs-Phase sieht es allerdings nicht vor, während die Applikation läuft, neue Objekte hinzuzufügen. Dafür müsste der Anwender wiederum zur 
-Funktion der Scan-Phase wechseln. Eine Änderung an den Objekten selbst kann nur bedingt vorgenommen werden, dies betrifft ausschließlich
-Informationsänderungen, die das Objekt selbst betreffen.  
+Funktion der Scan-Phase wechseln. Eine Änderung an den Objekten selbst kann allerdings nach Erstellung durch den Nutzer nicht vorgenommen werden. Dafür müsste 
+er alle Informationen aus der Datenbank löschen und die Scan-Phase erneut beginnen. 
+%nur bedingt vorgenommen werden, dies betrifft ausschließlich
+%Informationsänderungen, die das Objekt selbst betreffen.  
 
 \section{Architekturkonzept}
 \label{chap:Architekturkonzept}
@@ -109,8 +116,9 @@ Benutzeroberfläche oder die Verwendung einer anderen Datenbank, bzw. hinzukomme
 hinzugefügt werden können. Durch das \acs{MVVM}-Pattern, welches durch die \textit{Android Architecture Components} gefördert wird, ist 
 das Testen von \textit{\acs{GUI}}- und \textit{BackEnd}-Elementen unabhängig voneinander begünstigt. 
 \\ 
-\linebreak
-Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und sorgen im Allgemeinen 
+%\linebreak
+%Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und
+Die \acs{AAC} sorgen im Allgemeinen 
 dafür, die Software im gesamten überschaubar und beherrschbar zu gestalten. Dabei werden die folgenden Prinzipien beachtet und auch gewährleistet. 
 Durch gezielte Abstraktion von Informationen wird die Komplexität einer Anwendung steuerbar. Mit der großen Anzahl an verschiedenen 
 Segmenten, die der Abbildung (\ref{pic:architectur}) zu entnehmen sind, wird die Trennung der Zuständigkeit (engl. \textit{seperation of concerns}) 
@@ -125,7 +133,7 @@ eine Menge an Komponenten zerlegt ist, die dadurch gewonnene Modularität.
 Die Software wurde zunächst, den Phasen entsprechend (siehe Abschnitt \ref{chap:Scan-Phase} \& \ref{chap:Visualisierungs-Phase}), in zwei 
 große Rubriken, den sogenannten Scan- und Visualisierungs-Phasen, unterteilt. Diese Phasen finden sich in der Abbildung (\ref{pic:architectur}) der 
 konzeptionellen Architektur des Unterstützungssystems wieder. 
-\\ 
+%\\
 \textit{Views}, bzw. \textit{Activities} werden mithilfe der von Android zur Verfügung gestellten \textit{AppCompat-Library} erstellt. Die 
 von Android Jetpack vorhandene Bibliothek ViewModel dient als Kommunikationsschnittstelle zwischen der \acs{GUI} und dem Repository. 
 Die ebenso von Android Jetpack publizierte LiveData-Bibliothek gilt als Observer zur \acs{GUI} und benachrichtigt diese bei Änderungen. Mit 
@@ -136,7 +144,7 @@ Struktur, festgelegt. Data Objects (DAOs) regeln die Datenbank-Zugriffe über de
 modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Objekte zu speichern wird eine SQLite-Datenbank verwendet.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
+    \includegraphics[width=9cm,height=10cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
     \caption{Konzeptionelle Software-Architektur}
     \label{pic:architectur}
 \end{figure}
@@ -177,6 +185,17 @@ Abbildung (\ref{pic:anwendungsfall}) verdeutlicht den konzipierten Inhalt der Sc
 sodass die oben aufgeführte Beschreibung zur optischen Darstellung mit den dahinterliegenden Klassen die Vorstellung und das Konzept präzisiert.
 \\ 
 \linebreak
+Zu der Definition der Anforderungen wurde ein Mockup der Benutzeroberfläche erstellt. Damit konnten im Voraus zu den Funktionen passende Oberflächen und 
+Darstellungen gewählt werden, die während der Umsetzung als Vorlage dienen sollten. 
+\\
+\linebreak
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=7.5cm,keepaspectratio]{3Konzeption/Bilder/Scan-Phase_AugmIS.png}
+    \caption{Mockup Scan-Phase}
+    \label{pic:Mockscan}
+\end{figure}
+\\
 Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
 Anforderungen und Zielsetzungen.
 
@@ -188,10 +207,12 @@ Funktionen hin beleuchtet.
 über den gesamten Bildschirm erstrecken und ist zusätzlich mit zwei weiteren Buttons zu versehen. Diese werden im weiteren Verlauf 
 präzisiert. Das Ziel dieser Kernfunktion ist die Darstellung aller vorhandenen, in der Datenbank gespeicherten, Gegenstände. Hierbei werden 
 lediglich die Erzeugnisse, die in der Scan-Phase erstellt wurden, abgerufen und als neue Objekte gerendert. Dafür wird die Position in der 
-SQLite Datenbank abgefragt und als Basis für das neue Objekt geladen. So können die vorhandenen Marker visuell dargestellt werden. Die 
+SQLite Datenbank abgefragt und als Basis für das neue Objekt geladen. So können die vorhandenen Objekte visuell dargestellt werden. Die 
 Funktion an sich sieht keine Änderungen der bestehenden Objekte vor, dafür muss der Nutzer erneut in die Scan-Phase wechseln.
 \\ 
-Bevor der Benutzer von dem Startmenü zur Visualisierungs-Phase übergehen kann, soll ein Hinweis erscheinen, welcher sicherstellen soll, dass 
+Bevor der Benutzer von dem Startmenü zur Visualisierungs-Phase übergehen kann, soll im Hintergrund eine Überprüfung erfolgen
+%Hinweis erscheinen
+, welche sicherstellt, dass 
 die Scan-Phase schon bereits mindestens einmal durchgeführt wurde. Damit wird versichert, dass bereits Objekte existieren und angezeigt 
 werden können. Denn ohne vorherigen Scan ist die Kernfunktion der Visualisierungs-Phase sinnlos.
 \\
@@ -199,27 +220,36 @@ Neben dem \acs{AR}-Fragment gibt es zwei Buttons, einen davon zum Navigieren zur
 hinzuzufügen, und den zweiten zum Starten, bzw. erneuten Laden der Funktion. Damit wird die Abfrage der Daten, die in der Datenbank 
 enthalten sind, gestartet und der Prozess des Objekterstellens, bzw. - renderns begonnen. Dadurch erscheinen alle bereits gespeicherten 
 Objekte auf der Karte. Auf die Funktionen, Methoden und deren Umsetzung wird in Kapitel (\ref{chap:Umsetzung}) genauestens eingegangen.
-\\ 
-\linebreak
-Dem Diagramm ist der geplante Ablauf zum jetzigen Zeitpunkt und Funktionsweisen des Unterstützungssystems zu entnehmen. Dabei ist grob 
+%\\ 
+%\linebreak
+Das folgende Mockup veranschaulicht die Beschreibung der konzipierten Oberfläche der Visualisierungs-Phase.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7.5cm,height=7.5cm,keepaspectratio]{3Konzeption/Bilder/Visual-Phase_AugmIS.png}
+    \caption{Mockup Visualisierungs-Phase}
+    \label{pic:Mocksvisual}
+\end{figure}
+\\
+Dem Diagramm ist der geplante Ablauf und Funktionsweisen des Unterstützungssystems zum jetzigen Zeitpunkt zu entnehmen. Dabei ist grob 
 veranschaulicht, welche Möglichkeiten sich dem Nutzer bieten, um einen Überblick zu verschaffen, anhand welcher Informationen die 
-Applikation entwickelt wird. 
+Applikation entwickelt wird. Die \textit{ScanActivity} beinhaltet alle Funktionen die in der Scan-Phase vorgesehen sind. Beim Erzeugen eines neuen Objekts 
+wird man auf die \textit{NewObjectActivity} weitergeleitet, in der alle Informationen zu diesem eingetragen werden müssen. Die \textit{VisualActivity} ist für das 
+erneute Anzeigen der zu visualisierenden Objekte zuständig. Dabei können auch die Informationen zu einzelnen abgerufen werden. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
     \caption{Anwendungsfall-Diagramm}
     \label{pic:anwendungsfall}
 \end{figure}
-\\ 
 Nachdem auch das Softwarekonzept weitestgehend erarbeitet wurde, ging es um die Entscheidung, welches \acl{AR}-Framework für dieses Projekt 
-ausgewählt wird. Nun wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
+ausgewählt wird. Dazu wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}
 Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedliche Präferenzen und 
-Einsatzmöglichkeiten haben. Somit sind, auf den Bereich bezogen, Vor- und Nachteile im Vergleich von mehreren Frameworks nicht ausgeschlossen. 
+Einsatzmöglichkeiten haben. Somit sind, auf den Einsatzbereich bezogen, Vor- und Nachteile im Vergleich von mehreren Frameworks nicht ausgeschlossen. 
 Einige Alternativen wurden getestet und auf deren Brauchbarkeit evaluiert und analysiert. Dazu wurden Kriterien ausgearbeitet, die die 
 Auswahl an Frameworks einschränken und nach Möglichkeit das passendste ergeben soll: 
-\pagebreak
+%\pagebreak
 \begin{enumerate}
     \item Eine performante Darstellung von Objekten.
     \item Möglichkeiten zur Positionsbestimmung.
@@ -248,9 +278,9 @@ von Kamera zu Marker, Blickwinkel auf den Marker und die Lichtverhältnisse des 
 Nachteilig dieses Frameworks für dieses Projekt ist die fehlende Unterstützung bei der Realisierung und Erkennung der Umgebung, bzw. des Umfelds.
 So ist das Tracking nur über Marker, bzw. erweiterte markerbasierte Tracking-Methoden möglich. 
 \\ %untauglich
-Nach dieser Erkenntnis wurde auch dieses Framework als eher ungeeignet für die Verwendung in dem Projekt eingestuft. Möglicherweise 
-gäbe es einen Weg, einen \acs{SLAM}-Algorithmus in Kombination mit ARToolKit unter erweitertem Aufwand zu verwenden, allerdings 
-erschien dies zu umständlich und ineffektiv. 
+Nach dieser Erkenntnis wurde auch dieses Framework als eher ungeeignet für die Verwendung in dem Projekt eingestuft. %Möglicherweise 
+%gäbe es einen Weg, einen \acs{SLAM}-Algorithmus in Kombination mit ARToolKit unter erweitertem Aufwand zu verwenden, allerdings 
+%erschien dies zu umständlich und ineffektiv. 
 \subsection{Google ARCore}
 Google ARCore (siehe Abschnitt \ref{sec:arcore}) konnte bei der Analyse von sich überzeugen. Lediglich die Beschränkung der
 Betriebssysteme auf \textit{Android} und \textit{iOS} ist ein kaum bedeutender Nachteil, da das Assistenzsystem in der Gesamtbetrachtung 
@@ -288,11 +318,11 @@ Das Modell wurde mit der zuvor angesprochenen dritten Normalform umgesetzt, da d
 Probleme möglichst einfach zu lösen und diese nahe der Realität in das relationale Datenbankmodell einzupflegen. Dadurch kann eine Erweiterung des 
 Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erstellte ER-Modell auf und veranschaulicht die Modellierung. 
 \\ 
-\pagebreak
+%\pagebreak
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=15cm,keepaspectratio]{3Konzeption/Bilder/ERM_BA.png}
-    \caption{Entity Relationship Datenmodell}
+    \includegraphics[width=15cm,height=15cm,keepaspectratio]{3Konzeption/Bilder/UML_BA.png}
+    \caption{UML Diagramm}
     \label{pic:erm}
 \end{figure}
 \\

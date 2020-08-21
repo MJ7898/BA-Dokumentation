@@ -68,17 +68,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Scan-Phase}{33}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{33}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{34}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Architekturkonzept}{34}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Softwarekonzept}{36}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{38}{section.3.6}% 
+\contentsline {section}{\numberline {3.6}Auswahl des AR Frameworks}{39}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6.1}ARToolKit}{39}{subsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.2}Google ARCore}{39}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.2}Google ARCore}{40}{subsection.3.6.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.7}Datenmodell}{40}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
@@ -88,21 +88,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Startmen\IeC {\"u}}{43}{subsection.4.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Frontend}{43}{section*.40}% 
+\contentsline {subsubsection}{Frontend}{43}{section*.41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Backend}{45}{section*.42}% 
+\contentsline {subsubsection}{Backend}{45}{section*.43}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Scan-Phase}{46}{subsection.4.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Frontend}{46}{section*.43}% 
+\contentsline {subsubsection}{Frontend}{46}{section*.44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Backend}{50}{section*.44}% 
+\contentsline {subsubsection}{Backend}{50}{section*.45}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.3}Visualisierungs-Phase}{58}{subsection.4.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{FrontEnd}{58}{section*.45}% 
+\contentsline {subsubsection}{FrontEnd}{58}{section*.46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BackEnd}{60}{section*.46}% 
+\contentsline {subsubsection}{BackEnd}{60}{section*.47}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Evaluation}{64}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
