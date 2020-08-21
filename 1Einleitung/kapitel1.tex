@@ -118,7 +118,7 @@ Durch das stetige Wachstum der cjt Systemsoftware AG vergrößert sich auch dere
 Portfolio kontinuierlich. Dabei setzt das Consulting-Unternehmen hauptsächlich auf maßgeschneiderte
 Software- und Netzwerklösungen. Großkunden wie Siemens AG, Lufthansa Cargo,
 \ac{KIT} und Fraunhofer \acs{Fraunhofer IOSB} zeugen von der hohen Qualität der geleisteten Arbeit. 
-Dabei agiert das Unternehmen nicht nur in Deutschland sondern auch international, darunter in Ländern wie China und den USA.
+Dabei agiert das Unternehmen nicht nur in Deutschland, sondern auch international, darunter in Ländern wie China und den USA.
 %\\ 
 %\linebreak
 %Einer der größten Auftraggeber der Firma ist ebenso das in Karlsruhe angesiedelte Unternehmen Siemens AG, dass eine beispielhafte 
@@ -159,18 +159,22 @@ Phasen unterteilt, welche es separat zu planen und implementieren gilt.
 \\ 
 \linebreak
 Die erste Phase, genannt Scan-Phase, beschäftigt sich mit dem Scannen der Umgebung, bzw. des Raumes. Die Aufgabe dabei besteht darin, 
-mittels dem \ac{SLAM} - Verfahren eine Karte der Umgebung zu erstellen und die räumliche Lage innerhalb dieser Karte zu schätzen, um 
-auf Basis dieser erstellten Karte virtuell Objekte auf der Karte platzieren zu können. Mit den gewonnen Informationen der räumlichen 
-Darstellung durch das \acs{SLAM} - Verfahren kann der Nutzer virtuelle Objekte im virtuellen Raum an Ort und Stelle platzieren, als 
-Referenz zu dem existierenden Objekt in der Realität. %, welches erkannt wurde. 
-Bei der Erstellung eines Objekts soll der Nutzer die 
-Möglichkeit haben, Informationen über das Objekt in das System einzupflegen, damit er diese immer abrufen kann. 
+die Umgebung mittels \acs{SLAM} Verfahren zu realisieren und anhand dieser Informationen virtuelle Objekte im virtuellen Raum setzen zu können. 
+Diese dienen als Referenz zu dem existierenden Objekt in der Realität. Im weiteren Verlauf wird darauf genauer eingegangen.
+%mittels dem \ac{SLAM} - Verfahren eine Karte der Umgebung zu erstellen und die räumliche Lage innerhalb dieser Karte zu schätzen, um 
+%auf Basis dieser erstellten Karte virtuell Objekte auf der Karte platzieren zu können. Mit den gewonnen Informationen der räumlichen 
+%Darstellung durch das \acs{SLAM} - Verfahren kann der Nutzer virtuelle Objekte im virtuellen Raum an Ort und Stelle platzieren, als 
+%Referenz zu dem existierenden Objekt in der Realität. %, welches erkannt wurde. 
+%Bei der Erstellung eines Objekts soll der Nutzer die 
+%Möglichkeit haben, Informationen über das Objekt in das System einzupflegen, damit er diese immer abrufen kann. 
 \\ 
 \linebreak
-In der zweiten Phase, genannt Visualisierungs-Phase, sollte der Nutzer die Möglichkeit haben, sich im Raum frei bewegen zu können. 
-Mit der Lokalisierung des Nutzer-Geräts und den bekannten Informationen der in Phase eins gesetzten Objekte, sollten dem Nutzer 
-die virtuellen Objekte in seiner unmittelbaren Umgebung angezeigt werden. Mit dem Wissen, dass sich im Blickfeld der \acs{AR}-Applikation 
-ein Objekt befindet, können für dieses in der Datenbank weitere Informationen abgefragt und dem Nutzer zur Verfügung gestellt werden.
+In der zweiten Phase, genannt Visualisierungs-Phase, sollte der Nutzer die Möglichkeit haben, sich im Raum frei bewegen zu können. Dabei sollen die 
+generierten Objekte, die zuvor durch die Scan-Phase erzeugt wurden, angezeigt werden und deren Informationen zuf Verfügung stellen. Im Laufe 
+dieser Arbeit wird darauf genauer eingegangen. 
+%Mit der Lokalisierung des Nutzer-Geräts und den bekannten Informationen der in Phase eins gesetzten Objekte, sollten dem Nutzer 
+%die virtuellen Objekte in seiner unmittelbaren Umgebung angezeigt werden. Mit dem Wissen, dass sich im Blickfeld der \acs{AR}-Applikation 
+%ein Objekt befindet, können für dieses in der Datenbank weitere Informationen abgefragt und dem Nutzer zur Verfügung gestellt werden.
 \\ 
 Ein weiterer wichtiger Punkt dieses Konzeptes wird die Modellierung eines geeigneten, %grundlegenden und
 prototypischen Datenmodells sein. 
@@ -195,7 +199,7 @@ welche Bedingungen die Arbeitsumgebung (\ref{chap:Arbeitsumgebung}), in der die 
 Erweiternd dazu wird darauf eingegangen, wie die beiden Phasen Scan-Phase (\ref{chap:Scan-Phase}) und Visualisierungs-Phase 
 (\ref{chap:Visualisierungs-Phase}) konzipiert wurden. Ebenso wird das Architekturkonzept (\ref{chap:Architekturkonzept}), welches für das System 
 vorgesehen war, genauesten dargelegt. 
-Im Anschluss wird auf das ebenso tragende Softwarekonzept (\ref{chap:Softwarekonzept}) eingegangen. Darauf folgend eine kurze Evaluierung wieso sich 
+Im Anschluss wird auf das ebenso tragende Softwarekonzept (\ref{chap:Softwarekonzept}) eingegangen. Darauffolgend eine kurze Evaluierung wieso sich 
 für das angewendete \acs{AR}-Framework (\ref{chap:Auswahl des AR Frameworks}) entschieden wurde und abschließend zu Kapitel 
 (\ref{chap:Konzeption}) die Intension des konzipierten Datenmodell's (\ref{chap:Datenmodell}). 
 Kapitel (\ref{chap:Umsetzung}) befasst sich mit der Umsetzung des Konzepts, dem Ablauf der Entwicklungsphase, den besonders erwähnenswerten 

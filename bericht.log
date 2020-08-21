@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  21 AUG 2020 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  21 AUG 2020 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1367,50 +1367,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--142
 
  []
 
-Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
-although it is yet undefined on input line 162.
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--179
+Underfull \hbox (badness 10000) in paragraph at lines 147--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--179
+Underfull \hbox (badness 10000) in paragraph at lines 147--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--179
+Underfull \hbox (badness 10000) in paragraph at lines 147--183
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 181--212
+Package acronym Info: Label `acro:SLAM' newly defined as it shall be overridden
+although it is yet undefined on input line 187.
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--216
 
  []
 
-[5]
 
-LaTeX Warning: Reference `sec:smart-glasses' on page 6 undefined on input line 224.
+LaTeX Warning: Reference `sec:smart-glasses' on page 5 undefined on input line 228.
 
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 246.
+although it is yet undefined on input line 250.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 214--185
+Underfull \hbox (badness 10000) in paragraph at lines 218--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--185
+Underfull \hbox (badness 10000) in paragraph at lines 218--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--185
+Underfull \hbox (badness 10000) in paragraph at lines 218--185
 
  []
 
-[6]
+[5] [6]
 \openout2 = `2Grundlagen/kapitel2.aux'.
 
  (/Users/mj/BA-Dokumentation/2Grundlagen/kapitel2.tex
@@ -1455,7 +1455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--206
 
  []
 
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=523, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=521, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
 Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 233.
@@ -1466,7 +1466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--278
  []
 
 [10]
-<2Grundlagen/Bilder/bildmarkerAR.png, id=538, 297.11pt x 296.10625pt>
+<2Grundlagen/Bilder/bildmarkerAR.png, id=536, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 295.
@@ -1527,7 +1527,7 @@ Package microtype Info: Character `029' is missing
 Package acronym Info: Label `acro:TOF' newly defined as it shall be overridden
 although it is yet undefined on input line 75.
  [15]
-<2Grundlagen/Bilder/tof_kamera.png, id=615, 624.3325pt x 284.56313pt>
+<2Grundlagen/Bilder/tof_kamera.png, id=613, 624.3325pt x 284.56313pt>
 File: 2Grundlagen/Bilder/tof_kamera.png Graphic file (type png)
 <use 2Grundlagen/Bilder/tof_kamera.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 86.
@@ -1538,7 +1538,7 @@ Package pdftex.def Info: 2Grundlagen/Bilder/tof_kamera.png  used on input line 8
                                                   \fi \fi 
 l.100 \subsection
                  *{Graph-basiertes SLAM Verfahren} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/tof_kamera.png>]
-<2Grundlagen/Bilder/graph_SLAM.png, id=631, 603.25375pt x 429.605pt>
+<2Grundlagen/Bilder/graph_SLAM.png, id=629, 603.25375pt x 429.605pt>
 File: 2Grundlagen/Bilder/graph_SLAM.png Graphic file (type png)
 <use 2Grundlagen/Bilder/graph_SLAM.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/graph_SLAM.png  used on input line 108.
@@ -1604,7 +1604,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--49
 
 
 ]
-<2Grundlagen/Bilder/imu-Bsp.png, id=689, 711.15688pt x 534.49687pt>
+<2Grundlagen/Bilder/imu-Bsp.png, id=687, 711.15688pt x 534.49687pt>
 File: 2Grundlagen/Bilder/imu-Bsp.png Graphic file (type png)
 <use 2Grundlagen/Bilder/imu-Bsp.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/imu-Bsp.png  used on input line 60.
@@ -1630,14 +1630,14 @@ Overfull \hbox (0.44308pt too wide) in paragraph at lines 133--140
  []
 
 [22]
-<2Grundlagen/Bilder/roomArchitecture.png, id=731, 595.22375pt x 539.51563pt>
+<2Grundlagen/Bilder/roomArchitecture.png, id=729, 595.22375pt x 539.51563pt>
 File: 2Grundlagen/Bilder/roomArchitecture.png Graphic file (type png)
 <use 2Grundlagen/Bilder/roomArchitecture.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/roomArchitecture.png  used on input line 148.
 (pdftex.def)             Requested size: 184.93524pt x 167.6268pt.
 Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
 although it is yet undefined on input line 168.
-<2Grundlagen/Bilder/viewModelDiagram.png, id=738, 482.30188pt x 302.12875pt>
+<2Grundlagen/Bilder/viewModelDiagram.png, id=736, 482.30188pt x 302.12875pt>
 File: 2Grundlagen/Bilder/viewModelDiagram.png Graphic file (type png)
 <use 2Grundlagen/Bilder/viewModelDiagram.png>
 Package pdftex.def Info: 2Grundlagen/Bilder/viewModelDiagram.png  used on input line 175.
@@ -1675,7 +1675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--23
 
  []
 
-<2GrundlagenX/Bilder/MVCArchitecture.png, id=769, 630.355pt x 355.3275pt>
+<2GrundlagenX/Bilder/MVCArchitecture.png, id=767, 630.355pt x 355.3275pt>
 File: 2GrundlagenX/Bilder/MVCArchitecture.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/MVCArchitecture.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/MVCArchitecture.png  used on input line 43.
@@ -1706,7 +1706,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8}) h
                                                   \fi \fi 
 l.63 
       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/MVCArchitecture.png>]
-<2GrundlagenX/Bilder/mvvmDiagramm.png, id=788, 460.21938pt x 320.19624pt>
+<2GrundlagenX/Bilder/mvvmDiagramm.png, id=786, 460.21938pt x 320.19624pt>
 File: 2GrundlagenX/Bilder/mvvmDiagramm.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/mvvmDiagramm.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/mvvmDiagramm.png  used on input line 111.
@@ -1737,7 +1737,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--131
                                                   \fi \fi 
 l.131 \begin{itemize}
                       </Users/mj/BA-Dokumentation/2GrundlagenX/Bilder/mvvmDiagramm.png>]
-<2GrundlagenX/Bilder/infoflussMVVM.png, id=806, 647.41875pt x 126.97438pt>
+<2GrundlagenX/Bilder/infoflussMVVM.png, id=804, 647.41875pt x 126.97438pt>
 File: 2GrundlagenX/Bilder/infoflussMVVM.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/infoflussMVVM.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/infoflussMVVM.png  used on input line 143.
@@ -1749,27 +1749,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--150
 
 Package acronym Info: Label `acro:AAC' newly defined as it shall be overridden
 although it is yet undefined on input line 153.
-<2GrundlagenX/Bilder/activityComp.png, id=812, 201.25188pt x 78.79437pt>
+<2GrundlagenX/Bilder/activityComp.png, id=810, 201.25188pt x 78.79437pt>
 File: 2GrundlagenX/Bilder/activityComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/activityComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/activityComp.png  used on input line 167.
 (pdftex.def)             Requested size: 142.26337pt x 55.69911pt.
-<2GrundlagenX/Bilder/viewModelComp.png, id=815, 288.57813pt x 90.3375pt>
+<2GrundlagenX/Bilder/viewModelComp.png, id=813, 288.57813pt x 90.3375pt>
 File: 2GrundlagenX/Bilder/viewModelComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/viewModelComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/viewModelComp.png  used on input line 176.
 (pdftex.def)             Requested size: 142.26756pt x 44.53592pt.
-<2GrundlagenX/Bilder/repoComp.png, id=820, 231.86626pt x 60.225pt>
+<2GrundlagenX/Bilder/repoComp.png, id=818, 231.86626pt x 60.225pt>
 File: 2GrundlagenX/Bilder/repoComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/repoComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/repoComp.png  used on input line 188.
 (pdftex.def)             Requested size: 142.26608pt x 36.95221pt.
-<2GrundlagenX/Bilder/roomComp.png, id=823, 239.39438pt x 214.30063pt>
+<2GrundlagenX/Bilder/roomComp.png, id=821, 239.39438pt x 214.30063pt>
 File: 2GrundlagenX/Bilder/roomComp.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/roomComp.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/roomComp.png  used on input line 200.
 (pdftex.def)             Requested size: 142.26425pt x 127.35185pt.
-<2GrundlagenX/Bilder/aac.png, id=828, 660.96938pt x 588.69937pt>
+<2GrundlagenX/Bilder/aac.png, id=826, 660.96938pt x 588.69937pt>
 File: 2GrundlagenX/Bilder/aac.png Graphic file (type png)
 <use 2GrundlagenX/Bilder/aac.png>
 Package pdftex.def Info: 2GrundlagenX/Bilder/aac.png  used on input line 218.
@@ -1849,7 +1849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--102
  []
 
 [33]
-<3Konzeption/Bilder/architektur_konzept.png, id=889, 471.26062pt x 417.05812pt>
+<3Konzeption/Bilder/architektur_konzept.png, id=887, 471.26062pt x 417.05812pt>
 File: 3Konzeption/Bilder/architektur_konzept.png Graphic file (type png)
 <use 3Konzeption/Bilder/architektur_konzept.png>
 Package pdftex.def Info: 3Konzeption/Bilder/architektur_konzept.png  used on input line 147.
@@ -1869,7 +1869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--163
 
  []
 
-<3Konzeption/Bilder/Scan-Phase_AugmIS.png, id=907, 542.025pt x 963.6pt>
+<3Konzeption/Bilder/Scan-Phase_AugmIS.png, id=905, 542.025pt x 963.6pt>
 File: 3Konzeption/Bilder/Scan-Phase_AugmIS.png Graphic file (type png)
 <use 3Konzeption/Bilder/Scan-Phase_AugmIS.png>
 Package pdftex.def Info: 3Konzeption/Bilder/Scan-Phase_AugmIS.png  used on input line 194.
@@ -1885,12 +1885,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--201
  []
 
 [36]
-<3Konzeption/Bilder/Visual-Phase_AugmIS.png, id=916, 542.025pt x 963.6pt>
+<3Konzeption/Bilder/Visual-Phase_AugmIS.png, id=914, 542.025pt x 963.6pt>
 File: 3Konzeption/Bilder/Visual-Phase_AugmIS.png Graphic file (type png)
 <use 3Konzeption/Bilder/Visual-Phase_AugmIS.png>
 Package pdftex.def Info: 3Konzeption/Bilder/Visual-Phase_AugmIS.png  used on input line 228.
 (pdftex.def)             Requested size: 120.03157pt x 213.38947pt.
-<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=917, 554.07pt x 180.675pt>
+<3Konzeption/Bilder/Anwendungsfalldiagramm.png, id=915, 554.07pt x 180.675pt>
 File: 3Konzeption/Bilder/Anwendungsfalldiagramm.png Graphic file (type png)
 <use 3Konzeption/Bilder/Anwendungsfalldiagramm.png>
 Package pdftex.def Info: 3Konzeption/Bilder/Anwendungsfalldiagramm.png  used on input line 240.
@@ -1916,7 +1916,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--299
  []
 
 [39]
-<3Konzeption/Bilder/UML_BA.png, id=953, 561.09625pt x 262.9825pt>
+<3Konzeption/Bilder/UML_BA.png, id=951, 561.09625pt x 262.9825pt>
 File: 3Konzeption/Bilder/UML_BA.png Graphic file (type png)
 <use 3Konzeption/Bilder/UML_BA.png>
 Package pdftex.def Info: 3Konzeption/Bilder/UML_BA.png  used on input line 324.
@@ -1942,24 +1942,24 @@ l.190 \include{3Konzeption/kapitel3}
  (/Users/mj/BA-Dokumentation/4Umsetzung/kapitel4.tex
 Kapitel 4.
 Package acronym Info: Label `acro:IDE' newly defined as it shall be overridden
-although it is yet undefined on input line 37.
+although it is yet undefined on input line 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--60
+Underfull \hbox (badness 10000) in paragraph at lines 18--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--60
+Underfull \hbox (badness 10000) in paragraph at lines 18--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--60
+Underfull \hbox (badness 10000) in paragraph at lines 18--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--61
 
  []
 
@@ -1968,25 +1968,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--60
 
 
 ]
-<4Umsetzung/Bilder/camera_permission.jpg, id=975, 1084.05pt x 2131.965pt>
+<4Umsetzung/Bilder/camera_permission.jpg, id=973, 1084.05pt x 2131.965pt>
 File: 4Umsetzung/Bilder/camera_permission.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/camera_permission.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 80.
+Package pdftex.def Info: 4Umsetzung/Bilder/camera_permission.jpg  used on input line 81.
 (pdftex.def)             Requested size: 108.49405pt x 213.37164pt.
 Package acronym Info: Label `acro:UX' newly defined as it shall be overridden
-although it is yet undefined on input line 100.
+although it is yet undefined on input line 101.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--102
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--102
+Underfull \hbox (badness 10000) in paragraph at lines 69--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--102
+Underfull \hbox (badness 10000) in paragraph at lines 69--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--103
 
  []
 
@@ -1994,25 +1994,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--102
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.102 \begin{itemize}
+l.103 \begin{itemize}
                       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/camera_permission.jpg>]
-<4Umsetzung/Bilder/startmenu.jpg, id=988, 1083.04625pt x 1840.8775pt>
+<4Umsetzung/Bilder/startmenu.jpg, id=986, 1083.04625pt x 1840.8775pt>
 File: 4Umsetzung/Bilder/startmenu.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/startmenu.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 110.
+Package pdftex.def Info: 4Umsetzung/Bilder/startmenu.jpg  used on input line 111.
 (pdftex.def)             Requested size: 125.54752pt x 213.39587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--134
+Underfull \hbox (badness 10000) in paragraph at lines 117--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--134
+Underfull \hbox (badness 10000) in paragraph at lines 117--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--134
+Underfull \hbox (badness 10000) in paragraph at lines 117--135
 
  []
 
@@ -2020,50 +2020,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--134
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.134 
+l.135 
        </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/startmenu.jpg>]
-<4Umsetzung/Bilder/image_tracking.jpg, id=998, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/image_tracking.jpg, id=996, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/image_tracking.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/image_tracking.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 159.
+Package pdftex.def Info: 4Umsetzung/Bilder/image_tracking.jpg  used on input line 160.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/scan-phase.jpg, id=1005, 1084.05pt x 2267.47125pt>
+<4Umsetzung/Bilder/scan-phase.jpg, id=1003, 1084.05pt x 2267.47125pt>
 File: 4Umsetzung/Bilder/scan-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan-phase.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 198.
+Package pdftex.def Info: 4Umsetzung/Bilder/scan-phase.jpg  used on input line 199.
 (pdftex.def)             Requested size: 102.00989pt x 213.37068pt.
-<4Umsetzung/Bilder/objekt_info.jpg, id=1008, 1084.05pt x 2135.98pt>
+<4Umsetzung/Bilder/objekt_info.jpg, id=1006, 1084.05pt x 2135.98pt>
 File: 4Umsetzung/Bilder/objekt_info.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/objekt_info.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/objekt_info.jpg  used on input line 216.
+Package pdftex.def Info: 4Umsetzung/Bilder/objekt_info.jpg  used on input line 217.
 (pdftex.def)             Requested size: 108.29556pt x 213.38237pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--191
+Underfull \hbox (badness 10000) in paragraph at lines 150--191
 
  []
 
@@ -2159,7 +2159,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--114
  []
 
 [51]
-<4Umsetzung/Bilder/koordin.jpeg, id=1080, 766.865pt x 576.1525pt>
+<4Umsetzung/Bilder/koordin.jpeg, id=1078, 766.865pt x 576.1525pt>
 File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/koordin.jpeg>
 Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 131.
@@ -2174,7 +2174,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 156.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 156.
-<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1100, 370.38374pt x 261.97874pt>
+<4Umsetzung/Bilder/cjt_logo_tracking.png, id=1098, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
 Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 195.
@@ -2219,17 +2219,17 @@ Overfull \hbox (2.03656pt too wide) in paragraph at lines 229--230
 [][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/difcalc.jpeg, id=1120, 967.615pt x 568.1225pt>
+<4Umsetzung/Bilder/difcalc.jpeg, id=1118, 967.615pt x 568.1225pt>
 File: 4Umsetzung/Bilder/difcalc.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/difcalc.jpeg>
 Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 250.
 (pdftex.def)             Requested size: 426.78545pt x 250.58148pt.
-<4Umsetzung//Bilder/scan_image.jpg, id=1124, 1084.05pt x 2185.16376pt>
+<4Umsetzung//Bilder/scan_image.jpg, id=1122, 1084.05pt x 2185.16376pt>
 File: 4Umsetzung//Bilder/scan_image.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/scan_image.jpg>
 Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 272.
 (pdftex.def)             Requested size: 105.864pt x 213.39438pt.
-<4Umsetzung/Bilder/scan_environment.jpg, id=1125, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/scan_environment.jpg, id=1123, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/scan_environment.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan_environment.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 273.
@@ -2239,7 +2239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\T1/lmr/m/n/9 (+20) (b) Um-ge-bungs-be-rech-
  []
 
-<4Umsetzung/Bilder/place_objects_view.jpg, id=1129, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/place_objects_view.jpg, id=1127, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/place_objects_view.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/place_objects_view.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 295.
@@ -2275,7 +2275,7 @@ l.305
                                                   \fi \fi 
 l.305 
        </Users/mj/BA-Dokumentation/4Umsetzung//Bilder/scan_image.jpg> </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/scan_environment.jpg>]
-<4Umsetzung/Bilder/visual-phase.jpg, id=1167, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/visual-phase.jpg, id=1165, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/visual-phase.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/visual-phase.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 328.
@@ -2331,22 +2331,22 @@ Overfull \hbox (38.03693pt too wide) in paragraph at lines 75--76
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1198, 1084.05pt x 2265.46375pt>
+<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1196, 1084.05pt x 2265.46375pt>
 File: 4Umsetzung/Bilder/show_objects_after_loading.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_objects_after_loading.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_objects_after_loading.jpg  used on input line 96.
 (pdftex.def)             Requested size: 102.10913pt x 213.38918pt.
-<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1199, 1084.05pt x 2266.4675pt>
+<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1197, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung//Bilder/show_data_to_obj_1.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/show_data_to_obj_1.jpg>
 Package pdftex.def Info: 4Umsetzung//Bilder/show_data_to_obj_1.jpg  used on input line 108.
 (pdftex.def)             Requested size: 102.05951pt x 213.37997pt.
-<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1200, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1198, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_2.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_2.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_2.jpg  used on input line 109.
 (pdftex.def)             Requested size: 102.14221pt x 213.36374pt.
-<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1201, 1084.05pt x 2266.4675pt>
+<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1199, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_3.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_3.jpg>
 Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_3.jpg  used on input line 110.
@@ -2495,16 +2495,16 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32260 strings out of 492616
  586986 string characters out of 6129481
- 1154407 words of memory out of 5000000
+ 1153408 words of memory out of 5000000
  34750 multiletter control sequences out of 15000+600000
  125340 words of font info for 208 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (83 pages, 12823838 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (83 pages, 12822927 bytes).
 PDF statistics:
- 1745 PDF objects out of 2073 (max. 8388607)
- 1551 compressed objects within 16 object streams
+ 1743 PDF objects out of 2073 (max. 8388607)
+ 1549 compressed objects within 16 object streams
  416 named destinations out of 1000 (max. 500000)
  39099 words of extra memory for PDF output out of 42996 (max. 10000000)
 
