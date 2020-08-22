@@ -48,7 +48,7 @@ public class Object {
 Das mit der Entity-Klasse kommunizierende Modul ist das \textit{„Data Object“}, welches als Interface angelegt wurde. Das „Object Dao“ verwendet ebenso die Bibliothek 
 „Room“ und wandelt die Java-Klasse per Annotation in ein „Dao“ um. Dieses beinhaltet hauptsächlich die SQL-Queries zur Datenabfrage der vorhandenen Informationen. 
 \\
-\linebreak
+%\linebreak
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -56,7 +56,7 @@ Das mit der Entity-Klasse kommunizierende Modul ist das \textit{„Data Object�
     label={code:query},
     captionpos=b,           % Caption unter den Code setzen
 caption={SQL-Query zur Abfrage der Objekt-Namen}]
-@Query("SELECT * FROM object_table ORDER BY name")
+@Query(SELECT * FROM object_table ORDER BY name)
 LiveData<List<Object>> getObjectName();
 \end{lstlisting}
 Nachdem die beiden Klassen erstellt worden sind, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
@@ -71,7 +71,7 @@ und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht nähe
 \\ 
 Im Ausblick (\ref{chap:Ausblick}) wird darauf nochmals eingegangen.
 \\ 
-\linebreak
+%\linebreak
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -143,6 +143,7 @@ Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im B
 Über die der Sceneform-\acs{API} zur Verfügung gestellten Methode („ModelRenderable“) wird das Objekt erschaffen und als „Anchor“ auf die berechnete Position 
 gesetzt. Ein Anchor ist die fixe Position des Objekts, an dem dies platziert wird und so lange dort vorhanden bleibt, bis die Applikation beendet wird. Die Datei, 
 die als dreidimensionales „asset“ generiert werden soll, wird über die „uri“-Variable lokalisiert und als Parameter übergeben. 
+\\
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -218,7 +219,7 @@ zwischengespeichert und zum Schluss in eine neue Position „Pose“ mit Transla
 dieser Funktion ist demnach eine „Pose“, die nach Aufruf der Methode übergeben und so in der Datenbank mittels „insert“-Befehl hinterlegt wird. 
 Die Position und Rotation des einzelnen Objekts ist mit dem Resultat gegeben und kann in der Visualisierungs-Phase verwendet werden.
 \\
-\linebreak
+%\linebreak
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen

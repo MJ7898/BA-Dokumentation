@@ -19,7 +19,8 @@ Aufgrund der zuvor dargelegten Konzeption, ging es an die Umsetzung des Konzepts
 %Nachdem die Konzeption endgültig abgeschlossen war, ging es an die Umsetzung des Konzepts und an die Implementierung der Funktionen, die das System 
 %ausmachen. 
 \\ 
-Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt und dokumentiert. Diese festgelegte Reihenfolge 
+Die Use Cases und deren Implementierung wurden nach logischer und chronologischer Reihenfolge entwickelt. % und dokumentiert. 
+Diese festgelegte Reihenfolge 
 ist auch der Abbildung (\ref{pic:anwendungsfall}) zu entnehmen. Angefangen mit dem Startmenü, das dem Nutzer die Möglichkeit offenbart, zwischen den Funktionen 
 zu wählen, folgte die Implementierung der Scan-Phase, in der die realen Objekte virtualisiert und im Raum platziert werden. Zuletzt kam die Visualisierungs-Phase, 
 welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekte erneut virtuell im Raum einsetzt. 
@@ -53,12 +54,11 @@ eine Ordnerstruktur angelegt, die alle Klassen des gleichen Typs im Laufe der En
 \linebreak
 Damit im Laufe der Entwicklung die Applikation bestmöglich getestet werden konnte, war es notwendig, ein Testgerät zu verwenden. Mit dem verfügbaren 
 Emulator\footnote{Ein System, das ein anderes in speziellen Teilbereichen nachbildet} von Android Studio konnte keine realitätsnahe Testung 
-durchgeführt werden. Deshalb wurde zum Testen der Anwendung ein Smartphone benutzt. Dieses musste zu Anfang unter den vorbereitenden Maßnahmen des 
-Projekts organisiert werden.
-\\ 
-\linebreak
-Nachdem nun alle Schritte abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
-
+durchgeführt werden. Deshalb wurde zum Testen der Anwendung ein Smartphone benutzt.%Dieses musste zu Anfang unter den vorbereitenden Maßnahmen des 
+%Projekts organisiert werden.
+%\\ 
+%\linebreak
+%Nachdem nun alle Schritte abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
 \subsection{Startmenü}
 Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen zwischen Anwender 
 und der Applikation, dem Assistenzsystem.
@@ -66,11 +66,11 @@ und der Applikation, dem Assistenzsystem.
 Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
 
 \subsubsection{Frontend}
-Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation 
-erscheint auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
-\\ 
-Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
-\\ 
+%Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation 
+%erscheint auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
+%\\ 
+%Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
+%\\ 
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
 die Erlaubnis erteilen, auf die Kamera zugreifen zu dürfen. Um die Umgebung in der Hauptfunktion scannen zu können, muss diese in weiterer Abfolge des Assistenzsystems genutzt werden können. 
 Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. Dieses Fenster ist der Abbildung (\ref{pic:camera_perm}) 
@@ -112,7 +112,7 @@ Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{
     \caption{Startmenü der Applikation}
     \label{pic:startmenu}
 \end{figure}
-Nachdem das Design des Startmenüs und dem PopUp-Fenster abgeschlossen war, ging es darum, die Funktionalität der UI-Komponenten zu implementieren. 
+%Nachdem das Design des Startmenüs und dem PopUp-Fenster abgeschlossen war, ging es darum, die Funktionalität der UI-Komponenten zu implementieren. 
 \subsubsection{Backend}
 Durch die schlichte und einfach gehaltene Modellierung des Startmenüs, zählt dieses als Ansicht zum Einstieg in die Nutzung des Assistenzsystems, zur Abfrage der 
 \textit{„Camera-Permission“} und zur weiteren Navigation innerhalb der Anwendung.
@@ -122,8 +122,8 @@ dadurch wird das PopUp-Fenster zur Nachfrage der Genehmigung geöffnet und die d
 \\ 
 \linebreak
 Die Manifest-Datei beinhaltet alle optionalen Metadaten, die für das Assistenzsystem benötigt werden. Dazu gehören die Google ARCore-Metadaten, sowie 
-grundlegende Informationen über das Projekt, die das Android-System erfordert, um die Applikation installieren und ausführen zu können. Dazu wird unter 
-anderem die Berechtigung zur Kameranutzung benötigt, ebenso werden Angaben zu Activities, bzw. Benutzeroberflächen gemacht und Stammdaten, z.B. Titel, -bild und 
+grundlegende Informationen über das Projekt, die das Android-System erfordert, um die Applikation installieren und ausführen zu können. Des Weiteren wird 
+die Berechtigung zur Kameranutzung benötigt. Ebenso werden Angaben zu Activities, bzw. Benutzeroberflächen gemacht und Stammdaten, z.B. Titel, -bild und 
 App-Icon, die das Projekt eindeutig spezifizieren, definiert.
 \\ 
 \linebreak
@@ -135,10 +135,10 @@ Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase,
 
 \subsection{Scan-Phase} %Umgebungserkennung /
 \label{chap:scan_implementation}
-Bei der Implementierung der Scan-Phase kam es zu den ersten praktischen Berührpunkten mit der Google ARCore \acs{API}. Diese wurde zu Beginn studiert, 
-um einen Überblick, wie die Struktur dieser Schnittstelle aufgebaut ist, zu erlangen. Dadurch konnten Methoden und Funktionen analysiert werden, um im 
-weiteren Verlauf der Entwicklung damit arbeiten zu können.
-\\ 
+%Bei der Implementierung der Scan-Phase kam es zu den ersten praktischen Berührpunkten mit der Google ARCore \acs{API}. Diese wurde zu Beginn studiert, 
+%um einen Überblick, wie die Struktur dieser Schnittstelle aufgebaut ist, zu erlangen. Dadurch konnten Methoden und Funktionen analysiert werden, um im 
+%weiteren Verlauf der Entwicklung damit arbeiten zu können.
+%\\ 
 Die Idee hinter der Scan-Phase ist die Implementierung einer Methode, die es ermöglicht, das Umfeld über die Kamera wahrzunehmen und mit den gewonnenen 
 Erkenntnissen über den Raum weiterarbeiten zu können. Die nachstehende Funktion, virtuelle Objekte auf Basis der vom Scan erfahrenen Kenntnissen in 
 der Räumlichkeit zu platzieren, arbeitet mit diesen in Erfahrung gebrachten Kenntnisse. 

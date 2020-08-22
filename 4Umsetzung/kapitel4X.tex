@@ -52,7 +52,8 @@ entscheiden zu können, in welcher Farbe das Objekt zu Präsentieren ist.
     label={code:additionOfObject},
     captionpos=b,           % Caption unter den Code setzen
 caption={Berechnung der Markerplatzierung}]
-public void calculateObjectPosition(Object object, int i, Object objOrigin){
+public void calculateObjectPosition
+ (Object object, int i, Object objOrigin){
     ... 
     qx = object.getQx() + objOrigin.getQx();
     qy = object.getQy() + objOrigin.getQy();
@@ -68,11 +69,13 @@ public void calculateObjectPosition(Object object, int i, Object objOrigin){
 
     Pose pose = new Pose(translation, rotation);
 
-    if(objectViewModel.getAllObjectsName().getValue().get(i).getState() == 1) {
+    if(objectViewModel.getAllObjectsName()
+     .getValue().get(i).getState() == 1) {
         addObject(Uri.parse("object.sfb"), pose, i);
     }
 
-    if(objectViewModel.getAllObjectsName().getValue().get(i).getState() == -1){
+    if(objectViewModel.getAllObjectsName()
+     .getValue().get(i).getState() == -1){
         addObject(Uri.parse("object_red.sfb"), pose, i);
     }
 }
