@@ -56,15 +56,22 @@ Damit im Laufe der Entwicklung die Applikation bestmöglich getestet werden konn
 Emulator\footnote{Ein System, das ein anderes in speziellen Teilbereichen nachbildet} von Android Studio konnte keine realitätsnahe Testung 
 durchgeführt werden. Deshalb wurde zum Testen der Anwendung ein Smartphone benutzt.%Dieses musste zu Anfang unter den vorbereitenden Maßnahmen des 
 %Projekts organisiert werden.
-%\\ 
-%\linebreak
+\\ 
+\linebreak
 %Nachdem nun alle Schritte abgeschlossen waren, ging es an die Entwicklung des ersten Use Cases, dem Startmenü, um die Grundlage des Systems zu festigen.  
+Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter folgende Punkte: 
+%\pagebreak
+\begin{itemize}
+    \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
+    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen der Funktion, bzw. Anwendung.
+    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen. Offenlegung der Aktionen und Hintergründe. 
+    \item Begeisterung (Delight): Komplexe Sachverhalte einfach zu lösen. 
+\end{itemize} 
 \subsection{Startmenü}
 Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen zwischen Anwender 
 und der Applikation, dem Assistenzsystem.
-\\ 
-Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
-
+%\\ 
+%Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Frontends als auch des Backends.
 \subsubsection{Frontend}
 %Wird das Unterstützungssystem heruntergeladen, genauer gesagt auf die verwendete Hardware geladen, folgt das Speichern der Anwendung auf dem Gerät. Die Applikation 
 %erscheint auf dem Applikationshauptmenü des Smart-Devices und wird dort zur Nutzung zur Verfügung gestellt. 
@@ -73,15 +80,16 @@ Nun folgt die Beschreibung der Implementierung des Startmenüs, sowohl des Front
 %\\ 
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
 die Erlaubnis erteilen, auf die Kamera zugreifen zu dürfen. Um die Umgebung in der Hauptfunktion scannen zu können, muss diese in weiterer Abfolge des Assistenzsystems genutzt werden können. 
-Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. Dieses Fenster ist der Abbildung (\ref{pic:camera_perm}) 
-zu entnehmen. Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren. Wird allerdings der Zugriff abgelehnt, kann 
-die Applikation nicht starten, bzw. wird der Zugriff auf die Kamera verweigert, kann die Applikation nicht einwandfrei benutzt werden.     
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/camera_permission.jpg}
-    \caption{Start der Applikation}
-    \label{pic:camera_perm}
-\end{figure}
+Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. %Dieses Fenster ist der Abbildung (\ref{pic:camera_perm}) 
+%zu entnehmen. 
+Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren. %Wird allerdings der Zugriff abgelehnt, kann 
+%die Applikation nicht starten, bzw. wird der Zugriff auf die Kamera verweigert, kann die Applikation nicht einwandfrei benutzt werden.     
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/camera_permission.jpg}
+%    \caption{Start der Applikation}
+%    \label{pic:camera_perm}
+%\end{figure}
 \\ 
 \linebreak
 Da speziell das Assistenzsystem auf die gegebenen Komponenten der Hardware zugreift, z. B. die im Smart-Device integrierte Kamera, zählt diese zu den nativen Applikationen. 
@@ -93,25 +101,32 @@ Angenommen der Nutzer lässt den Zugriff auf die Kamera für das Assistenzsystem
 das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Die Benutzeroberfläche weist ein sehr einfaches und 
 schlicht gehaltenes Design auf. 
 Darauf ist das Firmen-Logo der cjt Systemsoftware AG zentriert zu sehen, außerdem zwei farblich voneinander getrennten Buttons zur Navigation innerhalb der Applikation. 
-Die Buttons adressieren jeweils die nachfolgende, zugehörige Funktion. Dies sind zum einen der lilafarbenen Button, der zur Scan-Phase weiterleitet und zum anderen der 
-gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert. In der Gesamtheit ist das Layout an den Farben des Firmen-Logos angelehnt und bildet einen 
-ruhigen und harmonischen Einstieg in das Programm. 
-\\ 
-\linebreak
-Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter folgende Punkte: 
-\pagebreak
-\begin{itemize}
-    \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
-    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen der Funktion, bzw. Anwendung.
-    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen. Offenlegung der Aktionen und Hintergründe. 
-    \item Begeisterung (Delight): Komplexe Sachverhalte einfach zu lösen. 
-\end{itemize} 
+Die Buttons adressieren jeweils die nachfolgende, zugehörige Funktion. Dies sind zum einen der lilafarbene Button, der zur Scan-Phase weiterleitet und zum anderen der 
+gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert. %In der Gesamtheit ist das Layout an den Farben des Firmen-Logos angelehnt und bildet einen 
+%ruhigen und harmonischen Einstieg in das Programm. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
     \caption{Startmenü der Applikation}
     \label{pic:startmenu}
 \end{figure}
+\\
+Die Funktionen sind durch den folgenden Programmablaufplan verdeutlicht. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=6cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/startPAP.png}
+    \caption{Programmablaufplan des Startmenüs}
+    \label{pic:startmenu}
+\end{figure}
+%\linebreak
+%Grundlegend wurden für die Designs der Benutzeroberflächen Prinzipien der \ac{UX}, berücksichtigt. Darunter folgende Punkte: 
+%\pagebreak
+%\begin{itemize}
+%    \item Übersichtlichkeit (Digestibility): Auf einen Blick verstehen, worum es geht. Der User versteht intuitiv was zu tun ist.
+%    \item Klarheit (Clarity): Deutliche und verständliche Ausdrucksweise und klar herauszufindenden Nutzen der Funktion, bzw. Anwendung.
+%    \item Vertrauen (Trust): Gutes Design erlangt Vertrauen. Offenlegung der Aktionen und Hintergründe. 
+%    \item Begeisterung (Delight): Komplexe Sachverhalte einfach zu lösen. 
+%\end{itemize} 
 %Nachdem das Design des Startmenüs und dem PopUp-Fenster abgeschlossen war, ging es darum, die Funktionalität der UI-Komponenten zu implementieren. 
 \subsubsection{Backend}
 Durch die schlichte und einfach gehaltene Modellierung des Startmenüs, zählt dieses als Ansicht zum Einstieg in die Nutzung des Assistenzsystems, zur Abfrage der 
@@ -152,18 +167,18 @@ eingefangen werden. Somit weiß der Nutzer, wie er das Smart-Device in Position 
 bestmöglich erfassen kann. 
 \\ 
 \linebreak
-Ursprünglich war die Applikation nicht mit diesem Layout (\ref{pic:image_tracking}) konzipiert, da während der Implementierung der Scan-Phase eine 
+Ursprünglich war die Applikation nicht mit diesem Layout der Abbildung (\ref{pic:image_tracking}) konzipiert, da während der Implementierung der Scan-Phase eine 
 schwerwiegende Änderung vorgenommen werden musste. Diese wird in dem Abschnitt der Scan-Phasen-Backend-Entwicklung zu gegebenem Zeitpunkt 
 aufgegriffen und genauestens dargelegt. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/image_tracking.jpg}
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/image_tracking.jpg}
     \caption{Markererkennung der Applikation zum Start der Scan-Phase}
     \label{pic:image_tracking}
 \end{figure}
-\pagebreak 
+%\pagebreak 
 \\
-\linebreak 
+%\linebreak 
 Des Weiteren beinhaltet das Assistenzsystem die eigentliche Scan-Phasen \acs{UI}, mit der die Umgebung aufgenommen wird und anhand dieser Daten 
 der Nutzer die Objekte an von ihm definierte Stellen platzieren kann. Die Benutzeroberfläche hat ebenso ein schlichtes und überschaubares Layout, 
 welches dem Anwender zugutekommt. 
@@ -173,15 +188,15 @@ Hauptsächlich beinhaltet die \acs{GUI} ein Fragment, welches das Kamerabild in 
 zur Topdown-Leiste dient. Am unteren Ende des Bildes befindet sich eine \textit{„Android-Gallery“}, die alle zu platzierenden Objekte beinhaltet. In 
 der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. Prinzipiell ist diese Gallery um 
 beliebig viele Objekte erweiterbar. Diese Erweiterung erfolgt allerdings nicht dynamisch, sondern muss über manuelles Einfügen im Code stattfinden. 
-\\
-Wird während der laufenden Anwendung ein Objekt über dessen Button erstellt, wird der Nutzer unverzüglich auf eine weitere Seite (\ref{pic:createObject}) 
-geleitet, um parallel zur Renderung des Objekts Informationen diesbezüglich der Datenbank hinzufügen zu können. Auf dieses Layout wird im weiteren Verlauf der 
-Ausarbeitung noch eingegangen. Vorwegzunehmen ist, dass die Informationen mit den Daten der virtuellen Position in der Datenbank persistiert werden.
-\\ 
-\linebreak 
+%\\
+%Wird während der laufenden Anwendung ein Objekt über dessen Button erstellt, wird der Nutzer unverzüglich auf eine weitere Seite %(\ref{pic:createObject}) 
+%geleitet, um parallel zur Renderung des Objekts Informationen diesbezüglich der Datenbank hinzufügen zu können. Auf dieses Layout wird im weiteren Verlauf der 
+%Ausarbeitung noch eingegangen. Vorwegzunehmen ist, dass die Informationen mit den Daten der virtuellen Position in der Datenbank persistiert werden.
+%\\ 
+%\linebreak 
 %Damit der Scan-Vorgang gestartet wird
-Bevor der Scan-Vorgang startet, wird inmitten des Fragments ein Overlay angezeigt, welches eine Geste, bzw. Bewegung vorgibt. Imitiert der Nutzer 
-diese Bewegung, wird der Scan-Prozess anlaufen.
+%Bevor der Scan-Vorgang startet, wird inmitten des Fragments ein Overlay angezeigt, welches eine Geste, bzw. Bewegung vorgibt. Imitiert der Nutzer 
+%diese Bewegung, wird der Scan-Prozess anlaufen.
 \\ 
 \linebreak
 Um weiterhin auf der Seite navigieren zu können, gibt es im rechten unteren Eck einen weiteren Button, welcher ebenso der Abbildung (\ref{pic:scan}) 
@@ -189,38 +204,47 @@ zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zur�
 \\ 
 \linebreak
 Damit der Nutzer über die in der Datenbank gespeicherten Informationen mehr Möglichkeiten besitzt, gibt es im linken oberen Eck der \acs{UI} eine zusätzliche 
-Schaltfläche versehen mit einem roten Kreuz versehen. Dadurch hat der Nutzer die Möglichkeit, alle vorhandenen, in der Datenbank persistierten Informationen zu 
-löschen und den Scan-Vorgang erneut von der ursprünglichen Ausgangsposition zu beginnen. Nachdem die Daten gelöscht werden, wird der Nutzer aufgefordert, den 
-Ursprungspunkt, den zu \textit{„trackenden“} Marker, abzuscannen und die Phase erneut zu beginnen. 
+Schaltfläche mit einem roten Kreuz versehen. Dadurch hat der Nutzer die Möglichkeit, alle vorhandenen, in der Datenbank persistierten Informationen zu 
+löschen und den Scan-Vorgang erneut von der ursprünglichen Ausgangsposition zu beginnen. %Nachdem die Daten gelöscht werden, wird der Nutzer aufgefordert, den 
+%Ursprungspunkt, den zu \textit{„trackenden“} Marker, abzuscannen und die Phase erneut zu beginnen. 
 \\ 
 Mit dieser Funktion verfügt der Nutzer über mehr Entscheidungsmöglichkeiten, bevor die Applikation komplett gelöscht und neu aufgespielt werden muss.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}
     \caption{Scan-Phase der Applikation}
     \label{pic:scan}
 \end{figure}
-\\ 
-\linebreak
+\pagebreak
+\\ %linebreak
 Zu dem Zeitpunkt, wenn der Anwender ein Objekt erstellen und zusätzliche Informationen hinzufügen möchte, wird darauffolgend eine weitere \acs{UI} 
-angezeigt. Bei dieser Ansicht ist vorgesehen, dass der Nutzer die zu dem erstellen Objekt dazugehörigen Informationen einträgt, sodass diese anschließend 
+angezeigt. Bei dieser Ansicht ist vorgesehen, dass der Nutzer die zu dem erstellten Objekt dazugehörigen Informationen einträgt, sodass diese anschließend 
 in die Datenbank aufgenommen werden können. Die Benutzeroberfläche verfügt über mehrere Text-Eingabefelder, die ein Großteil der Daten des Datenmodells 
-abdecken. In Abbildung (\ref{pic:createObject}) sind diese Felder zusehen. Dabei werden Informationen über den Objektnamen, -baujahr, -größe, sowie 
--status von der Person, die das Assistenzsystem nutzt, gefordert. 
+abdecken. %In Abbildung (\ref{pic:createObject}) sind diese Felder zusehen. Dabei werden Informationen über den Objektnamen, -baujahr, -größe, sowie 
+%-status von der Person, die das Assistenzsystem nutzt, gefordert. 
 \\ 
 Im Hintergrund werden ebenso die Daten der Position und Drehung des 
-Objekts bereitgestellt. Die wird im Backend näher erläutert. Über die Betätigung des \textit{„save“}-Buttons werden die Informationen lokal gespeichert und für die Eintragung in die Datenbank 
-vorgemerkt. Nachdem der Button bedient wurde, wird der Anwender auf die Oberfläche der Scan-Phase weitergeleitet, um bei Bedarf weitere Objekte zu 
-erstellen.  
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/objekt_info.jpg}
-    \caption{Erstellen eines neuen Objekts}
-    \label{pic:createObject}
-\end{figure}
-\pagebreak
+Objekts bereitgestellt. %Dies wird im Backend näher erläutert. %Über die Betätigung des \textit{„save“}-Buttons werden die Informationen lokal gespeichert und für die Eintragung in die Datenbank 
+%vorgemerkt. Nachdem der Button bedient wurde, wird der Anwender auf die Oberfläche der Scan-Phase weitergeleitet, um bei Bedarf weitere Objekte zu 
+%erstellen.  
+%\begin{figure}[hbt!]
+%    \centering
+%    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/objekt_info.jpg}
+%    \caption{Erstellen eines neuen Objekts}
+%    \label{pic:createObject}
+%\end{figure}
+%\pagebreak
+%\\ 
+%\linebreak
+%Nachdem der Abschnitt der Frontend-Entwicklung vollends dargelegt wurde, geht es mit den Funktionen im Backend weiter. Darüber hinaus werden in diesem 
+%Abschnitt auch die Lösungsansätze, sowie aufgetretene Probleme und deren Behebung genauestens aufgeführt und geschildert, damit der Nutzer mit der 
+%aufgetretenen Problematik vertraut wird und die Entscheidungen und Lösungsfindungen nachvollziehen kann. 
 \\ 
 %\linebreak
-Nachdem der Abschnitt der Frontend-Entwicklung vollends dargelegt wurde, geht es mit den Funktionen im Backend weiter. Darüber hinaus werden in diesem 
-Abschnitt auch die Lösungsansätze, sowie aufgetretene Probleme und deren Behebung genauestens aufgeführt und geschildert, damit der Nutzer mit der 
-aufgetretenen Problematik vertraut wird und die Entscheidungen und Lösungsfindungen nachvollziehen kann. 
+Anhand des folgenden Programmablaufs wird der Ablauf der Scan-Phase veranschaulicht.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/scanPAP.png}
+    \caption{Programmablaufplan der Scan-Phase}
+    \label{pic:startmenu}
+\end{figure}

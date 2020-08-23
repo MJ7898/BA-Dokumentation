@@ -50,41 +50,43 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Start der Applikation}}{43}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Startmen\IeC {\"u} der Applikation}}{43}{figure.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Startmen\IeC {\"u} der Applikation}}{44}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Programmablaufplan des Startmen\IeC {\"u}s}}{43}{figure.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Markererkennung der Applikation zum Start der Scan-Phase}}{46}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Markererkennung der Applikation zum Start der Scan-Phase}}{45}{figure.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Scan-Phase der Applikation}}{47}{figure.4.4}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Scan-Phase der Applikation}}{46}{figure.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Erstellen eines neuen Objekts}}{48}{figure.4.5}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Programmablaufplan der Scan-Phase}}{46}{figure.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Aufbau der Positionsberechnung von Objekten}}{52}{figure.4.6}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Aufbau der Positionsberechnung von Objekten}}{49}{figure.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Marker zur Erkennung der Ausgangsposition}}{53}{figure.4.7}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Marker zur Erkennung der Ausgangsposition}}{51}{figure.4.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Positionsberechnung zum Ursprungsmarker}}{55}{figure.4.8}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Positionsberechnung zum Ursprungsmarker}}{52}{figure.4.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Funktion der Scan-Phase Teil 1}}{56}{figure.4.9}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Funktion der Scan-Phase Teil 1}}{53}{figure.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Marker-Scan}}}{56}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Marker-Scan}}}{53}{figure.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Umgebungsberechnung}}}{56}{figure.4.9}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Umgebungsberechnung}}}{53}{figure.4.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Funktion der Scan-Phase Teil 2}}{57}{figure.4.10}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Funktion der Scan-Phase Teil 2}}{54}{figure.4.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualisierungs-Phase der Applikation}}{58}{figure.4.11}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualisierungs-Phase der Applikation}}{55}{figure.4.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Funktion Visualisierungs-Phase Teil 1}}{61}{figure.4.12}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Programmablaufplan der Visualisierungs-Phase}}{56}{figure.4.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Funktion Visualisierungs-Phase Teil 2}}{62}{figure.4.13}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Funktion Visualisierungs-Phase Teil 1}}{58}{figure.4.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Anzeige der Objektinformationen 1}}}{62}{figure.4.13}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Funktion Visualisierungs-Phase Teil 2}}{59}{figure.4.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Anzeige der Objektinformationen 2}}}{62}{figure.4.13}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Anzeige der Objektinformationen 1}}}{59}{figure.4.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Anzeige der Objektinformationen 3}}}{62}{figure.4.13}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Anzeige der Objektinformationen 2}}}{59}{figure.4.14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Anzeige der Objektinformationen 3}}}{59}{figure.4.14}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

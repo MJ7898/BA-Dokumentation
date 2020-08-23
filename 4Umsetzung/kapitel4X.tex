@@ -1,3 +1,42 @@
+\subsection{Visualisierungs-Phase} 
+Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
+deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
+Frontend-Entwicklung der Visualisierungs-Phase gibt Aufschluss über die Benutzeroberfläche dieser Phase und deren Aufbau. Die Ausführung des Frontends und deren bildliche 
+Darstellung dient dazu, das anschließende Backend nachvollziehen zu können. Abschließend werden die Aspekte des Frontends aufgegriffen und anhand der Backend-Implementierung 
+mit deren Funktionen verknüpft. 
+
+\subsubsection{FrontEnd}
+Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
+deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
+die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
+\\ 
+Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment das sich über den ganzen Bildschirm erstreckt, repräsentiert das 
+Livebild der Kamera. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Des Weiteren befinden 
+sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen, und zum anderen, um die Objekte von der Datenbank 
+abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschirms, wie 
+der Abbildung \ref{pic:visual} zu entnehmen ist. 
+\\ 
+Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer für die Interaktionen nur die Objekte, die als Overlay 
+über das Kamerabild gelegt werden, zur Verfügung. Die Nutzeraktionen beschränken sich lediglich auf den Gebrauch der zuvor genannten Buttons und die dynamisch erzeugten 
+Schaltflächen der Objekte, um über diese zusätzliche Informationen zu erhalten. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
+    \caption{Visualisierungs-Phase der Applikation}
+    \label{pic:visual}
+\end{figure} 
+\\ 
+Mit der soeben erläuterten Benutzeroberfläche geht folgender Programmablauf einher.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/visualPAP.png}
+    \caption{Programmablaufplan der Visualisierungs-Phase}
+    \label{pic:startmenu}
+\end{figure}
+%\pagebreak
+\\
+Auf Grundlage der Benutzeroberflächen erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase.
+
 \subsubsection{BackEnd}
 Nachdem das Problem der variablen Startposition in der Implementierung der Scan-Phase umgangen wurde, konnte die Visualisierungs-Phase entwickelt werden. 
 \\ 
@@ -12,8 +51,8 @@ Damit kann der weitere Programmablauf folgen, indem die \acs{GUI} der Visualisie
 Objektplatzierung gestartet wird. 
 \\
 Über eine ViewModel-Komponente werden die Objekte aus der Datenbank abgefragt und in einer Liste gespeichert, um diese zu einem späteren Zeitpunkt zur Platzierung der 
-Objekte verwenden zu können. 
-\\ 
+Objekte verwenden zu können.
+\\
 Ist der Marker erkannt worden, wird mithilfe des Buttons, der sich im rechten unteren Eck der Benutzeroberfläche (\ref{pic:visual}) befindet, die Methode zur 
 Datenabfrage, Erzeugung und Platzierung der Objekte gestartet. Dabei wird über den Button-Klick eine Funktion aufgerufen, die die Liste der Objekte anspricht und 
 die jeweils darin enthaltenen Objekte nacheinander generiert. Nach Betätigen des Buttons ist dieser auf der \acs{UI} nicht mehr aufzufinden, um einer weiteren 
@@ -21,7 +60,7 @@ Platzierung aller Objekte vorzubeugen. Die von dem ViewModel gegebene Liste wird
 nacheinander angelegt. Dies erfolgt über eine „for“-Schleife, welche abhängig von dem Ursprungspunkt, dem Marker „objectMarkerCenter“, die Position des 
 aktuellen Objekts „obj“ an der Stelle „i“ in der Liste neu errechnet und darstellt.
 \\ 
-\linebreak
+%\linebreak
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -96,28 +135,28 @@ angezeigt und der Nutzer hat den gesamten Überblick über alle Objekte und kann
 zu entnehmen. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/show_objects_after_loading.jpg}
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_objects_after_loading.jpg}
     \caption{Funktion Visualisierungs-Phase Teil 1}
     \label{pic:visual_objects}
 \end{figure}
 \\ 
-\linebreak
+%\linebreak
 Eine weiter Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, werden mit einem Klick auf das Objekt 
 die Informationen über ein PopUp angezeigt. Darunter ist der Namen des Objekts, der Status und die ID, die zu Anfang automatisch generiert 
 und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur Verfügung gestellt werden. 
-\pagebreak
+%\pagebreak
 \begin{figure}[hbt!]
     \centering
-    \subfigure[Anzeige der Objektinformationen 1]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung//Bilder/show_data_to_obj_1.jpg}}
-    \subfigure[Anzeige der Objektinformationen 2]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_2.jpg}}
-    \subfigure[Anzeige der Objektinformationen 3]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_3.jpg}}
+    \subfigure[Anzeige der Objektinformationen 1]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung//Bilder/show_data_to_obj_1.jpg}}
+    \subfigure[Anzeige der Objektinformationen 2]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_2.jpg}}
+    \subfigure[Anzeige der Objektinformationen 3]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_3.jpg}}
     \caption{Funktion Visualisierungs-Phase Teil 2}
     \label{pic:showdatatoobj}
 \end{figure}
-\\ 
-\linebreak
-Nachdem die Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und Einblicke in die Entwicklung und die damit verbundenen Fragestellungen 
-und Schwierigkeiten gewährt wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
+%\\ 
+%\linebreak
+%Nachdem die Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und Einblicke in die Entwicklung und die damit verbundenen Fragestellungen 
+%und Schwierigkeiten gewährt wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
 
 %werden die implementierten Funktionen anhand eines Testdurchlaufs nochmals genauer 
 %dargelegt.

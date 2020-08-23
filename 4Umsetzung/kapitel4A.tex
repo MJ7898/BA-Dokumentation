@@ -21,10 +21,10 @@ Entity deklariert und somit in eine Datenbank-Tabelle konvertiert wird.
 In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die zuerst mit Annotationen versehen und dann gemäß der Anforderungen des 
 Konzepts sind. Diese Variablen repräsentieren die Attribute des Datenbankschemas und stellen die einzelnen 
 Informations-, bzw. Datenbankspalten dar. Zur Veranschaulichung dient die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
-und ebenso als Primärschlüssel\footnote{Einmaliger und eindeutiger Wert einer Tabelle, bzw. eines Attributs, um dieses eindeutig zu kennzeichnen.}-Variable 
+und ebenso als Primärschlüssel\footnote{Ein Wert einer Tabelle, bzw. eines Attributs, der den Tabelleneintrag eindeutig identifiziert.}-Variable 
 deklariert.
 \\ 
-\linebreak
+%\linebreak
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
     xleftmargin=\parindent,  % Rahmen link von den Zahlen
@@ -66,10 +66,10 @@ In zukünftigen Entwicklungen,
 falls notwendig, gäbe es die Möglichkeit, in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
 Möglichkeit gegeben, weitere Datenbank-Tabellen zur Speicherung von Objekten und deren Informationen zu erstellen. Ebenso ist durch ein Repository die Option 
 geboten, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten weitläufiger zur Verfügung zu stellen. 
-Eine Datenbeziehung von generierten Daten der Maschinen und Geräten selbst wäre auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
-und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da sie nicht Teil dieser Arbeit ist. 
-\\ 
-Im Ausblick (\ref{chap:Ausblick}) wird darauf nochmals eingegangen.
+%Eine Datenbeziehung von generierten Daten der Maschinen und Geräten selbst wäre auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
+%und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da sie nicht Teil dieser Arbeit ist. 
+%\\ 
+%Im Ausblick (\ref{chap:Ausblick}) wird darauf nochmals eingegangen.
 \\ 
 %\linebreak
 \begin{lstlisting}[language=C,
@@ -134,7 +134,7 @@ sich frei im Raum bewegt und ein Objekt an Postion (x = 5, y = 1, z = 3.5) setzt
 \end{figure}
 \pagebreak
 \\ 
-\linebreak
+%\linebreak
 Beim Setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms berechnet, um das Objekt auf dem Bildschirm zentriert platzieren zu können. Ist 
 diese Position berechnet, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue Ermittlung der virtuellen Position. Anhand der Information dieser Position 
 ist das Objekt zu platzieren. 
@@ -157,10 +157,12 @@ ModelRenderable.builder()
 .handle((renderable, throwable) -> {
     ...
 }
-\end{lstlisting}
-Während der Objekt-Renderung öffnet sich die \acs{GUI} (\ref{pic:createObject}) zur Eingabe der Informationen, die sich auf das Objekt beziehen. Diese 
-werden dann zusammen mit der virtuellen Position des Objekts abgegriffen und in die Datenbank geschrieben. Drückt der Anwender den „save“-Button der Oberfläche 
-(\ref{pic:createObject}), beendet er diesen Vorgang und kehrt auf die \acs{UI} der Scan-Phase zurück, um weitere Objekte platzieren zu können. 
+\end{lstlisting}                                    % (\ref{pic:createObject})
+Während der Objekt-Renderung öffnet sich die \acs{GUI} zur Eingabe der Informationen, die sich auf das Objekt beziehen. Diese 
+werden dann zusammen mit der virtuellen Position des Objekts abgegriffen und in die Datenbank geschrieben. Speichert der Anwender die Daten über einen Befehl ab, 
+%Drückt der Anwender den „save“-Button der Oberfläche 
+%(\ref{pic:createObject}), 
+beendet er diesen Vorgang und kehrt auf die \acs{UI} der Scan-Phase zurück, um weitere Objekte platzieren zu können. 
 \\ 
 Zusätzlich zu der Position des Objekts wird dessen Rotation durch Quaternionen berechnet und in der Datenbank gespeichert, um anhand der Berechnung 
 die Darstellung so real wie möglich wiederzugeben. Da die Rotation ausgehend von der Kamerahaltung berechnet wird, wird das Objekt bei der Ankerung immer in 
@@ -174,7 +176,7 @@ zulässt, war die erste auftretende Schwierigkeit, die Speicherung der Session a
 „BLOB“-Datei ist ein Binary Large Object, welches anhand der Binärcodierung abgespeichert wird. Dabei kann es sich unter anderem um große 
 Bild- oder Audio-Dateien handeln, ebenso können auch mittels dieser Objekt-Konvertierung anderweitig große Dateien gespeichert werden. Daraus entstand die 
 Konsequenz, die die Visualisierungs-Phase betraf, nämlich dass eine erzeugte Session nur eine gewissen Zeit verwendet werden kann. Dies bedeutet, dass nach erneutem 
-Starten des Assistenzsystems alle zuvor erzeugten Objekte einer Session auf der ihnen zugewiesenen Position nicht mehr erreichbar sind. Durch die Unterschiedlichen 
+Starten des Assistenzsystems alle zuvor erzeugten Objekte einer Session auf der ihnen zugewiesenen Position nicht mehr gültig sind. Durch die Unterschiedlichen 
 Startpunkte, die bei wiederholtem Starten der Anwendung erzeugt werden würden, würde sich die ursprüngliche Ausgangsposition der Applikation verschieben und so auch 
 die Objekte an eine fälschliche Position projizieren. Genauer gesagt, müssten die Objekte dann ausgehend von dem neu erzeugten Startpunkt referenziert werden. Somit wäre das 
 Ergebnis nicht exakt und könnte keine Anwendung finden, da die Applikation Informationen anzeigen würde, die der Realität nicht entsprechen würden. 
@@ -214,7 +216,8 @@ Erstellen des Objekts drückt, dieses virtuell erschaffen. Bei der Erzeugung wir
 Abstand zu dem initialen Marker in der Datenbank über einen Schreibbefehl gespeichert. Die Berechnung der Distanz zwischen Objekt und 
 Ursprungsmarker erfolgt durch eine präzise Subtraktion, bei der lediglich die Ursprungskoordinaten von den aktuellen Positionskoordinaten subtrahiert werden. 
 Dieser Vorgang ist dem folgenden Code-Beispiel (\ref{code:differencetoinitial}) zu entnehmen. Dabei wird das aktuelle Objekt „object“ und das initiale Objekt 
-„initialObject“ als Parameter übergeben, die sogenannte „call by Reference“, um die Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen 
+„initialObject“ als Parameter übergeben, %die sogenannte „call by Reference“, 
+um die Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen 
 zwischengespeichert und zum Schluss in eine neue Position „Pose“ mit Translation und Rotation, von der Berechnung durch Quaternionen, ermittelt. Der Rückgabewerte 
 dieser Funktion ist demnach eine „Pose“, die nach Aufruf der Methode übergeben und so in der Datenbank mittels „insert“-Befehl hinterlegt wird. 
 Die Position und Rotation des einzelnen Objekts ist mit dem Resultat gegeben und kann in der Visualisierungs-Phase verwendet werden.
@@ -248,12 +251,13 @@ sich alles in einem erstellten Koordinatensystem abspielt und lediglich die Dist
 werden.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=15cm,height=15cm,keepaspectratio]{4Umsetzung/Bilder/difcalc.jpeg}
+    \includegraphics[width=10cm,height=10cm,keepaspectratio]{4Umsetzung/Bilder/difcalc.jpeg}
     \caption{Positionsberechnung zum Ursprungsmarker}
     \label{pic:differenztoinitial}
 \end{figure}
+%\pagebreak
 \\ 
-\linebreak
+%\linebreak
 Um die Backend-Implementierung zu demonstrieren, wird nun während der Laufzeit anhand erstellter Screenshots eine Beschreibung des Ablaufs der Applikation stattfinden.
 \\ 
 In Abbildung (\ref{pic:markerTracking} (a)) ist zu sehen, dass der vorgegebene Marker verfolgt werden muss, um die Applikation starten zu können. Dabei begrenzt 
@@ -270,14 +274,14 @@ und nicht berechnet Stelle zu platzieren.
 %Ebenso die zentrierte Markierung, die ein Kreuz vorzeigt, um den Nutzer davor zu hindern ein Objekt an einer nicht bekannten und nicht berechnetet Oberfläche zu platzieren.
 \begin{figure}[hbt!]
     \centering
-    \subfigure[Marker-Scan]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung//Bilder/scan_image.jpg}}
-    \subfigure[Umgebungsberechnung]{\includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/scan_environment.jpg}}
+    \subfigure[Marker-Scan]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung//Bilder/scan_image.jpg}}
+    \subfigure[Umgebungsberechnung]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/scan_environment.jpg}}
     \caption{Funktion der Scan-Phase Teil 1}
     \label{pic:markerTracking}
 \end{figure}
-\pagebreak 
+%\pagebreak 
 \\ 
-\linebreak
+%\linebreak
 Wird nun ein Objekt vom Benutzer erstellt und an eine von ihm gewählte Position platziert, trägt er die dazugehörigen Informationen in der \acs{UI} 
 ein, bestätigt diese und übernimmt die Garantie dafür, das Objekt richtig positioniert und betitelt zu haben. Danach wird die ursprüngliche \acs{UI} der Scan-Phase 
 geöffnet und das zuvor erstellte Objekt an der vorgesehenen 
@@ -293,42 +297,13 @@ Visualisierungs-Phase starten oder die Anwendung schließen. Da alle eingegebene
 die Möglichkeit, alle vorhandenen Objekte und Daten zu löschen und die Scan-Phase von Anfang an erneut zu starten.  
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/place_objects_view.jpg}
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/place_objects_view.jpg}
     \caption{Funktion der Scan-Phase Teil 2}
     \label{pic:place_objects}
 \end{figure}
-\pagebreak
+%\pagebreak
 \\ 
-\linebreak
+%\linebreak
 Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
 die Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, ähnlich wie bereits in 
 der Scan-Phase erläutert, veranschaulicht.
-
-\subsection{Visualisierungs-Phase} 
-Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
-deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
-Frontend-Entwicklung der Visualisierungs-Phase gibt Aufschluss über die Benutzeroberfläche dieser Phase und deren Aufbau. Die Ausführung des Frontends und deren bildliche 
-Darstellung dient dazu, das anschließende Backend nachvollziehen zu können. Abschließend werden die Aspekte des Frontends aufgegriffen und anhand der Backend-Implementierung 
-mit deren Funktionen verknüpft. 
-\subsubsection{FrontEnd}
-Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
-deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
-die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
-\\ 
-Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment das sich über den ganzen Bildschirm erstreckt, repräsentiert das 
-Livebild der Kamera. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Des Weiteren befinden 
-sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen, und zum anderen, um die Objekte von der Datenbank 
-abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschirms, wie 
-der Abbildung \ref{pic:visual} zu entnehmen ist. 
-\\ 
-Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer für die Interaktionen nur die Objekte, die als Overlay 
-über das Kamerabild gelegt werden, zur Verfügung. Die Nutzeraktionen beschränken sich lediglich auf den Gebrauch der zuvor genannten Buttons und die dynamisch erzeugten 
-Schaltflächen der Objekte, um über diese zusätzliche Informationen zu erhalten. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=10cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
-    \caption{Visualisierungs-Phase der Applikation}
-    \label{pic:visual}
-\end{figure} 
-\\
-Nun erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase.  
