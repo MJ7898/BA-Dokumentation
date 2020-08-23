@@ -154,13 +154,19 @@ und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur V
     \label{pic:showdatatoobj}
 \end{figure}
 \\
-Um für den Prototypen eine möglichst realitätsnahe Anwendung zu simulieren, wurde mithilfe eines Threads eine Statusänderung eines zufälligen Objekts eingebaut. 
+Um für den Prototypen eine möglichst realitätsnahe Anwendung zu simulieren, wurde mithilfe eines Threads eine Statusänderung der Objekte eingebaut. Dabei wird 
+ein zufälliges Objekt selektiert und dessen Status-Informationen in der Datenbank geändert, bzw. aktualisiert. Über einen „Handler“ wird diese Aktion registriert 
+und der Nutzer wird daraufhin benachrichtigt, indem auf dem Bildschirm eine Mitteilung aufkommt, in der die Änderungen und Informationen zu dem jeweiligen Objekt 
+enthalten sind. Darauf kann der Nutzer im Nachgang reagieren, um die dementsprechende Entscheidung, was zu tun ist, zu treffen. Der folgende Ablaufplan stellt 
+diese Funktion dar.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/changeInfoPAP.png}
     \caption{Programmablaufplan zur Informationsänderung eines zufälligen Objekts}
     \label{pic:startmenu}
 \end{figure}
+\\
+Der „Thread“ läuft solange die Visualisierungs-Phase aktiv ist und wird erst mit schließen der Funktion beendet.
 %\linebreak
 %Nachdem die Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und Einblicke in die Entwicklung und die damit verbundenen Fragestellungen 
 %und Schwierigkeiten gewährt wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
