@@ -89,6 +89,29 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{arcoreofficial.2020j}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AG}{%
+         family={ARCore},
+         familyi={A\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG1}
+    \strng{fullhash}{AG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{howpublished}{\url{https://developers.google.com/ar/discover}}
+    \field{title}{Fundamental Concept}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{boeingStudy.2015a}{misc}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -533,6 +556,28 @@
     \field{year}{2020}
   \endentry
 
+  \entry{gps.2020a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ES}{%
+         family={Ebers},
+         familyi={E\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ES1}
+    \strng{fullhash}{ES1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://gps-ortung.net/handyortung/geraetebasierte-positionsbestimmung/}}
+    \field{title}{Positionsbestimmung per GPS}
+    \field{year}{2020}
+  \endentry
+
   \entry{mvvmAufbau.2016}{misc}{}
     \name{author}{1}{}{%
       {{hash=EN}{%
@@ -656,6 +701,70 @@
     \field{year}{1856}
   \endentry
 
+  \entry{liveData}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{extradate}{1}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+  \field{howpublished}{\url{https://developer.android.com/topic/libraries/architecture/livedata}}
+    \field{title}{LiveData overview}
+    \field{year}{2020}
+  \endentry
+
+  \entry{googleaugmImage.2020m}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{extradate}{2}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+  \field{howpublished}{\url{https://developers.google.com/ar/develop/java/augmented-images}}
+    \field{title}{Recognize and Augment Images}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{viewModelAndroid.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Google},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{extradate}{3}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+  \field{howpublished}{\url{https://developer.android.com/topic/libraries/architecture/viewmodel}}
+    \field{title}{ViewModel overview}
+    \field{year}{2020}
+  \endentry
+
   \entry{graphSLAM.2010}{misc}{}
     \name{author}{4}{}{%
       {{hash=GG}{%
@@ -695,6 +804,42 @@
   Freiburg}
     \field{title}{A Tutorial on Graph-Based SLAM}
     \field{year}{2010}
+  \endentry
+
+  \entry{quaternionHamilton.2006}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GK}{%
+         family={Gürlebeck},
+         familyi={G\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Habetha},
+         familyi={H\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Sprößig},
+         familyi={S\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Birkhäuser Verlag}%
+    }
+    \strng{namehash}{GKHKSW1}
+    \strng{fullhash}{GKHKSW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Funktionentheorie in der Ebene und im Raum}
+    \field{year}{2006}
   \endentry
 
   \entry{architektursw.2006f}{book}{}
@@ -985,7 +1130,7 @@
     \field{labeldatesource}{year}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-  \field{howpublished}{https://www.industry-of-things.de/vr-und-ar-werden-realitaet-a-898199/}
+  \field{howpublished}{\url{https://www.industry-of-things.de/vr-und-ar-werden-realitaet-a-898199/}}
     \field{title}{Marktstudie zu Augmented und Virtual Reality - Einblicke in
   die Marktreife immersiver Technologien}
     \field{month}{01}
@@ -1112,7 +1257,7 @@
     \field{labeldatesource}{year}
     \field{sortinit}{Q}
     \field{sortinithash}{Q}
-    \field{howpublished}{\url={https://worldofvr.net/augmented-reality/}}
+    \field{howpublished}{\url{https://worldofvr.net/augmented-reality/}}
     \field{title}{Augmented Reality (AR): Definition, Technik \& Potenzial}
     \field{year}{2020}
   \endentry
@@ -1159,6 +1304,28 @@
   Grundlagen 2}
     \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{sceneform.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=SG}{%
+         family={Sceneform},
+         familyi={S\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SG1}
+    \strng{fullhash}{SG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{howpublished}{\url{https://developers.google.com/sceneform/develop}}
+    \field{title}{Sceneform overview}
+    \field{year}{2020}
   \endentry
 
   \entry{mr.2018o}{misc}{}
@@ -1290,9 +1457,32 @@
     \field{labeldatesource}{year}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{howpublished}{\url={https://www.tepcon.de/}}
+    \field{howpublished}{\url{https://www.tepcon.de/}}
     \field{title}{augmented presenter and augmented instructor}
     \field{year}{2020}
+  \endentry
+
+  \entry{arTracking.2019o}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=ZG}{%
+         family={Zvejnieks},
+         familyi={Z\bibinitperiod},
+         given={Gatis},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZG1}
+    \strng{fullhash}{ZG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+  \field{howpublished}{\url{https://overlyapp.com/blog/marker-based-vs-markerless-augmented-reality-pros-cons-examples/}}
+    \field{title}{Marker-based vs markerless augmented reality}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
 \endinput

@@ -284,12 +284,12 @@ nahezu exakte Information über Lage und Position nötig ist. %da in Relation zu
 %Bei Positionsbestimmungen auf kleinstem Raum ist eine 
 %genaue Lokalisierung wichtig und basiert auf einem deutlich präziseren Ansatz. 
 \\ 
-Welche oben genannten Ansätze es gibt und welche Unterschiede zu beachten sind, wird in Folgendem näher erläutert. 
+Welche oben genannten Ansätze und Unterschiede es zu beachten gibt, wird in Folgendem näher erläutert. % und welche Unterschiede zu beachten sind, wird in Folgendem näher erläutert. 
 \subsubsection*{Marker-basierte Positionsbestimmung}
 Speziell bei der Marker-basierten Positionsbestimmung gibt es verschiedene Möglichkeiten den Marker zu gestalten. Es können 
 Binär- oder QR-Codes als Markierung verwendet werden, ein Beispiel eines solchen Codes ist der Abbildung \ref{pic:markerARpos} zu entnehmen. 
 Diese Codes sind meistens quadratisch und haben ein eindeutiges Zeichen in der Mitte. Um die Rechenzeit gering zu halten gibt es einfache Muster, 
-wie die Abbildung \ref{pic:markerARpos} zeigt.
+wie die Abbildung \ref{pic:markerARpos} zeigt. \cite{arTracking.2019o}
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/bildmarkerAR.png}
@@ -300,12 +300,12 @@ wie die Abbildung \ref{pic:markerARpos} zeigt.
 \\ 
 %\linebreak
 Neben der einfachen Markierungserkennung gibt es eine weiterentwickelte Möglichkeit der Bild- sowie der Objekterkennung. Diese sind Ansätze 
-die grundlegend auf dem Ausgangspunkt des Binär-Code-Verfahrens aufbauen. Eine detailliertere Erläuterung der soeben genannten 
+die grundlegend auf dem Ausgangspunkt des Binär-Code-Verfahrens aufbauen. \cite{googleaugmImage.2020m} Eine detailliertere Erläuterung der soeben genannten 
 Erkennungsmöglichkeiten findet im Rahmen dieser Arbeit nicht statt, allerdings wird allgemein kurz auf die Funktionsweise einer 
 Marker-basierten Positionsbestimmung eingegangen.
 \\ 
 Durch ein Kamerabild wird nach einem vordefinierten Marker, bzw. nach einer festgelegten Markierung gesucht. Ist diese mit der Kamera erfasst, 
-wird die Markierung durch Bildverarbeitungsalgorithmen und bestimmter Filterung eindeutig identifiziert. Mit den gewonnen Informationen und 
+wird die Markierung durch Bildverarbeitungsalgorithmen und bestimmter Filterung eindeutig identifiziert. Mit den gewonnenen Informationen und 
 der Übereinstimmung des angegebenen Codes wird die Position, sowie die Orientierung des Markers berechnet. Mit den Angaben der Lage und 
 Orientierung wird auf der Markierung das anzuzeigende digitale Objekt generiert und als Overlay über dem Kamerabild angezeigt. Die Markierung 
 dient sozusagen als Grundlage um den digitalen Gegenstand überhaupt anzeigen zu können.
@@ -320,11 +320,11 @@ sogenannte Marker-unabhängige Positionsbestimmung, welche ebenso verschiedene A
 Die Methode des \acs{GPS}-basierten Positionsbestimmungsverfahren verwendet hauptsächlich die Koordinaten der realen Welt. In Zusammenarbeit 
 mit zusätzlichen im Anwendungsgerät verbauten internen Sensoren, bspw. Positions-, Geschwindigkeits- und Beschleunigungssensoren und Teile des 
 \ac{INS}, z.B. dem Gyroskop \cite{markerlesstracking.2003m}, kann diese Art der Positionsbestimmung optimal Anwendung finden. Allerdings werden dabei 
-deutlich mehr Komponenten benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. 
+deutlich mehr Komponenten benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. \cite{gps.2020a}
 \\ 
 Bei einem Anwendungsfall von \acs{GPS}-basierter Positionsbestimmung geht es meist um Routenplaner, Navigation oder Szenarien die sich 
 auf offenen Flächen abspielen, da im Gegensatz zu Marker-basierten Anwendungen das Größenverhältnis deutliche Unterschiede vorweist. 
-Der Benutzer ist nicht auf einen bestimmten Bezirk beschränkt und ist nicht auf die millimetergenaue Darstellung angewiesen.
+Der Benutzer ist nicht auf einen bestimmten Bezirk beschränkt und ist nicht auf die millimetergenaue Darstellung angewiesen. \cite{gps.2020a}
 \\ 
 \linebreak
 Eine Alternative zu \acs{GPS} ist die Anwendung des \acs{SLAM}-Verfahrens. Dabei wird eine virtuelle Karte, bzw. ein geometrisches Modell der 

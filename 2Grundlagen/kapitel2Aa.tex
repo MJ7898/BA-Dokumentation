@@ -11,7 +11,7 @@ ARCore ist die von Google veröffentlichte Plattform zum Erstellen von \acl{AR} 
 Das \ac{SDK} ist in den Programmiersprachen Java und Kotlin geschrieben. Mit bestimmten \acs{API}s ermöglicht \textit{ARCore} die Erfassung 
 der Umgebung durch ein Tablet oder Smartphone, um so die Welt zu verstehen. Mitte des Jahres 2017 
 wurde die \textit{Google ARCore API} zum ersten Mal den Entwicklern und der \acs{AR}-Community präsentiert. Im ersten Quartal 2018 wurde 
-diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. 
+diese dann veröffentlicht und löste das Vorreiterprojekt \textit{„Project Tango“} ab. \cite{arcoreofficial.2020j}
 \\ 
 \linebreak 
 \textit{Project Tango} war ebenso eine Google-Plattform, mit dem Smartphones und Tablets ein \textit{„Raumgefühl“} erhalten. \cite{projecttango.2016j} 
@@ -35,7 +35,7 @@ Für die Funktion der Bewegungsverfolgung verwendet ARCore das Verfahren von \ac
 sich das Smartphone in Relation zur realen Welt befindet. Zusätzlich erkennt ARCore visuell unterschiedliche Merkmale im aktuell aufgenommenen 
 Kamerabild, sogenannte Merkmalspunkte \textit{„feature points“}. Anhand dieser Punkte wird die Änderung des Standortes berechnet. Durch Trägheitsmessungen 
 der \ac{IMU}, dt. Inertiale Messeinheit des Geräts, kombiniert mit den visuellen Informationen des Kamerabildes wird die Position und 
-Ausrichtung der Kamera in Relation zur Realität abgeschätzt. 
+Ausrichtung der Kamera in Relation zur Realität abgeschätzt. \cite{arcoreofficial.2020j}
 %\begin{figure}[hbt!]
 %    \centering
 %    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/motionTracking.png}
@@ -66,7 +66,7 @@ veranschaulicht solch ein Beispiel.
 Die zweite Schlüsselfunktion des Frameworks ist das Verständnis der Umgebung. Dieses wird erlangt, indem \textit{„feature points“}, Ebenen und 
 Flächen beim Scannen des Umfelds erkannt werden. Beim Entstehen mehrerer solcher \textit{feature points} erstellt ARCore ein Cluster aller 
 naheliegenden Punkte. Dieses erzeugte Cluster repräsentiert eine horizontale oder vertikale Fläche. Mit diesen gewonnenen Informationen ist das 
-Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
+Platzieren von virtuellen Objekten auf den erfassten Flächen möglich. \cite{arcoreofficial.2020j}
 %\begin{figure}[hbt!]
 %    \centering
 %    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/environmentalUnderst.png}
@@ -77,7 +77,7 @@ Platzieren von virtuellen Objekten auf den erfassten Flächen möglich.
 Mit der Funktion der Lichtschätzung kann ARCore Lichtverhältnisse und Informationen über die Beleuchtung der Umgebung erkennen. Dadurch kann das 
 \acs{SDK} durchschnittliche Intensität und eine angepasste Farbkorrektur eines bestimmten Kamerabildes liefern, um so die Aufarbeitung des Bildes 
 der Umgebung anzupassen. Diese Funktion verstärkt die Anpassung des virtuellen Objektes an die Realität und lässt dieses noch glaubwürdiger 
-erscheinen.
+erscheinen. \cite{arcoreofficial.2020j}
 %\begin{figure}[hbt!]
 %    \centering
 %    \includegraphics[width=15cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/lightEstim.png}
@@ -122,7 +122,7 @@ und bilden die Basis für die Architektur, welche an das \textit{MVVM-Pattern} a
 \textit{LiveData} gehört zu den \textit{Observer-Pattern} und ist eine Datenhalterklasse die eine Beobachtungsfunktion, bzw. -charakter besitzt. Der 
 Unterschied zu einem regulären Observable ist, die lebenszyklus-unabhängige LiveData-Komponente. Dies bedeutet, der Lebenszyklus anderer 
 Komponenten z.B. \textit{Activities, Fragments oder Services}, wird berücksichtigt. Mit dieser Kenntnis wird sichergestellt, dass LiveData 
-nur App-Komponenten beobachtet, welche sich in einem aktiven Lebenszyklus befinden.
+nur App-Komponenten beobachtet, welche sich in einem aktiven Lebenszyklus befinden. \cite{liveData}
 \\ 
 \linebreak
 Vorteile die die \textit{LiveData}-Komponente mit sich bringt sind unter anderem die Sicherstellung der Übereinstimmung der Benutzeroberfläche und 
@@ -160,7 +160,7 @@ Components, z.B. LiveData und ViewModel.
 \label{sec:ViewModel}
 Grundsätzlich dient das \textit{ViewModel} als lebenszyklusbewusste Speicherung und Verwaltung von benutzeroberflächenbezogenen Daten. 
 Durch die \textit{ViewModel}-Klasse können Informationen Konfigurationsänderungen, z.B. Bildschirmdrehungen, die als Änderung zählen, 
-überstehen. Eine Konfiguration kann sog. Activities verwerfen und neu laden, so können nicht persistierte Daten verloren gehen. 
+überstehen. Eine Konfiguration kann sog. Activities verwerfen und neu laden, so können nicht persistierte Daten verloren gehen. \cite{viewModelAndroid.2020}
 \\ 
 \linebreak
 Ein \textit{ViewModel} fungiert ebenso als Kommunikationsschnittstelle zwischen den darüber- und darunterliegenden Komponenten der 
@@ -180,7 +180,7 @@ auf die unveränderten Daten hat.
 \subsection{Sceneform SDK}
 Das Sceneform \acs{SDK} ist ein Open-Source Projekt der Google LLC., welches für das Rendern von 3D-Szenen und -Animationen zuständig ist. 
 Basierend auf der physikalischen Echtzeit-Rendering-Engine, \textit{physically based renderer} für Android, iOS, macOS, Linux und Windows 
-von Google Filament, wurde Sceneform entwickelt. 
+von Google Filament, wurde Sceneform entwickelt. \cite{sceneform.2020}
 \\ 
 \linebreak
 Bei dem Ansatz des physikalisch basierten Renderns in der Computergrafik wird versucht, alle Modalitäten der realen Welt genauer zu modellieren. 
