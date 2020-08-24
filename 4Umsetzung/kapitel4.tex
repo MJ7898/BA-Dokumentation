@@ -28,9 +28,9 @@ welche aufbauend auf die Scan-Phase funktioniert und die zuvor gescannten Objekt
 %Beim ersten Gebrauch der Anwendung ist eine vorzeitige Nutzung der Visualisierungs-Phase ohne weiteres nicht möglich. Zuvor muss der Nutzer einen Scan durchführen, sodass 
 %das System Daten generiert, Informationen liefert und diese zur Verfügung stellt. Dies hat zur Folge, dass die zweite Kernfunktion mit den zuvor erzeugten Informationen 
 %durch die Scan-Phase operiert und ausgeführt werden kann. 
-\\ 
-\linebreak 
-Aufgeteilt wurden die Use Cases der Anwendung jeweils immer nach Frontend und Backend, demnach wird auch die Dokumentation in diesem Stil geschildert. 
+%\\ 
+%\linebreak 
+%Aufgeteilt wurden die Use Cases der Anwendung jeweils immer nach Frontend und Backend, demnach wird auch die Dokumentation in diesem Stil geschildert. 
 \\ 
 \linebreak
 %Bevor die Umsetzung verwirklicht werden konnte, wurden vorab noch die letzten Vorbereitungen durchgeführt.
@@ -79,7 +79,7 @@ und der Applikation, dem Assistenzsystem.
 %Beim Start öffnet sich das Hauptfenster der Applikation und darin das Startmenü, auf das im Verlauf noch genauer eingegangen wird. 
 %\\ 
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Darunter soll der Nutzer dem System 
-die Erlaubnis erteilen, auf die Kamera zugreifen zu dürfen. Um die Umgebung in der Hauptfunktion scannen zu können, muss diese in weiterer Abfolge des Assistenzsystems genutzt werden können. 
+die Erlaubnis erteilen, auf die Kamera zugreifen zu dürfen, um die Umgebung in der Hauptfunktion scannen zu können. % muss diese in weiterer Abfolge des Assistenzsystems genutzt werden können. 
 Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. %Dieses Fenster ist der Abbildung (\ref{pic:camera_perm}) 
 %zu entnehmen. 
 Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren. %Wird allerdings der Zugriff abgelehnt, kann 
@@ -94,7 +94,7 @@ Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation
 \linebreak
 Da speziell das Assistenzsystem auf die gegebenen Komponenten der Hardware zugreift, z. B. die im Smart-Device integrierte Kamera, zählt diese zu den nativen Applikationen. 
 Darunter sind Anwendungen zu verstehen, die ausdrücklich für das Betriebssystem des Endgeräts konzipiert sind oder die zum Beispiel auf die vom Endgerät vorhandenen 
-Komponenten zugreifen, wie in etwa auf die Bild-Mediathek, der Datei-Strukturen oder die oben bereits erwähnte Kamera-Komponente.
+Komponenten zugreifen, wie in etwa auf die Bild-Mediathek, sämtliche Datei-Strukturen oder die oben bereits erwähnte Kamera-Komponente.
 \\ 
 \linebreak
 Angenommen der Nutzer lässt den Zugriff auf die Kamera für das Assistenzsystem zu, dann startet die Applikation wie erwünscht. Darauffolgend ist dann 
@@ -111,7 +111,7 @@ gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert. %In der 
     \label{pic:startmenu}
 \end{figure}
 \\
-Die Funktionen sind durch den folgenden Programmablaufplan verdeutlicht. 
+Die Button-Interaktionen und die jeweils dahinterliegenden Funktionen sind durch den folgenden Programmablaufplan verdeutlicht. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=6cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/startPAP.png}
@@ -144,9 +144,9 @@ App-Icon, die das Projekt eindeutig spezifizieren, definiert.
 \linebreak
 Demnach beinhaltet die Backend-Funktion des Startmenüs die Abfrage der \textit{„Camera-Permission“} und die Button-Klick-Funktionen, die den Nutzer 
 jeweils auf die von ihm gewählte Funktion weiterleiten. Sozusagen handelt es sich um eine simple Navigation.
-\\ 
-\linebreak
-Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase, der ersten Kernfunktion des Assistenzsystems.
+%\\ 
+%\linebreak
+%Als das Startmenü implementiert war, ging es an die Entwicklung der Scan-Phase, der ersten Kernfunktion des Assistenzsystems.
 
 \subsection{Scan-Phase} %Umgebungserkennung /
 \label{chap:scan_implementation}
@@ -176,7 +176,7 @@ aufgegriffen und genauestens dargelegt.
     \caption{Markererkennung der Applikation zum Start der Scan-Phase}
     \label{pic:image_tracking}
 \end{figure}
-%\pagebreak 
+\pagebreak 
 \\
 %\linebreak 
 Des Weiteren beinhaltet das Assistenzsystem die eigentliche Scan-Phasen \acs{UI}, mit der die Umgebung aufgenommen wird und anhand dieser Daten 
@@ -224,7 +224,7 @@ abdecken. %In Abbildung (\ref{pic:createObject}) sind diese Felder zusehen. Dabe
 %-status von der Person, die das Assistenzsystem nutzt, gefordert. 
 \\ 
 Im Hintergrund werden ebenso die Daten der Position und Drehung des 
-Objekts bereitgestellt. %Dies wird im Backend näher erläutert. %Über die Betätigung des \textit{„save“}-Buttons werden die Informationen lokal gespeichert und für die Eintragung in die Datenbank 
+Objekts bereitgestellt.%Dies wird im Backend näher erläutert.%Über die Betätigung des \textit{„save“}-Buttons werden die Informationen lokal gespeichert und für die Eintragung in die Datenbank 
 %vorgemerkt. Nachdem der Button bedient wurde, wird der Anwender auf die Oberfläche der Scan-Phase weitergeleitet, um bei Bedarf weitere Objekte zu 
 %erstellen.  
 %\begin{figure}[hbt!]
