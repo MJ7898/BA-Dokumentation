@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 AUG 2020 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 AUG 2020 10:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1920,7 +1920,7 @@ l.252 \begin{enumerate}
                                                   \fi \fi 
 l.252 \begin{enumerate}
                         </Users/mj/BA-Dokumentation/3Konzeption/Bilder/Visual-Phase_AugmIS.png> </Users/mj/BA-Dokumentation/3Konzeption/Bilder/Anwendungsfalldiagramm.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--298
+Underfull \hbox (badness 10000) in paragraph at lines 284--299
 
  []
 
@@ -1928,15 +1928,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--298
 <3Konzeption/Bilder/UML_BA.png, id=938, 561.09625pt x 262.9825pt>
 File: 3Konzeption/Bilder/UML_BA.png Graphic file (type png)
 <use 3Konzeption/Bilder/UML_BA.png>
-Package pdftex.def Info: 3Konzeption/Bilder/UML_BA.png  used on input line 324.
+Package pdftex.def Info: 3Konzeption/Bilder/UML_BA.png  used on input line 325.
 (pdftex.def)             Requested size: 426.7886pt x 200.03328pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 301--191
+Underfull \hbox (badness 10000) in paragraph at lines 302--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--191
+Underfull \hbox (badness 10000) in paragraph at lines 302--191
 
  []
 
@@ -2448,7 +2448,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139534 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139476 bytes).
 PDF statistics:
  1744 PDF objects out of 2073 (max. 8388607)
  1551 compressed objects within 16 object streams
