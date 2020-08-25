@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  25 AUG 2020 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  25 AUG 2020 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1403,10 +1403,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--216
  []
 
 
-LaTeX Warning: Reference `sec:smart-glasses' on page 5 undefined on input line 228.
+LaTeX Warning: Reference `sec:smart-glasses' on page 5 undefined on input line 229.
 
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 250.
+although it is yet undefined on input line 251.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 218--186
 
@@ -2443,7 +2443,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139122 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139103 bytes).
 PDF statistics:
  1744 PDF objects out of 2073 (max. 8388607)
  1551 compressed objects within 16 object streams
