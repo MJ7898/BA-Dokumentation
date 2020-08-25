@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  24 AUG 2020 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  25 AUG 2020 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2234,23 +2234,28 @@ Package pdftex.def Info: 4Umsetzung/Bilder/visual-phase.jpg  used on input line 
 <4Umsetzung/Bilder/visualPAP.png, id=1140, 490.83376pt x 593.21625pt>
 File: 4Umsetzung/Bilder/visualPAP.png Graphic file (type png)
 <use 4Umsetzung/Bilder/visualPAP.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/visualPAP.png  used on input line 32.
+Package pdftex.def Info: 4Umsetzung/Bilder/visualPAP.png  used on input line 33.
 (pdftex.def)             Requested size: 211.88573pt x 256.08275pt.
- [55
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--41
+
+ []
+
+[55
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.39 
+l.41 
       </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visual-phase.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 41--70
+Underfull \hbox (badness 10000) in paragraph at lines 43--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--70
+Underfull \hbox (badness 10000) in paragraph at lines 43--72
 
  []
 
@@ -2258,40 +2263,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--70
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.70 caption={Abfolge der Objekte in der Liste}]
+l.72 caption={Abfolge der Objekte in der Liste}]
                                                  </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/visualPAP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 79--93
+Underfull \hbox (badness 10000) in paragraph at lines 81--95
 
  []
 
 [57]
-<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1193, 1084.05pt x 2265.46375pt>
+<4Umsetzung/Bilder/show_objects_after_loading.jpg, id=1194, 1084.05pt x 2265.46375pt>
 File: 4Umsetzung/Bilder/show_objects_after_loading.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_objects_after_loading.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/show_objects_after_loading.jpg  used on input line 138.
+Package pdftex.def Info: 4Umsetzung/Bilder/show_objects_after_loading.jpg  used on input line 140.
 (pdftex.def)             Requested size: 95.29413pt x 199.1471pt.
-<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1194, 1084.05pt x 2266.4675pt>
+<4Umsetzung//Bilder/show_data_to_obj_1.jpg, id=1195, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung//Bilder/show_data_to_obj_1.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/show_data_to_obj_1.jpg>
-Package pdftex.def Info: 4Umsetzung//Bilder/show_data_to_obj_1.jpg  used on input line 150.
+Package pdftex.def Info: 4Umsetzung//Bilder/show_data_to_obj_1.jpg  used on input line 152.
 (pdftex.def)             Requested size: 95.26105pt x 199.16617pt.
-<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1195, 1084.05pt x 2264.46pt>
+<4Umsetzung/Bilder/show_data_to_obj_2.jpg, id=1196, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_2.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_2.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_2.jpg  used on input line 151.
+Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_2.jpg  used on input line 153.
 (pdftex.def)             Requested size: 95.34377pt x 199.16252pt.
-<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1196, 1084.05pt x 2266.4675pt>
+<4Umsetzung/Bilder/show_data_to_obj_3.jpg, id=1197, 1084.05pt x 2266.4675pt>
 File: 4Umsetzung/Bilder/show_data_to_obj_3.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/show_data_to_obj_3.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_3.jpg  used on input line 152.
+Package pdftex.def Info: 4Umsetzung/Bilder/show_data_to_obj_3.jpg  used on input line 154.
 (pdftex.def)             Requested size: 95.26105pt x 199.16617pt.
-<4Umsetzung/Bilder/changeInfoPAP.png, id=1197, 454.69875pt x 180.675pt>
+<4Umsetzung/Bilder/changeInfoPAP.png, id=1198, 454.69875pt x 180.675pt>
 File: 4Umsetzung/Bilder/changeInfoPAP.png Graphic file (type png)
 <use 4Umsetzung/Bilder/changeInfoPAP.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/changeInfoPAP.png  used on input line 164.
+Package pdftex.def Info: 4Umsetzung/Bilder/changeInfoPAP.png  used on input line 166.
 (pdftex.def)             Requested size: 284.53291pt x 113.05943pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--173
+Underfull \hbox (badness 10000) in paragraph at lines 124--175
 
  []
 
@@ -2299,7 +2304,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--173
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.173 
+l.175 
        </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/show_objects_after_loading.jpg>]) [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2438,7 +2443,7 @@ Here is how much of TeX's memory you used:
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139273 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12139122 bytes).
 PDF statistics:
  1744 PDF objects out of 2073 (max. 8388607)
  1551 compressed objects within 16 object streams
