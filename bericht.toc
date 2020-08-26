@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{5}{section.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Stand der Technik}{6}{section.1.5}% 
+\contentsline {section}{\numberline {1.5}Stand der Technik}{5}{section.1.5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen}{7}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
