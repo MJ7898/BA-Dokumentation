@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  26 AUG 2020 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  26 AUG 2020 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1442,31 +1442,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--71
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--110
+Underfull \hbox (badness 10000) in paragraph at lines 78--105
 
  []
 
-[8] [9]
+[8]
 Package acronym Info: Label `acro:AR' newly defined as it shall be overridden
-although it is yet undefined on input line 174.
+although it is yet undefined on input line 169.
 Package acronym Info: Label `acro:VR' newly defined as it shall be overridden
-although it is yet undefined on input line 174.
+although it is yet undefined on input line 169.
+ [9]
 Package acronym Info: Label `acro:MR' newly defined as it shall be overridden
-although it is yet undefined on input line 184.
+although it is yet undefined on input line 176.
 Package acronym Info: Label `acro:WMR' newly defined as it shall be overridden
-although it is yet undefined on input line 202.
+although it is yet undefined on input line 194.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--206
+Underfull \hbox (badness 10000) in paragraph at lines 186--197
 
  []
 
-<2Grundlagen/Bilder/snapchatAR.jpeg, id=511, 873.2625pt x 1358.07375pt>
+<2Grundlagen/Bilder/snapchatAR.jpeg, id=513, 873.2625pt x 1358.07375pt>
 File: 2Grundlagen/Bilder/snapchatAR.jpeg Graphic file (type jpg)
 <use 2Grundlagen/Bilder/snapchatAR.jpeg>
-Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 233.
+Package pdftex.def Info: 2Grundlagen/Bilder/snapchatAR.jpeg  used on input line 216.
 (pdftex.def)             Requested size: 109.77048pt x 170.71204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--278
+Underfull \hbox (badness 10000) in paragraph at lines 200--261
 
  []
 
@@ -1474,10 +1475,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--278
 <2Grundlagen/Bilder/bildmarkerAR.png, id=528, 297.11pt x 296.10625pt>
 File: 2Grundlagen/Bilder/bildmarkerAR.png Graphic file (type png)
 <use 2Grundlagen/Bilder/bildmarkerAR.png>
-Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 295.
+Package pdftex.def Info: 2Grundlagen/Bilder/bildmarkerAR.png  used on input line 278.
 (pdftex.def)             Requested size: 142.27116pt x 141.79051pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--319
+Underfull \hbox (badness 10000) in paragraph at lines 272--302
 
  []
 
@@ -1485,12 +1486,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--319
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.319 \subsubsection
+l.302 \subsubsection
                     *{\acs{GPS}-basierte Positionsbestimmung} </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/snapchatAR.jpeg>]
 Package acronym Info: Label `acro:INS' newly defined as it shall be overridden
-although it is yet undefined on input line 322.
+although it is yet undefined on input line 305.
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--337
+Underfull \hbox (badness 10000) in paragraph at lines 303--320
 
  []
 
@@ -1498,9 +1499,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--337
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.337 
+l.320 
        </Users/mj/BA-Dokumentation/2Grundlagen/Bilder/bildmarkerAR.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 340--188
+Underfull \hbox (badness 10000) in paragraph at lines 323--188
 
  []
 
@@ -2427,16 +2428,16 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32286 strings out of 492616
  588027 string characters out of 6129481
- 1155669 words of memory out of 5000000
+ 1155668 words of memory out of 5000000
  34793 multiletter control sequences out of 15000+600000
  124801 words of font info for 203 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12138432 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (78 pages, 12137789 bytes).
 PDF statistics:
- 1744 PDF objects out of 2073 (max. 8388607)
- 1551 compressed objects within 16 object streams
+ 1745 PDF objects out of 2073 (max. 8388607)
+ 1552 compressed objects within 16 object streams
  411 named destinations out of 1000 (max. 500000)
  39104 words of extra memory for PDF output out of 42996 (max. 10000000)
 

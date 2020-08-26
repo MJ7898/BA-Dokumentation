@@ -8,13 +8,13 @@
 \chapter{Grundlagen}
 \label{chap:Grundlagen}
 In diesem Kapitel werden die für diese Bachelorarbeit notwendigen Grundlagen geschaffen, um ein fundiertes Wissen und Verständnis 
-über verwendete Technologien zu bilden. Auf alle diese Informationen und Voraussetzungen wird im Folgenden eingegangen, um nachfolgende 
-Konzeption und Umsetzung besser zu verstehen.
+über verwendete Technologien zu erlangen und die nachfolgende Konzeption und Umsetzung besser verstehen zu können. %Auf alle diese Informationen und Voraussetzungen wird im Folgenden eingegangen, um nachfolgende 
+%Konzeption und Umsetzung besser zu verstehen.
 
 \section{Augmented Reality}
 \label{chap:Augmented Reality}
-Eine der wichtigsten Grundlagen dieser Arbeit ist das Verständnis des Begriffs der Augmented Reality.
-\\ 
+%Eine der wichtigsten Grundlagen dieser Arbeit ist das Verständnis des Begriffs der Augmented Reality.
+%x\\ 
 \acl{AR}, im Deutschen \textit{„erweiterte Realität“}, ist eine durch den Computer gestützte Erweiterung der Realität, bzw. der menschlichen 
 Wahrnehmung. Es ermöglicht dem Nutzer, die reale Welt mit Überlagerung oder Zusammensetzung virtueller Objekte und visueller Informationen
 zu sehen. Mittels einer Art Overlay werden diese Objekte und Informationen über die reale Welt gelegt und dem Nutzer zur Verfügung gestellt. 
@@ -37,7 +37,7 @@ Das erste genannte Merkmal kombiniert die reale Welt mit dem oben genannten Over
 Objekte und visuelle Informationen darstellen zu können. Dies bedeutet, der Nutzer nimmt die reale Umgebung gleichzeitig mit den darin liegenden virtuellen 
 Objekten als ein Ganzes wahr. Daraus resultiert die Interaktion von virtuellen Objekten und Informationen mit der realen Welt in Echtzeit, 
 damit sie als Teil der Realität registriert werden können. Das dritte Merkmal umfasst die Darstellung von Objekten als scheinbar reales 
-Objekt. Mit dem letzt genannten Merkmal wird das Ziel verfolgt die projizierten, bzw. nicht realen Teile täuschend echt in die Umgebung zu 
+Objekt. Mit dem letzt genannten Merkmal wird das Ziel verfolgt, die projizierten, bzw. nicht realen Teile täuschend echt in die Umgebung zu 
 integrieren.
 \\ 
 \linebreak  
@@ -75,36 +75,31 @@ große Welle an Forschungsarbeiten auf der ganzen Welt aus.“ \cite{springer.20
     accurate computer vision techniques and HMD calibration. We propose a method for tracking fiducial markers and a calibration method 
     for optical see-through HMD based on the marker tracking. \cite{artoolkitsheet.1999o}
 \end{quote}
-Dieser Ausschnitt war der grundlegende Baustein des Durchbruchs dieser Technologie und den vorangestellten Forschungen und eine fundierte 
-Grundlage für alle weiteren Forschungen und Entwicklungen, die darauf folgten. 
+Dieser Ausschnitt war der grundlegende Baustein des Durchbruchs dieser Technologie.% und den vorangestellten Forschungen und eine fundierte 
+%Grundlage für alle weiteren Forschungen und Entwicklungen, die darauf folgten. 
 \\ 
 Heutzutage dreht sich die Entwicklung vielmehr um mobile AR, welche durch die anfängliche Revolution von \textit{ARToolkit} und die darauf 
-entstehenden Entwicklungen und Produktionen von großen Firmen, wie z.B. Google, Microsoft, Apple und Facebook entstand. Die zuletzt große 
-Bewegung in dem Bereich der AR waren die Vorstellungen großer Software-Plattformen für mobile \acs{AR}-Applikationen, z.B. \acl{WMR}. Durch 
+entstehenden Entwicklungen und Produktionen von großen Firmen, wie z.B. Google, Microsoft, Apple und Facebook, entstand. Eine der letzten 
+größeren Neuerungen führender Software-Plattformen für mobile AR-Applikationen war z.B. \acl{WMR}. Durch 
 \textit{Apple's ARKit} und \textit{Google's ARCore} kamen im Jahr 2017 zwei moderne und innovative Frameworks auf den Markt, die die 
-Entwicklung von \acl{AR}-Applikationen stark beeinflussen.Die Frameworks wurden bei den ersten Produktionen für Entertainment-Anwendungen 
+Entwicklung von \acl{AR}-Applikationen stark beeinflussen. Die Frameworks wurden bei den ersten Produktionen für Entertainment-Anwendungen 
 genutzt, um z.B. mobile Spiele zur Unterhaltung oder Funktionen bei Sport-Fernsehübertragungen zur Anzeige der Entfernung des Freistoßes zu 
 realisieren.
 \\ 
 \linebreak
-%Dies ist hier nur nebenbei erwähnt. Ich möchte mich an dieser Stelle
-Diese Arbeit widmet sich ausschließlich dem industriellen Aspekt und stellt andere Bereiche der \acl{AR} in den Hintergrund.
-%Diese Arbeit jedoch widmet sich ausschließlich dem industriellen Aspekt und stellt andere Bereiche in den Hintergrund. 
+Diese Arbeit widmet sich ausschließlich dem industriellen Aspekt und stellt andere Bereiche der \acl{AR} in den Hintergrund. 
 Die schon in Kapitel (\ref{chap:Motivation}) aufgeführte Markstudie bestätigt das enorme Potential hinter \acl{AR} und deren Einsetzbarkeit 
-in der Industrie. Hauptsächlich in der Produktion, der Wartung oder der Reparatur von Maschinen kann augmentierte Realität eingesetzt werden 
-und zeigt einen positiv erzeugten Mehrwert. Dabei können bei Maschinen das Anzeigen von protokollierten Fehlern oder eine visuelle 
-Hilfestellung bei Defekten, sowohl bei der Reparatur, als auch bei der Ersetzung einzelner Komponenten eine deutliche Reduzierung des 
-zeitlichen Aufwands oder eine effektivere Arbeitsweise vorweisen. 
+in der Industrie. Hauptsächlich in der Produktion, der Wartung oder der Reparatur von Maschinen kann augmentierte Realität von Nutzen sein 
+und einen positiv erzeugten Mehrwert zeigen. Dabei kann das Anzeigen von protokollierten Fehlern oder eine visuelle 
+Hilfestellung, sowohl bei Reparaturen, als auch beim Ersetzen einzelner Komponenten, eine deutliche Reduzierung des 
+zeitlichen Aufwands und, bzw. oder eine effektivere Arbeitsweise erreicht werden. 
 \\
 \textit{Harvard Business Review} legte einen Vergleich offen, indem ein Techniker ein Steuergerät einer Windkraftanlage mithilfe 
 eines \acs{AR}-Headsets verkabelte und in Betrieb nahm. Alle benötigten Informationen wurden Schritt für Schritt über das Headset zur Verfügung 
-gestellt. %Dadurch gab es keinen Mehraufwand, z.B. 
-Das aufwändige Nachschlagen in einer Dokumentation entfiel. %Danach führte 
-Zum Vergleich führte der Techniker den gleichen Prozess ohne die Hilfe der AR-Anwendung, lediglich unter Verwendung des vorliegenden, neben 
-ihm befindlichen Handbuchs durch.
-Dieser Test bestätigte eine Leistungsverbesserung des Arbeiters beim ersten Gebrauch um \textit{34\%}.\cite{harvardbr.2017m} Diese Erkenntnis 
-des Tests stützte den Gedanken der Leistungsverbesserung und der Reduzierung des zeitlichen Aufwands, somit ließ dieses Resultat die Annahme zu, 
-das vorliegende Ergebnis auf die Gesamtheit zu projizieren und für alle Anwendungsfälle allgemeingültig zu machen. Auf Basis der 
+gestellt. Das aufwändige Nachschlagen in einer Dokumentation entfiel. Zum Vergleich führte der Techniker den gleichen Prozess ohne die Hilfe der AR-Anwendung, 
+lediglich unter Verwendung des vorliegenden, neben ihm befindlichen Handbuchs durch.
+Dieser Test bestätigte eine Leistungsverbesserung des Arbeiters beim ersten Gebrauch um \textit{34\%}.\cite{harvardbr.2017m} Das vorliegende Ergebnis stützte den 
+Gedanken, dies auf die Gesamtheit und für alle Anwendungsfälle allgemeingültig zu projizieren. Auf Basis der 
 vorab getätigten Studie von Boeing, die sogenannte \textit{„wing assambly study"} in Kooperation mit der Iowa State University, wurden 
 bei einer Vielzahl von Tests und Analysen eine Leistungsverbesserung von 30 \% ermittelt. \cite{boeingStudy.2015a}
 
@@ -120,8 +115,8 @@ Begriffen der Augmented und der Mixed Reality. Diese drei Begriffe lassen sich m
 Folgender Abschnitt beleuchtet die Unterschiede und lässt die drei Formen der erweiterten Realität voneinander unterscheidbar machen.
 \subsection*{Virtual Reality}
 Virtual Reality, dt. Virtuelle Realität (\acs{VR}), ist eine in Echtzeit computergenerierte, interaktive und virtuelle Umgebung. Eine Darstellung 
-und gleichzeitige Wahrnehmung der Wirklichkeit in all ihren Facetten und Eigenschaften. Das Ziel dieser Technologie ist, den Nutzer von der 
-Außenwelt abzuschirmen und diese durch eine computergenerierte und detaillierte Welt zu ersetzen. \cite{vr.2018n} Auch bekannt als Immersion.
+und gleichzeitige Wahrnehmung der Wirklichkeit in all ihren Facetten und Eigenschaften. Das Ziel dieser Technologie ist das Abschirmen des Nutzers von der 
+Außenwelt und diese durch eine computergenerierte und detaillierte Welt zu ersetzen. \cite{vr.2018n} Auch bekannt als Immersion.
 %\\ 
 %\linebreak
 %Die konventionelle Computergraphik ist für den Menschen spürbar nicht von belangen und weckt keine physischen Emotionen, wogegen VR diese 
@@ -172,14 +167,11 @@ Außenwelt abzuschirmen und diese durch eine computergenerierte und detaillierte
 %der Sinneserweiterung in der virtuellen Realität an. 
 \subsection*{Augmented Reality}
 \ac{AR} setzt im Gegenzug zu \ac{VR} auf das tatsächliche Erweitern der Realität durch das Einblenden von Informationen, Vorgängen, Hilfestellungen
-oder die Wegbeschreibung bei Head-Up Displays in Personen-, Kraft- und Nutzfahrzeugen, während \acl{VR} den Nutzer in eine völlig eigene 
-Welt entlockt und von der Realität abkapselt. Bei \acs{AR} soll dem Nutzer die zu bewältigenden Aufgaben vereinfacht und 
-werden, ohne die Realität außer Acht zu lassen. Darüberhinaus bietet \acl{AR} deutlich mehr Ansatzmöglichkeiten diese Technologie 
+oder die Wegbeschreibung bei Head-Up Displays, vorzugsweise in Personen-, Kraft- und Nutzfahrzeugen. 
+Bei \acs{AR} soll dem Nutzer die zu bewältigenden Aufgaben vereinfacht 
+werden, ohne die Realität außer Acht zu lassen. Darüberhinaus bietet \acl{AR} deutlich mehr Ansatzmöglichkeiten, diese Technologie 
 umzusetzen, wie die z.B. schon erwähnten Head-Up Displays bei Autos und Flugzeugen, oder bei Smartphones und Tablets, die durch die Kamera 
 die Realität erweitern, Brillen mit eingeblendeten Projektionen, wie die Oculus Rift und anderweitige große Projektionen. 
-%\\ 
-%In Kapitel (\ref{subchap:Varianten der AR}) wird auf die Varianten genauer eingegangen. 
-
 \subsection*{Mixed Reality}
 Dem Namen entsprechend ist \ac{MR} eine Mischung aus \acl{AR} und \acl{VR}, jedoch die Art und Weise, wie \acs{AR} und \acs{VR} vereint 
 werden, ist dabei entscheidend. Es gibt \acs{MR}-Brillen, die die reale Welt als Basis der Interaktion nehmen und Brillen die alleinig 
@@ -193,36 +185,27 @@ einer einzigen Welt.
 \subsubsection*{Mixed Reality bezüglich der virtuellen Welt}
 Hinsichtlich der \acs{VR} gibt es zu Anfang keine grundlegenden Änderungen gegenüber der \acs{MR}. Hierbei kann der Nutzer durch 
 \acs{MR} ebenso die Außenwelt ausblenden und sich lediglich auf die virtuelle Wahrnehmung fixieren. Erst in der Benutzung werden die 
-gravierenden Unterschiede zu \acs{VR} sichtbar. Der Nutzer kann sich frei bewegen, d.h. die Bewegungsfreiheit wird nur durch 
-die reale Umgebung eingeschränkt, während \acl{VR} sich auf einen sensorgestützten Raum begrenzt. \cite{vr.2018n}
+gravierenden Unterschiede zu \acs{VR} sichtbar. Der Nutzer kann sich bei der \acs{MR} nur eingeschränkt durch 
+die reale Umgebung frei bewegen, während er bei der \acl{VR} in einem sensorgestützten Raum interagiert. \cite{vr.2018n}
 \\ 
 Bei \acs{MR} wird jeder Schritt und jede Bewegung in die computergenerierte Welt übertragen und schafft so deutlich mehr Bewegungsfreiheiten.
 \\ 
 \linebreak 
 Ein großer Investor dieser Technologie ist Microsoft mit \ac{WMR}.
-%, wobei bereits schon Erfolge erzielt werden konnten, die Entwicklung einer standhaften Plattform die nur darauf wartet, ausgebaut und intensiver genutzt zu werden.
-Für die Plattform vorgesehene Brillen gibt es schon viele Produzenten, wie z.B. 
-die \textit{HMD Odyssey} von Samsung oder der \textit{Explorer} von Lenovo.
-
-%\subsection{Varianten der Augmented Reality}
-%\label{subchap:Varianten der AR}
-%Augmented Reality Anwendungen funktionieren alle nach dem gleichen Prinzip und verfolgen das gleiche Ziel, die Realität durch digitale Informationen 
-%oder Objekte zu erweitern. Die einzige deutliche Abweichung ist das jeweilige Endgerät und die technische Umsetzung in Zusammenhang mit der 
-%Hardware. Auf zwei dieser Varianten, nämlich dem mobilen und dem Smart-Brillen- oder auch sogenannten Headset-AR, wird im Folgenden 
-%eingegangen.
+Es gibt schon viele Produzenten für die in dieser Plattform vorgesehenen Brillen, wie z.B. die \textit{HMD Odyssey} von Samsung oder der 
+\textit{Explorer} von Lenovo.
 
 \subsection{Mobiles AR}
 \label{sec:mobilesAR}
 Smartphones sind in unserer Gesellschaft nicht mehr wegzudenken und haben sich fest etabliert. Durch die vielseitige und alltägliche Nutzung 
-von Tablets und Smartphones eröffnete diese Sparte eine gute Möglichkeit, \acl{AR} in den Alltag zu integrieren. Somit beleibt der ständige 
-Gebrauch dieser Technologie nicht aus und bereichert die Art und Weise Spiele und Anwendungen zu entwickeln.
-Sowohl die software-, als auch hardwaretechnischen Fortschritte eines Smartphones zeigen eine deutlich Steigerung, um solche mobilen 
-\acs{AR}-Anwendungen problemlos entwicklen zu können.
+von Tablets und Smartphones eröffnete diese Sparte eine gute Möglichkeit, \acl{AR} in den Alltag zu integrieren. Sie bereichert mit ihrer 
+Technologie die Benutzung von Spielen und Anwendungen. Die neuere Generation von Smartphones ermöglicht durch ihre software-, und 
+hardwaretechnischen Voraussetzungen einen problemlosen Gebrauch solcher mobilen \acs{AR}-Anwendungen. 
 Durch die im Smartphone integrierte Kamera werden Live-Aufnahmen analysiert und dienen als Ausgangssituation für die \acs{AR}-Anwendung. 
 Die gegebenen Möglichkeiten der vorhandenen Kamera, kann einen Echtzeithintergrund erzeugen und zusätzlich mit Informationen per Overlay darstellen. 
 Je nach Anwendung kann der Nutzer auf verschiedene Weise mit den eingeblendeten und virtuellen Objekten interagieren, z.B. durch das 
 Bewegen des Geräts, um das Objekt aus verschiedenen Blickwinkeln anschauen zu können, oder der direkten Interaktion mit dem Objekt durch 
-Drehen, Skalieren oder Verschieben am Bildschirm. Ein Vorreiter der mobilen AR ist das 2016 auf dem Markt erschienenen \textit{Pokémon Go} 
+Drehen, Skalieren oder Verschieben am Bildschirm. Ein Vorreiter der mobilen AR ist das 2016 auf dem Markt erschienene \textit{Pokémon Go} 
 von Niantic, das den Ansatz der \acs{AR} prägt. \cite{pokemongo.2016a}
 \\ 
 \linebreak
@@ -284,62 +267,61 @@ nahezu exakte Information über Lage und Position nötig ist. %da in Relation zu
 %Bei Positionsbestimmungen auf kleinstem Raum ist eine 
 %genaue Lokalisierung wichtig und basiert auf einem deutlich präziseren Ansatz. 
 \\ 
-Welche oben genannten Ansätze und Unterschiede es zu beachten gibt, wird in Folgendem näher erläutert. % und welche Unterschiede zu beachten sind, wird in Folgendem näher erläutert. 
-\subsubsection*{Marker-basierte Positionsbestimmung}
-Speziell bei der Marker-basierten Positionsbestimmung gibt es verschiedene Möglichkeiten den Marker zu gestalten. Es können 
-Binär- oder QR-Codes als Markierung verwendet werden, ein Beispiel eines solchen Codes ist der Abbildung \ref{pic:markerARpos} zu entnehmen. 
-Diese Codes sind meistens quadratisch und haben ein eindeutiges Zeichen in der Mitte. Um die Rechenzeit gering zu halten gibt es einfache Muster, 
+Welche oben genannten Ansätze und Unterschiede es zu beachten gibt, wird im Folgenden näher erläutert. % und welche Unterschiede zu beachten sind, wird in Folgendem näher erläutert. 
+\subsubsection*{Markerbasierte Positionsbestimmung}
+Speziell bei der markerbasierten Positionsbestimmung gibt es verschiedene Möglichkeiten, den Marker zu gestalten. Es können 
+Binär- oder QR-Codes als Markierung verwendet werden. Ein Beispiel eines solchen Codes ist der Abbildung \ref{pic:markerARpos} zu entnehmen. 
+Diese Codes sind meistens quadratisch und haben ein eindeutiges Zeichen in der Mitte. Um die Rechenzeit gering zu halten, gibt es einfache Muster, 
 wie die Abbildung \ref{pic:markerARpos} zeigt. \cite{arTracking.2019o}
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{2Grundlagen/Bilder/bildmarkerAR.png}
-    \caption{Marker-basierte Augmented Reality Positionsbestimmung}
+    \caption{Markerbasierte Augmented Reality Positionsbestimmung}
     \label{pic:markerARpos}
 \end{figure}
 %\pagebreak
 \\ 
 %\linebreak
-Neben der einfachen Markierungserkennung gibt es eine weiterentwickelte Möglichkeit der Bild- sowie der Objekterkennung. Diese sind Ansätze 
+Neben der einfachen Markierungserkennung gibt es eine weiterentwickelte Möglichkeit der Bild- sowie der Objekterkennung. Diese sind Ansätze, 
 die grundlegend auf dem Ausgangspunkt des Binär-Code-Verfahrens aufbauen. \cite{googleaugmImage.2020m} Eine detailliertere Erläuterung der soeben genannten 
 Erkennungsmöglichkeiten findet im Rahmen dieser Arbeit nicht statt, allerdings wird allgemein kurz auf die Funktionsweise einer 
-Marker-basierten Positionsbestimmung eingegangen.
+markerbasierten Positionsbestimmung eingegangen.
 \\ 
 Durch ein Kamerabild wird nach einem vordefinierten Marker, bzw. nach einer festgelegten Markierung gesucht. Ist diese mit der Kamera erfasst, 
 wird die Markierung durch Bildverarbeitungsalgorithmen und bestimmter Filterung eindeutig identifiziert. Mit den gewonnenen Informationen und 
 der Übereinstimmung des angegebenen Codes wird die Position, sowie die Orientierung des Markers berechnet. Mit den Angaben der Lage und 
 Orientierung wird auf der Markierung das anzuzeigende digitale Objekt generiert und als Overlay über dem Kamerabild angezeigt. Die Markierung 
-dient sozusagen als Grundlage um den digitalen Gegenstand überhaupt anzeigen zu können.
+dient sozusagen als Grundlage, um den digitalen Gegenstand überhaupt anzeigen zu können.
 \\ 
-Da der Marker immer im Blickfeld der Kamera sein muss, um das virtuelle Objekt anzuzeigen, bringt diese Art der Positionsbestimmung eine 
-enorme Einschränkung mit sich, die in diesem Bezug unumgänglich ist. 
+Da der Marker zum Anzeigen des virtuellen Objekts immer im Blickfeld der Kamera sein muss, bringt diese Art der Positionsbestimmung eine 
+enorme Einschränkung mit sich. 
 \\ 
 \linebreak
 Ein weiterer Ansatz der Positionsbestimmung ist als Überbegriff das Gegenstück zur oben aufgeführten Lokalisierung von Markern, die 
-sogenannte Marker-unabhängige Positionsbestimmung, welche ebenso verschiedene Ausführungen vorweist. 
+sogenannte markerunabhängige Positionsbestimmung, welche ebenso verschiedene Ausführungen vorweist. 
 \subsubsection*{\acs{GPS}-basierte Positionsbestimmung}
 Die Methode des \acs{GPS}-basierten Positionsbestimmungsverfahren verwendet hauptsächlich die Koordinaten der realen Welt. In Zusammenarbeit 
 mit zusätzlichen im Anwendungsgerät verbauten internen Sensoren, bspw. Positions-, Geschwindigkeits- und Beschleunigungssensoren und Teile des 
 \ac{INS}, z.B. dem Gyroskop \cite{markerlesstracking.2003m}, kann diese Art der Positionsbestimmung optimal Anwendung finden. Allerdings werden dabei 
 deutlich mehr Komponenten benötigt und ist deutlich komplexer umzusetzen, als ein markerbasiertes System. \cite{gps.2020a}
 \\ 
-Bei einem Anwendungsfall von \acs{GPS}-basierter Positionsbestimmung geht es meist um Routenplaner, Navigation oder Szenarien die sich 
-auf offenen Flächen abspielen, da im Gegensatz zu Marker-basierten Anwendungen das Größenverhältnis deutliche Unterschiede vorweist. 
+Bei einem Anwendungsfall von \acs{GPS}-basierter Positionsbestimmung geht es meist um Routenplaner, Navigation oder Szenarien, die sich 
+auf offeneren und größeren Flächen abspielen. 
 Der Benutzer ist nicht auf einen bestimmten Bezirk beschränkt und ist nicht auf die millimetergenaue Darstellung angewiesen. \cite{gps.2020a}
 \\ 
 \linebreak
-Eine Alternative zu \acs{GPS} ist die Anwendung des \acs{SLAM}-Verfahrens. Dabei wird eine virtuelle Karte, bzw. ein geometrisches Modell der 
-Umgebung erstellt. Wichtige Grundlagen zum Erzeugen eines solchen Modells sind eigenständig gefundene Landmarken die gleichzeitig 
+Eine Alternative zu \acs{GPS} ist die Anwendung des \acs{SLAM} Verfahrens. Dabei wird eine virtuelle Karte, bzw. ein geometrisches Modell, der 
+Umgebung erstellt. Wichtige Grundlagen zum Erzeugen eines solchen Modells sind eigenständig gefundene Landmarken, die gleichzeitig 
 lokalisiert werden. Darauf folgt ein Vergleich der Pose, der Position des Geräts und der geschätzten Karteninformationen aus dem Scan der 
 Umgebung. 
 Damit sind im erweiterten Sinne Marker geschaffen, die Anhaltspunkte für \acl{AR}-Interaktionen schaffen.
 \\ 
-In Kapitel \ref{chap:SLAM} wird die Thematik des \acs{SLAM}-Verfahrens erläutert. 
+In Kapitel \ref{chap:SLAM} wird die Thematik des \acs{SLAM} Verfahrens erläutert. 
 
 \subsection{Augmented Reality in der Industrie}
 \label{sec:ARIndustrie}
-Das weit gefächerte Portfolio der \acl{AR} umfasst viele Anwendungsbereiche und Fachgebiete. Selbst dem übergeordneten Bereich der Industrie 
-gibt es viele verschiedene Einsatzgebiete. Aus den vielen Möglichkeiten der Anwendung haben sich über die Jahre der Entwicklung der Technologie 
-einige Gebiete in der Industrie herauskristallisiert, die besonders großen Nutzen davon haben. \cite{einsatzgebietear.2017a} In den Bereichen 
+Aus den vielen verschiedenen Bereichen der Industrie haben sich Möglichkeiten der Anwendung von \acl{AR} über die Jahre der Entwicklung der Technologie 
+herauskristallisiert, die für Sparten von besonders großem Nutzen sind. \cite{einsatzgebietear.2017a} In den Bereichen 
 Instandhaltung und Wartung, Betrieb und Training ist \acl{AR} auf bestem Wege, fester Bestandteil des Alltags zu werden. Bei dieser Betrachtung 
 ist es sinnvoll, sich auf die damit einhergehenden Lösungen, die Reduktion der Kosten und dem Zeitaufwand, sowie die Verbesserung 
 der Sicherheit, zu fokussieren. \cite{studieptc.2020j} 
@@ -347,15 +329,15 @@ der Sicherheit, zu fokussieren. \cite{studieptc.2020j}
 \linebreak
 Bei einer Wartung oder Reparatur einer Maschine sind notwendige Informationen direkt greifbar und werden Schritt für Schritt angezeigt, sodass 
 in bestimmten Situationen selbst ein Leihe die Anweisungen befolgen könnte. 
-%So werden zusätzliche Recherchearbeiten oder Unklarheiten über Vorgänge aus dem Weg geräumt.
 Ein Mitarbeiter kann so mit einem Tablet oder einer Smart-Glas Anweisungen visuell auf die realen Maschinen 
 projizieren und Arbeitsschritte im Sichtfeld anzeigen lassen. Ebenso geht dieser Vorgang auch bei der Produktion von Bauteilen o.ä., indem 
 eine \acs{AR}-Anwendung Anweisungen und Prozessschritte, z.B. auf das Werkstück oder Produkt, projiziert.
 \\ 
-Die Inbetriebnahme oder Bedienung einer komplexen Anlage oder Maschine ist nach herkömmlichen Standard enorm zeitintensiv und dadurch können
-zusätzlich viele Fragen aufkommen, die meist den Prozess noch länger gestalten als vorgesehen. \acs{AR}-Anwendungen können 
-Bedienungsanleitung oder -hilfen digitalisiert, indem Informationen, Inhalte oder Bedienelemente durch \acl{AR} auf der Anlage platziert werden. 
+Die Inbetriebnahme oder Bedienung einer komplexen Anlage oder Maschine ist nach herkömmlichem Standard enorm zeitintensiv und es können
+zusätzlich Fragen entstehen, die meist den Arbeitsschritt länger gestalten als vorgesehen. \acs{AR}-Anwendungen können 
+Bedienungsanleitungen oder -hilfen digitalisieren, indem Informationen, Inhalte oder Bedienelemente durch \acl{AR} auf der Anlage platziert werden. 
 \\ 
-In Fortbildungen, Schulungen oder Einarbeitungen in neue Geräte kann \acs{AR} durchaus von großem Vorteil sein. Mit wenig Aufwand, einem 
+In Fortbildungen, Schulungen oder Einarbeitungen in neue Geräte kann \acs{AR} durchaus von großem Vorteil sein. Mit wenig Aufwand und einem 
 effektiveren Training können Schulungen interaktiver und vor allem sicherer abgehalten werden. Durch die Visualisierung der Trainings- und 
-Schulungsinhalten verbessert sich der Lernprozess und damit wird auch die Nutzung der Maschinen verständlicher. \cite{einsatzgebietear.2017a}
+Schulungsinhalten verbessert sich der Lernprozess und damit wird auch die Nutzung der Maschinen verständlicher. \cite{einsatzgebietear.2017a} 
+Denkbar wäre die Simulation einer Handlungsabfolge bei der Bedienung einer Maschine. 
