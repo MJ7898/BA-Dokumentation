@@ -42,11 +42,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Rotation}{17}{subsection.2.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Technologien}{19}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Technologien}{18}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{19}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.1}Google ARCore}{18}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Android Jetpack}{21}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}Android Jetpack}{20}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}Sceneform SDK}{23}{subsection.2.4.3}% 
 \defcounter {refsection}{0}\relax 
@@ -66,9 +66,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Anwendungsumfeld}{31}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Scan-Phase}{32}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Scan-Phase}{31}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{33}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Visualisierungs-Phase}{32}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Architekturkonzept}{33}{section.3.4}% 
 \defcounter {refsection}{0}\relax 

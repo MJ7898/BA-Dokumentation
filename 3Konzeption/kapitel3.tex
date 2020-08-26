@@ -10,7 +10,7 @@ In diesem Kapitel wird das erarbeitete Konzept dieser Ausarbeitung dargelegt. Da
 Arbeitsschritten und dem grundsätzlich angedachten Aufbau des Projekts, sowie Entscheidungs- und Beweggründe, weshalb bestimmte 
 Technologien gewählt wurden. Zu Beginn wird auf die Einsatzmöglichkeiten (\ref{chap:Arbeitsumgebung}), in der die Applikation Anwendung 
 finden könnte, eingegangen. Anschließend werden die Grundgedanken zu den einzelnen Phasen, Scan-Phase (\ref{chap:Scan-Phase}) und 
-Visualisierungs-Phase (\ref{chap:Visualisierungs-Phase}) des Systems erläutert, ebenso was sie beinhalten und wie sie funktionstechnisch 
+Visualisierungs-Phase (\ref{chap:Visualisierungs-Phase}), des Systems erläutert, ebenso was sie beinhalten und wie sie funktionstechnisch 
 angedacht sind. Mit den zugrundeliegenden Informationen wird auf das Architekturkonzept (\ref{chap:Architekturkonzept}), sowie auf das 
 Softwarekonzept (\ref{chap:Architekturkonzept}) eingegangen. Des Weiteren werden die Hintergründe der Wahl des AR-Frameworks 
 (\ref{chap:Auswahl des AR Frameworks}) aufgezeigt. Abschließend wird noch das konzipierte und prototypische Datenmodell 
@@ -18,18 +18,19 @@ Softwarekonzept (\ref{chap:Architekturkonzept}) eingegangen. Des Weiteren werden
 
 \section{Anwendungsumfeld}
 \label{chap:Arbeitsumgebung}
-Bei der Konzeption wurde darauf Rücksicht genommen, die Anwendung möglichst so zu planen, dass der Einsatzort zu Anfang nicht zwingend 
-maßgeblich ist. Dies bedeutet, dass je nach Anwendungsfall die Applikation angepasst werden kann. Allerdings sind für das 
-Unterstützungssystem ausschließlich Produktionshallen, eventuell auch Logistik- oder Lagerhallen, vorgesehen. Durch die individuelle 
-Möglichkeit des Umgebungsscans ist die Applikation anfangs nicht an festgelegte Orte gebunden. Damit wird zum Ausdruck gebracht, dass der 
-Umgebungsscan flexibel durchgeführt werden kann, da keine Anforderungen an die Umgebung gestellt sind. Die darauf aufbauende 
-Visualisierungs-Phase ist demnach abhängig von dem Ort, indem der Scan durchgeführt wurde und kann nicht anderweitig, in anderen Hallen, 
-eingesetzt werden. 
+Bei der Konzeption wurde darauf abgezielt, den Einsatzort zwar grundsätzlich variabel zu planen, dennoch sind %aber hauptsächlich 
+Produktionsstätten, wie Logistik- oder Lagerhallen, dafür prädestiniert. 
+Dies bedeutet, dass je nach Anwendungsfall die Applikation angepasst werden kann. Erst der Umgebungsscan legt das Umfeld der Anwendung fest. %Durch die individuelle 
+%Möglichkeit des Umgebungsscans ist die Applikation anfangs nicht an festgelegte Orte gebunden. Damit wird zum Ausdruck gebracht, dass der 
+%Umgebungsscan flexibel durchgeführt werden kann, da keine Anforderungen an die Umgebung gestellt sind. 
+Die darauf aufbauende 
+Visualisierungs-Phase ist demnach abhängig von dem Ort, indem der Scan durchgeführt wurde. %und kann nicht anderweitig, in anderen Hallen, 
+%eingesetzt werden. 
 %\\ 
 %\linebreak
 %Ein mögliches Anwendungsumfeld dieser Applikation wären die Räumlichkeiten des nahe bei cjt Systemsoftware AG angesiedelten Unternehmes Siemens AG. Neben 
 %der Vielzahl an gemeinsamen Projekten, wäre dies eine weitere Kooperation mit der Siemens AG und würde eine unterstützende Maßnahme einleiten. 
-\pagebreak
+%\pagebreak
 \section{Scan-Phase}
 %Objekterkennung /
 \label{chap:Scan-Phase} %der Aufgabe
@@ -49,30 +50,31 @@ gleichzeitig mapped. Dies bedeutet, dass anhand der generierten Sensordaten eine
 virtuelle Karte des Raums erstellt wird. Dadurch kann das Gerät die Realität wiedergeben. Anhand der Informationen, die durch
 Gegenstände, Wände und dem Boden grundlegend gegeben sind, resultieren die Anhaltspunkte der virtuellen Umgebung. 
 \\ 
-Dem Nutzer soll die Möglichkeit geboten sein, Objekte an denen vom Anwender vorgesehenen Positionen platzieren zu können. Die Objekte werden 
-dann, anhand der durch das \acs{SLAM} Verfahren zugrundeliegenden Informationen, an der virtuellen Position erstellt und positioniert. Somit 
+\linebreak
+Der Nutzer soll die Möglichkeit haben, Objekte an die von ihm vorgesehenen Positionen zu platzieren. Die Objekte werden anhand der durch das 
+\acs{SLAM} Verfahren zugrundeliegenden Informationen an der virtuellen Position erstellt und positioniert. Somit 
 stehen Daten über die Position des Objekts zur Verfügung, welche anschließend automatisch in der Datenbank persistiert werden. Währenddessen das Objekt 
 erstellt wird, kann der Anwender zusätzliche Informationen zu dem Objekt, welches ebenso in der Realität vorhanden ist, einpflegen. Die 
 einzutragenden Informationen belaufen sich zu Anfang der %prototypischen
 Konzeption auf den Namen des Objekts %, die Position sowie die Blickrichtung als auch
-und den aktuellen Status des realen Objekts. Eine eindeutige Identifikationsnummer wird zudem automatisch generiert, 
-um die jeweiligen Objekte zuordnen zu können. 
+und den aktuellen Status. %des realen Objekts. 
+Eine eindeutige Identifikationsnummer wird zudem automatisch generiert, um die jeweiligen Objekte zuordnen zu können. 
 %eine einheitliche Richtlinie vorzugeben. Damit muss, bzw. soll der Nutzer die Entscheidung nicht selbst treffen. 
 Die genauere Konzeption dieses Falls wird in dem Abschnitt Datenmodell (\ref{chap:Datenmodell}) aufgegriffen. 
 \\ 
-Ziel bei der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
+Ziel der oben aufgeführten Scan-Funktion ist das Erstellen und Platzieren von virtuellen Objekten in der durch Scans erstellte und 
 realitätsnahe Inszenierung des Umfeldes. Im Rahmen dieser Arbeit wurden durch das Konzept Anforderungen für die Scan-Phase erarbeitet. 
 Darunter die \acs{SLAM} gestützte Wahrnehmung der Umgebung und die darauf beruhende Objektdarstellung, sowie die Registrierung der Informationen, die in 
-einer SQLite Datenbank persistiert werden, als auch das Erstellen der Benutzeroberflächen zur guten Repräsentation der Inhalte. Mit der Objektdarstellung 
-ist das Erzeugen des zu visualisierenden Objekts und die Performance der Darstellung aller gemeint. Diese sollte mit einem geringen Zeitaufwand für den 
-Benutzer verbunden sein.
+einer SQLite Datenbank persistiert werden, als auch das Erstellen der Benutzeroberflächen zur Repräsentation der Inhalte. Mit der Objektdarstellung 
+ist das Erzeugen des zu visualisierenden Objekts und die Performance der Darstellung gemeint. %Diese sollte mit einem geringen Zeitaufwand für den 
+%Benutzer verbunden sein.
 %In überschaubarem Rahmen wurden Anforderungen für die Scan-Phase erarbeitet, unter anderem die 
 %Einfachheit der Objekterstellung, die simpel und überschaubar zu erstellende Benutzeroberfläche, die offensichtliche Objektdarstellung 
 %in kurzer Zeit und einen nicht allzu hohen Zeitaufwand.
-\\ 
-\linebreak
-Nachdem die Scan-Phase, eine der beiden Kernfunktionen, konzeptionell präzisiert wurde, folgt die Erläuterung der zweiten Kernfunktion, 
-die sogenannte Visualisierungs-Phase. 
+%\\ 
+%\linebreak
+%Nachdem die Scan-Phase, eine der beiden Kernfunktionen, konzeptionell präzisiert wurde, folgt die Erläuterung der zweiten Kernfunktion, 
+%die sogenannte Visualisierungs-Phase. 
 
 \section{Visualisierungs-Phase}
 \label{chap:Visualisierungs-Phase}
@@ -88,14 +90,15 @@ Befindet sich ein Objekt in der Nähe, hat der Nutzer die Möglichkeit, durch An
 \linebreak 
 Startet der Anwender die Methode, werden alle Objekte aus der Datenbank abgefragt und mit dem dazugehörigen Status in den Raum 
 projiziert, sodass Auffälligkeiten sofort zu sehen sind. Dies bedeutet, bei normalem, aktivem Status ist die Farbe der Projektion grün, 
-bei fehlerhaftem, passivem Status rot. Dadurch wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. Mithilfe dieser 
-Funktion wird im Handumdrehen ein Überblick über die Situation und Lage der Objekte verschafft. Falls es zu einem ungewollten Verhalten kommt, 
+bei fehlerhaftem, passivem Status rot. Dadurch werden Probleme an bestimmten Objekten in der Realität sofort angezeigt. %wird schnell klar, ob es an bestimmten Objekten in der Realität Probleme gibt. 
+Mithilfe dieser Funktion wird %im Handumdrehen 
+ein Überblick über die Situation und Lage der Objekte verschafft. Falls es zu einem ungewollten Verhalten kommt, 
 kann der Anwender unverzüglich eingreifen und dementsprechend handeln. %Wird ein Objekt durch die Kamera 
 %fokussiert, kann der Anwender das Objekt anklicken, um weitere Informationen über dieses zu erhalten.
 \\ 
 Die Visualisierungs-Phase sieht es allerdings nicht vor, während die Applikation läuft, neue Objekte hinzuzufügen. Dafür müsste der Anwender wiederum zur 
-Funktion der Scan-Phase wechseln. Eine Änderung an den Objekten selbst kann allerdings nach Erstellung durch den Nutzer nicht vorgenommen werden. Dafür müsste 
-er alle Informationen aus der Datenbank löschen und die Scan-Phase erneut beginnen. 
+Funktion der Scan-Phase wechseln. %Eine Änderung an den Objekten kann nach deren Erstellung nicht vorgenommen werden. Dafür müssten alle 
+%Informationen aus der Datenbank gelöscht und die Scan-Phase erneut begonnen werden.  
 %nur bedingt vorgenommen werden, dies betrifft ausschließlich
 %Informationsänderungen, die das Objekt selbst betreffen.  
 
@@ -115,10 +118,10 @@ Benutzeroberfläche oder die Verwendung einer anderen Datenbank, bzw. hinzukomme
 hinzugefügt werden können. Durch das \acs{MVVM}-Pattern, welches durch die \textit{Android Architecture Components} gefördert wird, ist 
 das Testen von \textit{\acs{GUI}}- und \textit{BackEnd}-Elementen unabhängig voneinander begünstigt. 
 \\ 
-%\linebreak
+\linebreak
 %Wie bereits erwähnt, sind die \textit{Android Architectur Components} an das Entwurfsmuster \textit{MVVM} angelehnt und
 Die \acs{AAC} sorgen im Allgemeinen 
-dafür, die Software im gesamten überschaubar und beherrschbar zu gestalten. Dabei werden die folgenden Prinzipien beachtet und auch gewährleistet. 
+dafür, die Software im Gesamten überschaubar und beherrschbar zu gestalten. Dabei werden die folgenden Prinzipien beachtet und auch gewährleistet. 
 Durch gezielte Abstraktion von Informationen wird die Komplexität einer Anwendung steuerbar. Mit der großen Anzahl an verschiedenen 
 Segmenten, die der Abbildung (\ref{pic:architectur}) zu entnehmen sind, wird die Trennung der Zuständigkeit (engl. \textit{seperation of concerns}) 
 deutlich. Dabei hat jede einzelne Komponente eine Zuständigkeit, bzw. Aufgabe, die sie zu bewerkstelligen hat. Sei es die \textit{View} 
@@ -132,7 +135,7 @@ eine Menge an Komponenten zerlegt ist, die dadurch gewonnene Modularität.
 Die Software wurde zunächst, den Phasen entsprechend (siehe Abschnitt \ref{chap:Scan-Phase} \& \ref{chap:Visualisierungs-Phase}), in zwei 
 große Rubriken, den sogenannten Scan- und Visualisierungs-Phasen, unterteilt. Diese Phasen finden sich in der Abbildung (\ref{pic:architectur}) der 
 konzeptionellen Architektur des Unterstützungssystems wieder. 
-%\\
+\\
 \textit{Views}, bzw. \textit{Activities} werden mithilfe der von Android zur Verfügung gestellten \textit{AppCompat-Library} erstellt. Die 
 von Android Jetpack vorhandene Bibliothek ViewModel dient als Kommunikationsschnittstelle zwischen der \acs{GUI} und dem Repository. 
 Die ebenso von Android Jetpack publizierte LiveData-Bibliothek gilt als Observer zur \acs{GUI} und benachrichtigt diese bei Änderungen. Mit 
@@ -143,7 +146,7 @@ Struktur, festgelegt. Data Objects (DAOs) regeln die Datenbank-Zugriffe über de
 modelliert werden. Um die entstehenden Daten der dreidimensionalen \acs{AR}-Objekte zu speichern wird eine SQLite-Datenbank verwendet.
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=9cm,height=10cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
+    \includegraphics[width=15cm,height=15cm,keepaspectratio]{3Konzeption/Bilder/architektur_konzept.png}
     \caption{Konzeptionelle Software-Architektur}
     \label{pic:architectur}
 \end{figure}
@@ -236,10 +239,12 @@ wird man auf die \textit{NewObjectActivity} weitergeleitet, in der alle Informat
 erneute Anzeigen der zu visualisierenden Objekte zuständig. Dabei können auch die Informationen zu einzelnen abgerufen werden. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=13cm,height=13cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
+    \includegraphics[width=15cm,height=15cm,keepaspectratio]{3Konzeption/Bilder/Anwendungsfalldiagramm.png}
     \caption{Anwendungsfall-Diagramm}
     \label{pic:anwendungsfall}
 \end{figure}
+\\ 
+\linebreak
 Nachdem auch das Softwarekonzept weitestgehend erarbeitet wurde, ging es um die Entscheidung, welches \acl{AR}-Framework für dieses Projekt 
 ausgewählt wird. Dazu wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
 \section{Auswahl des AR Frameworks}
@@ -274,10 +279,11 @@ Abbildung (\ref{pic:markerARpos}) werden schnell und ohne Probleme erkannt. Jedo
 müssen, um eine zuverlässige und stabile Markererkennung zu gewährleisten. Zu verhindernde Defizite sind Verdeckung des Markers, zu große Distanz 
 von Kamera zu Marker, Blickwinkel auf den Marker und die Lichtverhältnisse des Umfelds. 
 \\ 
-Nachteilig dieses Frameworks für dieses Projekt ist die fehlende Unterstützung bei der Realisierung und Erkennung der Umgebung, bzw. des Umfelds.
+Nachteilig dieses Frameworks für das Projekt ist die fehlende Unterstützung bei der Realisierung und Erkennung der Umgebung, bzw. des Umfelds.
 So ist das Tracking nur über Marker, bzw. erweiterte markerbasierte Tracking-Methoden möglich. 
 \\ %untauglich
-Nach dieser Erkenntnis wurde auch dieses Framework als eher ungeeignet für die Verwendung in dem Projekt eingestuft. %Möglicherweise 
+Daher wurde dieses Frameworks als ungeeignet für die Verwendung eingestuft. 
+%Nach dieser Erkenntnis wurde auch dieses Framework als eher ungeeignet für die Verwendung in dem Projekt eingestuft. %Möglicherweise 
 %gäbe es einen Weg, einen \acs{SLAM}-Algorithmus in Kombination mit ARToolKit unter erweitertem Aufwand zu verwenden, allerdings 
 %erschien dies zu umständlich und ineffektiv. 
 \subsection{Google ARCore}
@@ -330,8 +336,8 @@ Datenmodells gewährleistet werden. Die Abbildung (\ref{pic:erm}) zeigt das erst
 Nach Beendigung des Datenkonzepts waren alle notwendigen Konzeptionen abgeschlossen. Diese wurden in Summe zusammengetragen, im Gesamten nochmals 
 betrachtet und anhand neu gewonnener Kenntnisse überarbeitet und evaluiert. Da zu diesem Zeitpunkt alle Konzeptionen abgeschlossen 
 waren, konnten diese zusammen analysiert und überdacht werden. 
-\\ 
-\linebreak
-Mit dem Abschluss der Konzeption waren alle Grundlagen für die Entwicklung des Systems gegeben. Auf Basis dieser Erarbeitungen wird im Folgenden auf die 
-Umsetzung des Assistenzsystems eingegangen.
+%\\ 
+%\linebreak
+%Mit dem Abschluss der Konzeption waren alle Grundlagen für die Entwicklung des Systems gegeben. Auf Basis dieser Erarbeitungen wird im Folgenden auf die 
+%Umsetzung des Assistenzsystems eingegangen.
 %Nachdem die Phase der Konzeption endgültig abgeschlossen war, konnte die Umsetzung des Konzepts und die Entwicklung des Systems starten. 
