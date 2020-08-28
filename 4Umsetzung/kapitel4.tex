@@ -71,11 +71,12 @@ Darunter folgende Punkte:
 Das Startmenü ist die zentrale Anlaufstelle des prototypischen Unterstützungssystems und bildet den Einstiegspunkt in die Interaktionen zwischen Anwender 
 und dem Assistenzsystem. 
 \subsubsection{Frontend}
-Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Der Nutzer soll dem System 
-die Zugriffserlaubnis auf die Kamera erteilen, da in der Hauptfunktion die Umgebung gescannt werden muss. 
-Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. 
-Mit dem Zulassen des Zugriffs auf die Kamera kann die geplante Fortführung der Applikation erfolgen. Somit wird sichergestellt, dass alle notwendigen Genehmigungen 
-eingeholt werden.
+Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Der Nutzer soll 
+dem System die Zugriffserlaubnis auf die Kamera erteilen, da in der Hauptfunktion die Umgebung gescannt werden muss. 
+Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist, wodurch sichergestellt wird, dass alle notwendigen 
+Genehmigungen eingeholt werden. Mit dem Zulassen des Zugriffs auf die Kamera kann die geplante Fortführung der Applikation erfolgen. 
+%Somit wird sichergestellt, dass alle notwendigen Genehmigungen 
+%eingeholt werden.
 \\ 
 \linebreak
 Da speziell das Assistenzsystem für das gegebene Betriebssystem entwickelt wurde, zählt dieses zu den nativen Applikationen. 
@@ -83,10 +84,13 @@ Darunter sind Anwendungen zu verstehen, die ausdrücklich für das Betriebssyste
 Komponenten zugreifen, wie in etwa auf die Bild-Mediathek, sämtliche Datei-Strukturen oder die Kamera-Komponente.
 \\ 
 \linebreak
-Angenommen der Nutzer lässt den Zugriff auf die Kamera für das Assistenzsystem zu, dann startet die Applikation. % wie erwünscht. 
+%Angenommen 
+Wenn der Nutzer den Zugriff auf die Kamera für das Assistenzsystem zulässt, dann startet die Applikation. % wie erwünscht. 
 Darauffolgend ist das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Die 
 Benutzeroberfläche weist ein sehr einfaches und schlicht gehaltenes Design auf. Dadurch wird dem Nutzer eine klare Struktur vorgelegt. 
+\\ 
 Darauf ist das Firmen-Logo der cjt Systemsoftware AG zentriert zu sehen, außerdem zwei farblich voneinander getrennte Buttons zur Navigation innerhalb der Applikation. 
+Die gewählten Farben sind an die des Firmen-Logos angelehnt und dienen außerdem zur besseren Unterscheidung. 
 Die Buttons adressieren jeweils die nachfolgend zugehörige Funktion. Dies sind zum einen der lilafarbene Button, der zur Scan-Phase weiterleitet und zum anderen der 
 gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert. Damit wurde das Ziel, zur klaren Vorgabe der Entscheidungsvarianten der Startmenü-Oberfläche, 
 erreicht.
@@ -146,28 +150,30 @@ ergänzt werden.
     \label{pic:image_tracking}
 \end{figure}
 \pagebreak 
-\\ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Des Weiteren beinhaltet das Assistenzsystem die eigentliche Scan-Phasen \acs{UI}, mit der die Umgebung aufgenommen wird und anhand dieser Daten 
-der Nutzer die Objekte an von ihm definierte Stellen platzieren kann. Die Benutzeroberfläche hat ein schlichtes und überschaubares Layout, damit der Nutzer den 
-Überblick nicht verliert und sich auf die eigentliche Funktion konzentriert. 
+\\
+Des Weiteren beinhaltet das Assistenzsystem die eigentliche Scan-Phasen-\acs{UI}, mit der die Umgebung aufgenommen wird und der Nutzer anhand dieser Daten 
+die Objekte an von ihm definierte Stellen platzieren kann. Die Benutzeroberfläche hat ein schlichtes und überschaubares Layout, damit der Nutzer den 
+Überblick nicht verliert und sich auf die eigentliche Funktion konzentrieren kann. 
 \\ 
 Hauptsächlich beinhaltet die \acs{GUI} ein Fragment, welches das Kamerabild in Echtzeit wiedergibt. Am oberen Ende des Bildschirms, bzw. der Abbildung 
-(\ref{pic:scan}) wurde eine lilafarbene Fläche zur optischen Abgrenzung integriert. Sie soll gleichzeitig zur Anzeige von Informationen dienen. Dadurch ist eine 
-Möglichkeit geschaffen dem Nutzer Mitteilungen oder Updates der Anwendung einzublenden. 
+(\ref{pic:scan}), wurde eine lilafarbene Fläche zur optischen Abgrenzung integriert, die gleichzeitig zur Anzeige von Informationen dient. Dadurch ist eine 
+Möglichkeit geschaffen, dem Nutzer Mitteilungen oder Updates der Anwendung einzublenden. 
 \\ 
 Am unteren Ende des Bildes befindet sich eine \textit{„Android-Gallery“}, die alle zu platzierenden Objekte beinhaltet. Der Gedanke dabei war, eine einfache 
-Bedienung der Buttons zu gewährleisten. In der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. 
-Prinzipiell ist diese Gallery um beliebig viele Objekte erweiterbar. Diese Erweiterung erfolgt allerdings nicht dynamisch, sondern muss über manuelles 
-Einfügen im Code stattfinden. 
+Bedienung der Buttons zu gewährleisten. 
+\\ 
+In der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. 
+Prinzipiell ist diese Gallery um beliebig viele Objekte erweiterbar. Diese Erweiterung muss über manuelles Einfügen im Code stattfinden. 
 \\ 
 \linebreak
 Um weiterhin auf der Seite navigieren zu können, gibt es im rechten unteren Eck einen weiteren Button, welcher ebenso der Abbildung (\ref{pic:scan}) 
-zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zurück zum Startmenü und beendet die Scan-Phase. 
+zu entnehmen ist. Diese Schaltfläche leitet den Nutzer weiter, bzw. wieder zurück zum Startmenü und beendet die Scan-Phase. Die Position des Buttons wurde so 
+gewählt, damit dieser bei der Einhandbedienung leicht zu erreichen ist. 
 \\ 
 \linebreak
 Damit der Nutzer über die in der Datenbank gespeicherten Informationen Modifizierungsmöglichkeiten besitzt, gibt es im linken oberen Eck der \acs{UI} eine 
 zusätzliche Schaltfläche mit einem roten Kreuz versehen. Der Nutzer kann somit alle vorhandenen in der Datenbank persistierten Informationen löschen 
-und den Scan-Vorgang von der ursprünglichen Ausgangsposition erneut beginnen. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+und den Scan-Vorgang von der ursprünglichen Ausgangsposition erneut beginnen. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/scan-phase.jpg}
@@ -178,10 +184,8 @@ und den Scan-Vorgang von der ursprünglichen Ausgangsposition erneut beginnen. %
 \\
 Will der Anwender ein Objekt erstellen und danach zusätzliche Informationen hinzufügen, muss er den entsprechenden Button mit dem Objekt drücken, der 
 dieses repräsentiert. Daraufhin wird eine weitere \acs{UI} sichtbar, in der die dazugehörigen Informationen vom Nutzer eingetragen und anschließend 
-%die der Nutzer die dazugehörigen Informationen einträgt und die anschließend 
 in die Datenbank aufgenommen werden. Die zusätzliche Eingabe von Informationen wurde so umgesetzt, dass bei Betätigen des Buttons die Oberfläche zur 
-Texteingabe erscheint. Die \acs{UI} wurde mit einem \textit{„save“}-Button versehen, damit die Informationseingaben in die Datenbank stattfindet. % und gespeichert wird.
-%abdecken. 
+Texteingabe erscheint. Die \acs{UI} wurde mit einem \textit{„save“}-Button versehen, damit die Informationseingaben in die Datenbank stattfinden. 
 \\ 
 Im Hintergrund werden ebenso die Daten der Position und Drehung des 
 Objekts bereitgestellt, die mit den Informationen des Objekts persistiert werden.
