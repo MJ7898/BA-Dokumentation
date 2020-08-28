@@ -43,7 +43,7 @@ Berechnung unabhängig von der Startposition des Anwenders die neue Position, an
 Applikation in der Lage, aus einem vorab beliebigen Punkt zu starten und alle Objekte exakt auf die referenzierte, ursprüngliche Position zu setzen, die 
 in der Scan-Phase festgelegt wurde. Nachdem die Position des aktuellen Objekts berechnet wurde, wird diese als neue „Pose“ initialisiert und übergeben, um 
 das zu erstellende Objekt zu rendern und auf der Oberfläche anzuzeigen. Dabei findet eine Abfrage des Status statt, um daraufhin 
-entscheiden zu können, in welcher Farbe das Objekt zu Präsentieren ist.  
+entscheiden zu können, in welcher Farbe das Objekt zu präsentieren ist.  
 \\ 
 \begin{lstlisting}[language=C,
     frame=lines,           % Ein Rahmen um den Code (single for box, lines for top and bottom)
@@ -103,7 +103,7 @@ zu entnehmen.
 %\pagebreak
 \\
 %\linebreak 
-Eine weiter Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, werden mit einem Klick auf das Objekt 
+Eine weitere Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, werden mit einem Klick auf das Objekt 
 die Informationen über ein PopUp angezeigt. Darunter ist der Namen des Objekts, der Status und die ID, die zu Anfang automatisch generiert 
 und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur Verfügung gestellt werden. 
 %\pagebreak
@@ -119,7 +119,7 @@ und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur V
 \\
 Um für den Prototypen eine möglichst realitätsnahe Anwendung zu simulieren, wurde mithilfe eines Threads eine Statusänderung der Objekte eingebaut. Dabei wird 
 ein zufälliges Objekt selektiert und dessen Status-Informationen in der Datenbank geändert, bzw. aktualisiert. Über einen „Handler“ wird diese Aktion registriert 
-und der Nutzer wird daraufhin benachrichtigt, indem auf dem Bildschirm eine Mitteilung aufkommt, in der die Änderungen zu dem jeweiligen Objekt 
+und der Nutzer wird daraufhin benachrichtigt, indem auf dem Bildschirm eine Mitteilung erscheint, in der die Änderungen zu dem jeweiligen Objekt 
 enthalten sind. 
 \begin{figure}[hbt!]
     \centering
@@ -127,10 +127,11 @@ enthalten sind.
     \caption{Programmablaufplan zur Informationsänderung eines zufälligen Objekts}
     \label{pic:startmenu}
 \end{figure}
-\pagebreak
+%\pagebreak
 \\
-Darauf kann der Nutzer im Nachgang reagieren, um die dementsprechende Entscheidung, was zu tun ist, zu treffen. Der folgende Ablaufplan stellt 
-diese Funktion dar.
+Jetzt kann der Nutzer reagieren und dementsprechend eine Entscheidung treffen. 
+\\
+Der folgende Ablaufplan stellt diese Funktion dar.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/changeInfoPAP.png}
