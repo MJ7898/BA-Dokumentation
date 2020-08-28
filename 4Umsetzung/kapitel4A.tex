@@ -1,25 +1,25 @@
 \subsubsection{Backend}
 Mit Beginn der Backend-Entwicklung wurden in erster Linie die Grundstrukturen implementiert, um der \textit{MVVM}-Architektur gerecht zu werden. Dabei lag 
-der Fokus bei der Instanziierung der notwendigen Komponenten der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
-erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeinem Aufbau, 
-der bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten wurde. Darauffolgend wurde das „Data Object“ 
+der Fokus bei der Instanziierung der notwendigen Komponenten auf der \textit{Android Architecture Components}. Nach chronologischer Reihenfolge wurden die Klassen 
+erstellt und mit den dazugehörigen Funktionen und Methoden versehen. Angefangen wurde mit der Entity-Klasse zur Beschreibung des Objekts und deren allgemeinem Aufbau, 
+wie bereits in der Konzeption (\ref{chap:Konzeption}) unter dem Datenmodell (\ref{chap:Datenmodell}) festgehalten. Darauffolgend wurde das „Data Object“ 
 erstellt, welches die Zugriffe der Datenbankobjekte verwaltet. Abschließend wird im Bereich der Datenbank ein Room-Layer eingebaut, um die eigentliche Datenbank zu 
 instanziieren und eine Zugriffsschicht auf diese zu implementieren. 
 \\ 
 Zur Modularisierung und Generierung einer Schnittstelle zur Kommunikation zwischen einzelnen Datenbeziehungspunkten und der Datenbank wurde ein Repository erstellt, 
 das aus verschiedenen Quellen Daten zusammenbringen kann und eine saubere \acs{API} für den Datenzugriff auf den Rest der Anwendung bietet. 
-Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit der 
-eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
+Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit der eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, 
+welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
 \\ 
 \linebreak 
 Nach Aufzählung der einzelnen Bestandteile wird auf diese genauer eingegangen. 
 \\ 
 \linebreak
 In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objekt erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
-deren beinhalteten Variablen deklariert. In dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) ist diese Annotation zu entnehmen, in dem eine Klasse als 
-Entity deklariert und somit in eine Datenbank-Tabelle konvertiert wird. 
-In dieser Tabelle, definiert als \textit{„object\_table“}, gibt es weitere Variablen, die zuerst mit Annotationen versehen und dann gemäß der Anforderungen des 
-Konzepts sind. Diese Variablen repräsentieren die Attribute des Datenbankschemas und stellen die einzelnen 
+deren beinhalteten Variablen deklariert. In dem folgend aufgeführten Code-Beispiel (\ref{code:entity}) ist diese Annotation zu entnehmen, dabei ist die Klasse als 
+Entity deklariert und wird somit in eine Datenbank-Tabelle konvertiert. 
+In dieser Tabelle, bezeichnet als \textit{„object\_table“}, gibt es weitere Variablen, die zuerst mit Annotationen versehen und dann gemäß der Anforderungen des 
+Konzepts definiert sind. Diese Variablen repräsentieren die Attribute des Datenbankschemas und stellen die einzelnen 
 Informations-, bzw. Datenbankspalten dar. Zur Veranschaulichung dient die Initialisierung der \acs{ID}-Vergabe eines Objekts. Diese wird als \textit{„id“}-Spalte 
 und ebenso als Primärschlüssel\footnote{Ein Wert einer Tabelle, bzw. eines Attributs, der den Tabelleneintrag eindeutig identifiziert.}-Variable 
 deklariert.
@@ -64,8 +64,9 @@ Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Falle des Assistenzsy
 \\ 
 In zukünftigen Entwicklungen, 
 falls notwendig, gäbe es die Möglichkeit, in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
-Möglichkeit gegeben, weitere Datenbank-Tabellen zur Speicherung von Objekten und deren Informationen zu erstellen. Ebenso ist durch ein Repository die Option 
-geboten, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten weitläufiger zur Verfügung zu stellen. 
+Möglichkeit gegeben, weitere Datenbank-Tabellen zur Speicherung von Objekten und deren Informationen zu errichten. Ebenso ist durch ein Repository die Option 
+gegeben, die derzeit auf dem Smartphone gespeicherte Datenbank auf einen externen Server auszulagern, um so die Daten umfassender %weitläufiger 
+zur Verfügung zu stellen. 
 %Eine Datenbeziehung von generierten Daten der Maschinen und Geräten selbst wäre auch vorstellbar, allerdings müssten diese vorab noch aufbereitet 
 %und zur Nutzung bereitgestellt werden. Diese Methode wird allerdings nicht näher betrachtet, da sie nicht Teil dieser Arbeit ist. 
 %\\ 
@@ -89,9 +90,10 @@ public abstract class ObjectRoomDatabase extends RoomDatabase {
     ...
 }
 \end{lstlisting}
-Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transfers und der Benutzeroberfläche, das ViewModel. 
+Letzter wichtiger zu implementierender Aspekt war das Kommunikationsmodul zwischen den Datenbank-Transfers und der Benutzeroberfläche, das ViewModel. 
 In dieser Klasse wird beim Start der Anwendung eine Liste anhand der Objekte in der Datenbank erstellt, welche die Informationen des einzelnen Objekts besitzt. 
-Diese werden über eine „get“-Funktion aus dem zuvor instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für 
+Diese werden über eine „get“-Funktion aus dem zuvor instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt, damit eine Änderung der 
+Informationen, solange diese nicht persistiert wurden, möglich ist. Diese Liste wird für 
 die Präsentation der Informationen auf der Nutzeroberfläche verwendet. Bei Änderungen der Informationen wird über die \acs{UI} der „Oberserver“ benachrichtigt. 
 Dieser registriert die Änderungen und überträgt sie nach vollständigem Abschluss der Transaktion in die Datenbank. Der Transfer erfolgt wiederum über das 
 Repository, da dort die Datenbankzugriffe verwaltet und aufgerufen werden. %%%%%%%---------->> Genauer ausführen, wie das funktioniert!!!!!!!
@@ -101,8 +103,8 @@ Die ursprünglich anders angedachte Implementierung der eigentlichen Scan-Phase 
 als nicht praktikabel heraus. Auf die darauffolgende Änderungen und die aufgetretene Problemstellung wird weiter unten näher eingegangen. 
 \\ 
 Das Fragment auf dem \acl{UI} der Scan-Phase (\ref{pic:scan}) wird als \acs{AR}-Fragment, unter der Benutzung des Sceneform \acs{SDK}s, deklariert. Basierend auf 
-dieser Initialisierung können die Interaktionen mit den ARCore-, bzw. Sceneform- Elementen gewährleistet werden. Dadurch ist ebenso die Nutzung der Kamera 
-gegeben. Diese Funktionen sind Bestandteile der ARCore- und Sceneform-\acs{API}. Über einen \textit{„FragmentManager“} wird die „.xml“-Datei mit dem darin 
+dieser Initialisierung können die Interaktionen mit den ARCore-, bzw. Sceneform- Elementen gewährleistet werden. Dadurch wird automatisch die Nutzung der Kamera 
+vorgegeben. Diese Funktionen sind Bestandteile der ARCore- und Sceneform-\acs{API}. Über einen \textit{„FragmentManager“} wird die „.xml“-Datei mit dem darin 
 enthaltenen Fragment der ID \textit{„sceneform\_fragment“} initialisiert.
 \\
 \begin{lstlisting}[language=C,
@@ -119,13 +121,13 @@ getSupportFragmentManager().findFragmentById(R.id.sceneform_fragment);
 ...
 \end{lstlisting}
 Um anschließend Objekte auf diesem Fragment einblenden zu können, ist es vorab notwendig, eine \textit{„Session“} zu generieren, die unter anderem für die 
-Konfigurationen der Kamera zuständig ist. Dadurch wird bei Start der Scan-Phase ein dreidimensionales Koordinatensystem erstellt, welches den Ursprungspunkt der 
-Anwendung darstellt. Mit Verwendung der internen Sensoren des Smartphones werden darauffolgende Bewegungen registriert und mittels \acs{SLAM} Verfahren berechnet. 
+Konfigurationen der Kamera zuständig ist. Dadurch wird bei Start der Scan-Phase ein dreidimensionales Koordinatensystem erstellt, welches der Ursprungspunkt der 
+Anwendung ist. Mit Verwendung der internen Sensoren des Smartphones werden darauffolgende Bewegungen registriert und mittels \acs{SLAM} Verfahren berechnet. 
 So ist die Kalkulation der Lokalisierung möglich und kann anhand der Kamera die Umgebung mit Hilfe des \acs{SLAM} Verfahrens abgebildet werden. Durch diese 
 Gegebenheiten wird die virtuelle Karte des Umfelds erzeugt und dient so zur Veranschaulichung der zu platzierenden Objekte. In der Abbildung (\ref{pic:koordin}) 
-ist ein Beispiel zu sehen, indem ein Objekt erstellt wird, welches die Koordinaten von dem Ursprungspunkt berechnet. So wird deutlich, wie die Position eines 
-Objekts unter der Verwendung des von ARCore gegebenen \acs{SLAM} Verfahrens errechnet wird. Voraussetzung dafür ist, dass der Anwender an der Position (x,y,z = 0) startet, 
-sich frei im Raum bewegt und ein Objekt an Postion (x = 5, y = 1, z = 3.5) setzt.
+ist ein Beispiel zu sehen, indem ein Objekt unter Verwendung des von ARCore gegebenen \acs{SLAM} Verfahrens erstellt wird, welches die Koordinaten von dem 
+Ursprungspunkt berechnet. Voraussetzung dafür ist, dass der Anwender an der Position (x,y,z = 0) startet, sich frei im Raum bewegt und ein Objekt an die Postion 
+(x = 5, y = 1, z = 3.5) setzt.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=10cm,height=10cm,keepaspectratio]{4Umsetzung/Bilder/koordin.jpeg}
@@ -135,11 +137,11 @@ sich frei im Raum bewegt und ein Objekt an Postion (x = 5, y = 1, z = 3.5) setzt
 \pagebreak
 \\ 
 %\linebreak
-Beim Setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms berechnet, um das Objekt auf dem Bildschirm zentriert platzieren zu können. Ist 
-diese Position berechnet, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue Ermittlung der virtuellen Position. Anhand der Information dieser Position 
+Beim Setzen eines Objekts wird als Anhaltspunkt der Mittelpunkt des Bildschirms berechnet, um das Objekt auf dem Bildschirm zentriert platzieren zu können. Steht diese 
+Position fest, folgt durch Hilfe des \acs{SLAM} Verfahrens die genaue Ermittlung der virtuellen Position. Anhand der Information dieser Position 
 ist das Objekt zu platzieren. 
 \\ 
-Das Objekte wird gesetzt, indem der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ ein Objekt anklickt.
+Um das Objekte zu setzen, muss der Nutzer in der \acs{UI} (\ref{pic:scan}) im Bereich der „Gallery“ das Objekt anklicken. 
 Über die der Sceneform-\acs{API} zur Verfügung gestellten Methode („ModelRenderable“) wird das Objekt erschaffen und als „Anchor“ auf die berechnete Position 
 gesetzt. Ein Anchor ist die fixe Position des Objekts, an dem dies platziert wird und so lange dort vorhanden bleibt, bis die Applikation beendet wird. Die Datei, 
 die als dreidimensionales „asset“ generiert werden soll, wird über die „uri“-Variable lokalisiert und als Parameter übergeben. 
@@ -173,26 +175,27 @@ Blickrichtung der Kamera positioniert.
 Ursprünglich war geplant, die generierte Session sowie die darin erstellten Objekte in der Datenbank abzuspeichern, um diese bei erneutem Aufruf der 
 Scan-Phase, bzw. bei Anwendung der Visualisierungs-Phase zu laden und innerhalb dieser Session wieder anzeigen zu lassen. Da die Datenbank nur gewisse Datentypen 
 zulässt, war die erste auftretende Schwierigkeit, die Speicherung der Session als Objekt, die zunächst in eine „BLOB“-Datei hätte konvertiert werden müssen. Eine 
-„BLOB“-Datei ist ein Binary Large Object, welches anhand der Binärcodierung abgespeichert wird. Dabei kann es sich unter anderem um große 
-Bild- oder Audio-Dateien handeln, ebenso können auch mittels dieser Objekt-Konvertierung anderweitig große Dateien gespeichert werden. Daraus entstand die 
-Konsequenz, die die Visualisierungs-Phase betraf, nämlich dass eine erzeugte Session nur eine gewissen Zeit verwendet werden kann. Dies bedeutet, dass nach erneutem 
-Starten des Assistenzsystems alle zuvor erzeugten Objekte einer Session auf der ihnen zugewiesenen Position nicht mehr gültig sind. Durch die Unterschiedlichen 
+„BLOB“-Datei ist ein Binary Large Object, welche anhand der Binärcodierung abgespeichert wird. Dabei kann es sich unter anderem um große 
+Bild- oder Audio-Dateien handeln, ebenso können auch mittels dieser Objekt-Konvertierung anderweitig große Dateien gespeichert werden. Daraus entstand in der Visualisierungs-Phase die 
+Konsequenz, dass eine erzeugte Session nur eine gewissen Zeit verwendet werden kann. Dies bedeutet, dass nach erneutem 
+Starten des Assistenzsystems alle zuvor erzeugten Objekte einer Session auf der ihnen zugewiesenen Position nicht mehr gültig sind. Durch die unterschiedlichen 
 Startpunkte, die bei wiederholtem Starten der Anwendung erzeugt werden würden, würde sich die ursprüngliche Ausgangsposition der Applikation verschieben und so auch 
 die Objekte an eine fälschliche Position projizieren. Genauer gesagt, müssten die Objekte dann ausgehend von dem neu erzeugten Startpunkt referenziert werden. Somit wäre das 
 Ergebnis nicht exakt und könnte keine Anwendung finden, da die Applikation Informationen anzeigen würde, die der Realität nicht entsprechen würden. 
 \\ 
 Basierend auf dieser Erkenntnis musste umdisponiert und ein neuer Lösungsansatz konzipiert werden. Mit dem Wissen über den aktuellen Stand der ARCore \acs{API} 
 galt es eine Lösung zu entwickeln, mit der Positionsinformationen exakt wiedergegeben werden können. 
-\\ 
-Dieser Ansatz wird nun erläutert.
+%\\ 
+%Dieser Ansatz wird nun erläutert.
 \\ 
 \linebreak
 Die Idee war es, einen Fixpunkt zu erstellen, welcher dazu dienen würde, einen immer gleichbleibenden Startpunkt vorzugeben. Dadurch gäbe es keine Unterschiede des 
 Ausgangspunktes mehr und der Nutzer könnte trotz seiner aktuellen Position die Anwendung starten. Dazu müsste er beim Start der Applikation an den Ursprungspunkt kehren, 
 um daraufhin die Scanfunktion zu beginnen. Für diesen Ansatz würde ein Marker zur Verfügung gestellt werden (siehe Abbildung \ref{pic:initialMarker}), der vor dem ersten 
 Gebrauch der Software vom Nutzer an einer Position angebracht wird und an dieser dauerhaft bestehen bleibt. Somit ist ein immer gleichbleibender Ausgangspunkt geschaffen, 
-von dem aus die Objekte referenziert werden können. Der durch die Anwendung bestimmte Marker müsste entweder als physikalisches Bild an einer bestimmten Stelle in der Realität 
-angebracht werden oder als Bild-Datei auf einem Computer immer vorhanden und an der richtigen Position wiederzufinden sein, um die Genauigkeit zu gewährleisten. 
+von dem aus die Objekte referenziert werden können. Der durch die Anwendung bestimmte Marker müsste entweder als tatsächliches Bild an einer bestimmten Stelle in der 
+Realität angebracht werden oder als Bild-Datei auf einem Computer immer vorhanden und an der richtigen Position wiederzufinden sein, um die Genauigkeit zu 
+gewährleisten. 
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=5cm,height=5cm,keepaspectratio]{4Umsetzung/Bilder/cjt_logo_tracking.png}
@@ -200,21 +203,23 @@ angebracht werden oder als Bild-Datei auf einem Computer immer vorhanden und an 
     \label{pic:initialMarker}
 \end{figure}
 \\
-Zur Umsetzung war es notwendig, eine weitere Funktion zur Applikation hinzuzufügen (siehe Abbildung \ref{pic:image_tracking} 
-in Scan-Phase \ref{chap:scan_implementation} Frontend), damit ein Marker verfolgt werden kann. Wird dieser Marker erkannt, folgt die eigentliche Scan-Phase, 
+Zur Umsetzung war es notwendig, damit ein Marker verfolgt werden kann, eine weitere Funktion zur Applikation hinzuzufügen (siehe Abbildung \ref{pic:image_tracking} 
+in Scan-Phase \ref{chap:scan_implementation} Frontend). Wird dieser Marker erkannt, folgt die eigentliche Scan-Phase, 
 die nach der Umkonzeptionierung sowohl bei der Objektplatzierung als auch bei der Datenspeicherung ebenso überarbeitet wurde. 
 \\ 
 \linebreak
-Angenommen der Nutzer startet die Applikation an einer beliebigen Position im Raum und platziert Objekte an von ihm vorgesehenen Stellen, dann würden die 
+Angenommen der Nutzer startet die Applikation an einer beliebigen Position im Raum und platziert Objekte an von ihm vorgesehene Stellen, dann würden die 
 Objekte erstellt, aber keinerlei Anhaltspunkte geschaffen werden, um bei nachzutragenden Objekten die gleichen Voraussetzungen des zu referenzierenden Standpunktes 
-zu erfüllen. Daher wird bei der Scan-Phase die Methode zur Markererkennung eingebaut, um einen initialen Fixpunkt zu erstellen. Dadurch ist es gewährleistet, 
-ausgehend von diesem Punkt erneut Objekte zu platzieren, egal wo im Raum die Applikation gestartet wird. Demnach werden die Objekte immer abhängig zur Position des 
-Fixpunktes gespeichert, erstellt und angezeigt. Dies bedeutet, dass die Objekte immer eine Referenz zu dem initialen Marker sind. Auch wenn 
-ein Objekt nachträglich hinzugefügt werden soll, ist es lediglich erforderlich, den Marker einzuscannen. Danach begibt sich der Nutzer an den gewünschten Ort im 
-realen Raum, an dem das Objekt in der Anwendung platziert werden soll. Jetzt muss er die Umgebung mit der Kamera aufnehmen und, indem er auf den Button für das 
+zu erfüllen. Daher wird bei der Scan-Phase die Methode zur Markererkennung eingebaut, um einen initialen Fixpunkt anzulegen. Dadurch wird gewährleistet, 
+dass ausgehend von diesem Punkt unabhängig vom Start der Applikation erneut Objekte platziert werden können. Demnach werden die Objekte immer abhängig zur 
+Position des Fixpunktes gespeichert, erstellt und angezeigt, was bedeutet, dass ein Objekt immer eine Referenz zu dem initialen Marker ist. Auch wenn 
+ein Objekt nachträglich hinzugefügt werden soll, muss lediglich der Marker eingescannt werden. Damit ein Objekt an dem vom Nutzer gewünschten Ort platziert 
+werden kann, muss er an die Stelle im realen Raum laufen. %Danach begibt sich der Nutzer an den gewünschten Ort im 
+%realen Raum, an dem das Objekt in der Anwendung platziert werden soll. 
+Jetzt muss er die Umgebung mit der Kamera aufnehmen und, indem er auf den Button für das 
 Erstellen des Objekts drückt, dieses virtuell erschaffen. Bei der Erzeugung wird die Position ermittelt und anhand dieser die Differenz, bzw. der 
 Abstand zu dem initialen Marker in der Datenbank über einen Schreibbefehl gespeichert. Die Berechnung der Distanz zwischen Objekt und 
-Ursprungsmarker erfolgt durch eine präzise Subtraktion, bei der lediglich die Ursprungskoordinaten von den aktuellen Positionskoordinaten subtrahiert werden. 
+Ursprungsmarker erfolgt durch eine Subtraktion, bei der lediglich die Ursprungskoordinaten von den aktuellen Positionskoordinaten subtrahiert werden. 
 Dieser Vorgang ist dem folgenden Code-Beispiel (\ref{code:differencetoinitial}) zu entnehmen. Dabei wird das aktuelle Objekt „object“ und das initiale Objekt 
 „initialObject“ als Parameter übergeben, %die sogenannte „call by Reference“, 
 um die Distanz berechnen zu können. Das Ergebnis wird in mehreren lokalen Variablen 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  28 AUG 2020 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  28 AUG 2020 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2108,17 +2108,17 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              for symbol `textasteriskcentered' on input line 59.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--81
+Underfull \hbox (badness 10000) in paragraph at lines 62--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--114
+Underfull \hbox (badness 10000) in paragraph at lines 93--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--114
+Underfull \hbox (badness 10000) in paragraph at lines 93--116
 
  []
 
@@ -2126,10 +2126,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--114
 <4Umsetzung/Bilder/koordin.jpeg, id=1068, 766.865pt x 576.1525pt>
 File: 4Umsetzung/Bilder/koordin.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/koordin.jpeg>
-Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 131.
+Package pdftex.def Info: 4Umsetzung/Bilder/koordin.jpeg  used on input line 133.
 (pdftex.def)             Requested size: 284.53131pt x 213.77089pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--153
+Underfull \hbox (badness 10000) in paragraph at lines 123--155
 
  []
 
@@ -2137,34 +2137,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--153
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.153 caption={ModelRenderable Builder}]
+l.155 caption={ModelRenderable Builder}]
                                          </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/koordin.jpeg>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 157.
+(Font)              <10> on input line 159.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 157.
+(Font)              <7> on input line 159.
 <4Umsetzung/Bilder/cjt_logo_tracking.png, id=1086, 370.38374pt x 261.97874pt>
 File: 4Umsetzung/Bilder/cjt_logo_tracking.png Graphic file (type png)
 <use 4Umsetzung/Bilder/cjt_logo_tracking.png>
-Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 198.
+Package pdftex.def Info: 4Umsetzung/Bilder/cjt_logo_tracking.png  used on input line 201.
 (pdftex.def)             Requested size: 142.2619pt x 100.62427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--232
+Underfull \hbox (badness 10000) in paragraph at lines 163--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--232
+Underfull \hbox (badness 10000) in paragraph at lines 163--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--232
+Underfull \hbox (badness 10000) in paragraph at lines 163--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--232
+Underfull \hbox (badness 10000) in paragraph at lines 163--237
 
  []
 
@@ -2172,39 +2172,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--232
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.232 ...tanz zwischen Marker und Ursprungspunkt}]
+l.237 ...tanz zwischen Marker und Ursprungspunkt}]
                                                    </Users/mj/BA-Dokumentation/4Umsetzung/Bilder/cjt_logo_tracking.png>]
-Overfull \hbox (2.03656pt too wide) in paragraph at lines 233--234
+Overfull \hbox (2.03656pt too wide) in paragraph at lines 238--239
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 <4Umsetzung/Bilder/difcalc.jpeg, id=1107, 967.615pt x 568.1225pt>
 File: 4Umsetzung/Bilder/difcalc.jpeg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/difcalc.jpeg>
-Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 254.
+Package pdftex.def Info: 4Umsetzung/Bilder/difcalc.jpeg  used on input line 259.
 (pdftex.def)             Requested size: 284.52855pt x 167.0572pt.
 <4Umsetzung//Bilder/scan_image.jpg, id=1111, 1084.05pt x 2185.16376pt>
 File: 4Umsetzung//Bilder/scan_image.jpg Graphic file (type jpg)
 <use 4Umsetzung//Bilder/scan_image.jpg>
-Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 276.
+Package pdftex.def Info: 4Umsetzung//Bilder/scan_image.jpg  used on input line 281.
 (pdftex.def)             Requested size: 98.80087pt x 199.15697pt.
 <4Umsetzung/Bilder/scan_environment.jpg, id=1112, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/scan_environment.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/scan_environment.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 277.
+Package pdftex.def Info: 4Umsetzung/Bilder/scan_environment.jpg  used on input line 282.
 (pdftex.def)             Requested size: 95.34377pt x 199.16252pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []\T1/lmr/m/n/9 (+20) (b) Um-ge-bungs-be-rech-
  []
 
 <4Umsetzung/Bilder/place_objects_view.jpg, id=1116, 1084.05pt x 2264.46pt>
 File: 4Umsetzung/Bilder/place_objects_view.jpg Graphic file (type jpg)
 <use 4Umsetzung/Bilder/place_objects_view.jpg>
-Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 297.
+Package pdftex.def Info: 4Umsetzung/Bilder/place_objects_view.jpg  used on input line 302.
 (pdftex.def)             Requested size: 95.34377pt x 199.16252pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 249--194
+Underfull \hbox (badness 10000) in paragraph at lines 254--194
 
  []
 
@@ -2450,13 +2450,13 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32292 strings out of 492616
  588210 string characters out of 6129481
- 1153650 words of memory out of 5000000
+ 1153665 words of memory out of 5000000
  34797 multiletter control sequences out of 15000+600000
  124664 words of font info for 201 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (81 pages, 13064197 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (81 pages, 13064209 bytes).
 PDF statistics:
  1766 PDF objects out of 2073 (max. 8388607)
  1569 compressed objects within 16 object streams
