@@ -275,7 +275,7 @@ dass an dieser Position die Schätzung der Oberfläche durchgeführt wurde und d
 des Bildschirmes (siehe Abbildung \ref{pic:markerTracking} (b)) ein grüner Punkt angezeigt, der die Platzierung des Objektes vorgibt und dem Nutzer verständlich macht, 
 dass ein Objekt erzeugt und an dieser Stelle angesiedelt werden kann. Ist eine Oberfläche der Umgebung noch nicht vollständig berechnet, bzw. erkannt, fehlen 
 die Punkte auf dem Bildschirm und es ist lediglich ein grau hinterlegtes Kreuz zu erkennen. Der Nutzer wird dadurch daran gehindert, ein Objekt an einer nicht bekannten 
-und nicht berechnet Stelle zu platzieren. 
+und nicht berechneten Stelle zu platzieren. 
 \begin{figure}[hbt!]
     \centering
     \subfigure[Marker-Scan]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung//Bilder/scan_image.jpg}}
@@ -284,16 +284,18 @@ und nicht berechnet Stelle zu platzieren.
     \label{pic:markerTracking}
 \end{figure} 
 \\ 
-Wird nun ein Objekt vom Benutzer erstellt und an eine von ihm gewählte Position platziert, trägt er die dazugehörigen Informationen in der \acs{UI} 
-ein, bestätigt diese und übernimmt die Garantie dafür, das Objekt richtig positioniert und betitelt zu haben. Danach wird die ursprüngliche \acs{UI} der Scan-Phase 
-geöffnet und das zuvor erstellte Objekt an der vorgesehenen 
-Stelle platziert. Demnach können weitere Objekte erzeugt werden. Die folgende Abbildung demonstriert die Darstellung solcher Objekte. Dabei wurden willkürlich 
-„Assets" gewählt, die bei tatsächlicher Anwendung in realem Szenario angepasst werden können. Die aktuell verwendeten Objekte fungieren lediglich als 
-Veranschaulichung der Aktionen und der Repräsentation des Status eines Objekts. Demzufolge ist der Abbildung (\ref{pic:place_objects}) die Erstellung und 
+Damit ein Objekt vom Benutzer erstellt und an eine von ihm gewählte Position platziert werden kann, muss er die dazugehörigen Informationen in die \acs{UI} 
+eintragen und diese bestätigen. Er übernimmt dadurch die Garantie, das Objekt richtig positioniert und betitelt zu haben. Zur weiteren Abfolge des Programms 
+wird die ursprüngliche \acs{UI} der Scan-Phase geöffnet und das zuvor erstellte Objekt an der vorgesehenen Stelle platziert. 
+Weitere Objekterzeugungen können daraufhin erfolgen, indem ein neuer Ort gewählt und ein Objekt angelegt wird. Die folgende Abbildung demonstriert die 
+Darstellung solcher Objekte. Dabei wurden willkürlich 
+„Assets" gewählt, die bei tatsächlicher Anwendung in realem Szenario angepasst werden sollten. Die aktuell verwendeten Objekte fungieren lediglich als 
+Veranschaulichung der Aktionen und der Repräsentation des Status eines Objekts. Der Abbildung (\ref{pic:place_objects}) ist die Erstellung und 
 Darstellung solcher Objekte zu entnehmen. 
 \\ 
 \linebreak
-Hat der Nutzer alle gewünschten Objekte platziert, kann dieser über den Button, rechts unten, die Funktion der Scan-Phase verlassen und die 
+Über den Button rechts unten verlässt der Nutzer die Scan-Phase nach Platzierung aller Objekte und kann zwischen dem Starten aller Funktionen oder der Beendigung 
+der Anwendung wählen. Hat der Nutzer alle gewünschten Objekte platziert, kann dieser über den Button, rechts unten, die Funktion der Scan-Phase verlassen und die 
 Visualisierungs-Phase starten oder die Anwendung schließen. Da alle eingegebenen Informationen persistiert sind, gehen diese nicht verloren und können jederzeit 
 über die Visualisierungs-Phase aufgerufen werden. Ist dem Nutzer allerdings ein Fehler bei der Erstellung der Objekte unterlaufen, hat er nach aktuellem Stand 
 die Möglichkeit, alle vorhandenen Objekte und Daten zu löschen und die Scan-Phase von Anfang an erneut zu starten.  
@@ -304,8 +306,48 @@ die Möglichkeit, alle vorhandenen Objekte und Daten zu löschen und die Scan-Ph
     \label{pic:place_objects}
 \end{figure}
 %\pagebreak
-\\ 
+%\\ 
 %\linebreak
-Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
-die Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, ähnlich wie bereits in 
-der Scan-Phase erläutert, veranschaulicht.
+%Nachdem die Scan-Phase nun vollends beschrieben wurde, geht es in folgendem Kapitel um die Erläuterung des dritten und letzten Use Cases. Dabei werden sowohl 
+%ie Frontend als auch die Backend Aspekte aufgezeigt. Ebenso wird die Funktionsweise der Objekt-Repräsentation anhand eines kleinen Beispiels, ähnlich wie bereits in 
+%er Scan-Phase erläutert, veranschaulicht.
+\subsection{Visualisierungs-Phase} 
+Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
+deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
+Frontend-Entwicklung der Visualisierungs-Phase gibt Aufschluss über die Benutzeroberfläche dieser Phase und deren Aufbau. %Die Ausführung des Frontends und deren bildliche 
+%Darstellung dient dazu, das anschließende Backend nachvollziehen zu können. Abschließend werden die Aspekte des Frontends aufgegriffen und anhand der Backend-Implementierung 
+%mit deren Funktionen verknüpft. 
+
+\subsubsection{FrontEnd}
+Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
+deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
+die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
+\\ 
+Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. 
+Ein Fragment, das sich über den ganzen Bildschirm erstreckt, repräsentiert das Livebild der Kamera. Dadurch können die bereits in der Scan-Phase erstellten 
+Objekte erneut angezeigt werden und es ist eine überschaubare und leicht zu verstehende Oberfläche gegeben. Des Weiteren befinden 
+sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen, und zum anderen, um die Objekte von der Datenbank 
+abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschirms, wie 
+der Abbildung \ref{pic:visual} zu entnehmen ist. 
+Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer für die Interaktionen nur die Objekte, die als Overlay 
+über das Kamerabild gelegt werden, zur Verfügung. Die Nutzeraktionen beschränken sich lediglich auf den Gebrauch der zuvor genannten Buttons und die dynamisch erzeugten 
+Schaltflächen der Objekte, um über diese zusätzliche Informationen zu erhalten. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
+    \caption{Visualisierungs-Phase der Applikation}
+    \label{pic:visual}
+\end{figure} 
+\\ 
+Mit der soeben erläuterten Benutzeroberfläche geht folgender Programmablauf einher. Mit der gewonnenen Kenntnis des Ablaufs kann sich die 
+Implementierung des Backends daran stützen. 
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=15cm,height=15cm,keepaspectratio]{4Umsetzung/Bilder/visualPAP.png}
+    \caption{Programmablaufplan der Visualisierungs-Phase}
+    \label{pic:startmenu}
+\end{figure}
+\pagebreak
+\\
+%\linebreak
+Auf Grundlage der Benutzeroberflächen erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase.

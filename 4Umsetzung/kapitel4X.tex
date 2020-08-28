@@ -1,60 +1,18 @@
-\subsection{Visualisierungs-Phase} 
-Nach vollständiger Beendigung der Scan-Phase ging es in der Entwicklung weiter mit der Visualisierungs-Phase. Die zuvor gespeicherten Objekte und 
-deren Informationen werden dabei abgerufen und können jederzeit erneut visualisiert und im Raum platziert werden. Die folgende Darlegung der 
-Frontend-Entwicklung der Visualisierungs-Phase gibt Aufschluss über die Benutzeroberfläche dieser Phase und deren Aufbau. %Die Ausführung des Frontends und deren bildliche 
-%Darstellung dient dazu, das anschließende Backend nachvollziehen zu können. Abschließend werden die Aspekte des Frontends aufgegriffen und anhand der Backend-Implementierung 
-%mit deren Funktionen verknüpft. 
-
-\subsubsection{FrontEnd}
-Bei der Visualisierungs-Phase gibt es prinzipiell eine Benutzeroberfläche, die diesen Use Case ausmacht. Unter eigentlicher Anwendung dieser Phase und 
-deren \acs{GUI} befinden sich darüber hinaus weitere Benutzeroberflächen, die bereits in der Scan-Phase schon erläutert wurden. Darunter zum Beispiel 
-die in Abbildung (\ref{pic:image_tracking}) zu entnehmende Markererkennungs-\acs{UI}, die ebenso Bestandteil der Visualisierungs-Phase ist. 
-\\ 
-Die primäre \acs{GUI} ist ähnlich zu der Benutzeroberfläche der Scan-Phase aufgebaut. Ein Fragment das sich über den ganzen Bildschirm erstreckt, repräsentiert das 
-Livebild der Kamera. Dadurch können die bereits in der Scan-Phase erstellten Objekte erneut angezeigt werden. Dadurch ist eine überschaubare und leicht zu verstehende 
-Oberfläche gegeben. Des Weiteren befinden 
-sich auf dieser Oberfläche zwei Buttons, zum einen zur Navigation, um auf das Startmenü zu gelangen, und zum anderen, um die Objekte von der Datenbank 
-abzugreifen, rendern und auf dem Bildschirm anzeigen zu lassen. Diese befinden sich jeweils in der linken und rechten unteren Ecke des Bildschirms, wie 
-der Abbildung \ref{pic:visual} zu entnehmen ist. 
-\\ 
-Da diese \acs{UI} nur als Ansicht der zu visualisierenden Objekte gedacht ist, stehen dem Nutzer für die Interaktionen nur die Objekte, die als Overlay 
-über das Kamerabild gelegt werden, zur Verfügung. Die Nutzeraktionen beschränken sich lediglich auf den Gebrauch der zuvor genannten Buttons und die dynamisch erzeugten 
-Schaltflächen der Objekte, um über diese zusätzliche Informationen zu erhalten. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/visual-phase.jpg}
-    \caption{Visualisierungs-Phase der Applikation}
-    \label{pic:visual}
-\end{figure} 
-\\ 
-Mit der soeben erläuterten Benutzeroberfläche geht folgender Programmablauf einher. Mit der gewonnenen Kenntnis des Ablaufs kann sich die 
-Implementierung des Backends daran stützen. 
-\begin{figure}[hbt!]
-    \centering
-    \includegraphics[width=15cm,height=15cm,keepaspectratio]{4Umsetzung/Bilder/visualPAP.png}
-    \caption{Programmablaufplan der Visualisierungs-Phase}
-    \label{pic:startmenu}
-\end{figure}
-%\pagebreak
-\\
-\linebreak
-Auf Grundlage der Benutzeroberflächen erfolgt die Beschreibung der Backend-Implementierung und Einblicke in die Programmierung der Visualisierungs-Phase.
-
 \subsubsection{BackEnd}
 Nachdem das Problem der variablen Startposition in der Implementierung der Scan-Phase umgangen wurde, konnte die Visualisierungs-Phase entwickelt werden. 
 \\ 
 \linebreak
-Wählt der Anwender auf der Startmenü-\acs{UI} (\ref{pic:startmenu}) den Button „Virtual-Phase“, wird eine Anmerkung getätigt, indem der Nutzer darüber in 
-Kenntnis gesetzt wird, dass er zu Beginn die Scan-Phase durchgeführt haben muss, bevor die Visualisierungs-Phase gestartet werden kann. Diesen Vermerk kann der 
-Benutzer ignorieren, wenn dieser weiß, dass ein Scan durchgeführt wurde, oder er akzeptiert den Hinweis und wird auf die dementsprechende Funktion weitergeleitet. 
+Wählt der Anwender auf der Startmenü-\acs{UI} (\ref{pic:startmenu}) den Button „Virtual-Phase“, erscheint eine Aufforderung zu Beginn der Visualisierungs-Phase, 
+zuerst die Scan-Phase durchzuführen, bevor die Visualisierungs-Phase gestartet werden kann. Diesen Vermerk kann der 
+Benutzer ignorieren, wenn zuvor ein Scan durchgeführt wurde, oder er akzeptiert den Hinweis und wird auf die dementsprechende Funktion weitergeleitet. 
 Der Nutzer wird dadurch davor bewahrt, eine Funktion starten zu wollen, die ohne Inhalt keine Änderungen aufzeigt.
 \\ 
 Danach wird der Nutzer aufgefordert, den initialen Marker (\ref{pic:initialMarker}) einzuscannen, um die ursprüngliche Position, bzw. die Markierung festzuhalten. 
 Damit kann der weitere Programmablauf folgen, indem die \acs{GUI} der Visualisierungs-Phase (\ref{pic:visual}) angezeigt und eine neue Session zur 
 Objektplatzierung gestartet wird. 
 \\
-Über eine ViewModel-Komponente werden die Objekte aus der Datenbank abgefragt und in einer Liste gespeichert, um diese zu einem späteren Zeitpunkt zur Platzierung der 
-Objekte verwenden zu können.
+Über eine ViewModel-Komponente werden die Objekte aus der Datenbank abgefragt und in einer Liste gespeichert, damit diese zu einem späteren Zeitpunkt zur 
+Platzierung der Objekte verwenden werden können.
 \\
 Ist der Marker erkannt worden, wird mithilfe des Buttons, der sich im rechten unteren Eck der Benutzeroberfläche (\ref{pic:visual}) befindet, die Methode zur 
 Datenabfrage, Erzeugung und Platzierung der Objekte gestartet. Dabei wird über den Button-Klick eine Funktion aufgerufen, die die Liste der Objekte anspricht und 
@@ -142,7 +100,7 @@ zu entnehmen.
     \caption{Funktion Visualisierungs-Phase Teil 1}
     \label{pic:visual_objects}
 \end{figure}
-\pagebreak
+%\pagebreak
 \\
 %\linebreak 
 Eine weiter Funktion dieser Phase ist die Verwaltung der Objekte und deren Informationen. Wird ein Objekt anvisiert, werden mit einem Klick auf das Objekt 
@@ -157,6 +115,7 @@ und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur V
     \caption{Funktion Visualisierungs-Phase Teil 2}
     \label{pic:showdatatoobj}
 \end{figure}
+\pagebreak
 \\
 Um für den Prototypen eine möglichst realitätsnahe Anwendung zu simulieren, wurde mithilfe eines Threads eine Statusänderung der Objekte eingebaut. Dabei wird 
 ein zufälliges Objekt selektiert und dessen Status-Informationen in der Datenbank geändert, bzw. aktualisiert. Über einen „Handler“ wird diese Aktion registriert 
@@ -168,6 +127,7 @@ enthalten sind.
     \caption{Programmablaufplan zur Informationsänderung eines zufälligen Objekts}
     \label{pic:startmenu}
 \end{figure}
+\pagebreak
 \\
 Darauf kann der Nutzer im Nachgang reagieren, um die dementsprechende Entscheidung, was zu tun ist, zu treffen. Der folgende Ablaufplan stellt 
 diese Funktion dar.
