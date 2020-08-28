@@ -138,7 +138,7 @@ angezeigt und der Nutzer hat den gesamten Überblick über alle Objekte und kann
 zu entnehmen. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_objects_after_loading.jpg}
+    \includegraphics[width=7cm,height=7.5cm,keepaspectratio]{4Umsetzung/Bilder/show_objects_after_loading.jpg}
     \caption{Funktion Visualisierungs-Phase Teil 1}
     \label{pic:visual_objects}
 \end{figure}
@@ -151,26 +151,34 @@ und vergeben wurde. So kann zu jedem einzelnen Objekt dessen Informationen zur V
 %\pagebreak
 \begin{figure}[hbt!]
     \centering
-    \subfigure[Anzeige der Objektinformationen 1]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung//Bilder/show_data_to_obj_1.jpg}}
-    \subfigure[Anzeige der Objektinformationen 2]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_2.jpg}}
-    \subfigure[Anzeige der Objektinformationen 3]{\includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_3.jpg}}
+    \subfigure[Anzeige der Objektinformationen 1]{\includegraphics[width=7.5cm,height=8cm,keepaspectratio]{4Umsetzung//Bilder/show_data_to_obj_1.jpg}}
+    \subfigure[Anzeige der Objektinformationen 2]{\includegraphics[width=7.5cm,height=8cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_2.jpg}}
+    \subfigure[Anzeige der Objektinformationen 3]{\includegraphics[width=7.5cm,height=8cm,keepaspectratio]{4Umsetzung/Bilder/show_data_to_obj_3.jpg}}
     \caption{Funktion Visualisierungs-Phase Teil 2}
     \label{pic:showdatatoobj}
 \end{figure}
 \\
 Um für den Prototypen eine möglichst realitätsnahe Anwendung zu simulieren, wurde mithilfe eines Threads eine Statusänderung der Objekte eingebaut. Dabei wird 
 ein zufälliges Objekt selektiert und dessen Status-Informationen in der Datenbank geändert, bzw. aktualisiert. Über einen „Handler“ wird diese Aktion registriert 
-und der Nutzer wird daraufhin benachrichtigt, indem auf dem Bildschirm eine Mitteilung aufkommt, in der die Änderungen und Informationen zu dem jeweiligen Objekt 
-enthalten sind. Darauf kann der Nutzer im Nachgang reagieren, um die dementsprechende Entscheidung, was zu tun ist, zu treffen. Der folgende Ablaufplan stellt 
-diese Funktion dar.
+und der Nutzer wird daraufhin benachrichtigt, indem auf dem Bildschirm eine Mitteilung aufkommt, in der die Änderungen zu dem jeweiligen Objekt 
+enthalten sind. 
 \begin{figure}[hbt!]
     \centering
-    \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/changeInfoPAP.png}
+    \includegraphics[width=7.5cm,height=8cm,keepaspectratio]{4Umsetzung/Bilder/changeState.jpeg}
     \caption{Programmablaufplan zur Informationsänderung eines zufälligen Objekts}
     \label{pic:startmenu}
 \end{figure}
 \\
-Der „Thread“ läuft solange die Visualisierungs-Phase aktiv ist und wird erst mit schließen der Funktion beendet.
+Darauf kann der Nutzer im Nachgang reagieren, um die dementsprechende Entscheidung, was zu tun ist, zu treffen. Der folgende Ablaufplan stellt 
+diese Funktion dar.
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=10cm,height=9cm,keepaspectratio]{4Umsetzung/Bilder/changeInfoPAP.png}
+    \caption{Mitteilung zu einer Statusänderung eines Objekts}
+    \label{pic:startmenu}
+\end{figure}
+\\
+Der „Thread“ läuft solange die Visualisierungs-Phase aktiv ist und wird erst mit Schließen der Funktion beendet.
 %\linebreak
 %Nachdem die Aspekte der Front- und Backend-Entwicklung der drei Use Cases geschildert und Einblicke in die Entwicklung und die damit verbundenen Fragestellungen 
 %und Schwierigkeiten gewährt wurden, geht es nun mit der Evaluierung des Systems, dem Fazit und dem Ausblick weiter.
