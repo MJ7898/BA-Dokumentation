@@ -12,7 +12,7 @@ Um die vorhandenen Klassen zum Datentransfer und zum Persistieren der Daten mit 
 eigentlichen Benutzeroberfläche zu verbinden, wurde ein ViewModel implementiert, welches die Daten zwischen den einzelnen Komponenten teilt und bereitstellt. 
 \\ 
 \linebreak 
-Nach Aufzählung der einzelnen Bestandteile wird auf diese nun genauer eingegangen. 
+Nach Aufzählung der einzelnen Bestandteile wird auf diese genauer eingegangen. 
 \\ 
 \linebreak
 In einer Java-Klasse wird mithilfe der gegebenen Bibliothek „Room“ ein Entity-Objekt erstellt. Hierbei gibt es eine eindeutige Annotation, die die Klasse und 
@@ -60,7 +60,7 @@ caption={SQL-Query zur Abfrage der Objekt-Namen}]
 LiveData<List<Object>> getObjectName();
 \end{lstlisting}
 Nachdem die beiden Klassen erstellt worden sind, wurde das Datenbank-Layer auf der eigentlichen Datenbank implementiert. Über einen „Builder“ wird die 
-Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Falle des Assistenzsystems als \textit{„object\_database“} deklariert. 
+Datenbank-Instanz erzeugt und mit einem Namen versehen. Im Falle des Assistenzsystems wurde diese als \textit{„object\_database“} deklariert. 
 \\ 
 In zukünftigen Entwicklungen, 
 falls notwendig, gäbe es die Möglichkeit, in diesem Schema weitere Datenbanken zu erstellen und diese über weitere „Dao“s zu referenzieren. Darüber hinaus ist die 
@@ -89,7 +89,7 @@ public abstract class ObjectRoomDatabase extends RoomDatabase {
     ...
 }
 \end{lstlisting}
-Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transferen und der Benutzeroberfläche, das ViewModel. 
+Letzter wichtiger zu implementierender Aspekt war das Kommunikations-Modul zwischen den Datenbank-Transfers und der Benutzeroberfläche, das ViewModel. 
 In dieser Klasse wird beim Start der Anwendung eine Liste anhand der Objekte in der Datenbank erstellt, welche die Informationen des einzelnen Objekts besitzt. 
 Diese werden über eine „get“-Funktion aus dem zuvor instanziierten Repository geladen und in der erzeugten Liste lokal abgelegt. Diese Liste wird dann für 
 die Präsentation der Informationen auf der Nutzeroberfläche verwendet. Bei Änderungen der Informationen wird über die \acs{UI} der „Oberserver“ benachrichtigt. 

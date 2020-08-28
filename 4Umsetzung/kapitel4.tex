@@ -74,20 +74,22 @@ und dem Assistenzsystem.
 Zuallererst werden bei initialer Instandsetzung bestimmte Genehmigungen eingeholt, um die Anwendung überhaupt starten zu können. Der Nutzer soll dem System 
 die Zugriffserlaubnis auf die Kamera erteilen, da in der Hauptfunktion die Umgebung gescannt werden muss. 
 Diese Abfrage erfolgt über ein kleines PopUp-Fenster, welches von Android fest vorgegeben ist. 
-Mit dem Zulassen des Zugriffs auf die Kamera kann der Nutzer und die Applikation wie gewünscht fortfahren. 
+Mit dem Zulassen des Zugriffs auf die Kamera kann die geplante Fortführung der Applikation erfolgen. Somit wird sichergestellt, dass alle notwendigen Genehmigungen 
+eingeholt werden.
 \\ 
 \linebreak
-Da speziell das Assistenzsystem auf die gegebenen Komponenten der Hardware zugreift, zählt dieses zu den nativen Applikationen. 
+Da speziell das Assistenzsystem für das gegebene Betriebssystem entwickelt wurde, zählt dieses zu den nativen Applikationen. 
 Darunter sind Anwendungen zu verstehen, die ausdrücklich für das Betriebssystem des Endgeräts konzipiert sind oder die zum Beispiel auf die vom Endgerät vorhandenen 
 Komponenten zugreifen, wie in etwa auf die Bild-Mediathek, sämtliche Datei-Strukturen oder die Kamera-Komponente.
 \\ 
 \linebreak
-Angenommen der Nutzer lässt den Zugriff auf die Kamera für das Assistenzsystem zu, dann startet die Applikation wie erwünscht. Darauffolgend ist dann 
-das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Die Benutzeroberfläche weist ein sehr einfaches und 
-schlicht gehaltenes Design auf. 
+Angenommen der Nutzer lässt den Zugriff auf die Kamera für das Assistenzsystem zu, dann startet die Applikation. % wie erwünscht. 
+Darauffolgend ist das eigentliche Startmenü zu sehen. Diese Ansicht ist der nachfolgenden Abbildung (\ref{pic:startmenu}) zu entnehmen. Die 
+Benutzeroberfläche weist ein sehr einfaches und schlicht gehaltenes Design auf. Dadurch wird dem Nutzer eine klare Struktur vorgelegt. 
 Darauf ist das Firmen-Logo der cjt Systemsoftware AG zentriert zu sehen, außerdem zwei farblich voneinander getrennte Buttons zur Navigation innerhalb der Applikation. 
 Die Buttons adressieren jeweils die nachfolgend zugehörige Funktion. Dies sind zum einen der lilafarbene Button, der zur Scan-Phase weiterleitet und zum anderen der 
-gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert.  
+gelbfarbene Button, der den Nutzer zur Visualisierungs-Phase navigiert. Damit wurde das Ziel, zur klaren Vorgabe der Entscheidungsvarianten der Startmenü-Oberfläche, 
+erreicht.
 \begin{figure}[hbt!]
     \centering
     \includegraphics[width=7cm,height=7cm,keepaspectratio]{4Umsetzung/Bilder/startmenu.jpg}
@@ -127,7 +129,7 @@ und näher beschrieben, um Methoden des Backends im Anschluss besser nachvollzie
 \subsubsection{Frontend}
 Zur Repräsentation des Kamerabildes wurde in die Benutzeroberfläche ein Fragment zur Vollbildkamera-Anischt eingebaut, damit eine \textit{\acs{AR}-Experience} 
 stattfinden kann. Zur optimalen Erfassung einzelner Bilder oder Marker wurde das Fragment mit einem weißen Rahmen überlagert. Dieser erleichtert dem Nutzer die 
-Handhabung des Smartphones und das Einfangen des Bildes. 
+Handhabung des Smartphones und das Einfangen des Bildes, damit das Bild vollständig analysiert werden kann. 
 %Das Assistenzsystem verfügt über eine Vollbildkamera-Ansicht, die mit einem weißen Rahmen überlagert ist. Damit können über die Kamera Bilder zentriert 
 %eingefangen werden. Somit weiß der Nutzer, wie er das Smart-Device in Position bringen muss, damit er das zu scannende Bild über die Kamera optimal erfassen kann. 
 \\ 
@@ -150,7 +152,8 @@ der Nutzer die Objekte an von ihm definierte Stellen platzieren kann. Die Benutz
 Überblick nicht verliert und sich auf die eigentliche Funktion konzentriert. 
 \\ 
 Hauptsächlich beinhaltet die \acs{GUI} ein Fragment, welches das Kamerabild in Echtzeit wiedergibt. Am oberen Ende des Bildschirms, bzw. der Abbildung 
-(\ref{pic:scan}) wurde eine lilafarbene Fläche zur optischen Abgrenzung integriert. Sie soll gleichzeitig zur Anzeige von Informationen dienen. 
+(\ref{pic:scan}) wurde eine lilafarbene Fläche zur optischen Abgrenzung integriert. Sie soll gleichzeitig zur Anzeige von Informationen dienen. Dadurch ist eine 
+Möglichkeit geschaffen dem Nutzer Mitteilungen oder Updates der Anwendung einzublenden. 
 \\ 
 Am unteren Ende des Bildes befindet sich eine \textit{„Android-Gallery“}, die alle zu platzierenden Objekte beinhaltet. Der Gedanke dabei war, eine einfache 
 Bedienung der Buttons zu gewährleisten. In der zugrundeliegenden Abbildung sind es zwei Platzhalter-Objekte, die bei Berührung des Bildes erstellt werden. 
@@ -174,14 +177,16 @@ und den Scan-Vorgang von der ursprünglichen Ausgangsposition erneut beginnen. %
 \pagebreak
 \\
 Will der Anwender ein Objekt erstellen und danach zusätzliche Informationen hinzufügen, muss er den entsprechenden Button mit dem Objekt drücken, der 
-dieses repräsentiert. Daraufhin wird eine weitere \acs{UI} sichtbar, in die der Nutzer die dazugehörigen Informationen einträgt und die anschließend 
+dieses repräsentiert. Daraufhin wird eine weitere \acs{UI} sichtbar, in der die dazugehörigen Informationen vom Nutzer eingetragen und anschließend 
+%die der Nutzer die dazugehörigen Informationen einträgt und die anschließend 
 in die Datenbank aufgenommen werden. Die zusätzliche Eingabe von Informationen wurde so umgesetzt, dass bei Betätigen des Buttons die Oberfläche zur 
-Texteingabe erscheint.
-abdecken. 
+Texteingabe erscheint. Die \acs{UI} wurde mit einem \textit{„save“}-Button versehen, damit die Informationseingaben in die Datenbank stattfindet. % und gespeichert wird.
+%abdecken. 
 \\ 
 Im Hintergrund werden ebenso die Daten der Position und Drehung des 
-Objekts bereitgestellt.
+Objekts bereitgestellt, die mit den Informationen des Objekts persistiert werden.
 \\ 
+\linebreak
 Anhand des folgenden Plans wird der Ablauf der Scan-Phase veranschaulicht.
 \begin{figure}[hbt!]
     \centering

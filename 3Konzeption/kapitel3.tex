@@ -197,9 +197,9 @@ Darstellungen konzipiert werden, die während der Umsetzung als Vorlage dienen s
     \caption{Mockup Scan-Phase}
     \label{pic:Mockscan}
 \end{figure}
-\\
-Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
-Anforderungen und Zielsetzungen.
+%\\
+%Auf die zweite Kernfunktion wird in folgendem Abschnitt eingegangen, sowohl der Aufbau der Kernfunktion, als auch die damit einhergehenden 
+%Anforderungen und Zielsetzungen.
 
 \subsection*{Visualisierungs-Phase}
 Die zuvor erläuterte Visualisierungs-Phase wird in diesem Abschnitt seitens der Softwarekonzeption auf die Ziele, Anforderungen und 
@@ -231,8 +231,11 @@ Das folgende Mockup veranschaulicht die Beschreibung der konzipierten Oberfläch
     \caption{Mockup Visualisierungs-Phase}
     \label{pic:Mocksvisual}
 \end{figure}
-\\
-Dem Diagramm ist der geplante Ablauf und Funktionsweisen des Unterstützungssystems zum jetzigen Zeitpunkt zu entnehmen. Dabei ist grob 
+%\pagebreak
+%\\
+%\linebreak
+\subsection*{Programmablauf}
+Dem Diagramm ist der geplante Ablauf und die Funktionsweisen des Unterstützungssystems zum jetzigen Zeitpunkt zu entnehmen. Dabei ist grob 
 veranschaulicht, welche Möglichkeiten sich dem Nutzer bieten, um einen Überblick zu verschaffen, anhand welcher Informationen die 
 Applikation entwickelt wird. Die \textit{ScanActivity} beinhaltet alle Funktionen die in der Scan-Phase vorgesehen sind. Beim Erzeugen eines neuen Objekts 
 wird man auf die \textit{NewObjectActivity} weitergeleitet, in der alle Informationen zu diesem eingetragen werden müssen. Die \textit{VisualActivity} ist für das 
@@ -244,9 +247,9 @@ erneute Anzeigen der zu visualisierenden Objekte zuständig. Dabei können auch 
     \label{pic:anwendungsfall}
 \end{figure}
 \\ 
-\linebreak
+%\linebreak
 Nachdem auch das Softwarekonzept weitestgehend erarbeitet wurde, ging es um die Entscheidung, welches \acl{AR}-Framework für dieses Projekt 
-ausgewählt wird. Dazu wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewähren.
+ausgewählt wird. Dazu wird die Evaluierung der Frameworks aufgegriffen, um einen Einblick in die Entscheidungsfindung zu gewährleisten.
 \section{Auswahl des AR Frameworks}
 \label{chap:Auswahl des AR Frameworks}
 Mittlerweile gibt es eine enorme Auswahl an \acs{AR}-Frameworks, die alle unterschiedliche Präferenzen und 
@@ -300,7 +303,7 @@ Position ansprechen zu können. Diese Methode ist unter dem Namen \textit{Augmen
 realen Punkten, Oberflächen und Gegenständen. So können virtuelle Objekte möglichst realitätsnah in den Raum visualisiert werden.
 \\
 \linebreak
-Durch diese ganzen positiven Aspekte ist die Wahl des Frameworks auf das von Google entwickelte ARCore gefallen und wurde wegen den überzeugenden 
+Durch diese positiven Aspekte ist die Wahl des Frameworks auf das von Google entwickelte ARCore gefallen und wurde wegen den überzeugenden 
 Grundlagen als Framework für dieses Projekt eingesetzt.
 
 \section{Datenmodell}
