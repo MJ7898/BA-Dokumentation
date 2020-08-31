@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  31 AUG 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.30)  31 AUG 2020 12:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,7 +800,8 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-Package biblatex Info: Redefining '\citeurl' on input line 122.
+Package hyperref Info: Option `colorlinks' set `true' on input line 74.
+Package biblatex Info: Redefining '\citeurl' on input line 129.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count329
 \lst@gtempboxa=\box44
@@ -1035,7 +1036,7 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ))
-Package hyperref Info: Link coloring OFF on input line 95.
+Package hyperref Info: Link coloring ON on input line 95.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1633,7 +1634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--105
 
 
 Overfull \hbox (0.44308pt too wide) in paragraph at lines 107--114
-[][]\T1/lmr/m/n/10.95 (-20) ite gleich-zei-tig zu nut-zen. [[][]\T1/lmr/m/sc/10.95 (-20) De-vel-opers []\T1/lmr/m/n/10.95 (-20) 2017a[]] Die ro-bus-te [][]-Objektzuordnungsbibliothek
+[][]\T1/lmr/m/n/10.95 (-20) ite gleich-zei-tig zu nut-zen. [[][]\T1/lmr/m/sc/10.95 (-20) De-vel-opers [][]\T1/lmr/m/n/10.95 (-20) 2017a[][]] Die ro-bus-te [][]-Objektzuordnungsbibliothek
  []
 
 <2Grundlagen/Bilder/roomArchitecture.png, id=722, 595.22375pt x 539.51563pt>
@@ -2428,17 +2429,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ]
 Overfull \hbox (19.14507pt too wide) in paragraph at lines 227--227
-[][]\T1/lmr/m/sc/10.95 (-20) Elgan\T1/lmr/m/n/10.95 (-20) , Mi-ke [2016]. \T1/lmr/m/it/10.95 (-20) How Goo-gle's Pro-ject Tan-go will change your li-fe\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / www . computerworld .
+[][]\T1/lmr/m/sc/10.95 (-20) Elgan\T1/lmr/m/n/10.95 (-20) , Mi-ke [2016]. \T1/lmr/m/it/10.95 (-20) How Goo-gle's Pro-ject Tan-go will change your li-fe\T1/lmr/m/n/10.95 (-20) . [][]$\T1/lmtt/m/n/10.95 https : / / www . computerworld .
  []
 
 [69]
 Overfull \hbox (10.80615pt too wide) in paragraph at lines 227--227
-[][]\T1/lmr/m/sc/10.95 (-20) Hoegel\T1/lmr/m/n/10.95 (-20) , Bian-co [2016]. \T1/lmr/m/it/10.95 (-20) Ko-or-di-na-ten-ach-sen\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 http : / / www . biancahoegel . de / wissen / navigation /
+[][]\T1/lmr/m/sc/10.95 (-20) Hoegel\T1/lmr/m/n/10.95 (-20) , Bian-co [2016]. \T1/lmr/m/it/10.95 (-20) Ko-or-di-na-ten-ach-sen\T1/lmr/m/n/10.95 (-20) . [][]$\T1/lmtt/m/n/10.95 http : / / www . biancahoegel . de / wissen / navigation /
  []
 
 [70]
 Overfull \hbox (4.13754pt too wide) in paragraph at lines 227--227
-[][]\T1/lmr/m/sc/10.95 (-20) Sceneform\T1/lmr/m/n/10.95 (-20) , Goo-gle [2020]. \T1/lmr/m/it/10.95 (-20) Sce-ne-form over-view\T1/lmr/m/n/10.95 (-20) . []$\T1/lmtt/m/n/10.95 https : / / developers . google . com / sceneform /
+[][]\T1/lmr/m/sc/10.95 (-20) Sceneform\T1/lmr/m/n/10.95 (-20) , Goo-gle [2020]. \T1/lmr/m/it/10.95 (-20) Sce-ne-form over-view\T1/lmr/m/n/10.95 (-20) . [][]$\T1/lmtt/m/n/10.95 https : / / developers . google . com / sceneform /
  []
 
 [71]
@@ -2461,13 +2462,13 @@ Package logreq Info: Writing requests to 'bericht.run.xml'.
 Here is how much of TeX's memory you used:
  32333 strings out of 492616
  588938 string characters out of 6129481
- 1159208 words of memory out of 5000000
+ 1158262 words of memory out of 5000000
  34827 multiletter control sequences out of 15000+600000
  125068 words of font info for 205 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 69i,13n,83p,1179b,3462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,13n,83p,1179b,3475s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on /Users/mj/BA-Dokumentation/bericht.pdf (81 pages, 13065636 bytes).
+Output written on /Users/mj/BA-Dokumentation/bericht.pdf (81 pages, 13067082 bytes).
 PDF statistics:
  1795 PDF objects out of 2073 (max. 8388607)
  1598 compressed objects within 16 object streams
