@@ -765,6 +765,28 @@
     \field{year}{2020}
   \endentry
 
+  \entry{iot.2020}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=GM}{%
+         family={Griesser},
+         familyi={G\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM1}
+    \strng{fullhash}{GM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{year}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{howpublished}{\url{https://ganzrund.com/de/embedded-systems}}
+    \field{title}{Embedded Systems}
+    \field{year}{2020}
+  \endentry
+
   \entry{graphSLAM.2010}{misc}{}
     \name{author}{4}{}{%
       {{hash=GG}{%
@@ -888,6 +910,28 @@
     \field{title}{About SQLite}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{bianco.2016}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=HB}{%
+         family={Hoegel},
+         familyi={H\bibinitperiod},
+         given={Bianco},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HB1}
+    \strng{fullhash}{HB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+  \field{howpublished}{\url{http://www.biancahoegel.de/wissen/navigation/koordinatenachse.html}}
+    \field{title}{Koordinatenachsen}
+    \field{year}{2016}
   \endentry
 
   \entry{mvvmDiagramm.2015n}{misc}{}
@@ -1396,6 +1440,31 @@
     \field{title}{Modulare Programmierung}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{stachniss.2017}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SC}{%
+         family={Stachniss},
+         familyi={S\bibinitperiod},
+         given={Cyrill},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Spektrum, Berlin, Heidelberg}%
+    }
+    \strng{namehash}{SC1}
+    \strng{fullhash}{SC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{year}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Photogrammetrie und Fernerkundung - Simultaneaus Localization
+  and Mapping}
+    \field{year}{2017}
   \endentry
 
   \entry{robotik2.2020m}{misc}{}

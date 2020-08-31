@@ -21,8 +21,8 @@ auf die qualitativen und nicht-funktionalen Eigenschaften des daraus resultieren
 Die Terminologie nach dem \textit{IEEE-Standard 1471-2000} zur Software Architekturbeschreibung, deren Aufgaben und Zweck \cite{swarchitekturieee.2005} 
 sind wie folgt definiert: 
 \begin{quote}
-    Die grundlegende Organisation eines Systems, dargestellt durch dessen Komponenten, deren Beziehungen zueinander und zur Umgebung sowie den 
-    Prinzipien, die den Entwurf und die Evolution des Systems bestimmen. \cite{architektursw.2006f}
+    „Die grundlegende Organisation eines Systems, dargestellt durch dessen Komponenten, deren Beziehungen zueinander und zur Umgebung sowie den 
+    Prinzipien, die den Entwurf und die Evolution des Systems bestimmen.“ \cite{architektursw.2006f}
 \end{quote}
 Softwarearchitektur bietet viele Möglichkeiten, ein System zu entwerfen und Anforderungen und Eigenschaften umzusetzen. Daher gibt es auch 
 hier viele Ansätze, Lösungen und Abwandlungen, um den Standards und Richtlinien gerecht zu werden. Beispiele dafür sind unter anderem die 
@@ -45,6 +45,7 @@ Struktur repräsentiert wird.
     \label{pic:mvcdiagram}
 \end{figure} 
 \\
+\linebreak
 Im Falle dieser Abbildung wurde das Strukturmuster \ac{MVC} ausgewählt, welches die zu sehenden Komponenten in drei in sich 
 geschlossene und unabhängige miteinander agierende Fragmente unterteilt. 
 \\ 
@@ -192,7 +193,7 @@ Lebenszyklus der aktiven Komponente respektiert und berücksichtigt.
 \\ 
 Mit dem Repository wird ein „best practice“ Fall umgesetzt, der eigentlich kein Bestandteil der Android Jetpack Library ist. Diese Komponente 
 ist dafür zuständig das ViewModel von der eigentlichen Datenquelle zu trennen, um Informationen aus verschiedenen Quellen beziehen und 
-synchronisieren zu können. Das Repository dient als Schnittstelle zu mehreren Datenbeziehungspunkten und verwaltet ein Verzeichnis zur 
+synchronisieren zu können. \cite{viewModelAndroid.2020} Das Repository dient als Schnittstelle zu mehreren Datenbeziehungspunkten und verwaltet ein Verzeichnis zur 
 Speicherung und Beschreibung von Objekten und Informationen. Zudem kapselt das Repositorium die Logik für das Persistieren und Erzeugen von 
 Entitäten und Aggregaten von der Ansicht. 
 \begin{figure}[hbt!]
@@ -203,7 +204,6 @@ Entitäten und Aggregaten von der Ansicht.
 \end{figure} 
 \pagebreak
 \\ 
-%\linebreak
 Die \textit{Persistence Library} Room (\ref{sec:Room}) ist ein Datenbank \textit{Layer} auf der eigentlichen SQLite Datenbank. Zugriffe auf 
 die Datenbank werden durch Room gekapselt und vereinfacht, indem viel mit Annotationen, z.B. Entities \textit{(\@Entity)} und Data Objects 
 \textit{(\@Dao)}, gearbeitet wird. Der Abbildung (\ref{pic:roomComp}) ist demnach zu entnehmen, dass die Bibliothek \textit{„Room“} einen Großteil der 
@@ -268,7 +268,9 @@ In der Softwareentwicklung wird die Datenmodellierung als wesentliche Teilaufgab
 Ein Schema, nachdem relationale Datenbanken aufgeteilt werden, ist die sogenannte Normalisierung von Datenbanken. Darunter versteht man die 
 Aufteilung von Attributen in mehrere Relationen (Tabellen) mithilfe von Normalisierungsregeln und Normalformen. \cite{normalisierung.2020j} 
 Ziel dieser Zerlegung ist die Erstellung einer redundanzfreien Speicherung der Daten, um Daten löschen zu können, ohne einen 
-Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unterteilt:
+Informationsverlust zu erleiden. 
+\\ 
+Die Normalisierung wird in mehrere Stufen unterteilt:
 \begin{itemize}
     \item Nullte Normalform (0NF) \& Erste Normalform (1NF)
     %\item Erste Normalform (1NF)
@@ -278,6 +280,6 @@ Informationsverlust zu erleiden. Die Normalisierung wird in mehrere Stufen unter
     \item Vierte \& Fünfte Normalform (4NF \& 5NF)
 \end{itemize} 
 Die meist verwendete Normalform ist die dritte Normalform, da diese für die Balance zwischen Redundanz, Performance und Flexibilität 
-entscheidend ist und oft ausreicht. 
+entscheidend ist und oft ausreicht. \cite{normalisierung.2020j}
 \\ 
 Im Folgenden wird nicht weiter auf die Normalformen eingegangen, sie dienen lediglich der vollständigen Nennung.
